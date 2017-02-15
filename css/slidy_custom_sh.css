@@ -156,7 +156,7 @@ div.slidy_toc {
   font-size: 60%;
 }
 
-div.slidy_toc .toc_heading {
+div.slidy_toc .toc-heading {
   text-align: center;
   width: 100%;
   margin: 0;
@@ -322,6 +322,8 @@ a:hover, a:active {
 
 div.toc-heading {
   width: 100%;
+  display: inline-block;
+  height: auto;
   border-bottom: solid 1px rgb(180,180,180);
   margin-bottom: 1em;
   text-align: center;
