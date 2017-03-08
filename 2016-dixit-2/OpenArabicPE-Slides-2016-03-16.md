@@ -134,13 +134,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3. Test case: digital *Muqtabas*
 
-![Project scheme](../assets/OpenAraPE-organigramme_vertical.png)
+![Project scheme](../assets/OpenArabicPE-organigramme_vertical.png)
 
 <!-- # 3.1 Basis: Generate the TEI edition
 
-![](../assets/OpenAraPE-organigramme_vertical-input.png)
+![](../assets/OpenArabicPE-organigramme_vertical-input.png)
 
-![](../assets/OpenAraPE-organigramme_vertical-edition.png) -->
+![](../assets/OpenArabicPE-organigramme_vertical-edition.png) -->
 
 # 3.1 Basis: Generate the TEI edition
 
@@ -199,7 +199,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3.1 Basis: Is this legal?
 
-![](../assets/OpenAraPE-organigramme_vertical-input.png)
+![](../assets/OpenArabicPE-organigramme_vertical-input.png)
 
 # 3.1 Basis: Is this legal?
 
@@ -216,7 +216,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 3.2 Core feature: Continuous improvement
 
-![](../assets/OpenAraPE-organigramme_vertical-crowd.png)
+![](../assets/OpenArabicPE-organigramme_vertical-crowd.png)
 
 # 3.2 Core feature: Continuous improvement
 

@@ -1,8 +1,7 @@
 ---
-title: "Digital Arabic Periodical Editions: presentation at the internal OIB colloquium"
+title: "Digital Arabic Periodical Editions: presentation at AUC"
 author: Till Grallert
-date: 2016-03-10
-duration: 30
+date: 2016-04-12
 ---
 
 # #freebassel
@@ -10,16 +9,16 @@ duration: 30
 Bassel Khartabil / باسل خرطبيل
 
 + Syrian software engineer
-+ leading advocat for open access and Creative Commons (CC) in Syria
++ leading advocate for open access and Creative Commons (CC) in Syria
 + author of the Arabic CC licences 
 + detained by the regime since 15 March 2012
 + moved to an unknown location and probably killed in Oct 2015
 
-# Hacking academia? Open scholarly digital editions of the Damascene journals *al-Muqtabas* (1906–19) and *al-Ḥaqāʾiq* (1910–12) between Shamela.ws, HathiTrust, and GitHub
+# The journal *al-Muqtabas* between *Shamela.ws*, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals---with almost no funds
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [https://tinyurl.com/oib-2016-03-10](https://tillgrallert.github.io/Slides/OIBColloquium2016)
+Slides: [https://tillgrallert.github.io/Slides/AUC2016](https://tillgrallert.github.io/Slides/AUC2016)
 
 Twitter: @tillgrallert
 
@@ -41,7 +40,7 @@ Email: <grallert@orient-institut.org>
 
 - Preservation: 
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
-    + Negelct: fragile materiality
+    + Neglect: fragile materiality
 - Access:
     + Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections
     + widely-dispersed collections
@@ -110,19 +109,43 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3. Test case: digital *Muqtabas*
 
-1. Basis: Generate and share a TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas* with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
-2. Core feature: gradually improve the digital edition (text and mark-up)
-3. Sugar on top: Static web-view (doesn't require a permanent internet connection)
+*al-Muqtabas* / المقتبس
+
+- "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
+    + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
+- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
+- available at c. 30 libraries (North America, Europe, Middle East): 
+    + original prints (mostly incomplete)
+    + some copies of a "gray" reprint
+    + a number of microfiche copies from a single source
+
+<!--     + Palestine: 1 incomplete copy
+    + Lebanon: at least 2 complete physical copies
+    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
+    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
 
 # 3. Test case: digital *Muqtabas*
 
-![Project scheme](../assets/OpenAraPE-organigramme_horizontal.png)
+1. Basis: 
+    - XML/TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas*
+    - The text links to open-access digital facsimiles
+    - licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+2. Core feature: 
+    - social digital edition: gradually improve text and mark-up
+3. Sugar on top: 
+    - Static web-view (doesn't require a permanent internet connection)
+    - bibliographic metadata for all issues and articles (MODS, BibTeX)
+    - access to bibliographic metadata through a public Zotero group
+
+# 3. Test case: digital *Muqtabas*
+
+![Project scheme](../assets/OpenArabicPE-organigramme_horizontal.png)
 
 <!-- # 3.1 Basis: Generate the TEI edition
 
-![](../assets/OpenAraPE-organigramme_vertical-input.png)
+![](../assets/OpenArabicPE-organigramme_horizontal-input.png)
 
-![](../assets/OpenAraPE-organigramme_vertical-edition.png) -->
+![](../assets/OpenArabicPE-organigramme_horizontal-edition.png) -->
 
 # 3.1 Basis: Generate the TEI edition
 
@@ -135,6 +158,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + distributed version control
     + attribution of authorship
 - provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files: edition, tools, webview
+
 
 # 3.1 Basis: TEI files
 
@@ -166,35 +190,38 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
                 </div>
             </div>
         </div>
-        <!-- ... -->
     </body>
 </text>
 ~~~
 
+
+
 # 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png) 
+
+
 
 # 3.1 Basis: Is this legal?
 
-![](../assets/OpenAraPE-organigramme_vertical-input.png)
+![External sources, external labour, and the question of copyright](../assets/OpenArabicPE-organigramme_horizontal-input.png)
 
 # 3.1 Basis: Is this legal?
 
 Copyright depends on the jurisdiction of creators, distributors, etc.
 
 1. text of *al-Muqtabas*
-    + is in the public domain: transcription is *legal*
+    + is in the public domain: transcription and imaging is *legal*.^[even in the US as attested to by HathiTrust]
     + the transcribers do not / cannot claim copyright: copying is *legal*
 2. images of *al-Muqtabas*
     + digital files are protected by copyright: use is subject to licence, linking is *legal*
     + download and redistribution: almost certainly *illegal*
 3. digital edition of *al-Muqtabas*
-    + all our work is licenced as [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
+    + all our work is licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 # 3.2 Core feature: Continuous improvement
 
-![](../assets/OpenAraPE-organigramme_vertical-crowd.png)
+![A social and GitHub-hosted digital edition](../assets/OpenArabicPE-organigramme_vertical-crowd.png)
 
 # 3.2 Core feature: Continuous improvement
 
@@ -209,14 +236,16 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 # 3.2 Core feature: how to contribute
 
 - go to [GitHub](https://www.github.com) and register a free account
-- *fork* the the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://tinyurl.com/muqtabas](https://tinyurl.com/muqtabas)
+- *fork* the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 - edit the text
 - send us a *pull request*
 - changes will be reviewed and merged
 
+![Branches on GitHub](../assets/github_branches-1.png)
+
 # 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-2.png)
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
 
 # 3.3 Sugar on top: web-view
 
@@ -226,7 +255,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + can be run without an internet connection and with local facsimiles.
 - parallel display of text and facsimile
     + simple changes to display different facsimiles
-- link to metadata on the article level (BibTeX)
+- link to metadata on the article level (MODS, BibTeX)
 - the code is shared with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) on [GitHub](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)
 
 # 3.3 Sugar on top: Zotero group
@@ -240,27 +269,46 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 4. To do, ongoing work
 
-- Schema design
+- Editorial decisions: TEI schema design
     + mark-up of some text features has not yet been decided
-- mark-up of page breaks
-- Web-view needs some polishing
+- Editorial work: 
+    + mark-up of page breaks
+    + correcting transcriptions
+    + add non-Arabic words omitted by *shamela.ws*
+    + add footnotes
+    + correct publication dates for all issues.
+- Web-display:
+    + needs some polishing
+    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub) 
 
 # 5. Experiences: simple, fast, sustainable
 
 - Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
 - Hosting with GitHub is free
 - Core (but simple) features cannot be automated: all c.7000 page breaks must be manually tagged
-- Code that can be re-purposed for---inter alia---Muḥammad Rashīd Riḍā's journal *al-Manār* 
-    + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
-    + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374)
+- Code can be re-purposed:
+    + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
+    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār* 
+        + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
+        + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 
 # Summary
 
 - open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
     + TEI XML files (transcription and links to facsimiles)
     + plain text files
-    + BibTeX files for every article
+    + MODS and BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
 - within a framework (git and GitHub) that allows for
     + collaborative, open, version-controlled improvements of the edition
     + re-use of the text
+
+# Thank you !
+
+Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+
+Slides: [https://tillgrallert.github.io/Slides/AUC2016](https://tillgrallert.github.io/Slides/AUC2016)
+
+Twitter: @tillgrallert
+
+Email: <grallert@orient-institut.org>
