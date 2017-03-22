@@ -110,6 +110,9 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
         + scrape full text / bibliographic information from the web
         + convert scraped information into TEI, MODS, BibTeX
         + improve the TEI mark-up
+
+## 2.2 Deliverables 
+
 2. Core features: 
     1. Social digital edition hosted on GitHub: gradually improve transcription and mark-up
     2. Releases are archived at [Zenodo](https://zenodo.org) and receive a DOI
@@ -121,7 +124,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3. Test case: digital *Muqtabas*
 
-## 3. Testt case: The journal of *al-Muqtabas*
+## 3. Test case: The journal of *al-Muqtabas*
 
 *al-Muqtabas* / المقتبس
 
@@ -149,7 +152,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/oxygen_muqtabas-2.png) 
 
-## 3. Test case: digital *Muqtabas*
+<!-- ## 3. Test case: digital *Muqtabas*
 
 1. Basis: 
     - XML/TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas*
@@ -161,7 +164,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 3. Sugar on top: 
     - Static web-view (doesn't require a permanent internet connection)
     - bibliographic metadata for all issues and articles (MODS, BibTeX)
-    - access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe/items/)
+    - access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe/items/) -->
 
 ## 3. Test case: digital *Muqtabas*
 
@@ -183,7 +186,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 - host everything but images on [GitHub](https://www.github.com)
     + distributed version control
     + attribution of authorship
-- provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files: edition, tools, webview
+- provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files
 
 
 ## 3.1 Basis: TEI files
@@ -391,4 +394,4 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <grallert@orient-institut.org>
 
-- Licence: The slides are licenced as[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) 
+- Licence: The slides are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) 

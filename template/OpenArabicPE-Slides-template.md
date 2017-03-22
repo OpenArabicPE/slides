@@ -8,23 +8,6 @@ duration: 20
 # Title slide
 
 # 1. Introduction
-## The journal of *al-Muqtabas*
-
-*al-Muqtabas* / المقتبس
-
-- "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
-    + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
-- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- available at c. 30 libraries (North America, Europe, Middle East): 
-    + original prints (mostly incomplete)
-    + some copies of a "gray" reprint
-    + a number of microfiche copies from a single source
-
-<!--     + Palestine: 1 incomplete copy
-    + Lebanon: at least 2 complete physical copies
-    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
-    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
-
 ## 1.1 Importance of mundane texts / periodicals
 
 - They are at the core of various discourses
@@ -139,6 +122,22 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 
 # 3. Test case: digital *Muqtabas*
+## 3. Test case: The journal of *al-Muqtabas*
+
+*al-Muqtabas* / المقتبس
+
+- "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
+    + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
+- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
+- available at c. 30 libraries (North America, Europe, Middle East): 
+    + original prints (mostly incomplete)
+    + some copies of a "gray" reprint
+    + a number of microfiche copies from a single source
+
+<!--     + Palestine: 1 incomplete copy
+    + Lebanon: at least 2 complete physical copies
+    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
+    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
 ## 3. Test case: digital *Muqtabas*
 
 ![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
@@ -151,7 +150,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/oxygen_muqtabas-2.png) 
 
-## 3. Test case: digital *Muqtabas*
+<!-- ## 3. Test case: digital *Muqtabas*
 
 1. Basis: 
     - XML/TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas*
@@ -163,7 +162,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 3. Sugar on top: 
     - Static web-view (doesn't require a permanent internet connection)
     - bibliographic metadata for all issues and articles (MODS, BibTeX)
-    - access to bibliographic metadata through a public Zotero group
+    - access to bibliographic metadata through a public Zotero group -->
 
 ## 3. Test case: digital *Muqtabas*
 
@@ -185,9 +184,9 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 - host everything but images on [GitHub](https://www.github.com)
     + distributed version control
     + attribution of authorship
-- provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files: edition, tools, webview
+- provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files
 
-<!--
+
 ## 3.1 Basis: TEI files
 
 ~~~{.xml}
@@ -221,7 +220,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     </body>
 </text>
 ~~~
--->
+
 
 <!--
 ## 3.1 Basis: TEI files
@@ -264,7 +263,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## 3.2 Core feature: how to contribute
 
 - Go to [GitHub](https://www.github.com) and register a free account
-- **Fork** the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+- **Fork** the edition's repository: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 - Edit the text (XML)
 - Send us a **pull request**
 - We will review and merge your changes
@@ -273,9 +272,9 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.3 Sugar on top: web-view
 
-- Adaptation of [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/)
+- Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
 - human-readable and static web-view (either rawgit or gh-pages)
-    + generated on-the-fly by the user's browser using XSLT to transform the TEI XML files.
+    + generated on-the-fly by the user's browser using XSLT 1 to transform the TEI XML files to HTML.
     + can be run without an internet connection and with local facsimiles.
 - parallel display of text and facsimile
     + simple changes to display different facsimiles
@@ -296,7 +295,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 
 # 4. Use cases
-## reviewed works
+## 4.1 Reviewed works
 
 <iframe width="100%" height="80%" frameborder="0" src="../assets/maps/map_simile-muqtabas.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
@@ -304,7 +303,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 <iframe width="100%" height="80%" frameborder="0" src="https://tillgrallert.cartodb.com/viz/b0cacad8-12c3-11e6-baba-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> -->
 
-## statistics
+## 4.2 Simple statistics of authorship
 
 ~~~{.json}
 {
@@ -361,8 +360,8 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## simple, fast, sustainable
 
 - Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
-- Hosting with GitHub is free
-- Core (but simple) features cannot be automated: 
+- Hosting, long-term preservation and DOIs are provided free of cost
+- Core (but simple) features **cannot** be automated: 
     + all c.7000 page breaks must be manually tagged
     <!-- + it took a part-time intern 4 weeks to tag one volume of 800 pages -->
 - Code can be re-purposed:
@@ -371,26 +370,26 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 
-# Conclusion
+# 6. Conclusion
 ## Summary
 
 - open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
     + TEI XML files (transcription and links to facsimiles)
     + plain text files
-    + BibTeX files for every article
+    + MODS and BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
-- within a framework (git and GitHub) that allows for
+- within a framework (git, GitHub, Zenodo) that allows for / provides
     + collaborative, open, version-controlled improvements of the edition
-    + re-use of the text
+    + re-use of the text 
+    + long-term preservation and DOIs
 
-## Links
+## Thank you!
 
-Project URLs: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
+- Links:
+    + Project URLs: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
+    + Project blog: [https://tillgrallert.github.io/digital-muqtabas](https://tillgrallert.github.io/digital-muqtabas)
+    + Slides: [https://OpenArabicPE.github.io/slides/template/](https://OpenArabicPE.github.io/slides/template/index.html)
+    + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+    + Email: <grallert@orient-institut.org>
 
-Project blog: [https://tillgrallert.github.io/digital-muqtabas](https://tillgrallert.github.io/digital-muqtabas)
-
-Slides: [https://OpenArabicPE.github.io/slides/template/index.html](https://OpenArabicPE.github.io/slides/template/index.html)
-
-Twitter: @tillgrallert
-
-Email: <grallert@orient-institut.org>
+- Licence: The slides are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
