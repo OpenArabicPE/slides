@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Till Grallert, Orient-Institut Beirut (OIB)" />
+  <meta name="date" content="2017-04-10" />
+  <title>Open Arabic Periodical Editions (OpenArabicPE): an attempt to unite gray online libraries, social editing, and scholarly rigour</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+  }
+  /* provide a readible font-size */
+  .sourceCode * {
+      font-size: 16px;
+  }
+  /* xml element names */
+  .xml > code > span.kw {
+  	color: #0F0F9C;
+  	font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code > span.ot {
+  	color:#FF8041;
+  }
+  /* xml attribute values */
+  .xml > code > span.st {
+  	color:#993300;
+  }
+  /* xml comments */
+  .xml > code > span.co {
+  	color:#167116;
+  	font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+  	color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  div.cWidth2 {
+      width:50%;
+      position: relative;
+      float: left;
+  }
+  
+  div.cWidth3 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+  	color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../js/slidy.js"></script>
+<!--   <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
+  <meta name="duration" content="20" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Open Arabic Periodical Editions (OpenArabicPE): an attempt to unite gray online libraries, social editing, and scholarly rigour</h1>
+  <p class="author">
+Till Grallert, Orient-Institut Beirut (OIB)
+  </p>
+  <p class="date">10 April 2017, Digital Humanities Abu Dhabi, NYU Abu Dhabi</p>
+<p>Extended slides: <a href="https://OpenArabicPE.github.io/slides/2017-dhad/index.html">https://OpenArabicPE.github.io/slides/2017-dhad/</a></p>
+</div>
+<div id="outline" class="slide section level2">
+<h1>outline</h1>
+<ol style="list-style-type: decimal">
+<li>Introduction to the problems at hand</li>
+<li>Proposed solution: OpenArabicPE</li>
+<li>Test case: Digital <em>Muqtabas</em></li>
+<li>Experiences</li>
+</ol>
+</div>
+<div id="introduction" class="titleslide slide section level1"><h1>1. Introduction</h1></div><div id="importance-of-mundane-texts-periodicals" class="slide section level2">
+<h1>1.1 Importance of mundane texts / periodicals</h1>
+<ul>
+<li>At the core of various discourses
+<ul>
+<li>Modernity / -ism at the end of empire</li>
+<li>Arabic renaissance</li>
+<li>Arab nationalism</li>
+<li>Islamic reform movement</li>
+</ul></li>
+<li>Large corpora with an equal distribution along a temporal axis (<em>al-Muqtabas</em>: 12 yrs, <em>al-Manār</em>: 43 yrs, <em>al-Muqtaṭaf</em>: 76 yrs)
+<ul>
+<li>linguistic analysis</li>
+<li>historical semantics</li>
+<li>rich data sets for social history</li>
+</ul></li>
+</ul>
+</div><div id="a-two-fold-problem" class="slide section level2">
+<h1>1.2 A two-fold problem</h1>
+<ul>
+<li>Preservation:
+<ul>
+<li>Active destruction of cultural artifacts: iconoclasm, neoliberalism</li>
+<li>Neglect: fragile materiality</li>
+</ul></li>
+<li>Access:
+<ul>
+<li>Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections</li>
+<li>widely-dispersed collections</li>
+<li>technologies: absence of reliable OCR <!-- + technical skills: lack of basic scripting skills --></li>
+</ul></li>
+<li>Consequence: focus on facsimile editions of rare manuscripts</li>
+</ul>
+</div>
+<div id="digitisation-as-promised-remedy" class="titleslide slide section level1"><h1>1.3 Digitisation as promised remedy</h1></div><div id="state-of-digitisation-text" class="slide section level2">
+<h1>1.3.1 state of digitisation: text</h1>
+<p>“crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.</p>
+<ul>
+<li>lack of / faulty metadata</li>
+<li>unknown editing principles</li>
+<li>unknown quality</li>
+<li>very limited structural mark-up</li>
+<li>cannot be reliably cited</li>
+</ul>
+</div><div id="state-of-digitisation-images" class="slide section level2">
+<h1>1.3.2 state of digitisation: images</h1>
+<p>Digital imagery, e.g. <a href="http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63">Endangered Archives Programme (EAP)</a>, <a href="http://catalog.hathitrust.org/Record/100658549">HathiTrust</a></p>
+<ul>
+<li>lack of metadata</li>
+<li>limited licences, paywalls</li>
+<li>no or very bad text layers</li>
+</ul>
+</div><div id="state-of-digitisation-bibliographic-metadata" class="slide section level2">
+<h1>1.3.3 state of digitisation: bibliographic metadata</h1>
+<ul>
+<li>on the item (issue, volume) level: faulty metadata</li>
+<li>on the article level: inexistent or of unknown quality</li>
+<li>across periodicals: bound to digitisation projects from the same source</li>
+<li>very limited access to machine-actionable serialisations</li>
+</ul>
+</div>
+<div id="proposed-solution-unite-facsimile-and-transcription" class="titleslide slide section level1"><h1>2. Proposed solution: Unite facsimile and transcription</h1></div><div id="aims-and-principles" class="slide section level2">
+<h1>2.1 Aims and principles</h1>
+<ol style="list-style-type: decimal">
+<li>aims
+<ul>
+<li><strong>validate</strong> the transcription against the facsimiles</li>
+<li><strong>improve</strong> the transcription with the help of a “crowd”</li>
+<li>make everything <strong>citable</strong> for scholars, <strong>linkable</strong> for machines</li>
+<li>provide the new edition with the broadest possible licence to facilitate access and re-use</li>
+</ul></li>
+<li>principles
+<ul>
+<li>re-purpose <strong>available</strong> and <strong>established</strong> tools, technologies, and material</li>
+<li>preference for <strong>open</strong> and <strong>simple</strong> formats and tools</li>
+</ul></li>
+</ol>
+</div><div id="deliverables" class="slide section level2">
+<h1>2.2 Deliverables</h1>
+<ol style="list-style-type: decimal">
+<li>Basis:
+<ol style="list-style-type: decimal">
+<li>XML/TEI editions with their own <a href="https://github.com/OpenArabicPE/OpenArabicPE_ODD">schema</a>
+<ul>
+<li>text links to open-access digital facsimiles</li>
+<li>licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ul></li>
+<li>Structured bibliographic metadata (MODS, BibTeX)</li>
+<li>Tools to
+<ul>
+<li>scrape full text / bibliographic information from the web</li>
+<li>convert scraped information into TEI, MODS, BibTeX</li>
+<li>improve the TEI mark-up</li>
+</ul></li>
+</ol></li>
+</ol>
+</div><div id="deliverables-1" class="slide section level2">
+<h1>2.2 Deliverables</h1>
+<ol start="2" style="list-style-type: decimal">
+<li>Core features:
+<ol style="list-style-type: decimal">
+<li>Social digital edition hosted on GitHub: gradually improve transcription and mark-up</li>
+<li>Releases are archived at <a href="https://zenodo.org">Zenodo</a> and receive a DOI</li>
+</ol></li>
+<li>Sugar on top:
+<ol style="list-style-type: decimal">
+<li><a href="https://github.com/tillgrallert/tei-boilerplate-arabic-editions">Static web-view</a> (doesn’t require a permanent internet connection) providing side-by-side view of facsimiles and text <!-- - bibliographic metadata for all issues and articles (MODS, BibTeX) --></li>
+<li>Access to bibliographic metadata through a public Zotero group</li>
+</ol></li>
+</ol>
+</div>
+<div id="test-case-digital-muqtabas" class="titleslide slide section level1"><h1>3. Test case: digital <em>Muqtabas</em></h1></div><div id="test-case-digital-muqtabas-1" class="slide section level2">
+<h1>3. Test case: digital <em>Muqtabas</em></h1>
+<div class="figure">
+<img src="../assets/OpenArabicPE-organigramme_horizontal.png" alt="Project scheme" />
+<p class="caption">Project scheme</p>
+</div>
+</div><div id="basis-generate-the-tei-edition" class="slide section level2">
+<h1>3.1 Basis: Generate the TEI edition</h1>
+<ul>
+<li>scrape the <a href="http://shamela.ws/index.php/book/26523">digital text from <em>shamela.ws</em></a></li>
+<li>transform it into <a href="http://www.tei-c.org">TEI XML</a>: semi-automatically (mostly XSLT) <!--   + documented URI design to reference all elements --></li>
+<li>add structural mark-up (sections, articles, heads, authors …): semi-automatically</li>
+<li>link to digital facsimiles from the <a href="http://eap.bl.uk/database/overview_item.a4d?catId=809;r=12316">British Library’s “Endangered Archives Programme” (EAP)</a> and <a href="http://catalog.hathitrust.org/Record/100658549">HathiTrust</a>: semi-automatically (mostly manually)</li>
+<li>host everything but images on <a href="https://www.github.com">GitHub</a>
+<ul>
+<li>distributed version control</li>
+<li>attribution of authorship</li>
+</ul></li>
+<li>provide a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 licence</a> for all files</li>
+</ul>
+</div><div id="basis-is-this-legal" class="slide section level2">
+<h1>3.1 Basis: Is this legal?</h1>
+<p>Copyright depends on the jurisdiction of creators, distributors, etc.</p>
+<ol style="list-style-type: decimal">
+<li>text of <em>al-Muqtabas</em>: <strong>public domain</strong>
+<ul>
+<li>transcription and imaging is <strong>legal</strong>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<li>copying is <strong>legal</strong></li>
+</ul></li>
+<li>images of <em>al-Muqtabas</em>: protected by copyright
+<ul>
+<li>use is subject to licence, linking is <strong>legal</strong></li>
+<li>download and redistribution: almost certainly <strong>illegal</strong></li>
+</ul></li>
+<li>our digital edition of <em>al-Muqtabas</em>: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ol>
+</div><div id="core-feature-continuous-improvement" class="slide section level2">
+<h1>3.2 Core feature: Continuous improvement</h1>
+<ol style="list-style-type: decimal">
+<li>Improvements depending on human labour (probably a “crowd”)
+<ul>
+<li>correct the transcription</li>
+<li>add structural mark-up</li>
+<li>add semantic mark-up</li>
+</ul></li>
+<li>Automatic improvements:
+<ul>
+<li>provide reliable bibliographic metadata based on the facsimile</li>
+<li>mark-up of natural entities with link to external reference files (e.g. personal names, toponyms)</li>
+</ul></li>
+</ol>
+</div><div id="core-feature-how-to-contribute" class="slide section level2">
+<h1>3.2 Core feature: how to contribute</h1>
+<ul>
+<li>Go to <a href="https://www.github.com">GitHub</a> and register a free account</li>
+<li><strong>Fork</strong> the edition’s repository: <a href="https://www.github.com/tillgrallert/digital-muqtabas" class="uri">https://www.github.com/tillgrallert/digital-muqtabas</a></li>
+<li>Edit the text (XML)</li>
+<li>Send us a <strong>pull request</strong></li>
+<li>We will review and merge your changes</li>
+</ul>
+<div class="figure">
+<img src="../assets/github_branches-1.png" alt="Branches on GitHub" />
+<p class="caption">Branches on GitHub</p>
+</div>
+</div><div id="sugar-on-top-web-view" class="slide section level2">
+<h1>3.3 Sugar on top: web-view</h1>
+<ul>
+<li>Adaptation of the <a href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate XSLT stylesheets</a> to (Arabic) periodical editions</li>
+<li>human-readable and static web-view (either rawgit or gh-pages)
+<ul>
+<li>generated on-the-fly by the user’s browser <!-- using XSLT 1 to transform the TEI XML files to HTML. --></li>
+<li>can be run without an internet connection and with local facsimiles.</li>
+</ul></li>
+<li>parallel display of text and facsimile</li>
+<li>link to metadata on the article level (MODS, BibTeX)</li>
+<li>the code is shared with a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 licence</a> on <a href="https://github.com/tillgrallert/tei-boilerplate-arabic-editions">GitHub</a></li>
+</ul>
+</div><div id="sugar-on-top-web-view-1" class="slide section level2">
+<h1>3.3 Sugar on top: web-view</h1>
+<div class="figure">
+<img src="../assets/boilerplate_muqtabas-1.png" alt="Display of al-Muqtabas 6(2)" />
+<p class="caption"><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
+</div>
+</div><div id="sugar-on-top-zotero-group" class="slide section level2">
+<h1>3.3 Sugar on top: Zotero group</h1>
+<p><a href="https://www.zotero.org/groups/openarabicpe/items/">www.zotero.org/groups/OpenArabicPE</a></p>
+<ul>
+<li>Metadata for every article (currently <em>al-Muqtabas</em>, <em>al-Ḥaqāʾiq</em>, <em>al-Ḥilāl</em>)</li>
+<li>Public repository</li>
+<li>Machine-actionable metadata available through API</li>
+<li>May generate human-readable citations</li>
+<li>links to the GitHub-hosted webview</li>
+</ul>
+</div>
+<div id="experiences-after-some-18-months" class="titleslide slide section level1"><h1>4. Experiences after some 18 months</h1></div><div id="experiences" class="slide section level2">
+<h1>4.1 experiences</h1>
+<ul>
+<li>Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour</li>
+<li>Hosting, long-term preservation and DOIs are provided free of cost</li>
+<li>Code can be re-purposed:
+<ul>
+<li>the digital edition of <a href="https://www.github.com/OpenArabicPE/digital-haqaiq">ʿAbd al-Qādir al-Iskandarānī’s monthly journal <em>al-Ḥaqāʾiq</em> (1910–12, Damascus)</a> was set up in a single day.</li>
+</ul></li>
+<li>Core (but simple) features <strong>cannot</strong> be automated:
+<ul>
+<li>thousands of page breaks must be manually tagged</li>
+</ul></li>
+</ul>
+</div><div id="on-going-work" class="slide section level2">
+<h1>4.2 on-going work</h1>
+<ul>
+<li>Editorial decisions: modelling and TEI schema design
+<ul>
+<li>mark-up of some text features has not yet been decided</li>
+<li>future plan: one article per file</li>
+</ul></li>
+<li>Editorial work:
+<ul>
+<li>mark-up of page breaks (1-2 h per issue)</li>
+<li>correcting transcriptions</li>
+<li>add non-Arabic words omitted by <em>shamela.ws</em></li>
+<li>add footnotes omitted by <em>shamela.ws</em></li>
+<li>correct publication dates for all issues</li>
+</ul></li>
+<li>Web-display:
+<ul>
+<li>needs some polishing</li>
+<li>search functions beyond the Zotero group and individual issues (project can be searched on GitHub)</li>
+</ul></li>
+<li>Documentation and engagement</li>
+</ul>
+</div><div id="applications" class="slide section level2">
+<h1>4.3 applications</h1>
+<ul>
+<li>validation of existing digitised editions / platforms:
+<ul>
+<li><a href="http://shamela.ws/index.php/book/26523"><em>shamela.ws</em></a> and derivatives
+<ul>
+<li>incomplete transcription: all footnotes and non-Arabic text missing, sometimes lengthy omissions</li>
+<li>faulty transcription: “corrections” and errors</li>
+</ul></li>
+<li><a href="http://archive.sakhrit.co/"><em>sakhrit</em></a>
+<ul>
+<li>incomplete and erroneous metadata on the article level</li>
+<li>percentage of “fake” facsimiles</li>
+</ul></li>
+</ul></li>
+</ul>
+<!-- # 6. Conclusion
+## Summary
+
+- open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
+    + TEI XML files (transcription and links to facsimiles)
+    + plain text files
+    + MODS and BibTeX files for every article
+    + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
+- within a framework (git, GitHub, Zenodo) that allows for / provides
+    + collaborative, open, version-controlled improvements of the edition
+    + re-use of the text 
+    + long-term preservation and DOIs -->
+</div><div id="thank-you" class="slide section level2">
+<h1>Thank you!</h1>
+<ul>
+<li>Links:
+<ul>
+<li>Project URLs: <a href="https://www.github.com/tillgrallert/digital-muqtabas" class="uri">https://www.github.com/tillgrallert/digital-muqtabas</a>, <a href="https://www.github.com/OpenArabicPE" class="uri">https://www.github.com/OpenArabicPE</a></li>
+<li>Project blog: <a href="https://tillgrallert.github.io/digital-muqtabas" class="uri">https://tillgrallert.github.io/digital-muqtabas</a></li>
+<li>Slides: <a href="https://OpenArabicPE.github.io/slides/2017-dhad/index.html">https://OpenArabicPE.github.io/slides/2017-dhad/</a></li>
+<li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+<li>Email: <script type="text/javascript">
+<!--
+h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></li>
+</ul></li>
+<li>Licence: The slides are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ul>
+</div>
+<div class="footnotes slide">
+<hr />
+<ol>
+<li id="fn1"><p>even in the US as attested to by HathiTrust<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>
