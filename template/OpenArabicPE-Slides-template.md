@@ -29,14 +29,14 @@ duration: 20
     + Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections
     + widely-dispersed collections
     + technologies: absence of reliable OCR
-    + technical skills: lack of basic scripting skills
+    <!-- + technical skills: lack of basic scripting skills -->
 
-The consequence is a focus on "high" culture and canonical texts
+Digitisation as promised remedy, but the consequence is a focus on "high" culture and canonical texts
 
 ## 1.3 State of digitisation
 <!-- This should be a demo session, otherwise one needs screenshots -->
 
-1. gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
+1. Text: "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
     + lack of / faulty metadata
     + unknown editing principles
     + unknown quality
@@ -46,12 +46,14 @@ The consequence is a focus on "high" culture and canonical texts
     + lack of metadata
     + limited licences, paywalls
     + no or very bad text layers
+3. Metadata search within and across periodicals
+    + **inexistent**
 
 <!-- the following slides are too detailed for many purposes -->
 
 ## 1.3.1 state of digitisation: text
 
-gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
+"crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
     
 + lack of / faulty metadata
 + unknown editing principles
@@ -63,7 +65,7 @@ gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Sh�
 
 <!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
 
-![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-2.png)
+![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
 
 ## 1.3.2 state of digitisation: images
 
@@ -75,7 +77,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## 1.3.2 state of digitisation: images
 
-![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/eap119-1-4-5-muqtabas.png)
+![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/eap119-1-4-5-muqtabas-annotated.png)
 
 ## 1.3.2 state of digitisation: images
 
@@ -89,7 +91,14 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-ocr-2.png)
 
-# 2. Suggested solution: Unite facsimile and transcription
+## 1.3.3 state of digitisation: bibliographic metadata
+
+- needs: 
+    + reliable bibliographic metadata on the article level
+    + across periodicals
+- no platform serving machine-actionable bibliographic metadata below the item level
+
+# 2. Proposed solution: Unite facsimile and transcription
 ## 2.1 Aims and principles
 
 1. aims
