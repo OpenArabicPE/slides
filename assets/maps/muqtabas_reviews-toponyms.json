@@ -1,114 +1,279 @@
 {
-    "items":[
-            {
-            "label":"Aleppo",
-            "type":"city",
-            "latlng":"36.20124, 37.16117",
-            "periodicals":"1"},
-            {
-            "label":"Baghdad",
-            "type":"city",
-            "latlng":"33.34058, 44.40088",
-            "periodicals":"9"},
-             {
-            "label":"Beirut",
-            "type":"city",
-            "latlng":"33.88894, 35.49442",
-            "periodicals":"12"},
-                {
-            "label":"Brazil",
-            "type":"country",
-            "latlng":"-10, -55",
-            "periodicals":"1"},
-             {
-            "label":"Cairo",
-            "type":"city",
-            "latlng":"30.06263, 31.24967",
-            "periodicals":"32"},
-                {
-            "label":"Damascus",
-            "type":"city",
-            "latlng":"33.5102, 36.29128",
-            "periodicals":"5"},
-                 {
-            "label":"Istanbul",
-            "type":"city",
-            "latlng":"41.01384, 28.94966",
-            "periodicals":"4"},
-                {
-            "label":"Jounieh / Jūnī (Lebanon)",
-            "type":"town",
-            "latlng":"33.9877, 35.638924",
-            "periodicals":"1"},
-                {
-            "label":"Lebanon",
-            "type":"country",
-            "latlng":"33.83333, 35.83333",
-            "periodicals":"1"},
-             {
-            "label":"London",
-            "type":"city",
-            "latlng":"51.50853, -0.12574",
-            "periodicals":"1"},
-                {
-            "label":"New York",
-            "type":"city",
-            "latlng":"40.71427, -74.00597",
-            "periodicals":"2"},
-                 {
-            "label":"Paris",
-            "type":"city",
-            "latlng":"48.85341, 2.3488",
-            "periodicals":"6"},
-               {
-            "label":"Sao Paulo",
-            "type":"city",
-            "latlng":"-23.5475, -46.63611",
-            "periodicals":"1"},
-               {
-            "label":"Tripoli",
-            "type":"city",
-            "latlng":"32.87519, 13.18746",
-            "periodicals":"2"},
-                {
-            "label":"Tunis",
-            "type":"city",
-            "latlng":"36.81897, 10.16579",
-            "periodicals":"1"},
-               
-               {
-                  "label":"Batroun",
-                  "type":"city",
-                  "latlng":"34.25528, 35.65806",
-                  "periodicals":"1"
-               },
-               {
-                  "label":"Homs",
-                  "type":"city",
-                  "latlng":"34.72682, 36.72339",
-                  "periodicals":"1"
-               },
-               {
-                  "label":"Haifa",
-                  "type":"city",
-                  "latlng":"32.81841, 34.9885",
-                  "periodicals":"2"
-               },
-               {
-                  "label":"Leiden",
-                  "type":"city",
-                  "latlng":"52.15833, 4.49306",
-                  "periodicals":"2"
-               },
-               {
-                  "label":"Singapore",
-                  "type":"city",
-                  "latlng":"1.28967, 103.85007",
-                  "periodicals":"1"
-               },
-               {
-                  "label":"Zahle",
-                  "type":"city",
-                  "latlng":"33.84972, 35.90417",
-                  "periodicals":"1"
-               }]}
+	"items": [{
+			"label": "بيروت",
+			"bylines": 38,
+			"geonId": "276781",
+			"latlng": "33.88894,35.49442"
+		},
+		{
+			"label": "مصر",
+			"bylines": 30,
+			"geonId": "357994",
+			"latlng": "27,30"
+		},
+		{
+			"label": "دمشق",
+			"bylines": 20,
+			"geonId": "170654",
+			"latlng": "33.5102,36.29128"
+		},
+		{
+			"label": "القاهرة",
+			"bylines": 14,
+			"geonId": "360630",
+			"latlng": "30.06263,31.24967"
+		},
+		{
+			"label": "بغداد",
+			"bylines": 8,
+			"geonId": "98182",
+			"latlng": "33.34058,44.40088"
+		},
+		{
+			"label": "Paris",
+			"bylines": 4,
+			"geonId": "2988507",
+			"latlng": "48.85341,2.3488"
+		},
+		{
+			"label": "طرابلس الشام",
+			"bylines": 4,
+			"geonId": "266826",
+			"latlng": "34.43667,35.84972"
+		},
+		{
+			"label": "نيويورك",
+			"bylines": 4,
+			"geonId": "5132029",
+			"latlng": "40.82566,-73.69819"
+		},
+		{
+			"label": "باريز",
+			"bylines": 4,
+			"geonId": "141254",
+			"latlng": "27.3054,56.6739"
+		},
+		{
+			"label": "تونس",
+			"bylines": 3,
+			"geonId": "2464470",
+			"latlng": "36.81897,10.16579"
+		},
+		{
+			"label": "بونس أيرس",
+			"bylines": 2,
+			"geonId": "",
+			"latlng": ""
+		},
+		{
+			"label": "سان باولو",
+			"bylines": 2,
+			"geonId": "3448439",
+			"latlng": "-23.5475,-46.63611"
+		},
+		{
+			"label": "حلب",
+			"bylines": 2,
+			"geonId": "170063",
+			"latlng": "36.20124,37.16117"
+		},
+		{
+			"label": "الأستانة",
+			"bylines": 3,
+			"geonId": "745044",
+			"latlng": "41.01384, 28.94966"
+		},
+		{
+			"label": "العراق",
+			"bylines": 2,
+			"geonId": "99237",
+			"latlng": "33,44"
+		},
+		{
+			"label": "النجف",
+			"bylines": 2,
+			"geonId": "98862",
+			"latlng": "31.25,43.83333"
+		},
+		{
+			"label": "حمص",
+			"bylines": 2,
+			"geonId": "169577",
+			"latlng": "34.72682,36.72339"
+		},
+		{
+			"label": "ليدن",
+			"bylines": 2,
+			"geonId": "2751773",
+			"latlng": "52.15833,4.49306"
+		},
+		{
+			"label": "فاس",
+			"bylines": 1,
+			"geonId": "2548885",
+			"latlng": "34.03313,-5.00028"
+		},
+		{
+			"label": "أورنبورغ",
+			"bylines": 1,
+			"geonId": "805227",
+			"latlng": "44.30083, 39.39389"
+		},
+		{
+			"label": "الموسكي",
+			"bylines": 1,
+			"geonId": "9179530",
+			"latlng": "30.0486,31.25634"
+		},
+		{
+			"label": "سوق البلاط",
+			"bylines": 1,
+			"geonId": "",
+			"latlng": ""
+		},
+		{
+			"label": "قزان",
+			"bylines": 1,
+			"geonId": "7363187",
+			"latlng": "16.0651,43.03785"
+		},
+		{
+			"label": "روسيا",
+			"bylines": 1,
+			"geonId": "2017370",
+			"latlng": "60,100"
+		},
+		{
+			"label": "لندن",
+			"bylines": 2,
+			"geonId": "2643743",
+			"latlng": "51.50853,-0.12574"
+		},
+		{
+			"label": "الاسكندرية",
+			"bylines": 1,
+			"geonId": "361059",
+			"latlng": "31,29.75"
+		},
+		{
+			"label": "لبنان",
+			"bylines": 1,
+			"geonId": "272103",
+			"latlng": "33.83333,35.83333"
+		},
+		{
+			"label": "حماة",
+			"bylines": 1,
+			"geonId": "170017",
+			"latlng": "35.13179,36.75783"
+		},
+		{
+			"label": "الجزائر",
+			"bylines": 1,
+			"geonId": "2477461",
+			"latlng": "35.40417,8.12417"
+		},
+		{
+			"label": "بعجه سراي",
+			"bylines": 1,
+			"geonId": "",
+			"latlng": ""
+		},
+		{
+			"label": "باكو",
+			"bylines": 1,
+			"geonId": "587084",
+			"latlng": "40.37767,49.89201"
+		},
+		// {
+		// 	"label": "لندرا",
+		// 	"bylines": 1,
+		// 	"geonId": "",
+		// 	"latlng": ""
+		// },
+		{
+			"label": "جنيف",
+			"bylines": 1,
+			"geonId": "2660646",
+			"latlng": "46.20222,6.14569"
+		},
+		{
+			"label": "فينا",
+			"bylines": 1,
+			"geonId": "7730550",
+			"latlng": "-18.8064,16.9272"
+		},
+		{
+			"label": "بلرم صقلية",
+			"bylines": 1,
+			"geonId": "",
+			"latlng": ""
+		},
+		{
+			"label": "باريس",
+			"bylines": 1,
+			"geonId": "2988507",
+			"latlng": "48.85341,2.3488"
+		},
+		{
+			"label": "جونية",
+			"bylines": 1,
+			"geonId": "8041193",
+			"latlng": "33.41627,36.15134"
+		},
+		{
+			"label": "حيفا",
+			"bylines": 1,
+			"geonId": "294801",
+			"latlng": "32.81841,34.9885"
+		},
+		{
+			"label": "البترون",
+			"bylines": 1,
+			"geonId": "280328",
+			"latlng": "34.25528,35.65806"
+		},
+		{
+			"label": "سنقافورا",
+			"bylines": 1,
+			"geonId": "1880252",
+			"latlng": "1.28967, 103.85007"
+		},
+		{
+			"label": "يافا",
+			"bylines": 1,
+			"geonId": "293253",
+			"latlng": "32.05043,34.75224"
+		},
+		{
+			"label": "صيدا",
+			"bylines": 1,
+			"geonId": "268064",
+			"latlng": "33.55993,35.37564"
+		},
+		{
+			"label": "الجديدة",
+			"bylines": 1,
+			"geonId": "99071",
+			"latlng": "36.33271,43.10555"
+		},
+		{
+			"label": "زحلة",
+			"bylines": 1,
+			"geonId": "266045",
+			"latlng": "33.84675,35.90203"
+		},
+		{
+			"label": "الموصل",
+			"bylines": 1,
+			"geonId": "99071",
+			"latlng": "36.33271,43.10555"
+		},
+		// {
+		// 	"label": "دار السلطنة",
+		// 	"bylines": 1,
+		// 	"geonId": "",
+		// 	"latlng": ""
+		// }
+	]
+}
