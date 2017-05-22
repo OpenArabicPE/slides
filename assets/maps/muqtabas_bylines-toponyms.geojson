@@ -278,50 +278,5 @@
     "geonId": 5072006, "publications": 2
   }
 }
-// {"type": "Feature",
-//   "geometry": {
-//     "type": "Point",
-//     "coordinates": [,]},
-//   "properties": {
-//     "name": "القسطنطينية",
-//     "geonId": , "publications": 2
-//   }
-// },
 
-// {"type": "Feature",
-//   "geometry": {
-//     "type": "Point",
-//     "coordinates": [,]},
-//   "properties": {
-//     "name": "ما بين النهرين",
-//     "geonId": , "publications": 1
-//   }
-// },
-// {"type": "Feature",
-//   "geometry": {
-//     "type": "Point",
-//     "coordinates": [,]},
-//   "properties": {
-//     "name": "الديار المصرية",
-//     "geonId": , "publications": 1
-//   }
-// },
-// {"type": "Feature",
-//   "geometry": {
-//     "type": "Point",
-//     "coordinates": [,]},
-//   "properties": {
-//     "name": "أوريزون",
-//     "geonId": , "publications": 1
-//   }
-// },
-// {"type": "Feature",
-//   "geometry": {
-//     "type": "Point",
-//     "coordinates": [,]},
-//   "properties": {
-//     "name": "نزيل دمشق",
-//     "geonId": , "publications": 1
-//   }
-//}
 ]}
