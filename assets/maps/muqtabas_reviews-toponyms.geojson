@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+  	{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [33.88894,35.49442]
+  },
+  "properties": {
+    "name": "بيروت",
+    "geonId": "276781"
+  }
+}]
+}
