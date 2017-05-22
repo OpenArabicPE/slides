@@ -1,15 +1,620 @@
 {
   "type": "FeatureCollection",
   "features": [
-  	{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [33.88894,35.49442]
-  },
-  "properties": {
-    "name": "بيروت",
-    "geonId": "276781"
-  }
-}]
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.49442,
+          33.88894
+        ]
+      },
+      "properties": {
+        "name": "بيروت",
+        "geonId": 276781,
+        "publications": 38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30,
+          27
+        ]
+      },
+      "properties": {
+        "name": "مصر",
+        "geonId": 357994,
+        "publications": 30
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.29128,
+          33.5102
+        ]
+      },
+      "properties": {
+        "name": "دمشق",
+        "geonId": 170654,
+        "publications": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.24967,
+          30.06263
+        ]
+      },
+      "properties": {
+        "name": "القاهرة",
+        "geonId": 360630,
+        "publications": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.40088,
+          33.34058
+        ]
+      },
+      "properties": {
+        "name": "بغداد",
+        "geonId": 98182,
+        "publications": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3488,
+          48.85341
+        ]
+      },
+      "properties": {
+        "name": "Paris",
+        "geonId": 2988507,
+        "publications": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.84972,
+          34.43667
+        ]
+      },
+      "properties": {
+        "name": "طرابلس الشام",
+        "geonId": 266826,
+        "publications": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.69819,
+          40.82566
+        ]
+      },
+      "properties": {
+        "name": "نيويورك",
+        "geonId": 5132029,
+        "publications": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.6739,
+          27.3054
+        ]
+      },
+      "properties": {
+        "name": "باريز",
+        "geonId": 141254,
+        "publications": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.16579,
+          36.81897
+        ]
+      },
+      "properties": {
+        "name": "تونس",
+        "geonId": 2464470,
+        "publications": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.37723,
+          -34.61315
+        ]
+      },
+      "properties": {
+        "name": "بونس أيرس",
+        "geonId": 3435910,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.63611,
+          -23.5475
+        ]
+      },
+      "properties": {
+        "name": "سان باولو",
+        "geonId": 3448439,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.16117,
+          36.20124
+        ]
+      },
+      "properties": {
+        "name": "حلب",
+        "geonId": 170063,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.94966,
+          41.01384
+        ]
+      },
+      "properties": {
+        "name": "الأستانة",
+        "geonId": 745044,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44,
+          33
+        ]
+      },
+      "properties": {
+        "name": "العراق",
+        "geonId": 99237,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.83333,
+          31.25
+        ]
+      },
+      "properties": {
+        "name": "النجف",
+        "geonId": 98862,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.72339,
+          34.72682
+        ]
+      },
+      "properties": {
+        "name": "حمص",
+        "geonId": 169577,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.49306,
+          52.15833
+        ]
+      },
+      "properties": {
+        "name": "ليدن",
+        "geonId": 2751773,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.00028,
+          34.03313
+        ]
+      },
+      "properties": {
+        "name": "فاس",
+        "geonId": 2548885,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.39389,
+          44.30083
+        ]
+      },
+      "properties": {
+        "name": "أورنبورغ",
+        "geonId": 805227,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.25634,
+          30.0486
+        ]
+      },
+      "properties": {
+        "name": "الموسكي",
+        "geonId": 9179530,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.03785,
+          16.0651
+        ]
+      },
+      "properties": {
+        "name": "قزان",
+        "geonId": 7363187,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100,
+          60
+        ]
+      },
+      "properties": {
+        "name": "روسيا",
+        "geonId": 2017370,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.12574,
+          51.50853
+        ]
+      },
+      "properties": {
+        "name": "لندن",
+        "geonId": 2643743,
+        "publications": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.75,
+          31
+        ]
+      },
+      "properties": {
+        "name": "الاسكندرية",
+        "geonId": 361059,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.83333,
+          33.83333
+        ]
+      },
+      "properties": {
+        "name": "لبنان",
+        "geonId": 272103,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.75783,
+          35.13179
+        ]
+      },
+      "properties": {
+        "name": "حماة",
+        "geonId": 170017,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.12417,
+          35.40417
+        ]
+      },
+      "properties": {
+        "name": "الجزائر",
+        "geonId": 2477461,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.89201,
+          40.37767
+        ]
+      },
+      "properties": {
+        "name": "باكو",
+        "geonId": 587084,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.14569,
+          46.20222
+        ]
+      },
+      "properties": {
+        "name": "جنيف",
+        "geonId": 2660646,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.9272,
+          -18.8064
+        ]
+      },
+      "properties": {
+        "name": "فينا",
+        "geonId": 7730550,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3488,
+          48.85341
+        ]
+      },
+      "properties": {
+        "name": "باريس",
+        "geonId": 2988507,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.15134,
+          33.41627
+        ]
+      },
+      "properties": {
+        "name": "جونية",
+        "geonId": 8041193,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9885,
+          32.81841
+        ]
+      },
+      "properties": {
+        "name": "حيفا",
+        "geonId": 294801,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.65806,
+          34.25528
+        ]
+      },
+      "properties": {
+        "name": "البترون",
+        "geonId": 280328,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.85007,
+          1.28967
+        ]
+      },
+      "properties": {
+        "name": "سنقافورا",
+        "geonId": 1880252,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.75224,
+          32.05043
+        ]
+      },
+      "properties": {
+        "name": "يافا",
+        "geonId": 293253,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37564,
+          33.55993
+        ]
+      },
+      "properties": {
+        "name": "صيدا",
+        "geonId": 268064,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.10555,
+          36.33271
+        ]
+      },
+      "properties": {
+        "name": "الجديدة",
+        "geonId": 99071,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.90203,
+          33.84675
+        ]
+      },
+      "properties": {
+        "name": "زحلة",
+        "geonId": 266045,
+        "publications": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.10555,
+          36.33271
+        ]
+      },
+      "properties": {
+        "name": "الموصل",
+        "geonId": 99071,
+        "publications": 1
+      }
+    }
+  ]
 }
