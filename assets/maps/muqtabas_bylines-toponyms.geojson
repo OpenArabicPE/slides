@@ -1,282 +1,373 @@
 {
-  "type": "FeatureCollection",
-  "features": [
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [44.40088,33.34058]},
-  "properties": {
-    "name": "بغداد",
-    "geonId": 98182, "publications": 47
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [36.29128,33.5102]},
-  "properties": {
-    "name": "دمشق",
-    "geonId": 170654, "publications": 40
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [35.49442,33.88894]},
-  "properties": {
-    "name": "بيروت",
-    "geonId": 276781, "publications": 30
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [31.24967,30.06263]},
-  "properties": {
-    "name": "القاهرة",
-    "geonId": 360630, "publications": 21
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [35.90203,33.84675]},
-  "properties": {
-    "name": "زحلة",
-    "geonId": 266045, "publications": 12
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [35.5,33.25]},
-  "properties": {
-    "name": "النبطية",
-    "geonId": 444191, "publications": 9
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [43.83333,31.25]},
-  "properties": {
-    "name": "النجف",
-    "geonId": 98862, "publications": 8
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [28.94966,
-          41.01384]},
-  "properties": {
-    "name": "الأستانة",
-    "geonId": , "publications": 5
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [34.9885,32.81841]},
-  "properties": {
-    "name": "حيفا",
-    "geonId": 294801, "publications": 5
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [31.00192,30.78847]},
-  "properties": {
-    "name": "طنطا",
-    "geonId": 347497, "publications": 3
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-95.94043,41.25626]},
-  "properties": {
-    "name": "اوماها",
-    "geonId": 5074472, "publications": 3
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [35.83333,33.83333]},
-  "properties": {
-    "name": "لبنان",
-    "geonId": 272103, "publications": 3
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [35.84972,34.43667]},
-  "properties": {
-    "name": "طرابلس الشام",
-    "geonId": 266826, "publications": 3
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [37.16117,36.20124]},
-  "properties": {
-    "name": "حلب",
-    "geonId": 170063, "publications": 3
-  }
-},
+	"type": "FeatureCollection",
+	"features": [{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [44.40088, 33.34058]
+			},
+			"properties": {
+				"name": "بغداد",
+				"geonId": 98182,
+				"publications": 47
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [36.29128, 33.5102]
+			},
+			"properties": {
+				"name": "دمشق",
+				"geonId": 170654,
+				"publications": 40
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.49442, 33.88894]
+			},
+			"properties": {
+				"name": "بيروت",
+				"geonId": 276781,
+				"publications": 30
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [31.24967, 30.06263]
+			},
+			"properties": {
+				"name": "القاهرة",
+				"geonId": 360630,
+				"publications": 21
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.90203, 33.84675]
+			},
+			"properties": {
+				"name": "زحلة",
+				"geonId": 266045,
+				"publications": 12
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.5, 33.25]
+			},
+			"properties": {
+				"name": "النبطية",
+				"geonId": 444191,
+				"publications": 9
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [43.83333, 31.25]
+			},
+			"properties": {
+				"name": "النجف",
+				"geonId": 98862,
+				"publications": 8
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [28.94966,
+					41.01384
+				]
+			},
+			"properties": {
+				"name": "الأستانة",
+				"geonId": 745044,
+				"publications": 5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [34.9885, 32.81841]
+			},
+			"properties": {
+				"name": "حيفا",
+				"geonId": 294801,
+				"publications": 5
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [31.00192, 30.78847]
+			},
+			"properties": {
+				"name": "طنطا",
+				"geonId": 347497,
+				"publications": 3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-95.94043, 41.25626]
+			},
+			"properties": {
+				"name": "اوماها",
+				"geonId": 5074472,
+				"publications": 3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.83333, 33.83333]
+			},
+			"properties": {
+				"name": "لبنان",
+				"geonId": 272103,
+				"publications": 3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.84972, 34.43667]
+			},
+			"properties": {
+				"name": "طرابلس الشام",
+				"geonId": 266826,
+				"publications": 3
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [37.16117, 36.20124]
+			},
+			"properties": {
+				"name": "حلب",
+				"geonId": 170063,
+				"publications": 3
+			}
+		},
 
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-95.94043,41.25626]},
-  "properties": {
-    "name": "أوماها",
-    "geonId": 5074472, "publications": 2
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [34.75224,32.05043]},
-  "properties": {
-    "name": "يافا",
-    "geonId": 293253, "publications": 2
-  }
-},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-95.94043, 41.25626]
+			},
+			"properties": {
+				"name": "أوماها",
+				"geonId": 5074472,
+				"publications": 2
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [34.75224, 32.05043]
+			},
+			"properties": {
+				"name": "يافا",
+				"geonId": 293253,
+				"publications": 2
+			}
+		},
 
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [10.16579,36.81897]},
-  "properties": {
-    "name": "تونس",
-    "geonId": 2464470, "publications": 2
-  }
-},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [10.16579, 36.81897]
+			},
+			"properties": {
+				"name": "تونس",
+				"geonId": 2464470,
+				"publications": 2
+			}
+		},
 
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [30.46823,31.03408]},
-  "properties": {
-    "name": "دمنهور",
-    "geonId": 358448, "publications": 1
-  }
-},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [30.46823, 31.03408]
+			},
+			"properties": {
+				"name": "دمنهور",
+				"geonId": 358448,
+				"publications": 1
+			}
+		},
 
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [42.95452,14.79781]},
-  "properties": {
-    "name": "الحديدة",
-    "geonId": 79415, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [38.47967,36.85119]},
-  "properties": {
-    "name": "سروج",
-    "geonId": 9233, "publications": 1
-  }
-},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [42.95452, 14.79781]
+			},
+			"properties": {
+				"name": "الحديدة",
+				"geonId": 79415,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [38.47967, 36.85119]
+			},
+			"properties": {
+				"name": "سروج",
+				"geonId": 9233,
+				"publications": 1
+			}
+		},
 
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [35.75279,32.33326]},
-  "properties": {
-    "name": "عجلون",
-    "geonId": 250799, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [30,27]},
-  "properties": {
-    "name": "مصر",
-    "geonId": 357994, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [35.21633,31.76904]},
-  "properties": {
-    "name": "القدس",
-    "geonId": 281184, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [36.56886,33.28961]},
-  "properties": {
-    "name": "بين النهرين",
-    "geonId": 11260370, "publications": 1
-  }
-},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.75279, 32.33326]
+			},
+			"properties": {
+				"name": "عجلون",
+				"geonId": 250799,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [30, 27]
+			},
+			"properties": {
+				"name": "مصر",
+				"geonId": 357994,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.21633, 31.76904]
+			},
+			"properties": {
+				"name": "القدس",
+				"geonId": 281184,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [36.56886, 33.28961]
+			},
+			"properties": {
+				"name": "بين النهرين",
+				"geonId": 11260370,
+				"publications": 1
+			}
+		},
 
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-73.69819,40.82566]},
-  "properties": {
-    "name": "نيويورك",
-    "geonId": 5132029, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-105.64453,54.77535]},
-  "properties": {
-    "name": "أمريكا",
-    "geonId": 7729890, "publications": 4
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [31.30084,29.84144]},
-  "properties": {
-    "name": "حلوان",
-    "geonId": 355795, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [44,33]},
-  "properties": {
-    "name": "العراق",
-    "geonId": 99237, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [22.96397,40.64565]},
-  "properties": {
-    "name": "سلانيك",
-    "geonId": 6779080, "publications": 1
-  }
-},
-{"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-96.66696,40.8]},
-  "properties": {
-    "name": "لنكلن",
-    "geonId": 5072006, "publications": 2
-  }
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-73.69819, 40.82566]
+			},
+			"properties": {
+				"name": "نيويورك",
+				"geonId": 5132029,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-105.64453, 54.77535]
+			},
+			"properties": {
+				"name": "أمريكا",
+				"geonId": 7729890,
+				"publications": 4
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [31.30084, 29.84144]
+			},
+			"properties": {
+				"name": "حلوان",
+				"geonId": 355795,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [44, 33]
+			},
+			"properties": {
+				"name": "العراق",
+				"geonId": 99237,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [22.96397, 40.64565]
+			},
+			"properties": {
+				"name": "سلانيك",
+				"geonId": 6779080,
+				"publications": 1
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [-96.66696, 40.8]
+			},
+			"properties": {
+				"name": "لنكلن",
+				"geonId": 5072006,
+				"publications": 2
+			}
+		}
+
+	]
 }
-
-]}
