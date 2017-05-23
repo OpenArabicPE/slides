@@ -1,199 +1,199 @@
 {
 	"items": [{
 			"label": "بغداد",
-			"bylines": 47,
+			"articles": 47,
 			"geonId": "98182",
 			"latlng": "33.34058,44.40088"
 		},
 		{
 			"label": "دمشق",
-			"bylines": 40,
+			"articles": 40,
 			"geonId": "170654",
 			"latlng": "33.5102,36.29128"
 		},
 		{
 			"label": "بيروت",
-			"bylines": 30,
+			"articles": 30,
 			"geonId": "276781",
 			"latlng": "33.88894,35.49442"
 		},
 		{
 			"label": "القاهرة",
-			"bylines": 21,
+			"articles": 21,
 			"geonId": "360630",
 			"latlng": "30.06263,31.24967"
 		},
 		{
 			"label": "زحلة",
-			"bylines": 12,
+			"articles": 12,
 			"geonId": "266045",
 			"latlng": "33.84675,35.90203"
 		},
 		{
 			"label": "النبطية",
-			"bylines": 9,
+			"articles": 9,
 			"geonId": "444191",
 			"latlng": "33.25,35.5"
 		},
 		{
 			"label": "النجف",
-			"bylines": 8,
+			"articles": 8,
 			"geonId": "98862",
 			"latlng": "31.25,43.83333"
 		},
 		{
 			"label": "الأستانة",
-			"bylines": 5,
+			"articles": 5,
 			"geonId": "745044",
 			"latlng": "41.01384, 28.94966"
 		},
 		{
 			"label": "حيفا",
-			"bylines": 5,
+			"articles": 5,
 			"geonId": "294801",
 			"latlng": "32.81841,34.9885"
 		},
 		{
 			"label": "طنطا",
-			"bylines": 3,
+			"articles": 3,
 			"geonId": "347497",
 			"latlng": "30.78847,31.00192"
 		},
 		{
 			"label": "اوماها",
-			"bylines": 5,
+			"articles": 5,
 			"geonId": "5074472",
 			"latlng": "41.25626,-95.94043"
 		},
 		{
 			"label": "لبنان",
-			"bylines": 3,
+			"articles": 3,
 			"geonId": "272103",
 			"latlng": "33.83333,35.83333"
 		},
 		{
 			"label": "طرابلس الشام",
-			"bylines": 3,
+			"articles": 3,
 			"geonId": "266826",
 			"latlng": "34.43667,35.84972"
 		},
 		{
 			"label": "حلب",
-			"bylines": 3,
+			"articles": 3,
 			"geonId": "170063",
 			"latlng": "36.20124,37.16117"
 		},
 		{
 			"label": "القسطنطينية",
-			"bylines": 2,
+			"articles": 2,
 			"geonId": "",
 			"latlng": ""
 		},
 		{
 			"label": "يافا",
-			"bylines": 2,
+			"articles": 2,
 			"geonId": "293253",
 			"latlng": "32.05043,34.75224"
 		},
 		{
 			"label": "تونس",
-			"bylines": 2,
+			"articles": 2,
 			"geonId": "2464470",
 			"latlng": "36.81897,10.16579"
 		},
 		{
 			"label": "لنكلن",
-			"bylines": 2,
+			"articles": 2,
 			"geonId": "5072006",
 			"latlng": "40.8,-96.66696"
 		},
 		{
 			"label": "دمنهور",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "358448",
 			"latlng": "31.03408,30.46823"
 		},
 		{
 			"label": "الحديدة",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "79415",
 			"latlng": "14.79781,42.95452"
 		},
 		{
 			"label": "سروج",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "9233",
 			"latlng": "36.85119,38.47967"
 		},
 		{
 			"label": "سلانيك",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "6779080",
 			"latlng": "40.64565, 22.96397"
 		},
 		{
 			"label": "عجلون",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "250799",
 			"latlng": "32.33326,35.75279"
 		},
 		{
 			"label": "مصر",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "357994",
 			"latlng": "27,30"
 		},
 		{
 			"label": "القدس",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "281184",
 			"latlng": "31.76904,35.21633"
 		},
 		{
 			"label": "بين النهرين",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "11260370",
 			"latlng": "33.28961,36.56886"
 		},
 		{
 			"label": "نيويورك",
-			"bylines": 2,
+			"articles": 2,
 			"geonId": "5132029",
 			"latlng": "40.82566,-73.69819"
 		},
 		{
 			"label": "أمريكا",
-			"bylines": 4,
+			"articles": 4,
 			"geonId": "7729890",
 			"latlng": "54.77535,-105.64453"
 		},
 		{
 			"label": "حلوان",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "355795",
 			"latlng": "29.84144,31.30084"
 		},
 		{
 			"label": "الديار المصرية",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "",
 			"latlng": ""
 		},
 		{
 			"label": "أوريزون",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "",
 			"latlng": ""
 		},
 		{
 			"label": "العراق",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "99237",
 			"latlng": "33,44"
 		},
 		{
 			"label": "نزيل دمشق",
-			"bylines": 1,
+			"articles": 1,
 			"geonId": "",
 			"latlng": ""
 		}

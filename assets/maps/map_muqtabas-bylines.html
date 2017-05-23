@@ -7,7 +7,7 @@
 
 <!-- link to data source -->
 <link href="muqtabas_bylines-toponyms.json" type="application/json" rel="exhibit-data" />
-<!-- link to simile widget -->
+<!-- link to simile exhibit -->
 <link rel="exhibit-extension" type="text/javscript" href="http://api.simile-widgets.org/exhibit/STABLE/extensions/map/map-extension.js" />
 
 <script src="https://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js"></script>
@@ -44,9 +44,9 @@
       ex:viewClass="Map"
       ex:label="label"
       ex:latlng=".latlng"
-      ex:sizeKey=".bylines"
+      ex:sizeKey=".articles"
       ex:sizeCoder="events-size"
-      ex:colorKey=".bylines"
+      ex:colorKey=".articles"
       ex:colorCoder="events-color"
       ex:shape="circle"
       ex:center="33.509166, 36.310154"
@@ -57,7 +57,7 @@
       <div class="map-lens" ex:role="lens" style="display: none;">
         <div><b ex:content=".label"></b></div>
         <!-- <div><a ex:href=".linkLoc"><span ex:content=".label"></span></a></div> -->
-        <div>No of articles: <span ex:content=".bylines"></span>.</div>
+        <div>No of articles: <span ex:content=".articles"></span>.</div>
         <div></div>
     </div>
 </div>
