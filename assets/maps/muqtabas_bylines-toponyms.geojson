@@ -9,7 +9,7 @@
 			"properties": {
 				"name": "بغداد",
 				"geonId": 98182,
-				"publications": 47
+				"articles": 47
 			}
 		},
 		{
@@ -21,7 +21,7 @@
 			"properties": {
 				"name": "دمشق",
 				"geonId": 170654,
-				"publications": 40
+				"articles": 40
 			}
 		},
 		{
@@ -33,7 +33,7 @@
 			"properties": {
 				"name": "بيروت",
 				"geonId": 276781,
-				"publications": 30
+				"articles": 30
 			}
 		},
 		{
@@ -45,7 +45,7 @@
 			"properties": {
 				"name": "القاهرة",
 				"geonId": 360630,
-				"publications": 21
+				"articles": 21
 			}
 		},
 		{
@@ -57,7 +57,7 @@
 			"properties": {
 				"name": "زحلة",
 				"geonId": 266045,
-				"publications": 12
+				"articles": 12
 			}
 		},
 		{
@@ -69,7 +69,7 @@
 			"properties": {
 				"name": "النبطية",
 				"geonId": 444191,
-				"publications": 9
+				"articles": 9
 			}
 		},
 		{
@@ -81,7 +81,7 @@
 			"properties": {
 				"name": "النجف",
 				"geonId": 98862,
-				"publications": 8
+				"articles": 8
 			}
 		},
 		{
@@ -95,7 +95,7 @@
 			"properties": {
 				"name": "الأستانة",
 				"geonId": 745044,
-				"publications": 5
+				"articles": 5
 			}
 		},
 		{
@@ -107,7 +107,7 @@
 			"properties": {
 				"name": "حيفا",
 				"geonId": 294801,
-				"publications": 5
+				"articles": 5
 			}
 		},
 		{
@@ -119,7 +119,7 @@
 			"properties": {
 				"name": "طنطا",
 				"geonId": 347497,
-				"publications": 3
+				"articles": 3
 			}
 		},
 		{
@@ -131,7 +131,7 @@
 			"properties": {
 				"name": "اوماها",
 				"geonId": 5074472,
-				"publications": 3
+				"articles": 3
 			}
 		},
 		{
@@ -143,7 +143,7 @@
 			"properties": {
 				"name": "لبنان",
 				"geonId": 272103,
-				"publications": 3
+				"articles": 3
 			}
 		},
 		{
@@ -155,7 +155,7 @@
 			"properties": {
 				"name": "طرابلس الشام",
 				"geonId": 266826,
-				"publications": 3
+				"articles": 3
 			}
 		},
 		{
@@ -167,7 +167,7 @@
 			"properties": {
 				"name": "حلب",
 				"geonId": 170063,
-				"publications": 3
+				"articles": 3
 			}
 		},
 
@@ -180,7 +180,7 @@
 			"properties": {
 				"name": "أوماها",
 				"geonId": 5074472,
-				"publications": 2
+				"articles": 2
 			}
 		},
 		{
@@ -192,7 +192,7 @@
 			"properties": {
 				"name": "يافا",
 				"geonId": 293253,
-				"publications": 2
+				"articles": 2
 			}
 		},
 
@@ -205,7 +205,7 @@
 			"properties": {
 				"name": "تونس",
 				"geonId": 2464470,
-				"publications": 2
+				"articles": 2
 			}
 		},
 
@@ -218,7 +218,7 @@
 			"properties": {
 				"name": "دمنهور",
 				"geonId": 358448,
-				"publications": 1
+				"articles": 1
 			}
 		},
 
@@ -231,7 +231,7 @@
 			"properties": {
 				"name": "الحديدة",
 				"geonId": 79415,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -243,7 +243,7 @@
 			"properties": {
 				"name": "سروج",
 				"geonId": 9233,
-				"publications": 1
+				"articles": 1
 			}
 		},
 
@@ -256,7 +256,7 @@
 			"properties": {
 				"name": "عجلون",
 				"geonId": 250799,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -268,7 +268,7 @@
 			"properties": {
 				"name": "مصر",
 				"geonId": 357994,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -280,7 +280,7 @@
 			"properties": {
 				"name": "القدس",
 				"geonId": 281184,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -292,7 +292,7 @@
 			"properties": {
 				"name": "بين النهرين",
 				"geonId": 11260370,
-				"publications": 1
+				"articles": 1
 			}
 		},
 
@@ -305,7 +305,7 @@
 			"properties": {
 				"name": "نيويورك",
 				"geonId": 5132029,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -317,7 +317,7 @@
 			"properties": {
 				"name": "أمريكا",
 				"geonId": 7729890,
-				"publications": 4
+				"articles": 4
 			}
 		},
 		{
@@ -329,7 +329,7 @@
 			"properties": {
 				"name": "حلوان",
 				"geonId": 355795,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -341,7 +341,7 @@
 			"properties": {
 				"name": "العراق",
 				"geonId": 99237,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -353,7 +353,7 @@
 			"properties": {
 				"name": "سلانيك",
 				"geonId": 6779080,
-				"publications": 1
+				"articles": 1
 			}
 		},
 		{
@@ -365,7 +365,7 @@
 			"properties": {
 				"name": "لنكلن",
 				"geonId": 5072006,
-				"publications": 2
+				"articles": 2
 			}
 		}
 
