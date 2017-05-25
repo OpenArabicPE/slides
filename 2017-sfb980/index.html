@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Till Grallert" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+  }
+  /* provide a readible font-size */
+  .sourceCode * {
+      font-size: 16px;
+  }
+  /* xml element names */
+  .xml > code > span.kw {
+  	color: #0F0F9C;
+  	font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code > span.ot {
+  	color:#FF8041;
+  }
+  /* xml attribute values */
+  .xml > code > span.st {
+  	color:#993300;
+  }
+  /* xml comments */
+  .xml > code > span.co {
+  	color:#167116;
+  	font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+  	color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  div.cWidth2 {
+      width:50%;
+      position: relative;
+      float: left;
+  }
+  
+  div.cWidth3 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+  	color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../js/slidy.js"></script>
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+  <meta name="duration" content="30" />
+</head>
+<body>
+<div id="introduction" class="titleslide slide section level1"><h1>1. Introduction</h1></div><div id="research-questions" class="slide section level2">
+<h2>research questions</h2>
+<ul>
+<li>What did they read in late-Ottoman Damascus?</li>
+<li>Who published in late-Ottoman Damascus?</li>
+</ul>
+</div><div id="sources" class="slide section level2">
+<h2>sources</h2>
+<ul>
+<li>Muḥammad Kurd ʿAlī’s monthly journal <em>al-Muqtabas</em></li>
+<li>ʿAbd al-Qādir al-Iskandarānī’s monthly journal <em>al-Ḥaqāʾiq</em></li>
+</ul>
+</div><div id="possible-methodologies" class="slide section level2">
+<h2>possible methodologies</h2>
+<ol style="list-style-type: decimal">
+<li>manual compilation of works, authors, places
+<ul>
+<li>read and excerpt some 8000 pages</li>
+</ul></li>
+<li>machine-guided analysis</li>
+</ol>
+</div>
+<div id="preliminary-results" class="titleslide slide section level1"><h1>2. Preliminary results</h1></div><div id="publication-places-of-reviewed-referenced-works" class="slide section level2">
+<h2>publication places of reviewed / referenced works</h2>
+<script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_reviews-toponyms.geojson?height=300&width=800"></script>
+</div>
+<div id="who-published-in-late-ottoman-damascus" class="titleslide slide section level1"><h1>Who published in late-Ottoman Damascus?</h1></div><div id="locations-in-bylines" class="slide section level2">
+<h2>locations in bylines</h2>
+<script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_bylines-toponyms.geojson?height=300&width=800"></script>
+</div><div id="authors-in-bylines" class="slide section level2">
+<h2>authors in bylines</h2>
+<iframe src="../assets/muqtabas_word-cloud.html" style="width: 80%; height: 80%;">
+</iframe>
+</div>
+<div id="how-to-get-there" class="titleslide slide section level1"><h1>How to get there?</h1></div><div id="workflow" class="slide section level2">
+<h2>Workflow</h2>
+<ol style="list-style-type: decimal">
+<li>Digital edition</li>
+<li>Clean your data</li>
+<li>Analyse yuor data</li>
+</ol>
+</div><div id="workflow-1-digital-edition" class="slide section level2">
+<h2>Workflow 1: digital edition</h2>
+<ol style="list-style-type: decimal">
+<li>Get a digital text</li>
+<li>Model the digital text in TEI: -&gt; XML files</li>
+<li>Mark-up and disambiguation of entities (persons, places, works, dates)</li>
+</ol>
+</div><div id="problems-1-digital-edition" class="slide section level2">
+<h2>Problems 1: digital edition</h2>
+<ol style="list-style-type: decimal">
+<li>conceptual (quasi) standards such as the TEI
+<ul>
+<li><!-- available mark-up schemes despite being language agnostic are -->
+rooted in the Western episteme</li>
+</ul></li>
+<li>technical standards and tools such XML, XPath etc.
+<ul>
+<li>formally language/script agnostic but rooted in the Western episteme</li>
+<li>based on Latin scripts</li>
+</ul></li>
+</ol>
+</div><div id="workflow-2-cleaning-the-data" class="slide section level2">
+<h2>Workflow 2: cleaning the data</h2>
+<ul>
+<li>normalization:
+<ul>
+<li>unify spelling</li>
+<li>Link to authority files</li>
+<li>machine-actionable dates</li>
+</ul></li>
+<li>Compute Gregorian dates for all calendars</li>
+<li>Geocode toponyms</li>
+</ul>
+</div><div id="workflow-3-analysis" class="slide section level2">
+<h2>Workflow 3: analysis</h2>
+<ol style="list-style-type: decimal">
+<li>Extract bibliographic metadata on the basis of the TEI model as MODS: -&gt; XML files</li>
+<li>Analyse bibliographic data for patterns</li>
+<li>Visualise / map patterns</li>
+</ol>
+</div>
+</body>
+</html>
