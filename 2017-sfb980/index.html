@@ -362,7 +362,7 @@ rooted in the Western episteme</li>
 </ol>
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;w&gt;</span>غزته سي<span class="kw">&lt;/w&gt;</span></code></pre></div>
 </div><div id="persname-works-well-for-western-names-but-arabic-or-ottoman" class="slide section level2">
-<h2>3.2.2<code>&lt;persName&gt;</code> works well for Western names, but Arabic or Ottoman?</h2>
+<h2>3.2.2 <code>&lt;persName&gt;</code> works well for Western names, but Arabic or Ottoman?</h2>
 <p>The canonical scheme of <code>&lt;surname&gt;</code> and <code>&lt;forename&gt;</code> is insufficient to markup the components of personal names in pre-modern and/or non-Western contexts: How should we mark up the following names?</p>
 <ul>
 <li>حضرة صاحب الدولة المشير عبد الله باشا</li>
@@ -375,22 +375,30 @@ rooted in the Western episteme</li>
 <h2>3.2.2 Ḥāfiẓ Ibrāhīm</h2>
 <p>Consider this:</p>
 <ul>
-<li>Ḥāfiẓ Ibrāhīm, Ḥāfiẓ Efendi Ibrāhīm, Ḥāfiẓ Ibrāhīm Bey, and Muḥammad Ḥāfiẓ Bey Ibrāhīm all refer to the same person</li>
-<li><img src="../assets/disambiguation_names-tei-viaf_32410755-1.png" alt="al-Muqtabas 1(1)" /></li>
-<li><img src="../assets/disambiguation_names-tei-viaf_32410755-2.png" title="fig:" alt="al-Muqtabas 2(1)" /></li>
+<li>Ḥāfiẓ Ibrāhīm</li>
+<li>Ḥāfiẓ Efendi Ibrāhīm</li>
+<li>Ḥāfiẓ Ibrāhīm Bey</li>
+<li>Muḥammad Ḥāfiẓ Bey Ibrāhīm</li>
 </ul>
+<p><img src="../assets/disambiguation_names-tei-viaf_32410755-1.png" alt="al-Muqtabas 1(1)" /> <img src="../assets/disambiguation_names-tei-viaf_32410755-2.png" alt="al-Muqtabas 2(1)" /></p>
+<p>all refer to the same person</p>
 </div><div id="ḥāfiẓ-ibrāhīm-1" class="slide section level2">
 <h2>3.2.2 Ḥāfiẓ Ibrāhīm</h2>
 <ul>
-<li>non-Western name components: Ḥāfiẓ Efendi Ibrāhīm contains an Ottoman title (<em>efendi</em>)<br />
-</li>
-<li><img src="../assets/disambiguation_names-viaf_32410755-none.png" alt="VIAF: no hits" /></li>
+<li><p>non-Western name components: Ḥāfiẓ Efendi Ibrāhīm contains an Ottoman title (<em>efendi</em>)</p>
+<div class="figure">
+<img src="../assets/disambiguation_names-viaf_32410755-none.png" alt="VIAF: no hits" />
+<p class="caption">VIAF: no hits</p>
+</div></li>
 <li>such components must be removed to succesfully query most authority files
 <ul>
 <li>check against a list of stop words containing all titles</li>
 <li>or explicit mark-up</li>
-</ul></li>
-<li><img src="../assets/disambiguation_names-viaf_32410755.png" title="fig:" alt="VIAF" /></li>
+</ul>
+<div class="figure">
+<img src="../assets/disambiguation_names-viaf_32410755.png" alt="VIAF" />
+<p class="caption">VIAF</p>
+</div></li>
 </ul>
 </div><div id="soualah-and-hassouns-proposal-for-classical-arabic-names" class="slide section level2">
 <h2>3.2.2 Soualah and Hassoun’s proposal for classical Arabic names</h2>
@@ -477,19 +485,55 @@ rooted in the Western episteme</li>
 <li>Still many persons might not be available through LOD and authority files</li>
 <li>Proposed solution:
 <ul>
-<li>use canonnical references to printed sources such as biographical dictionaries, union catalogues etc.</li>
+<li>use canonnical references to printed sources such as biographical dictionaries, union catalogues etc. These references should be based on structural units</li>
 <li>e.g. Sarkīs, Yūsuf Ilyān. <em>Muʿjam al-maṭbūʿat al-ʿArabiyya wa-l-muʿarraba</em> 2 vols. Miṣr: Maṭbaʿat Sarkīs, 1928. Available on HathiTrust (<a href="http://hdl.handle.net/2027/inu.30000011432139">vol.1</a>, <a href="http://hdl.handle.net/2027/inu.30000124763958">vol.2</a>), <em><a href="http://shamela.ws/index.php/book/1242">shamela.ws</a></em>, and <a href="https://rawgit.com/tillgrallert/oclc_618896732/master/tei/oclc_618896732.TEIP5.xml">TEI</a></li>
-<li>Potential canonical reference: <code>oclc_618896732-pb_340-cb_781-div_2</code></li>
 </ul></li>
 </ul>
+<table>
+<thead>
+<tr class="header">
+<th>oclc</th>
+<th><em>majalla</em> / volume</th>
+<th><em>jisʾ</em> / issue, vol.</th>
+<th><em>faṣl</em> / part</th>
+<th><em>bāb</em> / chapter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>618896732</td>
+<td></td>
+<td>2</td>
+<td></td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="analysis" class="titleslide slide section level1"><h1>3.3 Analysis</h1></div><div id="workflow-3-analysis" class="slide section level2">
-<h2>Workflow 3: analysis</h2>
+<div id="analysis" class="titleslide slide section level1"><h1>3.3 Analysis</h1></div><div id="workflow-analysis" class="slide section level2">
+<h2>3.3 Workflow: analysis</h2>
 <ol style="list-style-type: decimal">
-<li>Extract bibliographic metadata on the basis of the TEI model as MODS: -&gt; XML files</li>
+<li>Extract bibliographic (meta)data on the basis of the TEI model as MODS: -&gt; XML files</li>
 <li>Analyse bibliographic data for patterns</li>
 <li>Visualise / map patterns</li>
 </ol>
+</div><div id="analyse-bibliographic-data-for-patterns" class="slide section level2">
+<h2>3.3 Analyse bibliographic data for patterns</h2>
+<ul>
+<li>Bylines:
+<ul>
+<li>Who is mentioned in bylines?</li>
+<li>Number of bylines per author?</li>
+<li>Temporal distribution of bylines per author?</li>
+<li>Geographic distribution of bylines?</li>
+<li>Age of authors upon publication?</li>
+</ul></li>
+<li>Reviews:
+<ul>
+<li>Geographic distribution?</li>
+<li>Time between publication and review?</li>
+</ul></li>
+</ul>
 </div>
 </body>
 </html>
