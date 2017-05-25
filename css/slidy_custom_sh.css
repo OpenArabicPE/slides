@@ -365,13 +365,19 @@ div.figure img {
 iframe {
   display: block;
   width: 90%;
-  height: 100%;
+  height: 80%;
   /* center the iframe */
   margin-left: auto;
   margin-right: auto;
   scrolling: auto;
   scroll-behavior: auto;
   /*border:none;*/
+}
+
+.size-80 {
+  display: block;
+  /*width: 80%;*/
+  height: 80%;
 }
 
 /*****************

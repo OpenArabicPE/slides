@@ -101,7 +101,7 @@
 <script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_reviews-toponyms.geojson?height=300&width=800"></script>
 </div><div id="publication-places-of-reviewed-referenced-works-1" class="slide section level2">
 <h2>publication places of reviewed / referenced works</h2>
-<iframe src="../assets/maps/map_muqtabas-reviews.html">
+<iframe class="size-80" src="../assets/maps/map_muqtabas-reviews.html">
 </iframe>
 <!-- # Who published in late-Ottoman Damascus? -->
 </div><div id="locations-in-bylines" class="slide section level2">
@@ -109,29 +109,29 @@
 <script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_bylines-toponyms.geojson?height=300&width=800"></script>
 </div><div id="locations-in-bylines-1" class="slide section level2">
 <h2>locations in bylines</h2>
-<iframe src="../assets/maps/map_muqtabas-bylines.html">
+<iframe class="size-80" src="../assets/maps/map_muqtabas-bylines.html">
 </iframe>
 </div><div id="authors-in-bylines" class="slide section level2">
 <h2>authors in bylines</h2>
-<iframe src="../assets/muqtabas_word-cloud.html" style="width: 80%; height: 80%;">
+<iframe class="size-80" src="../assets/muqtabas_word-cloud.html">
 </iframe>
 </div>
-<div id="how-to-get-there" class="titleslide slide section level1"><h1>How to get there?</h1></div><div id="workflow" class="slide section level2">
-<h2>Workflow</h2>
+<div id="how-to-get-there" class="titleslide slide section level1"><h1>3. How to get there?</h1></div><div id="workflow" class="slide section level2">
+<h2>3. Workflow</h2>
 <ol style="list-style-type: decimal">
 <li>Digital edition</li>
 <li>Clean your data</li>
 <li>Analyse yuor data</li>
 </ol>
-</div><div id="workflow-1-digital-edition" class="slide section level2">
-<h2>Workflow 1: digital edition</h2>
+</div><div id="workflow-digital-edition" class="slide section level2">
+<h2>3.1 Workflow: digital edition</h2>
 <ol style="list-style-type: decimal">
 <li>Get a digital text</li>
 <li>Model the digital text in TEI: -&gt; XML files</li>
 <li>Mark-up and disambiguation of entities (persons, places, works, dates)</li>
 </ol>
-</div><div id="problems-1-digital-edition" class="slide section level2">
-<h2>Problems 1: digital edition</h2>
+</div><div id="problems-digital-edition" class="slide section level2">
+<h2>3.1 Problems: digital edition</h2>
 <ol style="list-style-type: decimal">
 <li>conceptual (quasi) standards such as the TEI
 <ul>
@@ -145,8 +145,8 @@ rooted in the Western episteme</li>
 </ul></li>
 </ol>
 <!-- examples for both cases from other talks -->
-</div><div id="workflow-2-cleaning-the-data" class="slide section level2">
-<h2>Workflow 2: cleaning the data</h2>
+</div><div id="workflow-cleaning-the-data" class="slide section level2">
+<h2>3.2 Workflow: cleaning the data</h2>
 <ul>
 <li>normalization:
 <ul>
@@ -156,8 +156,8 @@ rooted in the Western episteme</li>
 <li>disambiguation</li>
 <li>Geocode toponyms</li>
 </ul>
-</div><div id="problems-2-normalization" class="slide section level2">
-<h2>Problems 2: normalization</h2>
+</div><div id="problems-normalization" class="slide section level2">
+<h2>3.2 Problems: normalization</h2>
 <ol style="list-style-type: decimal">
 <li>Normalization
 <ul>
@@ -172,6 +172,52 @@ rooted in the Western episteme</li>
 <li>automatic matching generates false positives</li>
 </ul></li>
 </ol>
+</div><div id="problems-normalize-names" class="slide section level2">
+<h2>3.2 Problems: normalize names</h2>
+<!-- Consider  Aḥmad Bey Zakī / أحمد بك زكي
+
+- ![[*al-Muqtabas* #3(7)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_31.TEIP5.xml#div_4.d1e910)](../assets/disambiguation_names-tei.png)
+- ![VIAF: no hits](../assets/disambiguation_names-viaf.png)
+- ![VIAF](../assets/disambiguation_names-viaf_49218655.png) -->
+<p>Consider this:</p>
+<ul>
+<li>Ḥāfiẓ Ibrāhīm, Ḥāfiẓ Efendi Ibrāhīm, Ḥāfiẓ Ibrāhīm Bey, and Muḥammad Ḥāfiẓ Bey Ibrāhīm all refer to the same person</li>
+</ul>
+<div class="figure">
+<img src="../assets/disambiguation_names-tei-viaf_32410755-1.png" alt="al-Muqtabas 1(1)" />
+<p class="caption"><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_1.TEIP5.xml#div_7.d1e1661"><em>al-Muqtabas</em> 1(1)</a></p>
+</div>
+<div class="figure">
+<img src="../assets/disambiguation_names-tei-viaf_32410755-2.png" alt="al-Muqtabas 2(1)" />
+<p class="caption"><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_13.TEIP5.xml#div_13.d1e2334"><em>al-Muqtabas</em> 2(1)</a></p>
+</div>
+</div><div id="problems" class="slide section level2">
+<h2>3.2 Problems</h2>
+<ul>
+<li>non-Western name components: Ḥāfiẓ Efendi Ibrāhīm contains an Ottoman title (<em>efendi</em>)</li>
+</ul>
+<div class="figure">
+<img src="../assets/disambiguation_names-viaf_32410755-none.png" alt="VIAF: no hits" />
+<p class="caption">VIAF: no hits</p>
+</div>
+<ul>
+<li>such components must be removed to succesfully query most authority files
+<ul>
+<li>check against a list of stop words containing all titles</li>
+<li>or explicit mark-up</li>
+</ul></li>
+</ul>
+<div class="figure">
+<img src="../assets/disambiguation_names-viaf_32410755.png" alt="VIAF" />
+<p class="caption">VIAF</p>
+</div>
+</div><div class="slide section level2">
+
+<p><sub>~</sub>{.xml} <persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <surname xml:lang="ar">إبراهيم</surname> </persName></p>
+<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <roleName type="title" xml:lang="ar">أفندي</roleName> <surname xml:lang="ar">إبراهيم</surname> </persName></p>
+<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <surname xml:lang="ar">إبراهيم</surname> <roleName type="title">بك</roleName> </persName></p>
+<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <roleName type="title">بك</roleName> <surname xml:lang="ar">إبراهيم</surname> </persName></p>
+<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">محمد</forename> <forename xml:lang="ar">حافظ</forename> <roleName type="title">بك</roleName> <surname xml:lang="ar">إبراهيم</surname> </persName> ~~</p>
 </div><div id="workflow-3-analysis" class="slide section level2">
 <h2>Workflow 3: analysis</h2>
 <ol style="list-style-type: decimal">
