@@ -99,10 +99,18 @@
 <div id="preliminary-results" class="titleslide slide section level1"><h1>2. Preliminary results</h1></div><div id="publication-places-of-reviewed-referenced-works" class="slide section level2">
 <h2>publication places of reviewed / referenced works</h2>
 <script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_reviews-toponyms.geojson?height=300&width=800"></script>
-</div>
-<div id="who-published-in-late-ottoman-damascus" class="titleslide slide section level1"><h1>Who published in late-Ottoman Damascus?</h1></div><div id="locations-in-bylines" class="slide section level2">
+</div><div id="publication-places-of-reviewed-referenced-works-1" class="slide section level2">
+<h2>publication places of reviewed / referenced works</h2>
+<iframe src="../assets/maps/map_muqtabas-reviews.html">
+</iframe>
+<!-- # Who published in late-Ottoman Damascus? -->
+</div><div id="locations-in-bylines" class="slide section level2">
 <h2>locations in bylines</h2>
 <script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_bylines-toponyms.geojson?height=300&width=800"></script>
+</div><div id="locations-in-bylines-1" class="slide section level2">
+<h2>locations in bylines</h2>
+<iframe src="../assets/maps/map_muqtabas-bylines.html">
+</iframe>
 </div><div id="authors-in-bylines" class="slide section level2">
 <h2>authors in bylines</h2>
 <iframe src="../assets/muqtabas_word-cloud.html" style="width: 80%; height: 80%;">
@@ -136,18 +144,34 @@ rooted in the Western episteme</li>
 <li>based on Latin scripts</li>
 </ul></li>
 </ol>
+<!-- examples for both cases from other talks -->
 </div><div id="workflow-2-cleaning-the-data" class="slide section level2">
 <h2>Workflow 2: cleaning the data</h2>
 <ul>
 <li>normalization:
 <ul>
 <li>unify spelling</li>
-<li>Link to authority files</li>
-<li>machine-actionable dates</li>
+<li>machine-actionable Gregorian dates</li>
 </ul></li>
-<li>Compute Gregorian dates for all calendars</li>
+<li>disambiguation</li>
 <li>Geocode toponyms</li>
 </ul>
+</div><div id="problems-2-normalization" class="slide section level2">
+<h2>Problems 2: normalization</h2>
+<ol style="list-style-type: decimal">
+<li>Normalization
+<ul>
+<li>XPath officially supports <em>hijrī</em> dates, but the specification was never implemented</li>
+<li>all calendars must be normalized with custom code!</li>
+</ul></li>
+<li>Disambiguation: Authority files and linke open data (LOD) such as VIAF, GND, GeoNames etc.
+<ul>
+<li>Western data models</li>
+<li>many non-Western entities have no entries</li>
+<li>entries might only be available in transcription</li>
+<li>automatic matching generates false positives</li>
+</ul></li>
+</ol>
 </div><div id="workflow-3-analysis" class="slide section level2">
 <h2>Workflow 3: analysis</h2>
 <ol style="list-style-type: decimal">
