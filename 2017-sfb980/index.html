@@ -7,8 +7,45 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Till Grallert" />
-  <title></title>
+  <title>Werkstattbericht: OpenArabicPE</title>
   <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
@@ -28,25 +65,25 @@
   }
   /* xml element names */
   .xml > code > span.kw {
-  	color: #0F0F9C;
-  	font-weight: bold;
+    color: #0F0F9C;
+    font-weight: bold;
   }
   /* xml attribute names */
   .xml > code > span.ot {
-  	color:#FF8041;
+    color:#FF8041;
   }
   /* xml attribute values */
   .xml > code > span.st {
-  	color:#993300;
+    color:#993300;
   }
   /* xml comments */
   .xml > code > span.co {
-  	color:#167116;
-  	font-style: italic;
+    color:#167116;
+    font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
   /* .xml > code > span {
-  	color:#9132CC;
+    color:#9132CC;
   } */
   </style>
   <style type="text/css">
@@ -65,7 +102,7 @@
   </style>
   <style type="text/css">
   .cImportant {
-  	color:red;
+    color:red;
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
@@ -74,6 +111,13 @@
   <meta name="duration" content="30" />
 </head>
 <body>
+<div class="slide titlepage">
+  <h1 class="title">Werkstattbericht: OpenArabicPE</h1>
+  <p class="author">
+Till Grallert
+  </p>
+  <p class="date">2017-05-25 14:00:13 +0200</p>
+</div>
 <div id="introduction" class="titleslide slide section level1"><h1>1. Introduction</h1></div><div id="research-questions" class="slide section level2">
 <h2>research questions</h2>
 <ul>
@@ -83,16 +127,13 @@
 </div><div id="sources" class="slide section level2">
 <h2>sources</h2>
 <ul>
-<li>Muḥammad Kurd ʿAlī’s monthly journal <em>al-Muqtabas</em></li>
-<li>ʿAbd al-Qādir al-Iskandarānī’s monthly journal <em>al-Ḥaqāʾiq</em></li>
+<li>Muḥammad Kurd ʿAlī’s monthly journal <a href="https://github.com/tillgrallert/digital-muqtabas"><em>al-Muqtabas</em></a></li>
+<li>ʿAbd al-Qādir al-Iskandarānī’s monthly journal <a href="https://github.com/openarabicpe/digital-haqaiq"><em>al-Ḥaqāʾiq</em></a></li>
 </ul>
 </div><div id="possible-methodologies" class="slide section level2">
 <h2>possible methodologies</h2>
 <ol style="list-style-type: decimal">
-<li>manual compilation of works, authors, places
-<ul>
-<li>read and excerpt some 8000 pages</li>
-</ul></li>
+<li>manual compilation of works, authors, places</li>
 <li>machine-guided analysis</li>
 </ol>
 </div>
@@ -123,7 +164,8 @@
 <li>Clean your data</li>
 <li>Analyse yuor data</li>
 </ol>
-</div><div id="workflow-digital-edition" class="slide section level2">
+</div>
+<div id="digital-edition" class="titleslide slide section level1"><h1>3. digital edition</h1></div><div id="workflow-digital-edition" class="slide section level2">
 <h2>3.1 Workflow: digital edition</h2>
 <ol style="list-style-type: decimal">
 <li>Get a digital text</li>
@@ -145,7 +187,134 @@ rooted in the Western episteme</li>
 </ul></li>
 </ol>
 <!-- examples for both cases from other talks -->
-</div><div id="workflow-cleaning-the-data" class="slide section level2">
+</div><div id="xml-unicode-arabic" class="slide section level2">
+<h2>3.1 XML, Unicode, Arabic</h2>
+<ul>
+<li>The good: everyting in XML (and TEI) is encodec in Unicode; everything!</li>
+<li>The bad: Each unicode sign is an independent entity
+<ul>
+<li>Common but “defective” writing of Arabic without the initial <em>hamza</em> and without <em>ḥarakāt</em> is different from the correct spelling: a search for “الى” will not return instances of “إلى” or “إِلى”, “ان” will neither return “إن” nor “أن” out of the box.</li>
+<li>Arabic numerals are not considered as numerals by the computer (i.e. data type is <code>xs:string</code> and not <code>xs:integer</code>): a search for “1326” will not return instances of “١٣٢٦” and vice versa.</li>
+<li>ة is not ت!</li>
+</ul></li>
+<li>The ugly: XML and TEI are based in the western tradition of modelling a text and named entities as well as in LTR writing systems</li>
+</ul>
+</div><div id="the-good" class="slide section level2">
+<h2>3.1.1. The good</h2>
+<p>TEI and XML can represent any text written in any sign-system. If this system is part of the unicode standard, the TEI file can comprise a digital text as opposed to mere facsimiles.</p>
+<p>BUT: mixing two writing systems, while unambiguous for the computer, will cause confusion for the human reader / editor:</p>
+</div><div id="facsimile" class="slide section level2">
+<h2>3.1.1 facsimile</h2>
+<div class="figure">
+<img src="../assets/constitution-thamarat.png" alt="Ḳānūn-i Esāsī in Thamarāt al-Funūn, 27 July 1908" />
+<p class="caption">Ḳānūn-i Esāsī in <em>Thamarāt al-Funūn</em>, 27 July 1908</p>
+</div>
+</div><div id="neat-xml" class="slide section level2">
+<h2>3.1.1 “neat” XML</h2>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;div</span><span class="ot"> xmlns=</span><span class="st">&quot;http://www.tei-c.org/ns/1.0&quot;</span><span class="ot"> type=</span><span class="st">&quot;article&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;head</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الصدارة العظمى<span class="kw">&lt;/head&gt;</span>
+    <span class="kw">&lt;p&gt;</span>بشرة الانباء البرقية بصدور الارادة 
+    <span class="kw">&lt;lb/&gt;</span> السنية السلطانية باسناد مسند الصدارة 
+    <span class="kw">&lt;lb/&gt;</span>العظمى الى عهدة الوزير الخطير <span class="kw">&lt;persName&gt;</span> حضرة 
+    <span class="kw">&lt;lb/&gt;</span> صاحب الفخامة الدولة سعيد باشا<span class="kw">&lt;/persName&gt;</span>الصدر 
+    <span class="kw">&lt;lb/&gt;</span> الأعظم الأسبق، فسر الكل بهذا التوجيه 
+    <span class="kw">&lt;lb/&gt;</span> الوجيه لما عرف به الصدر المشار اليه من 
+    <span class="kw">&lt;lb/&gt;</span> التفاني في خدمة الجناب العالي السلطاني 
+    <span class="kw">&lt;lb/&gt;</span> بنبالة قصد وسعة علم مع اقتدار باهر 
+    <span class="kw">&lt;lb/&gt;</span> واخلاص عظيم فنرفع لفخامته فروض 
+    <span class="kw">&lt;lb/&gt;</span> التهاني والتبريك ونضرع الى المولى المتعال 
+    <span class="kw">&lt;lb/&gt;</span> ان يقرن اموره بالتوفيق وتنفيذ نيات حضرة 
+    <span class="kw">&lt;lb/&gt;</span> مولانا الخليفة الاعظم المنصرف في خير 
+    <span class="kw">&lt;lb/&gt;</span> العباد وعمران البلاد،<span class="kw">&lt;/p&gt;</span>
+    <span class="kw">&lt;p&gt;</span>وهذا تعريب التلغراف السامي الوارد 
+    <span class="kw">&lt;lb/&gt;</span> من فخامته الى مقام الولاية الجليلة:<span class="kw">&lt;/p&gt;</span>
+    <span class="kw">&lt;p&gt;</span>
+        <span class="kw">&lt;quote&gt;</span>سنحت عواطف الحضرة العلية 
+        <span class="kw">&lt;lb/&gt;</span> السلطانية بتوجيه خدمة الصدارة هذه 
+        <span class="kw">&lt;lb/&gt;</span> المرة ايضاً على عهدة هذا المثنى . ان 
+        <span class="kw">&lt;lb/&gt;</span> وظيفة مأموري المملكية الاساسية هي المحافظة
+        <span class="kw">&lt;lb/&gt;</span> على الامن والراحة وحسن رؤْية المصالح 
+        <span class="kw">&lt;lb/&gt;</span> ووظائف الادارة العدلية والحكام هي
+        <span class="kw">&lt;lb/&gt;</span> اجراء العدالة في الحقوق العمومية والشخصية 
+        <span class="kw">&lt;lb/&gt;</span> ضمن دائرة القوانين العدلية الموضوعة مع 
+        <span class="kw">&lt;lb/&gt;</span> قيام كل مأمور بوظيفة مأموريته بكمال 
+        <span class="kw">&lt;lb/&gt;</span> العفة والاستقامة لهذا نخطركم ان الذين 
+        <span class="kw">&lt;lb/&gt;</span> يقومون بالخدمات الصحيحة الصادقة تكون 
+        <span class="kw">&lt;lb/&gt;</span> مساعيهم مظهراً لشرف تقدير <span class="kw">&lt;rs</span><span class="ot"> ref=</span><span class="st">&quot;#pers-1&quot;</span><span class="kw">&gt;</span> حضرة 
+        <span class="kw">&lt;lb/&gt;</span> صاحب الخلافة العظمى<span class="kw">&lt;/rs&gt;</span>كما ان من يخالف 
+        <span class="kw">&lt;lb/&gt;</span>ذلك يقع بالطبع تحت ظائلة المسؤلية 
+        <span class="kw">&lt;lb/&gt;</span> في <span class="kw">&lt;date</span><span class="ot"> calendar=</span><span class="st">&quot;#cal_ottomanfiscal&quot;</span>
+<span class="ot">                datingMethod=</span><span class="st">&quot;#cal_ottomanfiscal&quot;</span><span class="ot"> when-custom=</span><span class="st">&quot;1324-05-09&quot;</span><span class="kw">&gt;</span>٩ تموز سنة
+            ٣٢٤<span class="kw">&lt;/date&gt;&lt;/quote&gt;</span>
+    <span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+</div><div id="actual-xml-in-an-xml-editor" class="slide section level2">
+<h2>3.1.1 “actual” XML in an XML editor</h2>
+<div class="figure">
+<img src="../assets/constitution-thamarat-xml-text.png" alt="Text view in oXygen: XML for Ḳānūn-i Esāsī in Thamarāt al-Funūn, 27 July 1908" />
+<p class="caption">Text view in oXygen: XML for Ḳānūn-i Esāsī in <em>Thamarāt al-Funūn</em>, 27 July 1908</p>
+</div>
+</div><div id="hiding-the-tags-in-an-xml-editor" class="slide section level2">
+<h2>3.1.1 hiding the tags in an XML editor</h2>
+<div class="figure">
+<img src="../assets/constitution-thamarat-xml-author.png" alt="Author view in oXygen: XML for Ḳānūn-i Esāsī in Thamarāt al-Funūn, 27 July 1908" />
+<p class="caption">Author view in oXygen: XML for Ḳānūn-i Esāsī in <em>Thamarāt al-Funūn</em>, 27 July 1908</p>
+</div>
+</div><div id="set-up-your-work-environment-to-correctly-display-arabic-etc." class="slide section level2">
+<h2>3.1.1 Set up your work environment to correctly display Arabic etc.</h2>
+<p>oXygen supports bidirectional texts already for a couple of years and correctly deduces the order of writing through Unicode support. However, in order to <strong>render</strong> Arabic TEI correctly in the Author mode as aligned to the right side one needs to do two things:</p>
+</div><div id="xmllang" class="slide section level2">
+<h2>3.1.1 <code>@xml:lang</code></h2>
+<ol style="list-style-type: decimal">
+<li>consistently use the <code>@xml:lang</code> attribute on all elements. <code>@xml:lang</code> should follow <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">BCP 47</a>; i.e. any text in Arabic must be marked as <code>@xml:lang=&quot;ar&quot;</code>. For Arabic in Latin transcription, BCP 47 specifies “ar-Latn”. The specific type of transcription should be added as a private use subtag, i.e.
+<ul>
+<li>“ar-Latn-x-ijmes” for the IJMES transcription of Arabic in Latin script.</li>
+<li>“ota-Latn-x-ijmes” for the IJMES transcription of Ottoman in Latin script.</li>
+</ul></li>
+</ol>
+</div><div id="css" class="slide section level2">
+<h2>3.1.1 CSS</h2>
+<ol start="2" style="list-style-type: decimal">
+<li>add a tiny bit of CSS to the file “tei_oxygen.css” either directly or through the import of an external CSS.</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode css"><code class="sourceCode css"><span class="at">[xml\:lang=</span><span class="st">&quot;ar&quot;</span><span class="at">]</span>, <span class="at">[xml\:lang=</span><span class="st">&quot;ota&quot;</span><span class="at">]</span><span class="kw">{</span>
+    <span class="kw">direction:</span><span class="dt">rtl</span><span class="kw">;</span>
+    <span class="kw">text-align:</span><span class="dt">right</span><span class="kw">;</span>
+    <span class="kw">font-family:</span> <span class="dt">Serif</span>, <span class="dt">Sans-Serif</span><span class="kw">;</span>
+    <span class="kw">font-weight:</span><span class="dt">normal</span><span class="kw">;</span>
+    <span class="co">/*In CSS nested relative sizes accumulate*/</span>
+    <span class="co">/*font-size:120%;*/</span>
+<span class="kw">}</span>
+<span class="at">[xml\:lang=</span><span class="st">&quot;en&quot;</span><span class="at">]</span>, <span class="at">[xml\:lang=</span><span class="st">&quot;fr&quot;</span><span class="at">]</span>, <span class="at">[xml\:lang*=</span><span class="st">&quot;-Latn-&quot;</span><span class="at">]</span><span class="kw">{</span>
+    <span class="kw">direction:</span><span class="dt">ltr</span><span class="kw">;</span>
+    <span class="kw">text-align:</span><span class="dt">left</span><span class="kw">;</span>
+    <span class="kw">font-family:</span> <span class="dt">Serif</span>, <span class="dt">Sans-Serif</span><span class="kw">;</span>
+    <span class="kw">font-weight:</span><span class="dt">normal</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre></div>
+</div><div id="the-bad" class="slide section level2">
+<h2>3.1.2. The bad</h2>
+<ul>
+<li>Common but “defective” writing of Arabic without the initial <em>hamza</em> and without <em>ḥarakāt</em> is different from the correct spelling:
+<ul>
+<li>a search for “الى” will not return instances of “إلى” or “إِلى”</li>
+<li>“ان” will neither return “إن” nor “أن” out of the box.</li>
+</ul></li>
+<li>Arabic numerals are not necessarily considered as numerals by the computer (i.e. data type is <code>xs:string</code> and not <code>xs:integer</code>)
+<ul>
+<li>a search for “1326” will not return instances of “١٣٢٦” and vice versa.</li>
+</ul></li>
+<li>ة is not ت!
+<ul>
+<li>In Ottoman <em>ḥürriyet</em> could be spelled حرية, حريه, or حريت</li>
+</ul></li>
+<li>Some words in Ottoman might need an internal whitespace to avoid letters from being connected by the computer: غزته سي</li>
+</ul>
+</div><div id="the-ugly" class="slide section level2">
+<h2>3.1.3. The ugly</h2>
+<p>XML, XPath, and the TEI adhere to hegemonic European/ Western models and concepts, which are not explicitly marked as such and thus silently accepted as the norm. Everything that is not written in English or, more general, in Latin scripts should be marked as such; every date that is not Gregorian, cannot be readily computed; and the TEI’s concept of personal names is absolutely inadequate to mark up Arabic, Ottoman, etc. names.</p>
+</div>
+<div id="cleaning-data" class="titleslide slide section level1"><h1>3.2 cleaning data</h1></div><div id="workflow-cleaning-the-data" class="slide section level2">
 <h2>3.2 Workflow: cleaning the data</h2>
 <ul>
 <li>normalization:
@@ -159,8 +328,10 @@ rooted in the Western episteme</li>
 </div><div id="problems-normalization" class="slide section level2">
 <h2>3.2 Problems: normalization</h2>
 <ol style="list-style-type: decimal">
-<li>Normalization
+<li>Normalization: If a text shall be machine-readable, it must be normalised!
 <ul>
+<li>spelling of hamza</li>
+<li>numerical values</li>
 <li>XPath officially supports <em>hijrī</em> dates, but the specification was never implemented</li>
 <li>all calendars must be normalized with custom code!</li>
 </ul></li>
@@ -172,53 +343,147 @@ rooted in the Western episteme</li>
 <li>automatic matching generates false positives</li>
 </ul></li>
 </ol>
-</div><div id="problems-normalize-names" class="slide section level2">
-<h2>3.2 Problems: normalize names</h2>
-<!-- Consider  Aḥmad Bey Zakī / أحمد بك زكي
-
-- ![[*al-Muqtabas* #3(7)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_31.TEIP5.xml#div_4.d1e910)](../assets/disambiguation_names-tei.png)
-- ![VIAF: no hits](../assets/disambiguation_names-viaf.png)
-- ![VIAF](../assets/disambiguation_names-viaf_49218655.png) -->
+</div><div id="normalise-spelling-and-numbers" class="slide section level2">
+<h2>3.2.1 normalise spelling and numbers</h2>
+<p>silently or with explicit mark-up</p>
+<ol style="list-style-type: decimal">
+<li>Normalise spelling with <code>&lt;choice&gt;</code>, <code>&lt;orig&gt;</code>, and <code>&lt;reg&gt;</code>:</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;choice&gt;</span>
+    <span class="kw">&lt;orig&gt;</span>الى<span class="kw">&lt;/orig&gt;</span>
+    <span class="kw">&lt;reg&gt;</span>إلى<span class="kw">&lt;/reg&gt;</span>
+<span class="kw">&lt;/choice&gt;</span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Explicitly mark up numerals with <code>&lt;num&gt;</code>:</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;num</span><span class="ot"> value=</span><span class="st">&quot;1285&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>١٢٨٥<span class="kw">&lt;/num&gt;</span></code></pre></div>
+<ol start="3" style="list-style-type: decimal">
+<li>Explicitly mark up words with <code>&lt;w&gt;</code>:</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;w&gt;</span>غزته سي<span class="kw">&lt;/w&gt;</span></code></pre></div>
+</div><div id="persname-works-well-for-western-names-but-arabic-or-ottoman" class="slide section level2">
+<h2>3.2.2<code>&lt;persName&gt;</code> works well for Western names, but Arabic or Ottoman?</h2>
+<p>The canonical scheme of <code>&lt;surname&gt;</code> and <code>&lt;forename&gt;</code> is insufficient to markup the components of personal names in pre-modern and/or non-Western contexts: How should we mark up the following names?</p>
+<ul>
+<li>حضرة صاحب الدولة المشير عبد الله باشا</li>
+<li>جناب رفعتلو فريد افندي كركبي</li>
+<li>حضرة سعادتلو احمد برهان الدين بك افندي</li>
+<li>جناب عزتلو صبحي بك ابو النصر</li>
+<li>جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني</li>
+</ul>
+</div><div id="ḥāfiẓ-ibrāhīm" class="slide section level2">
+<h2>3.2.2 Ḥāfiẓ Ibrāhīm</h2>
 <p>Consider this:</p>
 <ul>
 <li>Ḥāfiẓ Ibrāhīm, Ḥāfiẓ Efendi Ibrāhīm, Ḥāfiẓ Ibrāhīm Bey, and Muḥammad Ḥāfiẓ Bey Ibrāhīm all refer to the same person</li>
+<li><img src="../assets/disambiguation_names-tei-viaf_32410755-1.png" alt="al-Muqtabas 1(1)" /></li>
+<li><img src="../assets/disambiguation_names-tei-viaf_32410755-2.png" title="fig:" alt="al-Muqtabas 2(1)" /></li>
 </ul>
-<div class="figure">
-<img src="../assets/disambiguation_names-tei-viaf_32410755-1.png" alt="al-Muqtabas 1(1)" />
-<p class="caption"><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_1.TEIP5.xml#div_7.d1e1661"><em>al-Muqtabas</em> 1(1)</a></p>
-</div>
-<div class="figure">
-<img src="../assets/disambiguation_names-tei-viaf_32410755-2.png" alt="al-Muqtabas 2(1)" />
-<p class="caption"><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_13.TEIP5.xml#div_13.d1e2334"><em>al-Muqtabas</em> 2(1)</a></p>
-</div>
-</div><div id="problems" class="slide section level2">
-<h2>3.2 Problems</h2>
+</div><div id="ḥāfiẓ-ibrāhīm-1" class="slide section level2">
+<h2>3.2.2 Ḥāfiẓ Ibrāhīm</h2>
 <ul>
-<li>non-Western name components: Ḥāfiẓ Efendi Ibrāhīm contains an Ottoman title (<em>efendi</em>)</li>
-</ul>
-<div class="figure">
-<img src="../assets/disambiguation_names-viaf_32410755-none.png" alt="VIAF: no hits" />
-<p class="caption">VIAF: no hits</p>
-</div>
-<ul>
+<li>non-Western name components: Ḥāfiẓ Efendi Ibrāhīm contains an Ottoman title (<em>efendi</em>)<br />
+</li>
+<li><img src="../assets/disambiguation_names-viaf_32410755-none.png" alt="VIAF: no hits" /></li>
 <li>such components must be removed to succesfully query most authority files
 <ul>
 <li>check against a list of stop words containing all titles</li>
 <li>or explicit mark-up</li>
 </ul></li>
+<li><img src="../assets/disambiguation_names-viaf_32410755.png" title="fig:" alt="VIAF" /></li>
 </ul>
-<div class="figure">
-<img src="../assets/disambiguation_names-viaf_32410755.png" alt="VIAF" />
-<p class="caption">VIAF</p>
-</div>
-</div><div class="slide section level2">
+</div><div id="soualah-and-hassouns-proposal-for-classical-arabic-names" class="slide section level2">
+<h2>3.2.2 Soualah and Hassoun’s proposal for classical Arabic names</h2>
+<p><a href="http://jtei.revues.org/398">Soulah and Hassoun 2012</a> propose to use available elements <code>&lt;surname&gt;</code>, <code>&lt;forename&gt;</code>, and <code>&lt;addName&gt;</code> with a controlled vocabulary of <code>@type</code> and <code>@subtype</code> attributes.</p>
+<ul>
+<li><code>&lt;surname&gt;</code>: to encode the <em>laqab</em> evoking a real or assigned quality</li>
+<li><code>&lt;forename&gt;</code>: for the <em>ism</em></li>
+<li><code>&lt;addName&gt;</code> with <code>@type</code>
+<ul>
+<li>“patronym”: introduced by “ibn” or “ibnat”</li>
+<li>“kunyah”: a mark of distinction applied to prominent figures to honor them. For example, “Abū Yūsuf” is often used for someone called Yaʿqūb</li>
+<li>“khitab”: an honorific name, which is usually ended by the suffix al-Dīn</li>
+<li>“nisbah”: an adjective formed by using the suffix ī in order to indicate the person origin, his birth place, or his residence. It represents the relationship name, which can be a genealogical, political or ideological affiliation of a person.</li>
+</ul></li>
+</ul>
+</div><div id="extended-proposal-for-late-ottoman-contexts" class="slide section level2">
+<h2>3.2.2 Extended proposal for late Ottoman contexts</h2>
+<p>I suggest to add the following mark-up for late-Ottoman names</p>
+<ul>
+<li><code>&lt;roleName type=&quot;title&quot;&gt;</code>: covering the wide range of Ottoman titles, e.g. Pasha, Bey, Efendi</li>
+<li><code>&lt;addName type=&quot;honorific&quot;&gt;</code>: for the highly regularised honorific addresses and salutations, e.g. rif’etli, saadetli, utufetli, lizetli, devletli</li>
+</ul>
+</div><div id="example" class="slide section level2">
+<h2>3.2.2 Example</h2>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني<span class="kw">&lt;/persName&gt;</span></code></pre></div>
+<p>Could be marked up as:</p>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>جزائري<span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;honorific&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>زاده<span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>الامير<span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;forename&gt;</span>علي<span class="kw">&lt;/forename&gt;</span>
+    <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>باشا<span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;patronym&quot;</span><span class="kw">&gt;</span>ابن 
+        <span class="kw">&lt;forename&gt;</span>عبد القادر<span class="kw">&lt;/forename&gt;</span> 
+        <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>افندي<span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;surname</span><span class="ot"> type=</span><span class="st">&quot;laqab&quot;</span><span class="kw">&gt;</span>الحسني<span class="kw">&lt;/surname&gt;</span>
+<span class="kw">&lt;/persName&gt;</span></code></pre></div>
+<!-- ## 3.2 Problems: Ḥāfiẓ Ibrāhīm
 
-<p><sub>~</sub>{.xml} <persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <surname xml:lang="ar">إبراهيم</surname> </persName></p>
-<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <roleName type="title" xml:lang="ar">أفندي</roleName> <surname xml:lang="ar">إبراهيم</surname> </persName></p>
-<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <surname xml:lang="ar">إبراهيم</surname> <roleName type="title">بك</roleName> </persName></p>
-<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">حافظ</forename> <roleName type="title">بك</roleName> <surname xml:lang="ar">إبراهيم</surname> </persName></p>
-<p><persName ref="viaf:32410755" xml:lang="ar"> <forename xml:lang="ar">محمد</forename> <forename xml:lang="ar">حافظ</forename> <roleName type="title">بك</roleName> <surname xml:lang="ar">إبراهيم</surname> </persName> ~~</p>
-</div><div id="workflow-3-analysis" class="slide section level2">
+~~~{.xml}
+<persName ref="viaf:32410755" xml:lang="ar">
+    <forename xml:lang="ar">حافظ</forename> 
+    <surname xml:lang="ar">إبراهيم</surname> 
+</persName>
+
+<persName ref="viaf:32410755" xml:lang="ar">
+    <forename xml:lang="ar">حافظ</forename> 
+    <roleName type="title" xml:lang="ar">أفندي</roleName>
+    <surname xml:lang="ar">إبراهيم</surname> 
+</persName>
+
+<persName ref="viaf:32410755" xml:lang="ar">
+    <forename xml:lang="ar">حافظ</forename> 
+    <surname xml:lang="ar">إبراهيم</surname> 
+    <roleName type="title">بك</roleName> 
+</persName>
+
+<persName ref="viaf:32410755" xml:lang="ar">
+    <forename xml:lang="ar">حافظ</forename> 
+    <roleName type="title">بك</roleName> 
+    <surname xml:lang="ar">إبراهيم</surname> 
+</persName>
+
+<persName ref="viaf:32410755" xml:lang="ar">
+    <forename xml:lang="ar">محمد</forename>
+    <forename xml:lang="ar">حافظ</forename> 
+    <roleName type="title">بك</roleName> 
+    <surname xml:lang="ar">إبراهيم</surname> 
+</persName>
+~~~ -->
+</div><div id="advantages-of-linked-open-data" class="slide section level2">
+<h2>3.2.3 advantages of Linked Open Data</h2>
+<p>If an entity can be linked to an online authority file (i.e. Linked Open Data (LOD)), they will provide further information:</p>
+<ul>
+<li>biographic data</li>
+<li>published works</li>
+<li>Wikipedia entry</li>
+<li>e.g. <a href="https://github.com/OpenArabicPE/authority-files/blob/master/viaf/viaf_32410755.SRW.xml">Ḥāfiẓ Ibrāhīm</a></li>
+</ul>
+</div><div id="limitations-of-lod" class="slide section level2">
+<h2>3.2.3 limitations of LOD</h2>
+<ul>
+<li>Still many persons might not be available through LOD and authority files</li>
+<li>Proposed solution:
+<ul>
+<li>use canonnical references to printed sources such as biographical dictionaries, union catalogues etc.</li>
+<li>e.g. Sarkīs, Yūsuf Ilyān. <em>Muʿjam al-maṭbūʿat al-ʿArabiyya wa-l-muʿarraba</em> 2 vols. Miṣr: Maṭbaʿat Sarkīs, 1928. Available on HathiTrust (<a href="http://hdl.handle.net/2027/inu.30000011432139">vol.1</a>, <a href="http://hdl.handle.net/2027/inu.30000124763958">vol.2</a>), <em><a href="http://shamela.ws/index.php/book/1242">shamela.ws</a></em>, and <a href="https://rawgit.com/tillgrallert/oclc_618896732/master/tei/oclc_618896732.TEIP5.xml">TEI</a></li>
+<li>Potential canonical reference: <code>oclc_618896732-pb_340-cb_781-div_2</code></li>
+</ul></li>
+</ul>
+</div>
+<div id="analysis" class="titleslide slide section level1"><h1>3.3 Analysis</h1></div><div id="workflow-3-analysis" class="slide section level2">
 <h2>Workflow 3: analysis</h2>
 <ol style="list-style-type: decimal">
 <li>Extract bibliographic metadata on the basis of the TEI model as MODS: -&gt; XML files</li>
