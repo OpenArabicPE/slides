@@ -106,74 +106,87 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
-  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script>
+  <!-- <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
   <meta name="duration" content="30" />
 </head>
 <body>
-<div class="slide titlepage">
+<!-- <div class="slide titlepage">
   <h1 class="title">Werkstattbericht: OpenArabicPE</h1>
   <p class="author">
 Till Grallert
   </p>
-  <p class="date">2017-05-25 14:00:13 +0200</p>
+  <p class="date">2017-05-26 00:23:54 +0200</p>
+</div> -->
+<div id="werkstattbericht-arabische-buch--und-rezeptionsgeschichte-in-open-arabic-periodical-editions-openarabicpe" class="slide titlepage">
+<h1>Werkstattbericht: Arabische Buch- und Rezeptionsgeschichte in Open Arabic Periodical Editions (OpenArabicPE)</h1>
+<p>Till Grallert, Orient-Institut Beirut (OIB)</p>
+<p> 1 June 2017, SFB980</p>
+<p>Slides: <a href="https://OpenArabicPE.github.io/slides/2017-sfb980/index.html">https://OpenArabicPE.github.io/slides/2017-sfb980/</a></p>
 </div>
 <div id="introduction" class="titleslide slide section level1"><h1>1. Introduction</h1></div><div id="research-questions" class="slide section level2">
-<h2>research questions</h2>
+<h1>research questions</h1>
 <ul>
 <li>What did they read in late-Ottoman Damascus?</li>
 <li>Who published in late-Ottoman Damascus?</li>
 </ul>
 </div><div id="sources" class="slide section level2">
-<h2>sources</h2>
+<h1>sources</h1>
 <ul>
-<li>Muḥammad Kurd ʿAlī’s monthly journal <a href="https://github.com/tillgrallert/digital-muqtabas"><em>al-Muqtabas</em></a></li>
-<li>ʿAbd al-Qādir al-Iskandarānī’s monthly journal <a href="https://github.com/openarabicpe/digital-haqaiq"><em>al-Ḥaqāʾiq</em></a></li>
+<li>Muḥammad Kurd ʿAlī’s monthly journal <a href="https://github.com/tillgrallert/digital-muqtabas"><em>al-Muqtabas</em></a>
+<ul>
+<li>96 issues with c.7.000 pages</li>
+</ul></li>
+<li>ʿAbd al-Qādir al-Iskandarānī’s monthly journal <a href="https://github.com/openarabicpe/digital-haqaiq"><em>al-Ḥaqāʾiq</em></a>
+<ul>
+<li>36 issues with c.1500 pages</li>
+</ul></li>
 </ul>
 </div><div id="possible-methodologies" class="slide section level2">
-<h2>possible methodologies</h2>
+<h1>possible methodologies</h1>
 <ol style="list-style-type: decimal">
 <li>manual compilation of works, authors, places</li>
 <li>machine-guided analysis</li>
 </ol>
 </div>
 <div id="preliminary-results" class="titleslide slide section level1"><h1>2. Preliminary results</h1></div><div id="publication-places-of-reviewed-referenced-works" class="slide section level2">
-<h2>publication places of reviewed / referenced works</h2>
+<h1>publication places of reviewed / referenced works</h1>
 <script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_reviews-toponyms.geojson?height=300&width=800"></script>
 </div><div id="publication-places-of-reviewed-referenced-works-1" class="slide section level2">
-<h2>publication places of reviewed / referenced works</h2>
+<h1><a href="../assets/maps/map_muqtabas-reviews.html">publication places of reviewed / referenced works</a></h1>
 <iframe class="size-80" src="../assets/maps/map_muqtabas-reviews.html">
 </iframe>
 <!-- # Who published in late-Ottoman Damascus? -->
 </div><div id="locations-in-bylines" class="slide section level2">
-<h2>locations in bylines</h2>
+<h1>locations in bylines</h1>
 <script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_bylines-toponyms.geojson?height=300&width=800"></script>
 </div><div id="locations-in-bylines-1" class="slide section level2">
-<h2>locations in bylines</h2>
+<h1><a href="../assets/maps/map_muqtabas-bylines.html">locations in bylines</a></h1>
 <iframe class="size-80" src="../assets/maps/map_muqtabas-bylines.html">
 </iframe>
 </div><div id="authors-in-bylines" class="slide section level2">
-<h2>authors in bylines</h2>
+<h1>authors in bylines</h1>
 <iframe class="size-80" src="../assets/muqtabas_word-cloud.html">
 </iframe>
 </div>
 <div id="how-to-get-there" class="titleslide slide section level1"><h1>3. How to get there?</h1></div><div id="workflow" class="slide section level2">
-<h2>3. Workflow</h2>
+<h1>3. Workflow</h1>
 <ol style="list-style-type: decimal">
 <li>Digital edition</li>
 <li>Clean your data</li>
-<li>Analyse yuor data</li>
+<li>Analyse your data</li>
 </ol>
 </div>
 <div id="digital-edition" class="titleslide slide section level1"><h1>3. digital edition</h1></div><div id="workflow-digital-edition" class="slide section level2">
-<h2>3.1 Workflow: digital edition</h2>
+<h1>3.1 Workflow: digital edition</h1>
 <ol style="list-style-type: decimal">
 <li>Get a digital text</li>
-<li>Model the digital text in TEI: -&gt; XML files</li>
+<li>Model the digital text: in <a href="http://www.tei-c.org/index.xml">TEI (Text Ecoding Initiative)</a> -&gt; XML files</li>
 <li>Mark-up and disambiguation of entities (persons, places, works, dates)</li>
 </ol>
+<p>This is part of our project <a href="https://OpenArabicPE.github.io/slides/2017-dhad/index.html">Open Arabic Periodical Editions (OpenArabicPE)</a></p>
 </div><div id="problems-digital-edition" class="slide section level2">
-<h2>3.1 Problems: digital edition</h2>
+<h1>3.1 Problems: digital edition</h1>
 <ol style="list-style-type: decimal">
 <li>conceptual (quasi) standards such as the TEI
 <ul>
@@ -188,7 +201,7 @@ rooted in the Western episteme</li>
 </ol>
 <!-- examples for both cases from other talks -->
 </div><div id="xml-unicode-arabic" class="slide section level2">
-<h2>3.1 XML, Unicode, Arabic</h2>
+<h1>3.1 XML, Unicode, Arabic</h1>
 <ul>
 <li>The good: everyting in XML (and TEI) is encodec in Unicode; everything!</li>
 <li>The bad: Each unicode sign is an independent entity
@@ -200,17 +213,17 @@ rooted in the Western episteme</li>
 <li>The ugly: XML and TEI are based in the western tradition of modelling a text and named entities as well as in LTR writing systems</li>
 </ul>
 </div><div id="the-good" class="slide section level2">
-<h2>3.1.1. The good</h2>
+<h1>3.1.1. The good</h1>
 <p>TEI and XML can represent any text written in any sign-system. If this system is part of the unicode standard, the TEI file can comprise a digital text as opposed to mere facsimiles.</p>
 <p>BUT: mixing two writing systems, while unambiguous for the computer, will cause confusion for the human reader / editor:</p>
 </div><div id="facsimile" class="slide section level2">
-<h2>3.1.1 facsimile</h2>
+<h1>3.1.1 facsimile</h1>
 <div class="figure">
 <img src="../assets/constitution-thamarat.png" alt="Ḳānūn-i Esāsī in Thamarāt al-Funūn, 27 July 1908" />
 <p class="caption">Ḳānūn-i Esāsī in <em>Thamarāt al-Funūn</em>, 27 July 1908</p>
 </div>
 </div><div id="neat-xml" class="slide section level2">
-<h2>3.1.1 “neat” XML</h2>
+<h1>3.1.1 “neat” XML</h1>
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
 <span class="kw">&lt;div</span><span class="ot"> xmlns=</span><span class="st">&quot;http://www.tei-c.org/ns/1.0&quot;</span><span class="ot"> type=</span><span class="st">&quot;article&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;head</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الصدارة العظمى<span class="kw">&lt;/head&gt;</span>
@@ -250,22 +263,22 @@ rooted in the Western episteme</li>
     <span class="kw">&lt;/p&gt;</span>
 <span class="kw">&lt;/div&gt;</span></code></pre></div>
 </div><div id="actual-xml-in-an-xml-editor" class="slide section level2">
-<h2>3.1.1 “actual” XML in an XML editor</h2>
+<h1>3.1.1 “actual” XML in an XML editor</h1>
 <div class="figure">
 <img src="../assets/constitution-thamarat-xml-text.png" alt="Text view in oXygen: XML for Ḳānūn-i Esāsī in Thamarāt al-Funūn, 27 July 1908" />
 <p class="caption">Text view in oXygen: XML for Ḳānūn-i Esāsī in <em>Thamarāt al-Funūn</em>, 27 July 1908</p>
 </div>
 </div><div id="hiding-the-tags-in-an-xml-editor" class="slide section level2">
-<h2>3.1.1 hiding the tags in an XML editor</h2>
+<h1>3.1.1 hiding the tags in an XML editor</h1>
 <div class="figure">
 <img src="../assets/constitution-thamarat-xml-author.png" alt="Author view in oXygen: XML for Ḳānūn-i Esāsī in Thamarāt al-Funūn, 27 July 1908" />
 <p class="caption">Author view in oXygen: XML for Ḳānūn-i Esāsī in <em>Thamarāt al-Funūn</em>, 27 July 1908</p>
 </div>
 </div><div id="set-up-your-work-environment-to-correctly-display-arabic-etc." class="slide section level2">
-<h2>3.1.1 Set up your work environment to correctly display Arabic etc.</h2>
+<h1>3.1.1 Set up your work environment to correctly display Arabic etc.</h1>
 <p>oXygen supports bidirectional texts already for a couple of years and correctly deduces the order of writing through Unicode support. However, in order to <strong>render</strong> Arabic TEI correctly in the Author mode as aligned to the right side one needs to do two things:</p>
 </div><div id="xmllang" class="slide section level2">
-<h2>3.1.1 <code>@xml:lang</code></h2>
+<h1>3.1.1 <code>@xml:lang</code></h1>
 <ol style="list-style-type: decimal">
 <li>consistently use the <code>@xml:lang</code> attribute on all elements. <code>@xml:lang</code> should follow <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">BCP 47</a>; i.e. any text in Arabic must be marked as <code>@xml:lang=&quot;ar&quot;</code>. For Arabic in Latin transcription, BCP 47 specifies “ar-Latn”. The specific type of transcription should be added as a private use subtag, i.e.
 <ul>
@@ -274,7 +287,7 @@ rooted in the Western episteme</li>
 </ul></li>
 </ol>
 </div><div id="css" class="slide section level2">
-<h2>3.1.1 CSS</h2>
+<h1>3.1.1 CSS</h1>
 <ol start="2" style="list-style-type: decimal">
 <li>add a tiny bit of CSS to the file “tei_oxygen.css” either directly or through the import of an external CSS.</li>
 </ol>
@@ -293,7 +306,7 @@ rooted in the Western episteme</li>
     <span class="kw">font-weight:</span><span class="dt">normal</span><span class="kw">;</span>
 <span class="kw">}</span></code></pre></div>
 </div><div id="the-bad" class="slide section level2">
-<h2>3.1.2. The bad</h2>
+<h1>3.1.2. The bad</h1>
 <ul>
 <li>Common but “defective” writing of Arabic without the initial <em>hamza</em> and without <em>ḥarakāt</em> is different from the correct spelling:
 <ul>
@@ -311,11 +324,11 @@ rooted in the Western episteme</li>
 <li>Some words in Ottoman might need an internal whitespace to avoid letters from being connected by the computer: غزته سي</li>
 </ul>
 </div><div id="the-ugly" class="slide section level2">
-<h2>3.1.3. The ugly</h2>
+<h1>3.1.3. The ugly</h1>
 <p>XML, XPath, and the TEI adhere to hegemonic European/ Western models and concepts, which are not explicitly marked as such and thus silently accepted as the norm. Everything that is not written in English or, more general, in Latin scripts should be marked as such; every date that is not Gregorian, cannot be readily computed; and the TEI’s concept of personal names is absolutely inadequate to mark up Arabic, Ottoman, etc. names.</p>
 </div>
 <div id="cleaning-data" class="titleslide slide section level1"><h1>3.2 cleaning data</h1></div><div id="workflow-cleaning-the-data" class="slide section level2">
-<h2>3.2 Workflow: cleaning the data</h2>
+<h1>3.2 Workflow: cleaning the data</h1>
 <ul>
 <li>normalization:
 <ul>
@@ -326,7 +339,7 @@ rooted in the Western episteme</li>
 <li>Geocode toponyms</li>
 </ul>
 </div><div id="problems-normalization" class="slide section level2">
-<h2>3.2 Problems: normalization</h2>
+<h1>3.2 Problems: normalization</h1>
 <ol style="list-style-type: decimal">
 <li>Normalization: If a text shall be machine-readable, it must be normalised!
 <ul>
@@ -344,7 +357,7 @@ rooted in the Western episteme</li>
 </ul></li>
 </ol>
 </div><div id="normalise-spelling-and-numbers" class="slide section level2">
-<h2>3.2.1 normalise spelling and numbers</h2>
+<h1>3.2.1 normalise spelling and numbers</h1>
 <p>silently or with explicit mark-up</p>
 <ol style="list-style-type: decimal">
 <li>Normalise spelling with <code>&lt;choice&gt;</code>, <code>&lt;orig&gt;</code>, and <code>&lt;reg&gt;</code>:</li>
@@ -362,7 +375,7 @@ rooted in the Western episteme</li>
 </ol>
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;w&gt;</span>غزته سي<span class="kw">&lt;/w&gt;</span></code></pre></div>
 </div><div id="persname-works-well-for-western-names-but-arabic-or-ottoman" class="slide section level2">
-<h2>3.2.2 <code>&lt;persName&gt;</code> works well for Western names, but Arabic or Ottoman?</h2>
+<h1>3.2.2 <code>&lt;persName&gt;</code> works well for Western names, but Arabic or Ottoman?</h1>
 <p>The canonical scheme of <code>&lt;surname&gt;</code> and <code>&lt;forename&gt;</code> is insufficient to markup the components of personal names in pre-modern and/or non-Western contexts: How should we mark up the following names?</p>
 <ul>
 <li>حضرة صاحب الدولة المشير عبد الله باشا</li>
@@ -372,7 +385,7 @@ rooted in the Western episteme</li>
 <li>جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني</li>
 </ul>
 </div><div id="ḥāfiẓ-ibrāhīm" class="slide section level2">
-<h2>3.2.2 Ḥāfiẓ Ibrāhīm</h2>
+<h1>3.2.2 Ḥāfiẓ Ibrāhīm</h1>
 <p>Consider this:</p>
 <ul>
 <li>Ḥāfiẓ Ibrāhīm</li>
@@ -383,7 +396,7 @@ rooted in the Western episteme</li>
 <p><img src="../assets/disambiguation_names-tei-viaf_32410755-1.png" alt="al-Muqtabas 1(1)" /> <img src="../assets/disambiguation_names-tei-viaf_32410755-2.png" alt="al-Muqtabas 2(1)" /></p>
 <p>all refer to the same person</p>
 </div><div id="ḥāfiẓ-ibrāhīm-1" class="slide section level2">
-<h2>3.2.2 Ḥāfiẓ Ibrāhīm</h2>
+<h1>3.2.2 Ḥāfiẓ Ibrāhīm</h1>
 <ul>
 <li><p>non-Western name components: Ḥāfiẓ Efendi Ibrāhīm contains an Ottoman title (<em>efendi</em>)</p>
 <div class="figure">
@@ -401,7 +414,7 @@ rooted in the Western episteme</li>
 </div></li>
 </ul>
 </div><div id="soualah-and-hassouns-proposal-for-classical-arabic-names" class="slide section level2">
-<h2>3.2.2 Soualah and Hassoun’s proposal for classical Arabic names</h2>
+<h1>3.2.2 Soualah and Hassoun’s proposal for classical Arabic names</h1>
 <p><a href="http://jtei.revues.org/398">Soulah and Hassoun 2012</a> propose to use available elements <code>&lt;surname&gt;</code>, <code>&lt;forename&gt;</code>, and <code>&lt;addName&gt;</code> with a controlled vocabulary of <code>@type</code> and <code>@subtype</code> attributes.</p>
 <ul>
 <li><code>&lt;surname&gt;</code>: to encode the <em>laqab</em> evoking a real or assigned quality</li>
@@ -415,25 +428,26 @@ rooted in the Western episteme</li>
 </ul></li>
 </ul>
 </div><div id="extended-proposal-for-late-ottoman-contexts" class="slide section level2">
-<h2>3.2.2 Extended proposal for late Ottoman contexts</h2>
+<h1>3.2.2 Extended proposal for late Ottoman contexts</h1>
 <p>I suggest to add the following mark-up for late-Ottoman names</p>
 <ul>
-<li><code>&lt;roleName type=&quot;title&quot;&gt;</code>: covering the wide range of Ottoman titles, e.g. Pasha, Bey, Efendi</li>
+<li><code>&lt;roleName type=&quot;title&quot;&gt;</code>: covering the wide range of Ottoman titles, e.g. Pasha, Bey, Efendi that do not necessarily denote a post in an administrative hierarchy</li>
+<li><code>&lt;roleName type=&quot;rank&quot;&gt;</code>: denoting ranks with a formal, administrative hierarchy</li>
 <li><code>&lt;addName type=&quot;honorific&quot;&gt;</code>: for the highly regularised honorific addresses and salutations, e.g. rif’etli, saadetli, utufetli, lizetli, devletli</li>
 </ul>
 </div><div id="example" class="slide section level2">
-<h2>3.2.2 Example</h2>
+<h1>3.2.2 Example</h1>
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني<span class="kw">&lt;/persName&gt;</span></code></pre></div>
 <p>Could be marked up as:</p>
 <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>جزائري<span class="kw">&lt;/addName&gt;</span>
     <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;honorific&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>زاده<span class="kw">&lt;/addName&gt;</span>
-    <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>الامير<span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>الامير<span class="kw">&lt;/roleName&gt;</span>
     <span class="kw">&lt;forename&gt;</span>علي<span class="kw">&lt;/forename&gt;</span>
-    <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>باشا<span class="kw">&lt;/addName&gt;</span>
+    <span class="kw">&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>باشا<span class="kw">&lt;/roleName&gt;</span>
     <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;patronym&quot;</span><span class="kw">&gt;</span>ابن 
         <span class="kw">&lt;forename&gt;</span>عبد القادر<span class="kw">&lt;/forename&gt;</span> 
-        <span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>افندي<span class="kw">&lt;/addName&gt;</span>
+        <span class="kw">&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span><span class="kw">&gt;</span>افندي<span class="kw">&lt;/addName&gt;</span>
     <span class="kw">&lt;/addName&gt;</span>
     <span class="kw">&lt;surname</span><span class="ot"> type=</span><span class="st">&quot;laqab&quot;</span><span class="kw">&gt;</span>الحسني<span class="kw">&lt;/surname&gt;</span>
 <span class="kw">&lt;/persName&gt;</span></code></pre></div>
@@ -470,19 +484,22 @@ rooted in the Western episteme</li>
     <surname xml:lang="ar">إبراهيم</surname> 
 </persName>
 ~~~ -->
-</div><div id="advantages-of-linked-open-data" class="slide section level2">
-<h2>3.2.3 advantages of Linked Open Data</h2>
-<p>If an entity can be linked to an online authority file (i.e. Linked Open Data (LOD)), they will provide further information:</p>
+</div><div id="advantages-of-linked-open-data-lod" class="slide section level2">
+<h1>3.2.3 advantages of Linked Open Data (LOD)</h1>
+<ol style="list-style-type: decimal">
+<li>disambiguation</li>
+<li>additional information
 <ul>
 <li>biographic data</li>
 <li>published works</li>
 <li>Wikipedia entry</li>
-<li>e.g. <a href="https://github.com/OpenArabicPE/authority-files/blob/master/viaf/viaf_32410755.SRW.xml">Ḥāfiẓ Ibrāhīm</a></li>
-</ul>
+</ul></li>
+</ol>
+<p>e.g. <a href="https://github.com/OpenArabicPE/authority-files/blob/master/viaf/viaf_32410755.SRW.xml">Ḥāfiẓ Ibrāhīm</a></p>
 </div><div id="limitations-of-lod" class="slide section level2">
-<h2>3.2.3 limitations of LOD</h2>
+<h1>3.2.3 limitations of LOD</h1>
 <ul>
-<li>Still many persons might not be available through LOD and authority files</li>
+<li>Many persons might not be available through LOD and authority files</li>
 <li>Proposed solution:
 <ul>
 <li>use canonnical references to printed sources such as biographical dictionaries, union catalogues etc. These references should be based on structural units</li>
@@ -511,14 +528,14 @@ rooted in the Western episteme</li>
 </table>
 </div>
 <div id="analysis" class="titleslide slide section level1"><h1>3.3 Analysis</h1></div><div id="workflow-analysis" class="slide section level2">
-<h2>3.3 Workflow: analysis</h2>
+<h1>3.3 Workflow: analysis</h1>
 <ol style="list-style-type: decimal">
 <li>Extract bibliographic (meta)data on the basis of the TEI model as MODS: -&gt; XML files</li>
 <li>Analyse bibliographic data for patterns</li>
 <li>Visualise / map patterns</li>
 </ol>
 </div><div id="analyse-bibliographic-data-for-patterns" class="slide section level2">
-<h2>3.3 Analyse bibliographic data for patterns</h2>
+<h1>3.3 Analyse bibliographic data for patterns</h1>
 <ul>
 <li>Bylines:
 <ul>
@@ -533,6 +550,45 @@ rooted in the Western episteme</li>
 <li>Geographic distribution?</li>
 <li>Time between publication and review?</li>
 </ul></li>
+</ul>
+</div><div id="authors-in-bylines-1" class="slide section level2">
+<h1>3.4 authors in bylines</h1>
+<iframe class="size-80" src="../assets/muqtabas_word-cloud.html">
+</iframe>
+</div><div id="locations-in-bylines-2" class="slide section level2">
+<h1>3.5 locations in bylines</h1>
+<script src="https://embed.github.com/view/geojson/OpenArabicPE/slides/gh-pages/assets/maps/muqtabas_bylines-toponyms.geojson?height=300&width=800"></script>
+</div><div id="locations-in-bylines-3" class="slide section level2">
+<h1>3.5 <a href="../assets/maps/map_muqtabas-bylines.html">locations in bylines</a></h1>
+<iframe class="size-80" src="../assets/maps/map_muqtabas-bylines.html">
+</iframe>
+</div><div id="further-information-on-authors" class="slide section level2">
+<h1>3.5 Further information on authors</h1>
+<ul>
+<li>Statistics based on bylines: <a href="https://github.com/tillgrallert/digital-muqtabas/blob/master/statistics/oclc_4770057679-stats_mods.json">JSON</a></li>
+</ul>
+</div><div id="thank-you" class="slide section level2">
+<h1>Thank you!</h1>
+<ul>
+<li>Links:
+<ul>
+<li>Project URLs: <a href="https://www.github.com/tillgrallert/digital-muqtabas" class="uri">https://www.github.com/tillgrallert/digital-muqtabas</a>, <a href="https://www.github.com/OpenArabicPE" class="uri">https://www.github.com/OpenArabicPE</a></li>
+<li>Project blog: <a href="https://tillgrallert.github.io/digital-muqtabas" class="uri">https://tillgrallert.github.io/digital-muqtabas</a></li>
+<li>Slides: <a href="https://OpenArabicPE.github.io/slides/2017-sfb980/index.html">https://OpenArabicPE.github.io/slides/2017-sfb980/</a></li>
+<li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+<li>Email: <script type="text/javascript">
+<!--
+h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript> <script type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+</ul></li>
+<li>Licence: The slides are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
 </ul>
 </div>
 </body>

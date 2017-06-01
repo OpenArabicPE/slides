@@ -31,7 +31,7 @@
 		},
 		{
 			"label": "Paris",
-			"publications": 4,
+			"publications": 5,
 			"geonId": "2988507",
 			"latlng": "48.85341,2.3488"
 		},
@@ -202,12 +202,6 @@
 			"publications": 1,
 			"geonId": "",
 			"latlng": ""
-		},
-		{
-			"label": "باريس",
-			"publications": 1,
-			"geonId": "2988507",
-			"latlng": "48.85341,2.3488"
 		},
 		{
 			"label": "جونية",
