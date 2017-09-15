@@ -74,7 +74,7 @@ duration: 6
     + access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
 - within a framework (git, [GitHub](https://github.com/tillgrallert/digital-muqtabas), [Zenodo](https://zenodo.org)) that allows for / provides
     + collaborative, open, version-controlled improvements of the edition
-    + re-use through open licences:[CC0](https://creativecommons.org/publicdomain/zero/1.0/), [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) and [MIT licence](https://en.wikipedia.org/wiki/MIT_License)
+    + re-use through open licences:[CC0](https://creativecommons.org/publicdomain/zero/1.0/) (text, metadata), [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (edition), and [MIT licence](https://en.wikipedia.org/wiki/MIT_License) (tools)
     + long-term preservation and DOIs ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))
 
 # [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): current state
