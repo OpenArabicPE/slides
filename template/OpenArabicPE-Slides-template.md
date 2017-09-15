@@ -137,6 +137,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
     + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
+    + 3.851.614 tokens (words), 5042 articles, [136 named authors](../assets/muqtabas_word-cloud.html)
 - Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
 - available at c. 30 libraries (North America, Europe, Middle East): 
     + original prints (mostly incomplete)
