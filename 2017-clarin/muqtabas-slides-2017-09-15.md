@@ -53,7 +53,7 @@ duration: 6
     + no or very bad text layers
 3. Metadata search within and across periodicals: **inexistent**
 
-# [Digital *Muqtabas*](https://www.github.com/tillgrallert/digital-muqtabas): unite transcription and facsimiles
+# [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): unite transcription and facsimiles
 
 1. aims
     + **validate** the transcription against the facsimiles
@@ -64,7 +64,7 @@ duration: 6
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
 
-# [Digital *Muqtabas*](https://www.github.com/tillgrallert/digital-muqtabas)
+# [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): deliverables
 
 1. Basis: open-access digital scholarly edition
     - XML/TEI files of all 96 issues
@@ -74,6 +74,20 @@ duration: 6
     - gradually improve text and mark-up: [GitHub](https://github.com/tillgrallert/digital-muqtabas)
     - releases are archived at [Zenodo](https://zenodo.org) and receive a DOI ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))
 3. Sugar on top: 
-    - Static web-view (doesn't require a permanent internet connection)
+    - web-view: client-side XSLT transformation ([example](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml))
     - bibliographic metadata for all issues and articles (MODS, BibTeX)
     - access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
+
+# [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): current state
+
+- Project evolved into "Open Arabic Periodical Editions" (OpenArabicPE)
+- Editorial decisions: modelling / TEI schema design
+    <!-- + mark-up of some text features has not yet been decided -->
+- Editorial work: 
+    + mark-up of page breaks (1-2 h per issue)
+    + add parts missing from transcription (all foreign words and footnotes, entire pages)
+    + correct transcription
+    + correct publication dates for all issues.
+- Web-display:
+    + needs some polishing
+    + search functions beyond the Zotero group and individual issues
