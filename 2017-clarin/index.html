@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Till Grallert" />
+  <title>Digital Muqtabas CTS Integration in CLARIN</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+  }
+  /* provide a readible font-size */
+  .sourceCode * {
+      font-size: 16px;
+  }
+  /* xml element names */
+  .xml > code > span.kw {
+  	color: #0F0F9C;
+  	font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code > span.ot {
+  	color:#FF8041;
+  }
+  /* xml attribute values */
+  .xml > code > span.st {
+  	color:#993300;
+  }
+  /* xml comments */
+  .xml > code > span.co {
+  	color:#167116;
+  	font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+  	color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  div.cWidth2 {
+      width:50%;
+      position: relative;
+      float: left;
+  }
+  
+  div.cWidth3 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+  	color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../js/slidy.js"></script>
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+  <meta name="duration" content="6" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Digital Muqtabas CTS Integration in CLARIN</h1>
+  <p class="author">
+Till Grallert
+  </p>
+  <p class="date">2017-09-15 16:17:48 +0300</p>
+</div>
+<div id="the-journal-of-al-muqtabas" class="slide section level1">
+<h1>The journal of <em>al-Muqtabas</em></h1>
+<p><em>al-Muqtabas</em> / المقتبس</p>
+<ul>
+<li>“monthly” journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
+<ul>
+<li>9 volumes, 96 issues <!-- (at least 2 double issues),  -->, c. 7000 pages</li>
+<li>3.851.614 tokens (words), 5042 articles, 136 named authors</li>
+</ul></li>
+<li>Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education.</li>
+<li>available at c. 30 libraries (North America, Europe, Middle East):
+<ul>
+<li>original prints (mostly incomplete)</li>
+<li>some copies of a “gray” reprint</li>
+<li>a number of microfiche copies from a single source</li>
+</ul></li>
+</ul>
+</div>
+<div id="importance-of-mundane-texts-periodicals" class="slide section level1">
+<h1>Importance of mundane texts / periodicals</h1>
+<ul>
+<li>They are at the core of various discourses
+<ul>
+<li>Modernity / -ism at the end of empire</li>
+<li>Arabic renaissance</li>
+<li>Arab nationalism</li>
+<li>Islamic reform movement</li>
+</ul></li>
+<li>They form large corpora with an equal distribution along a temporal axis (<em>al-Muqtabas</em>: 12 yrs, <em>al-Manār</em>: 43 yrs, <em>al-Muqtaṭaf</em>: 76 yrs)
+<ul>
+<li>linguistic analysis</li>
+<li>historical semantics</li>
+<li>rich data sets for social history</li>
+</ul></li>
+</ul>
+</div>
+<div id="digitisation" class="slide section level1">
+<h1>Digitisation</h1>
+<ul>
+<li>promises:
+<ul>
+<li>access</li>
+<li>preservation</li>
+</ul></li>
+<li>challenges:
+<ul>
+<li>no reliable Arabic OCR</li>
+<li>lack of funding</li>
+</ul></li>
+</ul>
+</div>
+<div id="state-of-digitisation" class="slide section level1">
+<h1>State of digitisation</h1>
+<ol style="list-style-type: decimal">
+<li>Text: “crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.
+<ul>
+<li>lack of / faulty metadata</li>
+<li>unknown editing principles</li>
+<li>unknown quality</li>
+<li>very limited structural mark-up</li>
+<li>cannot be reliably cited</li>
+</ul></li>
+<li>Digital imagery, e.g. <a href="http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63">Endangered Archives Programme (EAP)</a>, <a href="http://catalog.hathitrust.org/Record/100658549">HathiTrust</a>, <a href="http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269">Institut du Monde Arabe</a>.
+<ul>
+<li>lack of metadata</li>
+<li>limited licences, paywalls</li>
+<li>no or very bad text layers</li>
+</ul></li>
+<li>Metadata search within and across periodicals: <strong>inexistent</strong></li>
+</ol>
+</div>
+<div id="digital-muqtabas-unite-transcription-and-facsimiles" class="slide section level1">
+<h1><a href="https://www.github.com/tillgrallert/digital-muqtabas">Digital <em>Muqtabas</em></a>: unite transcription and facsimiles</h1>
+<ol style="list-style-type: decimal">
+<li>aims
+<ul>
+<li><strong>validate</strong> the transcription against the facsimiles</li>
+<li><strong>improve</strong> the transcription with the help of the “crowd”</li>
+<li>make everything <strong>citable</strong> for scholars, <strong>linkable</strong> for machines</li>
+<li>provide the new edition with the broadest possible licence to facilitate access and re-use</li>
+</ul></li>
+<li>principles
+<ul>
+<li>re-purpose <strong>available</strong> and <strong>established</strong> tools, technologies, and material</li>
+<li>preference for <strong>open</strong> and <strong>simple</strong> formats and tools</li>
+</ul></li>
+</ol>
+</div>
+<div id="digital-muqtabas" class="slide section level1">
+<h1><a href="https://www.github.com/tillgrallert/digital-muqtabas">Digital <em>Muqtabas</em></a></h1>
+<ol style="list-style-type: decimal">
+<li>Basis: open-access digital scholarly edition
+<ul>
+<li>XML/TEI files of all 96 issues</li>
+<li>links to digital facsimiles</li>
+<li>licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ul></li>
+<li>Core feature: social edition
+<ul>
+<li>gradually improve text and mark-up: <a href="https://github.com/tillgrallert/digital-muqtabas">GitHub</a></li>
+<li>releases are archived at <a href="https://zenodo.org">Zenodo</a> and receive a DOI (<a href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a>)</li>
+</ul></li>
+<li>Sugar on top:
+<ul>
+<li>Static web-view (doesn’t require a permanent internet connection)</li>
+<li>bibliographic metadata for all issues and articles (MODS, BibTeX)</li>
+<li>access to bibliographic metadata through a public <a href="https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9">Zotero group</a></li>
+</ul></li>
+</ol>
+</div>
+</body>
+</html>
