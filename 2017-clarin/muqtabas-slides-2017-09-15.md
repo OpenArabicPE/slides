@@ -66,21 +66,20 @@ duration: 6
 
 # [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): deliverables
 
-1. Basis: open-access digital scholarly edition
-    - XML/TEI files of all 96 issues
-    - links to digital facsimiles
-    - licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-2. Core feature: social edition
-    - gradually improve text and mark-up: [GitHub](https://github.com/tillgrallert/digital-muqtabas)
-    - releases are archived at [Zenodo](https://zenodo.org) and receive a DOI ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))
-3. Sugar on top: 
-    - web-view: client-side XSLT transformation ([example](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml))
-    - bibliographic metadata for all issues and articles (MODS, BibTeX)
-    - access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
+- open scholarly digital editions of *[Majallat] al-Muqtabas* <!-- and *al-Ḥaqāʾiq* --> providing
+    + TEI XML files (transcription and links to facsimiles)
+    + plain text files (markdown)
+    + MODS and BibTeX files for every article
+    + [customised version of TEI Boilerplate](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (XSLT and CSS) with stable URLs for every element ([example](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml))
+    + access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
+- within a framework (git, [GitHub](https://github.com/tillgrallert/digital-muqtabas), [Zenodo](https://zenodo.org)) that allows for / provides
+    + collaborative, open, version-controlled improvements of the edition
+    + re-use through open licences:[CC0](https://creativecommons.org/publicdomain/zero/1.0/), [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) and [MIT licence](https://en.wikipedia.org/wiki/MIT_License)
+    + long-term preservation and DOIs ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))
 
 # [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): current state
 
-- Project evolved into "Open Arabic Periodical Editions" (OpenArabicPE)
+- Project evolved into "Open Arabic Periodical Editions" ([OpenArabicPE](https://openarabicpe.github.io))
 - Editorial decisions: modelling / TEI schema design
     <!-- + mark-up of some text features has not yet been decided -->
 - Editorial work: 
