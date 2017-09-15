@@ -161,17 +161,18 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 <!-- ## 3. Test case: digital *Muqtabas*
 
-1. Basis: 
-    - XML/TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas*
-    - The text links to open-access digital facsimiles
+1. Basis: open-access digital scholarly edition
+    - XML/TEI files of all 96 issues
+    - links to digital facsimiles
     - licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-2. Core feature: 
-    - social digital edition: gradually improve text and mark-up
-    - releases are archived at [Zenodo](https://zenodo.org) and receive a DOI
+2. Core feature: social edition
+    - gradually improve text and mark-up: [GitHub](https://github.com/tillgrallert/digital-muqtabas)
+    - releases are archived at [Zenodo](https://zenodo.org) and receive a DOI ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))
 3. Sugar on top: 
-    - Static web-view (doesn't require a permanent internet connection)
+    - web-view: client-side XSLT transformation ([example](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml))
     - bibliographic metadata for all issues and articles (MODS, BibTeX)
-    - access to bibliographic metadata through a public Zotero group -->
+    - access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
+ -->
 
 ## 3. Test case: digital *Muqtabas*
 
