@@ -107,12 +107,12 @@ Till Grallert
 <div id="outline-of-todays-paper" class="slide section level2">
 <h1>Outline of today’s paper</h1>
 <ol style="list-style-type: decimal">
-<li>State of digitisation of (early) Arabic periodicals</li>
-<li>Catching up with technological challenges: OpenArabicPE</li>
-<li>Catching up with the late Ottoman ideosphere</li>
+<li>Introduction: the promised waste land of <em>digitised</em> Arabic</li>
+<li>OpenArabicPE: making truly <em>digital</em> editions</li>
+<li>First attempts to map the late Ottoman ideosphere of <em>Bilād al-Shām</em></li>
 </ol>
 </div>
-<div id="introduction-the-promised-waste-land" class="title-slide slide section level1"><h1>1. Introduction: the promised waste land</h1></div><div id="importance-of-mundane-texts-periodicals" class="slide section level2">
+<div id="introduction-the-promised-waste-land-of-digitised-arabic" class="title-slide slide section level1"><h1>1. Introduction: the promised waste land of <em>digitised</em> Arabic</h1></div><div id="importance-of-mundane-texts-periodicals" class="slide section level2">
 <h1>1.1 Importance of mundane texts / periodicals</h1>
 <!-- add core questions of today's presentation  -->
 <ul>
@@ -166,35 +166,18 @@ Till Grallert
 
 1. get the data:
     - text: 
-        - OCR and HTR are still disfunctional
+        - OCR and HTR are still dysfunctional
         - require ground truth and extensive training
     - bibliographic metadata
-2. turn the data into a human and machine readible edition
+2. turn the data into a human and machine readable edition
     - model the source 
     - identify entities and link them to authority files -->
-</div><div id="state-of-digitisation-text" class="slide section level2">
-<h1>1.3.1 state of digitisation: text</h1>
-<p>“crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.</p>
-<ul>
-<li>lack of / faulty metadata</li>
-<li>unknown editing principles</li>
-<li>unknown quality</li>
-<li>very limited structural mark-up</li>
-<li>cannot be reliably cited</li>
-</ul>
-</div><div id="state-of-digitisation-text-1" class="slide section level2">
-<h1>1.3.1 state of digitisation: text</h1>
-<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
-<div class="figure">
-<img src="../assets/shamela_muqtabas-annotated.png" alt="al-Muqtabas on al-Maktaba al-Shāmila" />
-<p class="caption"><a href="http://shamela.ws/browse.php/book-26523#page-4046"><em>al-Muqtabas</em> on <em>al-Maktaba al-Shāmila</em></a></p>
-</div>
 </div><div id="state-of-digitisation-images" class="slide section level2">
 <h1>1.3.2 state of digitisation: images</h1>
 <p>Digital imagery, e.g. <a href="http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63">Endangered Archives Programme (EAP)</a>, <a href="http://catalog.hathitrust.org/Record/100658549">HathiTrust</a></p>
 <ul>
 <li>lack of metadata</li>
-<li>limited licences, paywalls</li>
+<li>limited licences, pay walls</li>
 <li>no or very bad text layers</li>
 </ul>
 </div><div id="state-of-digitisation-images-1" class="slide section level2">
@@ -221,6 +204,23 @@ Till Grallert
 <img src="../assets/hathi_muqtabas-ocr-2.png" alt="al-Muqtabas 6 on HathiTrust, state of OCR (only visible to US IPs)" />
 <p class="caption"><a href="http://hdl.handle.net/2027/njp.32101073250910"><em>al-Muqtabas</em> 6 on HathiTrust, state of OCR (only visible to US IPs)</a></p>
 </div>
+</div><div id="state-of-digitisation-text" class="slide section level2">
+<h1>1.3.1 state of digitisation: text</h1>
+<p>“crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.</p>
+<ul>
+<li>lack of / faulty metadata</li>
+<li>unknown editing principles</li>
+<li>unknown quality</li>
+<li>very limited structural mark-up</li>
+<li>cannot be reliably cited</li>
+</ul>
+</div><div id="state-of-digitisation-text-1" class="slide section level2">
+<h1>1.3.1 state of digitisation: text</h1>
+<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
+<div class="figure">
+<img src="../assets/shamela_muqtabas-annotated.png" alt="al-Muqtabas on al-Maktaba al-Shāmila" />
+<p class="caption"><a href="http://shamela.ws/browse.php/book-26523#page-4046"><em>al-Muqtabas</em> on <em>al-Maktaba al-Shāmila</em></a></p>
+</div>
 </div><div id="state-of-digitisation-bibliographic-metadata" class="slide section level2">
 <h1>1.3.3 state of digitisation: bibliographic metadata</h1>
 <ul>
@@ -232,7 +232,7 @@ Till Grallert
 <li>reality: no platform provides machine-actionable bibliographic metadata below the item level</li>
 </ul>
 </div>
-<div id="proposed-solution-openarabicpe" class="title-slide slide section level1"><h1>2. Proposed solution: <a href="https://github.com/openarabicpe">OpenArabicPE</a></h1></div><div id="aims-and-principles" class="slide section level2">
+<div id="openarabicpe-making-truly-digital-editions" class="title-slide slide section level1"><h1>2. <a href="https://github.com/openarabicpe">OpenArabicPE</a>: making truly <em>digital</em> editions</h1></div><div id="aims-and-principles" class="slide section level2">
 <h1>2.1 Aims and principles</h1>
 <ol style="list-style-type: decimal">
 <li>idea: unite available facsimiles and transcriptions</li>
@@ -241,7 +241,7 @@ Till Grallert
 <li><strong>validate</strong> the transcription against the facsimiles</li>
 <li><strong>improve</strong> the transcription with the help of the “crowd”</li>
 <li>make everything <strong>citable</strong> for scholars, <strong>linkable</strong> for machines</li>
-<li>provide the new edition with the broadest possible licence to facilitate access and re-use</li>
+<li>provide the new edition with the <strong>open licence</strong> to facilitate access and re-use</li>
 </ul></li>
 <li>principles
 <ul>
@@ -252,7 +252,7 @@ Till Grallert
 </div><div id="deliverables-basic-components" class="slide section level2">
 <h1>2.2 Deliverables: basic components</h1>
 <ol style="list-style-type: decimal">
-<li>XML/TEI editions with their own <a href="https://github.com/OpenArabicPE/OpenArabicPE_ODD">schema</a>
+<li>XML/TEI editions with their own <a href="https://github.com/OpenArabicPE/OpenArabicPE_ODD">schema for Arabic periodicals</a>
 <ul>
 <li>text links to open-access digital facsimiles</li>
 <li>licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
@@ -270,18 +270,22 @@ Till Grallert
 <ol style="list-style-type: decimal">
 <li>Social digital edition hosted on <a href="https://github.com">GitHub</a>: gradually improve transcription and mark-up</li>
 <li>Releases are archived at <a href="https://zenodo.org">Zenodo</a>: receive a DOI for reliable citation</li>
-<li><a href="https://github.com/tillgrallert/tei-boilerplate-arabic-editions">Static web-view</a> (doesn’t require a permanent internet connection): provides side-by-side view of facsimiles and text</li>
+<li><a href="https://github.com/tillgrallert/tei-boilerplate-arabic-editions">Static web-view</a><!--  (doesn't require a permanent internet connection) -->: provides side-by-side view of facsimiles and text</li>
 <li>Access to bibliographic metadata through a public <a href="https://www.zotero.org/groups/openarabicpe">Zotero group</a></li>
 </ol>
 <!-- mention: process of cleaning data and disambiguation of entities -->
+<div class="figure">
+<img src="../assets/boilerplate_muqtabas.png" alt="Display of al-Muqtabas 6(2)" />
+<p class="caption"><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
+</div>
 </div><div id="project-scheme" class="slide section level2">
 <h1>2.3 Project scheme</h1>
 <p><img src="../assets/OpenArabicPE-organigramme_horizontal.png" /></p>
 </div>
-<div id="networks-of-authors-and-texts" class="title-slide slide section level1"><h1>3. Networks of authors and texts</h1></div><div id="networks-of-authors-available-data" class="slide section level2">
+<div id="first-attempts-to-map-the-late-ottoman-ideosphere-of-bilād-al-shām" class="title-slide slide section level1"><h1>3. First attempts to map the late Ottoman ideosphere of <em>Bilād al-Shām</em></h1></div><div id="networks-of-authors-available-data" class="slide section level2">
 <h1>networks of authors: available data</h1>
 <div class="c_width-50">
-<h3 id="al-muqtabas"><em>al-Muqtabas</em></h3>
+<h3 id="al-muqtabas-1906191718"><em>al-Muqtabas</em>, 1906–1917/18</h3>
 <table>
 <thead>
 <tr class="header">
@@ -293,40 +297,46 @@ Till Grallert
 </thead>
 <tbody>
 <tr class="odd">
+<td>volumes</td>
+<td>9</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>issues</td>
 <td>96</td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>pages</td>
-<td>c.7000</td>
+<td>c.7,000</td>
 <td></td>
 <td></td>
+</tr>
+<tr class="even">
+<td>articles (total)</td>
+<td>2,737</td>
+<td>323</td>
+<td>2,414</td>
 </tr>
 <tr class="odd">
-<td>articles (total)</td>
-<td>2737</td>
-<td>323</td>
-<td>2414</td>
-</tr>
-<tr class="even">
 <td>articles (independent)</td>
 <td>717</td>
 <td>284</td>
 <td>433</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>words</td>
-<td>1953952</td>
-<td>625333</td>
-<td>1328619</td>
+<td>1,953,952</td>
+<td>625,333</td>
+<td>1,328,619</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="c_width-50">
-<h3 id="al-ḥaqāʾiq"><em>al-Ḥaqāʾiq</em></h3>
+<h3 id="al-ḥaqāʾiq-1910191314"><em>al-Ḥaqāʾiq</em>, 1910–1913/14</h3>
 <table>
 <thead>
 <tr class="header">
@@ -338,28 +348,34 @@ Till Grallert
 </thead>
 <tbody>
 <tr class="odd">
+<td>volumes</td>
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>issues</td>
 <td>36</td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>pages</td>
-<td>1446</td>
+<td>1,446</td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>articles</td>
 <td>360</td>
 <td>76</td>
 <td>284</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>words</td>
-<td>300186</td>
-<td>40868</td>
-<td>259318</td>
+<td>300,186</td>
+<td>40,868</td>
+<td>259,318</td>
 </tr>
 </tbody>
 </table>
@@ -388,7 +404,8 @@ Till Grallert
 <tr class="header">
 <th>rank</th>
 <th>author.id</th>
-<th>author</th>
+<th>author.name</th>
+<th>author.birth</th>
 <th>articles</th>
 <th>word.count</th>
 </tr>
@@ -396,22 +413,25 @@ Till Grallert
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td>viaf:14924300</td>
-<td>معروف الرصافي</td>
+<td><a href="https://viaf.org/viaf/14924300/">viaf:14924300</a></td>
+<td><a href="https://en.wikipedia.org/wiki/Maarouf_Al_Rasafi">معروف الرصافي</a></td>
+<td>1875</td>
 <td>24</td>
 <td>12437</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td>viaf:40250618</td>
-<td>عيسى أفندي اسكندر المعلوف</td>
+<td><a href="https://viaf.org/viaf/40250618/">viaf:40250618</a></td>
+<td><a href="https://ar.wikipedia.org/wiki/عيسى_إسكندر_المعلوف">عيسى أفندي اسكندر المعلوف</a></td>
+<td>1869</td>
 <td>20</td>
 <td>23297</td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td>viaf:39370998</td>
-<td>ساتسنا</td>
+<td><a href="https://viaf.org/viaf/39370998/">viaf:39370998</a></td>
+<td><a href="https://en.wikipedia.org/wiki/Anastas_Al-Karmali">ساتسنا (بطرس بن جبرائيل عواد)</a></td>
+<td>1866</td>
 <td>14</td>
 <td>19849</td>
 </tr>
@@ -419,55 +439,63 @@ Till Grallert
 <td>4</td>
 <td></td>
 <td>يوسف جرجس زخم</td>
-<td>12</td>
-<td>19647</td>
+<td></td>
+<td>13</td>
+<td>21613</td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td>viaf:93607460</td>
-<td>جمال الدين القاسمي</td>
+<td><a href="https://viaf.org/viaf/93607460/">viaf:93607460</a></td>
+<td><a href="https://ar.wikipedia.org/wiki/جمال_الدين_القاسمي">جمال الدين القاسمي</a></td>
+<td>1866</td>
 <td>8</td>
 <td>38541</td>
 </tr>
 <tr class="even">
 <td>6</td>
-<td>viaf:118432135</td>
-<td>عبد القادر أفندي المغربي</td>
+<td><a href="https://viaf.org/viaf/118432135/">viaf:118432135</a></td>
+<td><a href="https://ar.wikipedia.org/wiki/عبد_القادر_المغربي">عبد القادر أفندي المغربي</a></td>
+<td>1867</td>
 <td>7</td>
 <td>14074</td>
 </tr>
 <tr class="odd">
 <td>7</td>
-<td>viaf:19737865</td>
-<td>أحمد بك تيمور</td>
+<td><a href="https://viaf.org/viaf/19737865/">viaf:19737865</a></td>
+<td><a href="https://en.wikipedia.org/wiki/Ahmed_Taymour">أحمد بك تيمور</a></td>
+<td>1871</td>
 <td>7</td>
 <td>7905</td>
 </tr>
 <tr class="even">
 <td>8</td>
-<td>viaf:22006374</td>
-<td>محمد رضا الشبيبي</td>
+<td><a href="https://viaf.org/viaf/22006374/">viaf:22006374</a></td>
+<td><a href="https://en.wikipedia.org/wiki/Mohammed_Ridha_Al-Shabibi">محمد رضا الشبيبي</a></td>
+<td>1889</td>
 <td>7</td>
 <td>17894</td>
 </tr>
 <tr class="odd">
 <td>9</td>
-<td>viaf:28125663</td>
-<td>رفيق بك العظم</td>
+<td><a href="https://viaf.org/viaf/28125663/">viaf:28125663</a></td>
+<td><a href="https://ar.wikipedia.org/wiki/رفيق_العظم">رفيق بك العظم</a></td>
+<td>1865</td>
 <td>7</td>
 <td>13237</td>
 </tr>
 <tr class="even">
 <td>10</td>
-<td>viaf:32272677</td>
-<td>محمد كرد علي</td>
+<td><a href="https://viaf.org/viaf/32272677/">viaf:32272677</a></td>
+<td><a href="https://en.wikipedia.org/wiki/Muhammad_Kurd_Ali">محمد كرد علي</a></td>
+<td>1876</td>
 <td>7</td>
 <td>42489</td>
 </tr>
 <tr class="odd">
 <td>11</td>
-<td>viaf:49218655</td>
-<td>أحمد بك زكي</td>
+<td><a href="https://viaf.org/viaf/49218655/">viaf:49218655</a></td>
+<td><a href="https://en.wikipedia.org/wiki/Ahmad_Zaki_Pasha">أحمد بك زكي</a></td>
+<td>1866</td>
 <td>7</td>
 <td>40311</td>
 </tr>
@@ -501,7 +529,8 @@ Till Grallert
 <tr class="header">
 <th>rank</th>
 <th>author.id</th>
-<th>author</th>
+<th>author.name</th>
+<th>author.birth</th>
 <th>articles</th>
 <th>word.count</th>
 </tr>
@@ -509,8 +538,9 @@ Till Grallert
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td>viaf:299025643</td>
+<td><a href="https://viaf.org/viaf/299025643/">viaf:299025643</a></td>
 <td>محمد عارف المنير الحسيني</td>
+<td>1847/48</td>
 <td>4</td>
 <td>3134</td>
 </tr>
@@ -518,6 +548,7 @@ Till Grallert
 <td>2</td>
 <td></td>
 <td>ع</td>
+<td></td>
 <td>3</td>
 <td>2833</td>
 </tr>
@@ -525,20 +556,23 @@ Till Grallert
 <td>3</td>
 <td></td>
 <td>عبد الرحمن القصار</td>
+<td></td>
 <td>3</td>
 <td>628</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td>viaf:267054449</td>
+<td><a href="https://viaf.org/viaf/267054449/">viaf:267054449</a></td>
 <td>مختار المؤيد</td>
+<td>1822</td>
 <td>3</td>
 <td>820</td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td>viaf:17087051</td>
+<td><a href="https://viaf.org/viaf/17087051/">viaf:17087051</a></td>
 <td>محمد أبو الخير الطباع</td>
+<td></td>
 <td>2</td>
 <td>2887</td>
 </tr>
@@ -546,6 +580,7 @@ Till Grallert
 <td>6</td>
 <td></td>
 <td>محمد القاسمي الحلاق</td>
+<td></td>
 <td>2</td>
 <td>3619</td>
 </tr>
@@ -553,6 +588,7 @@ Till Grallert
 <td>7</td>
 <td></td>
 <td>محي الدين الخاني</td>
+<td></td>
 <td>2</td>
 <td>74</td>
 </tr>
@@ -564,8 +600,8 @@ Till Grallert
 <img src="../assets/plots/word-cloud_haqaiq-authors-bylines.png" alt="Figure: Word cloud of authors published in al-Ḥaqāʾiq" />
 <p class="caption">Figure: Word cloud of authors published in <em>al-Ḥaqāʾiq</em></p>
 </div>
-</div><div id="overlap-between-al-muqtabas-and-al-ḥaqāʾiq" class="slide section level2">
-<h1>Overlap between <em>al-Muqtabas</em> and <em>al-Ḥaqāʾiq</em></h1>
+</div><div id="worlds-apart-al-muqtabas-and-al-ḥaqāʾiq" class="slide section level2">
+<h1>Worlds apart: <em>al-Muqtabas</em> and <em>al-Ḥaqāʾiq</em></h1>
 <div class="figure">
 <img src="../assets/plots/network_openarabicpe-authors-publications.png" alt="Figure: Authors and periodicals" />
 <p class="caption">Figure: Authors and periodicals</p>
@@ -579,7 +615,7 @@ Till Grallert
 </div><div id="al-ḥaqāʾiq-locations-by-number-of-bylines" class="slide section level2">
 <h1><em>al-Ḥaqāʾiq</em>: locations by number of bylines</h1>
 <div class="figure">
-<img src="../assets/maps/map_haqaiq-bylines-all.png" alt="Figure: Locations in bylines in al-Ḥaqāʾiq" />
+<img src="../assets/maps/map_haqaiq-bylines-me.png" alt="Figure: Locations in bylines in al-Ḥaqāʾiq" />
 <p class="caption">Figure: Locations in bylines in <em>al-Ḥaqāʾiq</em></p>
 </div>
 </div><div id="stylometry" class="slide section level2">
@@ -588,9 +624,9 @@ Till Grallert
 <li>aim: authorship attribution through comparison</li>
 <li>how:
 <ul>
-<li><em>computation</em> of frequency tables for each article</li>
-<li><em>comparison</em> of each frequency table with every other</li>
-<li><em>ranking</em> of pairs of texts according to similarity of frequency tables</li>
+<li><strong>computation</strong> of frequency tables for each article</li>
+<li><strong>comparison</strong> of each frequency table with every other</li>
+<li><strong>ranking</strong> of pairs of texts according to similarity of frequency tables</li>
 </ul></li>
 <li>limits: cannot establish author names beyond the corpus</li>
 </ul>
@@ -1006,11 +1042,10 @@ Till Grallert
 <div id="conclusion" class="title-slide slide section level1"><h1>Conclusion</h1></div><div id="summary" class="slide section level2">
 <h1>Summary</h1>
 <ul>
-<li><em>digitised</em> periodicals are not <em>digital</em> periodicals</li>
-<li>machine-guided analysis depends on (meta) data</li>
-<li>the better and more homogenously structured the data, the more applications of machine-guided analysis</li>
-<li>digital data and editions require a lot of manual work</li>
-<li>tools and formats are grounded in the Western episteme</li>
+<li><strong>digitised</strong> periodicals are not <strong>digital</strong> periodicals</li>
+<li>machine-guided analysis depends on the <strong>quality of (meta) data</strong> <!-- - the better and more homogenously structured the data, the more applications of machine-guided analysis --></li>
+<li>digital data and editions require a lot of <strong>manual work</strong></li>
+<li>tools and formats are grounded in the <strong>Western episteme</strong></li>
 </ul>
 </div><div id="thank-you" class="slide section level2">
 <h1>Thank you!</h1>

@@ -76,7 +76,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549)
 
 + lack of metadata
-+ limited licences, paywalls
++ limited licences, pay walls
 + no or very bad text layers
 
 ## 1.3.2 state of digitisation: images
