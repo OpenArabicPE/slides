@@ -101,12 +101,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 # 2. Proposed solution: Unite facsimile and transcription
 ## 2.1 Aims and principles
 
-1. aims
+1. idea: unite available facsimiles and transcriptions
+2. aims
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
     - provide the new edition with the broadest possible licence to facilitate access and re-use 
-2. principles
+3. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
 
@@ -122,12 +123,11 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
         + convert scraped information into TEI, MODS, BibTeX
         + improve the TEI mark-up
 2. Core features: 
-    1. Social digital edition hosted on GitHub: gradually improve transcription and mark-up
+    1. Social digital edition hosted on [GitHub](https://github.com): gradually improve transcription and mark-up
     2. Releases are archived at [Zenodo](https://zenodo.org) and receive a DOI
 3. Sugar on top: 
     1. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (doesn't require a permanent internet connection) providing side-by-side view of facsimiles and text
-    <!-- - bibliographic metadata for all issues and articles (MODS, BibTeX) -->
-    3. Access to bibliographic metadata through a public Zotero group
+    3. Access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe)
 
 
 # 3. Test case: digital *Muqtabas*
@@ -136,8 +136,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 *al-Muqtabas* / المقتبس
 
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
-    + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
-    + 3.851.614 tokens (words), 5042 articles, [136 named authors](../assets/muqtabas_word-cloud.html)
+    + 9 volumes, 96 issues (2 double issues), c. 7000 pages
+    + 1.953.952 tokens (words), 2737 articles, [128 named authors](../assets/muqtabas_word-cloud.html)
 - Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
 - available at c. 30 libraries (North America, Europe, Middle East): 
     + original prints (mostly incomplete)
@@ -196,6 +196,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + distributed version control
     + attribution of authorship
 - provide a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) for all files
+
+<!--  edit bullet point on licences -->
 
 
 ## 3.1 Basis: TEI files
