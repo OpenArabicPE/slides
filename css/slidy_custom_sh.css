@@ -233,10 +233,10 @@ heads
 ******************/
 
 /* title and dividing slides */
-
-div.titleslide h1 {
-  margin-top: 4em;
-  /*margin-bottom: auto;*/
+/* put h1 in the center of the slide */
+div.title-slide h1 {
+  padding-top: 100px;
+  padding-bottom: 0px;
   font-size: 2em;
 }
 
@@ -360,6 +360,11 @@ div.figure img {
     /*max-height: 80%;*/
     max-height: 600px;
     max-width:80%;
+}
+
+img {
+  max-height: 600px;
+  max-width: 90%;
 }
 
 /* external content, including local html pages */
