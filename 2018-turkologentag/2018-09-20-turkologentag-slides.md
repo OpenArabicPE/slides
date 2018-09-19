@@ -18,11 +18,11 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 ## Outline of today's paper
 
-1. State of digitisation of (early) Arabic periodicals
-2. Catching up with technological challenges: OpenArabicPE
-3. Catching up with the late Ottoman ideosphere
+1. Introduction: the promised waste land of *digitised* Arabic
+2. OpenArabicPE: making truly *digital* editions 
+3. First attempts to map the late Ottoman ideosphere of *Bilād al-Shām*
 
-# 1. Introduction: the promised waste land
+# 1. Introduction: the promised waste land of *digitised* Arabic
 ## 1.1 Importance of mundane texts / periodicals
 
 <!-- add core questions of today's presentation  -->
@@ -64,28 +64,12 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 1. get the data:
     - text: 
-        - OCR and HTR are still disfunctional
+        - OCR and HTR are still dysfunctional
         - require ground truth and extensive training
     - bibliographic metadata
-2. turn the data into a human and machine readible edition
+2. turn the data into a human and machine readable edition
     - model the source 
     - identify entities and link them to authority files -->
-
-## 1.3.1 state of digitisation: text
-
-"crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    
-+ lack of / faulty metadata
-+ unknown editing principles
-+ unknown quality
-+ very limited structural mark-up
-+ cannot be reliably cited 
-
-## 1.3.1 state of digitisation: text
-
-<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
-
-![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
 
 ## 1.3.2 state of digitisation: images
 
@@ -111,6 +95,23 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-ocr-2.png)
 
+## 1.3.1 state of digitisation: text
+
+"crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
+    
++ lack of / faulty metadata
++ unknown editing principles
++ unknown quality
++ very limited structural mark-up
++ cannot be reliably cited 
+
+## 1.3.1 state of digitisation: text
+
+<!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
+
+![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
+
+
 ## 1.3.3 state of digitisation: bibliographic metadata
 
 - needs: 
@@ -118,7 +119,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + across periodicals
 - reality: no platform provides machine-actionable bibliographic metadata below the item level
 
-# 2. Proposed solution: [OpenArabicPE](https://github.com/openarabicpe)
+# 2. [OpenArabicPE](https://github.com/openarabicpe): making truly *digital* editions 
 ## 2.1 Aims and principles
 
 1. idea: unite available facsimiles and transcriptions
@@ -126,14 +127,14 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - provide the new edition with the broadest possible licence to facilitate access and re-use 
+    - provide the new edition with the **open licence** to facilitate access and re-use 
 3. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
 
 ## 2.2 Deliverables: basic components
 
-1. XML/TEI editions with their own [schema](https://github.com/OpenArabicPE/OpenArabicPE_ODD)
+1. XML/TEI editions with their own [schema for Arabic periodicals](https://github.com/OpenArabicPE/OpenArabicPE_ODD)
     + text links to open-access digital facsimiles
     + licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 2. Structured bibliographic metadata (MODS, BibTeX)
@@ -146,41 +147,45 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 1. Social digital edition hosted on [GitHub](https://github.com): gradually improve transcription and mark-up
 2. Releases are archived at [Zenodo](https://zenodo.org): receive a DOI for reliable citation
-3. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (doesn't require a permanent internet connection): provides side-by-side view of facsimiles and text
+3. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: provides side-by-side view of facsimiles and text
 4. Access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe)
 
 <!-- mention: process of cleaning data and disambiguation of entities -->
+
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
 
 ## 2.3 Project scheme
 
 ![](../assets/OpenArabicPE-organigramme_horizontal.png)
 
-# 3. Networks of authors and texts
+# 3. First attempts to map the late Ottoman ideosphere of *Bilād al-Shām*
 ## networks of authors: available data
 
 <div class="c_width-50">
 
-### *al-Muqtabas*
+### *al-Muqtabas*, 1906--1917/18
 
-|         token          |  total  | author |    NA   |
-|------------------------|---------|--------|---------|
-| issues                 | 96      |        |         |
-| pages                  | c.7000  |        |         |
-| articles (total)       | 2737    |    323 |    2414 |
-| articles (independent) | 717     |    284 |     433 |
-| words                  | 1953952 | 625333 | 1328619 |
+|         token          |   total   |  author |     NA    |
+|------------------------|-----------|---------|-----------|
+| volumes                | 9         |         |           |
+| issues                 | 96        |         |           |
+| pages                  | c.7,000   |         |           |
+| articles (total)       | 2,737     | 323     | 2,414     |
+| articles (independent) | 717       | 284     | 433       |
+| words                  | 1,953,952 | 625,333 | 1,328,619 |
 
 </div>
 <div class="c_width-50">
 
-### *al-Ḥaqāʾiq*
+### *al-Ḥaqāʾiq*, 1910--1913/14
 
-|  token   | total  | author |   NA   |
-|----------|--------|--------|--------|
-| issues   |     36 |        |        |
-| pages    |   1446 |        |        |
-| articles |    360 |     76 |    284 |
-| words    | 300186 |  40868 | 259318 |
+|  token   |  total  | author |    NA   |
+|----------|---------|--------|---------|
+| volumes  | 3       |        |         |
+| issues   | 36      |        |         |
+| pages    | 1,446   |        |         |
+| articles | 360     | 76     | 284     |
+| words    | 300,186 | 40,868 | 259,318 |
 
 </div>
 
@@ -198,19 +203,19 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## *al-Muqtabas*: authors by number of bylines
 
-| rank |   author.id    |           author          | articles | word.count |
-|------|----------------|---------------------------|----------|------------|
-|    1 | viaf:14924300  | معروف الرصافي             |       24 |      12437 |
-|    2 | viaf:40250618  | عيسى أفندي اسكندر المعلوف |       20 |      23297 |
-|    3 | viaf:39370998  | ساتسنا                    |       14 |      19849 |
-|    4 |                | يوسف جرجس زخم             |       12 |      19647 |
-|    5 | viaf:93607460  | جمال الدين القاسمي        |        8 |      38541 |
-|    6 | viaf:118432135 | عبد القادر أفندي المغربي  |        7 |      14074 |
-|    7 | viaf:19737865  | أحمد بك تيمور             |        7 |       7905 |
-|    8 | viaf:22006374  | محمد رضا الشبيبي          |        7 |      17894 |
-|    9 | viaf:28125663  | رفيق بك العظم             |        7 |      13237 |
-|   10 | viaf:32272677  | محمد كرد علي              |        7 |      42489 |
-|   11 | viaf:49218655  | أحمد بك زكي               |        7 |      40311 |
+| rank |                     author.id                      |                                    author.name                                    | author.birth | articles | word.count |
+|------|----------------------------------------------------|-----------------------------------------------------------------------------------|--------------|----------|------------|
+|    1 | [viaf:14924300](https://viaf.org/viaf/14924300/)   | [معروف الرصافي](https://en.wikipedia.org/wiki/Maarouf_Al_Rasafi)                  |         1875 |       24 |      12437 |
+|    2 | [viaf:40250618](https://viaf.org/viaf/40250618/)   | [عيسى أفندي اسكندر المعلوف](https://ar.wikipedia.org/wiki/عيسى_إسكندر_المعلوف)    |         1869 |       20 |      23297 |
+|    3 | [viaf:39370998](https://viaf.org/viaf/39370998/)   | [ساتسنا (بطرس بن جبرائيل عواد)](https://en.wikipedia.org/wiki/Anastas_Al-Karmali) |         1866 |       14 |      19849 |
+|    4 |                                                    | يوسف جرجس زخم                                                                     |              |       13 |      21613 |
+|    5 | [viaf:93607460](https://viaf.org/viaf/93607460/)   | [جمال الدين القاسمي](https://ar.wikipedia.org/wiki/جمال_الدين_القاسمي)            |         1866 |        8 |      38541 |
+|    6 | [viaf:118432135](https://viaf.org/viaf/118432135/) | [عبد القادر أفندي المغربي](https://ar.wikipedia.org/wiki/عبد_القادر_المغربي)      |         1867 |        7 |      14074 |
+|    7 | [viaf:19737865](https://viaf.org/viaf/19737865/)   | [أحمد بك تيمور](https://en.wikipedia.org/wiki/Ahmed_Taymour)                      |         1871 |        7 |       7905 |
+|    8 | [viaf:22006374](https://viaf.org/viaf/22006374/)   | [محمد رضا الشبيبي](https://en.wikipedia.org/wiki/Mohammed_Ridha_Al-Shabibi)       |         1889 |        7 |      17894 |
+|    9 | [viaf:28125663](https://viaf.org/viaf/28125663/)   | [رفيق بك العظم](https://ar.wikipedia.org/wiki/رفيق_العظم)                         |         1865 |        7 |      13237 |
+|   10 | [viaf:32272677](https://viaf.org/viaf/32272677/)   | [محمد كرد علي](https://en.wikipedia.org/wiki/Muhammad_Kurd_Ali)                   |         1876 |        7 |      42489 |
+|   11 | [viaf:49218655](https://viaf.org/viaf/49218655/)   | [أحمد بك زكي](https://en.wikipedia.org/wiki/Ahmad_Zaki_Pasha)                     |         1866 |        7 |      40311 |
 
 <!-- ## *al-Muqtabas*: authors by number of bylines
 
@@ -234,21 +239,21 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## *al-Ḥaqāʾiq*: authors by number of bylines
 
-| rank |   author.id    |          author          | articles | word.count |
-|------|----------------|--------------------------|----------|------------|
-|    1 | viaf:299025643 | محمد عارف المنير الحسيني |        4 |       3134 |
-|    2 |                | ع                        |        3 |       2833 |
-|    3 |                | عبد الرحمن القصار        |        3 |        628 |
-|    4 | viaf:267054449 | مختار المؤيد             |        3 |        820 |
-|    5 | viaf:17087051  | محمد أبو الخير الطباع    |        2 |       2887 |
-|    6 |                | محمد القاسمي الحلاق      |        2 |       3619 |
-|    7 |                | محي الدين الخاني         |        2 |         74 |
+| rank |                     author.id                      |       author.name        | author.birth | articles | word.count |
+|------|----------------------------------------------------|--------------------------|--------------|----------|------------|
+|    1 | [viaf:299025643](https://viaf.org/viaf/299025643/) | محمد عارف المنير الحسيني | 1847/48      |        4 |       3134 |
+|    2 |                                                    | ع                        |              |        3 |       2833 |
+|    3 |                                                    | عبد الرحمن القصار        |              |        3 |        628 |
+|    4 | [viaf:267054449](https://viaf.org/viaf/267054449/) | مختار المؤيد             | 1822         |        3 |        820 |
+|    5 | [viaf:17087051](https://viaf.org/viaf/17087051/)   | محمد أبو الخير الطباع    |              |        2 |       2887 |
+|    6 |                                                    | محمد القاسمي الحلاق      |              |        2 |       3619 |
+|    7 |                                                    | محي الدين الخاني         |              |        2 |         74 |
 
 ## *al-Ḥaqāʾiq*: authors by number of bylines
 
 ![Figure: Word cloud of authors published in *al-Ḥaqāʾiq*](../assets/plots/word-cloud_haqaiq-authors-bylines.png)
 
-## Overlap between *al-Muqtabas* and *al-Ḥaqāʾiq*
+## Worlds apart: *al-Muqtabas* and *al-Ḥaqāʾiq*
 
 ![Figure: Authors and periodicals](../assets/plots/network_openarabicpe-authors-publications.png)
 
@@ -258,15 +263,15 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## *al-Ḥaqāʾiq*: locations by number of bylines
 
-![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map_haqaiq-bylines-all.png)
+![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map_haqaiq-bylines-me.png)
 
 ## stylometry
 
 - aim: authorship attribution through comparison
 - how: 
-    + *computation* of frequency tables for each article
-    + *comparison* of each frequency table with every other
-    + *ranking* of pairs of texts according to similarity of frequency tables
+    + **computation** of frequency tables for each article
+    + **comparison** of each frequency table with every other
+    + **ranking** of pairs of texts according to similarity of frequency tables
 - limits: cannot establish author names beyond the corpus
 
 ## *al-Muqtabas*: 1000 MFWs, *Jamāl al-Dīn al-Qāsimī*
@@ -349,11 +354,11 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 # Conclusion
 ## Summary
 
-- *digitised* periodicals are not *digital* periodicals
-- machine-guided analysis depends on (meta) data
-- the better and more homogenously structured the data, the more applications of machine-guided analysis
-- digital data and editions require a lot of manual work
-- tools and formats are grounded in the Western episteme
+- **digitised** periodicals are not **digital** periodicals
+- machine-guided analysis depends on the **quality of (meta) data**
+<!-- - the better and more homogenously structured the data, the more applications of machine-guided analysis -->
+- digital data and editions require a lot of **manual work**
+- tools and formats are grounded in the **Western episteme**
 
 ## Thank you!
 
