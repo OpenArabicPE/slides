@@ -337,7 +337,7 @@ img, iframe {
    /* width: 100%; */
     margin-top: 1em;
     background-color: rgba(0,0,0,0.04);
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 2px 2px 5px #000;
     border:gray solid 1px;
 }
@@ -357,7 +357,8 @@ div.figure p.caption {
 }
 div.figure img {
     float:right;
-    max-height: 80%;
+    /*max-height: 80%;*/
+    max-height: 600px;
     max-width:80%;
 }
 
