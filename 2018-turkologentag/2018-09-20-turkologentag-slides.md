@@ -18,11 +18,11 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 ## Outline of today's paper
 
-1. Introduction: the promised waste land of *digitised* Arabic
+1. Introduction: the promised wasteland of *digitised* Arabic
 2. OpenArabicPE: making truly *digital* editions 
 3. First attempts to map the late Ottoman ideosphere of *Bilād al-Shām*
 
-# 1. Introduction: the promised waste land of *digitised* Arabic
+# 1. Introduction: the promised wasteland of *digitised* Arabic
 ## 1.1 Importance of mundane texts / periodicals
 
 <!-- add core questions of today's presentation  -->
@@ -50,7 +50,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 ## 1.3 Digitisation as solution
 
-1. Promise: instant *access* to 100s of *digitised* periodicals and 100.000s of issues
+1. Promise: instant **access** to 100s of **digitised** periodicals and 100.000s of issues
 2. Expectations: answers to core questions
     - extent of text re-use
     - identify authors
@@ -363,13 +363,11 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 ## Thank you!
 
 - Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Manzi Tanna-Händel and Layla Youssef
-
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html)
-    + Paper: <https://doi.org/10.5281/zenodo.1413610>
+    + Paper (draft): <https://doi.org/10.5281/zenodo.1413610>
     + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE/digital-haqaiq](https://www.github.com/OpenArabicPE/digital-haqaiq)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <grallert@orient-institut.org> <till.grallert@fu-berlin.de>
-
-- Licence: The slides are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+- Licence: slides and plots are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
