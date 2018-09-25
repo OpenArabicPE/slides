@@ -356,7 +356,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 - **digitised** periodicals are not **digital** periodicals
 - machine-guided analysis depends on the **quality of (meta) data**
-<!-- - the better and more homogenously structured the data, the more applications of machine-guided analysis -->
+<!-- - the better and more homogeneously structured the data, the more applications of machine-guided analysis -->
 - digital data and editions require a lot of **manual work**
 - tools and formats are grounded in the **Western episteme**
 
