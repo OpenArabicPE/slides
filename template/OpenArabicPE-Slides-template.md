@@ -5,10 +5,29 @@ date:
 duration: 20
 ---
 
-# Title slide
+<!-- To do -->
+<!-- - ## 3.3 -->
+<!-- - integrate new projecte scheme -->
+<!-- - comments on collaborations -->
+<!-- - integrate example of fake facsimiles -->
 
-# 1. Introduction
+## Title slide
+
+Till Grallert, Orient-Institut Beirut (OIB)
+
+Turkologentag 2018, Bamberg
+
+Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html)
+
+## Outline of today's paper
+
+1. Digitisation of Arabic periodicals?
+2. OpenArabicPE
+
+# 1. Introduction <!-- better title -->
 ## 1.1 Importance of mundane texts / periodicals
+
+<!-- add core questions of today's presentation  -->
 
 - They are at the core of various discourses
     + Modernity / -ism at the end of empire
@@ -31,10 +50,34 @@ duration: 20
     + technologies: absence of reliable OCR
     <!-- + technical skills: lack of basic scripting skills -->
 
-Digitisation as promised remedy, but the consequence is a focus on "high" culture and canonical texts
+## 1.3 Digitisation as solution
 
-## 1.3 State of digitisation
+1. Promise: instant **access** to 100s of **digitised** periodicals and 100.000s of issues
+2. Expectations: answers to core questions
+    - extent of text re-use
+    - identify authors
+    - track authors across periodicals
+2. Reality
+    - limited access
+    - limited data
+    - limited metadata
+
+
+## 1.3 Digitisation as problem(s)
+<!-- elaborate the problems:-->
+
+1. get the data:
+    - text: 
+        - OCR and HTR are still dysfunctional
+        - require ground truth and extensive training
+    - bibliographic metadata
+2. turn the data into a human and machine readable edition
+    - model the source 
+    - identify entities and link them to authority files
+
+## 1.4 State of digitisation
 <!-- This should be a demo session, otherwise one needs screenshots -->
+<!-- if the sub slides in this section are used, the content of this slide should be deleted -->
 
 1. Text: "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
     + lack of / faulty metadata
@@ -42,7 +85,7 @@ Digitisation as promised remedy, but the consequence is a focus on "high" cultur
     + unknown quality
     + very limited structural mark-up
     + cannot be reliably cited 
-2. Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [Institut du Monde Arabe](http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269).
+2. Facsimiles: [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [Institut du Monde Arabe](http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269) et al.
     + lack of metadata
     + limited licences, paywalls
     + no or very bad text layers
@@ -51,87 +94,125 @@ Digitisation as promised remedy, but the consequence is a focus on "high" cultur
 
 <!-- the following slides are too detailed for many purposes -->
 
-## 1.3.1 state of digitisation: text
+## 1.4.1 state of digitisation: text
 
-"crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    
-+ lack of / faulty metadata
-+ unknown editing principles
-+ unknown quality
-+ very limited structural mark-up
-+ cannot be reliably cited 
+- "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
+    + lack of / faulty metadata
+    + unknown editing principles
+    + unknown quality
+    + very limited structural mark-up
+    + cannot be reliably cited 
+- OCR layer at HathiTrust
 
-## 1.3.1 state of digitisation: text
+## 1.4.1 state of digitisation: text
 
 <!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
 
 ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
 
-## 1.3.2 state of digitisation: images
+## 1.4.1 state of digitisation: text
 
-Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549)
+![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-ocr-2.png)
+
+## 1.4.2 state of digitisation: facsimiles
+
+Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/project/EAP119), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [*arshīf al-majallāt al-adabiyya wa-l-thaqafiyya al-ʿarabiyya* (sakhrit)](http://archive.sakhrit.co/newmagazineYears.aspx?MID=125)
 
 + lack of metadata
 + limited licences, paywalls
 + no or very bad text layers
 
-## 1.3.2 state of digitisation: images
+## 1.4.2 state of digitisation: facsimiles
 
-![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/eap119-1-4-5-muqtabas-annotated.png)
+![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif.png)
 
-## 1.3.2 state of digitisation: images
+## 1.4.2 state of digitisation: facsimiles
 
 ![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
 
-## 1.3.2 state of digitisation: images
+## 1.4.2 state of digitisation: facsimiles
 
 ![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-2.png)
 
-## 1.3.2 state of digitisation: images
+## 1.4.2 state of digitisation: fake facsimiles
 
-![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-ocr-2.png)
+<!-- original facsimile: [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/800,/0/gray.jpg) -->
 
-## 1.3.3 state of digitisation: bibliographic metadata
+<div class="c_width-30">
+
+![](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
+
+</div><div class="c_width-30">
+
+<!-- shamela's transcription -->
+![](../assets/shamela_muqtabas-i_54-p_30-31.png)
+
+</div><div class="c_width-30">
+
+<!-- sakhrit's fake facsimile -->
+![](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
+
+</div>
+
+## 1.4.3 state of digitisation: bibliographic metadata
 
 - needs: 
     + reliable bibliographic metadata on the article level
     + across periodicals
-- no platform serving machine-actionable bibliographic metadata below the item level
+- reality:
+    + no platform serving machine-actionable bibliographic metadata below the item level
 
-# 2. Proposed solution: Unite facsimile and transcription
+## 1.4.3 state of digitisation: bibliographic metadata
+
+![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif-metadata.png)
+
+# 2. Open Arabic Periodical Editions (OpenArabicPE): Overview<!-- : Unite facsimile and transcription and generate reliable metadata -->
 ## 2.1 Aims and principles
 
-1. idea: unite available facsimiles and transcriptions
+1. ideas: 
+    - unite **available** facsimiles and transcriptions
+    - harvest, generate, validate and share open metadata
 2. aims
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - provide the new edition with the broadest possible licence to facilitate access and re-use 
+    - share all data, metadata and tools with the broadest possible licence to facilitate access and re-use 
 3. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
 
-## 2.2 Deliverables
+## 2.2 Deliverables: basic components
 
-1. Basis: 
-    1. XML/TEI editions with their own [schema](https://github.com/OpenArabicPE/OpenArabicPE_ODD)
-        + text links to open-access digital facsimiles
-        + licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-    2. Structured bibliographic metadata (MODS, BibTeX)
-    3. Tools to
-        + scrape full text / bibliographic information from the web
-        + convert scraped information into TEI, MODS, BibTeX
-        + improve the TEI mark-up
-2. Core features: 
-    1. Social digital edition hosted on [GitHub](https://github.com): gradually improve transcription and mark-up
-    2. Releases are archived at [Zenodo](https://zenodo.org) and receive a DOI
-3. Sugar on top: 
-    1. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (doesn't require a permanent internet connection) providing side-by-side view of facsimiles and text
-    3. Access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe)
+1. XML/TEI editions with their own [schema for Arabic periodicals](https://github.com/OpenArabicPE/OpenArabicPE_ODD)
+    + text links to open-access digital facsimiles
+2. Structured bibliographic metadata (MODS, BibTeX)
+    + based on XML editions
+    + scraped from the web and validated
+    + generated
+3. Scripts to
+    + scrape full text / bibliographic information from the web
+    + convert scraped information into TEI, MODS, BibTeX
+    + generate bibliographic through iteration
+    + improve the TEI mark-up
 
+## 2.2 Deliverables: Core features
 
-# 3. Test case: digital *Muqtabas*
-## 3. Test case: The journal of *al-Muqtabas*
+1. Open licences
+1. Social digital editions hosted on [GitHub](https://github.com): gradually improve transcription and mark-up
+2. Releases are archived at [Zenodo](https://zenodo.org): receive a DOI for reliable citation
+3. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: provides side-by-side view of facsimiles and text
+4. Access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe)
+
+<!-- mention: process of cleaning data and disambiguation of entities -->
+
+<!-- ![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png) -->
+
+## 2.3 Summary
+
+![](OpenArabicPE_components-layer-1-4.png)
+
+# 3. Sample case: digital *Muqtabas*
+## 3. Sample case: The journal of *al-Muqtabas*
 
 *al-Muqtabas* / المقتبس
 
@@ -150,7 +231,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
 ## 3. Test case: digital *Muqtabas*
 
-![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
+![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
 
 ## 3. Test case: digital *Muqtabas*
 
@@ -160,22 +241,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/oxygen_muqtabas-2.png) 
 
-<!-- ## 3. Test case: digital *Muqtabas*
 
-1. Basis: open-access digital scholarly edition
-    - XML/TEI files of all 96 issues
-    - links to digital facsimiles
-    - licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-2. Core feature: social edition
-    - gradually improve text and mark-up: [GitHub](https://github.com/tillgrallert/digital-muqtabas)
-    - releases are archived at [Zenodo](https://zenodo.org) and receive a DOI ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))
-3. Sugar on top: 
-    - web-view: client-side XSLT transformation ([example](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml))
-    - bibliographic metadata for all issues and articles (MODS, BibTeX)
-    - access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
- -->
-
-## 3. Test case: digital *Muqtabas*
+## 3. Sample case: digital *Muqtabas*
 
 ![Project scheme](../assets/OpenArabicPE-organigramme_horizontal.png)
 
@@ -283,7 +350,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ![Branches on GitHub](../assets/github_branches-1.png)
 
-## 3.3 Sugar on top: web-view
+## 3.3 Core feature: web-view
 
 - Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
 - human-readable and static web-view (either rawgit or gh-pages)
@@ -294,18 +361,31 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - link to metadata on the article level (MODS, BibTeX)
 - the code is shared with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) on [GitHub](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)
 
-## 3.3 Sugar on top: web-view
+## 3.3 Core feature: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
+![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
 
-## 3.3 Sugar on top: Zotero group
+## 3.4 Core feature: Zotero group
 
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": list view](../assets/zotero-group_digital-muqtabas-1.png)
 
-## 3.3 Sugar on top: Zotero group
+## 3.4 Core feature: Zotero group
 
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": item view](../assets/zotero-group_digital-muqtabas-2.png)
 
+<!-- the following still needs work -->
+## 3.5 Core feature: preservation, DOI
+
+<div class="c_width-50 c_left">
+
+- *al-Muqtabas*: [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/tillgrallert/digital-muqtabas/releases) [![DOI](https://zenodo.org/badge/45922152.svg)](https://zenodo.org/badge/latestdoi/45922152)
+- *al-Ḥaqāiq*: [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/digital-haqaiq/releases) [![DOI](https://zenodo.org/badge/52619834.svg)](https://zenodo.org/badge/latestdoi/52619834)
+
+</div><div class="c_width-50 c_right">
+
+![](../assets/zenodo_muqtabas.png)
+
+</div>
 
 # 4. Use cases
 ## 4.1 Reviewed works
@@ -358,7 +438,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## ongoing work
 
 - Editorial decisions: TEI schema design
-    + mark-up of some text features has not yet been decided
+    <!-- + TEI is rooted in the western episteme -->
 - Editorial work: 
     + mark-up of page breaks (1-2 h per issue)
     + correcting transcriptions
@@ -367,7 +447,8 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + correct publication dates for all issues.
 - Web-display:
     + needs some polishing
-    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub) 
+    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
+- Scanning:
 
 # 5. Experiences
 ## simple, fast, sustainable
@@ -384,25 +465,29 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 
 # 6. Conclusion
-## Summary
+## Summary: OpenArabicPE
 
 - open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
     + TEI XML files (transcription and links to facsimiles)
     + plain text files
     + MODS and BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
-- within a framework (git, GitHub, Zenodo) that allows for / provides
+- validated open bibliographic metadata (MODS) for 
+    - [*al-Jinān* (1875--1885)](https://github.com/OpenArabicPE/journal_al-jinan), [*al-Quds* (#1--391, 1908--14)](https://github.com/OpenArabicPE/newspaper_al-quds), [*Ḥadīqat al-Akhbār* (#1--357, 1858--65)](https://github.com/OpenArabicPE/newspaper_hadiqat-al-akhbar), [*Thamarāt al-Funūn* (#1--1695, 1875--1908)](https://github.com/OpenArabicPE/newspaper_thamarat-al-funun) 
+- within a framework (git, [GitHub](https://github.com/openarabicpe), [Zenodo](https://zenodo.org/), [Zotero](https://www.zotero.org/groups/openarabicpe/items/)) that allows for / provides
     + collaborative, open, version-controlled improvements of the edition
-    + re-use of the text 
+    + re-use of the data, metadata and tools 
     + long-term preservation and DOIs
+    + discovery <!-- in CLARIN -->
 
 ## Thank you!
 
+- Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
 - Links:
-    + Project URLs: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
-    + Project blog: [https://tillgrallert.github.io/digital-muqtabas](https://tillgrallert.github.io/digital-muqtabas)
-    + Slides: [https://OpenArabicPE.github.io/slides/template/](https://OpenArabicPE.github.io/slides/template/index.html)
+    + Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html)
+    <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> -->
+    + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE/digital-haqaiq](https://www.github.com/OpenArabicPE/digital-haqaiq)
+    + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
-    + Email: <grallert@orient-institut.org>
-
-- Licence: The slides are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+    + Email: <grallert@orient-institut.org> <till.grallert@fu-berlin.de>
+- Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
