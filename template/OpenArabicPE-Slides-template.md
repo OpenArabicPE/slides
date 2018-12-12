@@ -203,7 +203,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 2.2 Deliverables: Core features
 
-1. Open licences
+1. Open licences: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)
 1. Social digital editions hosted on [GitHub](https://github.com): gradually improve transcription and mark-up
 2. Releases are archived at [Zenodo](https://zenodo.org): receive a DOI for reliable citation
 3. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: provides side-by-side view of facsimiles and text
