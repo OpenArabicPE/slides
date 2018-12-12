@@ -6,10 +6,9 @@ duration: 20
 ---
 
 <!-- To do -->
-<!-- - ## 3.3 -->
-<!-- - integrate new projecte scheme -->
+<!-- - 4.1 update data for authorship attribution from GitHub -->
 <!-- - comments on collaborations -->
-<!-- - integrate example of fake facsimiles -->
+
 
 ## Title slide
 
@@ -21,10 +20,11 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 ## Outline of today's paper
 
-1. Digitisation of Arabic periodicals?
-2. OpenArabicPE
+1. The promised wasteland of *digitised* Arabic periodicals
+2. OpenArabicPE: Overview
+3. OpenArabicPE: Some details
 
-# 1. Introduction <!-- better title -->
+# 1. Introduction: the promised wasteland of *digitised* Arabic periodicals
 ## 1.1 Importance of mundane texts / periodicals
 
 <!-- add core questions of today's presentation  -->
@@ -42,8 +42,8 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 ## 1.2 A two-fold problem
 
 - Preservation: 
-    + Active destruction of cultural artifacts: iconoclasm, neoliberalism
-    + Neglect: fragile materiality
+    + Active **destruction** of cultural artefacts: iconoclasm, neoliberalism
+    + **Decay** through neglect: fragile materiality
 - Access:
     + Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections
     + widely-dispersed collections
@@ -66,14 +66,18 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 ## 1.3 Digitisation as problem(s)
 <!-- elaborate the problems:-->
 
-1. get the data:
-    - text: 
-        - OCR and HTR are still dysfunctional
+1. get the data: **labour and resource intensive**
+    - text: transcription
+        - OCR and HTR are still insufficient
         - require ground truth and extensive training
-    - bibliographic metadata
-2. turn the data into a human and machine readable edition
+    - facsimiles: scanning
+        + copyright
+        + amount of data
+    - bibliographic metadata: 
+2. transform the data into a human and machine readable edition: **labour and resource intensive**
     - model the source 
     - identify entities and link them to authority files
+3. host, share and preserve the data: **labour and resource intensive**
 
 ## 1.4 State of digitisation
 <!-- This should be a demo session, otherwise one needs screenshots -->
@@ -209,50 +213,46 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 2.3 Summary
 
-![](OpenArabicPE_components-layer-1-4.png)
+![](../assets/OpenArabicPE_components-layer-1-4.png)
 
-# 3. Sample case: digital *Muqtabas*
-## 3. Sample case: The journal of *al-Muqtabas*
+# 3. OpenArabicPE: some details
+## 3. The corpus
 
-*al-Muqtabas* / المقتبس
+<div class="c_width-50">
 
-- "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
-    + 9 volumes, 96 issues (2 double issues), c. 7000 pages
-    + 1.953.952 tokens (words), 2737 articles, [128 named authors](../assets/muqtabas_word-cloud.html)
-- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- available at c. 30 libraries (North America, Europe, Middle East): 
-    + original prints (mostly incomplete)
-    + some copies of a "gray" reprint
-    + a number of microfiche copies from a single source
+### *al-Muqtabas*, 1906--1917/18
 
-<!--     + Palestine: 1 incomplete copy
-    + Lebanon: at least 2 complete physical copies
-    + Germany: 1 complete physical copy (in Beirut), 4 incomplete (?) microfiche copies
-    + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
-## 3. Test case: digital *Muqtabas*
+|         token          |   total   |  author |
+|------------------------|-----------|---------|
+| volumes                | 9         |         |
+| issues                 | 96        |         |
+| pages                  | c.7,000   |         |
+| articles (total)       | 2,737     | 323     |
+| articles (independent) | 717       | 284     |
+| words                  | 1,953,952 | 625,333 |
 
-![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
+</div>
+<div class="c_width-50">
 
-## 3. Test case: digital *Muqtabas*
+### *al-Ḥaqāʾiq*, 1910--1913/14
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
+|  token   |  total  | author |
+|----------|---------|--------|
+| volumes  | 3       |        |
+| issues   | 36      |        |
+| pages    | 1,446   |        |
+| articles | 360     | 76     |
+| words    | 300,186 | 40,868 |
 
-## 3. Test case: digital *Muqtabas* 
-
-![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/oxygen_muqtabas-2.png) 
+</div>
 
 
-## 3. Sample case: digital *Muqtabas*
+## 3. Basic components and features
 
-![Project scheme](../assets/OpenArabicPE-organigramme_horizontal.png)
+![](../assets/OpenArabicPE_components-layer-1-2.png)
 
-<!-- ## 3.1 Basis: Generate the TEI edition
 
-![](../assets/OpenArabicPE-organigramme_horizontal-input.png)
-
-![](../assets/OpenArabicPE-organigramme_horizontal-edition.png) -->
-
-## 3.1 Basis: Generate the TEI edition
+## 3.1 Components: Generate a TEI edition
 
 - scrape the [digital text from *shamela.ws*](http://shamela.ws/index.php/book/26523)
 - transform it into [TEI XML](http://www.tei-c.org): semi-automatically (mostly XSLT)
@@ -311,7 +311,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 3.1 Basis: Is this legal?
 
-![External sources, external labour, and the question of copyright](../assets/OpenArabicPE-organigramme_horizontal-input.png)
+![External sources, external labour, and the question of copyright](../assets/OpenArabicPE_components-copyright.png)
 
 ## 3.1 Basis: Is this legal?
 
@@ -328,10 +328,6 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.2 Core feature: Continuous improvement
 
-![A social and GitHub-hosted digital edition](../assets/OpenArabicPE-organigramme_vertical-crowd.png)
-
-## 3.2 Core feature: Continuous improvement
-
 1. Improvements depending on human labour (probably a "crowd")
     - correct the transcription
     - add structural mark-up
@@ -342,16 +338,23 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.2 Core feature: how to contribute
 
+<div class="c_width-50">
+
 - Go to [GitHub](https://www.github.com) and register a free account
 - **Fork** the edition's repository: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 - Edit the text (XML)
 - Send us a **pull request**
 - We will review and merge your changes
 
-![Branches on GitHub](../assets/github_branches-1.png)
+</div><div class="c_width-50">
+
+![](../assets/github_branches-1.png)
+
+</div>
 
 ## 3.3 Core feature: web-view
 
+- *open*, *free of charge*, *client-based*
 - Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
 - human-readable and static web-view (either rawgit or gh-pages)
     + generated on-the-fly by the user's browser using XSLT 1 to transform the TEI XML files to HTML.
@@ -388,51 +391,117 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 </div>
 
 # 4. Use cases
-## 4.1 Reviewed works
+# 4.1 networks of authors
+## 4.1.1 available data
 
-<iframe width="100%" height="80%" frameborder="0" src="../assets/maps/map_simile-muqtabas.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<div class="c_width-50">
 
-<!-- # 3.4 Use cases: reviewed works
+### *al-Muqtabas*, 1906--1917/18
 
-<iframe width="100%" height="80%" frameborder="0" src="https://tillgrallert.cartodb.com/viz/b0cacad8-12c3-11e6-baba-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> -->
+|         token          |   total   |  author |     NA    |
+|------------------------|-----------|---------|-----------|
+| volumes                | 9         |         |           |
+| issues                 | 96        |         |           |
+| pages                  | c.7,000   |         |           |
+| articles (total)       | 2,737     | 323     | 2,414     |
+| articles (independent) | 717       | 284     | 433       |
+| words                  | 1,953,952 | 625,333 | 1,328,619 |
 
-## 4.2 Simple statistics of authorship
+</div>
+<div class="c_width-50">
 
-~~~{.json}
-{
-    "articles": [
-        {
-            "total": "4"
-        },
-        {
-            "articles": "1",
-            "pages": "9",
-            "urls": [
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_41.TEIP5.xml#div_3.d1e692"
-            ],
-            "year": "1909"
-        },
-        {
-            "articles": "2",
-            "pages": "14",
-            "urls": [
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_58.TEIP5.xml#div_5.d1e2156",
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_59.TEIP5.xml#div_4.d1e2087"
-            ],
-            "year": "1910"
-        },
-        {
-            "articles": "1",
-            "pages": "18",
-            "urls": [
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_68.TEIP5.xml#div_8.d1e1669"
-            ],
-            "year": "1911"
-        }
-    ],
-    "name": "يوسف جرجس زخم"
-}
-~~~
+### *al-Ḥaqāʾiq*, 1910--1913/14
+
+|  token   |  total  | author |    NA   |
+|----------|---------|--------|---------|
+| volumes  | 3       |        |         |
+| issues   | 36      |        |         |
+| pages    | 1,446   |        |         |
+| articles | 360     | 76     | 284     |
+| words    | 300,186 | 40,868 | 259,318 |
+
+</div>
+
+## 4.1.2 quality of data
+
+- data source: bylines and comments in the text
+    + many accronyms
+    + plurality of name forms
+- manual mark-up: authors and locations
+- manual disambiguation: links to authority files (*semantic web*)
+- automatic enriching: from semantic web
+    + life dates
+    + works
+    + geocoded locations
+
+## 4.1.3 *al-Muqtabas*: authors by number of bylines
+
+| rank |                     author.id                      |                                    author.name                                    | author.birth | articles | word.count |
+|------|----------------------------------------------------|-----------------------------------------------------------------------------------|--------------|----------|------------|
+|    1 | [viaf:14924300](https://viaf.org/viaf/14924300/)   | [معروف الرصافي](https://en.wikipedia.org/wiki/Maarouf_Al_Rasafi)                  |         1875 |       24 |      12437 |
+|    2 | [viaf:40250618](https://viaf.org/viaf/40250618/)   | [عيسى أفندي اسكندر المعلوف](https://ar.wikipedia.org/wiki/عيسى_إسكندر_المعلوف)    |         1869 |       20 |      23297 |
+|    3 | [viaf:39370998](https://viaf.org/viaf/39370998/)   | [ساتسنا (بطرس بن جبرائيل عواد)](https://en.wikipedia.org/wiki/Anastas_Al-Karmali) |         1866 |       14 |      19849 |
+|    4 |                                                    | يوسف جرجس زخم                                                                     |              |       13 |      21613 |
+|    5 | [viaf:93607460](https://viaf.org/viaf/93607460/)   | [جمال الدين القاسمي](https://ar.wikipedia.org/wiki/جمال_الدين_القاسمي)            |         1866 |        8 |      38541 |
+|    6 | [viaf:118432135](https://viaf.org/viaf/118432135/) | [عبد القادر أفندي المغربي](https://ar.wikipedia.org/wiki/عبد_القادر_المغربي)      |         1867 |        7 |      14074 |
+|    7 | [viaf:19737865](https://viaf.org/viaf/19737865/)   | [أحمد بك تيمور](https://en.wikipedia.org/wiki/Ahmed_Taymour)                      |         1871 |        7 |       7905 |
+|    8 | [viaf:22006374](https://viaf.org/viaf/22006374/)   | [محمد رضا الشبيبي](https://en.wikipedia.org/wiki/Mohammed_Ridha_Al-Shabibi)       |         1889 |        7 |      17894 |
+|    9 | [viaf:28125663](https://viaf.org/viaf/28125663/)   | [رفيق بك العظم](https://ar.wikipedia.org/wiki/رفيق_العظم)                         |         1865 |        7 |      13237 |
+|   10 | [viaf:32272677](https://viaf.org/viaf/32272677/)   | [محمد كرد علي](https://en.wikipedia.org/wiki/Muhammad_Kurd_Ali)                   |         1876 |        7 |      42489 |
+|   11 | [viaf:49218655](https://viaf.org/viaf/49218655/)   | [أحمد بك زكي](https://en.wikipedia.org/wiki/Ahmad_Zaki_Pasha)                     |         1866 |        7 |      40311 |
+
+<!-- ## *al-Muqtabas*: authors by number of bylines
+
+| rank |            name           | words | articles |
+|------|---------------------------|-------|----------|
+|    1 | Maʿrūf al-Ruṣāfī          | 12437 |       24 |
+|    2 | ʿĪsā Iskandar al-Maʿlūf   | 23297 |       20 |
+|    3 | Sātsunā                   | 19849 |       14 |
+|    4 | Yūsuf Jirjis Zakham       | 21613 |       13 |
+|    5 | Jamāl al-Dīn al-Qāsimī    | 38541 |        8 |
+|    6 | Muḥammad Kurd ʿAlī        | 42489 |        7 |
+|    7 | Aḥmad Zakī                | 40311 |        7 |
+|    8 | Muḥammad Riḍā al-Shabībī  | 17894 |        7 |
+|    9 | ʿAbd al-Qādir al-Maghribī | 14074 |        7 |
+|   10 | Rafīq al-ʿAẓm             | 13237 |        7 |
+|   11 | Aḥmad Taymūr              |  7905 |        7 | -->
+
+## 4.1.3 *al-Muqtabas*: authors by number of bylines
+
+![Figure: Word cloud of authors published in *al-Muqtabas*; by number of articles](../assets/plots/word-cloud_muqtabas-authors-bylines.png)
+
+## 4.1.4 *al-Ḥaqāʾiq*: authors by number of bylines
+
+| rank |                     author.id                      |       author.name        | author.birth | articles | word.count |
+|------|----------------------------------------------------|--------------------------|--------------|----------|------------|
+|    1 | [viaf:299025643](https://viaf.org/viaf/299025643/) | محمد عارف المنير الحسيني | 1847/48      |        4 |       3134 |
+|    2 |                                                    | ع                        |              |        3 |       2833 |
+|    3 |                                                    | عبد الرحمن القصار        |              |        3 |        628 |
+|    4 | [viaf:267054449](https://viaf.org/viaf/267054449/) | مختار المؤيد             | 1822         |        3 |        820 |
+|    5 | [viaf:17087051](https://viaf.org/viaf/17087051/)   | محمد أبو الخير الطباع    |              |        2 |       2887 |
+|    6 |                                                    | محمد القاسمي الحلاق      |              |        2 |       3619 |
+|    7 |                                                    | محي الدين الخاني         |              |        2 |         74 |
+
+## 4.1.4 *al-Ḥaqāʾiq*: authors by number of bylines
+
+![Figure: Word cloud of authors published in *al-Ḥaqāʾiq*](../assets/plots/word-cloud_haqaiq-authors-bylines.png)
+
+## 4.1.5 Worlds apart: *al-Muqtabas* and *al-Ḥaqāʾiq*
+
+![Figure: Authors and periodicals](../assets/plots/network_openarabicpe-authors-publications.png)
+
+## 4.1.6 *al-Muqtabas*: locations by number of bylines
+
+![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map_muqtabas-bylines-me.png)
+
+## 4.1.7 *al-Ḥaqāʾiq*: locations by number of bylines
+
+![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map_haqaiq-bylines-me.png)
+
+# 4.2 networks of texts
+## 4.2 *al-Muqtabas*: origin of reviewed works
+
+![Figure: Origin of referenced works in *al-Muqtabas*](../assets/maps/map_muqtabas-referenced-works-all.png)
 
 # 5. To do
 ## ongoing work
@@ -453,13 +522,19 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 # 5. Experiences
 ## simple, fast, sustainable
 
-- Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
-- Hosting, long-term preservation and DOIs are provided free of cost
+- Simple technologies and relatively little coding needed: 
+    + Initial project set-up took less than four weeks of after-hour labour
+- Hosting, collaborative editing, long-term preservation and DOIs are provided free of cost
 - Core (but simple) features **cannot** be automated: 
     + all c.7000 page breaks must be manually tagged
+    + does **not** require knowledge of XML, TEI or access to more than a syntax-aware text editor.
+
+<!-- - Collaboration in bootstrapped framework with multiple dependencies  -->
     <!-- + it took a part-time intern 4 weeks to tag one volume of 800 pages -->
-- Code can be re-purposed:
-    + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
+<!-- - TEI editing 
+    - requires some training
+    - patchy support of Arabic across operating systems, Java versions -->
+   <!--  + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day. -->
     <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār* 
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
@@ -467,15 +542,15 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 # 6. Conclusion
 ## Summary: OpenArabicPE
 
-- open scholarly digital editions of *[Majallat] al-Muqtabas* and *al-Ḥaqāʾiq* providing
+- open scholarly **digital editions** of [*[Majallat] al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas) and [*al-Ḥaqāʾiq*](https://github.com/OpenArabicPE/digital-haqaiq) providing
     + TEI XML files (transcription and links to facsimiles)
     + plain text files
     + MODS and BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
-- validated open bibliographic metadata (MODS) for 
+- validated open **bibliographic metadata** (MODS) for 
     - [*al-Jinān* (1875--1885)](https://github.com/OpenArabicPE/journal_al-jinan), [*al-Quds* (#1--391, 1908--14)](https://github.com/OpenArabicPE/newspaper_al-quds), [*Ḥadīqat al-Akhbār* (#1--357, 1858--65)](https://github.com/OpenArabicPE/newspaper_hadiqat-al-akhbar), [*Thamarāt al-Funūn* (#1--1695, 1875--1908)](https://github.com/OpenArabicPE/newspaper_thamarat-al-funun) 
 - within a framework (git, [GitHub](https://github.com/openarabicpe), [Zenodo](https://zenodo.org/), [Zotero](https://www.zotero.org/groups/openarabicpe/items/)) that allows for / provides
-    + collaborative, open, version-controlled improvements of the edition
+    + collaborative, open, version-controlled improvements
     + re-use of the data, metadata and tools 
     + long-term preservation and DOIs
     + discovery <!-- in CLARIN -->
