@@ -142,6 +142,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 <!-- original facsimile: [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/800,/0/gray.jpg) -->
 
+*al-Muqtabas* 5(7), pp.[463](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045)
+
 <div class="c_width-30">
 
 ![](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
