@@ -6,7 +6,6 @@ duration: 20
 ---
 
 <!-- To do -->
-<!-- - 4.1 update data for authorship attribution from GitHub -->
 <!-- - comments on collaborations -->
 
 
