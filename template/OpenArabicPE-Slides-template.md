@@ -24,7 +24,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 2. OpenArabicPE: Overview
 3. OpenArabicPE: Some details
 
-# 1. Introduction: the promised wasteland of *digitised* Arabic periodicals
+# 1. The promised wasteland of *digitised* Arabic periodicals
 ## 1.1 Importance of mundane texts / periodicals
 
 <!-- add core questions of today's presentation  -->
@@ -182,7 +182,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - share all data, metadata and tools with the broadest possible licence to facilitate access and re-use 
+    - share all data, metadata and tools with the broadest possible licences to facilitate access and re-use 
 3. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
@@ -438,7 +438,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 4.1.3 *al-Muqtabas*: authors by number of bylines
 
-| rank |                     author.id                      |                                    author.name                                    | author.birth | articles | word.count |
+| rank |                     author.id                      |                                    author.name                                    | author.birth | article.count | word.count |
 |------|----------------------------------------------------|-----------------------------------------------------------------------------------|--------------|----------|------------|
 |    1 | [viaf:14924300](https://viaf.org/viaf/14924300/)   | [معروف الرصافي](https://en.wikipedia.org/wiki/Maarouf_Al_Rasafi)                  |         1875 |       24 |      12437 |
 |    2 | [viaf:40250618](https://viaf.org/viaf/40250618/)   | [عيسى أفندي اسكندر المعلوف](https://ar.wikipedia.org/wiki/عيسى_إسكندر_المعلوف)    |         1869 |       20 |      23297 |
@@ -474,15 +474,18 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 4.1.4 *al-Ḥaqāʾiq*: authors by number of bylines
 
-| rank |                     author.id                      |       author.name        | author.birth | articles | word.count |
-|------|----------------------------------------------------|--------------------------|--------------|----------|------------|
-|    1 | [viaf:299025643](https://viaf.org/viaf/299025643/) | محمد عارف المنير الحسيني | 1847/48      |        4 |       3134 |
-|    2 |                                                    | ع                        |              |        3 |       2833 |
-|    3 |                                                    | عبد الرحمن القصار        |              |        3 |        628 |
-|    4 | [viaf:267054449](https://viaf.org/viaf/267054449/) | مختار المؤيد             | 1822         |        3 |        820 |
-|    5 | [viaf:17087051](https://viaf.org/viaf/17087051/)   | محمد أبو الخير الطباع    |              |        2 |       2887 |
-|    6 |                                                    | محمد القاسمي الحلاق      |              |        2 |       3619 |
-|    7 |                                                    | محي الدين الخاني         |              |        2 |         74 |
+| rank |                     author.id                     |       author.name        | author.birth | article.count | word.count |
+|------|---------------------------------------------------|--------------------------|--------------|---------------|------------|
+|    1 |                                                   | إبراهيم خليل مردم بك     |              |             6 |       4702 |
+|    2 | [viaf:53094077](https://viaf.org/viaf/53094077)   | محمد فريد أفندي وجدي     |         1875 |             5 |       8344 |
+|    3 | [viaf:299025643](https://viaf.org/viaf/299025643) | محمد عارف المنير الحسيني |              |             5 |       3151 |
+|    4 |                                                   | عبد الرحمن القصار        |              |             5 |       1429 |
+|    5 | [viaf:58892856](https://viaf.org/viaf/58892856)   | الشيخ صالح أفندي الشريف  |         1869 |             4 |       5000 |
+|    6 | [viaf:267054449](https://viaf.org/viaf/267054449) | مختار المؤيد             |         1822 |             4 |        949 |
+|    7 |                                                   | أبو الضيا                |              |             3 |       5097 |
+|    8 |                                                   | أحمد الباشا              |              |             3 |       4274 |
+|    9 |                                                   | ع                        |              |             3 |       2833 |
+|   10 |                                                   | صلاح الدين الزعيم        |              |             3 |       2448 |
 
 ## 4.1.4 *al-Ḥaqāʾiq*: authors by number of bylines
 
