@@ -336,7 +336,7 @@ img, iframe {
    /* image-rendering: optimize-quality; */
    /* width: 100%; */
     margin-top: 1em;
-    background-color: rgba(0,0,0,0.04);
+    background-color: white;/*rgba(0,0,0,0.04);*/
     border-radius: 5px;
     box-shadow: 2px 2px 5px #000;
     border:gray solid 1px;
@@ -364,7 +364,7 @@ div.figure img {
 
 img {
   max-height: 600px;
-  max-width: 90%;
+  max-width: 1000%;
 }
 
 /* external content, including local html pages */
