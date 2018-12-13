@@ -364,7 +364,7 @@ div.figure img {
 
 img {
   max-height: 600px;
-  max-width: 1000%;
+  max-width: 100%;
 }
 
 /* external content, including local html pages */
