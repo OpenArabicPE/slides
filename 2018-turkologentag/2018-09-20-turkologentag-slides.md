@@ -22,7 +22,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 2. OpenArabicPE: making truly *digital* editions 
 3. First attempts to map the late Ottoman ideosphere of *Bilād al-Shām*
 
-# 1. Introduction: the promised wasteland of *digitised* Arabic
+# 1. Introduction: the promised wasteland of *digitised* Arabic periodicals
 ## 1.1 Importance of mundane texts / periodicals
 
 <!-- add core questions of today's presentation  -->
