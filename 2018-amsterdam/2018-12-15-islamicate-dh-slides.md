@@ -13,11 +13,19 @@ Till Grallert, Orient-Institut Beirut (OIB)
 
 Slides: [https://OpenArabicPE.github.io/slides/2018-amsterdam/](https://OpenArabicPE.github.io/slides/2018-amsterdam/index.html)
 
+## Islamicate DH?
+
+<!-- we are scholars / projects working on Islamicate societies and their cultural production under the constrains and with the  affordances of the anglo-american hegemony over academe -->
+
+![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/maps/map_dhcenters.png)
+
 ## Outline of today's paper
 
 1. The promised wasteland of *digitised* Arabic periodicals
 2. OpenArabicPE: Bootstrapped *digital* editions
-3. OpenArabicPE: Some details
+    - components
+    - features
+    - legality
 
 # 1. The promised wasteland of *digitised* Arabic periodicals
 ## 1.1 Importance of mundane texts / periodicals
@@ -387,124 +395,8 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 </div>
 
-# 4. Use cases
-# 4.1 networks of authors
-## 4.1.1 available data
-
-<div class="c_width-50">
-
-### *al-Muqtabas*, 1906--1917/18
-
-|         token          |   total   |  author |     NA    |
-|------------------------|-----------|---------|-----------|
-| volumes                | 9         |         |           |
-| issues                 | 96        |         |           |
-| pages                  | c.7,000   |         |           |
-| articles (total)       | 2,737     | 323     | 2,414     |
-| articles (independent) | 717       | 284     | 433       |
-| words                  | 1,953,952 | 625,333 | 1,328,619 |
-
-</div>
-<div class="c_width-50">
-
-### *al-Ḥaqāʾiq*, 1910--1913/14
-
-|  token   |  total  | author |    NA   |
-|----------|---------|--------|---------|
-| volumes  | 3       |        |         |
-| issues   | 36      |        |         |
-| pages    | 1,446   |        |         |
-| articles | 360     | 76     | 284     |
-| words    | 300,186 | 40,868 | 259,318 |
-
-</div>
-
-## 4.1.2 quality of data
-
-- data source: bylines and comments in the text
-    + many accronyms
-    + plurality of name forms
-- manual mark-up: authors and locations
-- manual disambiguation: links to authority files (*semantic web*)
-- automatic enriching: from semantic web
-    + life dates
-    + works
-    + geocoded locations
-
-## 4.1.3 *al-Muqtabas*: authors by number of bylines
-
-| rank |                     author.id                      |                                    author.name                                    | author.birth | article.count | word.count |
-|------|----------------------------------------------------|-----------------------------------------------------------------------------------|--------------|----------|------------|
-|    1 | [viaf:14924300](https://viaf.org/viaf/14924300/)   | [معروف الرصافي](https://en.wikipedia.org/wiki/Maarouf_Al_Rasafi)                  |         1875 |       24 |      12437 |
-|    2 | [viaf:40250618](https://viaf.org/viaf/40250618/)   | [عيسى أفندي اسكندر المعلوف](https://ar.wikipedia.org/wiki/عيسى_إسكندر_المعلوف)    |         1869 |       20 |      23297 |
-|    3 | [viaf:39370998](https://viaf.org/viaf/39370998/)   | [ساتسنا (بطرس بن جبرائيل عواد)](https://en.wikipedia.org/wiki/Anastas_Al-Karmali) |         1866 |       14 |      19849 |
-|    4 |                                                    | يوسف جرجس زخم                                                                     |              |       13 |      21613 |
-|    5 | [viaf:93607460](https://viaf.org/viaf/93607460/)   | [جمال الدين القاسمي](https://ar.wikipedia.org/wiki/جمال_الدين_القاسمي)            |         1866 |        8 |      38541 |
-|    6 | [viaf:118432135](https://viaf.org/viaf/118432135/) | [عبد القادر أفندي المغربي](https://ar.wikipedia.org/wiki/عبد_القادر_المغربي)      |         1867 |        7 |      14074 |
-|    7 | [viaf:19737865](https://viaf.org/viaf/19737865/)   | [أحمد بك تيمور](https://en.wikipedia.org/wiki/Ahmed_Taymour)                      |         1871 |        7 |       7905 |
-|    8 | [viaf:22006374](https://viaf.org/viaf/22006374/)   | [محمد رضا الشبيبي](https://en.wikipedia.org/wiki/Mohammed_Ridha_Al-Shabibi)       |         1889 |        7 |      17894 |
-|    9 | [viaf:28125663](https://viaf.org/viaf/28125663/)   | [رفيق بك العظم](https://ar.wikipedia.org/wiki/رفيق_العظم)                         |         1865 |        7 |      13237 |
-|   10 | [viaf:32272677](https://viaf.org/viaf/32272677/)   | [محمد كرد علي](https://en.wikipedia.org/wiki/Muhammad_Kurd_Ali)                   |         1876 |        7 |      42489 |
-|   11 | [viaf:49218655](https://viaf.org/viaf/49218655/)   | [أحمد بك زكي](https://en.wikipedia.org/wiki/Ahmad_Zaki_Pasha)                     |         1866 |        7 |      40311 |
-
-<!-- ## *al-Muqtabas*: authors by number of bylines
-
-| rank |            name           | words | articles |
-|------|---------------------------|-------|----------|
-|    1 | Maʿrūf al-Ruṣāfī          | 12437 |       24 |
-|    2 | ʿĪsā Iskandar al-Maʿlūf   | 23297 |       20 |
-|    3 | Sātsunā                   | 19849 |       14 |
-|    4 | Yūsuf Jirjis Zakham       | 21613 |       13 |
-|    5 | Jamāl al-Dīn al-Qāsimī    | 38541 |        8 |
-|    6 | Muḥammad Kurd ʿAlī        | 42489 |        7 |
-|    7 | Aḥmad Zakī                | 40311 |        7 |
-|    8 | Muḥammad Riḍā al-Shabībī  | 17894 |        7 |
-|    9 | ʿAbd al-Qādir al-Maghribī | 14074 |        7 |
-|   10 | Rafīq al-ʿAẓm             | 13237 |        7 |
-|   11 | Aḥmad Taymūr              |  7905 |        7 | -->
-
-## 4.1.3 *al-Muqtabas*: authors by number of bylines
-
-![Figure: Word cloud of authors published in *al-Muqtabas*; by number of articles](../assets/plots/word-cloud_muqtabas-authors-bylines.png)
-
-## 4.1.4 *al-Ḥaqāʾiq*: authors by number of bylines
-
-| rank |                     author.id                     |       author.name        | author.birth | article.count | word.count |
-|------|---------------------------------------------------|--------------------------|--------------|---------------|------------|
-|    1 |                                                   | إبراهيم خليل مردم بك     |              |             6 |       4702 |
-|    2 | [viaf:53094077](https://viaf.org/viaf/53094077)   | محمد فريد أفندي وجدي     |         1875 |             5 |       8344 |
-|    3 | [viaf:299025643](https://viaf.org/viaf/299025643) | محمد عارف المنير الحسيني |              |             5 |       3151 |
-|    4 |                                                   | عبد الرحمن القصار        |              |             5 |       1429 |
-|    5 | [viaf:58892856](https://viaf.org/viaf/58892856)   | الشيخ صالح أفندي الشريف  |         1869 |             4 |       5000 |
-|    6 | [viaf:267054449](https://viaf.org/viaf/267054449) | مختار المؤيد             |         1822 |             4 |        949 |
-|    7 |                                                   | أبو الضيا                |              |             3 |       5097 |
-|    8 |                                                   | أحمد الباشا              |              |             3 |       4274 |
-|    9 |                                                   | ع                        |              |             3 |       2833 |
-|   10 |                                                   | صلاح الدين الزعيم        |              |             3 |       2448 |
-
-## 4.1.4 *al-Ḥaqāʾiq*: authors by number of bylines
-
-![Figure: Word cloud of authors published in *al-Ḥaqāʾiq*](../assets/plots/word-cloud_haqaiq-authors-bylines.png)
-
-## 4.1.5 Worlds apart: *al-Muqtabas* and *al-Ḥaqāʾiq*
-
-![Figure: Authors and periodicals](../assets/plots/network_openarabicpe-authors-publications.png)
-
-## 4.1.6 *al-Muqtabas*: locations by number of bylines
-
-![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map_muqtabas-bylines-me.png)
-
-## 4.1.7 *al-Ḥaqāʾiq*: locations by number of bylines
-
-![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map_haqaiq-bylines-me.png)
-
-# 4.2 networks of texts
-## 4.2 *al-Muqtabas*: origin of reviewed works
-
-![Figure: Origin of referenced works in *al-Muqtabas*](../assets/maps/map_muqtabas-referenced-works-all.png)
-
-# 5. To do
-## ongoing work
+# 4. state of affairs
+## 4.1 ongoing work
 
 - Editorial decisions: TEI schema design
     <!-- + TEI is rooted in the western episteme -->
@@ -519,8 +411,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
 - Scanning:
 
-# 5. Experiences
-## simple, fast, sustainable
+## 4.2 experiences: simple, fast, sustainable
 
 - Simple technologies and relatively little coding needed: 
     + Initial project set-up took less than four weeks of after-hour labour
@@ -539,7 +430,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 
-# 6. Conclusion
+# 5. Conclusion
 ## Summary: OpenArabicPE
 
 - open scholarly **digital editions** of [*[Majallat] al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas) and [*al-Ḥaqāʾiq*](https://github.com/OpenArabicPE/digital-haqaiq) providing
