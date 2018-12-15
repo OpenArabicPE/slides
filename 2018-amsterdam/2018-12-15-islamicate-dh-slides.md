@@ -82,23 +82,6 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-amsterdam/](https://OpenArab
     - identify entities and link them to authority files
 3. host, share and preserve the data: **labour and resource intensive**
 
-## 1.4 State of digitisation
-<!-- This should be a demo session, otherwise one needs screenshots -->
-<!-- if the sub slides in this section are used, the content of this slide should be deleted -->
-
-1. Text: "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    + lack of / faulty metadata
-    + unknown editing principles
-    + unknown quality
-    + very limited structural mark-up
-    + cannot be reliably cited 
-2. Facsimiles: [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [Institut du Monde Arabe](http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269) et al.
-    + lack of metadata
-    + limited licences, paywalls
-    + no or very bad text layers
-3. Metadata search within and across periodicals
-    + **inexistent**
-
 <!-- the following slides are too detailed for many purposes -->
 
 ## 1.4.1 state of digitisation: text
