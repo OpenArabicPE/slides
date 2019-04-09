@@ -18,8 +18,8 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 ## Outline of today's paper
 
-1. Introduction: the promised wasteland of *digitised* Arabic
-2. OpenArabicPE: making truly *digital* editions 
+1. Introduction: the promised wasteland of *digitised* Arabic periodicals
+2. OpenArabicPE: making truly *digital* editions
 3. First attempts to map the late Ottoman ideosphere of *Bilād al-Shām*
 
 # 1. Introduction: the promised wasteland of *digitised* Arabic periodicals
@@ -39,7 +39,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 ## 1.2 A two-fold problem
 
-- Preservation: 
+- Preservation:
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
     + Neglect: fragile materiality
 - Access:
@@ -63,15 +63,15 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 <!-- elaborate the problems:
 
 1. get the data:
-    - text: 
+    - text:
         - OCR and HTR are still dysfunctional
         - require ground truth and extensive training
     - bibliographic metadata
 2. turn the data into a human and machine readable edition
-    - model the source 
+    - model the source
     - identify entities and link them to authority files -->
 
-## 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: facsimiles
 
 Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549)
 
@@ -79,31 +79,31 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 + limited licences, pay walls
 + no or very bad text layers
 
-## 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: facsimiles
 
 ![[*al-Muqtabas* 6 on EAP](http://eap.bl.uk/database/overview_item.a4d?catId=810;r=288)](../assets/eap119-1-4-5-muqtabas-annotated.png)
 
-## 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: facsimiles
 
 ![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
 
-## 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: facsimiles
 
 ![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-2.png)
 
-## 1.3.2 state of digitisation: images
+## 1.3.2 state of digitisation: facsimiles
 
 ![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-ocr-2.png)
 
 ## 1.3.1 state of digitisation: text
 
 "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    
+
 + lack of / faulty metadata
 + unknown editing principles
 + unknown quality
 + very limited structural mark-up
-+ cannot be reliably cited 
++ cannot be reliably cited
 
 ## 1.3.1 state of digitisation: text
 
@@ -114,12 +114,12 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## 1.3.3 state of digitisation: bibliographic metadata
 
-- needs: 
+- needs:
     + reliable bibliographic metadata on the article level and
     + across periodicals
 - reality: no platform provides machine-actionable bibliographic metadata below the item level
 
-# 2. [OpenArabicPE](https://github.com/openarabicpe): making truly *digital* editions 
+# 2. [OpenArabicPE](https://github.com/openarabicpe): making truly *digital* editions
 ## 2.1 Aims and principles
 
 1. idea: unite available facsimiles and transcriptions
@@ -127,7 +127,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - provide the new edition with the **open licence** to facilitate access and re-use 
+    - provide the new edition with the **open licence** to facilitate access and re-use
 3. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
@@ -268,7 +268,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 ## stylometry
 
 - aim: authorship attribution through comparison
-- how: 
+- how:
     + **computation** of frequency tables for each article
     + **comparison** of each frequency table with every other
     + **ranking** of pairs of texts according to similarity of frequency tables
