@@ -393,7 +393,17 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # 4. Use cases
 # 4.1 networks of authors
-## 4.1.1 available data
+## 4.1.1 available data: editions
+
+<!-- brief note:
+| periodical.title | periodical.id.oclc |
+|------------------|--------------------|
+| al-Muqtabas      |         4770057679 |
+| al-Ḥaqāʾiq       |          644997575 |
+| al-Ḥasna         |          792756327 |
+| Lughat al-ʿArab  |          472450345 |
+-->
+
 
 <div class="c_width-50">
 
@@ -423,7 +433,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 </div>
 
-## 4.1.2 quality of data
+## 4.1.2 quality of data: editions
 
 - data source: bylines and comments in the text
     + many accronyms
