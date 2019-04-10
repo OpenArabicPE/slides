@@ -8,7 +8,7 @@ tags:
 - OpenArabicPE
 ---
 
-##  OpenArabicPE and first attempts to track networks of authors and texts in Arabic periodicals from the late Ottoman Empire
+##  OpenArabicPE: first attempts to track networks of authors and texts in Arabic periodicals from the late Ottoman Empire
 
 Till Grallert, Orient-Institut Beirut (OIB)
 
@@ -18,8 +18,8 @@ Slides: [https://OpenArabicPE.github.io/slides/2019-oib-board-meeting/](https://
 
 ## Outline of today's paper
 
-1. Introduction: the promised wasteland of *digitised* Arabic periodicals
-2. OpenArabicPE: making truly *digital* editions
+1. Introduction: the promised wasteland of **digitised** Arabic periodicals
+2. OpenArabicPE: making truly **digital** editions
 3. First attempts to map the late Ottoman ideosphere of *Bilād al-Shām*
 
 # 1. Introduction: the promised wasteland of *digitised* Arabic periodicals
@@ -27,12 +27,12 @@ Slides: [https://OpenArabicPE.github.io/slides/2019-oib-board-meeting/](https://
 
 <!-- add core questions of today's presentation  -->
 
-- They are at the core of various discourses
+- They are at the **core** of various discourses
     + Modernity / -ism at the end of empire
     + Arabic renaissance
     + Arab nationalism
     + Islamic reform movement
-- They form large corpora with an equal distribution along a temporal axis (*al-Muqtabas*: 12 yrs, *al-Manār*: 43 yrs, *al-Muqtaṭaf*: 76 yrs)
+- They form **large corpora** with an equal distribution along a temporal axis (*al-Muqtabas*: 12 yrs, *al-Manār*: 43 yrs, *al-Muqtaṭaf*: 76 yrs)
     + linguistic analysis
     + historical semantics
     + rich data sets for social history
@@ -196,10 +196,27 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 2.3 Summary
 
-![](../assets/OpenArabicPE_components-layer-1-4.png)
+![Figure: Project scheme](../assets/OpenArabicPE_components-layer-1-4.png)
 
 # 3. First attempts to map the late Ottoman ideosphere of *Bilād al-Shām*
-## networks of authors: available data
+## 3. research questions
+
+- What are the most important authors?
+- What is the reach of journals?
+- What are the most important periodicals?
+- What did people read?
+
+# 3.1 networks of authors
+## 3.1 networks of authors
+
+- methodology:
+    + count number of journals, articles, tokens (words) per author
+    + count number of articles per writing location
+- required data: **bibliographic data** on the article level <!-- including name of author and location of writing-->
+
+## 3.1.1 available data: editions
+
+*al-Ḥasnāʾ* (Beirut), *al-Ḥaqāʾiq* (Damascus), *Lughat al-ʿArab* (Baghdad), *al-Muqtabas* (Cairo, Damascus)
 
 <div class="c_width-50">
 
@@ -229,83 +246,129 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 </div>
 
-## networks of authors: quality of data
+## 3.1.2 quality of data: editions
 
 - data source: bylines and comments in the text
     + many accronyms
     + plurality of name forms
-- manual mark-up: authors and locations
-- manual disambiguation: links to authority files (*semantic web*)
+    + **not available** for many articles
+- mostly manual mark-up: personal names and toponyms
+- mostly manual disambiguation: links to authority files (*semantic web*)
 - automatic enriching: from semantic web
     + life dates
     + works
     + geocoded locations
 
-## *al-Muqtabas*: authors by number of bylines
+# 3.1.3 authorship statistics
+## 3.1.3 authorship statistics: all editions
 
-| rank |                     author.id                      |                                    author.name                                    | author.birth | articles | word.count |
-|------|----------------------------------------------------|-----------------------------------------------------------------------------------|--------------|----------|------------|
-|    1 | [viaf:14924300](https://viaf.org/viaf/14924300/)   | [معروف الرصافي](https://en.wikipedia.org/wiki/Maarouf_Al_Rasafi)                  |         1875 |       24 |      12437 |
-|    2 | [viaf:40250618](https://viaf.org/viaf/40250618/)   | [عيسى أفندي اسكندر المعلوف](https://ar.wikipedia.org/wiki/عيسى_إسكندر_المعلوف)    |         1869 |       20 |      23297 |
-|    3 | [viaf:39370998](https://viaf.org/viaf/39370998/)   | [ساتسنا (بطرس بن جبرائيل عواد)](https://en.wikipedia.org/wiki/Anastas_Al-Karmali) |         1866 |       14 |      19849 |
-|    4 |                                                    | يوسف جرجس زخم                                                                     |              |       13 |      21613 |
-|    5 | [viaf:93607460](https://viaf.org/viaf/93607460/)   | [جمال الدين القاسمي](https://ar.wikipedia.org/wiki/جمال_الدين_القاسمي)            |         1866 |        8 |      38541 |
-|    6 | [viaf:118432135](https://viaf.org/viaf/118432135/) | [عبد القادر أفندي المغربي](https://ar.wikipedia.org/wiki/عبد_القادر_المغربي)      |         1867 |        7 |      14074 |
-|    7 | [viaf:19737865](https://viaf.org/viaf/19737865/)   | [أحمد بك تيمور](https://en.wikipedia.org/wiki/Ahmed_Taymour)                      |         1871 |        7 |       7905 |
-|    8 | [viaf:22006374](https://viaf.org/viaf/22006374/)   | [محمد رضا الشبيبي](https://en.wikipedia.org/wiki/Mohammed_Ridha_Al-Shabibi)       |         1889 |        7 |      17894 |
-|    9 | [viaf:28125663](https://viaf.org/viaf/28125663/)   | [رفيق بك العظم](https://ar.wikipedia.org/wiki/رفيق_العظم)                         |         1865 |        7 |      13237 |
-|   10 | [viaf:32272677](https://viaf.org/viaf/32272677/)   | [محمد كرد علي](https://en.wikipedia.org/wiki/Muhammad_Kurd_Ali)                   |         1876 |        7 |      42489 |
-|   11 | [viaf:49218655](https://viaf.org/viaf/49218655/)   | [أحمد بك زكي](https://en.wikipedia.org/wiki/Ahmad_Zaki_Pasha)                     |         1866 |        7 |      40311 |
+<!-- Data: four journals, 2019-04-09 -->
 
-<!-- ## *al-Muqtabas*: authors by number of bylines
+| rank |                author.id.viaf                |       author.name       | author.birth | author.death | article.count | journal.count |
+|------|----------------------------------------------|-------------------------|--------------|--------------|---------------|---------------|
+|    1 | NA                                           | NA                      | NA           | NA           |          6955 |             4 |
+|    2 | [14924300](https://viaf.org/viaf/14924300)   | **معروف الرصافي**       | 1875         | 1945         |            43 |             4 |
+|    3 | NA                                           | كاظم  الدجيلي           | 1884         | 1970         |            27 |             2 |
+|    4 | [40250618](https://viaf.org/viaf/40250618)   | **عيسى اسكندر المعلوف** | 1869         | 1956         |            22 |             2 |
+|    5 | NA                                           | إبراهيم حلمي العمر      | 1890         | 1942         |            21 |             2 |
+|    6 | [299037057](https://viaf.org/viaf/299037057) | عبد الله مخلص           | 1878         | 1947         |            15 |             2 |
+|    7 | [22006374](https://viaf.org/viaf/22006374)   | محمد رضا الشبيبي        | 1889         | 1965         |            11 |             2 |
+|    8 | NA                                           | محمد الهاشمي            | NA           | NA           |             6 |             2 |
+|    9 | [236524859](https://viaf.org/viaf/236524859) | مصطفى صادق الرافعي      | 1880         | 1937         |             6 |             2 |
+|   10 | NA                                           | أبو الضيا               | NA           | NA           |             4 |             2 |
+|   11 | [60500457](https://viaf.org/viaf/60500457)   | أحمد محرم               | 1877         | 1945         |             4 |             2 |
+|   12 | NA                                           | محمد باقر الشبيبي       | NA           | NA           |             4 |             2 |
+|   13 | [63117968](https://viaf.org/viaf/63117968)   | محمد راغب طباخ          | 1877         | 1951         |             4 |             2 |
+|   14 | NA                                           | ا. ج                    | NA           | NA           |             3 |             2 |
+|   15 | [36771043](https://viaf.org/viaf/36771043)   | ولي الدين  يكن          | 1873         | 1921         |             2 |             2 |
 
-| rank |            name           | words | articles |
-|------|---------------------------|-------|----------|
-|    1 | Maʿrūf al-Ruṣāfī          | 12437 |       24 |
-|    2 | ʿĪsā Iskandar al-Maʿlūf   | 23297 |       20 |
-|    3 | Sātsunā                   | 19849 |       14 |
-|    4 | Yūsuf Jirjis Zakham       | 21613 |       13 |
-|    5 | Jamāl al-Dīn al-Qāsimī    | 38541 |        8 |
-|    6 | Muḥammad Kurd ʿAlī        | 42489 |        7 |
-|    7 | Aḥmad Zakī                | 40311 |        7 |
-|    8 | Muḥammad Riḍā al-Shabībī  | 17894 |        7 |
-|    9 | ʿAbd al-Qādir al-Maghribī | 14074 |        7 |
-|   10 | Rafīq al-ʿAẓm             | 13237 |        7 |
-|   11 | Aḥmad Taymūr              |  7905 |        7 | -->
+## 3.1.3 authorship statistics: all editions
 
-## *al-Muqtabas*: authors by number of bylines
+![Figure: wordcloud of 50 most important authors by number of bylines in *al-Ḥasnāʾ*, *al-Ḥaqāʾiq* and *al-Muqtabas*](../assets/wordclouds/wordcloud_oape_articles-per-author.png)
 
-![Figure: Word cloud of authors published in *al-Muqtabas*; by number of articles](../assets/plots/word-cloud_muqtabas-authors-bylines.png)
+## 3.1.3 authorship statistics: rolling periods
 
-## *al-Ḥaqāʾiq*: authors by number of bylines
+![Figure: wordcloud of 50 most important authors by number of bylines the sakhrit data set before 1920](../assets/wordclouds/wordclouds_sakhrit_1870-1920.gif)
 
-| rank |                     author.id                      |       author.name        | author.birth | articles | word.count |
-|------|----------------------------------------------------|--------------------------|--------------|----------|------------|
-|    1 | [viaf:299025643](https://viaf.org/viaf/299025643/) | محمد عارف المنير الحسيني | 1847/48      |        4 |       3134 |
-|    2 |                                                    | ع                        |              |        3 |       2833 |
-|    3 |                                                    | عبد الرحمن القصار        |              |        3 |        628 |
-|    4 | [viaf:267054449](https://viaf.org/viaf/267054449/) | مختار المؤيد             | 1822         |        3 |        820 |
-|    5 | [viaf:17087051](https://viaf.org/viaf/17087051/)   | محمد أبو الخير الطباع    |              |        2 |       2887 |
-|    6 |                                                    | محمد القاسمي الحلاق      |              |        2 |       3619 |
-|    7 |                                                    | محي الدين الخاني         |              |        2 |         74 |
+## 3.1.3 authorship statistics: *al-Muqtabas*
 
-## *al-Ḥaqāʾiq*: authors by number of bylines
+<!-- data set: 2019-04-09 -->
 
-![Figure: Word cloud of authors published in *al-Ḥaqāʾiq*](../assets/plots/word-cloud_haqaiq-authors-bylines.png)
+| rank |                author.id.viaf                |     author.name     | author.birth | author.death | article.count |
+|------|----------------------------------------------|---------------------|--------------|--------------|---------------|
+|    1 | NA                                           | NA                  | NA           | NA           |          2630 |
+|    2 | [14924300](https://viaf.org/viaf/14924300)   | **معروف الرصافي**   | 1875         | 1945         |            27 |
+|    3 | [40250618](https://viaf.org/viaf/40250618)   | **عيسى اسكندر المعلوف** | 1869         | 1956         |            20 |
+|    4 | [39370998](https://viaf.org/viaf/39370998)   | ساتسنا              | 1866         | 1947         |            14 |
+|    5 | NA                                           | يوسف جرجس زخم       | 1880         | NA           |            13 |
+|    6 | [32272677](https://viaf.org/viaf/32272677)   | محمد كرد علي        | 1876         | 1953         |            12 |
+|    7 | [19737865](https://viaf.org/viaf/19737865)   | أحمد تيمور          | 1871         | 1930         |             9 |
+|    7 | NA                                           | إبراهيم حلمي العمر  | 1890         | 1942         |             9 |
+|    8 | [93607460](https://viaf.org/viaf/93607460)   | جمال الدين القاسمي  | 1866         | 1914         |             8 |
+|   9 | [49218655](https://viaf.org/viaf/49218655)   | أحمد زكي            | 1866         | 1934         |             7 |
+|   9 | [32410755](https://viaf.org/viaf/32410755)   | حافظ إبراهيم        | 1871         | 1932         |             7 |
+|   9 | [28125663](https://viaf.org/viaf/28125663)   | رفيق العظم          | 1865         | 1925         |             7 |
+|   9 | [118432135](https://viaf.org/viaf/118432135) | عبد القادر المغربي  | 1867         | 1956         |             7 |
+|   9 | [22006374](https://viaf.org/viaf/22006374)   | محمد رضا الشبيبي    | 1889         | 1965         |             7 |
 
-## Worlds apart: *al-Muqtabas* and *al-Ḥaqāʾiq*
 
-![Figure: Authors and periodicals](../assets/plots/network_openarabicpe-authors-publications.png)
+<!-- ## 3.1.3 authorship statistics: *al-Muqtabas*
 
-## *al-Muqtabas*: locations by number of bylines
+![Figure: Word cloud of authors published in *al-Muqtabas*; by number of articles](../assets/plots/word-cloud_muqtabas-authors-bylines.png) -->
 
-![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map_muqtabas-bylines-me.png)
+## 3.1.3 authorship statistics: *al-Ḥaqāʾiq*
 
-## *al-Ḥaqāʾiq*: locations by number of bylines
+<!-- data set: 2019-04-09 -->
 
-![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map_haqaiq-bylines-me.png)
+| rank |                author.id.viaf                |     author.name      | author.birth | author.death | article.count |
+|------|----------------------------------------------|----------------------|--------------|--------------|---------------|
+|    1 | NA                                           | NA                   | NA           | NA           | 286           |
+|    2 | NA                                           | عبد الرحمن القصار    | 1863         | c.1931       | 8             |
+|    3 | NA                                           | إبراهيم خليل مردم بك | NA           | NA           | 7             |
+|    4 | [299025643](https://viaf.org/viaf/299025643) | محمد عارف المنير     | 1847/48      | 1923/24      | 5             |
+|    4 | [53094077](https://viaf.org/viaf/53094077)   | محمد فريد وجدي       | 1875         | 1954         | 5             |
+|    4 | [58892856](https://viaf.org/viaf/58892856)   | صالح الشريف          | 1869         | 1920         | 4             |
+|    4 | NA                                           | ع                    | NA           | NA           | 4             |
+|    4 | [51567828](https://viaf.org/viaf/51567828)   | محمد  القاسمي الحلاق | 1843         | 1900         | 4             |
+|    4 | NA                                           | محمد سليم الحنفي     | NA           | NA           | 4             |
+|    4 | [267054449](https://viaf.org/viaf/267054449) | مختار المؤيد         | 1822         | 1921         | 4             |
+|    5 | NA                                           | أبو الضيا            | NA           | NA           | 3             |
+|    5 | NA                                           | أحمد الجوبري         | NA           | NA           | 3             |
+|    5 | NA                                           | احمد الباشا          | NA           | NA           | 3             |
+|    5 | NA                                           | صلاح الدين الزعيم    | NA           | NA           | 3             |
+|    6 | ...                                          | ...                  | ...          | ...          | ...           |
+|    7 | [14924300](https://viaf.org/viaf/14924300)   | **معروف الرصافي**    | 1875         | 1945         | 1             |
 
-## stylometry
+<!-- ## 3.1.3 authorship statistics: *al-Ḥaqāʾiq*
+
+![Figure: Word cloud of authors published in *al-Ḥaqāʾiq*](../assets/plots/word-cloud_haqaiq-authors-bylines.png) -->
+
+## 3.1.3 authorship statistics: *al-Ḥasnāʾ*
+
+<!-- data set: 2019-04-09 -->
+
+| rank |                author.id.viaf                |       author.name       | author.birth | author.death | article.count |
+|------|----------------------------------------------|-------------------------|--------------|--------------|---------------|
+|    1 | NA                                           | NA                      | NA           | NA           |           106 |
+|    2 | [219321857](https://viaf.org/viaf/219321857) | ماري عجمي               | 1888         | 1965         |             5 |
+|    3 | NA                                           | سلوى سلامه              | NA           | NA           |             4 |
+|    3 | NA                                           | مريم زكا                | NA           | NA           |             4 |
+|    4 | NA                                           | الياس عطا الله          | NA           | NA           |             2 |
+|    4 | NA                                           | جرجس توما               | NA           | NA           |             2 |
+|    4 | NA                                           | جوليا طعمه              | NA           | NA           |             2 |
+|    4 | NA                                           | شحاده شحاده             | NA           | NA           |             2 |
+|    4 | [40250618](https://viaf.org/viaf/40250618)   | **عيسى اسكندر المعلوف** | 1869         | 1956         |             2 |
+|    4 | [14924300](https://viaf.org/viaf/14924300)   | **معروف الرصافي**       | 1875         | 1945         |             2 |
+|    4 | [233275351](https://viaf.org/viaf/233275351) | وردة اليازجي            | 1838         | 1924         |             2 |
+
+
+
+## 3.1.4 network plot: worlds apart
+
+![Figure: network of authors in *al-Ḥaqāʾiq* and *al-Muqtabas*](../assets/plots/network_openarabicpe-authors-publications.png)
+
+# 3.2 find unknown authors: stylometry
+## 3.2.1 stylometry
 
 - aim: authorship attribution through comparison
 - how:
@@ -314,7 +377,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
     + **ranking** of pairs of texts according to similarity of frequency tables
 - limits: cannot establish author names beyond the corpus
 
-## *al-Muqtabas*: 1000 MFWs, *Jamāl al-Dīn al-Qāsimī*
+## 3.2.2 *al-Muqtabas*: 1000 MFWs, *Jamāl al-Dīn al-Qāsimī*
 
 |                    source                   |                    target                   | weight |    type    |
 |---------------------------------------------|---------------------------------------------|--------|------------|
@@ -339,7 +402,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 | القاسمي-oclc_4770057679-i_61-div_2.d1e1517  | NN-oclc_4770057679-i_33-div_3.d1e696        |     16 | undirected |
 | القاسمي-oclc_4770057679-i_39-div_7.d1e2166  | عنحوري-oclc_4770057679-i_54-div_2.d1e1300   |     15 | undirected |
 
-## *al-Muqtabas*: 1000 MFWs, *Maʿrūf al-Ruṣāfī*
+## 3.2.3 *al-Muqtabas*: 1000 MFWs, *Maʿrūf al-Ruṣāfī*
 
 |                    source                   |                 target                 | weight |    type    |
 |---------------------------------------------|----------------------------------------|--------|------------|
@@ -364,7 +427,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 | الرصافي-oclc_4770057679-i_35-div_3.d1e696   | NN-oclc_4770057679-i_2-div_21.d1e2160  |     20 | undirected |
 | الرصافي-oclc_4770057679-i_68-div_9.d1e4370  | NN-oclc_4770057679-i_2-div_21.d1e2160  |     20 | undirected |
 
-## *al-Muqtabas*: 1000 MFWs, *ʿĪsā Iskandar al-Maʿlūf*
+## 3.2.3 *al-Muqtabas*: 1000 MFWs, *ʿĪsā Iskandar al-Maʿlūf*
 
 |                    source                   |                   target                   | weight | type           |
 |---------------------------------------------|--------------------------------------------|--------|------------|
@@ -386,10 +449,52 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 | المعلوف-oclc_4770057679-i_53-div_33.d1e6920 | NN-oclc_4770057679-i_2-div_21.d1e2160      |     23 | undirected |
 | المعلوف-oclc_4770057679-i_63-div_30.d1e2971 | NN-oclc_4770057679-i_2-div_21.d1e2160      |     21 | undirected |
 
-## *al-Muqtabas*: origin of referenced works
+# 3.3 networks of texts
+## 3.3 networks of texts
 
-![Figure: Origin of referenced works in *al-Muqtabas*](../assets/maps/map_muqtabas-referenced-works-all.png)
+- methodology:
+    + count number of articles and journals that reference a specific text (periodical, book)
+- required data:
+    + digital editions with mark-up of referenced texts
 
+    ```xml
+    <div type="article" xml:id="div_40.d1e4386" xml:lang="ar">
+        <head xml:id="head_39.d1e4388" xml:lang="ar">أبحاث باحث</head>
+            <p xml:id="p_197.d1e4391" xml:lang="ar">نشر <persName xml:id="persName_21.d1e4393" xml:lang="fr-Arab-AR" ref="oape:pers:236 viaf:44512503" change="#d2e647"><addName type="honorific">المسيو</addName> <forename xml:lang="fr-Arab-AR">لوسين</forename> <surname xml:lang="fr-Arab-AR">بوفا</surname> </persName> من المتضلعين من العلوم المشرقية والعارفين بالعربية والفارسية والتركية كراسة أشار فيها إلى أبحاثه ومقالاته في المجلات الإفرنجية مثل <title level="j">مجلة العالم الإسلامي</title> و<title level="j">المجلة الآسياوية</title> ومجلة <title level="j">السجلات المراكشية</title> و<title level="j">المجلة الإسبانية</title> ومعظم هذه الأبحاث مما اشتهر بين أهل الأدب والعلم وقدره الباحثون حق قدره فنثني على نشاط صديقنا المشار إليه.</p>
+    </div>
+    ```
+## 3.3.1 statistics of referenced periodicals: all editions
+
+<!-- data: three journals, 2019-04-09 -->
+
+| rank | periodical.title | publication.location | article.count | issue.count | journal.count |
+|------|------------------|----------------------|---------------|-------------|---------------|
+|    1 | المقتبس          | Damascus / Cairo     |            89 |          62 |             3 |
+|    2 | الهلال           | Cairo                |            31 |          28 |             3 |
+|    3 | المقتطف          | Cairo                |            26 |          21 |             3 |
+|    4 | المنار           | Cairo                |            19 |          17 |             3 |
+|    5 | الضياء           | Cairo                |            11 |          11 |             3 |
+|    6 | المفيد           | Beirut               |            12 |           9 |             3 |
+|    7 | الوطن            | Beirut               |             4 |           4 |             3 |
+|    8 | لغة العرب        | Baghdad              |           446 |          89 |             2 |
+|    9 | المشرق           | Beirut               |            32 |          30 |             2 |
+|   10 | الحقائق          | Damascus             |            43 |          22 |             2 |
+|   11 | مجلة المجلات     | Paris                |            20 |          17 |             2 |
+|   12 | العالم*          |                      |            17 |          17 |             2 |
+|   13 | العلم*           |                      |            16 |          15 |             2 |
+|   14 | العرفان          | Saida                |            15 |          13 |             2 |
+|   15 | الحياة           |                      |            10 |          10 |             2 |
+|   16 | الزهور           | Baghdad              |            10 |          10 |             2 |
+
+`*` likely encoding error
+
+## 3.3.1 statistics of referenced periodicals: all editions
+
+![network of periodicals referenced in *al-Ḥasnāʾ*, *al-Ḥaqāʾiq* and *al-Muqtabas*](../assets/networks/network_oape-referenced-periodicals_details.png)
+
+## 3.3 *al-Muqtabas*: origin of reviewed works
+
+![Figure: Origin of referenced works in *al-Muqtabas*](../assets/maps/map-oclc_4770057679-referenced works-all.png)
 
 # Conclusion
 ## Summary
@@ -404,10 +509,10 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 - Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Manzi Tanna-Händel and Layla Youssef
 - Links:
-    + Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html)
+    + Slides: [[https://OpenArabicPE.github.io/slides/2019-oib-board-meeting/](https://OpenArabicPE.github.io/slides/2019-oib-board-meeting/index.html)
     + Paper (draft): <https://doi.org/10.5281/zenodo.1413610>
     + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE/digital-haqaiq](https://www.github.com/OpenArabicPE/digital-haqaiq)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
-    + Email: <grallert@orient-institut.org> <till.grallert@fu-berlin.de>
+    + Email: <grallert@orient-institut.org>
 - Licence: slides and plots are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
