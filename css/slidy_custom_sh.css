@@ -45,7 +45,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
   /*font-family: "American Typewriter";*/
   /*font-family: "Gentium Plus";*/
-  font-weight: lighter;
+  font-weight: 200;
   font-size: 12px;
 }
 
@@ -352,6 +352,7 @@ div.figure p.caption {
     text-align: right;
     top:2em;
     width:15%;
+    min-width: 200px;
     font-size:0.6em;
     font-weight:lighter;
 }
@@ -384,6 +385,34 @@ iframe {
   display: block;
   /*width: 80%;*/
   height: 80%;
+}
+
+/*****************
+columns
+******************/
+
+div.c_width-60 {
+    width:66%;
+    position: relative;
+    float: left;
+}
+div.c_width-50 {
+    width:50%;
+    position: relative;
+    float: left;
+}
+div.c_width-30 {
+    width:33%;
+    position: relative;
+    float: left;
+}
+div.c_left {
+    display: block;
+    float:left;
+}
+div.c_right {
+    display: block;
+    float: right;
 }
 
 /*****************
