@@ -458,11 +458,19 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
     + digital editions with mark-up of referenced texts
 
     ```xml
-    <div type="article" xml:id="div_40.d1e4386" xml:lang="ar">
-        <head xml:id="head_39.d1e4388" xml:lang="ar">أبحاث باحث</head>
-            <p xml:id="p_197.d1e4391" xml:lang="ar">نشر <persName xml:id="persName_21.d1e4393" xml:lang="fr-Arab-AR" ref="oape:pers:236 viaf:44512503" change="#d2e647"><addName type="honorific">المسيو</addName> <forename xml:lang="fr-Arab-AR">لوسين</forename> <surname xml:lang="fr-Arab-AR">بوفا</surname> </persName> من المتضلعين من العلوم المشرقية والعارفين بالعربية والفارسية والتركية كراسة أشار فيها إلى أبحاثه ومقالاته في المجلات الإفرنجية مثل <title level="j">مجلة العالم الإسلامي</title> و<title level="j">المجلة الآسياوية</title> ومجلة <title level="j">السجلات المراكشية</title> و<title level="j">المجلة الإسبانية</title> ومعظم هذه الأبحاث مما اشتهر بين أهل الأدب والعلم وقدره الباحثون حق قدره فنثني على نشاط صديقنا المشار إليه.</p>
-    </div>
+<div type="article" xml:id="div_40.d1e4386" xml:lang="ar">
+    <head xml:id="head_39.d1e4388" xml:lang="ar">أبحاث باحث</head>
+        <p xml:id="p_197.d1e4391" xml:lang="ar">نشر <persName xml:id="persName_21.d1e4393"
+        xml:lang="fr-Arab-AR" ref="oape:pers:236 viaf:44512503" change="#d2e647"><addName type="honorific">
+        المسيو</addName> <forename xml:lang="fr-Arab-AR">لوسين</forename> <surname xml:lang="fr-Arab-AR">
+        بوفا</surname> </persName> من المتضلعين من العلوم المشرقية والعارفين بالعربية والفارسية والتركية
+         كراسة أشار فيها إلى أبحاثه ومقالاته في المجلات الإفرنجية مثل <title level="j">مجلة العالم
+        الإسلامي</title> و<title level="j">المجلة الآسياوية</title> ومجلة <title level="j">السجلات ا
+        لمراكشية</title> و<title level="j">المجلة الإسبانية</title> ومعظم هذه الأبحاث مما اشتهر بين أهل
+        الأدب والعلم وقدره الباحثون حق قدره فنثني على نشاط صديقنا المشار إليه.</p>
+</div>
     ```
+
 ## 3.3.1 statistics of referenced periodicals: all editions
 
 <!-- data: three journals, 2019-04-09 -->
