@@ -618,7 +618,33 @@ p.subhead { font-weight: bold; margin-top: 2em; }
 .smaller { font-size: smaller }
 .bigger { font-size: 130% }
 
+/*
+tables
+*/
+
+tr:hover td {
+  /*background-color: red; */
+  border-top-color: #F46A00;
+  border-bottom-color: #F46A00;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+}
+
 td,th { padding: 0.2em }
+
+/*
+highlight mouse-over on tables
+*/
+
+.focus {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+}
+
+
 
 
 
