@@ -218,7 +218,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ### *al-Muqtabas*, 1906--1917/18
 
-|         token          |   total   |  author |         |
+|         token          |   total   |  author |     NA    |
 |------------------------|-----------|---------|-----------|
 | volumes                | 9         |         |           |
 | issues                 | 96        |         |           |
@@ -232,7 +232,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ### *al-Ḥaqāʾiq*, 1910--1913/14
 
-|  token   |  total  | author |       |
+|  token   |  total  | author |    NA   |
 |----------|---------|--------|---------|
 | volumes  | 3       |        |         |
 | issues   | 36      |        |         |
@@ -260,7 +260,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 <!-- Data: four journals, 2019-04-09 -->
 
-| rank |                author.id.viaf                |          author         | birth | death | articles | journals |
+| rank |                     viaf                     |          author         | birth | death | articles | journals |
 |------|----------------------------------------------|-------------------------|-------|-------|----------|----------|
 |    1 |                                              |                         |       |       |     6955 |        4 |
 |    2 | [14924300](https://viaf.org/viaf/14924300)   | **معروف الرصافي**       |  1875 |  1945 |       43 |        4 |
@@ -290,7 +290,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 <!-- data set: 2019-04-09 -->
 
-| rank |                author.id.viaf                |          author         | birth | death | articles |
+| rank |                     viaf                     |          author         | birth | death | articles |
 |------|----------------------------------------------|-------------------------|-------|-------|----------|
 |    1 |                                              |                         |       |       |     2630 |
 |    2 | [14924300](https://viaf.org/viaf/14924300)   | **معروف الرصافي**       |  1875 |  1945 |       27 |
@@ -316,7 +316,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 <!-- data set: 2019-04-09 -->
 
-| rank |                author.id.viaf                |        author        |  birth  |  death  | articles |
+| rank |                     viaf                     |        author        |  birth  |  death  | articles |
 |------|----------------------------------------------|----------------------|---------|---------|----------|
 |    1 |                                              |                      |         |         | 286      |
 |    2 |                                              | عبد الرحمن القصار    | 1863    | c.1931  | 8        |
@@ -343,7 +343,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 <!-- data set: 2019-04-09 -->
 
-| rank |                author.id.viaf                |          author         | birth | death | articles |
+| rank |                     viaf                     |          author         | birth | death | articles |
 |------|----------------------------------------------|-------------------------|-------|-------|----------|
 |    1 |                                              |                         |       |       |      106 |
 |    2 | [219321857](https://viaf.org/viaf/219321857) | ماري عجمي               |  1888 |  1965 |        5 |
