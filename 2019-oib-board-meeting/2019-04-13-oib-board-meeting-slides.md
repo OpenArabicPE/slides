@@ -65,12 +65,8 @@ Slides: [https://OpenArabicPE.github.io/slides/2019-oib-board-meeting/](https://
 
 1. get the data: **labour and resource intensive**
     - text: transcription
-        - OCR and HTR are still insufficient
-        - require ground truth and extensive training
     - facsimiles: scanning
-        + copyright
-        + amount of data
-    - bibliographic metadata:
+    - bibliographic metadata: transcription, validated iterative generation
 2. transform the data into a human and machine readable edition: **labour and resource intensive**
     - model the source
     - identify entities and link them to authority files
