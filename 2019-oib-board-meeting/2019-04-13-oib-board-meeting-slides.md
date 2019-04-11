@@ -362,13 +362,37 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 |    4 | [233275351](https://viaf.org/viaf/233275351) | وردة اليازجي            |  1838 |  1924 |        2 |
 
 
-
-## 3.1.4 network plot: worlds apart
+## 3.1.4 social network: worlds apart
 
 ![Figure: network of authors in *al-Ḥaqāʾiq* and *al-Muqtabas*](../assets/plots/network_openarabicpe-authors-publications.png)
 
-# 3.2 find unknown authors: stylometry
-## 3.2.1 stylometry
+# 3.2 geographic networks
+## 3.2.1 Locations by number of bylines: *al-Muqtabas*
+
+![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map-oclc_4770057679-bylines-middle-east.png)
+
+<!-- ![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map-oclc_4770057679-bylines-all.png) -->
+
+## 3.2.2 Locations by number of bylines: *al-Ḥaqāʾiq*
+
+<!-- ![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map-oclc_644997575-bylines-middle-east.png) -->
+
+![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map-oclc_644997575-bylines-all.png)
+
+## 3.2.3 Locations by number of bylines: *al-Ḥasnāʾ*
+
+<!-- ![Figure: Locations in bylines in *al-Ḥasnāʾ*](../assets/maps/map-oclc_792756327-bylines-middle-east.png) -->
+
+![Figure: Locations in bylines in *al-Ḥasnāʾ*](../assets/maps/map-oclc_792756327-bylines-all.png)
+
+## 3.2.4 Locations by number of bylines: *Lughat al-ʿArab*
+
+<!-- ![Figure: Locations in bylines in *Lughat al-ʿArab*](../assets/maps/map-oclc_472450345-bylines-middle-east.png) -->
+
+![Figure: Locations in bylines in *Lughat al-ʿArab*](../assets/maps/map-oclc_472450345-bylines-all.png)
+
+# 3.3 find unknown authors: stylometry
+## 3.3.1 stylometry
 
 - aim: authorship attribution through comparison
 - how:
@@ -402,7 +426,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 | القاسمي-oclc_4770057679-i_61-div_2.d1e1517  | NN-oclc_4770057679-i_33-div_3.d1e696        |     16 |
 | القاسمي-oclc_4770057679-i_39-div_7.d1e2166  | عنحوري-oclc_4770057679-i_54-div_2.d1e1300   |     15 |
 
-## 3.2.3 *al-Muqtabas*: 1000 MFWs, *Maʿrūf al-Ruṣāfī*
+## 3.3.3 *al-Muqtabas*: 1000 MFWs, *Maʿrūf al-Ruṣāfī*
 
 |                    source                   |                 target                 | weight |
 |---------------------------------------------|----------------------------------------|--------|
@@ -427,7 +451,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 | الرصافي-oclc_4770057679-i_35-div_3.d1e696   | NN-oclc_4770057679-i_2-div_21.d1e2160  |     20 |
 | الرصافي-oclc_4770057679-i_68-div_9.d1e4370  | NN-oclc_4770057679-i_2-div_21.d1e2160  |     20 |
 
-## 3.2.3 *al-Muqtabas*: 1000 MFWs, *ʿĪsā Iskandar al-Maʿlūf*
+## 3.3.3 *al-Muqtabas*: 1000 MFWs, *ʿĪsā Iskandar al-Maʿlūf*
 
 |                    source                   |                 target                 | weight |
 |---------------------------------------------|----------------------------------------|--------|
@@ -449,8 +473,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 | المعلوف-oclc_4770057679-i_53-div_33.d1e6920 | NN-oclc_4770057679-i_2-div_21.d1e2160  |     23 |
 | المعلوف-oclc_4770057679-i_63-div_30.d1e2971 | NN-oclc_4770057679-i_2-div_21.d1e2160  |     21 |
 
-# 3.3 networks of texts
-## 3.3 networks of texts
+# 3.4 networks of texts
+## 3.4 networks of texts
 
 - methodology:
     + count number of articles and journals that reference a specific text (periodical, book)
@@ -471,7 +495,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 </div>
     ```
 
-## 3.3.1 statistics of referenced periodicals: all editions
+## 3.4.1 statistics of referenced periodicals: all editions
 
 <!-- data: three journals, 2019-04-09 -->
 
@@ -496,11 +520,11 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 `*` likely encoding error
 
-## 3.3.1 statistics of referenced periodicals: all editions
+## 3.4.1 statistics of referenced periodicals: all editions
 
 ![network of periodicals referenced in *al-Ḥasnāʾ*, *al-Ḥaqāʾiq* and *al-Muqtabas*](../assets/networks/network_oape-referenced-periodicals_details.png)
 
-## 3.3 *al-Muqtabas*: origin of reviewed works
+## 3.4 *al-Muqtabas*: origin of reviewed works
 
 ![Figure: Origin of referenced works in *al-Muqtabas*](../assets/maps/map-oclc_4770057679-referenced works-all.png)
 
