@@ -361,10 +361,16 @@ div.figure p.caption {
     text-align: right;
     top:2em;
     width:15%;
-    min-width: 180px;
+    /*min-width: 180px;*/
     font-size:0.6em;
     font-weight:lighter;
 }
+
+.c_width-50 .caption,
+.c_width-30 .caption {
+  min-width: 200px;
+}
+
 div.figure img {
     float:right;
     /*max-height: 80%;*/
