@@ -535,7 +535,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## Thank you!
 
-- Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Manzi Tanna-Händel and Layla Youssef
+- Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2019-oib-board-meeting/](https://OpenArabicPE.github.io/slides/2019-oib-board-meeting/index.html)
     + Paper (draft): <https://doi.org/10.5281/zenodo.1413610>
