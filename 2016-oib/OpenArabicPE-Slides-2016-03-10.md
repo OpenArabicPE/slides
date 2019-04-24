@@ -11,7 +11,7 @@ Bassel Khartabil / باسل خرطبيل
 
 + Syrian software engineer
 + leading advocat for open access and Creative Commons (CC) in Syria
-+ author of the Arabic CC licences 
++ author of the Arabic CC licences
 + detained by the regime since 15 March 2012
 + moved to an unknown location and probably killed in Oct 2015
 
@@ -39,7 +39,7 @@ Email: <grallert@orient-institut.org>
 
 # 1.2 A two-fold problem
 
-- Preservation: 
+- Preservation:
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
     + Negelct: fragile materiality
 - Access:
@@ -60,12 +60,12 @@ The consequence is a focus on "high" culture and canonical texts
 # 1.3.1 state of digitisation: text
 
 gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    
+
 + lack of / faulty metadata
 + unknown editing principles
 + unknown quality
 + very limited structural mark-up
-+ cannot be reliably cited 
++ cannot be reliably cited
 
 # 1.3.1 state of digitisation: text
 
@@ -103,7 +103,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + *validate* the transcription against the facsimiles
     - *improve* the transcription with the help of the "crowd"
     - make everything *citable* for scholars, *linkable* for machines
-    - provide the new edition with the broadest possible licence to facilitate access and re-use 
+    - provide the new edition with the broadest possible licence to facilitate access and re-use
 2. principles
     - re-purpose *available* and *established* tools, technologies, and material
     - preference for *open* and *simple* formats and tools
@@ -138,7 +138,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3.1 Basis: TEI files
 
-~~~{.xml}
+```xml
 <text xml:id="text" xml:lang="ar" type="issue" n="i62">
     <pb ed="print" n="177" facs="#facs_181" xml:id="pb_2.d1e1489"/>
     <front xml:lang="ar" xml:id="front_1.d1e1431">
@@ -169,7 +169,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
         <!-- ... -->
     </body>
 </text>
-~~~
+```
 
 # 3.1 Basis: TEI files
 
@@ -250,7 +250,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
 - Hosting with GitHub is free
 - Core (but simple) features cannot be automated: all c.7000 page breaks must be manually tagged
-- Code that can be re-purposed for---inter alia---Muḥammad Rashīd Riḍā's journal *al-Manār* 
+- Code that can be re-purposed for---inter alia---Muḥammad Rashīd Riḍā's journal *al-Manār*
     + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
     + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374)
 

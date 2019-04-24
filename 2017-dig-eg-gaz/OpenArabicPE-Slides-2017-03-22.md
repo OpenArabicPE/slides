@@ -20,7 +20,7 @@ duration: 20
 
 ## 1.2 A two-fold problem
 
-- Preservation: 
+- Preservation:
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
     + Neglect: fragile materiality
 - Access:
@@ -39,7 +39,7 @@ The consequence is a focus on "high" culture and canonical texts
     + unknown editing principles
     + unknown quality
     + very limited structural mark-up
-    + cannot be reliably cited 
+    + cannot be reliably cited
 2. Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [Institut du Monde Arabe](http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269).
     + lack of metadata
     + limited licences, paywalls
@@ -50,7 +50,7 @@ The consequence is a focus on "high" culture and canonical texts
 <!-- ## 1.3.1 state of digitisation: text
 
 gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    
+
 + lack of / faulty metadata
 + unknown editing principles
 + unknown quality
@@ -94,14 +94,14 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - provide the new edition with the broadest possible licence to facilitate access and re-use 
+    - provide the new edition with the broadest possible licence to facilitate access and re-use
 2. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
 
 ## 2.2 Deliverables
 
-1. Basis: 
+1. Basis:
     1. XML/TEI editions with their own [schema](https://github.com/OpenArabicPE/OpenArabicPE_ODD)
         + text links to open-access digital facsimiles
         + licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
@@ -111,12 +111,12 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
         + convert scraped information into TEI, MODS, BibTeX
         + improve the TEI mark-up
 
-## 2.2 Deliverables 
+## 2.2 Deliverables
 
-2. Core features: 
+2. Core features:
     1. Social digital edition hosted on GitHub: gradually improve transcription and mark-up
     2. Releases are archived at [Zenodo](https://zenodo.org) and receive a DOI
-3. Sugar on top: 
+3. Sugar on top:
     1. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (doesn't require a permanent internet connection) providing side-by-side view of facsimiles and text
     <!-- - bibliographic metadata for all issues and articles (MODS, BibTeX) -->
     3. Access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe/items/)
@@ -130,8 +130,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
     + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
-- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- available at c. 30 libraries (North America, Europe, Middle East): 
+- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education.
+- available at c. 30 libraries (North America, Europe, Middle East):
     + original prints (mostly incomplete)
     + some copies of a "gray" reprint
     + a number of microfiche copies from a single source
@@ -148,20 +148,20 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
 
-## 3. Test case: digital *Muqtabas* 
+## 3. Test case: digital *Muqtabas*
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/oxygen_muqtabas-2.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: plain XML](../assets/oxygen_muqtabas-2.png)
 
 <!-- ## 3. Test case: digital *Muqtabas*
 
-1. Basis: 
+1. Basis:
     - XML/TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas*
     - The text links to open-access digital facsimiles
     - licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-2. Core feature: 
+2. Core feature:
     - social digital edition: gradually improve text and mark-up
     - releases are archived at [Zenodo](https://zenodo.org) and receive a DOI
-3. Sugar on top: 
+3. Sugar on top:
     - Static web-view (doesn't require a permanent internet connection)
     - bibliographic metadata for all issues and articles (MODS, BibTeX)
     - access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe/items/) -->
@@ -191,7 +191,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## 3.1 Basis: TEI files
 
-~~~{.xml}
+```xml
 <text xml:id="text" xml:lang="ar" type="issue" n="i62">
     <pb ed="print" n="177" facs="#facs_181" xml:id="pb_2.d1e1489"/>
     <front xml:lang="ar" xml:id="front_1.d1e1431">
@@ -221,13 +221,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
         </div>
     </body>
 </text>
-~~~
+```
 
 
 <!--
 ## 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
 
 -->
 
@@ -307,7 +307,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 4.2 Simple statistics of authorship
 
-~~~{.json}
+```json
 {
     "articles": [
         {
@@ -341,14 +341,14 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     ],
     "name": "يوسف جرجس زخم"
 }
-~~~
+```
 
 # 5. To do
 ## ongoing work
 
 - Editorial decisions: TEI schema design
     + mark-up of some textual features has not yet been decided
-- Editorial work: 
+- Editorial work:
     + mark-up of page breaks (1-2 h per issue)
     + correcting transcriptions
     + add non-Arabic words omitted by *shamela.ws*
@@ -356,19 +356,19 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + correct publication dates for all issues.
 - Web-display:
     + needs some polishing
-    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub) 
+    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
 
 # 5. Experiences
 ## simple, fast, sustainable
 
 - Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
 - Hosting with GitHub is free
-- Core (but simple) features cannot be automated: 
+- Core (but simple) features cannot be automated:
     + all c.7000 page breaks must be manually tagged
     <!-- + it took a part-time intern 4 weeks to tag one volume of 800 pages -->
 - Code can be re-purposed:
     + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
-    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār* 
+    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 
@@ -382,7 +382,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
 - within a framework (git, GitHub, Zenodo) that allows for / provides
     + collaborative, open, version-controlled improvements of the edition
-    + re-use of the text 
+    + re-use of the text
     + long-term preservation and DOIs
 
 ## Thank you!
@@ -394,4 +394,4 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <grallert@orient-institut.org>
 
-- Licence: The slides are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) 
+- Licence: The slides are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)

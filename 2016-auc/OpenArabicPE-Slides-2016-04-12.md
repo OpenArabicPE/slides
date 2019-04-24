@@ -10,7 +10,7 @@ Bassel Khartabil / باسل خرطبيل
 
 + Syrian software engineer
 + leading advocate for open access and Creative Commons (CC) in Syria
-+ author of the Arabic CC licences 
++ author of the Arabic CC licences
 + detained by the regime since 15 March 2012
 + moved to an unknown location and probably killed in Oct 2015
 
@@ -38,7 +38,7 @@ Email: <grallert@orient-institut.org>
 
 # 1.2 A two-fold problem
 
-- Preservation: 
+- Preservation:
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
     + Neglect: fragile materiality
 - Access:
@@ -59,12 +59,12 @@ The consequence is a focus on "high" culture and canonical texts
 # 1.3.1 state of digitisation: text
 
 gray online libraries / "crowd"-sourced transcriptions, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    
+
 + lack of / faulty metadata
 + unknown editing principles
 + unknown quality
 + very limited structural mark-up
-+ cannot be reliably cited 
++ cannot be reliably cited
 
 # 1.3.1 state of digitisation: text
 
@@ -102,7 +102,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + *validate* the transcription against the facsimiles
     - *improve* the transcription with the help of the "crowd"
     - make everything *citable* for scholars, *linkable* for machines
-    - provide the new edition with the broadest possible licence to facilitate access and re-use 
+    - provide the new edition with the broadest possible licence to facilitate access and re-use
 2. principles
     - re-purpose *available* and *established* tools, technologies, and material
     - preference for *open* and *simple* formats and tools
@@ -113,8 +113,8 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
     + 9 volumes, 96 issues (at least 2 double issues), c. 7000 pages
-- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- available at c. 30 libraries (North America, Europe, Middle East): 
+- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education.
+- available at c. 30 libraries (North America, Europe, Middle East):
     + original prints (mostly incomplete)
     + some copies of a "gray" reprint
     + a number of microfiche copies from a single source
@@ -126,13 +126,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3. Test case: digital *Muqtabas*
 
-1. Basis: 
+1. Basis:
     - XML/TEI edition of all 96 issues (c. 7000 pages) of Muḥammad Kurd ʿAlī's *Majallat al-Muqtabas*
     - The text links to open-access digital facsimiles
     - licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-2. Core feature: 
+2. Core feature:
     - social digital edition: gradually improve text and mark-up
-3. Sugar on top: 
+3. Sugar on top:
     - Static web-view (doesn't require a permanent internet connection)
     - bibliographic metadata for all issues and articles (MODS, BibTeX)
     - access to bibliographic metadata through a public Zotero group
@@ -162,7 +162,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 # 3.1 Basis: TEI files
 
-~~~{.xml}
+```xml
 <text xml:id="text" xml:lang="ar" type="issue" n="i62">
     <pb ed="print" n="177" facs="#facs_181" xml:id="pb_2.d1e1489"/>
     <front xml:lang="ar" xml:id="front_1.d1e1431">
@@ -192,13 +192,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
         </div>
     </body>
 </text>
-~~~
+```
 
 
 
 # 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
 
 
 
@@ -271,7 +271,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 - Editorial decisions: TEI schema design
     + mark-up of some text features has not yet been decided
-- Editorial work: 
+- Editorial work:
     + mark-up of page breaks
     + correcting transcriptions
     + add non-Arabic words omitted by *shamela.ws*
@@ -279,7 +279,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + correct publication dates for all issues.
 - Web-display:
     + needs some polishing
-    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub) 
+    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
 
 # 5. Experiences: simple, fast, sustainable
 
@@ -288,7 +288,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Core (but simple) features cannot be automated: all c.7000 page breaks must be manually tagged
 - Code can be re-purposed:
     + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
-    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār* 
+    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 

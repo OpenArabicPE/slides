@@ -270,7 +270,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 3.1 Basis: TEI files
 
-~~~{.xml}
+```xml
 <text xml:id="text" xml:lang="ar" type="issue" n="i62">
     <pb ed="print" n="177" facs="#facs_181" xml:id="pb_2.d1e1489"/>
     <front xml:lang="ar" xml:id="front_1.d1e1431">
@@ -300,7 +300,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
         </div>
     </body>
 </text>
-~~~
+```
 
 
 <!--

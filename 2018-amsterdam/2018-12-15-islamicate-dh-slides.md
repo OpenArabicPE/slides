@@ -44,7 +44,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-amsterdam/](https://OpenArab
 
 ## 1.2 A two-fold problem
 
-- Preservation: 
+- Preservation:
     + Active **destruction** of cultural artefacts: iconoclasm, neoliberalism
     + **Decay** through neglect: fragile materiality
 - Access:
@@ -76,9 +76,9 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-amsterdam/](https://OpenArab
     - facsimiles: scanning
         + copyright
         + amount of data
-    - bibliographic metadata: 
+    - bibliographic metadata:
 2. transform the data into a human and machine readable edition: **labour and resource intensive**
-    - model the source 
+    - model the source
     - identify entities and link them to authority files
 3. host, share and preserve the data: **labour and resource intensive**
 
@@ -91,7 +91,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-amsterdam/](https://OpenArab
     + unknown editing principles
     + unknown quality
     + very limited structural mark-up
-    + cannot be reliably cited 
+    + cannot be reliably cited
 - OCR layer at HathiTrust
 
 ## 1.4.1 state of digitisation: text
@@ -148,7 +148,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 1.4.3 state of digitisation: bibliographic metadata
 
-- needs: 
+- needs:
     + reliable bibliographic metadata on the article level
     + across periodicals
 - reality:
@@ -161,14 +161,14 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 # 2. Open Arabic Periodical Editions (OpenArabicPE): Overview<!-- : Unite facsimile and transcription and generate reliable metadata -->
 ## 2.1 Aims and principles
 
-1. ideas: 
+1. ideas:
     - unite **available** facsimiles and transcriptions
     - harvest, generate, validate and share open metadata
 2. aims
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - share all data, metadata and tools with the broadest possible licences to facilitate access and re-use 
+    - share all data, metadata and tools with the broadest possible licences to facilitate access and re-use
 3. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
@@ -257,7 +257,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 3.1 Basis: TEI files
 
-~~~{.xml}
+```xml
 <text xml:id="text" xml:lang="ar" type="issue" n="i62">
     <pb ed="print" n="177" facs="#facs_181" xml:id="pb_2.d1e1489"/>
     <front xml:lang="ar" xml:id="front_1.d1e1431">
@@ -287,13 +287,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
         </div>
     </body>
 </text>
-~~~
+```
 
 
 <!--
 ## 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
 
 -->
 
@@ -383,7 +383,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 - Editorial decisions: TEI schema design
     <!-- + TEI is rooted in the western episteme -->
-- Editorial work: 
+- Editorial work:
     + mark-up of page breaks (1-2 h per issue)
     + correcting transcriptions
     + add non-Arabic words omitted by *shamela.ws*
@@ -396,20 +396,20 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 4.2 experiences: simple, fast, sustainable
 
-- Simple technologies and relatively little coding needed: 
+- Simple technologies and relatively little coding needed:
     + Initial project set-up took less than four weeks of after-hour labour
 - Hosting, collaborative editing, long-term preservation and DOIs are provided free of cost
-- Core (but simple) features **cannot** be automated: 
+- Core (but simple) features **cannot** be automated:
     + all c.7000 page breaks must be manually tagged
     + does **not** require knowledge of XML, TEI or access to more than a syntax-aware text editor.
 
 <!-- - Collaboration in bootstrapped framework with multiple dependencies  -->
     <!-- + it took a part-time intern 4 weeks to tag one volume of 800 pages -->
-<!-- - TEI editing 
+<!-- - TEI editing
     - requires some training
     - patchy support of Arabic across operating systems, Java versions -->
    <!--  + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day. -->
-    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār* 
+    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
 
@@ -421,11 +421,11 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + plain text files
     + MODS and BibTeX files for every article
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
-- validated open **bibliographic metadata** (MODS) for 
-    - [*al-Jinān* (1875--1885)](https://github.com/OpenArabicPE/journal_al-jinan), [*al-Quds* (#1--391, 1908--14)](https://github.com/OpenArabicPE/newspaper_al-quds), [*Ḥadīqat al-Akhbār* (#1--357, 1858--65)](https://github.com/OpenArabicPE/newspaper_hadiqat-al-akhbar), [*Thamarāt al-Funūn* (#1--1695, 1875--1908)](https://github.com/OpenArabicPE/newspaper_thamarat-al-funun) 
+- validated open **bibliographic metadata** (MODS) for
+    - [*al-Jinān* (1875--1885)](https://github.com/OpenArabicPE/journal_al-jinan), [*al-Quds* (#1--391, 1908--14)](https://github.com/OpenArabicPE/newspaper_al-quds), [*Ḥadīqat al-Akhbār* (#1--357, 1858--65)](https://github.com/OpenArabicPE/newspaper_hadiqat-al-akhbar), [*Thamarāt al-Funūn* (#1--1695, 1875--1908)](https://github.com/OpenArabicPE/newspaper_thamarat-al-funun)
 - within a framework (git, [GitHub](https://github.com/openarabicpe), [Zenodo](https://zenodo.org/), [Zotero](https://www.zotero.org/groups/openarabicpe/items/)) that allows for / provides
     + collaborative, open, version-controlled improvements
-    + re-use of the data, metadata and tools 
+    + re-use of the data, metadata and tools
     + long-term preservation and DOIs
     + discovery <!-- in CLARIN -->
 
