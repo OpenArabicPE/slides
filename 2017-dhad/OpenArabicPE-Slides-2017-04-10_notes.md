@@ -34,7 +34,7 @@ Extended slides: [https://OpenArabicPE.github.io/slides/2017-dhad/](https://Open
 
 ## 1.2 A two-fold problem
 
-- Preservation: 
+- Preservation:
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
     + Neglect: fragile materiality
 - Access:
@@ -49,12 +49,12 @@ Extended slides: [https://OpenArabicPE.github.io/slides/2017-dhad/](https://Open
 ## 1.3.1 state of digitisation: text
 
 "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    
+
 + lack of / faulty metadata
 + unknown editing principles
 + unknown quality
 + very limited structural mark-up
-+ cannot be reliably cited 
++ cannot be reliably cited
 
 
 ## 1.3.2 state of digitisation: images
@@ -79,14 +79,14 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of a "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - provide the new edition with the broadest possible licence to facilitate access and re-use 
+    - provide the new edition with the broadest possible licence to facilitate access and re-use
 2. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
 
 ## 2.2 Deliverables
 
-1. Basis: 
+1. Basis:
     1. XML/TEI editions with their own [schema](https://github.com/OpenArabicPE/OpenArabicPE_ODD)
         + text links to open-access digital facsimiles
         + licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
@@ -98,10 +98,10 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## 2.2 Deliverables
 
-2. Core features: 
+2. Core features:
     1. Social digital edition hosted on GitHub: gradually improve transcription and mark-up
     2. Releases are archived at [Zenodo](https://zenodo.org) and receive a DOI
-3. Sugar on top: 
+3. Sugar on top:
     1. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (doesn't require a permanent internet connection) providing side-by-side view of facsimiles and text
     <!-- - bibliographic metadata for all issues and articles (MODS, BibTeX) -->
     3. Access to bibliographic metadata through a public Zotero group
@@ -168,14 +168,14 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
+![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
 
 ## 3.3 Sugar on top: Zotero group
 
 [www.zotero.org/groups/OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)
 
 - Metadata for every article (currently *al-Muqtabas*, *al-Ḥaqāʾiq*, *al-Ḥilāl*)
-+ Public repository 
++ Public repository
 + Machine-actionable metadata available through API
 + May generate human-readable citations
 + links to the GitHub-hosted webview
@@ -187,7 +187,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Hosting, long-term preservation and DOIs are provided free of cost
 - Code can be re-purposed:
     + the digital edition of [ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus)](https://www.github.com/OpenArabicPE/digital-haqaiq) was set up in a single day.
-- Core (but simple) features **cannot** be automated: 
+- Core (but simple) features **cannot** be automated:
     + thousands of page breaks must be manually tagged
 
 ## 4.2 on-going work
@@ -195,7 +195,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Editorial decisions: modelling and TEI schema design
     + mark-up of some text features has not yet been decided
     + future plan: one article per file
-- Editorial work: 
+- Editorial work:
     + mark-up of page breaks (1-2 h per issue)
     + correcting transcriptions
     + add non-Arabic words omitted by *shamela.ws*
@@ -203,15 +203,15 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + correct publication dates for all issues
 - Web-display:
     + needs some polishing
-    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub) 
+    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
 - Documentation and engagement
 
 ## 4.3 applications
 
-- validation of existing digitised editions / platforms: 
+- validation of existing digitised editions / platforms:
     + [*shamela.ws*](http://shamela.ws/index.php/book/26523) and derivatives
         * incomplete transcription: all footnotes and non-Arabic text missing, sometimes lengthy omissions
-        * faulty transcription: "corrections" and errors 
+        * faulty transcription: "corrections" and errors
     + [*sakhrit*](http://archive.sakhrit.co/)
         * incomplete and erroneous metadata on the article level
         * percentage of "fake" facsimiles
@@ -226,7 +226,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
 - within a framework (git, GitHub, Zenodo) that allows for / provides
     + collaborative, open, version-controlled improvements of the edition
-    + re-use of the text 
+    + re-use of the text
     + long-term preservation and DOIs -->
 
 ## Thank you!

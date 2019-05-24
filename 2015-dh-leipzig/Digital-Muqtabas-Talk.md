@@ -34,7 +34,7 @@ Email: <grallert@orient-institut.org>
 
 # 1.2 A two-fold problem
 
-- Preservation: 
+- Preservation:
     + Active destruction of cultural artifacts: iconoclasm, neoliberalism
     + fragile materiality
 - Access:
@@ -50,7 +50,7 @@ Email: <grallert@orient-institut.org>
     + lack of metadata
     + unknown editing principles
     + unknown quality
-    + cannot be reliably cited 
+    + cannot be reliably cited
 2. Digital imagery, e.g. [HathiTrust](http://catalog.hathitrust.org/Record/100658549)
     + lack of metadata
     + limited licences, paywalls
@@ -62,7 +62,7 @@ Email: <grallert@orient-institut.org>
 - make it citable for scholars, linkable for machines
 - re-purpose available tools, technologies, and material
     - preference for open and simple formats and tools
-- provide the new edition with the broadest possible licence to facilitate access and re-use 
+- provide the new edition with the broadest possible licence to facilitate access and re-use
 
 
 # Test case: digital *Muqtabas*
@@ -92,7 +92,7 @@ Email: <grallert@orient-institut.org>
 
 # 3. Sugar on top: web-view
 
-[https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml)
+[https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_60.TEIP5.xml](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_60.TEIP5.xml)
 
 - Adaptation of [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/)
 - human-readable and static web-view (either rawgit or gh-pages)
@@ -113,7 +113,7 @@ Email: <grallert@orient-institut.org>
 - Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
 - Hosting with GitHub is free
 - Core (but simple) features cannot be automated: page breaks must be manually tagged
-- Code that can be re-purposed for---inter alia---Muḥammad Rashīd Riḍā's journal *al-Manār* 
+- Code that can be re-purposed for---inter alia---Muḥammad Rashīd Riḍā's journal *al-Manār*
     + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
     + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374)
 

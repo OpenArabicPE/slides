@@ -12,8 +12,8 @@ duration: 6
 - "monthly" journal published by Muḥammad Kurd ʿAlī between 1906 and 1918/19 in Cairo and, from 1908 onwards, in Damascus.
     + 9 volumes, 96 issues <!-- (at least 2 double issues),  -->, c. 7000 pages
     + 3.851.614 tokens (words), 5042 articles, [136 named authors](../assets/muqtabas_word-cloud.html)
-- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education. 
-- available at c. 30 libraries (North America, Europe, Middle East): 
+- Muḥammad Kurd ʿAlī (1876-1952): Ottoman bureaucrat, journalist, president of the Syrian Academy of Sciences, minister of education.
+- available at c. 30 libraries (North America, Europe, Middle East):
     + original prints (mostly incomplete)
     + some copies of a "gray" reprint
     + a number of microfiche copies from a single source
@@ -46,7 +46,7 @@ duration: 6
     + unknown editing principles
     + unknown quality
     + very limited structural mark-up
-    + cannot be reliably cited 
+    + cannot be reliably cited
 2. Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [Institut du Monde Arabe](http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269).
     + lack of metadata
     + limited licences, paywalls
@@ -59,7 +59,7 @@ duration: 6
     + **validate** the transcription against the facsimiles
     - **improve** the transcription with the help of the "crowd"
     - make everything **citable** for scholars, **linkable** for machines
-    - provide the new edition with the broadest possible licence to facilitate access and re-use 
+    - provide the new edition with the broadest possible licence to facilitate access and re-use
 2. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
@@ -70,7 +70,7 @@ duration: 6
     + TEI XML files (transcription and links to facsimiles)
     + plain text files (markdown)
     + MODS and BibTeX files for every article
-    + [customised version of TEI Boilerplate](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (XSLT and CSS) with stable URLs for every element ([example](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml))
+    + [customised version of TEI Boilerplate](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (XSLT and CSS) with stable URLs for every element ([example](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml))
     + access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
 - within a framework (git, [GitHub](https://github.com/tillgrallert/digital-muqtabas), [Zenodo](https://zenodo.org)) that allows for / provides
     + collaborative, open, version-controlled improvements of the edition
@@ -82,7 +82,7 @@ duration: 6
 - Project evolved into "Open Arabic Periodical Editions" ([OpenArabicPE](https://openarabicpe.github.io))
 - Editorial decisions: modelling / TEI schema design
     <!-- + mark-up of some text features has not yet been decided -->
-- Editorial work: 
+- Editorial work:
     + mark-up of page breaks (1-2 h per issue)
     + add parts missing from transcription (all foreign words and footnotes, entire pages)
     + correct transcription

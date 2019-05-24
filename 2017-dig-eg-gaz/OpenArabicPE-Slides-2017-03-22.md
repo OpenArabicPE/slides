@@ -142,7 +142,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
     + USA: 1 complete copy (Chicago) that is the base for most microfiche copies -->
 ## 3. Test case: digital *Muqtabas*
 
-![[Web-view of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
+![[Web-view of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
 
 ## 3. Test case: digital *Muqtabas*
 
@@ -285,7 +285,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
+![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-1.png)
 
 ## 3.3 Sugar on top: Zotero group
 
@@ -317,7 +317,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
             "articles": "1",
             "pages": "9",
             "urls": [
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_41.TEIP5.xml#div_3.d1e692"
+                "https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_41.TEIP5.xml#div_3.d1e692"
             ],
             "year": "1909"
         },
@@ -325,8 +325,8 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
             "articles": "2",
             "pages": "14",
             "urls": [
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_58.TEIP5.xml#div_5.d1e2156",
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_59.TEIP5.xml#div_4.d1e2087"
+                "https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_58.TEIP5.xml#div_5.d1e2156",
+                "https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_59.TEIP5.xml#div_4.d1e2087"
             ],
             "year": "1910"
         },
@@ -334,7 +334,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
             "articles": "1",
             "pages": "18",
             "urls": [
-                "https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_68.TEIP5.xml#div_8.d1e1669"
+                "https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_68.TEIP5.xml#div_8.d1e1669"
             ],
             "year": "1911"
         }
