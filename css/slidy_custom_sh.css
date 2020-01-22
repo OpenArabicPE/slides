@@ -46,7 +46,8 @@ body {
   /*font-family: "American Typewriter";*/
   /*font-family: "Gentium Plus";*/
   font-weight: 200;
-  font-size: 12px;
+  /*font-size is over-ridden by automatically generated inline CSS on body*/
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -72,6 +73,10 @@ strong {
   font-style: italic;
   font-weight: lighter;
   border-bottom: 2px dotted #F96827;
+}
+
+table {
+  font-size: 0.8em;
 }
 
 /******************
@@ -368,12 +373,12 @@ div.figure p.caption {
 div.figure img {
     float:right;
     /*max-height: 80%;*/
-    max-height: 600px;
+    max-height: 700px;
     max-width:80%;
 }
 
 img {
-  max-height: 600px;
+  max-height: 700px;
   max-width: 100%;
 }
 
@@ -618,9 +623,16 @@ p.subhead { font-weight: bold; margin-top: 2em; }
 .smaller { font-size: smaller }
 .bigger { font-size: 130% }
 
-/*
+/*******************************
 tables
-*/
+*******************************/
+
+table {
+  display:block;
+  /* the table should be centred on the page*/
+  margin-left: auto;
+  margin-right: auto;
+}
 
 tr:hover td {
   /*background-color: red; */
