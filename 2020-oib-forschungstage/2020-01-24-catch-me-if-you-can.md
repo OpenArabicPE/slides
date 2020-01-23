@@ -156,7 +156,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-oib-forschungstage/](https:/
 </div>
 <div class="c_width-30 c_right">
 
-1. only a few nodes is of relative importance
+1. only a few nodes are of relative importance
 2. *al-Muqtabas* accounts for the vast majority of references
 3. all periodicals are primarly self-referential
 
