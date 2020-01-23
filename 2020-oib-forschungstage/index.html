@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Till Grallert" />
+  <meta name="date" content="2020-01-24" />
+  <title>Catch me if you can!</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+<!--   <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+      color: black;
+  }
+  /* provide a readible font-size */
+  .sourceCode * {
+      font-size: 16px;
+  }
+  /* xml element names */
+  .xml > code span.kw {
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code span.ot {
+    /*color:#FF8041;*/
+    color: #FF9159;
+  }
+  /* xml attribute values */
+  .xml > code span.st {
+    /*color:#993300;*/
+    color: #993300;
+  }
+  /* xml comments */
+  .xml > code span.co {
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+    color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  div.c_width-60 {
+      width:66%;
+      position: relative;
+      float: left;
+  }
+  div.c_width-50 {
+      width:50%;
+      position: relative;
+      float: left;
+  }
+  div.c_width-30 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  div.c_left {
+      display: block;
+      float:left;
+  }
+  div.c_right {
+      display: block;
+      float: right;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+    color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../js/slidy.js"></script>
+ <!--  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
+  <meta name="duration" content="30" />
+</head>
+<body>
+<!-- <div class="slide titlepage">
+  <h1 class="title">Catch me if you can!</h1>
+  <p class="author">
+Till Grallert
+  </p>
+  <p class="date">24 January 2020</p>
+</div> -->
+<div id="catch-me-if-you-can-computational-approaches-to-arabic-periodical-studies" class="slide titlepage">
+<h1>Catch me if you can! Computational approaches to Arabic periodical studies</h1>
+<p>Till Grallert</p>
+<p>OIB Forschungstage 2020</p>
+<p>Slides: <a href="https://OpenArabicPE.github.io/slides/2020-oib-forschungstage/index.html">https://OpenArabicPE.github.io/slides/2020-oib-forschungstage/</a></p>
+</div>
+<div id="introduction-me" class="title-slide slide section level1">
+<h1>Introduction: me</h1>
+
+</div>
+<div id="academic-profile" class="slide section level2">
+<h1>academic profile</h1>
+<ul>
+<li>academic background: social historian of the late Ottoman Eastern Mediterranean</li>
+<li>PhD: history of the streets as public places and public space in late Ottoman Damascus</li>
+<li>main areas of research:
+<ul>
+<li>social history</li>
+<li>conceptual history</li>
+<li>intellectual history</li>
+<li>urban studies</li>
+<li>periodical studies</li>
+<li>gender studies</li>
+<li>digital humanities</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="introduction-project" class="title-slide slide section level1">
+<h1>Introduction: project</h1>
+
+</div>
+<div id="outline" class="slide section level2">
+<h1>Outline</h1>
+<ul>
+<li>Problematic state of Arabic periodical studies</li>
+<li>Methodologic proposals to computationally address this state</li>
+<li>Three concrete approaches
+<ul>
+<li>(social) network analysis</li>
+<li>bibliometrics</li>
+<li>stylometric authorship attribution</li>
+</ul></li>
+</ul>
+</div>
+<div id="problems" class="slide section level2">
+<h1>Problems</h1>
+<ol style="list-style-type: decimal">
+<li>periodicals are commonly perceived as a <strong>source</strong> but not a <strong>subject</strong> in its own right</li>
+<li>the history of the periodical press
+<ul>
+<li>remains largely unexplored</li>
+<li>is full of untested hypotheses</li>
+<li>is heavily biased by national(ist) narratives</li>
+<li>focusses on a few “core” publications from Cairo and Beirut</li>
+</ul></li>
+</ol>
+</div>
+<div id="one-of-the-many-reasons" class="slide section level2">
+<h1>One of the many reasons</h1>
+<div class="figure">
+<img src="../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png" alt="" />
+<p class="caption">Map: geographic distribution of library holdings of <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div id="open-questions-micro-level" class="slide section level2">
+<h1>Open questions: micro level</h1>
+<ul>
+<li>how were individual periodicals produced?</li>
+<li>who authored the vast majority of anonymous articles?</li>
+<li>how to conceptualise “authorship”?</li>
+</ul>
+</div>
+<div id="open-questions-meso-level" class="slide section level2">
+<h1>Open questions: meso level</h1>
+<ul>
+<li>What are the core nodes (authors, periodicals, other works) in the ideosphere of the late Ottoman Eastern Mediterranean?</li>
+</ul>
+</div>
+<div id="open-question-macro-level" class="slide section level2">
+<h1>Open question: macro level</h1>
+<ul>
+<li>How do we have to revise the <em>nahḍa</em> narrative / late Ottoman intellectual history if we include the full ideosphere of the press beyond Cairo and Beirut?</li>
+</ul>
+</div>
+
+<div id="methodology" class="title-slide slide section level1">
+<h1>Methodology</h1>
+
+</div>
+<div id="methodology-computational-approaches" class="slide section level2">
+<h1>Methodology: computational approaches</h1>
+<ul>
+<li><em>distant reading</em>
+<ul>
+<li>bibliometrics</li>
+<li>social network analysis</li>
+<li>stylometric authorship attribution</li>
+</ul></li>
+<li>requires a digital corpus -&gt; <em>corpus building</em></li>
+</ul>
+</div>
+<div id="corpus-building" class="slide section level2">
+<h1>corpus building</h1>
+<ol style="list-style-type: decimal">
+<li>get the data: <strong>labour and resource intensive</strong>
+<ul>
+<li>text: transcription</li>
+<li>facsimiles: scanning</li>
+<li>bibliographic metadata: transcription, validated iterative generation</li>
+</ul></li>
+<li>transform the data into a human and machine readable edition: <strong>labour and resource intensive</strong>
+<ul>
+<li>model the source</li>
+<li>identify entities and link them to authority files</li>
+</ul></li>
+<li>host, share and preserve the data: <strong>labour and resource intensive</strong></li>
+</ol>
+</div>
+<div id="corpus-building-open-arabic-periodical-editions" class="slide section level2">
+<h1>corpus building: <a href="https://github.com/openarabicpe">Open Arabic Periodical Editions</a></h1>
+<ol style="list-style-type: decimal">
+<li>ideas:
+<ul>
+<li>unite <strong>available</strong> facsimiles and transcriptions in a standard-compliant format</li>
+<li>harvest, generate, validate and share open metadata</li>
+</ul></li>
+<li>aims
+<ul>
+<li><strong>validate</strong> the transcription against the facsimiles</li>
+<li><strong>improve</strong> the transcription with the help of the “crowd”</li>
+<li>make everything <strong>citable</strong> for scholars, <strong>linkable</strong> for machines</li>
+<li>share all data, metadata and tools with the broadest possible licences to facilitate access and re-use</li>
+</ul></li>
+<li>principles
+<ul>
+<li>re-purpose <strong>available</strong> and <strong>established</strong> tools, technologies, and material</li>
+<li>preference for <strong>open</strong> and <strong>simple</strong> formats and tools</li>
+</ul></li>
+</ol>
+</div>
+<div id="corpus-building-open-arabic-periodical-editions-1" class="slide section level2">
+<h1>corpus building: <a href="https://github.com/openarabicpe">Open Arabic Periodical Editions</a></h1>
+<ol style="list-style-type: decimal">
+<li>Open licences: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)</li>
+<li>Social digital editions hosted on <a href="https://github.com">GitHub</a>: gradually improve transcription and mark-up</li>
+<li>Releases are archived at <a href="https://zenodo.org">Zenodo</a>: receive a DOI for reliable citation</li>
+<li><a href="https://github.com/tillgrallert/tei-boilerplate-arabic-editions">Static web-view</a><!--  (doesn't require a permanent internet connection) -->: provides side-by-side view of facsimiles and text</li>
+<li>Access to bibliographic metadata through a public <a href="https://www.zotero.org/groups/openarabicpe">Zotero group</a></li>
+</ol>
+</div>
+<div id="openarabicpes-corpus" class="slide section level2">
+<h1>OpenArabicPE’s corpus</h1>
+<table>
+<thead>
+<tr class="header">
+<th>title</th>
+<th align="right">volumes</th>
+<th align="right">issues</th>
+<th align="right">articles</th>
+<th align="right">words</th>
+<th align="right">words per article</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>al-Ḥaqāʾiq</strong></td>
+<td align="right">3</td>
+<td align="right">35</td>
+<td align="right">389</td>
+<td align="right">298090</td>
+<td align="right">832.66</td>
+</tr>
+<tr class="even">
+<td><strong>al-Ḥasnāʾ</strong></td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">201</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+</tr>
+<tr class="odd">
+<td>al-Manār</td>
+<td align="right">35</td>
+<td align="right">537</td>
+<td align="right">4300</td>
+<td align="right">6144593</td>
+<td align="right">1437.73</td>
+</tr>
+<tr class="even">
+<td><strong>al-Muqtabas</strong></td>
+<td align="right">9</td>
+<td align="right">96</td>
+<td align="right">2964</td>
+<td align="right">1981081</td>
+<td align="right">873.34</td>
+</tr>
+<tr class="odd">
+<td>al-Ustādh</td>
+<td align="right">1</td>
+<td align="right">42</td>
+<td align="right">435</td>
+<td align="right">221447</td>
+<td align="right">582.21</td>
+</tr>
+<tr class="even">
+<td>al-Zuhūr</td>
+<td align="right">4</td>
+<td align="right">39</td>
+<td align="right">436</td>
+<td align="right">292333</td>
+<td align="right">695.09</td>
+</tr>
+<tr class="odd">
+<td><strong>Lughat al-ʿArab</strong></td>
+<td align="right">3</td>
+<td align="right">34</td>
+<td align="right">939</td>
+<td align="right">373832</td>
+<td align="right">485.21</td>
+</tr>
+<tr class="even">
+<td><strong>total</strong></td>
+<td align="right">56</td>
+<td align="right">795</td>
+<td align="right">9664</td>
+<td align="right">9311376</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="openarabicpes-corpus-1" class="slide section level2">
+<h1>OpenArabicPE’s corpus</h1>
+<table>
+<thead>
+<tr class="header">
+<th>title</th>
+<th align="right">articles with author (%)</th>
+<th align="right">authors</th>
+<th align="right">author.birth.avg</th>
+<th align="right">author.death.avg</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>al-Ḥaqāʾiq</strong></td>
+<td align="right">41.90</td>
+<td align="right">104</td>
+<td align="right">1837.53</td>
+<td align="right">1905.93</td>
+</tr>
+<tr class="even">
+<td><strong>al-Ḥasnāʾ</strong></td>
+<td align="right">37.31</td>
+<td align="right">50</td>
+<td align="right">1883.14</td>
+<td align="right">1947.17</td>
+</tr>
+<tr class="odd">
+<td>al-Manār</td>
+<td align="right"><strong>87.14</strong></td>
+<td align="right">356</td>
+<td align="right">1870.96</td>
+<td align="right">1913.5</td>
+</tr>
+<tr class="even">
+<td><strong>al-Muqtabas</strong></td>
+<td align="right">12.72</td>
+<td align="right">140</td>
+<td align="right">1855.94</td>
+<td align="right">1929.48</td>
+</tr>
+<tr class="odd">
+<td>al-Ustādh</td>
+<td align="right">5.52</td>
+<td align="right">8</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+</tr>
+<tr class="even">
+<td>al-Zuhūr</td>
+<td align="right">41.51</td>
+<td align="right">112</td>
+<td align="right">1872.96</td>
+<td align="right">1939.52</td>
+</tr>
+<tr class="odd">
+<td><strong>Lughat al-ʿArab</strong></td>
+<td align="right">16.19</td>
+<td align="right">53</td>
+<td align="right">1875.8</td>
+<td align="right">1942.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="first-attempts-to-computationally-map-the-ideosphere-of-the-late-ottoman-arabic-speaking-press" class="title-slide slide section level1">
+<h1>First attempts to computationally map the ideosphere of the late Ottoman Arabic-speaking press</h1>
+
+</div>
+
+<div id="evaluating-the-corpus-network-of-referenced-periodicals" class="title-slide slide section level1">
+<h1>Evaluating the corpus: network of referenced periodicals</h1>
+
+</div>
+<div id="network-of-referenced-periodicals-data-sources" class="slide section level2">
+<h1>network of referenced periodicals: data sources</h1>
+<ul>
+<li>mark-up of all references to periodicals in the text
+<ul>
+<li>semi-automatic</li>
+<li>TEI XML</li>
+</ul></li>
+<li>authority files for disambiguation and additional information</li>
+</ul>
+</div>
+<div id="network-of-referenced-periodicals" class="slide section level2">
+<h1>network of referenced periodicals</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_ar.png" alt="" />
+<p class="caption">Figure: Network of periodicals mentioned <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em>; weights per issue</p>
+</div>
+</div>
+<div class="c_width-30 c_right">
+<ol style="list-style-type: decimal">
+<li>only a few nodes is of relative importance</li>
+<li><em>al-Muqtabas</em> accounts for the vast majority of references</li>
+<li>all periodicals are primarly self-referential</li>
+</ol>
+</div>
+</div>
+<div id="network-of-referenced-periodicals-the-core" class="slide section level2">
+<h1>network of referenced periodicals: the core</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue-core_ar.png" alt="" />
+<p class="caption">Figure: Core nodes in the network of periodicals mentioned <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em>; weights per issue</p>
+</div>
+</div>
+<!-- ## network of referenced periodicals -->
+<div class="c_width-30 c_right">
+<ol style="list-style-type: decimal">
+<li>confirms the bias on Cairo and Beirut</li>
+<li>highly centralised in terms of geographic distribution</li>
+<li>surprising members</li>
+</ol>
+</div>
+</div>
+
+<div id="bibliometrics-the-network-of-authors" class="title-slide slide section level1">
+<h1>Bibliometrics: the network of authors</h1>
+
+</div>
+<div id="network-of-authors-data-sources" class="slide section level2">
+<h1>network of authors: data sources</h1>
+<ul>
+<li>structured bibliographic data provided by the text itself
+<ul>
+<li>based on TEI XML</li>
+</ul></li>
+<li>authority files for disambiguation and additional information</li>
+</ul>
+</div>
+<div id="network-of-authors" class="slide section level2">
+<h1>network of authors</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/networks/network_oape-p3a6afa20_authors_unimodal_ar.png" alt="" />
+<p class="caption">Figure: Network of authors with bylines in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em></p>
+</div>
+</div>
+<!-- ## network of authors -->
+<div class="c_width-30 c_right">
+<ol style="list-style-type: decimal">
+<li>only a few nodes are of relative importance</li>
+<li>limited overlap between journals from the same city</li>
+<li>nodes are connected by various other social networks (education, imperial service, family relations etc.)</li>
+</ol>
+</div>
+</div>
+<div id="network-of-authors-the-core" class="slide section level2">
+<h1>network of authors: the core</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/networks/network_oape-p3a6afa20_authors-core_unimodal_ar.png" alt="" />
+<p class="caption">Figure: Core nodes in the network of authors with bylines in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em></p>
+</div>
+</div>
+<!-- ## network of authors -->
+<div class="c_width-30 c_right">
+<ol style="list-style-type: decimal">
+<li>many Iraqis</li>
+<li>few Syrians</li>
+<li>few Christians</li>
+<li>many poets</li>
+<li>majority not covered by scholarly literature</li>
+</ol>
+</div>
+</div>
+<div id="network-of-authors-geography" class="slide section level2">
+<h1>network of authors: geography</h1>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/maps/map-oclc_4770057679-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>al-Muqtabas</em> (Cairo and Damascus)</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/maps/map-oclc_644997575-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>al-Ḥaqāʾiq</em> (Damascus)</p>
+</div>
+</div>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/maps/map-oclc_792756327-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>al-Ḥasnāʾ</em> (Beirut)</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/maps/map-oclc_472450345-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>Lughat al-ʿArab</em> (Baghdad)</p>
+</div>
+</div>
+</div>
+<div id="problem-network-reflects-only-17-of-articles" class="slide section level2">
+<h1>problem: network reflects only 17% of articles</h1>
+<p><img src="../assets/clipart/iceberg-2070977_960_720.png" /></p>
+</div>
+
+<div id="finally-computational-authorship-attribution" class="title-slide slide section level1">
+<h1>finally: computational authorship attribution</h1>
+
+</div>
+<div id="state-of-the-field" class="slide section level2">
+<h1>state of the field</h1>
+<ul>
+<li>question of authorship attribution has not received much attention <!-- standard accounts don't even mention the issue --></li>
+<li>implicit and commonly accepted hypothesis: editors authored all anonymous articles themselves</li>
+</ul>
+</div>
+<div id="problems-1" class="slide section level2">
+<h1>problems:</h1>
+<ul>
+<li>hypothesis remains untested</li>
+<li>we don’t know the potential candidates for authorship even within the hypothesis</li>
+<li>it is unlikely that a single person authored everything</li>
+</ul>
+</div>
+<div id="computational-authorship-attribution-stylometry" class="slide section level2">
+<h1>computational authorship attribution: stylometry</h1>
+<ul>
+<li>this has not yet been applied to Arabic</li>
+<li>method: <strong>compare</strong> stylistic features to gain a numerical measure of difference
+<ul>
+<li>distance measure is sensitive to composition of corpus</li>
+</ul></li>
+<li>stylistic features: most frequent words (MFWs)
+<ul>
+<li>have been shown to be extremely effective for authorship attribution</li>
+</ul></li>
+<li>chunking/sampling impacts results
+<ul>
+<li>features: run multiple iterations and have them vote</li>
+<li>texts: minimum length of 4000-5000 words</li>
+</ul></li>
+</ul>
+</div>
+<div id="stylometry-5000-words" class="slide section level2">
+<h1>stylometry: 5000 words</h1>
+<div class="figure">
+<img src="../assets/stylometry/stylo_articles-w_5000-modularity_1-label_authors-ar.png" alt="" />
+<p class="caption">Figure: bootstrap consensus network of articles (length &gt;= 5000 words, 100–1000 MFWs), colours by modularity group</p>
+</div>
+</div>
+<div id="stylometry-5000-words-1" class="slide section level2">
+<h1>stylometry: 5000 words</h1>
+<div class="figure">
+<img src="../assets/stylometry/stylo_articles-w_5000-modularity_1-label_authors-ar-annotated.png" alt="" />
+<p class="caption">Figure: bootstrap consensus network of articles (length &gt;= 5000 words, 100–1000 MFWs), colours by modularity group</p>
+</div>
+</div>
+<div id="stylometry-5000-words-2" class="slide section level2">
+<h1>stylometry: 5000 words</h1>
+<ul>
+<li>it works! correctly identified signal of
+<ul>
+<li>authorship</li>
+<li>editorship</li>
+<li>translation</li>
+</ul></li>
+<li>additional (sub)-signal: genre</li>
+<li>Contradicts the hypothesis insofar as there is at least one additional author beyond Muḥammad Kurd ʿAlī for articles in <em>al-Muqtabas</em></li>
+</ul>
+</div>
+<div id="stylometry-how-to-deal-with-the-minimal-length-requirement" class="slide section level2">
+<h1>stylometry: how to deal with the minimal length requirement?</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/stylometry/stylo_sections-articles-w_5000-modularity_1-label_author-id.png" alt="" />
+<p class="caption">Figure: bootstrap consensus network of sections and articles (length &gt;= 5000 words, 100–1000 MFWs) in <em>al-Muqtabas</em>, coloured by modularity</p>
+</div>
+</div>
+<div class="c_width-30 c_right">
+<ul>
+<li>oape.878: Muḥammad Kurd ʿAlī</li>
+<li>oape.741: Charles Seignobos (in translation by Muḥammad Kurd ʿAlī)</li>
+<li>oape.482: Muḥammad Jamāl al-Dīn al-Qāsimī</li>
+<li>oape.707: Aḥmad Zakī Pasha</li>
+<li>oape.632: Jirjī Ḥaddād</li>
+</ul>
+</div>
+</div>
+<div id="stylometry-how-to-deal-with-the-minimal-length-requirement-1" class="slide section level2">
+<h1>stylometry: how to deal with the minimal length requirement?</h1>
+<div class="figure">
+<img src="../assets/stylometry/stylo_sections_Consensus_100-1000_MFWs_Culled_0__wurzburg_C_0.5_modularity.png" alt="" />
+<p class="caption">Figure: bootstrap consensus network of sections of articles in 123 periodical issues based on consensus of 100–1000 MWFs, coloured by modularity</p>
+</div>
+</div>
+
+<div id="conclusion" class="title-slide slide section level1">
+<h1>Conclusion</h1>
+
+</div>
+<div id="thank-you" class="slide section level2">
+<h1>Thank you!</h1>
+<ul>
+<li>Links:
+<ul>
+<li>Slides: <a href="https://OpenArabicPE.github.io/slides/2020-oib-forschungstage/index.html">https://OpenArabicPE.github.io/slides/2020-oib-forschungstage/</a></li>
+<li>Paper (submitted): <a href="https://doi.org/10.5281/zenodo.1413610" class="uri">https://doi.org/10.5281/zenodo.1413610</a></li>
+<li>Project URL: <a href="https://www.github.com/OpenArabicPE">https://www.github.com/OpenArabicPE</a></li>
+<li>Project blog: <a href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
+<li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+<li>Email: <script type="text/javascript">
+<!--
+h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></li>
+</ul></li>
+<li>Licence: slides and plots are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ul>
+</div>
+</body>
+</html>

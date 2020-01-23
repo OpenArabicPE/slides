@@ -153,7 +153,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 ## 2.1 Aims and principles
 
 1. ideas:
-    - unite **available** facsimiles and transcriptions
+    - unite **available** facsimiles and transcriptions in a standard-compliant format
     - harvest, generate, validate and share open metadata
 2. aims
     + **validate** the transcription against the facsimiles
