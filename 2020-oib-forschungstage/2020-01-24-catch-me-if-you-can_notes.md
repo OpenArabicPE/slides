@@ -19,6 +19,9 @@
 ## 1. only a small number of nodes is of relative importance
 
 - common to all social networks
+    + nodes cluster into communities with
+    + core nodes for each cluster and
+    + nodes connecting communities (in-betweenness centrality)
 - centrality measured in in-degree (number of edges connecting to a node) and weight of the edges connecting nodes
 - Out of a total of 465 different periodical titles, 421 or c. 90% were referred to by only a single journal. 344 periodicals are only mentioned in a single issue and 335 in a single article.
 - 44 core nodes: periodicals referenced in more than one journal
@@ -85,4 +88,13 @@ Maʿrūf al-Ruṣāfī was a famous poet from Baghdad who mostly authored *qaṣ
 - chunking/sampling impacts results
     + features: run multiple iterations and have them vote
     + texts: minimum length of 4000-5000 words
+
+## stylometry: 5000 words
+
+- it works! correctly identified signal of
+    + authorship
+    + editorship
+    + translation
+- additional (sub)-signal: genre
+- Contradicts the hypothesis insofar as there is at least one additional author beyond Muḥammad Kurd ʿAlī for articles in *al-Muqtabas*
 
