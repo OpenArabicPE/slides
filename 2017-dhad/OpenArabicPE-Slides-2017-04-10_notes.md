@@ -212,7 +212,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + [*shamela.ws*](http://shamela.ws/index.php/book/26523) and derivatives
         * incomplete transcription: all footnotes and non-Arabic text missing, sometimes lengthy omissions
         * faulty transcription: "corrections" and errors
-    + [*sakhrit*](http://archive.sakhrit.co/)
+    + [*sakhrit*](http://archive.alsharekh.org/)
         * incomplete and erroneous metadata on the article level
         * percentage of "fake" facsimiles
 

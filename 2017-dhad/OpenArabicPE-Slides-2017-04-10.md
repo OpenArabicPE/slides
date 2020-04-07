@@ -90,7 +90,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 
 ## 1.3.2 state of digitisation: images
 
-!["Fake" scan of *al-Muqtabas* on [*sakhrit*](http://archive.sakhrit.co/MagazinePages/Magazine_JPG/AL_moqtabs/AL_moqtabs_1910/Issue_7/605.JPG) based on *shamela*'s transcription'](../assets/sakhrit_muqtabas-1910-7-605.jpg)
+!["Fake" scan of *al-Muqtabas* on [*sakhrit*](http://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/AL_moqtabs_1910/Issue_7/605.JPG) based on *shamela*'s transcription'](../assets/sakhrit_muqtabas-1910-7-605.jpg)
 
 ## 1.3.3 state of digitisation: bibliographic metadata
 
@@ -343,7 +343,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + [*shamela.ws*](http://shamela.ws/index.php/book/26523) and derivatives
         * incomplete transcription: all footnotes and non-Arabic text missing, sometimes lengthy omissions
         * faulty transcription: "corrections" and errors
-    + [*sakhrit*](http://archive.sakhrit.co/)
+    + [*sakhrit*](http://archive.alsharekh.org/)
         * incomplete and erroneous metadata on the article level
         * percentage of "fake" facsimiles
 

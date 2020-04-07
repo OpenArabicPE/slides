@@ -35,7 +35,7 @@ The TEI edition comprises all 96 issues of *al-Muqtabas* with a total of some 7.
 
 # Notes
 
-[^1]: This text was then shared on [WikiSource][wikisource]. It was also used by [*arshif al-majallat al-adabiyya wa-l-thaqafiyya al-arabiyya* (archive.sakhrit.co)](archive.sakhrit.co) to produce a number of fake facsimiles by rendering the text as images adopting common layout principles for early Arabic periodicals.
+[^1]: This text was then shared on [WikiSource][wikisource]. It was also used by [*arshif al-majallat al-adabiyya wa-l-thaqafiyya al-arabiyya* (archive.alsharekh.org)](archive.alsharekh.org) to produce a number of fake facsimiles by rendering the text as images adopting common layout principles for early Arabic periodicals.
 [^2]: *shamela.ws*'s edition of *al-Manar* omitted Rashid Rida's *Tafsir* that accounted for one fifth of the journal's content; see [@Zemmin_2016, 232].
 [^3]: c.f. [@Margner_2012]. For recent promising approaches using machine-learning and neural networks see [@Romanov_2016].
 [^4]: See [no. 5(7), pp. 463--466][rawgit] and [no. 5(12), pp. 761--765][rawgit 2] for examples.
