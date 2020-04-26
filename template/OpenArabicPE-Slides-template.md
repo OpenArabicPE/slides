@@ -11,7 +11,7 @@ duration: 20
 
 ## Title slide
 
-Till Grallert, Orient-Institut Beirut (OIB)
+Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com/tillgrallert)
 
 Turkologentag 2018, Bamberg
 
@@ -707,7 +707,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## Thank you!
 
-- Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
+- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html)
     <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> -->
