@@ -352,7 +352,7 @@ img, iframe {
     /*margin-top: 1em;*/
     background-color: white;/*rgba(0,0,0,0.04);*/
     border-radius: 5px;
-    box-shadow: 2px 2px 5px #000;
+    /*box-shadow: 2px 2px 5px #000;*/
     border:gray solid 1px;
 }
 
@@ -471,14 +471,22 @@ code
   border: 0;
 }*/
 
+
 pre {
+  display: block;
+  font-family: monospace;
   white-space: pre-wrap;
-  padding:0;
+  padding:3, 3, 3, 3;
   margin: 0;
   background-color: rgba(0,0,0,0.04);
-  border-radius: 3px;
-
+  border-radius: 5px;
+  /*box-shadow: 2px 2px 5px #000;*/
+  border: #95ABD0 solid 1px;
 }
+
+pre > code.sourceCode { 
+  white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
+  }
 
 h1>code{
   background: transparent;
