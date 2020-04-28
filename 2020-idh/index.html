@@ -205,10 +205,10 @@ Till Grallert
 <li>periodicals are commonly perceived as a <strong>source</strong> but not a <strong>subject</strong> in its own right</li>
 <li>the history of the periodical press
 <ul>
+<li>focusses on a few “core” publications from Cairo and Beirut</li>
 <li>remains largely unexplored</li>
 <li>is full of untested hypotheses</li>
 <li>is heavily biased by national(ist) narratives</li>
-<li>focusses on a few “core” publications from Cairo and Beirut</li>
 </ul></li>
 </ol>
 </div>
@@ -219,22 +219,18 @@ Till Grallert
 <p class="caption">Map: geographic distribution of library holdings of <em>al-Muqtabas</em></p>
 </div>
 </div>
-<div id="open-questions-micro-level" class="slide section level2">
-<h1>Open questions: micro level</h1>
+<div id="open-questions" class="slide section level2">
+<h1>Open questions:</h1>
+<h3 id="micro-level">micro level</h3>
 <ul>
 <li>how were individual periodicals produced?</li>
 <li>who authored the vast majority of anonymous articles?</li>
-<li>how to conceptualise “authorship”?</li>
 </ul>
-</div>
-<div id="open-questions-meso-level" class="slide section level2">
-<h1>Open questions: meso level</h1>
+<h3 id="meso-level">meso level</h3>
 <ul>
-<li>What are the core nodes (authors, periodicals, other works) in the ideosphere of the late Ottoman Eastern Mediterranean?</li>
+<li>What are the core nodes (authors, periodicals, other works) in the ideosphere of the late Ottoman Eastern Mediterranean? <!-- - how to conceptualise "authorship"? --></li>
 </ul>
-</div>
-<div id="open-question-macro-level" class="slide section level2">
-<h1>Open question: macro level</h1>
+<h3 id="macro-level">macro level</h3>
 <ul>
 <li>How do we have to revise the <em>nahḍa</em> narrative / late Ottoman intellectual history if we include the full ideosphere of the press beyond Cairo and Beirut?</li>
 </ul>
@@ -247,18 +243,18 @@ Till Grallert
 <div id="methodology-computational-approaches" class="slide section level2">
 <h1>Methodology: computational approaches</h1>
 <ul>
-<li><em>distant reading</em>
+<li><strong>distant reading</strong>
 <ul>
 <li>bibliometrics</li>
 <li>social network analysis</li>
 <li>stylometric authorship attribution</li>
 </ul></li>
-<li>requires a digital corpus -&gt; <em>corpus building</em></li>
+<li>requires a digital corpus -&gt; <strong>corpus building</strong></li>
 </ul>
 </div>
-<div id="corpus-building-its-labour-and-resource-intensive" class="slide section level2">
-<h1>corpus building: it’s <strong>labour and resource intensive</strong></h1>
-<p>It really is!</p>
+<div id="corpus-building" class="slide section level2">
+<h1>corpus building</h1>
+<p>It’s <strong>labour and resource intensive</strong>. It really is!</p>
 <ol style="list-style-type: decimal">
 <li>get the data
 <ul>
@@ -478,9 +474,11 @@ Till Grallert
 <li>mark-up of all references to periodicals in the text
 <ul>
 <li>semi-automatic</li>
-<li>TEI XML</li>
 </ul></li>
-<li>authority files for disambiguation and additional information</li>
+<li>authority files for disambiguation and additional information
+<ul>
+<li>mostly automatic</li>
+</ul></li>
 </ul>
 </div>
 <div class="c_width-50 c_right">
@@ -498,7 +496,7 @@ Till Grallert
 </div>
 <div class="c_width-30 c_right">
 <ol style="list-style-type: decimal">
-<li>only a few nodes are of relative importance</li>
+<li>only a few nodes are of relative importance (44 of 465)</li>
 <li><em>al-Muqtabas</em> accounts for the vast majority of references</li>
 <li>all periodicals are primarly self-referential</li>
 </ol>
@@ -515,8 +513,8 @@ Till Grallert
 <!-- ## network of referenced periodicals -->
 <div class="c_width-30 c_right">
 <ol style="list-style-type: decimal">
-<li>confirms the bias on Cairo and Beirut</li>
-<li>highly centralised in terms of geographic distribution</li>
+<li>confirms the bias on Cairo and Beirut (8 of 9)</li>
+<li>highly centralised in terms of geographic distribution (10 locations)</li>
 <li>surprising members</li>
 </ol>
 </div>
@@ -528,13 +526,47 @@ Till Grallert
 </div>
 <div id="network-of-authors-data-sources" class="slide section level2">
 <h1>network of authors: data sources</h1>
+<div class="c_width-50 c_left">
 <ul>
 <li>structured bibliographic data provided by the text itself
 <ul>
-<li>based on TEI XML</li>
+<li>semi-automatic</li>
+<li>problems: many accronyms, plurality of name forms</li>
 </ul></li>
 <li>authority files for disambiguation and additional information</li>
+<li>automatic enriching: from semantic web
+<ul>
+<li>life dates</li>
+<li>works</li>
+<li>geocoded locations</li>
+</ul></li>
 </ul>
+</div>
+<div class="c_width-50 c_right">
+<!-- - Ḥāfiẓ Ibrāhīm
+- Ḥāfiẓ Efendi Ibrāhīm
+- Ḥāfiẓ Ibrāhīm Bey
+- Muḥammad Ḥāfiẓ Bey Ibrāhīm
+
+![[*al-Muqtabas* 1(1)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_1.TEIP5.xml#div_7.d1e1661)](../assets/disambiguation_names-tei-viaf_32410755-1.png) ![[*al-Muqtabas* 2(1)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_13.TEIP5.xml#div_13.d1e2334)](../assets/disambiguation_names-tei-viaf_32410755-2.png) -->
+<!-- ![](../assets/disambiguation/viaf_32410755-muqtabas-v_2-i_1-p_50.png) -->
+<p><img src="../assets/disambiguation/viaf_32410755-zuhur-v_1-i_9-p_392.png" /></p>
+<!-- ```xml
+<persName ref="oape:pers:245 viaf:32410755"><forename>حافظ</forename> <roleName type="title">افندي</roleName> <surname>إبراهيم</surname></persName>
+``` -->
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:245 viaf:32410755&quot;</span><span class="kw">&gt;&lt;forename&gt;</span>حافظ<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>إبراهيم<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">&lt;person</span><span class="ot"> xml:id=</span><span class="st">&quot;person_14.d1e646&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>حافظ<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>إبراهيم<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>حافظ<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>أفندي<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;surname&gt;</span>إبراهيم<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>حافظ<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>بك<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;surname&gt;</span>إبراهيم<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="kw">&lt;persName&gt;&lt;forename&gt;</span>محمد<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;forename&gt;</span>حافظ<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>أفندي<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;surname&gt;</span>إبراهيم<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>32410755<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>    <span class="kw">&lt;birth</span><span class="ot"> resp=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1871-04-24&quot;</span><span class="kw">&gt;</span>1871-04-24<span class="kw">&lt;/birth&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>    <span class="kw">&lt;death</span><span class="ot"> resp=</span><span class="st">&quot;viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1932-06-21&quot;</span><span class="kw">&gt;</span>1932-06-21<span class="kw">&lt;/death&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>245<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;wiki&quot;</span><span class="kw">&gt;</span>Q2993475<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
+</div>
 </div>
 <div id="network-of-authors" class="slide section level2">
 <h1>network of authors</h1>
@@ -544,7 +576,6 @@ Till Grallert
 <p class="caption">Figure: Network of authors with bylines in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em></p>
 </div>
 </div>
-<!-- ## network of authors -->
 <div class="c_width-30 c_right">
 <ol style="list-style-type: decimal">
 <li>only a few nodes are of relative importance</li>
@@ -561,7 +592,6 @@ Till Grallert
 <p class="caption">Figure: Core nodes in the network of authors with bylines in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em></p>
 </div>
 </div>
-<!-- ## network of authors -->
 <div class="c_width-30 c_right">
 <ol style="list-style-type: decimal">
 <li>many Iraqis</li>
@@ -644,20 +674,13 @@ Till Grallert
 </div>
 <div id="stylometry-5000-words" class="slide section level2">
 <h1>stylometry: 5000 words</h1>
-<div class="figure">
-<img src="../assets/stylometry/stylo_articles-w_5000-modularity_1-label_authors-ar.png" alt="" />
-<p class="caption">Figure: bootstrap consensus network of articles (length &gt;= 5000 words, 100–1000 MFWs), colours by modularity group</p>
-</div>
-</div>
-<div id="stylometry-5000-words-1" class="slide section level2">
-<h1>stylometry: 5000 words</h1>
+<div class="c_width-60 c_left">
 <div class="figure">
 <img src="../assets/stylometry/stylo_articles-w_5000-modularity_1-label_authors-ar-annotated.png" alt="" />
 <p class="caption">Figure: bootstrap consensus network of articles (length &gt;= 5000 words, 100–1000 MFWs), colours by modularity group</p>
 </div>
 </div>
-<div id="stylometry-5000-words-2" class="slide section level2">
-<h1>stylometry: 5000 words</h1>
+<div class="c_width-30 c_right">
 <ul>
 <li>it works! correctly identified signal of
 <ul>
@@ -666,8 +689,9 @@ Till Grallert
 <li>translation</li>
 </ul></li>
 <li>additional (sub)-signal: genre</li>
-<li>Contradicts the hypothesis insofar as there is at least one additional author beyond Muḥammad Kurd ʿAlī for articles in <em>al-Muqtabas</em></li>
+<li>contradicts the hypothesis: anonymous author who is not the editor</li>
 </ul>
+</div>
 </div>
 <div id="stylometry-how-to-deal-with-the-minimal-length-requirement" class="slide section level2">
 <h1>stylometry: how to deal with the minimal length requirement?</h1>
@@ -701,6 +725,24 @@ Till Grallert
 </div>
 <div id="summary" class="slide section level2">
 <h1>Summary</h1>
+<ul>
+<li>corpus building: modelling is indispensible for article-level analysis</li>
+<li>network of periodicals: confirms importance of Cairo
+<ul>
+<li>shows vast differences between journals: parochial, regional, trans-regional</li>
+<li>should guide corpus building</li>
+</ul></li>
+<li>network of authors: surprising
+<ul>
+<li>importance of Iraq and Iraqis</li>
+<li>very limited overlap between journals from the same city</li>
+<li>many authors not mentioned in standard accounts</li>
+</ul></li>
+<li>stylometry: promising
+<ul>
+<li>problem: 5000 word minimum length</li>
+</ul></li>
+</ul>
 </div>
 <div id="thank-you" class="slide section level2">
 <h1>Thank you!</h1>

@@ -38,37 +38,38 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-idh/](https://OpenArabicPE.g
 
 1. periodicals are commonly perceived as a **source** but not a **subject** in its own right
 2. the history of the periodical press
+    + focusses on a few "core" publications from Cairo and Beirut
     + remains largely unexplored
     + is full of untested hypotheses
     + is heavily biased by national(ist) narratives
-    + focusses on a few "core" publications from Cairo and Beirut
 
 ## One of the many reasons
 
 ![Map: geographic distribution of library holdings of *al-Muqtabas*](../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png)
 
-## Open questions: micro level
+## Open questions:
+### micro level
 
 - how were individual periodicals produced?
 - who authored the vast majority of anonymous articles?
-- how to conceptualise "authorship"?
 
-## Open questions: meso level
+### meso level
 
 - What are the core nodes (authors, periodicals, other works) in the ideosphere of the late Ottoman Eastern Mediterranean?
+<!-- - how to conceptualise "authorship"? -->
 
-## Open question: macro level
+### macro level
 
 - How do we have to revise the *nahḍa* narrative / late Ottoman intellectual history if we include the full ideosphere of the press beyond Cairo and Beirut?
 
 # Methodology
 ## Methodology: computational approaches
 
-- *distant reading*
+- **distant reading**
     - bibliometrics
     - social network analysis
     - stylometric authorship attribution
-+ requires a digital corpus -> *corpus building*
++ requires a digital corpus -> **corpus building**
 
 ## corpus building
 
@@ -138,11 +139,10 @@ It's **labour and resource intensive**. It really is!
 
 - mark-up of all references to periodicals in the text
     + semi-automatic
-    + TEI XML
 - authority files for disambiguation and additional information
+    + mostly automatic
 
-</div>
-<div class="c_width-50 c_right">
+</div><div class="c_width-50 c_right">
 
 ```xml
 والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644" xml:id="title_16.d2e2291">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
@@ -190,9 +190,52 @@ It's **labour and resource intensive**. It really is!
 # Bibliometrics: the network of authors
 ## network of authors: data sources
 
+<div class="c_width-50 c_left">
 - structured bibliographic data provided by the text itself
-    + based on TEI XML
+    + semi-automatic
+    + problems: many accronyms, plurality of name forms
 - authority files for disambiguation and additional information
+- automatic enriching: from semantic web
+    + life dates
+    + works
+    + geocoded locations
+
+</div><div class="c_width-50 c_right">
+
+<!-- - Ḥāfiẓ Ibrāhīm
+- Ḥāfiẓ Efendi Ibrāhīm
+- Ḥāfiẓ Ibrāhīm Bey
+- Muḥammad Ḥāfiẓ Bey Ibrāhīm
+
+![[*al-Muqtabas* 1(1)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_1.TEIP5.xml#div_7.d1e1661)](../assets/disambiguation_names-tei-viaf_32410755-1.png) ![[*al-Muqtabas* 2(1)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_13.TEIP5.xml#div_13.d1e2334)](../assets/disambiguation_names-tei-viaf_32410755-2.png) -->
+
+<!-- ![](../assets/disambiguation/viaf_32410755-muqtabas-v_2-i_1-p_50.png) -->
+
+![](../assets/disambiguation/viaf_32410755-zuhur-v_1-i_9-p_392.png)
+
+<!-- ```xml
+<persName ref="oape:pers:245 viaf:32410755"><forename>حافظ</forename> <roleName type="title">افندي</roleName> <surname>إبراهيم</surname></persName>
+``` -->
+
+```xml
+<persName ref="oape:pers:245 viaf:32410755"><forename>حافظ</forename> <surname>إبراهيم</surname></persName>
+```
+
+```xml
+<person>
+    <persName><forename>حافظ</forename> <surname>إبراهيم</surname></persName>
+    <persName><forename>حافظ</forename> <roleName type="title">أفندي</roleName> <surname>إبراهيم</surname></persName>
+    <persName><forename>حافظ</forename> <roleName type="title">بك</roleName> <surname>إبراهيم</surname></persName>
+    <persName><forename>محمد</forename> <forename>حافظ</forename> <roleName type="title">أفندي</roleName> <surname>إبراهيم</surname></persName>
+    <idno type="VIAF">32410755</idno>
+    <birth resp="viaf" when="1871-04-24">1871-04-24</birth>
+    <death resp="viaf" when="1932-06-21">1932-06-21</death>
+    <idno type="oape">245</idno>
+    <idno type="wiki">Q2993475</idno>
+</person>
+```
+
+</div>
 
 ## network of authors
 
@@ -200,9 +243,7 @@ It's **labour and resource intensive**. It really is!
 
 ![Figure: Network of authors with bylines in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*](../assets/networks/network_oape-p3a6afa20_authors_unimodal_ar.png)
 
-</div>
-<!-- ## network of authors -->
-<div class="c_width-30 c_right">
+</div><div class="c_width-30 c_right">
 
 1. only a few nodes are of relative importance
 2. limited overlap between journals from the same city
@@ -216,9 +257,7 @@ It's **labour and resource intensive**. It really is!
 
 ![Figure: Core nodes in the network of authors with bylines in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*](../assets/networks/network_oape-p3a6afa20_authors-core_unimodal_ar.png)
 
-</div>
-<!-- ## network of authors -->
-<div class="c_width-30 c_right">
+</div><div class="c_width-30 c_right">
 
 1. many Iraqis
 2. few Syrians
@@ -277,20 +316,20 @@ It's **labour and resource intensive**. It really is!
 
 ## stylometry: 5000 words
 
-![Figure: bootstrap consensus network of articles (length >= 5000 words, 100--1000 MFWs), colours by modularity group](../assets/stylometry/stylo_articles-w_5000-modularity_1-label_authors-ar.png)
-
-## stylometry: 5000 words
+<div class="c_width-60 c_left">
 
 ![Figure: bootstrap consensus network of articles (length >= 5000 words, 100--1000 MFWs), colours by modularity group](../assets/stylometry/stylo_articles-w_5000-modularity_1-label_authors-ar-annotated.png)
 
-## stylometry: 5000 words
+</div><div class="c_width-30 c_right">
 
 - it works! correctly identified signal of
     + authorship
     + editorship
     + translation
 - additional (sub)-signal: genre
-- Contradicts the hypothesis insofar as there is at least one additional author beyond Muḥammad Kurd ʿAlī for articles in *al-Muqtabas*
+- contradicts the hypothesis: anonymous author who is not the editor
+
+</div>
 
 ## stylometry: how to deal with the minimal length requirement?
 
@@ -315,7 +354,16 @@ It's **labour and resource intensive**. It really is!
 # Conclusion
 ## Summary
 
-
+- corpus building: modelling is indispensible for article-level analysis
+- network of periodicals: confirms importance of Cairo
+    + shows vast differences between journals: parochial, regional, trans-regional
+    + should guide corpus building
+- network of authors: surprising
+    + importance of Iraq and Iraqis
+    + very limited overlap between journals from the same city
+    + many authors not mentioned in standard accounts
+- stylometry: promising
+    + problem: 5000 word minimum length
 
 ## Thank you!
 

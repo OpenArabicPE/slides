@@ -9,6 +9,10 @@ ORCID: orcid.org/0000-0002-5739-8094
 
 the core network could be plotted with a larger font for the nodes
 
+# ideosphere
+
+- I use ideosphere as a spatial metaphor to refer to the realm of human ideas in its entirety, only some of which becomes manifest and thus traceable in concrete intellectual production. As such it is different from Roland Barthes’ ideosphere and Arjun Appadurai’s ideosphere, which are both concerned with questions of ideology.
+
 # network of referenced periodicals
 ## 1. only a small number of nodes is of relative importance
 
