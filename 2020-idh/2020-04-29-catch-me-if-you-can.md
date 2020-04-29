@@ -8,13 +8,6 @@ tags:
 - OpenArabicPE
 ---
 
-<!-- to do -->
-
-<!-- - conclusion
-- link to pre-print
-- keep it short!
-- thank you to all collaborators -->
-
 
 ##  Catch me if you can! Tracing the late Ottoman ideosphere through network analysis and stylometry of the Arabic periodical press
 
@@ -24,8 +17,7 @@ Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com
 
 Slides: [https://OpenArabicPE.github.io/slides/2020-idh/](https://OpenArabicPE.github.io/slides/2020-idh/index.html)
 
-# Introduction
-## Outline
+## Overview
 
 - Problematic state of Arabic periodical studies
 - Methodologic proposals to computationally address this state
@@ -34,6 +26,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-idh/](https://OpenArabicPE.g
     + (social) network analysis
     + stylometric authorship attribution
 
+# Introduction
 ## Problems
 
 1. periodicals are commonly perceived as a **source** but not a **subject** in its own right
@@ -202,36 +195,19 @@ It's **labour and resource intensive**. It really is!
 
 </div><div class="c_width-50 c_right">
 
-<!-- - Ḥāfiẓ Ibrāhīm
-- Ḥāfiẓ Efendi Ibrāhīm
-- Ḥāfiẓ Ibrāhīm Bey
-- Muḥammad Ḥāfiẓ Bey Ibrāhīm
-
-![[*al-Muqtabas* 1(1)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_1.TEIP5.xml#div_7.d1e1661)](../assets/disambiguation_names-tei-viaf_32410755-1.png) ![[*al-Muqtabas* 2(1)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_13.TEIP5.xml#div_13.d1e2334)](../assets/disambiguation_names-tei-viaf_32410755-2.png) -->
-
-<!-- ![](../assets/disambiguation/viaf_32410755-muqtabas-v_2-i_1-p_50.png) -->
-
-![](../assets/disambiguation/viaf_32410755-zuhur-v_1-i_9-p_392.png)
-
-<!-- ```xml
-<persName ref="oape:pers:245 viaf:32410755"><forename>حافظ</forename> <roleName type="title">افندي</roleName> <surname>إبراهيم</surname></persName>
-``` -->
-
-```xml
-<persName ref="oape:pers:245 viaf:32410755"><forename>حافظ</forename> <surname>إبراهيم</surname></persName>
-```
-
 ```xml
 <person>
-    <persName><forename>حافظ</forename> <surname>إبراهيم</surname></persName>
-    <persName><forename>حافظ</forename> <roleName type="title">أفندي</roleName> <surname>إبراهيم</surname></persName>
-    <persName><forename>حافظ</forename> <roleName type="title">بك</roleName> <surname>إبراهيم</surname></persName>
-    <persName><forename>محمد</forename> <forename>حافظ</forename> <roleName type="title">أفندي</roleName> <surname>إبراهيم</surname></persName>
-    <idno type="VIAF">32410755</idno>
-    <birth resp="viaf" when="1871-04-24">1871-04-24</birth>
-    <death resp="viaf" when="1932-06-21">1932-06-21</death>
-    <idno type="oape">245</idno>
-    <idno type="wiki">Q2993475</idno>
+    <persName><roleName type="pseudonym">ساتسنا</roleName></persName>
+    <persName><roleName type="pseudonym">أمكح</roleName></persName>
+    <persName><roleName type="pseudonym">فهر الجابري</roleName></persName>
+    <persName><roleName type="rank">الأب</roleName> <forename>أنستاس</forename> <forename>ماري</forename> <surname><addName type="nisbah">الكرملي</addName></surname></persName>
+    <persName><forename>أنستاس</forename> <forename>ماري</forename> <addName type="nisbah">الألياوي</addName> <surname><addName type="nisbah">الكرملي</addName></surname></persName>
+    <persName><forename>بطرس</forename> <addName type="nasab">بن <forename>جبرائيل</forename></addName> <forename>يوسف</forename> <surname>عواد</surname></persName>
+    <idno type="VIAF">39370998</idno>
+    <idno type="oape">227</idno>
+    <idno type="wiki">Q4751824</idno>
+    <birth><date source="viaf" when="1866-08-05">1866-08-05</date> in <placeName ref="oape:place:216 geon:98182">Baghdad</placeName></birth>
+    <death><date source="viaf" when="1947-01-07">1947-01-07</date> in <placeName ref="oape:place:216 geon:98182">Baghdad</placeName></death>
 </person>
 ```
 
