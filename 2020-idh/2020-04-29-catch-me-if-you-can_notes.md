@@ -5,9 +5,6 @@ date: 2020-04-26
 ORCID: orcid.org/0000-0002-5739-8094
 ---
 
-# to do
-
-the core network could be plotted with a larger font for the nodes
 
 # ideosphere
 
