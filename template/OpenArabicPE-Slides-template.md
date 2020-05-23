@@ -40,14 +40,18 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 
 ## 1.2 A two-fold problem
 
-- Preservation:
+1. Preservation:
     + Active **destruction** of cultural artefacts: iconoclasm, neoliberalism
     + **Decay** through neglect: fragile materiality
-- Access:
+2. Access:
     + Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections
     + widely-dispersed collections
-    + technologies: absence of reliable OCR
+    + absence of technologies: OCR
     <!-- + technical skills: lack of basic scripting skills -->
+
+## 1.2 A two-fold problem
+
+![Map: geographic distribution of library holdings of *al-Muqtabas*](../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png)
 
 ## 1.3 Digitisation as solution
 
@@ -65,7 +69,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
 ## 1.3 Digitisation as problem(s)
 <!-- elaborate the problems:-->
 
-1. get the data: **labour and resource intensive**
+1. getting the data is **labour and resource intensive**
     - text: transcription
         - OCR and HTR are still insufficient
         - require ground truth and extensive training
@@ -73,10 +77,14 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
         + copyright
         + amount of data
     - bibliographic metadata:
-2. transform the data into a human and machine readable edition: **labour and resource intensive**
+2. transforming the data into human and machine readable editions is **labour and resource intensive**
     - model the source
     - identify entities and link them to authority files
-3. host, share and preserve the data: **labour and resource intensive**
+3. hosting, sharing and preserving the data is **labour and resource intensive**
+
+## 1.3 Digitisation as problem(s)
+
+![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/maps/map_dhcenters.png)
 
 ## 1.4 State of digitisation
 <!-- This should be a demo session, otherwise one needs screenshots -->
@@ -105,21 +113,43 @@ Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://Open
     + unknown quality
     + very limited structural mark-up
     + cannot be reliably cited
-- OCR layer at HathiTrust
+- Automated transcriptions (OCR): [HathiTrust](https://www.hathitrust.org/), East View's [Global Press Archive (GPA)](https://www.eastview.com/resources/gpa/crl-mena/)
+    + partially hidden behind paywalls, geo-fencing
+    + unknown quality but commonly extremly bad
+    + no structural mark-up
+    + proprietary interfaces, no APIs
 
 ## 1.4.1 state of digitisation: text
 
+<div class="c_width-60 c_left">
 <!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
 
 ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
 
+</div>
+<div class="c_width-30 c_right">
+
+- wrong metadata (volume, issue, page)
+- limited structural mark-up
+
+</div>
+
 ## 1.4.1 state of digitisation: text
 
-![[*al-Muqtabas* 6 on HathiTrust, state of OCR (only visible to US IPs)](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-ocr-2.png)
+<div class="c_width-50 c_left">
+
+![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), state of OCR (only visible to US IPs)](../assets/hathi_muqtabas-ocr-3.png)
+
+</div>
+<div class="c_width-50 c_right">
+
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
+
+</div>
 
 ## 1.4.2 state of digitisation: facsimiles
 
-Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/project/EAP119), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [*arshīf al-majallāt al-adabiyya wa-l-thaqafiyya al-ʿarabiyya* (sakhrit)](http://archive.alsharekh.org/newmagazineYears/125)
+Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/project/EAP119), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [*arshīf al-majallāt al-adabiyya wa-l-thaqafiyya al-ʿarabiyya*](http://archive.alsharekh.org/newmagazineYears/125) <!-- formerly sakhrit -->
 
 + lack of metadata
 + limited licences, paywalls
@@ -145,7 +175,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 <div class="c_width-30">
 
-![facsimile](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
+![facsimile of the original from EAP](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
 
 </div><div class="c_width-30">
 
@@ -155,7 +185,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 </div><div class="c_width-30">
 
 <!-- sakhrit's fake facsimile -->
-!["fakesimile"](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
+!["fakesimile" from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG)](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
 
 </div>
 
@@ -169,7 +199,17 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 1.4.3 state of digitisation: bibliographic metadata
 
+<div class="c_width-60 c_left">
+
 ![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif-metadata.png)
+
+</div>
+<div class="c_width-30 c_right">
+
+- *hijri* calendar in the original
+- Gregorian calendar in the metadata
+
+</div>
 
 # 2. Open Arabic Periodical Editions (OpenArabicPE): Overview<!-- : Unite facsimile and transcription and generate reliable metadata -->
 ## 2.1 Aims and principles
@@ -219,33 +259,16 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 # 3. OpenArabicPE: some details
 ## 3. The corpus
 
-<div class="c_width-50">
-
-### *al-Muqtabas*, 1906--1917/18
-
-|         token          |   total   |  author |
-|------------------------|-----------|---------|
-| volumes                | 9         |         |
-| issues                 | 96        |         |
-| pages                  | c.7,000   |         |
-| articles (total)       | 2,737     | 323     |
-| articles (independent) | 717       | 284     |
-| words                  | 1,953,952 | 625,333 |
-
-</div>
-<div class="c_width-50">
-
-### *al-Ḥaqāʾiq*, 1910--1913/14
-
-|  token   |  total  | author |
-|----------|---------|--------|
-| volumes  | 3       |        |
-| issues   | 36      |        |
-| pages    | 1,446   |        |
-| articles | 360     | 76     |
-| words    | 300,186 | 40,868 |
-
-</div>
+| periodical                                                                          | doi                                                                | volumes    | issues    | articles    | words      |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------: | --------: | ----------: | ---------: |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                    | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016)   | 3          | 35        | 389         | 298090     |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)                   | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246)   | 1          | 12        | 201         | NA         |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                    |                                                                    | 35         | 537       | 4300        | 6144593    |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)                 | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)     | 9          | 96        | 2964        | 1981081    |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)                  | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028)   | 1          | 42        | 435         | 221447     |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                    | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4          | 39        | 436         | 292333     |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3          | 34        | 939         | 373832     |
+| **total**                                                                           |                                                                    | 56         | 795       | 9664        | 9311376    |
 
 
 ## 3. Basic components and features
@@ -342,7 +365,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 <div class="c_width-50">
 
 - Go to [GitHub](https://www.github.com) and register a free account
-- **Fork** the edition's repository: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+- **Fork** the editions' repositories: e.g. <https://www.github.com/openarabicpe/journal_lughat-al-arab>
 - Edit the text (XML)
 - Send us a **pull request**
 - We will review and merge your changes
@@ -355,7 +378,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.3 Core feature: web-view
 
-- *open*, *free of charge*, *client-based*
+- **open**, **free-of-charge**, **client-based**
 - Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
 - human-readable and static web-view (either rawgit or gh-pages)
     + generated on-the-fly by the user's browser using XSLT 1 to transform the TEI XML files to HTML.
@@ -371,19 +394,35 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.4 Core feature: Zotero group
 
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": list view](../assets/zotero-group_digital-muqtabas-1.png)
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": list view](../assets/zotero-group_openarabicpe-search.png)
 
 ## 3.4 Core feature: Zotero group
 
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": item view](../assets/zotero-group_digital-muqtabas-2.png)
+<div class="c_width-50 c_left">
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
+
+</div>
+<div class="c_width-50 c_right">
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details.png)
+
+</div>
 
 <!-- the following still needs work -->
 ## 3.5 Core feature: preservation, DOI
 
 <div class="c_width-50 c_left">
 
-- *al-Muqtabas*: [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/tillgrallert/digital-muqtabas/releases) [![DOI](https://zenodo.org/badge/45922152.svg)](https://zenodo.org/badge/latestdoi/45922152)
-- *al-Ḥaqāiq*: [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/digital-haqaiq/releases) [![DOI](https://zenodo.org/badge/52619834.svg)](https://zenodo.org/badge/latestdoi/52619834)
+|                                   periodical                                  |                               doi                                |                                                                               release                                                                               |
+|-------------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)              | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/digital-haqaiq/releases)                 |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)             | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-hasna.svg)](https://github.com/openarabicpe/journal_al-hasna/releases)             |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)              |                                                                  | <!-- [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-manar.svg)](https://github.com/openarabicpe/journal_al-manar/releases)  -->   |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)           | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   | [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/tillgrallert/digital-muqtabas/releases)             |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)            | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-ustadh.svg)](https://github.com/openarabicpe/journal_al-ustadh/releases)           |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)              | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-zuhur.svg)](https://github.com/openarabicpe/journal_al-zuhur/releases)             |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab) | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_lughat-al-arab.svg)](https://github.com/openarabicpe/journal_lughat-al-arab/releases) |
 
 </div><div class="c_width-50 c_right">
 
@@ -659,11 +698,9 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Editorial decisions: TEI schema design
     <!-- + TEI is rooted in the western episteme -->
 - Editorial work:
-    + mark-up of page breaks (1-2 h per issue)
     + correcting transcriptions
     + add non-Arabic words omitted by *shamela.ws*
     + add footnotes
-    + correct publication dates for all issues.
 - Web-display:
     + needs some polishing
     + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
@@ -676,18 +713,38 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + Initial project set-up took less than four weeks of after-hour labour
 - Hosting, collaborative editing, long-term preservation and DOIs are provided free of cost
 - Core (but simple) features **cannot** be automated:
-    + all c.7000 page breaks must be manually tagged
+    + all c.7000 page were manually tagged
     + does **not** require knowledge of XML, TEI or access to more than a syntax-aware text editor.
 
 <!-- - Collaboration in bootstrapped framework with multiple dependencies  -->
-    <!-- + it took a part-time intern 4 weeks to tag one volume of 800 pages -->
+<!--     + it took a part-time intern 4 weeks to tag one volume of 800 pages -->
 <!-- - TEI editing
     - requires some training
     - patchy support of Arabic across operating systems, Java versions -->
    <!--  + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day. -->
     <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
-        + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
+        + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374)
+    -->
+
+## Workflow
+
+1. get the data
+    - facsimiles
+        + link to existing facsimiles, preferably through IIIF
+        + scan your physical artefacts*
+    - text
+        + scrape existing transcriptions
+        + use [Transkribus]()* with our model trained on 1000+ pages from the OpenArabicPE corpus
+2. save and share the data
+    - facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
+    - working copy of everything else: [GitHub](https://github.com/)
+    - longterm preservation: [Zenodo](https://zenodo.org/)
+        + make sure to add ORCIDs for all contributors
+3. edit the data
+4. disseminate the data
+    - host webviews, project blogs: [gh-pages]()
+    - bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
 
 # 6. Conclusion
 ## Summary: OpenArabicPE

@@ -9,81 +9,80 @@
   <meta name="author" content="Till Grallert" />
   <title>Open Arabic Periodical Editions (OpenArabicPE)</title>
   <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
     href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="../css/slidy_custom_sh.css" />
-  <meta name="copyright" content="CC BY-SA 4.0" />
+  <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
   <style type="text/css">
   /* these styles mirror oXygen's highlight colours for XML */
   pre.sourceCode {
@@ -91,27 +90,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
   code.sourceCode {
       font-weight:normal;
+      color: black;
   }
   /* provide a readible font-size */
   .sourceCode * {
       font-size: 16px;
   }
   /* xml element names */
-  .xml > code > span.kw {
-    color: #0F0F9C;
+  .xml > code span.kw {
+    /*color: #0F0F9C;*/
+    color: #000096;
     font-weight: bold;
   }
   /* xml attribute names */
-  .xml > code > span.ot {
-    color:#FF8041;
+  .xml > code span.ot {
+    /*color:#FF8041;*/
+    color: #FF9159;
   }
   /* xml attribute values */
-  .xml > code > span.st {
-    color:#993300;
+  .xml > code span.st {
+    /*color:#993300;*/
+    color: #993300;
   }
   /* xml comments */
-  .xml > code > span.co {
-    color:#167116;
+  .xml > code span.co {
+    /*color:#167116;*/
+    color: #2F8132;
     font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
@@ -169,7 +173,7 @@ Till Grallert
 </div>
 <div id="title-slide" class="slide section level2">
 <h1>Title slide</h1>
-<p>Till Grallert, Orient-Institut Beirut (OIB)</p>
+<p>Till Grallert, Orient-Institut Beirut (OIB), @<a href="https://twitter.com/tillgrallert">tillgrallert</a></p>
 <p>Turkologentag 2018, Bamberg</p>
 <p>Slides: <a href="https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html">https://OpenArabicPE.github.io/slides/2018-turkologentag/</a></p>
 </div>
@@ -181,7 +185,11 @@ Till Grallert
 <li>OpenArabicPE: Some details</li>
 </ol>
 </div>
-<div id="the-promised-wasteland-of-digitised-arabic-periodicals" class="title-slide slide section level1"><h1>1. The promised wasteland of <em>digitised</em> Arabic periodicals</h1></div><div id="importance-of-mundane-texts-periodicals" class="slide section level2">
+<div id="the-promised-wasteland-of-digitised-arabic-periodicals" class="title-slide slide section level1">
+<h1>1. The promised wasteland of <em>digitised</em> Arabic periodicals</h1>
+
+</div>
+<div id="importance-of-mundane-texts-periodicals" class="slide section level2">
 <h1>1.1 Importance of mundane texts / periodicals</h1>
 <!-- add core questions of today's presentation  -->
 <ul>
@@ -199,9 +207,10 @@ Till Grallert
 <li>rich data sets for social history</li>
 </ul></li>
 </ul>
-</div><div id="a-two-fold-problem" class="slide section level2">
+</div>
+<div id="a-two-fold-problem" class="slide section level2">
 <h1>1.2 A two-fold problem</h1>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Preservation:
 <ul>
 <li>Active <strong>destruction</strong> of cultural artefacts: iconoclasm, neoliberalism</li>
@@ -211,10 +220,18 @@ Till Grallert
 <ul>
 <li>Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections</li>
 <li>widely-dispersed collections</li>
-<li>technologies: absence of reliable OCR <!-- + technical skills: lack of basic scripting skills --></li>
+<li>absence of technologies: OCR <!-- + technical skills: lack of basic scripting skills --></li>
 </ul></li>
-</ul>
-</div><div id="digitisation-as-solution" class="slide section level2">
+</ol>
+</div>
+<div id="a-two-fold-problem-1" class="slide section level2">
+<h1>1.2 A two-fold problem</h1>
+<div class="figure">
+<img src="../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png" alt="" />
+<p class="caption">Map: geographic distribution of library holdings of <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div id="digitisation-as-solution" class="slide section level2">
 <h1>1.3 Digitisation as solution</h1>
 <ol style="list-style-type: decimal">
 <li>Promise: instant <strong>access</strong> to 100s of <strong>digitised</strong> periodicals and 100.000s of issues</li>
@@ -231,11 +248,12 @@ Till Grallert
 <li>limited metadata</li>
 </ul></li>
 </ol>
-</div><div id="digitisation-as-problems" class="slide section level2">
+</div>
+<div id="digitisation-as-problems" class="slide section level2">
 <h1>1.3 Digitisation as problem(s)</h1>
 <!-- elaborate the problems:-->
 <ol style="list-style-type: decimal">
-<li>get the data: <strong>labour and resource intensive</strong>
+<li>getting the data is <strong>labour and resource intensive</strong>
 <ul>
 <li>text: transcription
 <ul>
@@ -249,19 +267,27 @@ Till Grallert
 </ul></li>
 <li>bibliographic metadata:</li>
 </ul></li>
-<li>transform the data into a human and machine readable edition: <strong>labour and resource intensive</strong>
+<li>transforming the data into human and machine readable editions is <strong>labour and resource intensive</strong>
 <ul>
 <li>model the source</li>
 <li>identify entities and link them to authority files</li>
 </ul></li>
-<li>host, share and preserve the data: <strong>labour and resource intensive</strong></li>
+<li>hosting, sharing and preserving the data is <strong>labour and resource intensive</strong></li>
 </ol>
-</div><div id="state-of-digitisation" class="slide section level2">
+</div>
+<div id="digitisation-as-problems-1" class="slide section level2">
+<h1>1.3 Digitisation as problem(s)</h1>
+<div class="figure">
+<img src="../assets/maps/map_dhcenters.png" alt="" />
+<p class="caption">Global <a href="http://dhcenternet.org/centers">map of DH centers</a></p>
+</div>
+</div>
+<div id="state-of-digitisation" class="slide section level2">
 <h1>1.4 State of digitisation</h1>
 <!-- This should be a demo session, otherwise one needs screenshots -->
 <!-- if the sub slides in this section are used, the content of this slide should be deleted -->
 <ol style="list-style-type: decimal">
-<li>Text: “crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.
+<li>Text: “crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.
 <ul>
 <li>lack of / faulty metadata</li>
 <li>unknown editing principles</li>
@@ -281,10 +307,11 @@ Till Grallert
 </ul></li>
 </ol>
 <!-- the following slides are too detailed for many purposes -->
-</div><div id="state-of-digitisation-text" class="slide section level2">
+</div>
+<div id="state-of-digitisation-text" class="slide section level2">
 <h1>1.4.1 state of digitisation: text</h1>
 <ul>
-<li>“crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.
+<li>“crowd”-sourced transcriptions / gray online libraries, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.
 <ul>
 <li>lack of / faulty metadata</li>
 <li>unknown editing principles</li>
@@ -292,63 +319,102 @@ Till Grallert
 <li>very limited structural mark-up</li>
 <li>cannot be reliably cited</li>
 </ul></li>
-<li>OCR layer at HathiTrust</li>
+<li>Automated transcriptions (OCR): <a href="https://www.hathitrust.org/">HathiTrust</a>, East View’s <a href="https://www.eastview.com/resources/gpa/crl-mena/">Global Press Archive (GPA)</a>
+<ul>
+<li>partially hidden behind paywalls, geo-fencing</li>
+<li>unknown quality but commonly extremly bad</li>
+<li>no structural mark-up</li>
+<li>proprietary interfaces, no APIs</li>
+</ul></li>
 </ul>
-</div><div id="state-of-digitisation-text-1" class="slide section level2">
+</div>
+<div id="state-of-digitisation-text-1" class="slide section level2">
 <h1>1.4.1 state of digitisation: text</h1>
+<div class="c_width-60 c_left">
 <!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
 <div class="figure">
-<img src="../assets/shamela_muqtabas-annotated.png" alt="al-Muqtabas on al-Maktaba al-Shāmila" />
+<img src="../assets/shamela_muqtabas-annotated.png" alt="" />
 <p class="caption"><a href="http://shamela.ws/browse.php/book-26523#page-4046"><em>al-Muqtabas</em> on <em>al-Maktaba al-Shāmila</em></a></p>
 </div>
-</div><div id="state-of-digitisation-text-2" class="slide section level2">
-<h1>1.4.1 state of digitisation: text</h1>
-<div class="figure">
-<img src="../assets/hathi_muqtabas-ocr-2.png" alt="al-Muqtabas 6 on HathiTrust, state of OCR (only visible to US IPs)" />
-<p class="caption"><a href="http://hdl.handle.net/2027/njp.32101073250910"><em>al-Muqtabas</em> 6 on HathiTrust, state of OCR (only visible to US IPs)</a></p>
 </div>
-</div><div id="state-of-digitisation-facsimiles" class="slide section level2">
+<div class="c_width-30 c_right">
+<ul>
+<li>wrong metadata (volume, issue, page)</li>
+<li>limited structural mark-up</li>
+</ul>
+</div>
+</div>
+<div id="state-of-digitisation-text-2" class="slide section level2">
+<h1>1.4.1 state of digitisation: text</h1>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/hathi_muqtabas-ocr-3.png" alt="" />
+<p class="caption"><em>al-Muqtabas</em> 6 on <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>, state of OCR (only visible to US IPs)</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/gpa_bashir-i_487-p_1_ocr.png" alt="" />
+<p class="caption"><em>al-Bashīr</em> 9 Jan. 1880 (#487), p.1 on <a href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>, state of OCR</p>
+</div>
+</div>
+</div>
+<div id="state-of-digitisation-facsimiles" class="slide section level2">
 <h1>1.4.2 state of digitisation: facsimiles</h1>
-<p>Digital imagery, e.g. <a href="http://eap.bl.uk/project/EAP119">Endangered Archives Programme (EAP)</a>, <a href="http://catalog.hathitrust.org/Record/100658549">HathiTrust</a>, <a href="http://archive.alsharekh.org/newmagazineYears.aspx?MID=125"><em>arshīf al-majallāt al-adabiyya wa-l-thaqafiyya al-ʿarabiyya</em> (sakhrit)</a></p>
+<p>Digital imagery, e.g. <a href="http://eap.bl.uk/project/EAP119">Endangered Archives Programme (EAP)</a>, <a href="http://catalog.hathitrust.org/Record/100658549">HathiTrust</a>, <a href="http://archive.alsharekh.org/newmagazineYears/125"><em>arshīf al-majallāt al-adabiyya wa-l-thaqafiyya al-ʿarabiyya</em></a> <!-- formerly sakhrit --></p>
 <ul>
 <li>lack of metadata</li>
 <li>limited licences, paywalls</li>
 <li>no or very bad text layers</li>
 </ul>
-</div><div id="state-of-digitisation-facsimiles-1" class="slide section level2">
+</div>
+<div id="state-of-digitisation-facsimiles-1" class="slide section level2">
 <h1>1.4.2 state of digitisation: facsimiles</h1>
 <div class="figure">
-<img src="../assets/eap119-1-4-5-muqtabas-iiif.png" alt="al-Muqtabas 6 on EAP" />
+<img src="../assets/eap119-1-4-5-muqtabas-iiif.png" alt="" />
 <p class="caption"><em>al-Muqtabas</em> 6 on <a href="https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&amp;m=0&amp;s=0&amp;cv=0&amp;xywh=-301%2C-145%2C2174%2C2880">EAP</a></p>
 </div>
-</div><div id="state-of-digitisation-facsimiles-2" class="slide section level2">
+</div>
+<div id="state-of-digitisation-facsimiles-2" class="slide section level2">
 <h1>1.4.2 state of digitisation: facsimiles</h1>
 <div class="figure">
-<img src="../assets/hathi_muqtabas-1.png" alt="al-Muqtabas 6 on HathiTrust without US IP" />
+<img src="../assets/hathi_muqtabas-1.png" alt="" />
 <p class="caption"><a href="http://hdl.handle.net/2027/njp.32101073250910"><em>al-Muqtabas</em> 6 on HathiTrust without US IP</a></p>
 </div>
-</div><div id="state-of-digitisation-facsimiles-3" class="slide section level2">
+</div>
+<div id="state-of-digitisation-facsimiles-3" class="slide section level2">
 <h1>1.4.2 state of digitisation: facsimiles</h1>
 <div class="figure">
-<img src="../assets/hathi_muqtabas-2.png" alt="al-Muqtabas 6 on HathiTrust with US IP" />
+<img src="../assets/hathi_muqtabas-2.png" alt="" />
 <p class="caption"><a href="http://hdl.handle.net/2027/njp.32101073250910"><em>al-Muqtabas</em> 6 on HathiTrust with US IP</a></p>
 </div>
-</div><div id="state-of-digitisation-fake-facsimiles" class="slide section level2">
-<h1>1.4.2 state of digitisation: fake facsimiles</h1>
+</div>
+<div id="state-of-digitisation-fakesimiles" class="slide section level2">
+<h1>1.4.2 state of digitisation: “fakesimiles”</h1>
 <!-- original facsimile: [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/800,/0/gray.jpg) -->
-<p><em>al-Muqtabas</em> 5(7), pp.<a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036">463</a>–<a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045">466</a></p>
+<p><em>al-Muqtabas</em> 5(7), pp.<a href="https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036">463</a>–<a href="https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045">466</a></p>
 <div class="c_width-30">
-<p><img src="../assets/eap_muqtabas-v_5-i_7-p_463.jpg" /></p>
+<div class="figure">
+<img src="../assets/eap_muqtabas-v_5-i_7-p_463.jpg" alt="" />
+<p class="caption">facsimile of the original from EAP</p>
+</div>
 </div>
 <div class="c_width-30">
 <!-- shamela's transcription -->
-<p><img src="../assets/shamela_muqtabas-i_54-p_30-31.png" /></p>
+<div class="figure">
+<img src="../assets/shamela_muqtabas-i_54-p_30-31.png" alt="" />
+<p class="caption">digital text on <em>shamela.ws</em></p>
+</div>
 </div>
 <div class="c_width-30">
 <!-- sakhrit's fake facsimile -->
-<p><img src="../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg" /></p>
+<div class="figure">
+<img src="../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg" alt="" />
+<p class="caption">“fakesimile” from <a href="https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG"><em>arshīf al-majallāt […] al-ʿarabiyya</em></a></p>
 </div>
-</div><div id="state-of-digitisation-bibliographic-metadata" class="slide section level2">
+</div>
+</div>
+<div id="state-of-digitisation-bibliographic-metadata" class="slide section level2">
 <h1>1.4.3 state of digitisation: bibliographic metadata</h1>
 <ul>
 <li>needs:
@@ -361,14 +427,28 @@ Till Grallert
 <li>no platform serving machine-actionable bibliographic metadata below the item level</li>
 </ul></li>
 </ul>
-</div><div id="state-of-digitisation-bibliographic-metadata-1" class="slide section level2">
+</div>
+<div id="state-of-digitisation-bibliographic-metadata-1" class="slide section level2">
 <h1>1.4.3 state of digitisation: bibliographic metadata</h1>
+<div class="c_width-60 c_left">
 <div class="figure">
-<img src="../assets/eap119-1-4-5-muqtabas-iiif-metadata.png" alt="al-Muqtabas 6 on EAP" />
+<img src="../assets/eap119-1-4-5-muqtabas-iiif-metadata.png" alt="" />
 <p class="caption"><em>al-Muqtabas</em> 6 on <a href="https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&amp;m=0&amp;s=0&amp;cv=0&amp;xywh=-301%2C-145%2C2174%2C2880">EAP</a></p>
 </div>
 </div>
-<div id="open-arabic-periodical-editions-openarabicpe-overview" class="title-slide slide section level1"><h1>2. Open Arabic Periodical Editions (OpenArabicPE): Overview<!-- : Unite facsimile and transcription and generate reliable metadata --></h1></div><div id="aims-and-principles" class="slide section level2">
+<div class="c_width-30 c_right">
+<ul>
+<li><em>hijri</em> calendar in the original</li>
+<li>Gregorian calendar in the metadata</li>
+</ul>
+</div>
+</div>
+
+<div id="open-arabic-periodical-editions-openarabicpe-overview" class="title-slide slide section level1">
+<h1>2. Open Arabic Periodical Editions (OpenArabicPE): Overview<!-- : Unite facsimile and transcription and generate reliable metadata --></h1>
+
+</div>
+<div id="aims-and-principles" class="slide section level2">
 <h1>2.1 Aims and principles</h1>
 <ol style="list-style-type: decimal">
 <li>ideas:
@@ -389,7 +469,8 @@ Till Grallert
 <li>preference for <strong>open</strong> and <strong>simple</strong> formats and tools</li>
 </ul></li>
 </ol>
-</div><div id="deliverables-basic-components" class="slide section level2">
+</div>
+<div id="deliverables-basic-components" class="slide section level2">
 <h1>2.2 Deliverables: basic components</h1>
 <ol style="list-style-type: decimal">
 <li>XML/TEI editions with their own <a href="https://github.com/OpenArabicPE/OpenArabicPE_ODD">schema for Arabic periodicals</a>
@@ -400,7 +481,7 @@ Till Grallert
 <ul>
 <li>based on XML editions</li>
 <li>scraped from the web and validated</li>
-<li>generated</li>
+<li>generated through iteration</li>
 </ul></li>
 <li>Scripts to
 <ul>
@@ -410,7 +491,8 @@ Till Grallert
 <li>improve the TEI mark-up</li>
 </ul></li>
 </ol>
-</div><div id="deliverables-core-features" class="slide section level2">
+</div>
+<div id="deliverables-core-features" class="slide section level2">
 <h1>2.2 Deliverables: Core features</h1>
 <ol style="list-style-type: decimal">
 <li>Open licences: <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (TEI, MODS, BibTeX), MIT license (XSLT, XQuery)</li>
@@ -420,100 +502,106 @@ Till Grallert
 <li>Access to bibliographic metadata through a public <a href="https://www.zotero.org/groups/openarabicpe">Zotero group</a></li>
 </ol>
 <!-- mention: process of cleaning data and disambiguation of entities -->
-<!-- ![[Display of *al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png) -->
-</div><div id="summary" class="slide section level2">
+<!-- ![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png) -->
+</div>
+<div id="summary" class="slide section level2">
 <h1>2.3 Summary</h1>
-<p><img src="../assets/OpenArabicPE_components-layer-1-4.png" /></p>
+<div class="figure">
+<img src="../assets/OpenArabicPE_components-layer-1-4.png" alt="" />
+<p class="caption">Figure: Project scheme</p>
 </div>
-<div id="openarabicpe-some-details" class="title-slide slide section level1"><h1>3. OpenArabicPE: some details</h1></div><div id="the-corpus" class="slide section level2">
+</div>
+
+<div id="openarabicpe-some-details" class="title-slide slide section level1">
+<h1>3. OpenArabicPE: some details</h1>
+
+</div>
+<div id="the-corpus" class="slide section level2">
 <h1>3. The corpus</h1>
-<div class="c_width-50">
-<h3 id="al-muqtabas-1906191718"><em>al-Muqtabas</em>, 1906–1917/18</h3>
 <table>
 <thead>
 <tr class="header">
-<th>token</th>
-<th>total</th>
-<th>author</th>
+<th>periodical</th>
+<th>doi</th>
+<th align="right">volumes</th>
+<th align="right">issues</th>
+<th align="right">articles</th>
+<th align="right">words</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>volumes</td>
-<td>9</td>
-<td></td>
+<td><a href="https://www.github.com/openarabicpe/digital-haqaiq">al-Ḥaqāʾiq</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+<td align="right">3</td>
+<td align="right">35</td>
+<td align="right">389</td>
+<td align="right">298090</td>
 </tr>
 <tr class="even">
-<td>issues</td>
-<td>96</td>
-<td></td>
+<td><a href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3556246">10.5281/zenodo.3556246</a></td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">201</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
-<td>pages</td>
-<td>c.7,000</td>
+<td><a href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
 <td></td>
+<td align="right">35</td>
+<td align="right">537</td>
+<td align="right">4300</td>
+<td align="right">6144593</td>
 </tr>
 <tr class="even">
-<td>articles (total)</td>
-<td>2,737</td>
-<td>323</td>
+<td><a href="https://www.github.com/tillgrallert/digital-muqtabas">al-Muqtabas</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+<td align="right">9</td>
+<td align="right">96</td>
+<td align="right">2964</td>
+<td align="right">1981081</td>
 </tr>
 <tr class="odd">
-<td>articles (independent)</td>
-<td>717</td>
-<td>284</td>
+<td><a href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+<td align="right">1</td>
+<td align="right">42</td>
+<td align="right">435</td>
+<td align="right">221447</td>
 </tr>
 <tr class="even">
-<td>words</td>
-<td>1,953,952</td>
-<td>625,333</td>
+<td><a href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+<td align="right">4</td>
+<td align="right">39</td>
+<td align="right">436</td>
+<td align="right">292333</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat al-ʿArab</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+<td align="right">3</td>
+<td align="right">34</td>
+<td align="right">939</td>
+<td align="right">373832</td>
+</tr>
+<tr class="even">
+<td><strong>total</strong></td>
+<td></td>
+<td align="right">56</td>
+<td align="right">795</td>
+<td align="right">9664</td>
+<td align="right">9311376</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="c_width-50">
-<h3 id="al-ḥaqāʾiq-1910191314"><em>al-Ḥaqāʾiq</em>, 1910–1913/14</h3>
-<table>
-<thead>
-<tr class="header">
-<th>token</th>
-<th>total</th>
-<th>author</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>volumes</td>
-<td>3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>issues</td>
-<td>36</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>pages</td>
-<td>1,446</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>articles</td>
-<td>360</td>
-<td>76</td>
-</tr>
-<tr class="odd">
-<td>words</td>
-<td>300,186</td>
-<td>40,868</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div><div id="basic-components-and-features" class="slide section level2">
+<div id="basic-components-and-features" class="slide section level2">
 <h1>3. Basic components and features</h1>
 <p><img src="../assets/OpenArabicPE_components-layer-1-2.png" /></p>
-</div><div id="components-generate-a-tei-edition" class="slide section level2">
+</div>
+<div id="components-generate-a-tei-edition" class="slide section level2">
 <h1>3.1 Components: Generate a TEI edition</h1>
 <ul>
 <li>scrape the <a href="http://shamela.ws/index.php/book/26523">digital text from <em>shamela.ws</em></a></li>
@@ -531,50 +619,53 @@ Till Grallert
 <li>provide a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 licence</a> for all files</li>
 </ul>
 <!--  edit bullet point on licences -->
-</div><div id="basis-tei-files" class="slide section level2">
+</div>
+<div id="basis-tei-files" class="slide section level2">
 <h1>3.1 Basis: TEI files</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">&lt;text</span><span class="ot"> xml:id=</span><span class="st">&quot;text&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> type=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;i62&quot;</span><span class="kw">&gt;</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">    <span class="kw">&lt;pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> n=</span><span class="st">&quot;177&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_181&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_2.d1e1489&quot;</span><span class="kw">/&gt;</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="kw">&lt;front</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;front_1.d1e1431&quot;</span><span class="kw">&gt;</span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">         <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;masthead&quot;</span><span class="kw">&gt;</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">            <span class="kw">&lt;bibl&gt;</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;3&quot;</span><span class="kw">&gt;</span>الجزء 3<span class="kw">&lt;/tei:biblScope&gt;</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> n=</span><span class="st">&quot;6&quot;</span><span class="kw">&gt;</span>المجلد 6<span class="kw">&lt;/tei:biblScope&gt;&lt;lb/&gt;</span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">               <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المقتبس<span class="kw">&lt;/title&gt;</span></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9">            <span class="kw">&lt;/bibl&gt;</span></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10">         <span class="kw">&lt;/div&gt;</span></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11">    <span class="kw">&lt;/front&gt;</span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12">    <span class="kw">&lt;body</span><span class="ot"> xml:id=</span><span class="st">&quot;body_1.d1e1485&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></a>
-<a class="sourceLine" id="cb1-13" data-line-number="13">        <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P4092.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n62-p1&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_1.d1e1487&quot;</span><span class="kw">/&gt;</span></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14">        <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;article&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1491&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15">            <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_1.d1e1493&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الفتوى في الإسلام<span class="kw">&lt;/head&gt;</span></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16">            <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_15.d1e1496&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>تابع ل <span class="kw">&lt;ref</span><span class="ot"> target=</span><span class="st">&quot;oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;ref_5.d1e1694&quot;</span><span class="kw">&gt;</span>ما في الجزء الماضي<span class="kw">&lt;/ref&gt;&lt;/p&gt;</span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17">            <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1499&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></a>
-<a class="sourceLine" id="cb1-18" data-line-number="18">                <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_2.d1e1501&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>آداب المستفتي وصفته وأحكامه<span class="kw">&lt;/head&gt;</span></a>
-<a class="sourceLine" id="cb1-19" data-line-number="19">                <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1504&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20">                    <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_3.d1e1506&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الأول<span class="kw">&lt;/head&gt;</span></a>
-<a class="sourceLine" id="cb1-21" data-line-number="21">                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_16.d1e1509&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المستفتي كل من لم يبلغ درجة المفتي فهو فيما يسأل عنه من الأحكام الشرعية مستفت بتقليد من نفسه.<span class="kw">&lt;/p&gt;</span></a>
-<a class="sourceLine" id="cb1-22" data-line-number="22">                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_17.d1e1512&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>والمختار في التقليد أنه قبول قول من يجوز عليه الإصرار على الخطاء بغير حجة على عين ما قبل قوله فيه.<span class="kw">&lt;/p&gt;</span></a>
-<a class="sourceLine" id="cb1-23" data-line-number="23">                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_18.d1e1515&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>ويجب عليه الاستفتاء إذا نزلت به حادثة يجب عليه علم حكمها.<span class="kw">&lt;/p&gt;</span></a>
-<a class="sourceLine" id="cb1-24" data-line-number="24">                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_19.d1e1518&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>فإن لم يجد ببلده من يستفتيه وجب عليه الرحيل إلى من يفتيه وإن بعدت داره وقد رحل خلائق من السلف في المسألة الواحدة الأيام والليالي.<span class="kw">&lt;/p&gt;</span></a>
-<a class="sourceLine" id="cb1-25" data-line-number="25">                <span class="kw">&lt;/div&gt;</span></a>
-<a class="sourceLine" id="cb1-26" data-line-number="26">            <span class="kw">&lt;/div&gt;</span></a>
-<a class="sourceLine" id="cb1-27" data-line-number="27">        <span class="kw">&lt;/div&gt;</span></a>
-<a class="sourceLine" id="cb1-28" data-line-number="28">    <span class="kw">&lt;/body&gt;</span></a>
-<a class="sourceLine" id="cb1-29" data-line-number="29"><span class="kw">&lt;/text&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">&lt;text</span><span class="ot"> xml:id=</span><span class="st">&quot;text&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> type=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;i62&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="kw">&lt;pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> n=</span><span class="st">&quot;177&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_181&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_2.d1e1489&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="kw">&lt;front</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;front_1.d1e1431&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>         <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;masthead&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>            <span class="kw">&lt;bibl&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;3&quot;</span><span class="kw">&gt;</span>الجزء 3<span class="kw">&lt;/tei:biblScope&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> n=</span><span class="st">&quot;6&quot;</span><span class="kw">&gt;</span>المجلد 6<span class="kw">&lt;/tei:biblScope&gt;&lt;lb/&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>               <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المقتبس<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>            <span class="kw">&lt;/bibl&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>         <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="kw">&lt;/front&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="kw">&lt;body</span><span class="ot"> xml:id=</span><span class="st">&quot;body_1.d1e1485&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>        <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P4092.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n62-p1&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_1.d1e1487&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>        <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;article&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1491&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>            <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_1.d1e1493&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الفتوى في الإسلام<span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>            <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_15.d1e1496&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>تابع ل <span class="kw">&lt;ref</span><span class="ot"> target=</span><span class="st">&quot;oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;ref_5.d1e1694&quot;</span><span class="kw">&gt;</span>ما في الجزء الماضي<span class="kw">&lt;/ref&gt;&lt;/p&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>            <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1499&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>                <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_2.d1e1501&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>آداب المستفتي وصفته وأحكامه<span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a>                <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1504&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>                    <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_3.d1e1506&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الأول<span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_16.d1e1509&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المستفتي كل من لم يبلغ درجة المفتي فهو فيما يسأل عنه من الأحكام الشرعية مستفت بتقليد من نفسه.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_17.d1e1512&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>والمختار في التقليد أنه قبول قول من يجوز عليه الإصرار على الخطاء بغير حجة على عين ما قبل قوله فيه.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_18.d1e1515&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>ويجب عليه الاستفتاء إذا نزلت به حادثة يجب عليه علم حكمها.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_19.d1e1518&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>فإن لم يجد ببلده من يستفتيه وجب عليه الرحيل إلى من يفتيه وإن بعدت داره وقد رحل خلائق من السلف في المسألة الواحدة الأيام والليالي.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25"></a>                <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a>            <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a>        <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a>    <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="kw">&lt;/text&gt;</span></span></code></pre></div>
 <!--
 ## 3.1 Basis: TEI files
 
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png) 
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
 
 -->
-</div><div id="basis-is-this-legal" class="slide section level2">
+</div>
+<div id="basis-is-this-legal" class="slide section level2">
 <h1>3.1 Basis: Is this legal?</h1>
 <div class="figure">
-<img src="../assets/OpenArabicPE_components-copyright.png" alt="External sources, external labour, and the question of copyright" />
+<img src="../assets/OpenArabicPE_components-copyright.png" alt="" />
 <p class="caption">External sources, external labour, and the question of copyright</p>
 </div>
-</div><div id="basis-is-this-legal-1" class="slide section level2">
+</div>
+<div id="basis-is-this-legal-1" class="slide section level2">
 <h1>3.1 Basis: Is this legal?</h1>
 <p>Copyright depends on the jurisdiction of creators, distributors, etc.</p>
 <ol style="list-style-type: decimal">
@@ -593,7 +684,8 @@ Till Grallert
 <li>all our work is licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
 </ul></li>
 </ol>
-</div><div id="core-feature-continuous-improvement" class="slide section level2">
+</div>
+<div id="core-feature-continuous-improvement" class="slide section level2">
 <h1>3.2 Core feature: Continuous improvement</h1>
 <ol style="list-style-type: decimal">
 <li>Improvements depending on human labour (probably a “crowd”)
@@ -608,12 +700,13 @@ Till Grallert
 <li>mark-up of natural entities with link to external reference files (e.g. personal names, toponyms)</li>
 </ul></li>
 </ol>
-</div><div id="core-feature-how-to-contribute" class="slide section level2">
+</div>
+<div id="core-feature-how-to-contribute" class="slide section level2">
 <h1>3.2 Core feature: how to contribute</h1>
 <div class="c_width-50">
 <ul>
 <li>Go to <a href="https://www.github.com">GitHub</a> and register a free account</li>
-<li><strong>Fork</strong> the edition’s repository: <a href="https://www.github.com/tillgrallert/digital-muqtabas" class="uri">https://www.github.com/tillgrallert/digital-muqtabas</a></li>
+<li><strong>Fork</strong> the editions’ repositories: e.g. <a href="https://www.github.com/openarabicpe/journal_lughat-al-arab" class="uri">https://www.github.com/openarabicpe/journal_lughat-al-arab</a></li>
 <li>Edit the text (XML)</li>
 <li>Send us a <strong>pull request</strong></li>
 <li>We will review and merge your changes</li>
@@ -622,10 +715,11 @@ Till Grallert
 <div class="c_width-50">
 <p><img src="../assets/github_branches-1.png" /></p>
 </div>
-</div><div id="core-feature-web-view" class="slide section level2">
+</div>
+<div id="core-feature-web-view" class="slide section level2">
 <h1>3.3 Core feature: web-view</h1>
 <ul>
-<li><em>open</em>, <em>free of charge</em>, <em>client-based</em></li>
+<li><strong>open</strong>, <strong>free-of-charge</strong>, <strong>client-based</strong></li>
 <li>Adaptation of the <a href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate XSLT stylesheets</a> to (Arabic) periodical editions</li>
 <li>human-readable and static web-view (either rawgit or gh-pages)
 <ul>
@@ -639,42 +733,134 @@ Till Grallert
 <li>link to metadata on the article level (MODS, BibTeX)</li>
 <li>the code is shared with a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 licence</a> on <a href="https://github.com/tillgrallert/tei-boilerplate-arabic-editions">GitHub</a></li>
 </ul>
-</div><div id="core-feature-web-view-1" class="slide section level2">
+</div>
+<div id="core-feature-web-view-1" class="slide section level2">
 <h1>3.3 Core feature: web-view</h1>
 <div class="figure">
-<img src="../assets/boilerplate_muqtabas.png" alt="Display of al-Muqtabas 6(2)" />
-<p class="caption"><a href="https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
+<img src="../assets/boilerplate_muqtabas.png" alt="" />
+<p class="caption"><a href="https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
 </div>
-</div><div id="core-feature-zotero-group" class="slide section level2">
+</div>
+<div id="core-feature-zotero-group" class="slide section level2">
 <h1>3.4 Core feature: Zotero group</h1>
 <div class="figure">
-<img src="../assets/zotero-group_digital-muqtabas-1.png" alt="Zotero group “OpenArabicPE”: list view" />
+<img src="../assets/zotero-group_openarabicpe-search.png" alt="" />
 <p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: list view</p>
 </div>
-</div><div id="core-feature-zotero-group-1" class="slide section level2">
+</div>
+<div id="core-feature-zotero-group-1" class="slide section level2">
 <h1>3.4 Core feature: Zotero group</h1>
+<div class="c_width-50 c_left">
 <div class="figure">
-<img src="../assets/zotero-group_digital-muqtabas-2.png" alt="Zotero group “OpenArabicPE”: item view" />
-<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: item view</p>
+<img src="../assets/zotero-group_openarabicpe-mobile-search.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: search in mobile view</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-details.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: details in mobile view</p>
+</div>
 </div>
 <!-- the following still needs work -->
-</div><div id="core-feature-preservation-doi" class="slide section level2">
+</div>
+<div id="core-feature-preservation-doi" class="slide section level2">
 <h1>3.5 Core feature: preservation, DOI</h1>
 <div class="c_width-50 c_left">
-<ul>
-<li><em>al-Muqtabas</em>: <a href="https://github.com/tillgrallert/digital-muqtabas/releases"><img src="https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg" alt="GitHub release" /></a> <a href="https://zenodo.org/badge/latestdoi/45922152"><img src="https://zenodo.org/badge/45922152.svg" alt="DOI" /></a></li>
-<li><em>al-Ḥaqāiq</em>: <a href="https://github.com/openarabicpe/digital-haqaiq/releases"><img src="https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg" alt="GitHub release" /></a> <a href="https://zenodo.org/badge/latestdoi/52619834"><img src="https://zenodo.org/badge/52619834.svg" alt="DOI" /></a></li>
-</ul>
+<table>
+<thead>
+<tr class="header">
+<th>periodical</th>
+<th>doi</th>
+<th>release</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/digital-haqaiq">al-Ḥaqāʾiq</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+<td><a href="https://github.com/openarabicpe/digital-haqaiq/releases"><img src="https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3556246">10.5281/zenodo.3556246</a></td>
+<td><a href="https://github.com/openarabicpe/journal_al-hasna/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_al-hasna.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
+<td></td>
+<td><!-- [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-manar.svg)](https://github.com/openarabicpe/journal_al-manar/releases)  --></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.github.com/tillgrallert/digital-muqtabas">al-Muqtabas</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+<td><a href="https://github.com/tillgrallert/digital-muqtabas/releases"><img src="https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+<td><a href="https://github.com/openarabicpe/journal_al-ustadh/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_al-ustadh.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+<td><a href="https://github.com/openarabicpe/journal_al-zuhur/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_al-zuhur.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat al-ʿArab</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+<td><a href="https://github.com/openarabicpe/journal_lughat-al-arab/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_lughat-al-arab.svg" alt="GitHub release" /></a></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="c_width-50 c_right">
 <p><img src="../assets/zenodo_muqtabas.png" /></p>
 </div>
 </div>
-<div id="use-cases" class="title-slide slide section level1"><h1>4. Use cases</h1></div>
-<div id="networks-of-authors" class="title-slide slide section level1"><h1>4.1 networks of authors</h1></div><div id="available-data" class="slide section level2">
-<h1>4.1.1 available data</h1>
-<div class="c_width-50">
-<h3 id="al-muqtabas-1906191718-1"><em>al-Muqtabas</em>, 1906–1917/18</h3>
+
+<div id="use-cases" class="title-slide slide section level1">
+<h1>4. Use cases</h1>
+
+</div>
+<div id="use-cases-research-questions" class="slide section level2">
+<h1>4. Use cases: research questions</h1>
+<ul>
+<li>What are the most important authors?</li>
+<li>What is the reach of journals?</li>
+<li>What are the most important periodicals?</li>
+<li>What did people read?</li>
+</ul>
+</div>
+
+<div id="networks-of-authors" class="title-slide slide section level1">
+<h1>4.1 networks of authors</h1>
+
+</div>
+<div id="networks-of-authors-1" class="slide section level2">
+<h1>4.1 networks of authors</h1>
+<ul>
+<li>methodology:
+<ul>
+<li>count number of journals, articles, tokens (words) per author</li>
+<li>count number of articles per writing location</li>
+</ul></li>
+<li>required data: <strong>bibliographic data</strong> on the article level <!-- including name of author and location of writing--></li>
+</ul>
+</div>
+<div id="available-data-editions" class="slide section level2">
+<h1>4.1.1 available data: editions</h1>
+<!-- brief note:
+| periodical.title | periodical.id.oclc |
+|------------------|--------------------|
+| al-Muqtabas      |         4770057679 |
+| al-Ḥaqāʾiq       |          644997575 |
+| al-Ḥasnāʾ         |          792756327 |
+| Lughat al-ʿArab  |          472450345 |
+-->
+<p><em>al-Ḥasnāʾ</em> (Beirut), <em>al-Ḥaqāʾiq</em> (Damascus), <em>Lughat al-ʿArab</em> (Baghdad), <em>al-Muqtabas</em> (Cairo, Damascus)</p>
+<div id="al-muqtabas-1906191718" class="c_width-50">
+<h3><em>al-Muqtabas</em>, 1906–1917/18</h3>
 <table>
 <thead>
 <tr class="header">
@@ -724,8 +910,8 @@ Till Grallert
 </tbody>
 </table>
 </div>
-<div class="c_width-50">
-<h3 id="al-ḥaqāʾiq-1910191314-1"><em>al-Ḥaqāʾiq</em>, 1910–1913/14</h3>
+<div id="al-ḥaqāʾiq-1910191314" class="c_width-50">
+<h3><em>al-Ḥaqāʾiq</em>, 1910–1913/14</h3>
 <table>
 <thead>
 <tr class="header">
@@ -769,16 +955,18 @@ Till Grallert
 </tbody>
 </table>
 </div>
-</div><div id="quality-of-data" class="slide section level2">
-<h1>4.1.2 quality of data</h1>
+</div>
+<div id="quality-of-data-editions" class="slide section level2">
+<h1>4.1.2 quality of data: editions</h1>
 <ul>
 <li>data source: bylines and comments in the text
 <ul>
 <li>many accronyms</li>
 <li>plurality of name forms</li>
+<li><strong>not available</strong> for many articles</li>
 </ul></li>
-<li>manual mark-up: authors and locations</li>
-<li>manual disambiguation: links to authority files (<em>semantic web</em>)</li>
+<li>mostly manual mark-up: personal names and toponyms</li>
+<li>mostly manual disambiguation: links to authority files (<em>semantic web</em>)</li>
 <li>automatic enriching: from semantic web
 <ul>
 <li>life dates</li>
@@ -786,107 +974,308 @@ Till Grallert
 <li>geocoded locations</li>
 </ul></li>
 </ul>
-</div><div id="al-muqtabas-authors-by-number-of-bylines" class="slide section level2">
-<h1>4.1.3 <em>al-Muqtabas</em>: authors by number of bylines</h1>
-<table>
+</div>
+
+<div id="authorship-statistics" class="title-slide slide section level1">
+<h1>4.1.3 authorship statistics</h1>
+
+</div>
+<div id="authorship-statistics-all-editions" class="slide section level2">
+<h1>4.1.3 authorship statistics: all editions</h1>
+<!-- Data: four journals, 2019-04-09 -->
+<table style="width:100%;">
+<colgroup>
+<col width="4%" />
+<col width="34%" />
+<col width="18%" />
+<col width="10%" />
+<col width="10%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>rank</th>
-<th>author.id</th>
+<th>author.id.viaf</th>
 <th>author.name</th>
 <th>author.birth</th>
+<th>author.death</th>
 <th>article.count</th>
-<th>word.count</th>
+<th>journal.count</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td><a href="https://viaf.org/viaf/14924300/">viaf:14924300</a></td>
-<td><a href="https://en.wikipedia.org/wiki/Maarouf_Al_Rasafi">معروف الرصافي</a></td>
-<td>1875</td>
-<td>24</td>
-<td>12437</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>6955</td>
+<td>4</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td><a href="https://viaf.org/viaf/40250618/">viaf:40250618</a></td>
-<td><a href="https://ar.wikipedia.org/wiki/عيسى_إسكندر_المعلوف">عيسى أفندي اسكندر المعلوف</a></td>
-<td>1869</td>
-<td>20</td>
-<td>23297</td>
+<td><a href="https://viaf.org/viaf/14924300">14924300</a></td>
+<td><strong>معروف الرصافي</strong></td>
+<td>1875</td>
+<td>1945</td>
+<td>43</td>
+<td>4</td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td><a href="https://viaf.org/viaf/39370998/">viaf:39370998</a></td>
-<td><a href="https://en.wikipedia.org/wiki/Anastas_Al-Karmali">ساتسنا (بطرس بن جبرائيل عواد)</a></td>
-<td>1866</td>
-<td>14</td>
-<td>19849</td>
+<td>NA</td>
+<td>كاظم الدجيلي</td>
+<td>1884</td>
+<td>1970</td>
+<td>27</td>
+<td>2</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td></td>
-<td>يوسف جرجس زخم</td>
-<td></td>
-<td>13</td>
-<td>21613</td>
+<td><a href="https://viaf.org/viaf/40250618">40250618</a></td>
+<td><strong>عيسى اسكندر المعلوف</strong></td>
+<td>1869</td>
+<td>1956</td>
+<td>22</td>
+<td>2</td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td><a href="https://viaf.org/viaf/93607460/">viaf:93607460</a></td>
-<td><a href="https://ar.wikipedia.org/wiki/جمال_الدين_القاسمي">جمال الدين القاسمي</a></td>
-<td>1866</td>
-<td>8</td>
-<td>38541</td>
+<td>NA</td>
+<td>إبراهيم حلمي العمر</td>
+<td>1890</td>
+<td>1942</td>
+<td>21</td>
+<td>2</td>
 </tr>
 <tr class="even">
 <td>6</td>
-<td><a href="https://viaf.org/viaf/118432135/">viaf:118432135</a></td>
-<td><a href="https://ar.wikipedia.org/wiki/عبد_القادر_المغربي">عبد القادر أفندي المغربي</a></td>
-<td>1867</td>
-<td>7</td>
-<td>14074</td>
+<td><a href="https://viaf.org/viaf/299037057">299037057</a></td>
+<td>عبد الله مخلص</td>
+<td>1878</td>
+<td>1947</td>
+<td>15</td>
+<td>2</td>
 </tr>
 <tr class="odd">
 <td>7</td>
-<td><a href="https://viaf.org/viaf/19737865/">viaf:19737865</a></td>
-<td><a href="https://en.wikipedia.org/wiki/Ahmed_Taymour">أحمد بك تيمور</a></td>
-<td>1871</td>
-<td>7</td>
-<td>7905</td>
+<td><a href="https://viaf.org/viaf/22006374">22006374</a></td>
+<td>محمد رضا الشبيبي</td>
+<td>1889</td>
+<td>1965</td>
+<td>11</td>
+<td>2</td>
 </tr>
 <tr class="even">
 <td>8</td>
-<td><a href="https://viaf.org/viaf/22006374/">viaf:22006374</a></td>
-<td><a href="https://en.wikipedia.org/wiki/Mohammed_Ridha_Al-Shabibi">محمد رضا الشبيبي</a></td>
-<td>1889</td>
-<td>7</td>
-<td>17894</td>
+<td>NA</td>
+<td>محمد الهاشمي</td>
+<td>NA</td>
+<td>NA</td>
+<td>6</td>
+<td>2</td>
 </tr>
 <tr class="odd">
 <td>9</td>
-<td><a href="https://viaf.org/viaf/28125663/">viaf:28125663</a></td>
-<td><a href="https://ar.wikipedia.org/wiki/رفيق_العظم">رفيق بك العظم</a></td>
-<td>1865</td>
-<td>7</td>
-<td>13237</td>
+<td><a href="https://viaf.org/viaf/236524859">236524859</a></td>
+<td>مصطفى صادق الرافعي</td>
+<td>1880</td>
+<td>1937</td>
+<td>6</td>
+<td>2</td>
 </tr>
 <tr class="even">
 <td>10</td>
-<td><a href="https://viaf.org/viaf/32272677/">viaf:32272677</a></td>
-<td><a href="https://en.wikipedia.org/wiki/Muhammad_Kurd_Ali">محمد كرد علي</a></td>
-<td>1876</td>
-<td>7</td>
-<td>42489</td>
+<td>NA</td>
+<td>أبو الضيا</td>
+<td>NA</td>
+<td>NA</td>
+<td>4</td>
+<td>2</td>
 </tr>
 <tr class="odd">
 <td>11</td>
-<td><a href="https://viaf.org/viaf/49218655/">viaf:49218655</a></td>
-<td><a href="https://en.wikipedia.org/wiki/Ahmad_Zaki_Pasha">أحمد بك زكي</a></td>
+<td><a href="https://viaf.org/viaf/60500457">60500457</a></td>
+<td>أحمد محرم</td>
+<td>1877</td>
+<td>1945</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>NA</td>
+<td>محمد باقر الشبيبي</td>
+<td>NA</td>
+<td>NA</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td><a href="https://viaf.org/viaf/63117968">63117968</a></td>
+<td>محمد راغب طباخ</td>
+<td>1877</td>
+<td>1951</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>NA</td>
+<td>ا. ج</td>
+<td>NA</td>
+<td>NA</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td><a href="https://viaf.org/viaf/36771043">36771043</a></td>
+<td>ولي الدين يكن</td>
+<td>1873</td>
+<td>1921</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="authorship-statistics-all-editions-1" class="slide section level2">
+<h1>4.1.3 authorship statistics: all editions</h1>
+<div class="figure">
+<img src="../assets/wordclouds/wordcloud_oape_articles-per-author.png" alt="" />
+<p class="caption">Figure: wordcloud of 50 most important authors by number of bylines in <em>al-Ḥasnāʾ</em>, <em>al-Ḥaqāʾiq</em>, <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div id="authorship-statistics-al-muqtabas" class="slide section level2">
+<h1>4.1.3 authorship statistics: <em>al-Muqtabas</em></h1>
+<!-- data set: 2019-04-09 -->
+<table>
+<thead>
+<tr class="header">
+<th>rank</th>
+<th>author.id.viaf</th>
+<th>author.name</th>
+<th>author.birth</th>
+<th>author.death</th>
+<th>article.count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>2630</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><a href="https://viaf.org/viaf/14924300">14924300</a></td>
+<td><strong>معروف الرصافي</strong></td>
+<td>1875</td>
+<td>1945</td>
+<td>27</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><a href="https://viaf.org/viaf/40250618">40250618</a></td>
+<td><strong>عيسى اسكندر المعلوف</strong></td>
+<td>1869</td>
+<td>1956</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><a href="https://viaf.org/viaf/39370998">39370998</a></td>
+<td>ساتسنا</td>
 <td>1866</td>
+<td>1947</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>NA</td>
+<td>يوسف جرجس زخم</td>
+<td>1880</td>
+<td>NA</td>
+<td>13</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><a href="https://viaf.org/viaf/32272677">32272677</a></td>
+<td>محمد كرد علي</td>
+<td>1876</td>
+<td>1953</td>
+<td>12</td>
+</tr>
+<tr class="odd">
 <td>7</td>
-<td>40311</td>
+<td><a href="https://viaf.org/viaf/19737865">19737865</a></td>
+<td>أحمد تيمور</td>
+<td>1871</td>
+<td>1930</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>NA</td>
+<td>إبراهيم حلمي العمر</td>
+<td>1890</td>
+<td>1942</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td><a href="https://viaf.org/viaf/93607460">93607460</a></td>
+<td>جمال الدين القاسمي</td>
+<td>1866</td>
+<td>1914</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td><a href="https://viaf.org/viaf/49218655">49218655</a></td>
+<td>أحمد زكي</td>
+<td>1866</td>
+<td>1934</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td><a href="https://viaf.org/viaf/32410755">32410755</a></td>
+<td>حافظ إبراهيم</td>
+<td>1871</td>
+<td>1932</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td><a href="https://viaf.org/viaf/28125663">28125663</a></td>
+<td>رفيق العظم</td>
+<td>1865</td>
+<td>1925</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td><a href="https://viaf.org/viaf/118432135">118432135</a></td>
+<td>عبد القادر المغربي</td>
+<td>1867</td>
+<td>1956</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td><a href="https://viaf.org/viaf/22006374">22006374</a></td>
+<td>محمد رضا الشبيبي</td>
+<td>1889</td>
+<td>1965</td>
+<td>7</td>
 </tr>
 </tbody>
 </table>
@@ -905,151 +1294,527 @@ Till Grallert
 |    9 | ʿAbd al-Qādir al-Maghribī | 14074 |        7 |
 |   10 | Rafīq al-ʿAẓm             | 13237 |        7 |
 |   11 | Aḥmad Taymūr              |  7905 |        7 | -->
-</div><div id="al-muqtabas-authors-by-number-of-bylines-1" class="slide section level2">
-<h1>4.1.3 <em>al-Muqtabas</em>: authors by number of bylines</h1>
+</div>
+<div id="authorship-statistics-al-muqtabas-1" class="slide section level2">
+<h1>4.1.3 authorship statistics: <em>al-Muqtabas</em></h1>
 <div class="figure">
-<img src="../assets/plots/word-cloud_muqtabas-authors-bylines.png" alt="Figure: Word cloud of authors published in al-Muqtabas; by number of articles" />
+<img src="../assets/plots/word-cloud_muqtabas-authors-bylines.png" alt="" />
 <p class="caption">Figure: Word cloud of authors published in <em>al-Muqtabas</em>; by number of articles</p>
 </div>
-</div><div id="al-ḥaqāʾiq-authors-by-number-of-bylines" class="slide section level2">
-<h1>4.1.4 <em>al-Ḥaqāʾiq</em>: authors by number of bylines</h1>
+</div>
+<div id="authorship-statistics-al-ḥaqāʾiq" class="slide section level2">
+<h1>4.1.3 authorship statistics: <em>al-Ḥaqāʾiq</em></h1>
+<!-- data set: 2019-04-09 -->
 <table>
 <thead>
 <tr class="header">
 <th>rank</th>
-<th>author.id</th>
+<th>author.id.viaf</th>
 <th>author.name</th>
 <th>author.birth</th>
+<th>author.death</th>
 <th>article.count</th>
-<th>word.count</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td></td>
-<td>إبراهيم خليل مردم بك</td>
-<td></td>
-<td>6</td>
-<td>4702</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>286</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td><a href="https://viaf.org/viaf/53094077">viaf:53094077</a></td>
-<td>محمد فريد أفندي وجدي</td>
-<td>1875</td>
-<td>5</td>
-<td>8344</td>
+<td>NA</td>
+<td>عبد الرحمن القصار</td>
+<td>1863</td>
+<td>c.1931</td>
+<td>8</td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td><a href="https://viaf.org/viaf/299025643">viaf:299025643</a></td>
-<td>محمد عارف المنير الحسيني</td>
-<td></td>
-<td>5</td>
-<td>3151</td>
+<td>NA</td>
+<td>إبراهيم خليل مردم بك</td>
+<td>NA</td>
+<td>NA</td>
+<td>7</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td></td>
-<td>عبد الرحمن القصار</td>
-<td></td>
+<td><a href="https://viaf.org/viaf/299025643">299025643</a></td>
+<td>محمد عارف المنير</td>
+<td>1847/48</td>
+<td>1923/24</td>
 <td>5</td>
-<td>1429</td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td><a href="https://viaf.org/viaf/58892856">viaf:58892856</a></td>
-<td>الشيخ صالح أفندي الشريف</td>
-<td>1869</td>
 <td>4</td>
-<td>5000</td>
+<td><a href="https://viaf.org/viaf/53094077">53094077</a></td>
+<td>محمد فريد وجدي</td>
+<td>1875</td>
+<td>1954</td>
+<td>5</td>
 </tr>
 <tr class="even">
-<td>6</td>
-<td><a href="https://viaf.org/viaf/267054449">viaf:267054449</a></td>
+<td>4</td>
+<td><a href="https://viaf.org/viaf/58892856">58892856</a></td>
+<td>صالح الشريف</td>
+<td>1869</td>
+<td>1920</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>NA</td>
+<td>ع</td>
+<td>NA</td>
+<td>NA</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><a href="https://viaf.org/viaf/51567828">51567828</a></td>
+<td>محمد القاسمي الحلاق</td>
+<td>1843</td>
+<td>1900</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>NA</td>
+<td>محمد سليم الحنفي</td>
+<td>NA</td>
+<td>NA</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><a href="https://viaf.org/viaf/267054449">267054449</a></td>
 <td>مختار المؤيد</td>
 <td>1822</td>
+<td>1921</td>
 <td>4</td>
-<td>949</td>
 </tr>
 <tr class="odd">
-<td>7</td>
-<td></td>
+<td>5</td>
+<td>NA</td>
 <td>أبو الضيا</td>
-<td></td>
+<td>NA</td>
+<td>NA</td>
 <td>3</td>
-<td>5097</td>
 </tr>
 <tr class="even">
-<td>8</td>
-<td></td>
-<td>أحمد الباشا</td>
-<td></td>
+<td>5</td>
+<td>NA</td>
+<td>أحمد الجوبري</td>
+<td>NA</td>
+<td>NA</td>
 <td>3</td>
-<td>4274</td>
 </tr>
 <tr class="odd">
-<td>9</td>
-<td></td>
-<td>ع</td>
-<td></td>
+<td>5</td>
+<td>NA</td>
+<td>احمد الباشا</td>
+<td>NA</td>
+<td>NA</td>
 <td>3</td>
-<td>2833</td>
 </tr>
 <tr class="even">
-<td>10</td>
-<td></td>
+<td>5</td>
+<td>NA</td>
 <td>صلاح الدين الزعيم</td>
-<td></td>
+<td>NA</td>
+<td>NA</td>
 <td>3</td>
-<td>2448</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td><a href="https://viaf.org/viaf/14924300">14924300</a></td>
+<td><strong>معروف الرصافي</strong></td>
+<td>1875</td>
+<td>1945</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
-</div><div id="al-ḥaqāʾiq-authors-by-number-of-bylines-1" class="slide section level2">
-<h1>4.1.4 <em>al-Ḥaqāʾiq</em>: authors by number of bylines</h1>
+</div>
+<div id="authorship-statistics-al-ḥaqāʾiq-1" class="slide section level2">
+<h1>4.1.3 authorship statistics: <em>al-Ḥaqāʾiq</em></h1>
 <div class="figure">
-<img src="../assets/plots/word-cloud_haqaiq-authors-bylines.png" alt="Figure: Word cloud of authors published in al-Ḥaqāʾiq" />
+<img src="../assets/plots/word-cloud_haqaiq-authors-bylines.png" alt="" />
 <p class="caption">Figure: Word cloud of authors published in <em>al-Ḥaqāʾiq</em></p>
 </div>
-</div><div id="worlds-apart-al-muqtabas-and-al-ḥaqāʾiq" class="slide section level2">
+</div>
+<div id="authorship-statistics-al-ḥasnāʾ" class="slide section level2">
+<h1>4.1.3 authorship statistics: <em>al-Ḥasnāʾ</em></h1>
+<!-- data set: 2019-04-09 -->
+<table>
+<thead>
+<tr class="header">
+<th>rank</th>
+<th>author.id.viaf</th>
+<th>author.name</th>
+<th>author.birth</th>
+<th>author.death</th>
+<th>article.count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>106</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><a href="https://viaf.org/viaf/219321857">219321857</a></td>
+<td>ماري عجمي</td>
+<td>1888</td>
+<td>1965</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>NA</td>
+<td>سلوى سلامه</td>
+<td>NA</td>
+<td>NA</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>NA</td>
+<td>مريم زكا</td>
+<td>NA</td>
+<td>NA</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>NA</td>
+<td>الياس عطا الله</td>
+<td>NA</td>
+<td>NA</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>NA</td>
+<td>جرجس توما</td>
+<td>NA</td>
+<td>NA</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>NA</td>
+<td>جوليا طعمه</td>
+<td>NA</td>
+<td>NA</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>NA</td>
+<td>شحاده شحاده</td>
+<td>NA</td>
+<td>NA</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td><a href="https://viaf.org/viaf/40250618">40250618</a></td>
+<td><strong>عيسى اسكندر المعلوف</strong></td>
+<td>1869</td>
+<td>1956</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><a href="https://viaf.org/viaf/14924300">14924300</a></td>
+<td><strong>معروف الرصافي</strong></td>
+<td>1875</td>
+<td>1945</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td><a href="https://viaf.org/viaf/233275351">233275351</a></td>
+<td>وردة اليازجي</td>
+<td>1838</td>
+<td>1924</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="worlds-apart-al-muqtabas-and-al-ḥaqāʾiq" class="slide section level2">
 <h1>4.1.5 Worlds apart: <em>al-Muqtabas</em> and <em>al-Ḥaqāʾiq</em></h1>
 <div class="figure">
-<img src="../assets/plots/network_openarabicpe-authors-publications.png" alt="Figure: Authors and periodicals" />
+<img src="../assets/plots/network_openarabicpe-authors-publications.png" alt="" />
 <p class="caption">Figure: Authors and periodicals</p>
 </div>
-</div><div id="al-muqtabas-locations-by-number-of-bylines" class="slide section level2">
-<h1>4.1.6 <em>al-Muqtabas</em>: locations by number of bylines</h1>
+</div>
+<div id="locations-by-number-of-bylines-al-muqtabas" class="slide section level2">
+<h1>4.1.6 Locations by number of bylines: <em>al-Muqtabas</em></h1>
 <div class="figure">
-<img src="../assets/maps/map_muqtabas-bylines-me.png" alt="Figure: Locations in bylines in al-Muqtabas" />
+<img src="../assets/maps/map-oclc_4770057679-bylines-middle-east.png" alt="" />
 <p class="caption">Figure: Locations in bylines in <em>al-Muqtabas</em></p>
 </div>
-</div><div id="al-ḥaqāʾiq-locations-by-number-of-bylines" class="slide section level2">
-<h1>4.1.7 <em>al-Ḥaqāʾiq</em>: locations by number of bylines</h1>
 <div class="figure">
-<img src="../assets/maps/map_haqaiq-bylines-me.png" alt="Figure: Locations in bylines in al-Ḥaqāʾiq" />
+<img src="../assets/maps/map-oclc_4770057679-bylines-all.png" alt="" />
+<p class="caption">Figure: Locations in bylines in <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div id="locations-by-number-of-bylines-al-ḥaqāʾiq" class="slide section level2">
+<h1>4.1.7 Locations by number of bylines: <em>al-Ḥaqāʾiq</em></h1>
+<div class="figure">
+<img src="../assets/maps/map-oclc_644997575-bylines-middle-east.png" alt="" />
+<p class="caption">Figure: Locations in bylines in <em>al-Ḥaqāʾiq</em></p>
+</div>
+<div class="figure">
+<img src="../assets/maps/map-oclc_644997575-bylines-all.png" alt="" />
 <p class="caption">Figure: Locations in bylines in <em>al-Ḥaqāʾiq</em></p>
 </div>
 </div>
-<div id="networks-of-texts" class="title-slide slide section level1"><h1>4.2 networks of texts</h1></div><div id="al-muqtabas-origin-of-reviewed-works" class="slide section level2">
+<div id="locations-by-number-of-bylines-al-ḥasnāʾ" class="slide section level2">
+<h1>4.1.8 Locations by number of bylines: <em>al-Ḥasnāʾ</em></h1>
+<div class="figure">
+<img src="../assets/maps/map-oclc_792756327-bylines-middle-east.png" alt="" />
+<p class="caption">Figure: Locations in bylines in <em>al-Ḥasnāʾ</em></p>
+</div>
+<div class="figure">
+<img src="../assets/maps/map-oclc_792756327-bylines-all.png" alt="" />
+<p class="caption">Figure: Locations in bylines in <em>al-Ḥasnāʾ</em></p>
+</div>
+</div>
+<div id="locations-by-number-of-bylines-lughat-al-ʿarab" class="slide section level2">
+<h1>4.1.9 Locations by number of bylines: <em>Lughat al-ʿArab</em></h1>
+<div class="figure">
+<img src="../assets/maps/map-oclc_472450345-bylines-middle-east.png" alt="" />
+<p class="caption">Figure: Locations in bylines in <em>Lughat al-ʿArab</em></p>
+</div>
+<div class="figure">
+<img src="../assets/maps/map-oclc_472450345-bylines-all.png" alt="" />
+<p class="caption">Figure: Locations in bylines in <em>Lughat al-ʿArab</em></p>
+</div>
+</div>
+
+<div id="networks-of-texts" class="title-slide slide section level1">
+<h1>4.2 networks of texts</h1>
+
+</div>
+<div id="networks-of-texts-1" class="slide section level2">
+<h1>4.2 networks of texts</h1>
+<ul>
+<li>methodology:
+<ul>
+<li>count number of articles and journals that reference a specific text (periodical, book)</li>
+</ul></li>
+<li>required data:
+<ul>
+<li>digital editions with mark-up of referenced texts</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;article&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_40.d1e4386&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_39.d1e4388&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>أبحاث باحث<span class="kw">&lt;/head&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>        <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_197.d1e4391&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>نشر <span class="kw">&lt;persName</span><span class="ot"> xml:id=</span><span class="st">&quot;persName_21.d1e4393&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;fr-Arab-AR&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:236 viaf:44512503&quot;</span><span class="ot"> change=</span><span class="st">&quot;#d2e647&quot;</span><span class="kw">&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;honorific&quot;</span><span class="kw">&gt;</span>المسيو<span class="kw">&lt;/addName&gt;</span> <span class="kw">&lt;forename</span><span class="ot"> xml:lang=</span><span class="st">&quot;fr-Arab-AR&quot;</span><span class="kw">&gt;</span>لوسين<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname</span><span class="ot"> xml:lang=</span><span class="st">&quot;fr-Arab-AR&quot;</span><span class="kw">&gt;</span>بوفا<span class="kw">&lt;/surname&gt;</span> <span class="kw">&lt;/persName&gt;</span> من المتضلعين من العلوم المشرقية والعارفين بالعربية والفارسية والتركية كراسة أشار فيها إلى أبحاثه ومقالاته في المجلات الإفرنجية مثل <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="kw">&gt;</span>مجلة العالم الإسلامي<span class="kw">&lt;/title&gt;</span> و<span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="kw">&gt;</span>المجلة الآسياوية<span class="kw">&lt;/title&gt;</span> ومجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="kw">&gt;</span>السجلات المراكشية<span class="kw">&lt;/title&gt;</span> و<span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="kw">&gt;</span>المجلة الإسبانية<span class="kw">&lt;/title&gt;</span> ومعظم هذه الأبحاث مما اشتهر بين أهل الأدب والعلم وقدره الباحثون حق قدره فنثني على نشاط صديقنا المشار إليه.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<h2 id="statistics-of-referenced-periodicals-all-editions">4.2.1 statistics of referenced periodicals: all editions</h2></li>
+</ul>
+<!-- data: three journals, 2019-04-09 -->
+<table style="width:100%;">
+<colgroup>
+<col width="6%" />
+<col width="20%" />
+<col width="24%" />
+<col width="16%" />
+<col width="14%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>rank</th>
+<th>periodical.title</th>
+<th>publication.location</th>
+<th>article.count</th>
+<th>issue.count</th>
+<th>journal.count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>المقتبس</td>
+<td>Damascus / Cairo</td>
+<td>89</td>
+<td>62</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>الهلال</td>
+<td>Cairo</td>
+<td>31</td>
+<td>28</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>المقتطف</td>
+<td>Cairo</td>
+<td>26</td>
+<td>21</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>المنار</td>
+<td>Cairo</td>
+<td>19</td>
+<td>17</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>الضياء</td>
+<td>Cairo</td>
+<td>11</td>
+<td>11</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>المفيد</td>
+<td>Beirut</td>
+<td>12</td>
+<td>9</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>الوطن</td>
+<td>Beirut</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>لغة العرب</td>
+<td>Baghdad</td>
+<td>446</td>
+<td>89</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>المشرق</td>
+<td>Beirut</td>
+<td>32</td>
+<td>30</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>الحقائق</td>
+<td>Damascus</td>
+<td>43</td>
+<td>22</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>مجلة المجلات</td>
+<td>Paris</td>
+<td>20</td>
+<td>17</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>العالم*</td>
+<td></td>
+<td>17</td>
+<td>17</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>العلم*</td>
+<td></td>
+<td>16</td>
+<td>15</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>العرفان</td>
+<td>Saida</td>
+<td>15</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>الحياة</td>
+<td></td>
+<td>10</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>الزهور</td>
+<td>Baghdad</td>
+<td>10</td>
+<td>10</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><code>*</code> likely encoding error</p>
+</div>
+<div id="statistics-of-referenced-periodicals-all-editions-1" class="slide section level2">
+<h1>4.2.1 statistics of referenced periodicals: all editions</h1>
+<div class="figure">
+<img src="../assets/networks/network_oape-referenced-periodicals_details.png" alt="" />
+<p class="caption">network of periodicals referenced in <em>al-Ḥasnāʾ</em>, <em>al-Ḥaqāʾiq</em> and <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div id="al-muqtabas-origin-of-reviewed-works" class="slide section level2">
 <h1>4.2 <em>al-Muqtabas</em>: origin of reviewed works</h1>
 <div class="figure">
-<img src="../assets/maps/map_muqtabas-referenced-works-all.png" alt="Figure: Origin of referenced works in al-Muqtabas" />
+<img src="../assets/maps/map-oclc_4770057679-referenced%20works-all.png" alt="" />
 <p class="caption">Figure: Origin of referenced works in <em>al-Muqtabas</em></p>
 </div>
 </div>
-<div id="to-do" class="title-slide slide section level1"><h1>5. To do</h1></div><div id="ongoing-work" class="slide section level2">
+
+<div id="to-do" class="title-slide slide section level1">
+<h1>5. To do</h1>
+
+</div>
+<div id="ongoing-work" class="slide section level2">
 <h1>ongoing work</h1>
 <ul>
 <li>Editorial decisions: TEI schema design <!-- + TEI is rooted in the western episteme --></li>
 <li>Editorial work:
 <ul>
-<li>mark-up of page breaks (1-2 h per issue)</li>
 <li>correcting transcriptions</li>
 <li>add non-Arabic words omitted by <em>shamela.ws</em></li>
 <li>add footnotes</li>
-<li>correct publication dates for all issues.</li>
 </ul></li>
 <li>Web-display:
 <ul>
@@ -1059,7 +1824,12 @@ Till Grallert
 <li>Scanning:</li>
 </ul>
 </div>
-<div id="experiences" class="title-slide slide section level1"><h1>5. Experiences</h1></div><div id="simple-fast-sustainable" class="slide section level2">
+
+<div id="experiences" class="title-slide slide section level1">
+<h1>5. Experiences</h1>
+
+</div>
+<div id="simple-fast-sustainable" class="slide section level2">
 <h1>simple, fast, sustainable</h1>
 <ul>
 <li>Simple technologies and relatively little coding needed:
@@ -1075,14 +1845,19 @@ Till Grallert
 </ul>
 <!-- - Collaboration in bootstrapped framework with multiple dependencies  -->
 <pre><code>&lt;!-- + it took a part-time intern 4 weeks to tag one volume of 800 pages --&gt;</code></pre>
-<!-- - TEI editing 
+<!-- - TEI editing
     - requires some training
     - patchy support of Arabic across operating systems, Java versions -->
-<p><!--  + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day. --> <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār* 
+<p><!--  + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day. --> <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) --></p>
 </div>
-<div id="conclusion" class="title-slide slide section level1"><h1>6. Conclusion</h1></div><div id="summary-openarabicpe" class="slide section level2">
+
+<div id="conclusion" class="title-slide slide section level1">
+<h1>6. Conclusion</h1>
+
+</div>
+<div id="summary-openarabicpe" class="slide section level2">
 <h1>Summary: OpenArabicPE</h1>
 <ul>
 <li>open scholarly <strong>digital editions</strong> of <a href="https://github.com/tillgrallert/digital-muqtabas"><em>[Majallat] al-Muqtabas</em></a> and <a href="https://github.com/OpenArabicPE/digital-haqaiq"><em>al-Ḥaqāʾiq</em></a> providing
@@ -1104,35 +1879,70 @@ Till Grallert
 <li>discovery <!-- in CLARIN --></li>
 </ul></li>
 </ul>
-</div><div id="thank-you" class="slide section level2">
+</div>
+<div id="summary-workflow" class="slide section level2">
+<h1>Summary: Workflow</h1>
+<ol style="list-style-type: decimal">
+<li>get the data
+<ul>
+<li>facsimiles
+<ul>
+<li>link to existing facsimiles, preferably through IIIF</li>
+<li>scan your physical artefacts*</li>
+</ul></li>
+<li>text
+<ul>
+<li>scrape existing transcriptions</li>
+<li>use <a href="">Transkribus</a>* with our model trained on 1000+ pages from the OpenArabicPE corpus</li>
+</ul></li>
+</ul></li>
+<li>save and share the data
+<ul>
+<li>facsimiles: <a href="https://archive.org">Internet Archive</a> (supports IIIF)</li>
+<li>working copy of everything else: <a href="https://github.com/">GitHub</a></li>
+<li>longterm preservation: <a href="https://zenodo.org/">Zenodo</a>
+<ul>
+<li>make sure to add ORCIDs for all contributors</li>
+</ul></li>
+</ul></li>
+<li>edit the data</li>
+<li>disseminate the data
+<ul>
+<li>host webviews, project blogs: <a href="">gh-pages</a></li>
+<li>bibliographic database: <a href="https://www.zotero.org/groups/openarabicpe/items/">Zotero</a></li>
+</ul></li>
+</ol>
+</div>
+<div id="thank-you" class="slide section level2">
 <h1>Thank you!</h1>
 <ul>
-<li>Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef</li>
+<li>Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef</li>
 <li>Links:
 <ul>
 <li>Slides: <a href="https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html">https://OpenArabicPE.github.io/slides/2018-turkologentag/</a> <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> --></li>
-<li>Project URLs: <a href="https://www.github.com/OpenArabicPE" class="uri">https://www.github.com/OpenArabicPE</a>, <a href="https://www.github.com/tillgrallert/digital-muqtabas" class="uri">https://www.github.com/tillgrallert/digital-muqtabas</a>, <a href="https://www.github.com/OpenArabicPE/digital-haqaiq" class="uri">https://www.github.com/OpenArabicPE/digital-haqaiq</a></li>
-<li>Project blog: <a href="https://openarabicpe.github.io" class="uri">https://openarabicpe.github.io</a></li>
+<li>Project URLs: <a href="https://www.github.com/OpenArabicPE">https://www.github.com/OpenArabicPE</a>, <a href="https://www.github.com/tillgrallert/digital-muqtabas">https://www.github.com/tillgrallert/digital-muqtabas</a>, <a href="https://www.github.com/OpenArabicPE/digital-haqaiq">https://www.github.com/OpenArabicPE/digital-haqaiq</a></li>
+<li>Project blog: <a href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
 <li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
 <li>Email: <script type="text/javascript">
 <!--
 h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript> <script type="text/javascript">
 <!--
 h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
 </ul></li>
 <li>Licence: slides and images are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
 </ul>
 </div>
+
 <div class="footnotes slide">
 <hr />
 <ol>
-<li id="fn1"><p>even in the US as attested to by HathiTrust<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>even in the US as attested to by HathiTrust<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 </body>
