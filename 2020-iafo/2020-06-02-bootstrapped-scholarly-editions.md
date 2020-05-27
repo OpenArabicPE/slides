@@ -44,9 +44,9 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-ifao/](https://OpenArabicPE.
     + Active **destruction** of cultural artefacts: iconoclasm, neoliberalism
     + **Decay** through neglect: fragile materiality
 2. Access:
-    + Absence / destruction of infrastructure / channels of knowledge transmission: lack of access to institutions, hardware, software, internet connections
+    + absence of infrastructure / channels of knowledge transmission
     + widely-dispersed collections
-    + absence of technologies: OCR
+    <!-- + absence of technologies: OCR -->
     <!-- + technical skills: lack of basic scripting skills -->
 
 ## 1.2 A two-fold problem
@@ -65,7 +65,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-ifao/](https://OpenArabicPE.
     - limited data
     - limited metadata
 
-## 1.3 Digitisation as problem(s)
+## 1.3 Digitisation as problem(s): expensive
 <!-- elaborate the problems:-->
 
 It's **labour and resource intensive**. It really is!
@@ -79,24 +79,50 @@ It's **labour and resource intensive**. It really is!
     - identify entities and link them to authority files
 3. host, share and preserve the data
 
-## 1.3 Digitisation as problem(s)
+## 1.3 Digitisation as problem(s): the digital divide
+
+|           -           |    Global North   |    Global South   |
+|-----------------------|-------------------|-------------------|
+| hardware              | producers         | consumers         |
+| software              | producers         | consumers         |
+| standards             | producers         | consumers         |
+| language/script       | local             | foreign           |
+| funding               | plenty, local     | limited, foreign  |
+| institutional backing | plenty            | few               |
+| internet              | fast and reliable | slow and volatile |
+| electricity           | sure              | volatile          |
 
 ![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/maps/map_dhcenters.png)
 
 # 1.4 State of digitisation
 ## 1.4.1 state of digitisation: text
 
+- Automated transcriptions (OCR): [HathiTrust](https://www.hathitrust.org/), East View's [Global Press Archive (GPA)](https://www.eastview.com/resources/gpa/crl-mena/)
+    + partially hidden behind paywalls, geo-fencing
+    + unknown quality but commonly extremly bad
+    + no structural mark-up
+    + proprietary interfaces, no APIs
 - "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
     + lack of / faulty metadata
     + unknown editing principles
     + unknown quality
     + very limited structural mark-up
     + cannot be reliably cited
-- Automated transcriptions (OCR): [HathiTrust](https://www.hathitrust.org/), East View's [Global Press Archive (GPA)](https://www.eastview.com/resources/gpa/crl-mena/)
-    + partially hidden behind paywalls, geo-fencing
-    + unknown quality but commonly extremly bad
-    + no structural mark-up
-    + proprietary interfaces, no APIs
+
+## 1.4.1 state of digitisation: text
+
+Current state of automatically generated text layers is ridiculous
+
+<div class="c_width-50 c_left">
+
+![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), state of OCR (only visible to US IPs)](../assets/hathi_muqtabas-ocr-3.png)
+
+</div>
+<div class="c_width-50 c_right">
+
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
+
+</div>
 
 ## 1.4.1 state of digitisation: text
 
@@ -113,38 +139,47 @@ It's **labour and resource intensive**. It really is!
 
 </div>
 
-## 1.4.1 state of digitisation: text
-
-<div class="c_width-50 c_left">
-
-![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), state of OCR (only visible to US IPs)](../assets/hathi_muqtabas-ocr-3.png)
-
-</div>
-<div class="c_width-50 c_right">
-
-![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
-
-</div>
-
 ## 1.4.2 state of digitisation: facsimiles
 
 Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/project/EAP119), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [*arshīf al-majallāt al-adabiyya wa-l-thaqafiyya al-ʿarabiyya*](http://archive.alsharekh.org/newmagazineYears/125) <!-- formerly sakhrit -->
 
 + lack of metadata
 + limited licences, paywalls
++ limited use of standards (e.g. IIIF)
++ UIs not suited to RTL and limited to English
 + no or very bad text layers
 
 ## 1.4.2 state of digitisation: facsimiles
 
+<div class="c_width-60 c_left">
+
 ![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif.png)
 
+</div><div class="c_width-30 c_right">
+
+- good:
+    + IIIF
+    + correct reading order
+- bad:
+    + proprietary UI
+    + English UI only
+    + no browsing below the volume level
+
+</div>
+
 ## 1.4.2 state of digitisation: facsimiles
+
+The result of ever-extended copyright: Fear and geofencing
+
+<div class="c_width-50 c_left">
 
 ![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
 
-## 1.4.2 state of digitisation: facsimiles
+</div><div class="c_width-50 c_right">
 
 ![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-2.png)
+
+</div>
 
 ## 1.4.2 state of digitisation: "fakesimiles"
 
@@ -170,7 +205,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 1.4.3 state of digitisation: bibliographic metadata
 
-- needs:
+- needs: citation and discovery
     + reliable bibliographic metadata on the article level
     + across periodicals
 - reality:
@@ -228,15 +263,11 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 3. [Static web-view](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)<!--  (doesn't require a permanent internet connection) -->: side-by-side view of facsimiles and text
 4. Access to bibliographic metadata through a public [Zotero group](https://www.zotero.org/groups/openarabicpe)
 
-<!-- mention: process of cleaning data and disambiguation of entities -->
-
-<!-- ![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png) -->
-
 ## 2.3 Summary
 
 ![Figure: Project scheme](../assets/OpenArabicPE_components-layer-1-4.png)
 
-# 3. Implementation Open Arabic Periodical Editions (OpenArabicPE)
+# 3. Implementation: Open Arabic Periodical Editions (OpenArabicPE)
 ## 3. The corpus
 
 | periodical                                                                          | doi                                                                | volumes    | issues    | articles    | words      |
@@ -255,14 +286,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ![](../assets/OpenArabicPE_components-layer-1-2.png)
 
-
 ## 3.1 Components: Generate a TEI edition
 
 - scrape the [digital text from *shamela.ws*](http://shamela.ws/index.php/book/26523)
 - transform it into [TEI XML](http://www.tei-c.org): semi-automatically (mostly XSLT)
     + documented URI design to reference all elements
 - add structural mark-up (sections, articles, heads, authors ...): semi-automatically
-- link to digital facsimiles from the [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/database/overview_item.a4d?catId=809;r=12316) and [HathiTrust](http://catalog.hathitrust.org/Record/100658549) or produce your own imagery: semi-automatically (mostly manually)
+- link to digital facsimiles from the [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), [HathiTrust](http://hathitrust.org/) and [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) or produce your own imagery: semi-automatically
 - host everything but images on [GitHub](https://www.github.com)
     + distributed version control
     + attribution of authorship
@@ -287,7 +317,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
     </front>
     <body xml:id="body_1.d1e1485" xml:lang="ar">
         <pb corresp="file:../epub/26523/OEBPS/xhtml/P4092.xhtml" ed="shamela" n="n62-p1" xml:id="pb_1.d1e1487"/>
-        <div type="article" xml:id="div_2.d1e1491" xml:lang="ar">
+        <div type="item" subtype="article" xml:id="div_2.d1e1491" xml:lang="ar">
             <head xml:id="head_1.d1e1493" xml:lang="ar">الفتوى في الإسلام</head>
             <p xml:id="p_15.d1e1496" xml:lang="ar">تابع ل <ref target="oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517" xml:id="ref_5.d1e1694">ما في الجزء الماضي</ref></p>
             <div type="section" xml:id="div_2.d1e1499" xml:lang="ar">
@@ -321,14 +351,14 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 Copyright depends on the jurisdiction of creators, distributors, etc.
 
-1. text of *al-Muqtabas*
+1. text
     + is in the **public domain**: transcription and imaging is **legal**.^[even in the US as attested to by HathiTrust]
     + the transcribers do not / cannot claim copyright: copying is **legal**
-2. images of *al-Muqtabas*
+2. images
     + digital files are protected by copyright: use is subject to licence, linking is **legal**
     + download and redistribution: almost certainly **illegal**
-3. digital edition of *al-Muqtabas*
-    + all our work is licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+3. digital edition
+    + licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ## 3.2 Core feature: Continuous improvement
 
@@ -358,23 +388,33 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.3 Core feature: web-view
 
-- **open**, **free-of-charge**, **client-based**
-- Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
-- human-readable and static web-view (either rawgit or gh-pages)
-    + generated on-the-fly by the user's browser using XSLT 1 to transform the TEI XML files to HTML.
-    + can be run without an internet connection and with local facsimiles.
-- parallel display of text and facsimile
-    + simple changes to display different facsimiles
-- link to metadata on the article level (MODS, BibTeX)
-- the code is shared with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/) on [GitHub](https://github.com/tillgrallert/tei-boilerplate-arabic-editions)
+![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
 
 ## 3.3 Core feature: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
+- **open**, **free-of-charge**, **client-based**
+- Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
+- static web-view hosted on [gh-pages](https://pages.github.com/)
+    + generated on-the-fly by the user's browser using XSLT 1
+    + works without an internet connection and with local facsimiles.
+- parallel display of text and facsimile
+- link to metadata on the article level (MODS, BibTeX)
+- Available on [GitHub](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ## 3.4 Core feature: Zotero group
 
+<div class="c_width-60 c_left">
+
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": list view](../assets/zotero-group_openarabicpe-search.png)
+
+</div><div class="c_width-30 c_right">
+
+- entry into editions
+- search metadata across periodicals
+- (potentially) search full-text
+
+</div>
+
 
 ## 3.4 Core feature: Zotero group
 
@@ -382,8 +422,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
 
-</div>
-<div class="c_width-50 c_right">
+</div><div class="c_width-50 c_right">
 
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details.png)
 
@@ -411,26 +450,12 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 </div>
 
 
-# 4. To do
-## ongoing work
-
-- Editorial decisions: TEI schema design
-    <!-- + TEI is rooted in the western episteme -->
-- Editorial work:
-    + correcting transcriptions
-    + add non-Arabic words omitted by *shamela.ws*
-    + add footnotes
-- Web-display:
-    + needs some polishing
-    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
-- Scanning:
-
-# 5. Experiences
+# 4. Concluding remarks
 ## simple, fast, sustainable
 
 - Simple technologies and relatively little coding needed:
     + Initial project set-up took less than four weeks of after-hour labour
-- Hosting, collaborative editing, long-term preservation and DOIs are provided free of cost
+- Hosting, collaborative editing, long-term preservation and DOIs are provided **free of cost**
 - Core (but simple) features **cannot** be automated:
     + c.7000 page breaks were manually tagged
     + does **not** require knowledge of XML, TEI or access to more than a syntax-aware text editor.
@@ -440,13 +465,16 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 <!-- - TEI editing
     - requires some training
     - patchy support of Arabic across operating systems, Java versions -->
-   <!--  + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day. -->
-    <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
-        + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
-        + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374)
-    -->
 
-## Workflow
+## problems: dependencies
+
+- Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box -->
+- Reliance on external data providers: link rot
+    - links to facsimiles broke twice in four years
+- Reliance on free tools and services: link rot
+    + URLs to our editions had to be changed once
+
+## Workflow for bootstrapping
 
 1. get the data
     - facsimiles
@@ -454,28 +482,27 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
         + scan your physical artefacts*
     - text
         + scrape existing transcriptions
-        + use [Transkribus]()* with our model trained on 1000+ pages from the OpenArabicPE corpus
+        + use [Transkribus](https://transkribus.eu/)* with our model trained on 1000+ pages from the OpenArabicPE corpus
 2. save and share the data
     - facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
     - working copy of everything else: [GitHub](https://github.com/)
     - longterm preservation: [Zenodo](https://zenodo.org/)
         + make sure to add ORCIDs for all contributors
-3. edit the data
+3. edit the data: support for RTL in free text editors varies between OS
 4. disseminate the data
-    - host webviews, project blogs: [gh-pages]()
+    - host webviews, project blogs: [gh-pages](https://pages.github.com/)
     - bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
 
-# 6. Conclusion
-## Summary: OpenArabicPE
+## Summary
 
-- open scholarly **digital editions** of [*[Majallat] al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas) and [*al-Ḥaqāʾiq*](https://github.com/OpenArabicPE/digital-haqaiq) providing
-    + TEI XML files (transcription and links to facsimiles)
-    + plain text files
-    + MODS and BibTeX files for every article
+- open scholarly **digital editions** of [*al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas), [*al-Ḥaqāʾiq*](https://github.com/OpenArabicPE/digital-haqaiq), [*al-Manār*](https://www.github.com/openarabicpe/journal_al-manar), [*al-Ustādh*](https://www.github.com/openarabicpe/journal_al-ustadh), [*al-Zuhūr*](https://www.github.com/openarabicpe/journal_al-zuhur), and [*Lughat al-ʿArab*](https://www.github.com/openarabicpe/journal_lughat-al-arab) providing
+    + TEI XML files (transcription with links to facsimiles)
+    + plain text and markdown files
+    + bibliographic metadata on the article level (MODS, BibTeX)
     + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
 - validated open **bibliographic metadata** (MODS) for
     - [*al-Jinān* (1875--1885)](https://github.com/OpenArabicPE/journal_al-jinan), [*al-Quds* (#1--391, 1908--14)](https://github.com/OpenArabicPE/newspaper_al-quds), [*Ḥadīqat al-Akhbār* (#1--357, 1858--65)](https://github.com/OpenArabicPE/newspaper_hadiqat-al-akhbar), [*Thamarāt al-Funūn* (#1--1695, 1875--1908)](https://github.com/OpenArabicPE/newspaper_thamarat-al-funun)
-- within a framework (git, [GitHub](https://github.com/openarabicpe), [Zenodo](https://zenodo.org/), [Zotero](https://www.zotero.org/groups/openarabicpe/items/)) that allows for / provides
+- within a framework (git, [GitHub](https://github.com/openarabicpe), [Zenodo](https://zenodo.org/), [Zotero](https://www.zotero.org/groups/openarabicpe/items/)) that allows for
     + collaborative, open, version-controlled improvements
     + re-use of the data, metadata and tools
     + long-term preservation and DOIs
