@@ -638,7 +638,7 @@ tables
 *******************************/
 
 table {
-  display:block;
+  display: table;
   /* the table should be centred on the page*/
   margin-left: auto;
   margin-right: auto;
