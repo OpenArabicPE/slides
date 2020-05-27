@@ -65,46 +65,25 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-ifao/](https://OpenArabicPE.
     - limited data
     - limited metadata
 
-
 ## 1.3 Digitisation as problem(s)
 <!-- elaborate the problems:-->
 
-1. getting the data is **labour and resource intensive**
-    - text: transcription
-        - OCR and HTR are still insufficient
-        - require ground truth and extensive training
+It's **labour and resource intensive**. It really is!
+
+1. get the data
+    - text: transcription, train OCR/HTR
     - facsimiles: scanning
-        + copyright
-        + amount of data
-    - bibliographic metadata:
-2. transforming the data into human and machine readable editions is **labour and resource intensive**
+    - bibliographic metadata: transcription, validated iterative generation
+2. transform the data into a human and machine readable edition
     - model the source
     - identify entities and link them to authority files
-3. hosting, sharing and preserving the data is **labour and resource intensive**
+3. host, share and preserve the data
 
 ## 1.3 Digitisation as problem(s)
 
 ![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/maps/map_dhcenters.png)
 
-## 1.4 State of digitisation
-<!-- This should be a demo session, otherwise one needs screenshots -->
-<!-- if the sub slides in this section are used, the content of this slide should be deleted -->
-
-1. Text: "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
-    + lack of / faulty metadata
-    + unknown editing principles
-    + unknown quality
-    + very limited structural mark-up
-    + cannot be reliably cited
-2. Facsimiles: [Endangered Archives Programme (EAP)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust](http://catalog.hathitrust.org/Record/100658549), [Institut du Monde Arabe](http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269) et al.
-    + lack of metadata
-    + limited licences, paywalls
-    + no or very bad text layers
-3. Metadata search within and across periodicals
-    + **inexistent**
-
-<!-- the following slides are too detailed for many purposes -->
-
+# 1.4 State of digitisation
 ## 1.4.1 state of digitisation: text
 
 - "crowd"-sourced transcriptions / gray online libraries, e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
