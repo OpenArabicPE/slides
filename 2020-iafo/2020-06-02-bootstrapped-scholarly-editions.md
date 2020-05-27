@@ -81,7 +81,7 @@ It's **labour and resource intensive**. It really is!
 
 ## 1.3 Digitisation as problem(s): the digital divide
 
-|           -           |    Global North   |    Global South   |
+|                       |    Global North   |    Global South   |
 |-----------------------|-------------------|-------------------|
 | hardware              | producers         | consumers         |
 | software              | producers         | consumers         |
@@ -91,6 +91,8 @@ It's **labour and resource intensive**. It really is!
 | institutional backing | plenty            | few               |
 | internet              | fast and reliable | slow and volatile |
 | electricity           | sure              | volatile          |
+
+## 1.3 Digitisation as problem(s): the digital divide
 
 ![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/maps/map_dhcenters.png)
 
