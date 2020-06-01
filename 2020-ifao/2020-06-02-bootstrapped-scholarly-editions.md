@@ -476,24 +476,36 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Reliance on free tools and services: link rot
     + URLs to our editions had to be changed once
 
-## Workflow for bootstrapping
+## Summary: Workflow for bootstrapping
+### 1. get the data
 
-1. get the data
-    - facsimiles
-        + link to existing facsimiles, preferably through IIIF
-        + scan your physical artefacts*
-    - text
-        + scrape existing transcriptions
-        + use [Transkribus](https://transkribus.eu/)* with our model trained on 1000+ pages from the OpenArabicPE corpus
-2. save and share the data
-    - facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
-    - working copy of everything else: [GitHub](https://github.com/)
-    - longterm preservation: [Zenodo](https://zenodo.org/)
-        + make sure to add ORCIDs for all contributors
-3. edit the data: support for RTL in free text editors varies between OS
-4. disseminate the data
-    - host webviews, project blogs: [gh-pages](https://pages.github.com/)
-    - bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
+- facsimiles
+    + link to existing facsimiles, preferably through IIIF
+    + scan your physical artefacts*
+- text
+    + scrape existing transcriptions
+    + use [Transkribus](https://transkribus.eu/)* with our model trained on 1000+ pages from the OpenArabicPE corpus
+
+## Summary: Workflow for bootstrapping
+### 2. save and share the data
+
+- facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
+- working copy of everything else: [GitHub](https://github.com/)
+- longterm preservation: [Zenodo](https://zenodo.org/)
+    + make sure to add ORCIDs for all contributors
+
+## Summary: Workflow for bootstrapping
+### 3. edit the data
+
+- support for RTL in free text editors varies between OS
+- use open, publicly-funded (web)editors, such as [TextGrid Lab](https://textgrid.de/index)
+- make use of version control and stable IDs (e.g. [ORCID](https://orcid.org)) for transparent **transparent authorship attribution**
+
+## Summary: Workflow for bootstrapping
+### 4. disseminate the data
+
+- host webviews, project blogs: [gh-pages](https://pages.github.com/)
+- bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
 
 ## Summary
 
