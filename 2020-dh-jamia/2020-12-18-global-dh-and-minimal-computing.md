@@ -25,9 +25,9 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-dh-jamia/](https://OpenArabi
 
 <cite>* Gil, Alex and Élika Ortega. "Global Outlooks in Digital Humanities: Multilingual Practices and Minimal Computing." In *Doing Digital Humanities: Practice, Training, Research*. Edited by Constance Crompton, Richard J Lane and Ray Siemens. Abingdon: Routledge, 2016: 22-34.</cite>
 
-Preservation of and access to cultural artefacts.
+- We need **preservation** of and **access** to cultural artefacts.
 
-- Societies of the Global South have a right to unhampered access to their own cultural record and on their own terms---a cultural record that is frequently held by institutions of the Global North.
+- Societies of the Global South have a **right** to unhampered access to their **own cultural record**---a cultural record that is frequently held by institutions of the Global North---and **on their own terms**
 
 
 ## Digitisation as solution
@@ -51,17 +51,18 @@ Preservation of and access to cultural artefacts.
 </div>
 
 # 1. Digitisation != online != accessible
-## 1.1 The first level of inaccessibility: the "original" artefact
+# 1.1 The first level of inaccessibility: limited knowledge of the "original" artefact
 
-- unknown history of individual papers
+<!-- - obscurity: unknown history of individual periodical titles -->
+<!-- - limited knowledge of the original artefact -->
 
 # 1.2 The second level of inaccessibility: survival and collection bias leads to digitisation bias
 ## 1.2.1 survival and collection bias
 
-1. Preservation:
+1. survival / preservatiopn:
     + Active **destruction** of cultural artefacts: iconoclasm, neoliberalism
     + **Decay** through neglect: fragile materiality
-2. Access:
+2. collection / access:
     + absence of infrastructure / channels of knowledge transmission
     + widely-dispersed collections
     + limited catalogues
