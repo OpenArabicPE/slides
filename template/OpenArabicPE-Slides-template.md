@@ -173,7 +173,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 <div class="c_width-30">
 
-![facsimile of the original from EAP](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
+![facsimile of the original from [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/2000,/0/default.jpg)](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
 
 </div><div class="c_width-30">
 
@@ -378,7 +378,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 - **open**, **free-of-charge**, **client-based**
 - Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
-- human-readable and static web-view (either rawgit or gh-pages)
+- human-readable and static web-view hosted on `gh-pages`
     + generated on-the-fly by the user's browser using XSLT 1 to transform the TEI XML files to HTML.
     + can be run without an internet connection and with local facsimiles.
 - parallel display of text and facsimile
@@ -424,7 +424,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 </div><div class="c_width-50 c_right">
 
-![](../assets/zenodo_muqtabas.png)
+![Archived release of *al-Muqtabas* on [Zenono](https://doi.org/10.5281/zenodo.597319)](../assets/zenodo_muqtabas.png)
 
 </div>
 
@@ -709,7 +709,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 - Simple technologies and relatively little coding needed:
     + Initial project set-up took less than four weeks of after-hour labour
-- Hosting, collaborative editing, long-term preservation and DOIs are provided free of cost
+- Hosting, collaborative editing, long-term preservation and DOIs are provided **free of charge**
 - Core (but simple) features **cannot** be automated:
     + all c.7000 page were manually tagged
     + does **not** require knowledge of XML, TEI or access to more than a syntax-aware text editor.
@@ -738,10 +738,10 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     - facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
     - working copy of everything else: [GitHub](https://github.com/)
     - longterm preservation: [Zenodo](https://zenodo.org/)
-        + make sure to add ORCIDs for all contributors
+        + make sure to add [ORCID](https://orcid.org)s for all contributors
 3. edit the data
 4. disseminate the data
-    - host webviews, project blogs: [gh-pages]()
+    - host webviews, project blogs: [gh-pages](https://pages.github.com/)
     - bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
 
 # 6. Conclusion

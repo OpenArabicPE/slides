@@ -1,44 +1,62 @@
 ---
-title: "Open Arabic Periodical Editions (OpenArabicPE)"
+title: "Global DH and minimal computing"
+subtitle: "bootstrapping digital editions"
 author: Till Grallert
-date: 2020-06-02
-duration: 20
+date: 2020-12-18
+duration: 30
 ---
 
-<!-- To do -->
-<!-- - comments on collaborations -->
-
-
-## Open Arabic Periodical Editions: a framework for bootstrapped scholarly editions outside the Global North
+## Global DH and minimal computing: *Open Arabic Periodical Editions* as a framework for bootstrapped scholarly editions outside the Global North
 
 Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com/tillgrallert)
 
-Journée d’études 'L’interopérabilité des données de la recherche: textes, images, bases de données', IFAO, 2 June 2020
+International Workshop: "Digital Humanities: Theory and Praxis",  Jamia Millia Islamia, Department of English, 18 December 2020
 
-Slides: [https://OpenArabicPE.github.io/slides/2020-ifao/](https://OpenArabicPE.github.io/slides/2020-ifao/index.html)
+Slides: [https://OpenArabicPE.github.io/slides/2020-dh-jamia/](https://OpenArabicPE.github.io/slides/2020-dh-jamia/index.html)
 
-## Outline of today's paper
+# Introduction
+## Outline
 
-1. Problem: The promised wasteland of *digitised* Arabic periodicals
-2. Idea: Bootstrapping digital scholarly editions
-3. Implementation: Open Arabic Periodical Editions
+1. Affordances of the Global South: five levels of inaccessibilities of cultural artefacts
+2. Idea: Bootstrapping to address some inaccessibilities
+3. A sample implementation: Open Arabic Periodical Editions
 
-# 1. The promised wasteland of *digitised* Arabic periodicals
-## 1.1 Importance of mundane texts / periodicals
+## "What do we need?" *
 
-<!-- add core questions of today's presentation  -->
+<cite>* Gil, Alex and Élika Ortega. "Global Outlooks in Digital Humanities: Multilingual Practices and Minimal Computing." In *Doing Digital Humanities: Practice, Training, Research*. Edited by Constance Crompton, Richard J Lane and Ray Siemens. Abingdon: Routledge, 2016: 22-34.</cite>
 
-- They are at the core of various discourses
-    + Modernity / -ism at the end of empire
-    + Arabic renaissance
-    + Arab nationalism
-    + Islamic reform movement
-- They form large corpora with an equal distribution along a temporal axis (*al-Muqtabas*: 12 yrs, *al-Manār*: 43 yrs, *al-Muqtaṭaf*: 76 yrs)
-    + linguistic analysis
-    + historical semantics
-    + rich data sets for social history
+Preservation of and access to cultural artefacts.
 
-## 1.2 A two-fold problem
+- Societies of the Global South have a right to unhampered access to their own cultural record and on their own terms---a cultural record that is frequently held by institutions of the Global North.
+
+
+## Digitisation as solution
+
+<div class="c_width-50 c_left">
+
+1. Promise: instant **access** to 100s of **digitised** periodicals and 100.000s of issues
+2. Expectations: answers to core questions
+    - extent of text re-use
+    - identify authors
+    - track authors across periodicals
+2. Reality:
+    - limited and unequal access
+    - limited and unequal data
+    - limited and unequal metadata
+</div>
+<div class="c_width-50 c_right">
+
+![Network of periodicals mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*](../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png)
+
+</div>
+
+# 1. Digitisation != online != accessible
+## 1.1 The first level of inaccessibility: the "original" artefact
+
+- unknown history of individual papers
+
+# 1.2 The second level of inaccessibility: survival and collection bias leads to digitisation bias
+## 1.2.1 survival and collection bias
 
 1. Preservation:
     + Active **destruction** of cultural artefacts: iconoclasm, neoliberalism
@@ -46,29 +64,25 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-ifao/](https://OpenArabicPE.
 2. Access:
     + absence of infrastructure / channels of knowledge transmission
     + widely-dispersed collections
+    + limited catalogues
     <!-- + absence of technologies: OCR -->
     <!-- + technical skills: lack of basic scripting skills -->
 
-## 1.2 A two-fold problem
+## 1.2.1 survival and collection bias
 
-![Map: geographic distribution of library holdings of *al-Muqtabas*](../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png)
+![Map: geographic distribution of library holdings of *al-Muqtabas*](../assets/maps/map-holdings_al-muqtabas-vol_1-9.png)
 
-## 1.3 Digitisation as solution
+## 1.2.2 digitisation bias
 
-1. Promise: instant **access** to 100s of **digitised** periodicals and 100.000s of issues
-2. Expectations: answers to core questions
-    - extent of text re-use
-    - identify authors
-    - track authors across periodicals
-2. Reality
-    - limited access
-    - limited data
-    - limited metadata
+- digitisation is done piecemeal by individual holding institutions
+- digitisation is expensive
+    <!-- + various levels of sub-contractors not familiar with the cultural artefact -->
+- curators need to justify expenses
+    <!-- + fancy artefacts get preference -->
 
-## 1.3 Digitisation as problem(s): expensive
-<!-- elaborate the problems:-->
+## 1.2.2 digitisation bias
 
-It's **labour and resource intensive**. It really is!
+Digitisation is **labour and resource intensive**. It really is expensive!
 
 1. get the data
     - text: transcription, train OCR/HTR
@@ -78,25 +92,57 @@ It's **labour and resource intensive**. It really is!
     - model the source
     - identify entities and link them to authority files
 3. host, share and preserve the data
+    - *ad infinitum*?
 
-## 1.3 Digitisation as problem(s): the digital divide
+# 1.3 The third level of inaccessibility: Digital infrastructures, despite all promises towards the opposite, are rooted in the epistemic hegemony of late twentieth-century, anglo-american neoliberal capitalism.
+## 1.3 socio-technical infrastructures
 
-|                       |    Global North   |    Global South   |
-|-----------------------|-------------------|-------------------|
-| hardware              | producers         | consumers         |
-| software              | producers         | consumers         |
-| standards             | producers         | consumers         |
-| language/script       | local             | foreign           |
-| funding               | plenty, local     | limited, foreign  |
-| institutional backing | plenty            | few               |
-| internet              | fast and reliable | slow and volatile |
-| electricity           | sure              | volatile          |
+- digitisation is expensive (remember?!)
+    + workers are not familiar with the artefacts they are digitising
+    + the technology stack is not tailored to the artefact
+- interfaces designed to maximise return-on-investment for the vendor
+    + data silos
+    + no APIs
+    + data is not shared in standard-compliant formats
+- interfaces and data modells ill-suited to the material and the communities they belong to
+    + Western concepts, languages, and scripts as the norm
+- political nature of unicode et al.
+    + Real-world phenomena cannot be recorded with existing technologies
 
-## 1.3 Digitisation as problem(s): the digital divide
 
-![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/maps/map_dhcenters.png)
+## 1.3 geofencing and paywalls
 
-# 1.4 State of digitisation
+The result of ever-extended copyright: Fear and geofencing
+
+<div class="c_width-50 c_left">
+
+![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
+
+</div><div class="c_width-50 c_right">
+
+![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-2.png)
+
+</div>
+
+## 1.3 proprietary, English-only UI
+
+<div class="c_width-60 c_left">
+
+![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif.png)
+
+</div><div class="c_width-30 c_right">
+
+- good:
+    + IIIF
+    + correct reading order
+- bad:
+    + proprietary UI
+    + English UI only
+    + no browsing below the volume level
+
+</div>
+
+# 1.4 The fourth level of inaccessibility: the digital artefact itself
 ## 1.4.1 state of digitisation: text
 
 - Automated transcriptions (OCR): [HathiTrust](https://www.hathitrust.org/), East View's [Global Press Archive (GPA)](https://www.eastview.com/resources/gpa/crl-mena/)
@@ -191,7 +237,7 @@ The result of ever-extended copyright: Fear and geofencing
 
 <div class="c_width-30">
 
-![facsimile of the original from EAP](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
+![facsimile of the original from [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/2000,/0/default.jpg)](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
 
 </div><div class="c_width-30">
 
@@ -227,7 +273,39 @@ The result of ever-extended copyright: Fear and geofencing
 
 </div>
 
-# 2. Idea: Bootstrapping digital scholarly editions
+# 1.5 The fifth level of inaccessibility: affordances of the Global South
+## 1.5 a digital divide
+
+|                       |    Global North   |    Global South   |
+|-----------------------|-------------------|-------------------|
+| hardware              | producers         | consumers         |
+| software              | producers         | consumers         |
+| standards             | producers         | consumers         |
+| language/script       | local             | foreign           |
+| funding               | plenty, local     | limited, foreign  |
+| institutional backing | plenty            | few               |
+| internet              | fast and reliable | slow and volatile |
+| electricity           | sure              | volatile          |
+
+## 1.5 a digital divide
+
+![Global [map of DH centers](http://dhcenternet.org/centers)](../assets/maps/map_dhcenters.png)
+
+## 1.5 socio-technical dependencies
+
+existing digital remediations require:
+
+- good knowledge of English (access to interfaces, computing skills)
+- knowledge of means to circumvent geo-fencing
+- membership in wealthy institutions (access to subscriptions)
+
+## 1.5 infrastructural dependencies
+
+- digital remediations depend on access to devices, internet connections, and electricity.
+- neither can be taken for granted for the societies of the Global South.
+
+
+# 2. Idea: Bootstrap digital scholarly editions in order to address these levels of inaccessibility
 ## 2.1 Aims and principles
 
 1. ideas:
@@ -242,6 +320,9 @@ The result of ever-extended copyright: Fear and geofencing
 3. principles
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open**, **free**, and **simple** formats and tools
+4. inspired by:
+    - [minimal computing](http://go-dh.github.io/mincomp/)
+    - [pirate care](https://pirate.care)
 
 ## 2.2 Deliverables: basic components
 
@@ -292,8 +373,7 @@ The result of ever-extended copyright: Fear and geofencing
 
 - scrape the [digital text from *shamela.ws*](http://shamela.ws/index.php/book/26523)
 - transform it into [TEI XML](http://www.tei-c.org): semi-automatically (mostly XSLT)
-    + documented URI design to reference all elements
-- add structural mark-up (sections, articles, heads, authors ...): semi-automatically
+- modelling: add structural mark-up (sections, articles, heads, authors ...): semi-automatically
 - link to digital facsimiles from the [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), [HathiTrust](http://hathitrust.org/) and [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) or produce your own imagery: semi-automatically
 - host everything but images on [GitHub](https://www.github.com)
     + distributed version control
@@ -447,17 +527,49 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 </div><div class="c_width-50 c_right">
 
-![](../assets/zenodo_muqtabas.png)
+![Archived release of *al-Muqtabas* on [Zenono](https://doi.org/10.5281/zenodo.597319)](../assets/zenodo_muqtabas.png)
 
 </div>
 
 
-# 4. Concluding remarks
+# 4. Conclusion
+## Summary: Workflow for bootstrapping
+### 1. get the data
+
+- facsimiles
+    + link to existing facsimiles, preferably through IIIF
+    + scan your physical artefacts*
+- text
+    + scrape existing transcriptions
+    + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
+
+## Summary: Workflow for bootstrapping
+### 2. save and share the data
+
+- facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
+- working copy of everything else: [GitHub](https://github.com/)
+- longterm preservation: [Zenodo](https://zenodo.org/)
+    + make sure to add [ORCID](https://orcid.org)s for all contributors
+
+## Summary: Workflow for bootstrapping
+### 3. edit the data
+
+- support for RTL in free text editors varies between OS
+- use open, publicly-funded (web)editors, such as [TextGrid Lab](https://textgrid.de/index)
+- make use of version control and stable IDs (e.g. [ORCID](https://orcid.org)) for **transparent authorship attribution**
+
+## Summary: Workflow for bootstrapping
+### 4. disseminate the data
+
+- generate webviews: XSLT1 on clients; GitHub actions to generate static webpages
+- host webviews, project blogs: [gh-pages](https://pages.github.com/)
+- bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
+
 ## simple, fast, sustainable
 
 - Simple technologies and relatively little coding needed:
     + Initial project set-up took less than four weeks of after-hour labour
-- Hosting, collaborative editing, long-term preservation and DOIs are provided **free of cost**
+- Hosting, collaborative editing, long-term preservation and DOIs are provided **free of charge**
 - Core (but simple) features **cannot** be automated:
     + c.7000 page breaks were manually tagged
     + does **not** require knowledge of XML, TEI or access to more than a syntax-aware text editor.
@@ -476,60 +588,12 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Reliance on free tools and services: link rot
     + URLs to our editions had to be changed once
 
-## Summary: Workflow for bootstrapping
-### 1. get the data
-
-- facsimiles
-    + link to existing facsimiles, preferably through IIIF
-    + scan your physical artefacts*
-- text
-    + scrape existing transcriptions
-    + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
-
-## Summary: Workflow for bootstrapping
-### 2. save and share the data
-
-- facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
-- working copy of everything else: [GitHub](https://github.com/)
-- longterm preservation: [Zenodo](https://zenodo.org/)
-    + make sure to add ORCIDs for all contributors
-
-## Summary: Workflow for bootstrapping
-### 3. edit the data
-
-- support for RTL in free text editors varies between OS
-- use open, publicly-funded (web)editors, such as [TextGrid Lab](https://textgrid.de/index)
-- make use of version control and stable IDs (e.g. [ORCID](https://orcid.org)) for transparent **transparent authorship attribution**
-
-## Summary: Workflow for bootstrapping
-### 4. disseminate the data
-
-- generate webviews: XSLT1 on clients; GitHub actions to generate static webpages
-- host webviews, project blogs: [gh-pages](https://pages.github.com/)
-- bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
-
-## Summary
-
-- open scholarly **digital editions** of [*al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas), [*al-Ḥaqāʾiq*](https://github.com/OpenArabicPE/digital-haqaiq), [*al-Manār*](https://www.github.com/openarabicpe/journal_al-manar), [*al-Ustādh*](https://www.github.com/openarabicpe/journal_al-ustadh), [*al-Zuhūr*](https://www.github.com/openarabicpe/journal_al-zuhur), and [*Lughat al-ʿArab*](https://www.github.com/openarabicpe/journal_lughat-al-arab) providing
-    + TEI XML files (transcription with links to facsimiles)
-    + plain text and markdown files
-    + bibliographic metadata on the article level (MODS, BibTeX)
-    + customised version of TEI Boilerplate (XSLT and CSS) with stable URLs for every element
-- validated open **bibliographic metadata** (MODS) for
-    - [*al-Jinān* (1875--1885)](https://github.com/OpenArabicPE/journal_al-jinan), [*al-Quds* (#1--391, 1908--14)](https://github.com/OpenArabicPE/newspaper_al-quds), [*Ḥadīqat al-Akhbār* (#1--357, 1858--65)](https://github.com/OpenArabicPE/newspaper_hadiqat-al-akhbar), [*Thamarāt al-Funūn* (#1--1695, 1875--1908)](https://github.com/OpenArabicPE/newspaper_thamarat-al-funun)
-- within a framework (git, [GitHub](https://github.com/openarabicpe), [Zenodo](https://zenodo.org/), [Zotero](https://www.zotero.org/groups/openarabicpe/items/)) that allows for
-    + collaborative, open, version-controlled improvements
-    + re-use of the data, metadata and tools
-    + long-term preservation and DOIs
-    + discovery <!-- in CLARIN -->
-
 ## Thank you!
 
-- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
+- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
-    + Slides: [https://OpenArabicPE.github.io/slides/2020-ifao/](https://OpenArabicPE.github.io/slides/2020-ifao/index.html)
-    <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> -->
-    + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), <!-- [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE/digital-haqaiq](https://www.github.com/OpenArabicPE/digital-haqaiq) -->
+    + Slides: [https://OpenArabicPE.github.io/slides/2020-dh-jamia/](https://OpenArabicPE.github.io/slides/2020-dh-jamia/index.html)
+    + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <grallert@orient-institut.org> <till.grallert@fu-berlin.de>
