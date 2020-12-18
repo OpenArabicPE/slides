@@ -52,10 +52,6 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-dh-jamia/](https://OpenArabi
 
 # 1. Digitisation != online != accessible
 # 1.1 The first level of inaccessibility: limited knowledge of the "original" artefact
-
-<!-- - obscurity: unknown history of individual periodical titles -->
-<!-- - limited knowledge of the original artefact -->
-
 # 1.2 The second level of inaccessibility: survival and collection bias leads to digitisation bias
 ## 1.2.1 survival and collection bias
 
@@ -562,9 +558,12 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## Summary: Workflow for bootstrapping
 ### 4. disseminate the data
 
-- generate webviews: XSLT1 on clients; GitHub actions to generate static webpages
+- generate static webviews:
+    - XSLT1 to render XML files in the client's web browser
+    - [GitHub actions](https://github.com/features/actions) to generate static webpages
 - host webviews, project blogs: [gh-pages](https://pages.github.com/)
 - bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
+- full-text search: [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
 
 ## simple, fast, sustainable
 
@@ -583,11 +582,14 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## problems: dependencies
 
-- Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box -->
 - Reliance on external data providers: link rot
     - links to facsimiles broke twice in four years
 - Reliance on free tools and services: link rot
     + URLs to our editions had to be changed once
+- XSLT1 in web browsers: will fall victim to JSON and security features
+    + over the last 5 years support has markedly decreased
+- Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box -->
+    + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!)
 
 ## Thank you!
 

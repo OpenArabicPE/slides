@@ -227,10 +227,10 @@ Till Grallert
 <h1>1. Digitisation != online != accessible</h1>
 
 </div>
-<div id="the-first-level-of-inaccessibility-limited-knowledge-of-the-original-artefact" class="slide section level1">
+
+<div id="the-first-level-of-inaccessibility-limited-knowledge-of-the-original-artefact" class="title-slide slide section level1">
 <h1>1.1 The first level of inaccessibility: limited knowledge of the “original” artefact</h1>
-<!-- - obscurity: unknown history of individual periodical titles -->
-<!-- - limited knowledge of the original artefact -->
+
 </div>
 
 <div id="the-second-level-of-inaccessibility-survival-and-collection-bias-leads-to-digitisation-bias" class="title-slide slide section level1">
@@ -1033,9 +1033,14 @@ Till Grallert
 <h1>Summary: Workflow for bootstrapping</h1>
 <h3 id="disseminate-the-data">4. disseminate the data</h3>
 <ul>
-<li>generate webviews: XSLT1 on clients; GitHub actions to generate static webpages</li>
+<li>generate static webviews:
+<ul>
+<li>XSLT1 to render XML files in the client’s web browser</li>
+<li><a href="https://github.com/features/actions">GitHub actions</a> to generate static webpages</li>
+</ul></li>
 <li>host webviews, project blogs: <a href="https://pages.github.com/">gh-pages</a></li>
 <li>bibliographic database: <a href="https://www.zotero.org/groups/openarabicpe/items/">Zotero</a></li>
+<li>full-text search: <a href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s programmable search engines</a></li>
 </ul>
 </div>
 <div id="simple-fast-sustainable" class="slide section level2">
@@ -1061,7 +1066,6 @@ Till Grallert
 <div id="problems-dependencies" class="slide section level2">
 <h1>problems: dependencies</h1>
 <ul>
-<li>Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box --></li>
 <li>Reliance on external data providers: link rot
 <ul>
 <li>links to facsimiles broke twice in four years</li>
@@ -1069,6 +1073,14 @@ Till Grallert
 <li>Reliance on free tools and services: link rot
 <ul>
 <li>URLs to our editions had to be changed once</li>
+</ul></li>
+<li>XSLT1 in web browsers: will fall victim to JSON and security features
+<ul>
+<li>over the last 5 years support has markedly decreased</li>
+</ul></li>
+<li>Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box -->
+<ul>
+<li><a href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s programmable search engines</a>: requires internet connection (and Google account!)</li>
 </ul></li>
 </ul>
 </div>

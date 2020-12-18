@@ -701,7 +701,9 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + add footnotes
 - Web-display:
     + needs some polishing
-    + search functions beyond the Zotero group and individual issues (project can be searched on GitHub)
+    + search functions beyond the Zotero group and individual issues
+        * [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+        * GitHub Search
 - Scanning:
 
 # 5. Experiences
@@ -733,16 +735,23 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
         + scan your physical artefacts*
     - text
         + scrape existing transcriptions
-        + use [Transkribus]()* with our model trained on 1000+ pages from the OpenArabicPE corpus
+        + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
 2. save and share the data
     - facsimiles: [Internet Archive](https://archive.org) (supports IIIF)
     - working copy of everything else: [GitHub](https://github.com/)
     - longterm preservation: [Zenodo](https://zenodo.org/)
         + make sure to add [ORCID](https://orcid.org)s for all contributors
 3. edit the data
+    - support for RTL in free text editors varies between OS
+    - use open, publicly-funded (web)editors, such as [TextGrid Lab](https://textgrid.de/index)
+    - make use of version control and stable IDs (e.g. [ORCID](https://orcid.org)) for **transparent authorship attribution**
 4. disseminate the data
+    - generate static webviews:
+        - XSLT1 to render XML files in the client's web browser
+        - [GitHub actions](https://github.com/features/actions) to generate static webpages
     - host webviews, project blogs: [gh-pages](https://pages.github.com/)
     - bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
+    - full-text search: [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
 
 # 6. Conclusion
 ## Summary: OpenArabicPE
