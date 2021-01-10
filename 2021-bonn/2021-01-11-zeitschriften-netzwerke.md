@@ -192,10 +192,11 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
     + Digitalität ist resourcenintensiv!
     + Hardware, Software, Standards, Infrastrukturen sind im Globalen Norden verortet
 - Digitale Unzugänglichkeit
-    + Bezahlschranken, mangelnde maschinenlesbarkeit
+    + Bezahlschranken, mangelnde maschinenlesbarkeit, Datensilos
+    + Mangelnde Kenntnisse des Materials bei den Digitalisierenden
     + ungeeigneter technischer Apparat (*technology stack*)
-        + praktisch dysfunctionales OCR
-    - mangelnde (Forschungs-) Infrastrukturen
+        + für Geisteswissenschaftler_innen praktisch dysfunctionales OCR
+    - mangelnde (Forschungs-)Infrastrukturen
 - Postkoloniale digitale Unsichtbarkeit
     + mangelnde Corpora, Normdatensätze
     + methodologische Rückständigkeit
