@@ -11,6 +11,14 @@ lang: de
 duration: 5
 ---
 
+##  Digitale Zugänge zu Periodika
+
+Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com/tillgrallert)
+
+11 Januar 2021
+
+Slides: [https://OpenArabicPE.github.io/slides/2021-bonn/](https://OpenArabicPE.github.io/slides/2021-bonn/index.html)
+
 ## Forschungsfragen
 
 - Was sind die wichtigsten Knoten (Autor_innen, Periodika, Orte etc.) im diskursiven Feld der Presse?
@@ -21,7 +29,7 @@ duration: 5
 - Rezeptionsgeschichte:
     + Wer hat was, wo und wann gelesen (und darüber geschrieben)?
 
-## Forschungsansätze
+## (Digitale) Forschungsansätze
 
 - (historische/ soziale) Netzwerkanalyse
 - Bibliometrie
