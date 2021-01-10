@@ -8,7 +8,7 @@
    http://www.w3.org/Consortium/Legal/copyright-software
 */
 
-html, div {
+html, div.slide {
   height: 100%;
 }
 
@@ -372,11 +372,14 @@ img, iframe {
 div.figure {
     width:100%;
     padding:0;
+    height: inherit;
 }
 div.figure p.caption {
     position:relative;
     float:right;
     text-align: right;
+    margin-top: 0.2em;
+    margin-bottom:0.5em;
     /*top:2em;*/
     /*max-width:15%;
     min-width: 180px;*/
@@ -484,6 +487,9 @@ code
   border: 0;
 }*/
 
+div.sourceCode {
+  margin: 10px 5px;
+}
 
 pre {
   display: block;
@@ -554,14 +560,11 @@ ul, ol {
   display: block;
   font-style: normal;
   margin-top: 0.1em;
-  /*margin-right: 1.5em;*/
   margin-bottom: 0.5em;
-  /*margin-left: 1.5em;*/
-  /*margin: 0.5em 1.5em 0.5em 1.5em;*/
   /* all lists should be centered */
-  /*text-align: left;
-  margin-right: 2em;
-  margin-left: 2em;*/
+  /*text-align: left;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 /* padding, line-height etc. for all list items */
