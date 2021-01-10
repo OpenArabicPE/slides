@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Till Grallert" />
+  <meta name="date" content="2021-01-11" />
+  <title>Digitale Zugänge zu Periodika</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+      color: black;
+  }
+  /* provide a readible font-size */
+  .sourceCode * {
+      font-size: 16px;
+  }
+  /* xml element names */
+  .xml > code span.kw {
+  	/*color: #0F0F9C;*/
+  	color: #000096;
+  	font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code span.ot {
+  	/*color:#FF8041;*/
+  	color: #FF9159;
+  }
+  /* xml attribute values */
+  .xml > code span.st {
+  	/*color:#993300;*/
+  	color: #993300;
+  }
+  /* xml comments */
+  .xml > code span.co {
+  	/*color:#167116;*/
+  	color: #2F8132;
+  	font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+  	color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  div.c_width-60 {
+      width:66%;
+      position: relative;
+      float: left;
+  }
+  div.c_width-50 {
+      width:50%;
+      position: relative;
+      float: left;
+  }
+  div.c_width-30 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  div.c_left {
+      display: block;
+      float:left;
+  }
+  div.c_right {
+      display: block;
+      float: right;
+  }
+
+  /* styles to vertically stack divs */
+
+  div.c_height-50 {
+      height: 50%;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+  	color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../js/slidy.js"></script>
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+  <meta name="duration" content="5" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Digitale Zugänge zu Periodika</h1>
+  <p class="author">
+Till Grallert
+  </p>
+  <p class="date">2021-01-11</p>
+</div>
+<div id="forschungsfragen" class="slide section level2">
+<h1>Forschungsfragen</h1>
+<ul>
+<li>Was sind die wichtigsten Knoten (Autor_innen, Periodika, Orte etc.) im diskursiven Feld der Presse?</li>
+<li>Produktionsgeschichte:
+<ul>
+<li>Wie wurden Periodika produziert?</li>
+<li>Wer verfasste die mehrheitlich anonymen Texte?</li>
+<li>Wie hoch ist die Wiederverwertungsrate?</li>
+</ul></li>
+<li>Rezeptionsgeschichte:
+<ul>
+<li>Wer hat was, wo und wann gelesen (und darüber geschrieben)?</li>
+</ul></li>
+</ul>
+</div>
+<div id="forschungsansätze" class="slide section level2">
+<h1>Forschungsansätze</h1>
+<ul>
+<li>(historische/ soziale) Netzwerkanalyse</li>
+<li>Bibliometrie</li>
+<li>Stylometrie</li>
+</ul>
+</div>
+<div id="benötigte-daten" class="slide section level2">
+<h1>Benötigte Daten?</h1>
+<ul>
+<li>Bibliographische Angaben auf der Artikelebene</li>
+<li>Volltext mit Auszeichnung von <em>named entities</em></li>
+<li>Normdatensätze (z.B. GND, VIAF, Wikidata) für
+<ul>
+<li>Disambiguierung: “Paris” als konkreter Ort oder konkrete Person</li>
+<li>Anreicherung von Daten: z.B. Raumdaten oder Lebensdaten</li>
+</ul></li>
+</ul>
+</div>
+<div id="vorhandene-daten-open-arabic-periodical-editions" class="slide section level2">
+<h1>Vorhandene Daten: <a href="https://openarabicpe.github.io">Open Arabic Periodical Editions</a></h1>
+<p>Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX), Normdaten (TEI XML)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">periodical</th>
+<th align="left">doi</th>
+<th align="right">volumes</th>
+<th align="right">issues</th>
+<th align="right">articles</th>
+<th align="right">words</th>
+<th align="right">words per article</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/digital-haqaiq"><strong>al-Ḥaqāʾiq</strong></a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+<td align="right">3</td>
+<td align="right">35</td>
+<td align="right">389</td>
+<td align="right">298090</td>
+<td align="right">832.66</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-hasna"><strong>al-Ḥasnāʾ</strong></a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3556246">10.5281/zenodo.3556246</a></td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">201</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
+<td align="left"></td>
+<td align="right">35</td>
+<td align="right">537</td>
+<td align="right">4300</td>
+<td align="right">6144593</td>
+<td align="right">1437.73</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://www.github.com/tillgrallert/digital-muqtabas"><strong>al-Muqtabas</strong></a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+<td align="right">9</td>
+<td align="right">96</td>
+<td align="right">2964</td>
+<td align="right">1981081</td>
+<td align="right">873.34</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+<td align="right">1</td>
+<td align="right">42</td>
+<td align="right">435</td>
+<td align="right">221447</td>
+<td align="right">582.21</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+<td align="right">4</td>
+<td align="right">39</td>
+<td align="right">436</td>
+<td align="right">292333</td>
+<td align="right">695.09</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://www.github.com/openarabicpe/journal_lughat-al-arab"><strong>Lughat al-ʿArab</strong></a></td>
+<td align="left"><a href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+<td align="right">3</td>
+<td align="right">34</td>
+<td align="right">939</td>
+<td align="right">373832</td>
+<td align="right">485.21</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>total</strong></td>
+<td align="left"></td>
+<td align="right">56</td>
+<td align="right">795</td>
+<td align="right">9664</td>
+<td align="right">9311376</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="vorhandene-daten-project-jarāʾid" class="slide section level2">
+<h1>Vorhandene Daten: <a href="https://projectjaraid.github.io">Project Jarāʾid</a></h1>
+<ul>
+<li>Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1929 (TEI XML)</li>
+<li>Normdaten (TEI XML)</li>
+</ul>
+</div>
+<div id="netzwerk-erwähnter-periodika" class="slide section level2">
+<h1>Netzwerk erwähnter Periodika</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg" alt="" />
+<p class="caption">Figure: Network of periodicals mentioned <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em>; weights per issue</p>
+</div>
+</div>
+<div class="c_width-30 c_right">
+<ol style="list-style-type: decimal">
+<li>only a few nodes are of relative importance (44 of 465)</li>
+<li><em>al-Muqtabas</em> accounts for the vast majority of references</li>
+<li>all periodicals are primarly self-referential</li>
+<li>confirms the bias on Cairo and Beirut (8 of 9)</li>
+<li>highly centralised in terms of geographic distribution (10 locations)</li>
+<li>surprising members</li>
+</ol>
+</div>
+</div>
+<div id="soziales-netzwerk-von-autor_innen" class="slide section level2">
+<h1>Soziales Netzwerk von Autor_innen</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg" alt="" />
+<p class="caption">Figure: Network of authors with bylines in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div class="c_width-30 c_right">
+<ol style="list-style-type: decimal">
+<li>only a few nodes are of relative importance</li>
+<li>limited overlap between journals from the same city</li>
+<li>nodes are connected by various other social networks (education, imperial service, family relations etc.)</li>
+<li>many Iraqis</li>
+<li>few Syrians</li>
+<li>few Christians</li>
+<li>many poets</li>
+<li>majority not covered by scholarly literature</li>
+</ol>
+</div>
+</div>
+<div id="geographisches-netzwerk-von-autor_innen" class="slide section level2">
+<h1>Geographisches Netzwerk von Autor_innen</h1>
+<div class="c_width-50 c_left c_height-50">
+<div class="figure">
+<img src="../assets/maps/map-oclc_4770057679-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>al-Muqtabas</em> (Cairo and Damascus)</p>
+</div>
+</div>
+<div class="c_width-50 c_right c_height-50">
+<div class="figure">
+<img src="../assets/maps/map-oclc_644997575-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>al-Ḥaqāʾiq</em> (Damascus)</p>
+</div>
+</div>
+<div class="c_width-50 c_left c_height-50">
+<div class="figure">
+<img src="../assets/maps/map-oclc_792756327-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>al-Ḥasnāʾ</em> (Beirut)</p>
+</div>
+</div>
+<div class="c_width-50 c_right c_height-50">
+<div class="figure">
+<img src="../assets/maps/map-oclc_472450345-bylines-middle-east.png" alt="" />
+<p class="caption">Map: Locations in bylines in <em>Lughat al-ʿArab</em> (Baghdad)</p>
+</div>
+</div>
+</div>
+</body>
+</html>
