@@ -25,7 +25,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-bonn/](https://OpenArabicPE.
 - Produktionsgeschichte:
     + Wie wurden Periodika produziert?
     + Wer verfasste die mehrheitlich anonymen Texte?
-    + Wie hoch ist die Wiederverwertungsrate?
+    + Wie hoch ist die Wiederverwertungsrate und wie "reisten" Texte?
 - Rezeptionsgeschichte:
     + Wer hat was, wo und wann gelesen (und darüber geschrieben)?
 
@@ -39,7 +39,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-bonn/](https://OpenArabicPE.
 
 - Bibliographische Angaben auf der Artikelebene
 - Volltext mit Auszeichnung von *named entities*
-- Normdatensätze (z.B. GND, VIAF, Wikidata) für
+- Normdatensätze (z.B. [GND](https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html), [VIAF](https://viaf.org/), [Wikidata](https://wikidata.org/)) für
     - Disambiguierung: "Paris" als konkreter Ort oder konkrete Person
     - Anreicherung von Daten: z.B. Raumdaten oder Lebensdaten
 
@@ -60,14 +60,66 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 ## Vorhandene Daten: [Project Jarāʾid](https://projectjaraid.github.io)
 
-- Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1929 (TEI XML)
+
+<div class="c_width-50 c_left">
+- Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1930 (TEI XML)
+
+```xml
+<biblStruct type="periodical">
+  <monogr>
+     <title level="j" xml:lang="ar-Latn-x-ijmes">Al-Iqbāl</title>
+     <title level="j" xml:lang="ar">الاقبال</title>
+     <idno type="jaraid">t1r2353</idno>
+     <textLang mainLang="ar"/>
+     <editor>
+        <persName ref="jaraid:pers:1926" xml:lang="ar-Latn-x-ijmes">ʿAbd al-Bāsiṭ al-Unsī</persName>
+     </editor>
+     <imprint>
+        <pubPlace>
+           <placeName ref="jaraid:place:2">Beirut</placeName>
+        </pubPlace>
+        <date type="onset" when="1902-04-09">1902</date>
+     </imprint>
+  </monogr>
+</biblStruct>
+```
+
+</div><div class="c_width-50 c_right">
+
 - Normdaten (TEI XML)
 
-## Netzwerk erwähnter Periodika
+```xml
+<person>
+    <persName xml:lang="ar-Latn-x-ijmes">ʿAbd al-Bāsiṭ al-Unsī</persName>
+    <persName xml:lang="ar">عبد الباسط الانسي</persName>
+    <idno type="jaraid">1926</idno>
+    <idno type="VIAF">22151654727108281690</idno>
+    <birth resp="#org_viaf" when="1867">1867</birth>
+    <death resp="#org viaf" when="1940">1940</death>
+</person>
+```
+
+```xml
+<place type="town">
+    <placeName xml:lang="en">Beirut</placeName>
+    <placeName source="#org_geon" xml:lang="ar">بيروت</placeName>
+    <placeName source="#org_geon" xml:lang="fr">Beyrouth</placeName>
+    <location source="#org_geon">
+        <geo>33.88894, 35.49442</geo>
+    </location>
+    <idno type="jaraid">2</idno>
+    <idno type="url">http://en.wikipedia.org/wiki/Beirut</idno>
+    <idno type="geon">276781</idno>
+</place>
+```
+
+</div>
+
+## Netzwerk erwähnter Periodika (OpenArabicPE)
 
 <div class="c_width-60 c_left">
 
-![Figure: Network of periodicals mentioned *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*; weights per issue](../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg)
+![Figure: Network of periodicals mentioned *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*; weights per issue. Node size/colour: in-degree](../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg)
 
 </div>
 <div class="c_width-30 c_right">
@@ -81,11 +133,11 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 </div>
 
-## Soziales Netzwerk von Autor_innen
+## Soziales Netzwerk von Autor_innen (OpenArabicPE)
 
 <div class="c_width-60 c_left">
 
-![Figure: Network of authors with bylines in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*](../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg)
+![Figure: Network of authors with bylines in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*. Number of nodes: 321; node size/colour: out-degree; edge size: number of articles](../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg)
 
 </div><div class="c_width-30 c_right">
 
@@ -97,6 +149,20 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 3. few Christians
 2. many poets
 3. majority not covered by scholarly literature
+
+</div>
+
+## Soziales Netzwerk von Herausgeber_innen (Jarāʾid)
+
+<div class="c_width-60 c_left">
+
+![Figure: Network of publishers, 1800--1929. Number of nodes: 2702;  node size: betweenness centrality](../assets/networks/network_project-jaraid_people-titles-n-size_betweenness-centrality.svg)
+
+</div><div class="c_width-30 c_right">
+
+1. Network?
+2. Very limited collaboration
+3. Due to data/knowledge **bias**!
 
 </div>
 
@@ -119,3 +185,18 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 ![Map: Locations in bylines in *Lughat al-ʿArab* (Baghdad)](../assets/maps/map-oclc_472450345-bylines-middle-east.png)
 
 </div>
+
+## Probleme
+
+- *Digital divide*
+    + Digitalität ist resourcenintensiv!
+    + Hardware, Software, Standards, Infrastrukturen sind im Globalen Norden verortet
+- Digitale Unzugänglichkeit
+    + Bezahlschranken, mangelnde maschinenlesbarkeit
+    + ungeeigneter technischer Apparat (*technology stack*)
+        + praktisch dysfunctionales OCR
+    - mangelnde (Forschungs-) Infrastrukturen
+- Postkoloniale digitale Unsichtbarkeit
+    + mangelnde Corpora, Normdatensätze
+    + methodologische Rückständigkeit
+    + (stark) eingeschränkte Forschung(smöglichkeiten)

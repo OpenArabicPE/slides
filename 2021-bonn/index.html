@@ -16,6 +16,68 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
@@ -38,29 +100,29 @@
   }
   /* xml element names */
   .xml > code span.kw {
-  	/*color: #0F0F9C;*/
-  	color: #000096;
-  	font-weight: bold;
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
   }
   /* xml attribute names */
   .xml > code span.ot {
-  	/*color:#FF8041;*/
-  	color: #FF9159;
+    /*color:#FF8041;*/
+    color: #FF9159;
   }
   /* xml attribute values */
   .xml > code span.st {
-  	/*color:#993300;*/
-  	color: #993300;
+    /*color:#993300;*/
+    color: #993300;
   }
   /* xml comments */
   .xml > code span.co {
-  	/*color:#167116;*/
-  	color: #2F8132;
-  	font-style: italic;
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
   /* .xml > code > span {
-  	color:#9132CC;
+    color:#9132CC;
   } */
   </style>
   <style type="text/css">
@@ -91,7 +153,7 @@
 
   /* styles to vertically stack divs */
   div.c_height-50 {
-      height: 50%;
+      height: 45%;
   }
   div.c_top {
       vertical-align: top;
@@ -132,7 +194,7 @@ Till Grallert
 <ul>
 <li>Wie wurden Periodika produziert?</li>
 <li>Wer verfasste die mehrheitlich anonymen Texte?</li>
-<li>Wie hoch ist die Wiederverwertungsrate?</li>
+<li>Wie hoch ist die Wiederverwertungsrate und wie “reisten” Texte?</li>
 </ul></li>
 <li>Rezeptionsgeschichte:
 <ul>
@@ -140,8 +202,8 @@ Till Grallert
 </ul></li>
 </ul>
 </div>
-<div id="forschungsansätze" class="slide section level2">
-<h1>Forschungsansätze</h1>
+<div id="digitale-forschungsansätze" class="slide section level2">
+<h1>(Digitale) Forschungsansätze</h1>
 <ul>
 <li>(historische/ soziale) Netzwerkanalyse</li>
 <li>Bibliometrie</li>
@@ -153,7 +215,7 @@ Till Grallert
 <ul>
 <li>Bibliographische Angaben auf der Artikelebene</li>
 <li>Volltext mit Auszeichnung von <em>named entities</em></li>
-<li>Normdatensätze (z.B. GND, VIAF, Wikidata) für
+<li>Normdatensätze (z.B. <a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html">GND</a>, <a href="https://viaf.org/">VIAF</a>, <a href="https://wikidata.org/">Wikidata</a>) für
 <ul>
 <li>Disambiguierung: “Paris” als konkreter Ort oder konkrete Person</li>
 <li>Anreicherung von Daten: z.B. Raumdaten oder Lebensdaten</li>
@@ -253,17 +315,59 @@ Till Grallert
 </div>
 <div id="vorhandene-daten-project-jarāʾid" class="slide section level2">
 <h1>Vorhandene Daten: <a href="https://projectjaraid.github.io">Project Jarāʾid</a></h1>
+<div class="c_width-50 c_left">
 <ul>
-<li>Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1929 (TEI XML)</li>
+<li>Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1930 (TEI XML)</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">&lt;biblStruct</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>  <span class="kw">&lt;monogr&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>     <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span><span class="kw">&gt;</span>Al-Iqbāl<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>     <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الاقبال<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>     <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;jaraid&quot;</span><span class="kw">&gt;</span>t1r2353<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>     <span class="kw">&lt;textLang</span><span class="ot"> mainLang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>     <span class="kw">&lt;editor&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>        <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;jaraid:pers:1926&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span><span class="kw">&gt;</span>ʿAbd al-Bāsiṭ al-Unsī<span class="kw">&lt;/persName&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>     <span class="kw">&lt;/editor&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>     <span class="kw">&lt;imprint&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>        <span class="kw">&lt;pubPlace&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a>           <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;jaraid:place:2&quot;</span><span class="kw">&gt;</span>Beirut<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a>        <span class="kw">&lt;/pubPlace&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a>        <span class="kw">&lt;date</span><span class="ot"> type=</span><span class="st">&quot;onset&quot;</span><span class="ot"> when=</span><span class="st">&quot;1902-04-09&quot;</span><span class="kw">&gt;</span>1902<span class="kw">&lt;/date&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a>     <span class="kw">&lt;/imprint&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a>  <span class="kw">&lt;/monogr&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="kw">&lt;/biblStruct&gt;</span></span></code></pre></div>
+</div>
+<div class="c_width-50 c_right">
+<ul>
 <li>Normdaten (TEI XML)</li>
 </ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span><span class="kw">&gt;</span>ʿAbd al-Bāsiṭ al-Unsī<span class="kw">&lt;/persName&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>عبد الباسط الانسي&lt;/persName&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;jaraid&quot;</span><span class="kw">&gt;</span>1926<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>22151654727108281690<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>    <span class="kw">&lt;birth</span><span class="ot"> resp=</span><span class="st">&quot;#org_viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1867&quot;</span><span class="kw">&gt;</span>1867<span class="kw">&lt;/birth&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a>    <span class="kw">&lt;death</span><span class="ot"> resp=</span><span class="st">&quot;#org viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1940&quot;</span><span class="kw">&gt;</span>1940<span class="kw">&lt;/death&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="kw">&lt;place</span><span class="ot"> type=</span><span class="st">&quot;town&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>Beirut<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> source=</span><span class="st">&quot;#org_geon&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>بيروت&lt;/placeName&gt;</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a>    <span class="kw">&lt;placeName</span><span class="ot"> source=</span><span class="st">&quot;#org_geon&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;fr&quot;</span><span class="kw">&gt;</span>Beyrouth<span class="kw">&lt;/placeName&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a>    <span class="kw">&lt;location</span><span class="ot"> source=</span><span class="st">&quot;#org_geon&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a>        <span class="kw">&lt;geo&gt;</span>33.88894, 35.49442<span class="kw">&lt;/geo&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a>    <span class="kw">&lt;/location&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;jaraid&quot;</span><span class="kw">&gt;</span>2<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;url&quot;</span><span class="kw">&gt;</span>http://en.wikipedia.org/wiki/Beirut<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;geon&quot;</span><span class="kw">&gt;</span>276781<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true"></a><span class="kw">&lt;/place&gt;</span></span></code></pre></div>
 </div>
-<div id="netzwerk-erwähnter-periodika" class="slide section level2">
-<h1>Netzwerk erwähnter Periodika</h1>
+</div>
+<div id="netzwerk-erwähnter-periodika-openarabicpe" class="slide section level2">
+<h1>Netzwerk erwähnter Periodika (OpenArabicPE)</h1>
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg" alt="" />
-<p class="caption">Figure: Network of periodicals mentioned <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em>; weights per issue</p>
+<p class="caption">Figure: Network of periodicals mentioned <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em>; weights per issue. Node size/colour: in-degree</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
@@ -277,12 +381,12 @@ Till Grallert
 </ol>
 </div>
 </div>
-<div id="soziales-netzwerk-von-autor_innen" class="slide section level2">
-<h1>Soziales Netzwerk von Autor_innen</h1>
+<div id="soziales-netzwerk-von-autor_innen-openarabicpe" class="slide section level2">
+<h1>Soziales Netzwerk von Autor_innen (OpenArabicPE)</h1>
 <div class="c_width-60 c_left">
 <div class="figure">
 <img src="../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree.svg" alt="" />
-<p class="caption">Figure: Network of authors with bylines in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em></p>
+<p class="caption">Figure: Network of authors with bylines in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em>. Number of nodes: 321; node size/colour: out-degree; edge size: number of articles</p>
 </div>
 </div>
 <div class="c_width-30 c_right">
@@ -295,6 +399,22 @@ Till Grallert
 <li>few Christians</li>
 <li>many poets</li>
 <li>majority not covered by scholarly literature</li>
+</ol>
+</div>
+</div>
+<div id="soziales-netzwerk-von-herausgeber_innen-jarāʾid" class="slide section level2">
+<h1>Soziales Netzwerk von Herausgeber_innen (Jarāʾid)</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/networks/network_project-jaraid_people-titles-n-size_betweenness-centrality.svg" alt="" />
+<p class="caption">Figure: Network of publishers, 1800–1929. Number of nodes: 2702; node size: betweenness centrality</p>
+</div>
+</div>
+<div class="c_width-30 c_right">
+<ol style="list-style-type: decimal">
+<li>Network?</li>
+<li>Very limited collaboration</li>
+<li>Due to data/knowledge <strong>bias</strong>!</li>
 </ol>
 </div>
 </div>
@@ -324,6 +444,31 @@ Till Grallert
 <p class="caption">Map: Locations in bylines in <em>Lughat al-ʿArab</em> (Baghdad)</p>
 </div>
 </div>
+</div>
+<div id="probleme" class="slide section level2">
+<h1>Probleme</h1>
+<ul>
+<li><em>Digital divide</em>
+<ul>
+<li>Digitalität ist resourcenintensiv!</li>
+<li>Hardware, Software, Standards, Infrastrukturen sind im Globalen Norden verortet</li>
+</ul></li>
+<li>Digitale Unzugänglichkeit
+<ul>
+<li>Bezahlschranken, mangelnde maschinenlesbarkeit</li>
+<li>ungeeigneter technischer Apparat (<em>technology stack</em>)
+<ul>
+<li>praktisch dysfunctionales OCR</li>
+</ul></li>
+<li>mangelnde (Forschungs-) Infrastrukturen</li>
+</ul></li>
+<li>Postkoloniale digitale Unsichtbarkeit
+<ul>
+<li>mangelnde Corpora, Normdatensätze</li>
+<li>methodologische Rückständigkeit</li>
+<li>(stark) eingeschränkte Forschung(smöglichkeiten)</li>
+</ul></li>
+</ul>
 </div>
 </body>
 </html>
