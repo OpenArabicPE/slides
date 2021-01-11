@@ -17,7 +17,7 @@ Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com
 
 11 Januar 2021
 
-Slides: [https://OpenArabicPE.github.io/slides/2021-bonn/](https://OpenArabicPE.github.io/slides/2021-bonn/index.html)
+Slides: [https://OpenArabicPE.github.io/slides/2021-digitale-zugaenge/](https://OpenArabicPE.github.io/slides/2021-digitale-zugaenge/index.html)
 
 ## Forschungsfragen
 
