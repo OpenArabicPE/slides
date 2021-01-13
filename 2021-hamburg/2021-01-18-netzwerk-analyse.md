@@ -3,6 +3,7 @@ title: "(soziale) Netzwerkanalyse"
 subtitle: ""
 author: Till Grallert
 date: 2021-01-13
+lang: de
 ORCID: orcid.org/0000-0002-5739-8094
 ---
 
