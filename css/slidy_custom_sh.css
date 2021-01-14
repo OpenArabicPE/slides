@@ -392,6 +392,7 @@ div.figure img {
     max-height: 700px;
     /*max-width:80%;*/
     max-width: 95%;
+    height: inherit;
 }
 
 img {

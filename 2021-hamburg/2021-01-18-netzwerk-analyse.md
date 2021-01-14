@@ -258,24 +258,42 @@ Kanten-Tabelle
 ```csv
 "source","target","date","place","type"
 "9","11","1907-01-16","Cairo","directed"
-"9","11","1907-01-16","Cairo","directed"
+"9","27","1907-01-16","Cairo","directed"
 ```
 
 ## Visualisierung
 
 <div class="c_width-50 c_left">
 
-- Periodikatitel
+![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
+
+</div>
+<div class="c_width-50 c_right">
+<div class="c_height-50">
+
+![languages](../assets/networks/al-muqtabas-v_1-i_12-n_location.png)
+
+</div>
+<div class="c_height-50">
+
+![locations](../assets/networks/al-muqtabas-v_1-i_12-n_language.png)
+
+</div>
+</div>
+
+## Visualisierung
+
+<div class="c_width-50 c_left">
 
 ![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
 
-</div><div class="c_width-50 c_right">
+</div>
+<div class="c_width-50 c_right">
 
-- Erscheinungsorte
-
-![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-l_location.png)
+![+language (edge colours: red = language, green = reference)](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_ref-lang.png)
 
 </div>
+
 
 # Abschluss
 ## Danke!
@@ -296,6 +314,7 @@ Kanten-Tabelle
 - [Gephi](https://gephi.org/): open-source network analysis. Quirky de-facto standard.
     + very powerful
     + non-standard UI; bugs
-- Palladio: Web application
+- Palladio: Web application for network analysis
+- OpenRefine: data cleaning
 
 ## Bibliographie

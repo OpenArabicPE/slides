@@ -153,7 +153,8 @@
 
   /* styles to vertically stack divs */
   div.c_height-50 {
-      height: 45%;
+      /*height: 45%;*/
+      height: 300px;
   }
   div.c_top {
       vertical-align: top;
@@ -521,26 +522,43 @@ Till Grallert
 <p>Kanten-Tabelle</p>
 <pre class="csv"><code>&quot;source&quot;,&quot;target&quot;,&quot;date&quot;,&quot;place&quot;,&quot;type&quot;
 &quot;9&quot;,&quot;11&quot;,&quot;1907-01-16&quot;,&quot;Cairo&quot;,&quot;directed&quot;
-&quot;9&quot;,&quot;11&quot;,&quot;1907-01-16&quot;,&quot;Cairo&quot;,&quot;directed&quot;</code></pre>
+&quot;9&quot;,&quot;27&quot;,&quot;1907-01-16&quot;,&quot;Cairo&quot;,&quot;directed&quot;</code></pre>
 </div>
 <div id="visualisierung" class="slide section level2">
 <h1>Visualisierung</h1>
 <div class="c_width-50 c_left">
-<ul>
-<li>Periodikatitel</li>
-</ul>
 <div class="figure">
 <img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png" alt="" />
 <p class="caption">Directed network of all periodicals mentioned in <em>al-Muqtabas</em> 1(12), 1907</p>
 </div>
 </div>
 <div class="c_width-50 c_right">
-<ul>
-<li>Erscheinungsorte</li>
-</ul>
+<div class="c_height-50">
 <div class="figure">
-<img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-l_location.png" alt="" />
+<img src="../assets/networks/al-muqtabas-v_1-i_12-n_location.png" alt="" />
+<p class="caption">languages</p>
+</div>
+</div>
+<div class="c_height-50">
+<div class="figure">
+<img src="../assets/networks/al-muqtabas-v_1-i_12-n_language.png" alt="" />
+<p class="caption">locations</p>
+</div>
+</div>
+</div>
+</div>
+<div id="visualisierung-1" class="slide section level2">
+<h1>Visualisierung</h1>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png" alt="" />
 <p class="caption">Directed network of all periodicals mentioned in <em>al-Muqtabas</em> 1(12), 1907</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_ref-lang.png" alt="" />
+<p class="caption">+language</p>
 </div>
 </div>
 </div>
@@ -583,7 +601,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 <li>very powerful</li>
 <li>non-standard UI; bugs</li>
 </ul></li>
-<li>Palladio: Web application</li>
+<li>Palladio: Web application for network analysis</li>
+<li>OpenRefine: data cleaning</li>
 </ul>
 </div>
 <div id="bibliographie" class="slide section level2">
