@@ -100,29 +100,29 @@
   }
   /* xml element names */
   .xml > code span.kw {
-  	/*color: #0F0F9C;*/
-  	color: #000096;
-  	font-weight: bold;
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
   }
   /* xml attribute names */
   .xml > code span.ot {
-  	/*color:#FF8041;*/
-  	color: #FF9159;
+    /*color:#FF8041;*/
+    color: #FF9159;
   }
   /* xml attribute values */
   .xml > code span.st {
-  	/*color:#993300;*/
-  	color: #993300;
+    /*color:#993300;*/
+    color: #993300;
   }
   /* xml comments */
   .xml > code span.co {
-  	/*color:#167116;*/
-  	color: #2F8132;
-  	font-style: italic;
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
   /* .xml > code > span {
-  	color:#9132CC;
+    color:#9132CC;
   } */
   </style>
   <style type="text/css">
@@ -133,7 +133,7 @@
       float: left;
   }
   div.c_width-50 {
-      width:48%;
+      width:49%;
       position: relative;
       float: left;
   }
@@ -164,21 +164,21 @@
   </style>
   <style type="text/css">
   .cImportant {
-  	color:red;
+    color:red;
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
-  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script> -->
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
-<!-- <div class="slide titlepage">
+<div class="slide titlepage">
   <h1 class="title">(soziale) Netzwerkanalyse</h1>
   <p class="author">
 Till Grallert
   </p>
   <p class="date">2021-01-13</p>
-</div> -->
+</div>
 <div id="netzwerkanalyse" class="slide section level2 titlepage">
 <h1 class="titlepage">Netzwerkanalyse</h1>
 <p>Till Grallert, Orient-Institut Beirut (OIB), @<a href="https://twitter.com/tillgrallert">tillgrallert</a></p>
@@ -409,28 +409,27 @@ Till Grallert
 </div>
 <div id="vorhandene-daten-open-arabic-periodical-editions-1" class="slide section level2">
 <h1>Vorhandene Daten: <a href="https://openarabicpe.github.io">Open Arabic Periodical Editions</a></h1>
-<div class="c_width-50 c_left">
+<div class="c_width-30">
 <ul>
-<li>Modellierter, digitaler Volltext mit Auszeichnung von <em>named entities</em> (Periodikatitel)</li>
+<li>Modellierter Volltext mit Auszeichnungen (TEI XML)</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">&lt;biblStruct&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="kw">&lt;monogr&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>        <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المقتبس<span class="kw">&lt;/title&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>        <span class="kw">&lt;editor&gt;&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:878 viaf:32272677&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;forename&gt;</span>محمد<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>كرد علي<span class="kw">&lt;/surname&gt;</span> <span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>        <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>9<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>        <span class="kw">&lt;imprint&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>            <span class="kw">&lt;pubPlace&gt;</span> <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:226 geon:360630&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>القاهرة<span class="kw">&lt;/placeName&gt;&lt;/pubPlace&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>            <span class="kw">&lt;date</span><span class="ot"> calendar=</span><span class="st">&quot;#cal_islamic&quot;</span><span class="ot"> datingMethod=</span><span class="st">&quot;#cal_islamic&quot;</span><span class="ot"> when=</span><span class="st">&quot;1907-01-16&quot;</span><span class="ot"> when-custom=</span><span class="st">&quot;1324-12-01&quot;</span><span class="kw">&gt;</span>1 Jum II 1324<span class="kw">&lt;/date&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>        <span class="kw">&lt;/imprint&gt;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;1&quot;</span><span class="ot"> to=</span><span class="st">&quot;1&quot;</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;12&quot;</span><span class="ot"> to=</span><span class="st">&quot;12&quot;</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;609&quot;</span><span class="ot"> to=</span><span class="st">&quot;672&quot;</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a>    <span class="kw">&lt;/monogr&gt;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="kw">&lt;/biblStruct&gt;</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a><span class="co">&lt;!-- ... --&gt;</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">&lt;p</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>هبط مصر في شتاء <span class="kw">&lt;date</span><span class="ot"> when=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span> سنة <span class="kw">&lt;num</span><span class="ot"> value=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span>١٨٩٧<span class="kw">&lt;/num&gt;&lt;/date&gt;</span>لإنشاء مجلة علمية وطبع معجم عربي كان عني بتأليفه منذ سنين ولكن خانته الأقدار فرأى ما كان يسمعه عن نهضة مصر العلمية مبالغاً فيه وأن <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P686.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n12-p50&quot;</span><span class="kw">/&gt;</span> سوق العلم والأدب كاسدة لا لإقبال عليها فأصدر أولاً <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:11 oclc:792754974&quot;</span><span class="kw">&gt;</span>البيان<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> سنة بمعاونة <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2817&quot;</span><span class="kw">&gt;</span>الدكتور زلزل<span class="kw">&lt;/persName&gt;</span> ثم أصدر وحده <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:27 oclc:1034555409&quot;</span><span class="kw">&gt;</span>الضياء<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> فدامت مطردة الصدور إلى صيف هذه السنة وقد شحنها من عرائس أفكاره وتحقيقاته اللغوية وأماليه الأدبية ما لو كتب بغير هذا اللسان لأعجب به أهله وكبروا مثل مقالات اللغة والعصر ولغة الجرائد وأغلاط العرب وأغلاط المولدين وطبع في العهد الأخير كتاب نجعة الرائد في اللغة ولم يوفق إلى طبع معجمه لأسباب أهمها قلة النصير والظهير.<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<!-- <biblStruct>
+    <monogr>
+        <title level="j" xml:lang="ar">المقتبس</title>
+        <editor><persName ref="oape:pers:878 viaf:32272677" xml:lang="ar"> <forename>محمد</forename> <surname>كرد علي</surname> </persName></editor>
+        <idno type="oape">9</idno>
+        <imprint>
+            <pubPlace> <placeName ref="oape:place:226 geon:360630" xml:lang="ar">القاهرة</placeName></pubPlace>
+            <date calendar="#cal_islamic" datingMethod="#cal_islamic" when="1907-01-16" when-custom="1324-12-01">1 Jum II 1324</date>
+        </imprint>
+        <biblScope from="1" to="1" unit="volume"/>
+        <biblScope from="12" to="12" unit="issue"/>
+        <biblScope from="609" to="672" unit="page"/>
+    </monogr>
+</biblStruct> -->
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">&lt;p</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>هبط مصر في شتاء <span class="kw">&lt;date</span><span class="ot"> when=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span> سنة <span class="kw">&lt;num</span><span class="ot"> value=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span>١٨٩٧<span class="kw">&lt;/num&gt;&lt;/date&gt;</span>لإنشاء مجلة علمية وطبع معجم عربي كان عني بتأليفه منذ سنين ولكن خانته الأقدار فرأى ما كان يسمعه عن نهضة مصر العلمية مبالغاً فيه وأن <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P686.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n12-p50&quot;</span><span class="kw">/&gt;</span> سوق العلم والأدب كاسدة لا لإقبال عليها فأصدر أولاً <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:11 oclc:792754974&quot;</span><span class="kw">&gt;</span>البيان<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> سنة بمعاونة <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2817&quot;</span><span class="kw">&gt;</span>الدكتور زلزل<span class="kw">&lt;/persName&gt;</span> ثم أصدر وحده <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:27 oclc:1034555409&quot;</span><span class="kw">&gt;</span>الضياء<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> فدامت مطردة الصدور إلى صيف هذه السنة وقد شحنها من عرائس أفكاره وتحقيقاته اللغوية وأماليه الأدبية ما لو كتب بغير هذا اللسان لأعجب به أهله وكبروا مثل مقالات اللغة والعصر ولغة الجرائد وأغلاط العرب وأغلاط المولدين وطبع في العهد الأخير كتاب نجعة الرائد في اللغة ولم يوفق إلى طبع معجمه لأسباب أهمها قلة النصير والظهير.<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
 </div>
-<div class="c_width-50 c_right">
+<div class="c_width-60">
 <ul>
 <li>Normdaten (TEI XML)</li>
 </ul>
@@ -452,14 +451,15 @@ Till Grallert
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;1&quot;</span><span class="ot"> to=</span><span class="st">&quot;1&quot;</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true"></a>  <span class="kw">&lt;/monogr&gt;</span></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true"></a><span class="kw">&lt;/biblStruct&gt;</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;forename&gt;</span>بشارة<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>زلزل<span class="kw">&lt;surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>الدكتور<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;surname</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>زلزل<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>2817<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>57953733<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a>    <span class="kw">&lt;death</span><span class="ot"> resp=</span><span class="st">&quot;#org_viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1905&quot;</span><span class="kw">&gt;</span>1905<span class="kw">&lt;/death&gt;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
+</div>
+<div class="c_width-60">
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;forename&gt;</span>بشارة<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>زلزل<span class="kw">&lt;surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>الدكتور<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;surname</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>زلزل<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>2817<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>57953733<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a>    <span class="kw">&lt;death</span><span class="ot"> resp=</span><span class="st">&quot;#org_viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1905&quot;</span><span class="kw">&gt;</span>1905<span class="kw">&lt;/death&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
 </div>
 </div>
 <div id="vorhandene-daten-project-jarāʾid" class="slide section level2">
@@ -525,9 +525,23 @@ Till Grallert
 </div>
 <div id="visualisierung" class="slide section level2">
 <h1>Visualisierung</h1>
+<div class="c_width-50 c_left">
+<ul>
+<li>Periodikatitel</li>
+</ul>
 <div class="figure">
-<img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.svg" alt="" />
+<img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png" alt="" />
 <p class="caption">Directed network of all periodicals mentioned in <em>al-Muqtabas</em> 1(12), 1907</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<ul>
+<li>Erscheinungsorte</li>
+</ul>
+<div class="figure">
+<img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-l_location.png" alt="" />
+<p class="caption">Directed network of all periodicals mentioned in <em>al-Muqtabas</em> 1(12), 1907</p>
+</div>
 </div>
 </div>
 

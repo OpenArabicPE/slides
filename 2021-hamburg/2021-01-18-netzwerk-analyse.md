@@ -122,12 +122,11 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 ## Vorhandene Daten: [Open Arabic Periodical Editions](https://openarabicpe.github.io)
 
-<div class="c_width-50 c_left">
+<div class="c_width-30">
 
-- Modellierter, digitaler Volltext mit Auszeichnung von *named entities* (Periodikatitel)
+- Modellierter Volltext mit Auszeichnungen (TEI XML)
 
-```xml
-<biblStruct>
+<!-- <biblStruct>
     <monogr>
         <title level="j" xml:lang="ar">المقتبس</title>
         <editor><persName ref="oape:pers:878 viaf:32272677" xml:lang="ar"> <forename>محمد</forename> <surname>كرد علي</surname> </persName></editor>
@@ -140,12 +139,15 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
         <biblScope from="12" to="12" unit="issue"/>
         <biblScope from="609" to="672" unit="page"/>
     </monogr>
-</biblStruct>
-<!-- ... -->
+</biblStruct> -->
+
+```xml
 <p xml:lang="ar">هبط مصر في شتاء <date when="1897"> سنة <num value="1897">١٨٩٧</num></date>لإنشاء مجلة علمية وطبع معجم عربي كان عني بتأليفه منذ سنين ولكن خانته الأقدار فرأى ما كان يسمعه عن نهضة مصر العلمية مبالغاً فيه وأن <pb corresp="file:../epub/26523/OEBPS/xhtml/P686.xhtml" ed="shamela" n="n12-p50"/> سوق العلم والأدب كاسدة لا لإقبال عليها فأصدر أولاً <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:11 oclc:792754974">البيان</title></bibl> سنة بمعاونة <persName ref="oape:pers:2817">الدكتور زلزل</persName> ثم أصدر وحده <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:27 oclc:1034555409">الضياء</title></bibl> فدامت مطردة الصدور إلى صيف هذه السنة وقد شحنها من عرائس أفكاره وتحقيقاته اللغوية وأماليه الأدبية ما لو كتب بغير هذا اللسان لأعجب به أهله وكبروا مثل مقالات اللغة والعصر ولغة الجرائد وأغلاط العرب وأغلاط المولدين وطبع في العهد الأخير كتاب نجعة الرائد في اللغة ولم يوفق إلى طبع معجمه لأسباب أهمها قلة النصير والظهير.</p>
 ```
 
-</div><div class="c_width-50 c_right">
+</div>
+
+<div class="c_width-60">
 
 - Normdaten (TEI XML)
 
@@ -169,9 +171,10 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
   </monogr>
 </biblStruct>
 ```
+</div>
+<div class="c_width-60">
 
 ```xml
-
 <person>
     <persName xml:lang="ar"><forename>بشارة</forename> <surname>زلزل<surname></persName>
     <persName xml:lang="ar"><roleName type="title">الدكتور</roleName> <surname xml:lang="ar">زلزل</surname></persName>
@@ -179,13 +182,11 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
     <idno type="VIAF">57953733</idno>
     <death resp="#org_viaf" when="1905">1905</death>
 </person>
-
 ```
 
 </div>
 
 ## Vorhandene Daten: [Project Jarāʾid](https://projectjaraid.github.io)
-
 
 <div class="c_width-50 c_left">
 - Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1930 (TEI XML)
@@ -262,7 +263,19 @@ Kanten-Tabelle
 
 ## Visualisierung
 
-![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.svg)
+<div class="c_width-50 c_left">
+
+- Periodikatitel
+
+![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
+
+</div><div class="c_width-50 c_right">
+
+- Erscheinungsorte
+
+![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-l_location.png)
+
+</div>
 
 # Schluss
 ## Danke!
