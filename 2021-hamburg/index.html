@@ -168,17 +168,17 @@
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
-  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script>
+  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
 </head>
 <body>
-<div class="slide titlepage">
+<!-- <div class="slide titlepage">
   <h1 class="title">(soziale) Netzwerkanalyse</h1>
   <p class="author">
 Till Grallert
   </p>
   <p class="date">2021-01-13</p>
-</div>
+</div> -->
 <div id="netzwerkanalyse" class="slide section level2 titlepage">
 <h1 class="titlepage">Netzwerkanalyse</h1>
 <p>Till Grallert, Orient-Institut Beirut (OIB), @<a href="https://twitter.com/tillgrallert">tillgrallert</a></p>
@@ -413,43 +413,53 @@ Till Grallert
 <ul>
 <li>Modellierter, digitaler Volltext mit Auszeichnung von <em>named entities</em> (Periodikatitel)</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">&lt;p</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>هبط مصر في شتاء <span class="kw">&lt;date</span><span class="ot"> when=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span> سنة <span class="kw">&lt;num</span><span class="ot"> value=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span>١٨٩٧<span class="kw">&lt;/num&gt;&lt;/date&gt;</span>لإنشاء مجلة علمية وطبع معجم عربي كان عني بتأليفه منذ سنين ولكن خانته الأقدار فرأى ما كان يسمعه عن نهضة مصر العلمية مبالغاً فيه وأن <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P686.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n12-p50&quot;</span><span class="kw">/&gt;</span> سوق العلم والأدب كاسدة لا لإقبال عليها فأصدر أولاً <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:11 oclc:792754974&quot;</span><span class="kw">&gt;</span>البيان<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> سنة بمعاونة <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:4281&quot;</span><span class="kw">&gt;</span>الدكتور زلزل<span class="kw">&lt;/persName&gt;</span> ثم أصدر وحده <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:27 oclc:1034555409&quot;</span><span class="kw">&gt;</span>الضياء<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> فدامت مطردة الصدور إلى صيف هذه السنة وقد شحنها من عرائس أفكاره وتحقيقاته اللغوية وأماليه الأدبية ما لو كتب بغير هذا اللسان لأعجب به أهله وكبروا مثل مقالات اللغة والعصر ولغة الجرائد وأغلاط العرب وأغلاط المولدين وطبع في العهد الأخير كتاب نجعة الرائد في اللغة ولم يوفق إلى طبع معجمه لأسباب أهمها قلة النصير والظهير.<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">&lt;biblStruct&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="kw">&lt;monogr&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>        <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المقتبس<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>        <span class="kw">&lt;editor&gt;&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:878 viaf:32272677&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;forename&gt;</span>محمد<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>كرد علي<span class="kw">&lt;/surname&gt;</span> <span class="kw">&lt;/persName&gt;&lt;/editor&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>        <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>9<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>        <span class="kw">&lt;imprint&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>            <span class="kw">&lt;pubPlace&gt;</span> <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:226 geon:360630&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>القاهرة<span class="kw">&lt;/placeName&gt;&lt;/pubPlace&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>            <span class="kw">&lt;date</span><span class="ot"> calendar=</span><span class="st">&quot;#cal_islamic&quot;</span><span class="ot"> datingMethod=</span><span class="st">&quot;#cal_islamic&quot;</span><span class="ot"> when=</span><span class="st">&quot;1907-01-16&quot;</span><span class="ot"> when-custom=</span><span class="st">&quot;1324-12-01&quot;</span><span class="kw">&gt;</span>1 Jum II 1324<span class="kw">&lt;/date&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>        <span class="kw">&lt;/imprint&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;1&quot;</span><span class="ot"> to=</span><span class="st">&quot;1&quot;</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;12&quot;</span><span class="ot"> to=</span><span class="st">&quot;12&quot;</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;609&quot;</span><span class="ot"> to=</span><span class="st">&quot;672&quot;</span><span class="ot"> unit=</span><span class="st">&quot;page&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a>    <span class="kw">&lt;/monogr&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="kw">&lt;/biblStruct&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a><span class="co">&lt;!-- ... --&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">&lt;p</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>هبط مصر في شتاء <span class="kw">&lt;date</span><span class="ot"> when=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span> سنة <span class="kw">&lt;num</span><span class="ot"> value=</span><span class="st">&quot;1897&quot;</span><span class="kw">&gt;</span>١٨٩٧<span class="kw">&lt;/num&gt;&lt;/date&gt;</span>لإنشاء مجلة علمية وطبع معجم عربي كان عني بتأليفه منذ سنين ولكن خانته الأقدار فرأى ما كان يسمعه عن نهضة مصر العلمية مبالغاً فيه وأن <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P686.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n12-p50&quot;</span><span class="kw">/&gt;</span> سوق العلم والأدب كاسدة لا لإقبال عليها فأصدر أولاً <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:11 oclc:792754974&quot;</span><span class="kw">&gt;</span>البيان<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> سنة بمعاونة <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2817&quot;</span><span class="kw">&gt;</span>الدكتور زلزل<span class="kw">&lt;/persName&gt;</span> ثم أصدر وحده <span class="kw">&lt;bibl</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span>مجلة <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> ref=</span><span class="st">&quot;oape:bibl:27 oclc:1034555409&quot;</span><span class="kw">&gt;</span>الضياء<span class="kw">&lt;/title&gt;&lt;/bibl&gt;</span> فدامت مطردة الصدور إلى صيف هذه السنة وقد شحنها من عرائس أفكاره وتحقيقاته اللغوية وأماليه الأدبية ما لو كتب بغير هذا اللسان لأعجب به أهله وكبروا مثل مقالات اللغة والعصر ولغة الجرائد وأغلاط العرب وأغلاط المولدين وطبع في العهد الأخير كتاب نجعة الرائد في اللغة ولم يوفق إلى طبع معجمه لأسباب أهمها قلة النصير والظهير.<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
 </div>
 <div class="c_width-50 c_right">
 <ul>
 <li>Normdaten (TEI XML)</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">&lt;biblStruct</span><span class="ot"> oape:frequency=</span><span class="st">&quot;monthly&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>  <span class="kw">&lt;monogr</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>     <span class="kw">&lt;title</span><span class="ot"> corresp=</span><span class="st">&quot;sakhrit:jid:161&quot;</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>البيان<span class="kw">&lt;/title&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>     <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> type=</span><span class="st">&quot;sub&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>مجلة علمية أدبية طبية صناعية<span class="kw">&lt;/title&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>     <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span><span class="kw">&gt;</span>al-Bayān<span class="kw">&lt;/title&gt;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>     <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> type=</span><span class="st">&quot;sub&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>Majalla ʿilmiyya adabiyya ṭibbiyya ṣināʿiyya<span class="kw">&lt;/title&gt;</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a>     <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>11<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a>     <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;jid&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>161<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a>     <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;OCLC&quot;</span><span class="kw">&gt;</span>792754974<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a>     <span class="kw">&lt;editor</span><span class="ot"> source=</span><span class="st">&quot;file:///BachUni/BachBibliothek/GitHub/TEI/oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;persName</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true"></a><span class="ot">        ref=</span><span class="st">&quot;oape:pers:2808 viaf:64154472&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;forename</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>ابراهيم<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true"></a>        <span class="kw">&gt;</span>اليازجي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span> <span class="kw">&lt;/editor&gt;</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true"></a>     <span class="kw">&lt;editor</span><span class="ot"> source=</span><span class="st">&quot;file:///BachUni/BachBibliothek/GitHub/TEI/oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;persName</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true"></a><span class="ot">        ref=</span><span class="st">&quot;oape:pers:2817 viaf:57953733&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;forename&gt;</span>بشارة<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>زلزل<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span> <span class="kw">&lt;/editor&gt;</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true"></a>     <span class="kw">&lt;textLang</span><span class="ot"> mainLang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true"></a>     <span class="kw">&lt;imprint</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true"></a>        <span class="kw">&lt;date</span><span class="ot"> when=</span><span class="st">&quot;1897-03-01&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>1 مارس 1897<span class="kw">&lt;/date&gt;</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true"></a>        <span class="kw">&lt;date</span><span class="ot"> from=</span><span class="st">&quot;1897-03-01&quot;</span><span class="ot"> to=</span><span class="st">&quot;1898&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true"></a>        <span class="kw">&lt;pubPlace</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true"></a>            <span class="kw">&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:226 geon:360630&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>القاهرة<span class="kw">&lt;/placeName&gt;</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true"></a>        <span class="kw">&lt;/pubPlace&gt;</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true"></a>     <span class="kw">&lt;/imprint&gt;</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true"></a>     <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;1&quot;</span><span class="ot"> to=</span><span class="st">&quot;1&quot;</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true"></a>     <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;1&quot;</span><span class="ot"> to=</span><span class="st">&quot;1&quot;</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true"></a>  <span class="kw">&lt;/monogr&gt;</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true"></a><span class="kw">&lt;/biblStruct&gt;</span></span></code></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>  <span class="kw">&lt;monogr&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>        <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>البيان<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>        <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> type=</span><span class="st">&quot;sub&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>مجلة علمية أدبية طبية صناعية<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>        <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>11<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>        <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;jid&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>161<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a>        <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;OCLC&quot;</span><span class="kw">&gt;</span>792754974<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a>        <span class="kw">&lt;editor</span><span class="ot"> source=</span><span class="st">&quot;../../oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2808 viaf:64154472&quot;</span><span class="kw">&gt;&lt;forename&gt;</span>ابراهيم<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>اليازجي<span class="kw">&lt;/addName&gt;&lt;/surname&gt;&lt;/persName&gt;</span> <span class="kw">&lt;/editor&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a>        <span class="kw">&lt;editor</span><span class="ot"> source=</span><span class="st">&quot;../../oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065&quot;</span><span class="kw">&gt;&lt;persName</span><span class="ot"> ref=</span><span class="st">&quot;oape:pers:2817 viaf:57953733&quot;</span><span class="kw">&gt;</span> <span class="kw">&lt;forename&gt;</span>بشارة<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>زلزل<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span> <span class="kw">&lt;/editor&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a>        <span class="kw">&lt;textLang</span><span class="ot"> mainLang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true"></a>        <span class="kw">&lt;imprint&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true"></a>            <span class="kw">&lt;date</span><span class="ot"> from=</span><span class="st">&quot;1897-03-01&quot;</span><span class="ot"> to=</span><span class="st">&quot;1898&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true"></a>            <span class="kw">&lt;pubPlace&gt;&lt;placeName</span><span class="ot"> ref=</span><span class="st">&quot;oape:place:226 geon:360630&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>القاهرة<span class="kw">&lt;/placeName&gt;&lt;/pubPlace&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true"></a>        <span class="kw">&lt;/imprint&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;1&quot;</span><span class="ot"> to=</span><span class="st">&quot;1&quot;</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true"></a>        <span class="kw">&lt;biblScope</span><span class="ot"> from=</span><span class="st">&quot;1&quot;</span><span class="ot"> to=</span><span class="st">&quot;1&quot;</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true"></a>  <span class="kw">&lt;/monogr&gt;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true"></a><span class="kw">&lt;/biblStruct&gt;</span></span></code></pre></div>
 <div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>الدكتور<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;surname</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>زلزل<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>4281<span class="kw">&lt;/idno&gt;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;forename&gt;</span>بشارة<span class="kw">&lt;/forename&gt;</span> <span class="kw">&lt;surname&gt;</span>زلزل<span class="kw">&lt;surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;&lt;roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>الدكتور<span class="kw">&lt;/roleName&gt;</span> <span class="kw">&lt;surname</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>زلزل<span class="kw">&lt;/surname&gt;&lt;/persName&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;oape&quot;</span><span class="kw">&gt;</span>2817<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a>    <span class="kw">&lt;idno</span><span class="ot"> type=</span><span class="st">&quot;VIAF&quot;</span><span class="kw">&gt;</span>57953733<span class="kw">&lt;/idno&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a>    <span class="kw">&lt;death</span><span class="ot"> resp=</span><span class="st">&quot;#org_viaf&quot;</span><span class="ot"> when=</span><span class="st">&quot;1905&quot;</span><span class="kw">&gt;</span>1905<span class="kw">&lt;/death&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true"></a><span class="kw">&lt;/person&gt;</span></span></code></pre></div>
 </div>
 </div>
 <div id="vorhandene-daten-project-jarāʾid" class="slide section level2">
@@ -501,6 +511,25 @@ Till Grallert
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true"></a><span class="kw">&lt;/place&gt;</span></span></code></pre></div>
 </div>
 </div>
+<div id="benötigte-daten-knoten-und-kanten" class="slide section level2">
+<h1>Benötigte Daten: Knoten und Kanten</h1>
+<p>Knoten-Tabelle</p>
+<pre class="csv"><code>&quot;id&quot;,&quot;name&quot;,&quot;name.transliterated&quot;,&quot;type&quot;
+&quot;9&quot;,&quot;المقتبس&quot;,&quot;al-Muqtabas&quot;,&quot;periodical&quot;
+&quot;11&quot;,&quot;البيان&quot;,&quot;al-Bayān&quot;,&quot;periodical&quot;
+&quot;27&quot;,&quot;الضياء&quot;,&quot;al-Ḍiyāʾ&quot;,&quot;periodical&quot;</code></pre>
+<p>Kanten-Tabelle</p>
+<pre class="csv"><code>&quot;source&quot;,&quot;target&quot;,&quot;date&quot;,&quot;place&quot;,&quot;type&quot;
+&quot;9&quot;,&quot;11&quot;,&quot;1907-01-16&quot;,&quot;Cairo&quot;,&quot;directed&quot;
+&quot;9&quot;,&quot;11&quot;,&quot;1907-01-16&quot;,&quot;Cairo&quot;,&quot;directed&quot;</code></pre>
+</div>
+<div id="visualisierung" class="slide section level2">
+<h1>Visualisierung</h1>
+<div class="figure">
+<img src="../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.svg" alt="" />
+<p class="caption">Directed network of all periodicals mentioned in <em>al-Muqtabas</em> 1(12), 1907</p>
+</div>
+</div>
 
 <div id="schluss" class="title-slide slide section level1">
 <h1>Schluss</h1>
@@ -513,7 +542,7 @@ Till Grallert
 <li>Beiträger_innen zu Project Jarāʾid:</li>
 <li>Links:
 <ul>
-<li>Slides: <a href="https://OpenArabicPE.github.io/slides/2021-hamburg/index.html">https://OpenArabicPE.github.io/slides/2021-hamburg/</a> <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> --></li>
+<li>Folien: <a href="https://OpenArabicPE.github.io/slides/2021-hamburg/index.html">https://OpenArabicPE.github.io/slides/2021-hamburg/</a> <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> --></li>
 <li>Project URL: <a href="https://www.github.com/OpenArabicPE">https://www.github.com/OpenArabicPE</a></li>
 <li>Project blog: <a href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
 <li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
@@ -531,6 +560,16 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 </ul></li>
 <li>Lizenz: Folien und Abbildungen sind als <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> lizensiert</li>
 </ul>
+</div>
+<div id="werkzeuge" class="slide section level2">
+<h1>Werkzeuge</h1>
+<ul>
+<li>Gephi</li>
+<li>Palladio</li>
+</ul>
+</div>
+<div id="bibliographie" class="slide section level2">
+<h1>Bibliographie</h1>
 </div>
 </body>
 </html>

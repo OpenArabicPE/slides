@@ -127,7 +127,22 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 - Modellierter, digitaler Volltext mit Auszeichnung von *named entities* (Periodikatitel)
 
 ```xml
-<p xml:lang="ar">هبط مصر في شتاء <date when="1897"> سنة <num value="1897">١٨٩٧</num></date>لإنشاء مجلة علمية وطبع معجم عربي كان عني بتأليفه منذ سنين ولكن خانته الأقدار فرأى ما كان يسمعه عن نهضة مصر العلمية مبالغاً فيه وأن <pb corresp="file:../epub/26523/OEBPS/xhtml/P686.xhtml" ed="shamela" n="n12-p50"/> سوق العلم والأدب كاسدة لا لإقبال عليها فأصدر أولاً <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:11 oclc:792754974">البيان</title></bibl> سنة بمعاونة <persName ref="oape:pers:4281">الدكتور زلزل</persName> ثم أصدر وحده <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:27 oclc:1034555409">الضياء</title></bibl> فدامت مطردة الصدور إلى صيف هذه السنة وقد شحنها من عرائس أفكاره وتحقيقاته اللغوية وأماليه الأدبية ما لو كتب بغير هذا اللسان لأعجب به أهله وكبروا مثل مقالات اللغة والعصر ولغة الجرائد وأغلاط العرب وأغلاط المولدين وطبع في العهد الأخير كتاب نجعة الرائد في اللغة ولم يوفق إلى طبع معجمه لأسباب أهمها قلة النصير والظهير.</p>
+<biblStruct>
+    <monogr>
+        <title level="j" xml:lang="ar">المقتبس</title>
+        <editor><persName ref="oape:pers:878 viaf:32272677" xml:lang="ar"> <forename>محمد</forename> <surname>كرد علي</surname> </persName></editor>
+        <idno type="oape">9</idno>
+        <imprint>
+            <pubPlace> <placeName ref="oape:place:226 geon:360630" xml:lang="ar">القاهرة</placeName></pubPlace>
+            <date calendar="#cal_islamic" datingMethod="#cal_islamic" when="1907-01-16" when-custom="1324-12-01">1 Jum II 1324</date>
+        </imprint>
+        <biblScope from="1" to="1" unit="volume"/>
+        <biblScope from="12" to="12" unit="issue"/>
+        <biblScope from="609" to="672" unit="page"/>
+    </monogr>
+</biblStruct>
+<!-- ... -->
+<p xml:lang="ar">هبط مصر في شتاء <date when="1897"> سنة <num value="1897">١٨٩٧</num></date>لإنشاء مجلة علمية وطبع معجم عربي كان عني بتأليفه منذ سنين ولكن خانته الأقدار فرأى ما كان يسمعه عن نهضة مصر العلمية مبالغاً فيه وأن <pb corresp="file:../epub/26523/OEBPS/xhtml/P686.xhtml" ed="shamela" n="n12-p50"/> سوق العلم والأدب كاسدة لا لإقبال عليها فأصدر أولاً <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:11 oclc:792754974">البيان</title></bibl> سنة بمعاونة <persName ref="oape:pers:2817">الدكتور زلزل</persName> ثم أصدر وحده <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:27 oclc:1034555409">الضياء</title></bibl> فدامت مطردة الصدور إلى صيف هذه السنة وقد شحنها من عرائس أفكاره وتحقيقاته اللغوية وأماليه الأدبية ما لو كتب بغير هذا اللسان لأعجب به أهله وكبروا مثل مقالات اللغة والعصر ولغة الجرائد وأغلاط العرب وأغلاط المولدين وطبع في العهد الأخير كتاب نجعة الرائد في اللغة ولم يوفق إلى طبع معجمه لأسباب أهمها قلة النصير والظهير.</p>
 ```
 
 </div><div class="c_width-50 c_right">
@@ -136,29 +151,21 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 ```xml
 <biblStruct oape:frequency="monthly" subtype="journal" type="periodical">
-  <monogr xml:lang="ar">
-     <title corresp="sakhrit:jid:161" level="j" xml:lang="ar">البيان</title>
-     <title level="j" type="sub" xml:lang="ar">مجلة علمية أدبية طبية صناعية</title>
-     <title level="j" xml:lang="ar-Latn-x-ijmes">al-Bayān</title>
-     <title level="j" type="sub" xml:lang="ar">Majalla ʿilmiyya adabiyya ṭibbiyya ṣināʿiyya</title>
-     <idno type="oape">11</idno>
-     <idno type="jid" xml:lang="ar">161</idno>
-     <idno type="OCLC">792754974</idno>
-     <editor source="file:///BachUni/BachBibliothek/GitHub/TEI/oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065" xml:lang="ar"> <persName
-        ref="oape:pers:2808 viaf:64154472" xml:lang="ar"> <forename xml:lang="ar">ابراهيم</forename> <surname xml:lang="ar"><addName type="nisbah"
-        >اليازجي</addName></surname></persName> </editor>
-     <editor source="file:///BachUni/BachBibliothek/GitHub/TEI/oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065" xml:lang="ar"> <persName
-        ref="oape:pers:2817 viaf:57953733" xml:lang="ar"> <forename>بشارة</forename> <surname>زلزل</surname></persName> </editor>
-     <textLang mainLang="ar"/>
-     <imprint xml:lang="ar">
-        <date when="1897-03-01" xml:lang="ar">1 مارس 1897</date>
-        <date from="1897-03-01" to="1898"/>
-        <pubPlace xml:lang="ar">
-            <placeName ref="oape:place:226 geon:360630" xml:lang="ar">القاهرة</placeName>
-        </pubPlace>
-     </imprint>
-     <biblScope from="1" to="1" unit="volume" xml:lang="ar"/>
-     <biblScope from="1" to="1" unit="issue" xml:lang="ar"/>
+  <monogr>
+        <title level="j" xml:lang="ar">البيان</title>
+        <title level="j" type="sub" xml:lang="ar">مجلة علمية أدبية طبية صناعية</title>
+        <idno type="oape">11</idno>
+        <idno type="jid" xml:lang="ar">161</idno>
+        <idno type="OCLC">792754974</idno>
+        <editor source="../../oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065" xml:lang="ar"> <persName ref="oape:pers:2808 viaf:64154472"><forename>ابراهيم</forename> <surname><addName type="nisbah">اليازجي</addName></surname></persName> </editor>
+        <editor source="../../oclc_165855925/tei/oclc_165855925-v_1.TEIP5.xml#p_1303.d2e14065"><persName ref="oape:pers:2817 viaf:57953733"> <forename>بشارة</forename> <surname>زلزل</surname></persName> </editor>
+        <textLang mainLang="ar"/>
+        <imprint>
+            <date from="1897-03-01" to="1898"/>
+            <pubPlace><placeName ref="oape:place:226 geon:360630" xml:lang="ar">القاهرة</placeName></pubPlace>
+        </imprint>
+        <biblScope from="1" to="1" unit="volume" xml:lang="ar"/>
+        <biblScope from="1" to="1" unit="issue" xml:lang="ar"/>
   </monogr>
 </biblStruct>
 ```
@@ -166,8 +173,11 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 ```xml
 
 <person>
+    <persName xml:lang="ar"><forename>بشارة</forename> <surname>زلزل<surname></persName>
     <persName xml:lang="ar"><roleName type="title">الدكتور</roleName> <surname xml:lang="ar">زلزل</surname></persName>
-    <idno type="oape">4281</idno>
+    <idno type="oape">2817</idno>
+    <idno type="VIAF">57953733</idno>
+    <death resp="#org_viaf" when="1905">1905</death>
 </person>
 
 ```
@@ -231,6 +241,28 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 </div>
 
+## Benötigte Daten: Knoten und Kanten
+
+Knoten-Tabelle
+
+```csv
+"id","name","name.transliterated","type"
+"9","المقتبس","al-Muqtabas","periodical"
+"11","البيان","al-Bayān","periodical"
+"27","الضياء","al-Ḍiyāʾ","periodical"
+```
+
+Kanten-Tabelle
+
+```csv
+"source","target","date","place","type"
+"9","11","1907-01-16","Cairo","directed"
+"9","11","1907-01-16","Cairo","directed"
+```
+
+## Visualisierung
+
+![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.svg)
 
 # Schluss
 ## Danke!
@@ -238,10 +270,17 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 - Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
 - Beiträger_innen zu Project Jarāʾid:
 - Links:
-    + Slides: [https://OpenArabicPE.github.io/slides/2021-hamburg/](https://OpenArabicPE.github.io/slides/2021-hamburg/index.html)
+    + Folien: [https://OpenArabicPE.github.io/slides/2021-hamburg/](https://OpenArabicPE.github.io/slides/2021-hamburg/index.html)
     <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> -->
     + Project URL: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <grallert@orient-institut.org> <till.grallert@fu-berlin.de>
 - Lizenz: Folien und Abbildungen sind als [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) lizensiert
+
+## Werkzeuge
+
+- Gephi
+- Palladio
+
+## Bibliographie
