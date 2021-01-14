@@ -168,17 +168,17 @@
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
-  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script>
+  <!-- <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script> -->
 </head>
 <body>
-<div class="slide titlepage">
+<!-- <div class="slide titlepage">
   <h1 class="title">(soziale) Netzwerkanalyse</h1>
   <p class="author">
 Till Grallert
   </p>
   <p class="date">2021-01-13</p>
-</div>
+</div> -->
 <div id="netzwerkanalyse" class="slide section level2 titlepage">
 <h1 class="titlepage">Netzwerkanalyse</h1>
 <p>Till Grallert, Orient-Institut Beirut (OIB), @<a href="https://twitter.com/tillgrallert">tillgrallert</a></p>
@@ -318,7 +318,7 @@ Till Grallert
 </div>
 <div id="vorhandene-daten-open-arabic-periodical-editions" class="slide section level2">
 <h1>Vorhandene Daten: <a href="https://openarabicpe.github.io">Open Arabic Periodical Editions</a></h1>
-<p>Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX), Normdaten (TEI XML)</p>
+<p>Modellierter Volltext (<a href="http://www.tei-c.org">TEI XML</a>), bibliographische Metadaten (<a href="http://www.loc.gov/standards/mods/">MODS</a>, <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>, <a href="http://www.bibtex.org/Format/">BibTeX</a>), Normdaten (<a href="http://www.tei-c.org">TEI XML</a>)</p>
 <table>
 <thead>
 <tr class="header">
@@ -411,7 +411,7 @@ Till Grallert
 <h1>Vorhandene Daten: <a href="https://openarabicpe.github.io">Open Arabic Periodical Editions</a></h1>
 <div class="c_width-30">
 <ul>
-<li>Modellierter Volltext mit Auszeichnungen (TEI XML)</li>
+<li>Modellierter Volltext mit Auszeichnungen (<a href="http://www.tei-c.org">TEI XML</a>)</li>
 </ul>
 <!-- <biblStruct>
     <monogr>
@@ -431,7 +431,7 @@ Till Grallert
 </div>
 <div class="c_width-60">
 <ul>
-<li>Normdaten (TEI XML)</li>
+<li>Normdaten (<a href="http://www.tei-c.org">TEI XML</a>)</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">&lt;biblStruct</span><span class="ot"> oape:frequency=</span><span class="st">&quot;monthly&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;journal&quot;</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>  <span class="kw">&lt;monogr&gt;</span></span>
@@ -466,7 +466,7 @@ Till Grallert
 <h1>Vorhandene Daten: <a href="https://projectjaraid.github.io">Project Jarāʾid</a></h1>
 <div class="c_width-50 c_left">
 <ul>
-<li>Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1930 (TEI XML)</li>
+<li>Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1930 (<a href="http://www.tei-c.org">TEI XML</a>)</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="kw">&lt;biblStruct</span><span class="ot"> type=</span><span class="st">&quot;periodical&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a>  <span class="kw">&lt;monogr&gt;</span></span>
@@ -488,7 +488,7 @@ Till Grallert
 </div>
 <div class="c_width-50 c_right">
 <ul>
-<li>Normdaten (TEI XML)</li>
+<li>Normdaten (<a href="http://www.tei-c.org">TEI XML</a>)</li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="kw">&lt;person&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a>    <span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar-Latn-x-ijmes&quot;</span><span class="kw">&gt;</span>ʿAbd al-Bāsiṭ al-Unsī<span class="kw">&lt;/persName&gt;</span></span>
@@ -545,8 +545,8 @@ Till Grallert
 </div>
 </div>
 
-<div id="schluss" class="title-slide slide section level1">
-<h1>Schluss</h1>
+<div id="abschluss" class="title-slide slide section level1">
+<h1>Abschluss</h1>
 
 </div>
 <div id="danke" class="slide section level2">
@@ -578,8 +578,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 <div id="werkzeuge" class="slide section level2">
 <h1>Werkzeuge</h1>
 <ul>
-<li>Gephi</li>
-<li>Palladio</li>
+<li><a href="https://gephi.org/">Gephi</a>: open-source network analysis. Quirky de-facto standard.
+<ul>
+<li>very powerful</li>
+<li>non-standard UI; bugs</li>
+</ul></li>
+<li>Palladio: Web application</li>
 </ul>
 </div>
 <div id="bibliographie" class="slide section level2">

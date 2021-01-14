@@ -107,7 +107,7 @@ Sozialgeschichte des östlichen Mittelmeerraumes in den letzten 250 Jahren
 
 ## Vorhandene Daten: [Open Arabic Periodical Editions](https://openarabicpe.github.io)
 
-Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX), Normdaten (TEI XML)
+Modellierter Volltext ([TEI XML](http://www.tei-c.org)), bibliographische Metadaten ([MODS](http://www.loc.gov/standards/mods/), [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), [BibTeX](http://www.bibtex.org/Format/)), Normdaten ([TEI XML](http://www.tei-c.org))
 
 | periodical                                                                        | doi                                                              | volumes | issues | articles | words   | words per article |
 | :--------                                                                         | :--                                                              | ----:   | ----:  | ----:    | ----:   | ----:             |
@@ -124,7 +124,7 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 <div class="c_width-30">
 
-- Modellierter Volltext mit Auszeichnungen (TEI XML)
+- Modellierter Volltext mit Auszeichnungen ([TEI XML](http://www.tei-c.org))
 
 <!-- <biblStruct>
     <monogr>
@@ -149,7 +149,7 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 <div class="c_width-60">
 
-- Normdaten (TEI XML)
+- Normdaten ([TEI XML](http://www.tei-c.org))
 
 ```xml
 <biblStruct oape:frequency="monthly" subtype="journal" type="periodical">
@@ -189,7 +189,7 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 ## Vorhandene Daten: [Project Jarāʾid](https://projectjaraid.github.io)
 
 <div class="c_width-50 c_left">
-- Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1930 (TEI XML)
+- Bibliographische Metadaten zu allen (3300+) arabischen Periodika bis 1930 ([TEI XML](http://www.tei-c.org))
 
 ```xml
 <biblStruct type="periodical">
@@ -213,7 +213,7 @@ Modellierter Volltext (TEI XML), bibliographische Metadaten (MODS, RDF, BibTeX),
 
 </div><div class="c_width-50 c_right">
 
-- Normdaten (TEI XML)
+- Normdaten ([TEI XML](http://www.tei-c.org))
 
 ```xml
 <person>
@@ -277,7 +277,7 @@ Kanten-Tabelle
 
 </div>
 
-# Schluss
+# Abschluss
 ## Danke!
 
 - Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
@@ -293,7 +293,9 @@ Kanten-Tabelle
 
 ## Werkzeuge
 
-- Gephi
-- Palladio
+- [Gephi](https://gephi.org/): open-source network analysis. Quirky de-facto standard.
+    + very powerful
+    + non-standard UI; bugs
+- Palladio: Web application
 
 ## Bibliographie
