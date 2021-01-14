@@ -265,7 +265,7 @@ Kanten-Tabelle
 
 <div class="c_width-50 c_left">
 
-![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
+![Directed network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml)](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
 
 </div>
 <div class="c_width-50 c_right">
@@ -285,7 +285,7 @@ Kanten-Tabelle
 
 <div class="c_width-50 c_left">
 
-![Directed network of all periodicals mentioned in *al-Muqtabas* 1(12), 1907](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
+![Directed network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml)](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
 
 </div>
 <div class="c_width-50 c_right">
