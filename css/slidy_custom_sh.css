@@ -782,6 +782,15 @@ ul.outline li.folded:hover {
 /* for slides with class "title" in table of contents */
 a.titleslide { font-weight: bold; font-style: italic }
 
+/* references, footnotes, bibliography */
+
+div.references {
+  font-size: 80%
+}
+div.references p {
+  margin: 5px 0px;
+}
+
 /*
  hide images for work around for save as bug
  where browsers fail to save images used by CSS
