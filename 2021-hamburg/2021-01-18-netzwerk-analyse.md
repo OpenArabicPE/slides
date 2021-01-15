@@ -5,6 +5,11 @@ author: Till Grallert
 date: 2021-01-13
 lang: de
 ORCID: orcid.org/0000-0002-5739-8094
+licence: http://creativecommons.org/licenses/by-nd/4.0/
+bibliography: /BachUni/teaching/2021-network-analysis/bibliography/bibliography.csl.json
+nocite: |
+    @Ahnert+2020; @Brey+2018+TemporalNetworkAnalysis; @Düring+2016; @Jannidis+2017; @Jannidis+2017; @Lemercier+2011; @Lemercier+2012+FormaleMethodenNetzwerkanalyse; @Moretti+2011+NetworkTheoryPlot; @Ognyanova+2018+StaticDynamicNetwork; @Posner+2018+GetUnimodalNetwork; @Sadler+2017+IntroductionNetworkAnalysis; @Scott+2000+SocialNetworkAnalysis; @Scott+2013; @Weingart+2011+DemystifyingNetworksParts; @Weingart+2015+NetworksDemystifiedBimodal
+#  @*
 ---
 
 ##  Netzwerkanalyse {.titlepage}
@@ -246,20 +251,19 @@ Modellierter Volltext ([TEI XML](http://www.tei-c.org)), bibliographische Metada
 
 Knoten-Tabelle
 
-```csv
-"id","name","name.transliterated","type"
-"9","المقتبس","al-Muqtabas","periodical"
-"11","البيان","al-Bayān","periodical"
-"27","الضياء","al-Ḍiyāʾ","periodical"
-```
+| id |   name  | name.transliterated |    type    |
+|----|---------|---------------------|------------|
+|  9 | المقتبس | al-Muqtabas         | periodical |
+| 11 | البيان  | al-Bayān            | periodical |
+| 27 | الضياء  | al-Ḍiyāʾ            | periodical |
 
 Kanten-Tabelle
 
-```csv
-"source","target","date","place","type"
-"9","11","1907-01-16","Cairo","directed"
-"9","27","1907-01-16","Cairo","directed"
-```
+| source | target |    date    | place |   type   |
+|--------|--------|------------|-------|----------|
+|      9 |     11 | 1907-01-16 | Cairo | directed |
+|      9 |     27 | 1907-01-16 | Cairo | directed |
+
 
 ## Visualisierung: Erwähnungen
 
@@ -292,8 +296,8 @@ Kanten-Tabelle
 # Abschluss
 ## Danke!
 
-- Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
-- Beiträger_innen zu Project Jarāʾid:
+- Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+- Beiträger_innen zu Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
 - Links:
     + Folien: [https://OpenArabicPE.github.io/slides/2021-hamburg/](https://OpenArabicPE.github.io/slides/2021-hamburg/index.html)
     <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> -->
@@ -305,10 +309,16 @@ Kanten-Tabelle
 
 ## Werkzeuge
 
-- [Gephi](https://gephi.org/): open-source network analysis. Quirky de-facto standard.
-    + very powerful
-    + non-standard UI; bugs
-- Palladio: Web application for network analysis
-- OpenRefine: data cleaning
+- Netzwerkanalyse
+    + [Palladio](http://hdlab.stanford.edu/palladio/) (Webanwendung): Für erste Experimente
+        * Netzwerke, Karten, Zeitleisten
+    + [Flourish](https://flourish.studio/)
+    + [RAWGraphs](http://app.rawgraphs.io/)
+    - [Gephi](https://gephi.org/): open source. Quirky de-facto standard.
+    - [R]() und [RStudio](): es gibt Packages für Netzwerkanalyse
+- Datenbereinigung
+    - [OpenRefine](http://openrefine.org/): open source.
+        + Rekonzilierung mit Wikidata, VIAF, GND, GeoNames etc.
 
 ## Bibliographie
+

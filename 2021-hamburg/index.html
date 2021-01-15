@@ -515,14 +515,64 @@ Till Grallert
 <div id="benötigte-daten-knoten-und-kanten" class="slide section level2">
 <h1>Benötigte Daten: Knoten und Kanten</h1>
 <p>Knoten-Tabelle</p>
-<pre class="csv"><code>&quot;id&quot;,&quot;name&quot;,&quot;name.transliterated&quot;,&quot;type&quot;
-&quot;9&quot;,&quot;المقتبس&quot;,&quot;al-Muqtabas&quot;,&quot;periodical&quot;
-&quot;11&quot;,&quot;البيان&quot;,&quot;al-Bayān&quot;,&quot;periodical&quot;
-&quot;27&quot;,&quot;الضياء&quot;,&quot;al-Ḍiyāʾ&quot;,&quot;periodical&quot;</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th>id</th>
+<th>name</th>
+<th>name.transliterated</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>9</td>
+<td>المقتبس</td>
+<td>al-Muqtabas</td>
+<td>periodical</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>البيان</td>
+<td>al-Bayān</td>
+<td>periodical</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>الضياء</td>
+<td>al-Ḍiyāʾ</td>
+<td>periodical</td>
+</tr>
+</tbody>
+</table>
 <p>Kanten-Tabelle</p>
-<pre class="csv"><code>&quot;source&quot;,&quot;target&quot;,&quot;date&quot;,&quot;place&quot;,&quot;type&quot;
-&quot;9&quot;,&quot;11&quot;,&quot;1907-01-16&quot;,&quot;Cairo&quot;,&quot;directed&quot;
-&quot;9&quot;,&quot;27&quot;,&quot;1907-01-16&quot;,&quot;Cairo&quot;,&quot;directed&quot;</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th>source</th>
+<th>target</th>
+<th>date</th>
+<th>place</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>9</td>
+<td>11</td>
+<td>1907-01-16</td>
+<td>Cairo</td>
+<td>directed</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>27</td>
+<td>1907-01-16</td>
+<td>Cairo</td>
+<td>directed</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="visualisierung-erwähnungen" class="slide section level2">
 <h1>Visualisierung: Erwähnungen</h1>
@@ -563,8 +613,8 @@ Till Grallert
 <div id="danke" class="slide section level2">
 <h1>Danke!</h1>
 <ul>
-<li>Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef</li>
-<li>Beiträger_innen zu Project Jarāʾid:</li>
+<li>Beiträger_innen zu OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef</li>
+<li>Beiträger_innen zu Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser</li>
 <li>Links:
 <ul>
 <li>Folien: <a href="https://OpenArabicPE.github.io/slides/2021-hamburg/index.html">https://OpenArabicPE.github.io/slides/2021-hamburg/</a> <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> --></li>
@@ -589,17 +639,75 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 <div id="werkzeuge" class="slide section level2">
 <h1>Werkzeuge</h1>
 <ul>
-<li><a href="https://gephi.org/">Gephi</a>: open-source network analysis. Quirky de-facto standard.
+<li>Netzwerkanalyse
 <ul>
-<li>very powerful</li>
-<li>non-standard UI; bugs</li>
+<li><a href="http://hdlab.stanford.edu/palladio/">Palladio</a> (Webanwendung): Für erste Experimente
+<ul>
+<li>Netzwerke, Karten, Zeitleisten</li>
 </ul></li>
-<li>Palladio: Web application for network analysis</li>
-<li>OpenRefine: data cleaning</li>
+<li><a href="https://flourish.studio/">Flourish</a></li>
+<li><a href="http://app.rawgraphs.io/">RAWGraphs</a></li>
+<li><a href="https://gephi.org/">Gephi</a>: open source. Quirky de-facto standard.</li>
+<li><a href="">R</a> und <a href="">RStudio</a>: es gibt Packages für Netzwerkanalyse</li>
+</ul></li>
+<li>Datenbereinigung
+<ul>
+<li><a href="http://openrefine.org/">OpenRefine</a>: open source.
+<ul>
+<li>Rekonzilierung mit Wikidata, VIAF, GND, GeoNames etc.</li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
-<div id="bibliographie" class="slide section level2">
-<h1>Bibliographie</h1>
+<div id="bibliographie" class="slide section level2 unnumbered">
+<h1 class="unnumbered">Bibliographie</h1>
+<div id="refs" class="references hanging-indent">
+<div id="ref-Ahnert+2020">
+<p>Ahnert, Ruth, u. a. <em>The Network Turn: Changing Perspectives in the Humanities</em>. Cambridge University Press, 2020-12-xx, doi:<a href="https://doi.org/10.1017/9781108866804">10.1017/9781108866804</a>.</p>
+</div>
+<div id="ref-Brey+2018+TemporalNetworkAnalysis">
+<p>Brey, Alex. „Temporal Network Analysis with R“. <em>Programming Historian</em>, November 2018. <em>programminghistorian.org</em>, <a href="https://programminghistorian.org/en/lessons/temporal-network-analysis-with-r">https://programminghistorian.org/en/lessons/temporal-network-analysis-with-r</a>.</p>
+</div>
+<div id="ref-Düring+2016">
+<p>Düring, Marten, u. a., Herausgeber. <em>Handbuch Historische Netzwerkforschung</em>. Lit, 2016.</p>
+</div>
+<div id="ref-Jannidis+2017">
+<p>Jannidis, Fotis. „Netzwerke“. <em>Digital Humanities: Eine Einführung</em>, herausgegeben von Fotis Jannidis u. a., J.B. Metzler, 2017, S. 147–61, doi:<a href="https://doi.org/DOI%2010.1007/978-3-476-05446-3_10">DOI 10.1007/978-3-476-05446-3_10</a>.</p>
+</div>
+<div id="ref-Lemercier+2012+FormaleMethodenNetzwerkanalyse">
+<p>Lemercier, Claire. „Formale Methoden der Netzwerkanalyse in den Geschichtswissenschaften: Warum und Wie?“ <em>Österreichische Zeitschrift für Geschichtswissenschaften</em>, Bd. 23, Nr. 1, 2012, S. 16–41.</p>
+</div>
+<div id="ref-Lemercier+2011">
+<p>---. „Formal network methods in history: why and how?“ <em>Social Networks</em>, herausgegeben von Georg Fertig, 2011, <a href="https://halshs.archives-ouvertes.fr/halshs-00521527v2">https://halshs.archives-ouvertes.fr/halshs-00521527v2</a>.</p>
+</div>
+<div id="ref-Moretti+2011+NetworkTheoryPlot">
+<p>Moretti, Franco. „Network Theory, Plot Analysis“. <em>New Left Review</em>, Bd. 68, Nr. March-April, March-April, 2011, <a href="https://newleftreview.org/issues/II68/articles/franco-moretti-network-theory-plot-analysis">https://newleftreview.org/issues/II68/articles/franco-moretti-network-theory-plot-analysis</a>.</p>
+</div>
+<div id="ref-Ognyanova+2018+StaticDynamicNetwork">
+<p>Ognyanova, Katya. „Static and Dynamic Network Visualization with R“. <em>Katya Ognyanova</em>, 9. November 2018, <a href="http://kateto.net/network-visualization">http://kateto.net/network-visualization</a>.</p>
+</div>
+<div id="ref-Posner+2018+GetUnimodalNetwork">
+<p>Posner, Miriam. <em>Get a unimodal network from a bimodal network</em>. 2016. 21. Juni 2018, <a href="https://github.com/miriamposner/cytoscape_tutorials">https://github.com/miriamposner/cytoscape_tutorials</a>.</p>
+</div>
+<div id="ref-Sadler+2017+IntroductionNetworkAnalysis">
+<p>Sadler, Jesse. <em>Introduction to Network Analysis with R</em>. 25. Oktober 2017, <a href="https://www.jessesadler.com/post/network-analysis-with-r/">https://www.jessesadler.com/post/network-analysis-with-r/</a>.</p>
+</div>
+<div id="ref-Scott+2000+SocialNetworkAnalysis">
+<p>Scott, John. <em>Social Network Analysis: A Handbook</em>. 2. Aufl., Sage, 2000.</p>
+</div>
+<div id="ref-Scott+2013">
+<p>---. <em>What Is Social Network Analysis?</em> Bloomsbury Academic, 2013, <a href="http://site.ebrary.com/id/10580584">http://site.ebrary.com/id/10580584</a>.</p>
+</div>
+<div id="ref-Wasserman+1994">
+<p>Wasserman, Stanley, und Katherine Faust. <em>Social Network Analysis: Methods and Applications</em>. Cambridge University Press, 1994.</p>
+</div>
+<div id="ref-Weingart+2011+DemystifyingNetworksParts">
+<p>Weingart, Scott. „Demystifying Networks, Parts I &amp; II Journal of Digital Humanities“. <em>Journal of Digital Humanities</em>, Bd. 1, Nr. 1, 2011, <a href="http://journalofdigitalhumanities.org/1-1/demystifying-networks-by-scott-weingart/">http://journalofdigitalhumanities.org/1-1/demystifying-networks-by-scott-weingart/</a>.</p>
+</div>
+<div id="ref-Weingart+2015+NetworksDemystifiedBimodal">
+<p>---. „Networks Demystified 9: Bimodal Networks“. <em>The Scottbot Irregular</em>, 21. Januar 2015, <a href="http://www.scottbot.net/HIAL/?p=41158">http://www.scottbot.net/HIAL/?p=41158</a>.</p>
+</div>
+</div>
 </div>
 </body>
 </html>
