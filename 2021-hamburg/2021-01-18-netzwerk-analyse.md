@@ -261,38 +261,32 @@ Kanten-Tabelle
 "9","27","1907-01-16","Cairo","directed"
 ```
 
-## Visualisierung
+## Visualisierung: Erwähnungen
+
+![Directed network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml)](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_ref.png)
+
+## Visualisierung: Weitere Verbindungen
 
 <div class="c_width-50 c_left">
 
-![Directed network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml)](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
+### Sprache
 
-</div>
-<div class="c_width-50 c_right">
-<div class="c_height-50">
-
-![languages](../assets/networks/al-muqtabas-v_1-i_12-n_location.png)
-
-</div>
-<div class="c_height-50">
-
-![locations](../assets/networks/al-muqtabas-v_1-i_12-n_language.png)
-
-</div>
-</div>
-
-## Visualisierung
-
-<div class="c_width-50 c_left">
-
-![Directed network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml)](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals.png)
+![Undirected network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml). Nodes: size = weighted degree; colour = language.](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_lang.png)
 
 </div>
 <div class="c_width-50 c_right">
 
-![+language (edge colours: red = language, green = reference)](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_ref-lang.png)
+### Publikationsort
+
+![Undirected network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml). Nodes: size = weighted degree; colour = location.](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_loc.png)
 
 </div>
+
+
+## Visualisierung: Kombiniert
+
+
+![Network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml). Nodes: size = betweenness centrality; colour = weighted degree. Edges: blue = mentions; pink = same language; grey = same location.](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_ref-lang-loc.png)
 
 
 # Abschluss
