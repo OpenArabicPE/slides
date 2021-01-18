@@ -292,6 +292,39 @@ Kanten-Tabelle
 
 ![Network of all periodicals mentioned in [*al-Muqtabas* 1(12), 1907](https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_12.TEIP5.xml). Nodes: size = betweenness centrality; colour = weighted degree. Edges: blue = mentions; pink = same language; grey = same location.](../assets/networks/al-muqtabas-v_1-i_12-n_periodicals-e_ref-lang-loc.png)
 
+# schöne Grafik ≠ bedeutungsvoll
+## Soziales Netzwerk von Herausgeber_innen (Jarāʾid)
+
+<div class="c_width-60 c_left">
+
+![Figure: Network of publishers, 1800--1929. Number of nodes: 2702;  node size: betweenness centrality](../assets/networks/network_project-jaraid_people-titles-n-size_betweenness-centrality.svg)
+
+</div><div class="c_width-30 c_right">
+
+1. Network?
+2. Very limited collaboration
+3. Due to data/knowledge **bias**!
+
+</div>
+
+
+## Netzwerk erwähnter Periodika (OpenArabicPE)
+
+<div class="c_width-60 c_left">
+
+![Figure: Network of periodicals mentioned *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*; weights per issue. Node size/colour: in-degree](../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.svg)
+
+</div>
+<div class="c_width-30 c_right">
+
+1. only a few nodes are of relative importance (44 of 465)
+2. *al-Muqtabas* accounts for the vast majority of references
+3. all periodicals are primarly self-referential
+4. confirms the bias on Cairo and Beirut (8 of 9)
+2. highly centralised in terms of geographic distribution (10 locations)
+3. surprising members
+
+</div>
 
 # Abschluss
 ## Danke!
