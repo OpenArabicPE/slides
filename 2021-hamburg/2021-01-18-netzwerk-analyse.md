@@ -110,6 +110,13 @@ Sozialgeschichte des östlichen Mittelmeerraumes in den letzten 250 Jahren
     + Überprüfung der Signifikanz des eigenen Korpus
     + Hilfestellung für zukünftige Digitalisierungsprojekte
 
+## Benötigte Daten?
+
+- Volltext mit Auszeichnung von *named entities*
+- Normdatensätze (z.B. [GND](https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html), [VIAF](https://viaf.org/), [Wikidata](https://wikidata.org/)) für
+    - Disambiguierung: "Paris" als konkreter Ort oder konkrete Person
+    - Anreicherung von Daten: z.B. Raumdaten oder Lebensdaten
+
 ## Vorhandene Daten: [Open Arabic Periodical Editions](https://openarabicpe.github.io)
 
 Modellierter Volltext ([TEI XML](http://www.tei-c.org)), bibliographische Metadaten ([MODS](http://www.loc.gov/standards/mods/), [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), [BibTeX](http://www.bibtex.org/Format/)), Normdaten ([TEI XML](http://www.tei-c.org))
