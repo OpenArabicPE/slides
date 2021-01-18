@@ -88,13 +88,15 @@ Sozialgeschichte des östlichen Mittelmeerraumes in den letzten 250 Jahren
 
 ## Forschungsfragen
 
-- Was sind die wichtigsten Knoten (Autor_innen, Periodika, Orte etc.) im diskursiven Feld der Presse?
+- Was sind die **wichtigsten** (normativ!) Knoten (Autor_innen, Periodika, Orte etc.) im diskursiven Feld der Presse?
 - Produktionsgeschichte:
     + Wie wurden Periodika produziert?
     + Wer verfasste die mehrheitlich anonymen Texte?
     + Wie hoch ist die Wiederverwertungsrate und wie "reisten" Texte?
 - Rezeptionsgeschichte:
     + Wer hat was, wo und wann gelesen (und darüber geschrieben)?
+
+
 
 ## Fokus für heute
 ### Periodika-Netzwerke
