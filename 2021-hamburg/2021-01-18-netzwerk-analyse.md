@@ -357,7 +357,7 @@ Kanten-Tabelle
     + [Flourish](https://flourish.studio/)
     + [RAWGraphs](http://app.rawgraphs.io/)
     - [Gephi](https://gephi.org/): open source. Quirky de-facto standard.
-    - [R]() und [RStudio](): es gibt Packages für Netzwerkanalyse
+    - [R](https://www.r-project.org) und [RStudio](https://rstudio.com): es gibt Packages für Netzwerkanalyse
 - Datenbereinigung
     - [OpenRefine](http://openrefine.org/): open source.
         + Rekonzilierung mit Wikidata, VIAF, GND, GeoNames etc.
