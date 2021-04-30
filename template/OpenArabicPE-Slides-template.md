@@ -217,12 +217,13 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
     - harvest, generate, validate and share open metadata
 2. aims
     + **validate** the transcription against the facsimiles
-    - **improve** the transcription with the help of the "crowd"
-    - make everything **citable** for scholars, **linkable** for machines
+    - **improve** the transcription
+    - **train** text and layout recognition algorithms
+    - **citable** for scholars, **linkable** for machines
     - share all data, metadata and tools with the broadest possible licences to facilitate access and re-use
 3. principles
     - re-purpose **available** and **established** tools, technologies, and material
-    - preference for **open** and **simple** formats and tools
+    - preference for **open**, **free**, and **simple** formats and tools
 
 ## 2.2 Deliverables: basic components
 
@@ -235,7 +236,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 3. Scripts to
     + scrape full text / bibliographic information from the web
     + convert scraped information into TEI, MODS, BibTeX
-    + generate bibliographic through iteration
+    + generate bibliographic data through iteration
     + improve the TEI mark-up
 
 ## 2.2 Deliverables: Core features

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Till Grallert" />
+  <meta name="date" content="2021-04-30" />
+  <title>Open Arabic Periodical Editions</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print" href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="../css/slidy_custom_sh.css" />
+  <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+      color: black;
+  }
+  /* provide a readible font-size */
+  /*.sourceCode * {
+      font-size: 16px;
+  }*/
+  /* xml element names */
+  .xml > code span.kw {
+  	/*color: #0F0F9C;*/
+  	color: #000096;
+  	font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code span.ot {
+  	/*color:#FF8041;*/
+  	color: #FF9159;
+  }
+  /* xml attribute values */
+  .xml > code span.st {
+  	/*color:#993300;*/
+  	color: #993300;
+  }
+  /* xml comments */
+  .xml > code span.co {
+  	/*color:#167116;*/
+  	color: #2F8132;
+  	font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+  	color:#9132CC;
+  } */
+  </style>
+  <style type="text/css">
+  /* styles to split a slide into columns */
+  .c_width-60 {
+      width:64%;
+      position: relative;
+      float: left;
+  }
+  .c_width-50 {
+      width:49%;
+      position: relative;
+      float: left;
+  }
+  .c_width-30 {
+      width:33%;
+      position: relative;
+      float: left;
+  }
+  .c_left {
+      display: block;
+      float:left;
+  }
+  .c_right {
+      display: block;
+      float: right;
+  }
+
+  /* styles to vertically stack divs */
+  .c_height-50 {
+      /*height: 45%;*/
+      height: 300px;
+      max-height: 300px;
+  }
+  .c_top {
+      vertical-align: top;
+  }
+  .c_bottom {
+      vertical-align: bottom;
+  }
+  </style>
+  <style type="text/css">
+  .cImportant {
+  	color:red;
+  }
+  </style>
+  <script type="text/javascript" src="../js/slidy.js"></script>
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+  <meta name="duration" content="10" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Open Arabic Periodical Editions</h1>
+  <p class="subtitle">Contributing to the <em>digital commons</em> without the help we cannot get</p>
+  <p class="author">
+Till Grallert
+  </p>
+  <p class="date">2021-04-30</p>
+</div>
+<div id="open-arabic-periodical-editions-openarabicpe" class="title-slide slide section level1">
+<h1>Open Arabic Periodical Editions (OpenArabicPE)</h1>
+
+</div>
+<div id="overwiew" class="slide section level2">
+<h1>Overwiew</h1>
+<div class="columns">
+<div class="column">
+<div>
+<ul class="incremental">
+<li>Corpus of 6 full-text scholarly digital editions (TEI XML) of Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.</li>
+<li>A client-based webview showing text and facsimiles side-by-side (based on TEI Boilerplate).</li>
+<li>Bibliographic metadata (MODS, BibTeX, Zotero RDF)
+<ul class="incremental">
+<li>on the article level for the entire corpus plus 2 additional magazines</li>
+<li>on the issue level for 7 additional newspapers</li>
+<li>on the title level for 3300+ periodicals (in collaboration with <a href="https://projectjaraid.github.io">Project Jarāʾid</a>)</li>
+</ul></li>
+<li>Authority files (TEI XML): gazetteer, personography</li>
+<li>A <a href="https://zotero.org/groups/openarabicpe">Zotero group</a> to search the metadata and access the digital editions</li>
+<li>Code and workflows</li>
+</ul>
+</div>
+</div><div class="column">
+<div class="figure">
+<img src="../assets/boilerplate_muqtabas.png" id="fig:webview-muqtabas" alt="" />
+<p class="caption">Figure 1: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="aims-and-principles" class="slide section level2">
+<h1>Aims and principles</h1>
+<ol style="list-style-type: decimal">
+<li>ideas:
+<ul>
+<li>unite <strong>available</strong> facsimiles and transcriptions</li>
+<li>harvest, generate, validate and share open metadata</li>
+</ul></li>
+<li>aims
+<ul>
+<li><strong>validate</strong> and <strong>improve</strong> the transcription with the facsimiles</li>
+<li><strong>train</strong> text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts</li>
+<li><strong>citable</strong> for scholars, <strong>linkable</strong> for machines to facilitate use and adoption of the resources</li>
+<li><strong>open licences</strong> to facilitate re-use</li>
+</ul></li>
+<li>principles
+<ul>
+<li>use as few as possible <strong>open</strong> and <strong>simple</strong> formats and tools</li>
+<li>re-use/purpose <strong>available</strong> and <strong>established</strong> tools, technologies, and material</li>
+<li>use <strong>free-to-use</strong> platforms without lock-in of data</li>
+</ul></li>
+</ol>
+</div>
+<div id="why-spend-the-effort-shouldnt-others-do-it" class="slide section level2">
+<h1>Why spend the effort? Shouldn’t others do it?</h1>
+<p>OpenArabicPE addresses a clear need, fundamental rights, and our scholarly duties:</p>
+<ol style="list-style-type: decimal">
+<li>Societies of the Global South have a <strong>right</strong> to unhampered access to their <strong>own cultural record</strong>—a cultural record that is frequently held by institutions of the Global North—and <strong>on their own terms</strong></li>
+<li>The general public and scholarly communities <strong>need</strong> access to an important local and quotidian source to tell and recover local stories</li>
+<li>Scholarly communities have a duty of care</li>
+</ol>
+</div>
+
+<div id="digitisation-as-the-promised-solution-to-all-our-problems" class="title-slide slide section level1">
+<h1>Digitisation as the promised solution to all our problems?</h1>
+
+</div>
+<div id="digitisation-online-accessible" class="slide section level2">
+<h1>Digitisation != online != accessible</h1>
+</div>
+</body>
+</html>
