@@ -225,19 +225,19 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-oib-forschungstage/](https:/
 
 <div class="c_width-50 c_left">
 
-![Map: Locations in bylines in *al-Muqtabas* (Cairo and Damascus)](../assets/maps/map-oclc_4770057679-bylines-middle-east.png)
+![Map: Locations in bylines in *al-Muqtabas* (Cairo and Damascus)](../assets/maps/map-oclc_4770057679-bylines-ME.png)
 
 </div><div class="c_width-50 c_right">
 
-![Map: Locations in bylines in *al-Ḥaqāʾiq* (Damascus)](../assets/maps/map-oclc_644997575-bylines-middle-east.png)
+![Map: Locations in bylines in *al-Ḥaqāʾiq* (Damascus)](../assets/maps/map-oclc_644997575-bylines-ME.png)
 
 </div><div class="c_width-50 c_left">
 
-![Map: Locations in bylines in *al-Ḥasnāʾ* (Beirut)](../assets/maps/map-oclc_792756327-bylines-middle-east.png)
+![Map: Locations in bylines in *al-Ḥasnāʾ* (Beirut)](../assets/maps/map-oclc_792756327-bylines-ME.png)
 
 </div><div class="c_width-50 c_right">
 
-![Map: Locations in bylines in *Lughat al-ʿArab* (Baghdad)](../assets/maps/map-oclc_472450345-bylines-middle-east.png)
+![Map: Locations in bylines in *Lughat al-ʿArab* (Baghdad)](../assets/maps/map-oclc_472450345-bylines-ME.png)
 
 </div>
 

@@ -619,27 +619,27 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 4.1.6 Locations by number of bylines: *al-Muqtabas*
 
-![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map-oclc_4770057679-bylines-middle-east.png)
+![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map-oclc_4770057679-bylines-ME.png)
 
 ![Figure: Locations in bylines in *al-Muqtabas*](../assets/maps/map-oclc_4770057679-bylines-all.png)
 
 ## 4.1.7 Locations by number of bylines: *al-Ḥaqāʾiq*
 
-![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map-oclc_644997575-bylines-middle-east.png)
+![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map-oclc_644997575-bylines-ME.png)
 
 ![Figure: Locations in bylines in *al-Ḥaqāʾiq*](../assets/maps/map-oclc_644997575-bylines-all.png)
 
 ## 4.1.8 Locations by number of bylines: *al-Ḥasnāʾ*
 
 
-![Figure: Locations in bylines in *al-Ḥasnāʾ*](../assets/maps/map-oclc_792756327-bylines-middle-east.png)
+![Figure: Locations in bylines in *al-Ḥasnāʾ*](../assets/maps/map-oclc_792756327-bylines-ME.png)
 
 ![Figure: Locations in bylines in *al-Ḥasnāʾ*](../assets/maps/map-oclc_792756327-bylines-all.png)
 
 ## 4.1.9 Locations by number of bylines: *Lughat al-ʿArab*
 
 
-![Figure: Locations in bylines in *Lughat al-ʿArab*](../assets/maps/map-oclc_472450345-bylines-middle-east.png)
+![Figure: Locations in bylines in *Lughat al-ʿArab*](../assets/maps/map-oclc_472450345-bylines-ME.png)
 
 ![Figure: Locations in bylines in *Lughat al-ʿArab*](../assets/maps/map-oclc_472450345-bylines-all.png)
 
