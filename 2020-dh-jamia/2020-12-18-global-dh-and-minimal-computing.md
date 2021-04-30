@@ -32,7 +32,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-dh-jamia/](https://OpenArabi
 
 ## Digitisation as solution
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 1. Promise: instant **access** to 100s of **digitised** periodicals and 100.000s of issues
 2. Expectations: answers to core questions
@@ -43,12 +43,12 @@ Slides: [https://OpenArabicPE.github.io/slides/2020-dh-jamia/](https://OpenArabi
     - limited and unequal access
     - limited and unequal data
     - limited and unequal metadata
-</div>
-<div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![Network of periodicals mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*](../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png)
 
-</div>
+:::
 
 # 1. Digitisation != online != accessible
 # 1.1 The first level of inaccessibility: limited knowledge of the "original" artefact
@@ -111,23 +111,25 @@ Digitisation is **labour and resource intensive**. It really is expensive!
 
 The result of ever-extended copyright: Fear and geofencing
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 ![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-2.png)
 
-</div>
+:::
 
 ## 1.3 proprietary, English-only UI
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif.png)
 
-</div><div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 - good:
     + IIIF
@@ -137,7 +139,7 @@ The result of ever-extended copyright: Fear and geofencing
     + English UI only
     + no browsing below the volume level
 
-</div>
+:::
 
 # 1.4 The fourth level of inaccessibility: the digital artefact itself
 ## 1.4.1 state of digitisation: text
@@ -158,31 +160,31 @@ The result of ever-extended copyright: Fear and geofencing
 
 Current state of automatically generated text layers is ridiculous
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 ![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), state of OCR (only visible to US IPs)](../assets/hathi_muqtabas-ocr-3.png)
 
-</div>
-<div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
 
-</div>
+:::
 
 ## 1.4.1 state of digitisation: text
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 <!-- ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523)](../assets/shamela_muqtabas-1.png) -->
 
 ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
 
-</div>
-<div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 - wrong metadata (volume, issue, page)
 - limited structural mark-up
 
-</div>
+:::
 
 ## 1.4.2 state of digitisation: facsimiles
 
@@ -196,11 +198,12 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 ## 1.4.2 state of digitisation: facsimiles
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif.png)
 
-</div><div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 - good:
     + IIIF
@@ -210,21 +213,22 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
     + English UI only
     + no browsing below the volume level
 
-</div>
+:::
 
 ## 1.4.2 state of digitisation: facsimiles
 
 The result of ever-extended copyright: Fear and geofencing
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 ![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![[*al-Muqtabas* 6 on HathiTrust with US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-2.png)
 
-</div>
+:::
 
 ## 1.4.2 state of digitisation: "fakesimiles"
 
@@ -232,21 +236,23 @@ The result of ever-extended copyright: Fear and geofencing
 
 *al-Muqtabas* 5(7), pp.[463](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045)
 
-<div class="c_width-30">
+:::{.c_width-30 .}
 
 ![facsimile of the original from [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/2000,/0/default.jpg)](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
 
-</div><div class="c_width-30">
+:::
+:::{.c_width-30 .}
 
 <!-- shamela's transcription -->
 ![digital text on *shamela.ws*](../assets/shamela_muqtabas-i_54-p_30-31.png)
 
-</div><div class="c_width-30">
+:::
+:::{.c_width-30 .}
 
 <!-- sakhrit's fake facsimile -->
 !["fakesimile" from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG)](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
 
-</div>
+:::
 
 ## 1.4.3 state of digitisation: bibliographic metadata
 
@@ -258,31 +264,31 @@ The result of ever-extended copyright: Fear and geofencing
 
 ## 1.4.3 state of digitisation: bibliographic metadata
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![*al-Muqtabas* 6 on [EAP](https://eap.bl.uk/archive-file/EAP119-1-4-5#?c=0&m=0&s=0&cv=0&xywh=-301%2C-145%2C2174%2C2880)](../assets/eap119-1-4-5-muqtabas-iiif-metadata.png)
 
-</div>
-<div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 - *hijri* calendar in the original
 - Gregorian calendar in the metadata
 
-</div>
+:::
 
 # 1.5 The fifth level of inaccessibility: affordances of the Global South
 ## 1.5 a digital divide
 
 |                       |    Global North   |    Global South   |
 |-----------------------|-------------------|-------------------|
-| hardware              | producers         | consumers         |
-| software              | producers         | consumers         |
-| standards             | producers         | consumers         |
+| hardware              | designers         | consumers         |
+| software              | designers         | consumers         |
+| standards             | designers         | consumers         |
 | language/script       | local             | foreign           |
 | funding               | plenty, local     | limited, foreign  |
-| institutional backing | plenty            | few               |
+| institutional backing | plenty            | limited           |
 | internet              | fast and reliable | slow and volatile |
-| electricity           | sure              | volatile          |
+| electricity           | stable            | volatile          |
 
 ## 1.5 a digital divide
 
@@ -392,7 +398,7 @@ existing digital remediations require:
                <tei:biblScope unit="volume" n="6">المجلد 6</tei:biblScope><lb/>
                <title level="j" xml:lang="ar">المقتبس</title>
             </bibl>
-         </div>
+         :::
     </front>
     <body xml:id="body_1.d1e1485" xml:lang="ar">
         <pb corresp="file:../epub/26523/OEBPS/xhtml/P4092.xhtml" ed="shamela" n="n62-p1" xml:id="pb_1.d1e1487"/>
@@ -407,9 +413,9 @@ existing digital remediations require:
                     <p xml:id="p_17.d1e1512" xml:lang="ar">والمختار في التقليد أنه قبول قول من يجوز عليه الإصرار على الخطاء بغير حجة على عين ما قبل قوله فيه.</p>
                     <p xml:id="p_18.d1e1515" xml:lang="ar">ويجب عليه الاستفتاء إذا نزلت به حادثة يجب عليه علم حكمها.</p>
                     <p xml:id="p_19.d1e1518" xml:lang="ar">فإن لم يجد ببلده من يستفتيه وجب عليه الرحيل إلى من يفتيه وإن بعدت داره وقد رحل خلائق من السلف في المسألة الواحدة الأيام والليالي.</p>
-                </div>
-            </div>
-        </div>
+                :::
+            :::
+        :::
     </body>
 </text>
 ```
@@ -451,7 +457,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.2 Core feature: how to contribute
 
-<div class="c_width-50">
+:::{.c_width-50 .}
 
 - Go to [GitHub](https://www.github.com) and register a free account
 - **Fork** the editions' repositories: e.g. <https://www.github.com/openarabicpe/journal_lughat-al-arab>
@@ -459,11 +465,12 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Send us a **pull request**
 - We will review and merge your changes
 
-</div><div class="c_width-50">
+:::
+:::{.c_width-50}>
 
 ![](../assets/github_branches-1.png)
 
-</div>
+:::
 
 ## 3.3 Core feature: web-view
 
@@ -482,35 +489,37 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.4 Core feature: Zotero group
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": list view](../assets/zotero-group_openarabicpe-search.png)
 
-</div><div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 - entry into editions
 - search metadata across periodicals
 - (potentially) search full-text
 
-</div>
+:::
 
 
 ## 3.4 Core feature: Zotero group
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details.png)
 
-</div>
+:::
 
 <!-- the following still needs work -->
 ## 3.5 Core feature: preservation, DOI
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 |                                   periodical                                  |                               doi                                |                                                                               release                                                                               |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -522,11 +531,12 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 | [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)              | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-zuhur.svg)](https://github.com/openarabicpe/journal_al-zuhur/releases)             |
 | [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab) | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_lughat-al-arab.svg)](https://github.com/openarabicpe/journal_lughat-al-arab/releases) |
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![Archived release of *al-Muqtabas* on [Zenono](https://doi.org/10.5281/zenodo.597319)](../assets/zenodo_muqtabas.png)
 
-</div>
+:::
 
 
 # 4. Conclusion

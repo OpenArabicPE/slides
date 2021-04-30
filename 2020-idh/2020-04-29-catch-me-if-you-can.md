@@ -129,14 +129,15 @@ It's **labour and resource intensive**. It really is!
 # Evaluating the corpus: network of referenced periodicals
 ## network of referenced periodicals: data sources
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 - mark-up of all references to periodicals in the text
     + semi-automatic
 - authority files for disambiguation and additional information
     + mostly automatic
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ```xml
 والأصح الدرعية بلام التعريف (راجع <bibl subtype="journal" type="periodical">مجلة <title level="j" ref="oape:bibl:3 oclc:1034545644" xml:id="title_16.d2e2291">الزهور</title> المصرية  <biblScope unit="volume" from="2" to="2">٢</biblScope> :  <biblScope unit="page" from="292">٢٩٢</biblScope></bibl>)
@@ -146,45 +147,45 @@ It's **labour and resource intensive**. It really is!
 وانتخب <persName>فؤاد أفندي الدفتري البغدادي</persName> و<bibl><editor><persName>نوري أفندي</persName></editor> راس كتاب <textLang otherLangs="ota">القسم التركي</textLang> في <bibl type="periodical" subtype="newspaper">جريدة <title ref="oape:bibl:532">الزهور</title></bibl> البغدادية</bibl> نائبين عن <placeName ref="oape:place:372 geon:94824">كربلاء</placeName>.
 ```
 
-</div>
+:::
 
 ## network of referenced periodicals
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![Figure: Network of periodicals mentioned *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*; weights per issue](../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_ar.png)
 
-</div>
-<div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 1. only a few nodes are of relative importance (44 of 465)
 2. *al-Muqtabas* accounts for the vast majority of references
 3. all periodicals are primarly self-referential
 
-</div>
+:::
 
 ## network of referenced periodicals: the core
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![Figure: Core nodes in the network of periodicals mentioned *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*; weights per issue](../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue-core_ar.png)
 
-</div>
+:::
 
 <!-- ## network of referenced periodicals -->
 
-<div class="c_width-30 c_right">
+:::{.c_width-30 .c_right}
 
 1. confirms the bias on Cairo and Beirut (8 of 9)
 2. highly centralised in terms of geographic distribution (10 locations)
 3. surprising members
 
-</div>
+:::
 
 # Bibliometrics: the network of authors
 ## network of authors: data sources
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 - structured bibliographic data provided by the text itself
     + semi-automatic
     + problems: many accronyms, plurality of name forms
@@ -194,7 +195,8 @@ It's **labour and resource intensive**. It really is!
     + works
     + geocoded locations
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ```xml
 <person>
@@ -212,29 +214,31 @@ It's **labour and resource intensive**. It really is!
 </person>
 ```
 
-</div>
+:::
 
 ## network of authors
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![Figure: Network of authors with bylines in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*](../assets/networks/network_oape-p3a6afa20_authors_unimodal_ar.png)
 
-</div><div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 1. only a few nodes are of relative importance
 2. limited overlap between journals from the same city
 3. nodes are connected by various other social networks (education, imperial service, family relations etc.)
 
-</div>
+:::
 
 ## network of authors: the core
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![Figure: Core nodes in the network of authors with bylines in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab* and *al-Muqtabas*](../assets/networks/network_oape-p3a6afa20_authors-core_unimodal_ar.png)
 
-</div><div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 1. many Iraqis
 2. few Syrians
@@ -242,27 +246,30 @@ It's **labour and resource intensive**. It really is!
 2. many poets
 3. majority not covered by scholarly literature
 
-</div>
+:::
 
 ## network of authors: geography
 
-<div class="c_width-50 c_left">
+:::{.c_width-50 .c_left}
 
 ![Map: Locations in bylines in *al-Muqtabas* (Cairo and Damascus)](../assets/maps/map-oclc_4770057679-bylines-middle-east.png)
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![Map: Locations in bylines in *al-Ḥaqāʾiq* (Damascus)](../assets/maps/map-oclc_644997575-bylines-middle-east.png)
 
-</div><div class="c_width-50 c_left">
+:::
+:::{.c_width-50 .c_left}
 
 ![Map: Locations in bylines in *al-Ḥasnāʾ* (Beirut)](../assets/maps/map-oclc_792756327-bylines-middle-east.png)
 
-</div><div class="c_width-50 c_right">
+:::
+:::{.c_width-50 .c_right}
 
 ![Map: Locations in bylines in *Lughat al-ʿArab* (Baghdad)](../assets/maps/map-oclc_472450345-bylines-middle-east.png)
 
-</div>
+:::
 
 ## problem: network reflects only 17% of articles
 
@@ -293,11 +300,12 @@ It's **labour and resource intensive**. It really is!
 
 ## stylometry: 5000 words
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![Figure: bootstrap consensus network of articles (length >= 5000 words, 100--1000 MFWs), colours by modularity group](../assets/stylometry/stylo_articles-w_5000-modularity_1-label_authors-ar-annotated.png)
 
-</div><div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 - it works! correctly identified signal of
     + authorship
@@ -306,15 +314,16 @@ It's **labour and resource intensive**. It really is!
 - additional (sub)-signal: genre
 - contradicts the hypothesis: anonymous author who is not the editor
 
-</div>
+:::
 
 ## stylometry: how to deal with the minimal length requirement?
 
-<div class="c_width-60 c_left">
+:::{.c_width-60 .c_left}
 
 ![Figure: bootstrap consensus network of sections and articles (length >= 5000 words, 100--1000 MFWs) in *al-Muqtabas*, coloured by modularity](../assets/stylometry/stylo_sections-articles-w_5000-modularity_1-label_author-id.png)
 
-</div><div class="c_width-30 c_right">
+:::
+:::{.c_width-30 .c_right}
 
 - oape.878: Muḥammad Kurd ʿAlī
 - oape.741: Charles Seignobos (in translation by Muḥammad Kurd ʿAlī)
@@ -322,7 +331,7 @@ It's **labour and resource intensive**. It really is!
 - oape.707: Aḥmad Zakī Pasha
 - oape.632: Jirjī Ḥaddād
 
-</div>
+:::
 
 ## stylometry: how to deal with the minimal length requirement?
 
