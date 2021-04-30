@@ -16,6 +16,68 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print" href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
@@ -126,14 +188,12 @@ Till Grallert
 </div>
 <div id="overwiew" class="slide section level2">
 <h1>Overwiew</h1>
-<div class="columns">
-<div class="column">
-<div>
-<ul class="incremental">
+<div class="c_width-50 c_left">
+<ul>
 <li>Corpus of 6 full-text scholarly digital editions (TEI XML) of Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.</li>
 <li>A client-based webview showing text and facsimiles side-by-side (based on TEI Boilerplate).</li>
 <li>Bibliographic metadata (MODS, BibTeX, Zotero RDF)
-<ul class="incremental">
+<ul>
 <li>on the article level for the entire corpus plus 2 additional magazines</li>
 <li>on the issue level for 7 additional newspapers</li>
 <li>on the title level for 3300+ periodicals (in collaboration with <a href="https://projectjaraid.github.io">Project Jarāʾid</a>)</li>
@@ -143,11 +203,10 @@ Till Grallert
 <li>Code and workflows</li>
 </ul>
 </div>
-</div><div class="column">
+<div class="c_width-50 c_right">
 <div class="figure">
 <img src="../assets/boilerplate_muqtabas.png" id="fig:webview-muqtabas" alt="" />
-<p class="caption">Figure 1: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webansicht von <em>al-Muqtabas</em> 6(2)</a></p>
-</div>
+<p class="caption">Figure 1: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webview of <em>al-Muqtabas</em> 6(2)</a></p>
 </div>
 </div>
 </div>
@@ -174,6 +233,9 @@ Till Grallert
 </ul></li>
 </ol>
 </div>
+<div id="affordances-constrains" class="slide section level2">
+<h1>Affordances/ constrains</h1>
+</div>
 <div id="why-spend-the-effort-shouldnt-others-do-it" class="slide section level2">
 <h1>Why spend the effort? Shouldn’t others do it?</h1>
 <p>OpenArabicPE addresses a clear need, fundamental rights, and our scholarly duties:</p>
@@ -190,6 +252,334 @@ Till Grallert
 </div>
 <div id="digitisation-online-accessible" class="slide section level2">
 <h1>Digitisation != online != accessible</h1>
+</div>
+
+<div id="workflow-components-of-openarabicpe" class="title-slide slide section level1">
+<h1>Workflow / components of OpenArabicPE</h1>
+
+</div>
+<div id="to-do" class="slide section level2">
+<h1>to do</h1>
+<!-- merge the following section into this nice and conside workflow -->
+</div>
+<div id="get-the-data" class="slide section level2">
+<h1>1. get the data</h1>
+<ul>
+<li>facsimiles
+<ul>
+<li>link to existing facsimiles from <a href="http://eap.bl.uk/">British Library’s “Endangered Archives Programme” (EAP)</a>, <a href="http://hathitrust.org/">HathiTrust</a> and <a href="http://archive.alsharekh.org/"><em>Arshīf al-majallāt […] al-ʿarabiyya</em></a>, preferably through <a href="https://iiif.io/">IIIF</a></li>
+<li>scan/ photograph your physical artefacts (at the lowest sustainable resolution)</li>
+</ul></li>
+<li>text
+<ul>
+<li>scrape existing transcriptions from <a href="http://shamela.ws/index.php/book/26523"><em>shamela.ws</em></a>, et al.</li>
+<li>use <a href="https://transkribus.eu/">Transkribus</a>, <a href="https://escripta.hypotheses.org">eScripta</a>/<a href="https://www.https://escriptorium.fr/">eScriptorium</a> for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)</li>
+</ul></li>
+</ul>
+</div>
+<div id="save-and-share-the-data" class="slide section level2">
+<h1>2. save and share the data</h1>
+<ul>
+<li>facsimiles: <a href="https://archive.org">Internet Archive</a> (supports <a href="https://iiif.io/">IIIF</a>)</li>
+<li>working copy of everything else: distributed version control platforms (<a href="https://github.com/">GitHub</a>, <a href="https://about.gitlab.com/">GitLab</a>)</li>
+<li>longterm preservation: publicly-funded, open repository (<a href="https://zenodo.org/">Zenodo</a>)
+<ul>
+<li>make sure to add <a href="https://orcid.org">ORCID</a>s for all contributors</li>
+</ul></li>
+<li>provide suitable open licenses for re-use: <a href="https://creativecommons.org/">Creative Commons</a>, <a href="">MIT</a></li>
+</ul>
+</div>
+<div id="model-the-data" class="slide section level2">
+<h1>3. model the data</h1>
+<h3 id="this-is-a-scholarly-endeavour">This is a scholarly endeavour!</h3>
+<ul>
+<li>use open, plain-text file formats<!-- : proprietary formats will cause a lock-in --></li>
+<li>widely accepted standard for textual editions: <a href="https://tei-c.org/">Text Encoding Initiative</a> (TEI, serialised as XML)
+<ul>
+<li>active community</li>
+<li>pre-requisite for grant funding</li>
+</ul></li>
+<li>re-use / adapt domain specific encoding schemas within the TEI</li>
+<li>try to script basic modellation using patterns in your source text:
+<ul>
+<li>regular expressions</li>
+<li>XSLT, Python, R, whatever you are most comfortable with</li>
+</ul></li>
+<li>automatically model derivative bibliographic data: MODS, METS, BibTeX, …</li>
+</ul>
+</div>
+<div id="edit-the-data" class="slide section level2">
+<h1>4. edit the data</h1>
+<ul>
+<li>editing tools depend on modelling decisions and file formats</li>
+<li>make use of version control and stable IDs (e.g. <a href="https://orcid.org">ORCID</a>) for <strong>transparent authorship attribution</strong> and <strong>damage control</strong>: [.git] is open source and built into some OSs</li>
+<li>plain-text (including XML)
+<ul>
+<li>support for RTL in free text editors varies between OS</li>
+<li>use syntax aware text editors</li>
+</ul></li>
+<li>XML
+<ul>
+<li>validation of the XML based on schema files</li>
+<li>There are open, publicly-funded alternatives to <a href="">oXygen</a>: <a href="https://textgrid.de/index">TextGrid Lab</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="disseminate-the-data" class="slide section level2">
+<h1>5. disseminate the data <!-- change the title of this slide --></h1>
+<h3 id="presentation-layers-and-access-for-human-readers">presentation layers and access for human readers</h3>
+<ul>
+<li>Convert XML to static webviews: TEI Boilerplate, <a href="https://github.com/TEIC/CETEIcean">CETEICEan</a>
+<ul>
+<li>on the fly: XSLT1 or JS to render XML files in the client’s web browser</li>
+<li>precompute: <a href="https://github.com/features/actions">GitHub actions</a></li>
+<li>removes need for backend, databases etc.</li>
+<li>minimises traffic</li>
+</ul></li>
+<li>host webviews, project blogs: <a href="https://pages.github.com/">gh-pages</a></li>
+<li>bibliographic database: <a href="https://www.zotero.org/groups/openarabicpe/items/">Zotero</a></li>
+<li>full-text search: <a href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s programmable search engines</a></li>
+</ul>
+</div>
+
+<div id="beware-character-encoding-rendering" class="title-slide slide section level1">
+<h1>Beware: character encoding != rendering</h1>
+
+</div>
+
+<div id="beware-bootstrapping-relies-on-the-work-of-others" class="title-slide slide section level1">
+<h1>Beware: Bootstrapping relies on the work of others</h1>
+
+</div>
+<div id="all-dependencies-will-eventually-break-need-repair" class="slide section level2">
+<h1>All dependencies will eventually break / need repair</h1>
+<ul>
+<li>Reliance on external data providers: link rot
+<ul>
+<li>links to facsimiles broke twice in four years</li>
+</ul></li>
+<li>Reliance on free tools and services: link rot
+<ul>
+<li>URLs to our editions had to be changed once</li>
+</ul></li>
+<li>XSLT1 in web browsers: will fall victim to JSON and security features
+<ul>
+<li>over the last 5 years support has markedly decreased</li>
+</ul></li>
+<li>Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box -->
+<ul>
+<li><a href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s programmable search engines</a>: requires internet connection (and Google account!)</li>
+</ul></li>
+</ul>
+</div>
+<div id="basis-tei-files" class="slide section level2">
+<h1>1. Basis: TEI files</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">&lt;text</span><span class="ot"> xml:id=</span><span class="st">&quot;text&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> type=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;i62&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="kw">&lt;pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> n=</span><span class="st">&quot;177&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_181&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_2.d1e1489&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="kw">&lt;front</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;front_1.d1e1431&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>         <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;masthead&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>            <span class="kw">&lt;bibl&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;issue&quot;</span><span class="ot"> n=</span><span class="st">&quot;3&quot;</span><span class="kw">&gt;</span>الجزء 3<span class="kw">&lt;/tei:biblScope&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>               <span class="kw">&lt;tei:biblScope</span><span class="ot"> unit=</span><span class="st">&quot;volume&quot;</span><span class="ot"> n=</span><span class="st">&quot;6&quot;</span><span class="kw">&gt;</span>المجلد 6<span class="kw">&lt;/tei:biblScope&gt;&lt;lb/&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>               <span class="kw">&lt;title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المقتبس<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>            <span class="kw">&lt;/bibl&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>         :::</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>    <span class="kw">&lt;/front&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a>    <span class="kw">&lt;body</span><span class="ot"> xml:id=</span><span class="st">&quot;body_1.d1e1485&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a>        <span class="kw">&lt;pb</span><span class="ot"> corresp=</span><span class="st">&quot;file:../epub/26523/OEBPS/xhtml/P4092.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n62-p1&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;pb_1.d1e1487&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a>        <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;item&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;article&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1491&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a>            <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_1.d1e1493&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الفتوى في الإسلام<span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a>            <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_15.d1e1496&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>تابع ل <span class="kw">&lt;ref</span><span class="ot"> target=</span><span class="st">&quot;oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;ref_5.d1e1694&quot;</span><span class="kw">&gt;</span>ما في الجزء الماضي<span class="kw">&lt;/ref&gt;&lt;/p&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a>            <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1499&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a>                <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_2.d1e1501&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>آداب المستفتي وصفته وأحكامه<span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a>                <span class="kw">&lt;div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_2.d1e1504&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a>                    <span class="kw">&lt;head</span><span class="ot"> xml:id=</span><span class="st">&quot;head_3.d1e1506&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>الأول<span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_16.d1e1509&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>المستفتي كل من لم يبلغ درجة المفتي فهو فيما يسأل عنه من الأحكام الشرعية مستفت بتقليد من نفسه.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_17.d1e1512&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>والمختار في التقليد أنه قبول قول من يجوز عليه الإصرار على الخطاء بغير حجة على عين ما قبل قوله فيه.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_18.d1e1515&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>ويجب عليه الاستفتاء إذا نزلت به حادثة يجب عليه علم حكمها.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true"></a>                    <span class="kw">&lt;p</span><span class="ot"> xml:id=</span><span class="st">&quot;p_19.d1e1518&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span>فإن لم يجد ببلده من يستفتيه وجب عليه الرحيل إلى من يفتيه وإن بعدت داره وقد رحل خلائق من السلف في المسألة الواحدة الأيام والليالي.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true"></a>                :::</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true"></a>            :::</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true"></a>        :::</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true"></a>    <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true"></a><span class="kw">&lt;/text&gt;</span></span></code></pre></div>
+<!--
+## 3.1 Basis: TEI files
+
+![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
+
+-->
+</div>
+<div id="core-feature-continuous-improvement" class="slide section level2">
+<h1>3.2 Core feature: Continuous improvement</h1>
+<ol style="list-style-type: decimal">
+<li>Improvements depending on human labour (probably a “crowd”)
+<ul>
+<li>correct the transcription</li>
+<li>add structural mark-up</li>
+<li>add semantic mark-up</li>
+</ul></li>
+<li>Automatic improvements:
+<ul>
+<li>provide reliable bibliographic metadata based on the facsimile</li>
+<li>mark-up of natural entities with link to external reference files (e.g. personal names, toponyms)</li>
+</ul></li>
+</ol>
+</div>
+<div id="core-feature-how-to-contribute" class="slide section level2">
+<h1>3.2 Core feature: how to contribute</h1>
+<p>:::{.c_width-50 .}</p>
+<ul>
+<li>Go to <a href="https://www.github.com">GitHub</a> and register a free account</li>
+<li><strong>Fork</strong> the editions’ repositories: e.g. <a href="https://www.github.com/openarabicpe/journal_lughat-al-arab" class="uri">https://www.github.com/openarabicpe/journal_lughat-al-arab</a></li>
+<li>Edit the text (XML)</li>
+<li>Send us a <strong>pull request</strong></li>
+<li>We will review and merge your changes</li>
+</ul>
+<p>::: :::{.c_width-50}&gt;</p>
+<p><img src="../assets/github_branches-1.png" /></p>
+<p>:::</p>
+</div>
+<div id="core-feature-web-view" class="slide section level2">
+<h1>3.3 Core feature: web-view</h1>
+<div class="figure">
+<img src="../assets/boilerplate_muqtabas.png" alt="" />
+<p class="caption"><a href="https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
+</div>
+</div>
+<div id="core-feature-web-view-1" class="slide section level2">
+<h1>3.3 Core feature: web-view</h1>
+<ul>
+<li><strong>open</strong>, <strong>free-of-charge</strong>, <strong>client-based</strong></li>
+<li>Adaptation of the <a href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate XSLT stylesheets</a> to (Arabic) periodical editions</li>
+<li>static web-view hosted on <a href="https://pages.github.com/">gh-pages</a>
+<ul>
+<li>generated on-the-fly by the user’s browser using XSLT 1</li>
+<li>works without an internet connection and with local facsimiles.</li>
+</ul></li>
+<li>parallel display of text and facsimile</li>
+<li>link to metadata on the article level (MODS, BibTeX)</li>
+<li>Available on <a href="https://github.com/tillgrallert/tei-boilerplate-arabic-editions">GitHub</a> with a <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 licence</a></li>
+</ul>
+</div>
+<div id="core-feature-zotero-group" class="slide section level2">
+<h1>3.4 Core feature: Zotero group</h1>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-search.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: list view</p>
+</div>
+</div>
+<div class="c_width-30 c_right">
+<ul>
+<li>entry into editions</li>
+<li>search metadata across periodicals</li>
+<li>(potentially) search full-text</li>
+</ul>
+</div>
+</div>
+<div id="core-feature-zotero-group-1" class="slide section level2">
+<h1>3.4 Core feature: Zotero group</h1>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-search.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: search in mobile view</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-details.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: details in mobile view</p>
+</div>
+</div>
+<!-- the following still needs work -->
+</div>
+<div id="core-feature-preservation-doi" class="slide section level2">
+<h1>3.5 Core feature: preservation, DOI</h1>
+<div class="c_width-50 c_left">
+<table>
+<thead>
+<tr class="header">
+<th>periodical</th>
+<th>doi</th>
+<th>release</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/digital-haqaiq">al-Ḥaqāʾiq</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+<td><a href="https://github.com/openarabicpe/digital-haqaiq/releases"><img src="https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3556246">10.5281/zenodo.3556246</a></td>
+<td><a href="https://github.com/openarabicpe/journal_al-hasna/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_al-hasna.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
+<td></td>
+<td><!-- [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-manar.svg)](https://github.com/openarabicpe/journal_al-manar/releases)  --></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.github.com/tillgrallert/digital-muqtabas">al-Muqtabas</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+<td><a href="https://github.com/tillgrallert/digital-muqtabas/releases"><img src="https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+<td><a href="https://github.com/openarabicpe/journal_al-ustadh/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_al-ustadh.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+<td><a href="https://github.com/openarabicpe/journal_al-zuhur/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_al-zuhur.svg" alt="GitHub release" /></a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat al-ʿArab</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+<td><a href="https://github.com/openarabicpe/journal_lughat-al-arab/releases"><img src="https://img.shields.io/github/release/openarabicpe/journal_lughat-al-arab.svg" alt="GitHub release" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/zenodo_muqtabas.png" alt="" />
+<p class="caption">Archived release of <em>al-Muqtabas</em> on <a href="https://doi.org/10.5281/zenodo.597319">Zenono</a></p>
+</div>
+</div>
+</div>
+
+<div id="conclusion" class="title-slide slide section level1">
+<h1>Conclusion</h1>
+
+</div>
+<div id="thank-you" class="slide section level2">
+<h1>Thank you!</h1>
+<ul>
+<li>Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef</li>
+<li>Links:
+<ul>
+<li>Slides: <a href="https://OpenArabicPE.github.io/slides/2020-dh-jamia/index.html">https://OpenArabicPE.github.io/slides/2020-dh-jamia/</a></li>
+<li>Project URLs: <a href="https://www.github.com/OpenArabicPE">https://www.github.com/OpenArabicPE</a></li>
+<li>Project blog: <a href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
+<li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+<li>Email: <script type="text/javascript">
+<!--
+h='&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#x6f;&#114;&#x69;&#x65;&#110;&#116;&#x2d;&#x69;&#110;&#x73;&#116;&#x69;&#116;&#x75;&#116;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript> <script type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+</ul></li>
+<li>Licence: slides and images are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ul>
 </div>
 </body>
 </html>
