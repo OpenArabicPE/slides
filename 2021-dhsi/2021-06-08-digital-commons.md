@@ -11,7 +11,7 @@ duration: 10
 # Open Arabic Periodical Editions (OpenArabicPE)
 ## Overwiew
 
-:::{.c_width-50 .c_left}
+:::{.c_width-60 .c_left}
 
 - Corpus of 6 full-text scholarly digital editions (TEI XML) of Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
 - A client-based webview showing text and facsimiles side-by-side (based on TEI Boilerplate).
@@ -24,13 +24,15 @@ duration: 10
 - Code and workflows
 
 :::
-:::{.c_width-50 .c_right}
+:::{.c_width-30 .c_right}
 
-![[Webview of *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png){#fig:webview-muqtabas}
+![[Webview of *al-Muqtabas* 3(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml)](../assets/boilerplate_muqtabas-v_3-i_2.png){#fig:webview-muqtabas}
+
+![[Webview of *al-Zuhur* 1(1)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml)](../assets/boilerplate_zuhur-v_1-i_1.png){#fig:webview-zuhur}
 
 :::
 
-##  Aims and principles
+##  Aims and principles <!-- move further down into the workflow section -->
 
 1. ideas:
     - unite **available** facsimiles and transcriptions
@@ -56,23 +58,197 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 3. Scholarly communities have a duty of care
 
 # Digitisation as the promised solution to all our problems?
+## Neo-colonial invisibility of the Global South
+
+:::{.c_width-50}
+
+### Historical Arabic periodicals
+
+- cultural heritage of 420 Mio Arabic-speakers
+- 3269 journals and newspapers until 1929
+- collection and cataloging bias:
+    + 747 (< 1/4 ) can be localised
+    + including partial collections
+- digitisation bias:
+    + 145 (< 1/20) titles have been (partially) digitised
+- accessibility:
+    + paywalls
+    + geo-fencing
+    + proprietary interfaces/formats, no APIs
+    + non-Arabic interfaces and metadata
+
+
+<!-- ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"} -->
+
+:::
+:::{.c_width-50}
+
+### Historical periodicals from a small German state
+
+"[WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de)"
+
+- cultural heritage of 6.2 Mio inhabitants of Hesse
+- 125 digitised titles with more than 1/2 Mio pages
+    - facsimiles and full text
+- accessibility
+    + open access
+    + standard compliant formats
+    + APIs
+    + German and English interfaces
+
+:::
+
 ## Digitisation != online != accessible
 
-# Workflow / components of OpenArabicPE
-## to do
+<!-- outline problems -->
 
-<!-- merge the following section into this nice and conside workflow -->
+:::{.c_width-50}
+
+### Facsimiles
+
++ lack of / faulty metadata
++ data silos
+    + limited licences, paywalls
+    + limited use of standards, APIs
++ UIs not suited to RTL and limited to English
+
+![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
+
+:::
+:::{.c_width-50 .c_right}
+
+### Text
+
+- Automated transcriptions (OCR): [HathiTrust](https://www.hathitrust.org/), East View's [Global Press Archive (GPA)](https://www.eastview.com/resources/gpa/crl-mena/), [Cengage Gale](http://gale.cengage.co.uk/arabic.aspx)
+    + unknown quality but commonly extremly bad
+    + no structural mark-up
+<!-- + data silos
+    + limited licences, paywalls
+    + limited use of standards, APIs
+ -->
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
+
+:::
+
+
+## Shadow libraries
+
+<!-- outline problems -->
+
+:::{.c_width-50}
+
+### Fakesimiles
+
+- Renderings of a digital text with a fake "original" layout
+- served as image file
+
+!["fakesimile" of *al-Muqtabas* 5(7) from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG). Large parts of text have been omitted. The original spans pp.[463](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045).](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
+
+:::
+:::{.c_width-50 .c_right}
+
+### Text
+
+- anonymous transcriptions,  e.g. [*al-Maktaba al-Shāmila*](http://shamela.ws/index.php/book/26523), [*Mishkāt*](http://almeshkat.net/), [*Ṣayd al-Fawāʾid*](http://saaid.net/), [*al-Waraq*](http://www.alwaraq.net/) etc.
+    + lack of / faulty metadata
+    + unknown editing principles
+    + unknown quality
+    + very limited structural mark-up
+    + cannot be reliably cited
+
+![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
+
+:::
+
+# Workflow / components of OpenArabicPE
 
 ## 1. get the data
 
+:::{.c_width-50}
+
 - facsimiles
-    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), [HathiTrust](http://hathitrust.org/) and [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/), preferably through [IIIF](https://iiif.io/)
+    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), [HathiTrust](http://hathitrust.org/), [Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779), [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) etc., preferably through [IIIF](https://iiif.io/)
     + scan/ photograph your physical artefacts (at the lowest sustainable resolution)
 - text
     + scrape existing transcriptions from [*shamela.ws*](http://shamela.ws/index.php/book/26523), et al.
     + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
 
-## 2. save and share the data
+:::
+:::{.c_width-50 .c_right}
+
+EPub (HTML) for *al-Zuhūr* 2(4) from shamela.ws
+
+```{.html}
+<div dir="rtl" id="book-container">
+    <hr/>
+    <a id='C232'></a>
+    <span class="title">صحافة سورية ولبنان</span><br /><span class="red">3 - </span>المجلات<br />هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<br />أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<br />وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<br />
+</div>
+```
+
+:::
+
+## 2. model the data
+### This is a scholarly endeavour!
+
+:::{.c_width-50}
+
+- use open, plain-text file formats<!-- : proprietary formats will cause a lock-in -->
+- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI, serialised as XML)
+    - active community
+    - pre-requisite for grant funding
+- re-use / adapt domain specific encoding schemas within the TEI
+- try to script basic modelling using patterns in your source text:
+    + regular expressions
+    + XSLT, Python, R, whatever you are most comfortable with
+- automatically model derivative bibliographic data: MODS, METS, BibTeX, ...
+
+:::
+:::{.c_width-50 .c_right}
+
+The same section of *al-Zuhūr* 2(4) modelled in TEI
+
+```xml
+<body xml:lang="ar">
+<pb corresp="../epub/shamela_36534/OEBPS/xhtml/P744.xhtml" ed="shamela" n="n2-p184"/>
+<pb ed="print" edRef="#edition_1" facs="#facs_184" n="184"/>
+    <div prev="oclc_1034545644-i_13.TEIP5.xml#div_1.d2e2766" subtype="article" type="item" xml:id="div_1.d2e634">
+        <head>صحافة <placeName>سورية</placeName> و<placeName>لبنان</placeName></head>
+        <div type="section" xml:id="div_3.d2e1200">
+            <head> ٣ - المجلات</head>
+            <p>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فلم يكن منها قبل إعلان الدستور إلا <bibl>مجلة <title level="j">المشرق</title></bibl>  و<bibl>مجلة <title level="j">المقتبس</title></bibl> .</p>
+            <p>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.</p>
+            <p>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:</p>
+        </div>
+    </div>
+</body>
+```
+
+:::
+
+## 3. edit the data
+
+:::{.c_width-50}
+
+- editing tools depend on modelling decisions and file formats
+- make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for **transparent authorship attribution** and **damage control**: [.git](https://git-scm.com/) is open source and available for all OSs
+- plain-text (including XML) editors
+    + should be **syntax aware**
+    - support for RTL in text editors is a mixed bag
+- XML
+    + should be **schema aware** to validate the encoding
+    - There are open, publicly-funded alternatives to [oXygen](https://www.oxygenxml.com/): [TextGrid Lab](https://textgrid.de/index)
+
+:::
+:::{.c_width-50 .c_right}
+
+![The TEI XML file for *al-Zuhūr* 2(4) in Sublime Text](../assets/sublime_zuhur.png)
+
+:::
+
+## 4. save and share the data
+
+:::{.c_width-50}
 
 - facsimiles: [Internet Archive](https://archive.org) (supports [IIIF](https://iiif.io/))
 - working copy of everything else: distributed version control platforms ([GitHub](https://github.com/), [GitLab](https://about.gitlab.com/))
@@ -80,34 +256,17 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
     + make sure to add [ORCID](https://orcid.org)s for all contributors
 - provide suitable open licenses for re-use: [Creative Commons](https://creativecommons.org/), [MIT]()
 
-## 3. model the data
-### This is a scholarly endeavour!
+:::
+:::{.c_width-50 .c_right}
 
-- use open, plain-text file formats<!-- : proprietary formats will cause a lock-in -->
-- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI, serialised as XML)
-    - active community
-    - pre-requisite for grant funding
-- re-use / adapt domain specific encoding schemas within the TEI
-- try to script basic modellation using patterns in your source text:
-    + regular expressions
-    + XSLT, Python, R, whatever you are most comfortable with
-- automatically model derivative bibliographic data: MODS, METS, BibTeX, ...
+![Archived release of *al-Zuhūr* on [Zenono](https://doi.org/10.5281/zenodo.3580606)](../assets/zenodo_zuhur.png)
 
-## 4. edit the data
+:::
 
-- editing tools depend on modelling decisions and file formats
-- make use of version control and stable IDs (e.g. [ORCID](https://orcid.org)) for **transparent authorship attribution** and **damage control**: [.git] is open source and built into some OSs
-- plain-text (including XML)
-    - support for RTL in free text editors varies between OS
-    - use syntax aware text editors
-- XML
-    - validation of the XML based on schema files
-    - There are open, publicly-funded alternatives to [oXygen](): [TextGrid Lab](https://textgrid.de/index)
+## 5. present the data <!-- change the title of this slide -->
+<!-- ### presentation layers and access for human readers -->
 
-## 5. disseminate the data <!-- change the title of this slide -->
-### presentation layers and access for human readers
-
-:::{.c_width-60}
+:::{.c_width-50}
 
 - Convert XML to static webviews: [TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/), [CETEICEan](https://github.com/TEIC/CETEIcean)
     - on the fly: XSLT1 or JS to render XML files in the client's web browser
@@ -120,15 +279,15 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 - full-text search: [Google's programmable search engine](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
 
 :::
-:::{.c_width-30 .c_right}
+:::{.c_width-50 .c_right}
 
-![[Display of *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
+![[Webview of *al-Zuhūr* 2(4)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634)](../assets/boilerplate_zuhur-v_2-i_4.png)
 
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
+<!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
 
 :::
 
-## 5. disseminate the data
+## 5. present the data
 ### Zotero group
 
 :::{.c_width-50 .c_left}
@@ -156,132 +315,6 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 - Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box -->
     + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!)
 
-
-
-## 1. Basis: TEI files
-
-```xml
-<text xml:id="text" xml:lang="ar" type="issue" n="i62">
-    <pb ed="print" n="177" facs="#facs_181" xml:id="pb_2.d1e1489"/>
-    <front xml:lang="ar" xml:id="front_1.d1e1431">
-         <div type="masthead">
-            <bibl>
-               <tei:biblScope unit="issue" n="3">الجزء 3</tei:biblScope>
-               <tei:biblScope unit="volume" n="6">المجلد 6</tei:biblScope><lb/>
-               <title level="j" xml:lang="ar">المقتبس</title>
-            </bibl>
-         :::
-    </front>
-    <body xml:id="body_1.d1e1485" xml:lang="ar">
-        <pb corresp="file:../epub/26523/OEBPS/xhtml/P4092.xhtml" ed="shamela" n="n62-p1" xml:id="pb_1.d1e1487"/>
-        <div type="item" subtype="article" xml:id="div_2.d1e1491" xml:lang="ar">
-            <head xml:id="head_1.d1e1493" xml:lang="ar">الفتوى في الإسلام</head>
-            <p xml:id="p_15.d1e1496" xml:lang="ar">تابع ل <ref target="oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517" xml:id="ref_5.d1e1694">ما في الجزء الماضي</ref></p>
-            <div type="section" xml:id="div_2.d1e1499" xml:lang="ar">
-                <head xml:id="head_2.d1e1501" xml:lang="ar">آداب المستفتي وصفته وأحكامه</head>
-                <div type="section" xml:id="div_2.d1e1504" xml:lang="ar">
-                    <head xml:id="head_3.d1e1506" xml:lang="ar">الأول</head>
-                    <p xml:id="p_16.d1e1509" xml:lang="ar">المستفتي كل من لم يبلغ درجة المفتي فهو فيما يسأل عنه من الأحكام الشرعية مستفت بتقليد من نفسه.</p>
-                    <p xml:id="p_17.d1e1512" xml:lang="ar">والمختار في التقليد أنه قبول قول من يجوز عليه الإصرار على الخطاء بغير حجة على عين ما قبل قوله فيه.</p>
-                    <p xml:id="p_18.d1e1515" xml:lang="ar">ويجب عليه الاستفتاء إذا نزلت به حادثة يجب عليه علم حكمها.</p>
-                    <p xml:id="p_19.d1e1518" xml:lang="ar">فإن لم يجد ببلده من يستفتيه وجب عليه الرحيل إلى من يفتيه وإن بعدت داره وقد رحل خلائق من السلف في المسألة الواحدة الأيام والليالي.</p>
-                :::
-            :::
-        :::
-    </body>
-</text>
-```
-
-
-<!--
-## 3.1 Basis: TEI files
-
-![TEI file of *al-Muqtabas* 6(2) in oXygen: author mode](../assets/oxygen_muqtabas-1.png)
-
--->
-
-
-
-## 3.2 Core feature: Continuous improvement
-
-1. Improvements depending on human labour (probably a "crowd")
-    - correct the transcription
-    - add structural mark-up
-    - add semantic mark-up
-2. Automatic improvements:
-    - provide reliable bibliographic metadata based on the facsimile
-    - mark-up of natural entities with link to external reference files (e.g. personal names, toponyms)
-
-## 3.2 Core feature: how to contribute
-
-:::{.c_width-50 .}
-
-- Go to [GitHub](https://www.github.com) and register a free account
-- **Fork** the editions' repositories: e.g. <https://www.github.com/openarabicpe/journal_lughat-al-arab>
-- Edit the text (XML)
-- Send us a **pull request**
-- We will review and merge your changes
-
-:::
-:::{.c_width-50}>
-
-![](../assets/github_branches-1.png)
-
-:::
-
-## 3.3 Core feature: web-view
-
-![[Display of *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
-
-## 3.3 Core feature: web-view
-
-- **open**, **free-of-charge**, **client-based**
-- Adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/) to (Arabic) periodical editions
-- static web-view hosted on [gh-pages](https://pages.github.com/)
-    + generated on-the-fly by the user's browser using XSLT 1
-    + works without an internet connection and with local facsimiles.
-- parallel display of text and facsimile
-- link to metadata on the article level (MODS, BibTeX)
-- Available on [GitHub](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) with a [CC BY-SA 4.0 licence](http://creativecommons.org/licenses/by-sa/4.0/)
-
-## 3.4 Core feature: Zotero group
-
-:::{.c_width-60 .c_left}
-
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": list view](../assets/zotero-group_openarabicpe-search.png)
-
-:::
-:::{.c_width-30 .c_right}
-
-- entry into editions
-- search metadata across periodicals
-- (potentially) search full-text
-
-:::
-
-
-
-<!-- the following still needs work -->
-## 3.5 Core feature: preservation, DOI
-
-:::{.c_width-50 .c_left}
-
-|                                   periodical                                  |                               doi                                |                                                                               release                                                                               |
-|-------------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)              | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/digital-haqaiq/releases)                 |
-| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)             | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-hasna.svg)](https://github.com/openarabicpe/journal_al-hasna/releases)             |
-| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)              |                                                                  | <!-- [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-manar.svg)](https://github.com/openarabicpe/journal_al-manar/releases)  -->   |
-| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)           | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   | [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/tillgrallert/digital-muqtabas/releases)             |
-| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)            | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-ustadh.svg)](https://github.com/openarabicpe/journal_al-ustadh/releases)           |
-| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)              | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-zuhur.svg)](https://github.com/openarabicpe/journal_al-zuhur/releases)             |
-| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab) | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_lughat-al-arab.svg)](https://github.com/openarabicpe/journal_lughat-al-arab/releases) |
-
-:::
-:::{.c_width-50 .c_right}
-
-![Archived release of *al-Muqtabas* on [Zenono](https://doi.org/10.5281/zenodo.597319)](../assets/zenodo_muqtabas.png)
-
-:::
 
 # Conclusion
 ## Thank you!
