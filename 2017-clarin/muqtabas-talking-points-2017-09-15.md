@@ -51,11 +51,11 @@ The TEI edition comprises all 96 issues of *al-Muqtabas* with a total of some 7.
 [bl]: http://eap.bl.uk/
 [hathitrust]: http://catalog.hathitrust.org/
 [openarabicpe_schema]: https://github.com/OpenArabicPE/OpenArabicPE_ODD
-[rawgit]: https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036
-[rawgit 2]: https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_59.TEIP5.xml#pb_51.d1e2281
-[rawgit 3]: https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_38.TEIP5.xml#p_60.d1e2238
-[rawgit 4]: https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_39.TEIP5.xml#gap_1.d1e3111
-[rawgit 5]: https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_71.TEIP5.xml#pb_126.d1e4373
+[rawgit]: https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036
+[rawgit 2]: https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_59.TEIP5.xml#pb_51.d1e2281
+[rawgit 3]: https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_38.TEIP5.xml#p_60.d1e2238
+[rawgit 4]: https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_39.TEIP5.xml#gap_1.d1e3111
+[rawgit 5]: https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_71.TEIP5.xml#pb_126.d1e4373
 [saaid]: http://saaid.net/
 [shamela]: http://www.shamela.ws/
 [shamela 2]: http://shamela.ws/index.php/book/26523

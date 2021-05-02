@@ -107,14 +107,40 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 ## 5. disseminate the data <!-- change the title of this slide -->
 ### presentation layers and access for human readers
 
-- Convert XML to static webviews: TEI Boilerplate, [CETEICEan](https://github.com/TEIC/CETEIcean)
+:::{.c_width-60}
+
+- Convert XML to static webviews: [TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/), [CETEICEan](https://github.com/TEIC/CETEIcean)
     - on the fly: XSLT1 or JS to render XML files in the client's web browser
-    - precompute: [GitHub actions](https://github.com/features/actions)
+    - pre-computed: [GitHub actions](https://github.com/features/actions)
     - removes need for backend, databases etc.
     - minimises traffic
 - host webviews, project blogs: [gh-pages](https://pages.github.com/)
-- bibliographic database: [Zotero](https://www.zotero.org/groups/openarabicpe/items/)
-- full-text search: [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+- bibliographic database: [Zotero group](https://www.zotero.org/groups/openarabicpe/items/)
+    + browse and search independent of file structure
+- full-text search: [Google's programmable search engine](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+
+:::
+:::{.c_width-30 .c_right}
+
+![[Display of *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
+
+:::
+
+## 5. disseminate the data
+### Zotero group
+
+:::{.c_width-50 .c_left}
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
+
+:::
+:::{.c_width-50 .c_right}
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details.png)
+
+:::
 
 # Beware: character encoding != rendering
 
@@ -205,7 +231,7 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 
 ## 3.3 Core feature: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
+![[Display of *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas.png)
 
 ## 3.3 Core feature: web-view
 
@@ -234,18 +260,6 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 :::
 
 
-## 3.4 Core feature: Zotero group
-
-:::{.c_width-50 .c_left}
-
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
-
-:::
-:::{.c_width-50 .c_right}
-
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details.png)
-
-:::
 
 <!-- the following still needs work -->
 ## 3.5 Core feature: preservation, DOI

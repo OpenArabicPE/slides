@@ -219,7 +219,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## 3.3 Sugar on top: web-view
 
-![[Display of *al-Muqtabas* 6(2)](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-2.png)
+![[Display of *al-Muqtabas* 6(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml)](../assets/boilerplate_muqtabas-2.png)
 
 ## 3.3 Sugar on top: web-view
 

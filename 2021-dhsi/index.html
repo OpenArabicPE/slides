@@ -99,29 +99,29 @@
   }*/
   /* xml element names */
   .xml > code span.kw {
-  	/*color: #0F0F9C;*/
-  	color: #000096;
-  	font-weight: bold;
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
   }
   /* xml attribute names */
   .xml > code span.ot {
-  	/*color:#FF8041;*/
-  	color: #FF9159;
+    /*color:#FF8041;*/
+    color: #FF9159;
   }
   /* xml attribute values */
   .xml > code span.st {
-  	/*color:#993300;*/
-  	color: #993300;
+    /*color:#993300;*/
+    color: #993300;
   }
   /* xml comments */
   .xml > code span.co {
-  	/*color:#167116;*/
-  	color: #2F8132;
-  	font-style: italic;
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
   /* .xml > code > span {
-  	color:#9132CC;
+    color:#9132CC;
   } */
   </style>
   <style type="text/css">
@@ -165,7 +165,7 @@
   </style>
   <style type="text/css">
   .cImportant {
-  	color:red;
+    color:red;
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
@@ -328,11 +328,12 @@ Till Grallert
 <div id="disseminate-the-data" class="slide section level2">
 <h1>5. disseminate the data <!-- change the title of this slide --></h1>
 <h3 id="presentation-layers-and-access-for-human-readers">presentation layers and access for human readers</h3>
+<div class="c_width-60">
 <ul>
-<li>Convert XML to static webviews: TEI Boilerplate, <a href="https://github.com/TEIC/CETEIcean">CETEICEan</a>
+<li>Convert XML to static webviews: <a href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate</a>, <a href="https://github.com/TEIC/CETEIcean">CETEICEan</a>
 <ul>
 <li>on the fly: XSLT1 or JS to render XML files in the client’s web browser</li>
-<li>precompute: <a href="https://github.com/features/actions">GitHub actions</a></li>
+<li>pre-computed: <a href="https://github.com/features/actions">GitHub actions</a></li>
 <li>removes need for backend, databases etc.</li>
 <li>minimises traffic</li>
 </ul></li>
@@ -340,6 +341,33 @@ Till Grallert
 <li>bibliographic database: <a href="https://www.zotero.org/groups/openarabicpe/items/">Zotero</a></li>
 <li>full-text search: <a href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s programmable search engines</a></li>
 </ul>
+</div>
+<div class="c_width-30 c_right">
+<div class="figure">
+<img src="../assets/boilerplate_muqtabas.png" alt="" />
+<p class="caption"><a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
+</div>
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-search.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: search in mobile view</p>
+</div>
+</div>
+</div>
+<div id="disseminate-the-data-1" class="slide section level2">
+<h1>5. disseminate the data</h1>
+<h3 id="zotero-group">Zotero group</h3>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-search.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: search in mobile view</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-details.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: details in mobile view</p>
+</div>
+</div>
 </div>
 
 <div id="beware-character-encoding-rendering" class="title-slide slide section level1">
@@ -444,7 +472,7 @@ Till Grallert
 <h1>3.3 Core feature: web-view</h1>
 <div class="figure">
 <img src="../assets/boilerplate_muqtabas.png" alt="" />
-<p class="caption"><a href="https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
+<p class="caption"><a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Display of <em>al-Muqtabas</em> 6(2)</a></p>
 </div>
 </div>
 <div id="core-feature-web-view-1" class="slide section level2">
@@ -476,21 +504,6 @@ Till Grallert
 <li>search metadata across periodicals</li>
 <li>(potentially) search full-text</li>
 </ul>
-</div>
-</div>
-<div id="core-feature-zotero-group-1" class="slide section level2">
-<h1>3.4 Core feature: Zotero group</h1>
-<div class="c_width-50 c_left">
-<div class="figure">
-<img src="../assets/zotero-group_openarabicpe-mobile-search.png" alt="" />
-<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: search in mobile view</p>
-</div>
-</div>
-<div class="c_width-50 c_right">
-<div class="figure">
-<img src="../assets/zotero-group_openarabicpe-mobile-details.png" alt="" />
-<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: details in mobile view</p>
-</div>
 </div>
 <!-- the following still needs work -->
 </div>

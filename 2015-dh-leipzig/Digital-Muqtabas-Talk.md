@@ -92,7 +92,7 @@ Email: <grallert@orient-institut.org>
 
 # 3. Sugar on top: web-view
 
-[https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_60.TEIP5.xml](https://tillgrallert.github.io/digital-muqtabas/xml/oclc_4770057679-i_60.TEIP5.xml)
+[https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_60.TEIP5.xml](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_60.TEIP5.xml)
 
 - Adaptation of [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/)
 - human-readable and static web-view (either rawgit or gh-pages)
