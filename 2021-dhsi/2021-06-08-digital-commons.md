@@ -39,13 +39,14 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 
 :::
 
-## Why spend the effort? Shouldn't others do it?
+# Why spend the effort? <br/> Shouldn't others do it?
+## Why spend the effort?
 
-OpenArabicPE addresses a clear need, fundamental rights, and our scholarly duties:
+<!-- OpenArabicPE addresses a clear need, fundamental rights, and our scholarly duties: -->
 
-1. Societies of the Global South have a **right** to unhampered access to their **own cultural record**---a cultural record that is frequently held by institutions of the Global North---and **on their own terms**
-2. The general public and scholarly communities **need** access to an important local and quotidian source to tell and recover local stories
-3. Scholarly communities have a duty of care and nobody else was doing it
+1. Neo-colonial invisibility of the Global South
+2. Periodicals are an important local and quotidian source to tell and recover local stories
+3. We as scholars have a duty of care and nobody else was doing it
 
 ## Neo-colonial invisibility of the Global South
 
@@ -53,14 +54,14 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 
 ### Historical Arabic periodicals
 
-- cultural heritage of 420 Mio Arabic-speakers
+- cultural heritage of **420 Mio Arabic-speakers**
 - 3269 journals and newspapers until 1929
-- collection and cataloging bias:
+- collection and cataloguing bias:
     + 747 (< 1/4 ) can be localised
     + including partial collections
 - digitisation bias:
-    + 145 (< 1/20) titles have been (partially) digitised
-- accessibility:
+    + **145** (**< 1/20**) titles have been (partially) digitised
+- **inaccessible**:
     + paywalls
     + geo-fencing
     + proprietary interfaces/formats, no APIs
@@ -76,10 +77,10 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 
 "[WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de)"
 
-- cultural heritage of 6.2 Mio inhabitants of Hesse
-- 125 digitised titles with more than 1/2 Mio pages
+- cultural heritage of **6.2 Mio inhabitants** of Hesse
+- **125** digitised titles with more than 1/2 Mio pages
     - facsimiles and full text
-- accessibility
+- **accessible**
     + open access
     + standard compliant formats
     + APIs
@@ -109,10 +110,10 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 :::
 :::{.c_width-50 .c_right}
 
-### Text
+### "Text"
 
 - Automated transcriptions (OCR): [HathiTrust](https://www.hathitrust.org/), East View's [Global Press Archive (GPA)](https://www.eastview.com/resources/gpa/crl-mena/), [Cengage Gale](http://gale.cengage.co.uk/arabic.aspx)
-    + unknown quality but commonly extremly bad
+    + unknown quality but commonly extremely bad
     + no structural mark-up
 <!-- + data silos
     + limited licences, paywalls
@@ -180,7 +181,7 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 - **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
 - **open licences** to facilitate re-use -->
 
-- **Validation** and utilization of transcriptions
+- **Validation** and improved utilization of transcriptions
 - Establishing an open **infrastructure** of workflows, models, authority files
 - With the affordances of the Global South
 
@@ -403,7 +404,6 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
     + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!)
 
 
-# Conclusion
 ## Thank you!
 
 - Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
