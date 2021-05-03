@@ -375,7 +375,7 @@ div.figure {
     width:100%;
     padding:0;
     height: inherit;
-}
+  }
 div.figure p.caption {
     position:relative;
     float:right;
@@ -396,7 +396,7 @@ div.figure img {
     max-height: inherit;
     /*max-width:80%;*/
     max-width: 95%;
-    /*height: inherit;*/
+    height: inherit;
 }
 
 /* inline images */
@@ -457,6 +457,19 @@ columns
 .c_right {
     display: block;
     float: right;
+}
+/* styles to vertically stack divs */
+.c_height-50 {
+    display: block;
+    /*height: 45%;*/
+    height: 500px;
+    max-height: 500px;
+}
+.c_top {
+    vertical-align: top;
+}
+.c_bottom {
+    vertical-align: bottom;
 }
 
 /*****************

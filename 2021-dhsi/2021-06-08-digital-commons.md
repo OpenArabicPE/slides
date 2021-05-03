@@ -20,6 +20,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 
 :::{.c_width-60 .c_left}
 
+- Volunteer-run scholarly editing and infrastructure-building (since 2015)
 - Corpus of 6 full-text scholarly digital editions (TEI XML) of Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
 - A client-based webview showing text and facsimiles side-by-side (based on TEI Boilerplate).
 - Bibliographic metadata (MODS, BibTeX, Zotero RDF)
@@ -66,6 +67,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
     + geo-fencing
     + proprietary interfaces/formats, no APIs
     + non-Arabic interfaces and metadata
+    + mostly facsimiles only
 
 
 <!-- ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"} -->
@@ -75,16 +77,16 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 
 ### Historical periodicals from a small German state
 
-"[WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de)"
+<!-- "[WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de)" -->
 
 - cultural heritage of **6.2 Mio inhabitants** of Hesse
-- **125** digitised titles with more than 1/2 Mio pages
-    - facsimiles and full text
+- **125** [digitised titles](https://hwk1.hebis.de) with more than 1/2 Mio pages
 - **accessible**
     + open access
-    + standard compliant formats
     + APIs
+    + standard compliant formats
     + German and English interfaces
+    + facsimiles and full text÷
 
 :::
 
@@ -162,7 +164,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 :::
 
 # Contributing to the *digital commons* without the help we cannot get
-##  Contributing to the *digital commons* without the help we cannot get <!-- Aims and principles --> <!-- move further down into the workflow section -->
+##  Contributing to the *digital commons* <br/> without the help we cannot get <!-- Aims and principles --> <!-- move further down into the workflow section -->
 
 ::: {.c_width-30}
 
