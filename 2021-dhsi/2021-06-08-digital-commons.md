@@ -7,9 +7,16 @@ ORCID: orcid.org/0000-0002-5739-8094
 duration: 10
 ---
 
+## Open Arabic Periodical Editions
+### Contributing to the *digital commons* without the help we cannot get
 
-# Open Arabic Periodical Editions (OpenArabicPE)
-## Overwiew
+Till Grallert, @[tillgrallert](https://twitter.com/tillgrallert)
+
+Third Right to Left (#RTL21) conference at #DHSI21
+
+Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.github.io/slides/2021-dhsi/index.html)
+
+## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io))
 
 :::{.c_width-60 .c_left}
 
@@ -32,32 +39,14 @@ duration: 10
 
 :::
 
-##  Aims and principles <!-- move further down into the workflow section -->
-
-1. ideas:
-    - unite **available** facsimiles and transcriptions
-    - harvest, generate, validate and share open metadata
-2. aims
-    + **validate** and **improve** the transcription with the facsimiles
-    - **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
-    - **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
-    - **open licences** to facilitate re-use
-3. principles
-    - use as few as possible **open** and **simple** formats and tools
-    - re-use/purpose **available** and **established** tools, technologies, and material
-    - use **free-to-use** platforms without lock-in of data
-
-## Affordances/ constrains
-
 ## Why spend the effort? Shouldn't others do it?
 
 OpenArabicPE addresses a clear need, fundamental rights, and our scholarly duties:
 
 1. Societies of the Global South have a **right** to unhampered access to their **own cultural record**---a cultural record that is frequently held by institutions of the Global North---and **on their own terms**
 2. The general public and scholarly communities **need** access to an important local and quotidian source to tell and recover local stories
-3. Scholarly communities have a duty of care
+3. Scholarly communities have a duty of care and nobody else was doing it
 
-# Digitisation as the promised solution to all our problems?
 ## Neo-colonial invisibility of the Global South
 
 :::{.c_width-50}
@@ -112,8 +101,11 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
     + limited use of standards, APIs
 + UIs not suited to RTL and limited to English
 
+:::{.c_height-50 .c_bottom}
+
 ![[*al-Muqtabas* 6 on HathiTrust without US IP](http://hdl.handle.net/2027/njp.32101073250910)](../assets/hathi_muqtabas-1.png)
 
+:::
 :::
 :::{.c_width-50 .c_right}
 
@@ -126,10 +118,13 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
     + limited licences, paywalls
     + limited use of standards, APIs
  -->
+
+:::{.c_height-50 .c_bottom}
+
 ![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
 
 :::
-
+:::
 
 ## Shadow libraries
 
@@ -142,8 +137,10 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 - Renderings of a digital text with a fake "original" layout
 - served as image file
 
-!["fakesimile" of *al-Muqtabas* 5(7) from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG). Large parts of text have been omitted. The original spans pp.[463](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045).](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
+:::{.c_height-50 .c_bottom}
 
+!["fakesimile" of *al-Muqtabas* 5(7) from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG). Large parts of text have been omitted. The original spans pp.[463](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045).](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
+:::
 :::
 :::{.c_width-50 .c_right}
 
@@ -156,7 +153,69 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
     + very limited structural mark-up
     + cannot be reliably cited
 
+:::{.c_height-50 .c_bottom}
+
 ![[*al-Muqtabas* on *al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
+
+:::
+:::
+
+# Contributing to the *digital commons* without the help we cannot get
+##  Contributing to the *digital commons* without the help we cannot get <!-- Aims and principles --> <!-- move further down into the workflow section -->
+
+::: {.c_width-30}
+
+### ideas:
+
+- unite **available** facsimiles and transcriptions
+- harvest, generate, validate and share open metadata
+
+:::
+::: {.c_width-30}
+
+### aims
+
+<!-- + **validate** and **improve** the transcription with the facsimiles
+- **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
+- **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
+- **open licences** to facilitate re-use -->
+
+- **Validation** and utilization of transcriptions
+- Establishing an open **infrastructure** of workflows, models, authority files
+- With the affordances of the Global South
+
+:::
+::: {.c_width-30}
+
+### principles
+
+- **established** tools and technologies
+- as **few** as possible **open** and "simple" formats and tools
+- **free-to-use** platforms without lock-in of data
+
+:::
+
+## Affordances and constrains
+
+::: {.c_width-60}
+
+### General
+
+- socio-technological hegemony of the Global North
+    + hardware, software, formats ill-suited for the digitised cultural heritage of the Global South
+- cultural hegemony of the English-speaking Global North
+    + dominates the interfaces between humans and machines
+    + decides how we can describe cultural artefacts in the digital domain
+    + involves: language and script, metaphors, semantic models
+
+:::
+::: {.c_width-30}
+
+### Project specific
+
+- no institutional funding
+- volatile electricity
+- slow and expensive internet connection
 
 :::
 
@@ -166,12 +225,12 @@ OpenArabicPE addresses a clear need, fundamental rights, and our scholarly dutie
 
 :::{.c_width-50}
 
-- facsimiles
-    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), [HathiTrust](http://hathitrust.org/), [Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779), [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) etc., preferably through [IIIF](https://iiif.io/)
-    + scan/ photograph your physical artefacts (at the lowest sustainable resolution)
 - text
     + scrape existing transcriptions from [*shamela.ws*](http://shamela.ws/index.php/book/26523), et al.
     + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
+- facsimiles
+    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), [HathiTrust](http://hathitrust.org/), [Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779), [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) etc., preferably through [IIIF](https://iiif.io/)
+    + scan/ photograph your physical artefacts (at the lowest sustainable resolution)
 
 :::
 :::{.c_width-50 .c_right}
@@ -184,6 +243,18 @@ EPub (HTML) for *al-Zuhūr* 2(4) from shamela.ws
     <a id='C232'></a>
     <span class="title">صحافة سورية ولبنان</span><br /><span class="red">3 - </span>المجلات<br />هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<br />أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<br />وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<br />
 </div>
+```
+
+OCR output from Transkribus for *al-Ḥasnāʾ* (PAGE XML)
+
+```xml
+<TextLine id="r1l5" custom="readingOrder {index:4;}">
+    <Coords points="470,548 2191,527 1648,462 470,464"/>
+    <Baseline points="480,542 565,540 650,537 735,534 820,533 905,531 990,530 1075,528 1160,528 1245,527 1330,527 1415,527 1500,527 1585,527 1670,528 1755,528 1840,530 1925,531 2010,531 2095,534 2180,536"/>
+    <TextEquiv>
+        <Unicode>من عسر سنوات مجلة بسائة في الاستارة اعتمد في تحريرها على أقلامهن فزيئها</Unicode>
+    </TextEquiv>
+</TextLine>
 ```
 
 :::
@@ -234,15 +305,17 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 - make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for **transparent authorship attribution** and **damage control**: [.git](https://git-scm.com/) is open source and available for all OSs
 - plain-text (including XML) editors
     + should be **syntax aware**
-    - support for RTL in text editors is a mixed bag
+    - RTL: support in text editors is a mixed bag
 - XML
     + should be **schema aware** to validate the encoding
-    - There are open, publicly-funded alternatives to [oXygen](https://www.oxygenxml.com/): [TextGrid Lab](https://textgrid.de/index)
+    - RTL: There seems to be no way around [oXygen XML editor](https://www.oxygenxml.com/)<!-- : [TextGrid Lab](https://textgrid.de/index) -->
 
 :::
 :::{.c_width-50 .c_right}
 
-![The TEI XML file for *al-Zuhūr* 2(4) in Sublime Text](../assets/sublime_zuhur.png)
+![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png)
+
+![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../assets/textmate_zuhur.png)
 
 :::
 
@@ -302,6 +375,20 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 :::
 
 # Beware: character encoding != rendering
+## Separate encoding and content during editing
+
+... or learn how to navigate bi-directional XML and read Arabic from left to right.
+
+:::{.c_width-50 .c_left}
+
+![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png)
+
+:::
+:::{.c_width-50 .c_right}
+
+![The TEI XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../assets/oxygen_zuhur-author.png)
+
+:::
 
 # Beware: Bootstrapping relies on the work of others
 ## All dependencies will eventually break / need repair
@@ -321,9 +408,9 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 
 - Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
-    + Slides: [https://OpenArabicPE.github.io/slides/2020-dh-jamia/](https://OpenArabicPE.github.io/slides/2020-dh-jamia/index.html)
+    + Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.github.io/slides/2021-dhsi/index.html)
     + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
-    + Email: <grallert@orient-institut.org> <till.grallert@fu-berlin.de>
+    + Email: <till.grallert@fu-berlin.de>
 - Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
