@@ -299,11 +299,9 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 :::
 
 # Beware: Bootstrapping relies on the work of others
-## Bootstrapping relies on the work of others
-
-![The main components of OpenArabicPE](../assets/OpenArabicPE_components-layer-1-4.png)
-
 ## All dependencies will eventually break / need repair
+
+:::{.c_width-50}
 
 - Reliance on external data providers: link rot
     - links to facsimiles broke twice in four years
@@ -311,9 +309,15 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
     + URLs to our editions had to be changed once
 - XSLT1 in web browsers: will fall victim to JSON and security features
     + over the last 5 years support has markedly decreased
-- Full-text search across issues and periodicals without a backend<!-- : **not** available out-of-the-box -->
-    + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!)
+<!-- - Full-text search across issues and periodicals without a backend
+    + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) -->
 
+:::
+:::{.c_width-50}
+
+![The main components of OpenArabicPE](../assets/OpenArabicPE_components-layer-1-4.png)
+
+:::
 
 ## Thank you!
 
