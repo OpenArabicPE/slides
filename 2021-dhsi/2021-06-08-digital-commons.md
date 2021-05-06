@@ -86,7 +86,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
     + APIs
     + standard compliant formats
     + German and English interfaces
-    + facsimiles and full text÷
+    + facsimiles and full text
 
 :::
 
