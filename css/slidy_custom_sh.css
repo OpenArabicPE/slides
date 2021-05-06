@@ -396,7 +396,7 @@ div.figure img {
     /*max-height: inherit;*/
     /*max-width:80%;*/
     max-width: 95%;
-    height: inherit;
+    /*height: inherit;*/
 }
 
 /* inline images */
