@@ -80,8 +80,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print"
-    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print" href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="../css/slidy_custom_sh.css" />
   <meta name="copyright" content="Till Grallert, CC BY-SA 4.0" />
@@ -210,12 +209,12 @@ Till Grallert
 </div>
 <div class="c_width-30 c_right">
 <div class="figure">
-<img src="../assets/boilerplate_zuhur-v_1-i_1.png" id="fig:webview-zuhur" alt="" />
-<p class="caption">Figure 1: <a href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml">Webview of <em>al-Zuhur</em> 1(1)</a></p>
+<img src="../assets/boilerplate_muqtabas-v_3-i_2.png" id="fig:webview-muqtabas" alt="" />
+<p class="caption">Figure 1: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml">Webview of <em>al-Muqtabas</em> 3(2)</a></p>
 </div>
 <div class="figure">
-<img src="../assets/boilerplate_muqtabas-v_3-i_2.png" id="fig:webview-muqtabas" alt="" />
-<p class="caption">Figure 2: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml">Webview of <em>al-Muqtabas</em> 3(2)</a></p>
+<img src="../assets/boilerplate_zuhur-v_1-i_1.png" id="fig:webview-zuhur" alt="" />
+<p class="caption">Figure 2: <a href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml">Webview of <em>al-Zuhur</em> 1(1)</a></p>
 </div>
 </div>
 </div>
@@ -226,26 +225,131 @@ Till Grallert
 <div id="why-spend-the-effort" class="slide section level2">
 <h1>Why spend the effort?</h1>
 <!-- OpenArabicPE addresses a clear need, fundamental rights, and our scholarly duties: -->
-<div class="c_width-60">
 <ol style="list-style-type: decimal">
-<li>Neo-colonial invisibility of cultural artefacts from the Global South in the digital domain
-<ul>
-<li>knowledge gap, collection and cataloguing bias -&gt; digitisation bias</li>
-<li>145 (&lt; 1/20) of c.3300 Arabic periodicals published until 1930 have been (partially) digitised</li>
-</ul></li>
+<li>Neo-colonial invisibility of the Global South</li>
 <li>Periodicals are an important local and quotidian source to tell and recover local stories</li>
 <li>We as scholars have a duty of care and nobody else was doing it</li>
 </ol>
 </div>
-<div class="c_width-30 c_right">
-<div class="figure">
-<img src="../assets/jaraid_holdings_pie-3.png" height="300" alt="" />
-<p class="caption"><!-- invisible --></p>
+<div id="neo-colonial-invisibility-of-the-global-south" class="slide section level2">
+<h1>Neo-colonial invisibility of the Global South</h1>
+<div id="historical-arabic-periodicals" class="c_width-50">
+<h3>Historical Arabic periodicals</h3>
+<ul>
+<li>cultural heritage of <strong>420 Mio Arabic-speakers</strong></li>
+<li>3269 journals and newspapers until 1929</li>
+<li>collection and cataloguing bias:
+<ul>
+<li>747 (&lt; 1/4 ) can be localised</li>
+<li>including partial collections</li>
+</ul></li>
+<li>digitisation bias:
+<ul>
+<li><strong>145</strong> (<strong>&lt; 1/20</strong>) titles have been (partially) digitised</li>
+</ul></li>
+<li><strong>inaccessible</strong>:
+<ul>
+<li>paywalls</li>
+<li>geo-fencing</li>
+<li>proprietary interfaces/formats, no APIs</li>
+<li>non-Arabic interfaces and metadata</li>
+<li>mostly facsimiles only</li>
+</ul></li>
+</ul>
+<!-- ![In Project Jarāʾid erfasste Periodika](../../assets/jaraid/jaraid_holdings_pie-3.png){#fig:jaraid-stats width="300"} -->
+</div>
+<div id="historical-periodicals-from-a-small-german-state" class="c_width-50">
+<h3>Historical periodicals from a small German state</h3>
+<!-- "[WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de)" -->
+<ul>
+<li>cultural heritage of <strong>6.2 Mio inhabitants</strong> of Hesse</li>
+<li><strong>125</strong> <a href="https://hwk1.hebis.de">digitised titles</a> with more than 1/2 Mio pages</li>
+<li><strong>accessible</strong>
+<ul>
+<li>open access</li>
+<li>APIs</li>
+<li>standard compliant formats</li>
+<li>German and English interfaces</li>
+<li>facsimiles and full text</li>
+</ul></li>
+</ul>
 </div>
 </div>
+<div id="digitisation-online-accessible" class="slide section level2">
+<h1>Digitisation != online != accessible</h1>
+<!-- outline problems -->
+<div id="facsimiles" class="c_width-50">
+<h3>Facsimiles</h3>
+<ul>
+<li>lack of / faulty metadata</li>
+<li>data silos
+<ul>
+<li>limited licences, paywalls</li>
+<li>limited use of standards, APIs</li>
+</ul></li>
+<li>UIs not suited to RTL and limited to English</li>
+</ul>
+<div class="c_height-50 c_bottom">
 <div class="figure">
-<img src="../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png" alt="" />
-<p class="caption">Geographic distribution of library holdings of <em>al-Muqtabas</em></p>
+<img src="../assets/hathi_muqtabas-1.png" alt="" />
+<p class="caption"><a href="http://hdl.handle.net/2027/njp.32101073250910"><em>al-Muqtabas</em> 6 on HathiTrust without US IP</a></p>
+</div>
+</div>
+</div>
+<div id="text" class="c_width-50 c_right">
+<h3>“Text”</h3>
+<ul>
+<li>Automated transcriptions (OCR): <a href="https://www.hathitrust.org/">HathiTrust</a>, East View’s <a href="https://www.eastview.com/resources/gpa/crl-mena/">Global Press Archive (GPA)</a>, <a href="http://gale.cengage.co.uk/arabic.aspx">Cengage Gale</a>
+<ul>
+<li>unknown quality but commonly extremely bad</li>
+<li>no structural mark-up <!-- + data silos
+  + limited licences, paywalls
+  + limited use of standards, APIs
+ --></li>
+</ul></li>
+</ul>
+<div class="c_height-50 c_bottom">
+<div class="figure">
+<img src="../assets/gpa_bashir-i_487-p_1_ocr.png" alt="" />
+<p class="caption"><em>al-Bashīr</em> 9 Jan. 1880 (#487), p.1 on <a href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>, state of OCR</p>
+</div>
+</div>
+</div>
+</div>
+<div id="shadow-libraries" class="slide section level2">
+<h1>Shadow libraries</h1>
+<!-- outline problems -->
+<div id="fakesimiles" class="c_width-50">
+<h3>Fakesimiles</h3>
+<ul>
+<li>Renderings of a digital text with a fake “original” layout</li>
+<li>served as image file</li>
+</ul>
+<div class="c_height-50 c_bottom">
+<div class="figure">
+<img src="../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg" alt="" />
+<p class="caption">“fakesimile” of <em>al-Muqtabas</em> 5(7) from <a href="https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG"><em>arshīf al-majallāt […] al-ʿarabiyya</em></a>. Large parts of text have been omitted. The original spans pp.<a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036">463</a>–<a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045">466</a>.</p>
+</div>
+</div>
+</div>
+<div id="text-1" class="c_width-50 c_right">
+<h3>Text</h3>
+<ul>
+<li>anonymous transcriptions, e.g. <a href="http://shamela.ws/index.php/book/26523"><em>al-Maktaba al-Shāmila</em></a>, <a href="http://almeshkat.net/"><em>Mishkāt</em></a>, <a href="http://saaid.net/"><em>Ṣayd al-Fawāʾid</em></a>, <a href="http://www.alwaraq.net/"><em>al-Waraq</em></a> etc.
+<ul>
+<li>lack of / faulty metadata</li>
+<li>unknown editing principles</li>
+<li>unknown quality</li>
+<li>very limited structural mark-up</li>
+<li>cannot be reliably cited</li>
+</ul></li>
+</ul>
+<div class="c_height-50 c_bottom">
+<div class="figure">
+<img src="../assets/shamela_muqtabas-annotated.png" alt="" />
+<p class="caption"><a href="http://shamela.ws/browse.php/book-26523#page-4046"><em>al-Muqtabas</em> on <em>al-Maktaba al-Shāmila</em></a></p>
+</div>
+</div>
 </div>
 </div>
 
@@ -253,91 +357,65 @@ Till Grallert
 <h1>Contributing to the <em>digital commons</em> without the help we cannot get</h1>
 
 </div>
-<div id="the-help-we-cannot-get" class="slide section level2">
-<h1>The help we cannot get</h1>
-<div class="c_width-50 c_left">
-<ul>
-<li>digitisation and maintaining digital artefacts is really <strong>expensive</strong></li>
-<li>periodicals form an extremely <strong>large corpus</strong> of very short texts (and images)</li>
-<li>lacking technologies*
-<ul>
-<li>OCR for Arabic script</li>
-<li>automated layout recognition</li>
-</ul></li>
-<li>no institutional funding for the digitisation of mundane bulk of the periodical press</li>
-</ul>
-</div>
-<div class="c_width-50 c_right">
-<ul>
-<li>existing digitised periodicals are nigh unusable
-<ul>
-<li>lacking/faulty metadata</li>
-<li>mainly facsimiles</li>
-<li>unknown veracity of text layers</li>
-<li>paywalls, geofencing</li>
-<li>no APIs</li>
-<li>no machine-actionable data layer</li>
-</ul></li>
-</ul>
-</div>
-<div style="clear:both;">
-<div class="c_width-30 c_left">
-<div class="figure">
-<img src="../assets/hathi_muqtabas-1.png" alt="" />
-<p class="caption"><em>al-Muqtabas</em> 6 on <a href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a> with geo-fencing</p>
-</div>
-</div>
-<div class="c_width-30 c_left">
-<div class="figure">
-<img src="../assets/gpa_bashir-i_487-p_1_ocr.png" alt="" />
-<p class="caption"><em>al-Bashīr</em> 9 Jan. 1880 (#487), p.1 on <a href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>, state of OCR</p>
-</div>
-</div>
-<div class="c_width-30 c_right">
-<div class="figure">
-<img src="../assets/shamela_muqtabas-annotated.png" alt="" />
-<p class="caption"><em>al-Muqtabas</em> on <a href="http://shamela.ws/browse.php/book-26523#page-4046"><em>al-Maktaba al-Shāmila</em></a></p>
-</div>
-</div>
-</div>
-</div>
 <div id="contributing-to-the-digital-commons-without-the-help-we-cannot-get-2" class="slide section level2">
-<h1>Contributing to the <em>digital commons</em> <br/> without the help we cannot get</h1>
-<div class="c_width-50 c_left">
-<h3 id="ideas">ideas</h3>
+<h1>Contributing to the <em>digital commons</em> <br/> without the help we cannot get <!-- Aims and principles --> <!-- move further down into the workflow section --></h1>
+<div id="ideas" class="c_width-30">
+<h3>ideas:</h3>
 <ul>
-<li>unite <strong>existing</strong> facsimiles and transcriptions to validate the latter with the former</li>
-<li>learn from free and open-source software development <!-- - model everything to make components citable
-- harvest, generate, validate and share open metadata --></li>
-</ul>
-<h3 id="principles">principles</h3>
-<ul>
-<li><strong>established</strong> tools and technologies</li>
-<li>as <strong>few</strong> as possible <strong>open</strong> and “simple” formats and tools</li>
-<li><strong>free-to-use</strong> platforms without lock-in of data</li>
+<li>unite <strong>available</strong> facsimiles and transcriptions</li>
+<li>harvest, generate, validate and share open metadata</li>
 </ul>
 </div>
-<div id="aims" class="c_width-50 c_right">
+<div id="aims" class="c_width-30">
 <h3>aims</h3>
 <!-- + **validate** and **improve** the transcription with the facsimiles
 - **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
 - **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
 - **open licences** to facilitate re-use -->
 <ul>
-<li>make Arabic periodicals more accessible on a shoestring budget</li>
-<li><strong>Validation</strong> and improved utilization of transcriptions
+<li><strong>Validation</strong> and improved utilization of transcriptions</li>
+<li>Establishing an open <strong>infrastructure</strong> of workflows, models, authority files</li>
+<li>With the affordances of the Global South</li>
+</ul>
+</div>
+<div id="principles" class="c_width-30">
+<h3>principles</h3>
 <ul>
-<li>reliablity: content and citations</li>
-<li>accessibility: for readers and computational analysis</li>
-<li>ground truth for ML-based OCR/HTR</li>
+<li><strong>established</strong> tools and technologies</li>
+<li>as <strong>few</strong> as possible <strong>open</strong> and “simple” formats and tools</li>
+<li><strong>free-to-use</strong> platforms without lock-in of data</li>
+</ul>
+</div>
+</div>
+<div id="affordances-and-constrains" class="slide section level2">
+<h1>Affordances and constrains</h1>
+<div id="general" class="c_width-60">
+<h3>General</h3>
+<ul>
+<li>socio-technological hegemony of the Global North
+<ul>
+<li>hardware, software, formats ill-suited for the digitised cultural heritage of the Global South</li>
 </ul></li>
-<li>Establishing an open, sustainable <strong>infrastructure</strong> of workflows, models, authority files <!-- - With the affordances of the Global South --></li>
+<li>cultural hegemony of the English-speaking Global North
+<ul>
+<li>dominates the interfaces between humans and machines</li>
+<li>decides how we can describe cultural artefacts in the digital domain</li>
+<li>involves: language and script, metaphors, semantic models</li>
+</ul></li>
+</ul>
+</div>
+<div id="project-specific" class="c_width-30">
+<h3>Project specific</h3>
+<ul>
+<li>no institutional funding</li>
+<li>volatile electricity</li>
+<li>slow and expensive internet connection</li>
 </ul>
 </div>
 </div>
 
-<div id="resulting-workflow-of-openarabicpe" class="title-slide slide section level1">
-<h1>Resulting workflow of OpenArabicPE</h1>
+<div id="workflow-components-of-openarabicpe" class="title-slide slide section level1">
+<h1>Workflow / components of OpenArabicPE</h1>
 
 </div>
 <div id="get-the-data" class="slide section level2">
@@ -351,8 +429,7 @@ Till Grallert
 </ul></li>
 <li>facsimiles
 <ul>
-<li>link to existing facsimiles from <a href="http://eap.bl.uk/">British Library’s “Endangered Archives Programme” (EAP)</a>, <!-- [HathiTrust](http://hathitrust.org/), --> <a href="https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779">Translatio Bonn</a>, <a href="http://archive.alsharekh.org/"><em>Arshīf al-majallāt […] al-ʿarabiyya</em></a> etc., preferably through <a href="https://iiif.io/">IIIF</a> <!--  + This might mean, one has to manually place 10.000s of page breaks in the text layer
-      + IIIF allows to set a very low quality to reduce bandwidth and traffic --></li>
+<li>link to existing facsimiles from <a href="http://eap.bl.uk/">British Library’s “Endangered Archives Programme” (EAP)</a>, <a href="http://hathitrust.org/">HathiTrust</a>, <a href="https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779">Translatio Bonn</a>, <a href="http://archive.alsharekh.org/"><em>Arshīf al-majallāt […] al-ʿarabiyya</em></a> etc., preferably through <a href="https://iiif.io/">IIIF</a></li>
 <li>scan/ photograph your physical artefacts (at the lowest sustainable resolution)</li>
 </ul></li>
 </ul>
@@ -376,14 +453,14 @@ Till Grallert
 </div>
 <div id="model-the-data" class="slide section level2">
 <h1>2. model the data</h1>
-<p>Structure the text string into issues, sections, articles with bylines …</p>
+<h3 id="this-is-a-scholarly-endeavour">This is a scholarly endeavour!</h3>
 <div class="c_width-50">
 <ul>
-<li>widely accepted standard for textual editions: <a href="https://tei-c.org/">Text Encoding Initiative</a> (TEI XML)
+<li>use open, plain-text file formats<!-- : proprietary formats will cause a lock-in --></li>
+<li>widely accepted standard for textual editions: <a href="https://tei-c.org/">Text Encoding Initiative</a> (TEI, serialised as XML)
 <ul>
 <li>active community</li>
 <li>pre-requisite for grant funding</li>
-<li>easy to archive (XML = plain text)</li>
 </ul></li>
 <li>re-use / adapt domain specific encoding schemas within the TEI</li>
 <li>try to script basic modelling using patterns in your source text:
@@ -414,35 +491,29 @@ Till Grallert
 <div id="edit-the-data" class="slide section level2">
 <h1>3. edit the data</h1>
 <div class="c_width-50">
-<!-- - editing tools depend on modelling decisions and file formats -->
 <ul>
-<li>make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for <strong>transparent authorship attribution</strong> and <strong>damage control</strong>:
-<ul>
-<li><a href="https://git-scm.com/">.git</a> is open source and available for all OSs</li>
-</ul></li>
+<li>editing tools depend on modelling decisions and file formats</li>
+<li>make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for <strong>transparent authorship attribution</strong> and <strong>damage control</strong>: <a href="https://git-scm.com/">.git</a> is open source and available for all OSs</li>
 <li>plain-text (including XML) editors
 <ul>
 <li>should be <strong>syntax aware</strong></li>
-<li><strong>RTL</strong>: support in text editors is a mixed bag</li>
+<li>RTL: support in text editors is a mixed bag</li>
+</ul></li>
+<li>XML
+<ul>
+<li>should be <strong>schema aware</strong> to validate the encoding</li>
+<li>RTL: There seems to be no way around <a href="https://www.oxygenxml.com/">oXygen XML editor</a><!-- : [TextGrid Lab](https://textgrid.de/index) --></li>
 </ul></li>
 </ul>
+</div>
+<div class="c_width-50 c_right">
 <div class="figure">
 <img src="../assets/sublime_zuhur.png" alt="" />
 <p class="caption">The TEI XML file for <em>al-Zuhūr</em> 2(4) in <a href="https://www.sublimetext.com/">Sublime Text</a></p>
 </div>
-<!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../assets/textmate_zuhur.png) -->
-</div>
-<div class="c_width-50 c_right">
-<ul>
-<li>XML editors proper
-<ul>
-<li>should be <strong>schema aware</strong> to validate the encoding</li>
-<li><strong>RTL</strong>: There seems to be no way around <a href="https://www.oxygenxml.com/">oXygen XML editor</a> (99 USD)<!-- : [TextGrid Lab](https://textgrid.de/index) --></li>
-</ul></li>
-</ul>
 <div class="figure">
-<img src="../assets/oxygen_zuhur-author.png" alt="" />
-<p class="caption">The TEI XML file for <em>al-Zuhūr</em> 2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author mode. Styling relies on CSS.</p>
+<img src="../assets/textmate_zuhur.png" alt="" />
+<p class="caption">The TEI XML file for <em>al-Zuhūr</em> 2(4) in <a href="https://macromates.com/">TextMate</a></p>
 </div>
 </div>
 </div>
@@ -471,45 +542,70 @@ Till Grallert
 <!-- ### presentation layers and access for human readers -->
 <div class="c_width-50">
 <ul>
-<li>Hosting: <a href="https://pages.github.com/">GitHub Pages</a> can expose your data repository to the web</li>
-<li>Generate static webviews
+<li>Convert XML to static webviews: <a href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate</a>, <a href="https://github.com/TEIC/CETEIcean">CETEICEan</a>
 <ul>
-<li>removes need for backend and minimises traffic</li>
-<li>easy to archive</li>
-<li>on the fly: XSLT1 (<a href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate</a>) or JS (<a href="https://github.com/TEIC/CETEIcean">CETEICEan</a>) to render XML files in the client’s web browser</li>
-<li>pre-computed: <a href="https://github.com/features/actions">GitHub actions</a> give access to virtual machines</li>
+<li>on the fly: XSLT1 or JS to render XML files in the client’s web browser</li>
+<li>pre-computed: <a href="https://github.com/features/actions">GitHub actions</a></li>
+<li>removes need for backend, databases etc.</li>
+<li>minimises traffic</li>
 </ul></li>
+<li>host webviews, project blogs: <a href="https://pages.github.com/">gh-pages</a></li>
 <li>bibliographic database: <a href="https://www.zotero.org/groups/openarabicpe/items/">Zotero group</a>
 <ul>
-<li>mitigates against the absent backend</li>
-<li><strong>browse</strong> and <strong>search</strong> independent of file structure</li>
+<li>browse and search independent of file structure</li>
 </ul></li>
-<li>full-text search across the entire corpus: <a href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s programmable search engine</a></li>
+<li>full-text search: <a href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s programmable search engine</a></li>
 </ul>
 </div>
 <div class="c_width-50 c_right">
 <div class="figure">
-<img src="../assets/zotero-group_openarabicpe-mobile-details_small.png" alt="" />
-<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: details in mobile view</p>
-</div>
-<div class="figure">
-<img src="../assets/boilerplate_zuhur-v_2-i_4_small.png" alt="" />
+<img src="../assets/boilerplate_zuhur-v_2-i_4.png" alt="" />
 <p class="caption"><a href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview of <em>al-Zuhūr</em> 2(4)</a></p>
 </div>
 <!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
+</div>
+</div>
+<div id="present-the-data-1" class="slide section level2">
+<h1>5. present the data</h1>
+<h3 id="zotero-group">Zotero group</h3>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-search.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: search in mobile view</p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/zotero-group_openarabicpe-mobile-details.png" alt="" />
+<p class="caption">Zotero group “<a href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”: details in mobile view</p>
+</div>
+</div>
+</div>
+
+<div id="beware-character-encoding-rendering" class="title-slide slide section level1">
+<h1>Beware: character encoding != rendering</h1>
+
+</div>
+<div id="separate-encoding-and-content-during-editing" class="slide section level2">
+<h1>Separate encoding and content during editing</h1>
+<p>… or learn how to navigate bi-directional XML and read Arabic from left to right.</p>
+<div class="c_width-50 c_left">
+<div class="figure">
+<img src="../assets/sublime_zuhur.png" alt="" />
+<p class="caption">The TEI XML file for <em>al-Zuhūr</em> 2(4) in <a href="https://www.sublimetext.com/">Sublime Text</a></p>
+</div>
+</div>
+<div class="c_width-50 c_right">
+<div class="figure">
+<img src="../assets/oxygen_zuhur-author.png" alt="" />
+<p class="caption">The TEI XML file for <em>al-Zuhūr</em> 2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author mode. Styling relies on CSS.</p>
+</div>
 </div>
 </div>
 
 <div id="beware-bootstrapping-relies-on-the-work-of-others" class="title-slide slide section level1">
 <h1>Beware: Bootstrapping relies on the work of others</h1>
 
-</div>
-<div id="bootstrapping-relies-on-the-work-of-others" class="slide section level2">
-<h1>Bootstrapping relies on the work of others</h1>
-<div class="figure">
-<img src="../assets/OpenArabicPE_components-layer-1-4.png" alt="" />
-<p class="caption">The main components of OpenArabicPE</p>
-</div>
 </div>
 <div id="all-dependencies-will-eventually-break-need-repair" class="slide section level2">
 <h1>All dependencies will eventually break / need repair</h1>

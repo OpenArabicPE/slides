@@ -34,9 +34,9 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 :::
 :::{.c_width-30 .c_right}
 
-![[Webview of *al-Muqtabas* 3(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml)](../assets/boilerplate_muqtabas-v_3-i_2.png){#fig:webview-muqtabas}
-
 ![[Webview of *al-Zuhur* 1(1)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml)](../assets/boilerplate_zuhur-v_1-i_1.png){#fig:webview-zuhur}
+
+![[Webview of *al-Muqtabas* 3(2)](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml)](../assets/boilerplate_muqtabas-v_3-i_2.png){#fig:webview-muqtabas}
 
 :::
 
@@ -48,64 +48,76 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 :::{.c_width-60}
 
 1. Neo-colonial invisibility of cultural artefacts from the Global South in the digital domain
-    - 145 (< 1/20) of c.3300 Arabic periodicals published until 1930 haven been (partially) digitised
+    - knowledge gap, collection and cataloguing bias -> digitisation bias
+    - 145 (< 1/20) of c.3300 Arabic periodicals published until 1930 have been (partially) digitised
 2. Periodicals are an important local and quotidian source to tell and recover local stories
 3. We as scholars have a duty of care and nobody else was doing it
 
 :::
 :::{.c_width-30 .c_right}
 
-![](../assets/jaraid_holdings_pie-3.png)
+![<!-- invisible -->](../assets/jaraid_holdings_pie-3.png){height="300px"}
 
 :::
+
+![Geographic distribution of library holdings of *al-Muqtabas*](../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png)
 
 
 # Contributing to the *digital commons* without the help we cannot get
-##  Contributing to the *digital commons* <br/> without the help we cannot get <!-- Aims and principles --> <!-- move further down into the workflow section -->
+##  The help we cannot get
 
-::: {.c_width-50}
 
-### problems:
+:::{.c_width-50 .c_left}
 
-- digitisation is really expensive
-- no funding for the digitisation of mundane bulk of the periodical press
+- digitisation and maintaining digital artefacts is really **expensive**
+- periodicals form an extremely **large corpus** of very short texts (and images)
+- lacking technologies*
+    - OCR for Arabic script
+    - automated layout recognition
+- no institutional funding for the digitisation of mundane bulk of the periodical press
+
+:::
+:::{.c_width-50 .c_right}
+
 - existing digitised periodicals are nigh unusable
     + lacking/faulty metadata
     + mainly facsimiles
+    + unknown veracity of text layers
     + paywalls, geofencing
     + no APIs
     + no machine-actionable data layer
-- extremely limited OCR for Arabic
-
-:::
-::: {.c_width-50}
-
-### ideas:
-
-- unite **available** facsimiles and transcriptions
-    + to validate the latter against the former
-- model everything to make components citable
-- harvest, generate, validate and share open metadata
 
 :::
 
-##  Contributing to the *digital commons* <br/> without the help we cannot get
+:::{style="clear:both;"}
+:::{.c_width-30 .c_left}
 
-::: {.c_width-50}
-
-### aims
-
-<!-- + **validate** and **improve** the transcription with the facsimiles
-- **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
-- **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
-- **open licences** to facilitate re-use -->
-
-- **Validation** and improved utilization of transcriptions
-- Establishing an open **infrastructure** of workflows, models, authority files
-- With the affordances of the Global South
+![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) with geo-fencing](../assets/hathi_muqtabas-1.png)
 
 :::
-::: {.c_width-50}
+:::{.c_width-30 .c_left}
+
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
+
+:::
+:::{.c_width-30 .c_right}
+
+![*al-Muqtabas* on [*al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
+
+:::
+:::
+
+## Contributing to the *digital commons* <br/> without the help we cannot get
+
+::: {.c_width-50 .c_left}
+
+### ideas
+
+- unite **existing** facsimiles and transcriptions to validate the latter with the former
+- learn from free and open-source software development
+<!-- - model everything to make components citable
+- harvest, generate, validate and share open metadata -->
+
 
 ### principles
 
@@ -115,31 +127,26 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 
 :::
 
-## Affordances and constrains
+:::{.c_width-50 .c_right}
 
-::: {.c_width-60}
+### aims
 
-### General
+<!-- + **validate** and **improve** the transcription with the facsimiles
+- **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
+- **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
+- **open licences** to facilitate re-use -->
 
-- socio-technological hegemony of the Global North
-    + hardware, software, formats ill-suited for the digitised cultural heritage of the Global South
-- cultural hegemony of the English-speaking Global North
-    + dominates the interfaces between humans and machines
-    + decides how we can describe cultural artefacts in the digital domain
-    + involves: language and script, metaphors, semantic models
-
-:::
-::: {.c_width-30}
-
-### Project specific
-
-- no institutional funding
-- volatile electricity
-- slow and expensive internet connection
+- make Arabic periodicals more accessible on a shoestring budget
+- **Validation** and improved utilization of transcriptions
+    + reliablity: content and citations
+    + accessibility: for readers and computational analysis
+    + ground truth for ML-based OCR/HTR
+- Establishing an open, sustainable **infrastructure** of workflows, models, authority files
+<!-- - With the affordances of the Global South -->
 
 :::
 
-# Workflow / components of OpenArabicPE
+# Resulting workflow of OpenArabicPE
 
 ## 1. get the data
 
@@ -149,7 +156,9 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
     + scrape existing transcriptions from [*shamela.ws*](http://shamela.ws/index.php/book/26523), et al.
     + use [Transkribus](https://transkribus.eu/), [eScripta](https://escripta.hypotheses.org)/[eScriptorium](https://www.https://escriptorium.fr/) for HTR (with our model trained on 1000+ pages from the OpenArabicPE corpus)
 - facsimiles
-    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), [HathiTrust](http://hathitrust.org/), [Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779), [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) etc., preferably through [IIIF](https://iiif.io/)
+    + link to existing facsimiles from [British Library's "Endangered Archives Programme" (EAP)](http://eap.bl.uk/), <!-- [HathiTrust](http://hathitrust.org/), --> [Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779), [*Arshīf al-majallāt [...] al-ʿarabiyya*](http://archive.alsharekh.org/) etc., preferably through [IIIF](https://iiif.io/)
+       <!--  + This might mean, one has to manually place 10.000s of page breaks in the text layer
+        + IIIF allows to set a very low quality to reduce bandwidth and traffic -->
     + scan/ photograph your physical artefacts (at the lowest sustainable resolution)
 
 :::
@@ -180,14 +189,15 @@ OCR output from Transkribus for *al-Ḥasnāʾ* (PAGE XML)
 :::
 
 ## 2. model the data
-### This is a scholarly endeavour!
+
+Structure the text string into issues, sections, articles with bylines ...
 
 :::{.c_width-50}
 
-- use open, plain-text file formats<!-- : proprietary formats will cause a lock-in -->
-- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI, serialised as XML)
+- widely accepted standard for textual editions: [Text Encoding Initiative](https://tei-c.org/) (TEI XML)
     - active community
     - pre-requisite for grant funding
+    - easy to archive (XML = plain text)
 - re-use / adapt domain specific encoding schemas within the TEI
 - try to script basic modelling using patterns in your source text:
     + regular expressions
@@ -221,21 +231,25 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 
 :::{.c_width-50}
 
-- editing tools depend on modelling decisions and file formats
-- make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for **transparent authorship attribution** and **damage control**: [.git](https://git-scm.com/) is open source and available for all OSs
+<!-- - editing tools depend on modelling decisions and file formats -->
+- make use of version control <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for **transparent authorship attribution** and **damage control**:
+    + [.git](https://git-scm.com/) is open source and available for all OSs
 - plain-text (including XML) editors
     + should be **syntax aware**
-    - RTL: support in text editors is a mixed bag
-- XML
-    + should be **schema aware** to validate the encoding
-    - RTL: There seems to be no way around [oXygen XML editor](https://www.oxygenxml.com/)<!-- : [TextGrid Lab](https://textgrid.de/index) -->
+    - **RTL**: support in text editors is a mixed bag
+
+![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png)
+
+<!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../assets/textmate_zuhur.png) -->
 
 :::
 :::{.c_width-50 .c_right}
 
-![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png)
+- XML editors proper
+    + should be **schema aware** to validate the encoding
+    - **RTL**: There seems to be no way around [oXygen XML editor](https://www.oxygenxml.com/) (99 USD)<!-- : [TextGrid Lab](https://textgrid.de/index) -->
 
-![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../assets/textmate_zuhur.png)
+![The TEI XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../assets/oxygen_zuhur-author.png)
 
 :::
 
@@ -261,56 +275,34 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 
 :::{.c_width-50}
 
-- Convert XML to static webviews: [TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/), [CETEICEan](https://github.com/TEIC/CETEIcean)
-    - on the fly: XSLT1 or JS to render XML files in the client's web browser
-    - pre-computed: [GitHub actions](https://github.com/features/actions)
-    - removes need for backend, databases etc.
-    - minimises traffic
-- host webviews, project blogs: [gh-pages](https://pages.github.com/)
+- Hosting: [GitHub Pages](https://pages.github.com/) can expose your data repository to the web
+- Generate static webviews
+    + removes need for backend and minimises traffic
+    + easy to archive
+    - on the fly: XSLT1 ([TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/)) or JS ([CETEICEan](https://github.com/TEIC/CETEIcean)) to render XML files in the client's web browser
+    - pre-computed: [GitHub actions](https://github.com/features/actions) give access to virtual machines
 - bibliographic database: [Zotero group](https://www.zotero.org/groups/openarabicpe/items/)
-    + browse and search independent of file structure
-- full-text search: [Google's programmable search engine](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
+    + mitigates against the absent backend
+    + **browse** and **search** independent of file structure
+- full-text search across the entire corpus: [Google's programmable search engine](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo)
 
 :::
 :::{.c_width-50 .c_right}
 
-![[Webview of *al-Zuhūr* 2(4)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634)](../assets/boilerplate_zuhur-v_2-i_4.png)
+
+![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details_small.png)
+
+![[Webview of *al-Zuhūr* 2(4)](https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634)](../assets/boilerplate_zuhur-v_2-i_4_small.png)
 
 <!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
 
 :::
 
-## 5. present the data
-### Zotero group
-
-:::{.c_width-50 .c_left}
-
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png)
-
-:::
-:::{.c_width-50 .c_right}
-
-![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": details in mobile view](../assets/zotero-group_openarabicpe-mobile-details.png)
-
-:::
-
-# Beware: character encoding != rendering
-## Separate encoding and content during editing
-
-... or learn how to navigate bi-directional XML and read Arabic from left to right.
-
-:::{.c_width-50 .c_left}
-
-![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png)
-
-:::
-:::{.c_width-50 .c_right}
-
-![The TEI XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../assets/oxygen_zuhur-author.png)
-
-:::
-
 # Beware: Bootstrapping relies on the work of others
+## Bootstrapping relies on the work of others
+
+![The main components of OpenArabicPE](../assets/OpenArabicPE_components-layer-1-4.png)
+
 ## All dependencies will eventually break / need repair
 
 - Reliance on external data providers: link rot
