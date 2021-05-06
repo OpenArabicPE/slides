@@ -130,21 +130,21 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/pro
 
 *al-Muqtabas* 5(7), pp.[463](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045)
 
-<div class="c_width-30">
+:::{.c_width-30}
 
-![](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
+![Verified facsimile of the original](../assets/eap_muqtabas-v_5-i_7-p_463.jpg)
 
-</div><div class="c_width-30">
+:::
+:::{.c_width-30}
 
-<!-- shamela's transcription -->
-![](../assets/shamela_muqtabas-i_54-p_30-31.png)
+![Transcription at shamela.ws](../assets/shamela_muqtabas-i_54-p_30-31.png)
 
-</div><div class="c_width-30">
+:::
+:::{.c_width-30}
 
-<!-- sakhrit's fake facsimile -->
-![](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
+![Fake facsimile](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg)
 
-</div>
+:::
 
 ## 1.4.3 state of digitisation: bibliographic metadata
 
