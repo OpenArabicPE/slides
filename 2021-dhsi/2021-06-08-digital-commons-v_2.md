@@ -21,15 +21,18 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 :::{.c_width-60 .c_left}
 
 - Volunteer-run scholarly editing and infrastructure-building (since 2015)
-- Corpus of 6 full-text scholarly digital editions (TEI XML) of Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
-- A client-based webview showing text and facsimiles side-by-side (based on TEI Boilerplate).
-- Bibliographic metadata (MODS, BibTeX, Zotero RDF)
-    - on the article level for the entire corpus plus 2 additional magazines
-    - on the issue level for 7 additional newspapers
-    - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io))
-- Authority files (TEI XML): gazetteer, personography
-- A [Zotero group](https://zotero.org/groups/openarabicpe) to search the metadata and access the digital editions
-- Code and workflows
+- Digital scholarly editions
+    + 6 Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
+    + full text and facsimiles modelled in TEI XML
+    - Bibliographic metadata (MODS, BibTeX, Zotero RDF)
+       <!--  - on the article level for the entire corpus plus 2 additional magazines
+        - on the issue level for 7 additional newspapers
+        - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) -->
+- Infrastructure:
+    + static websites without a backend / database
+    + free hosting and archiving
+    - [Zotero group](https://zotero.org/groups/openarabicpe) as gateway to search/browse the corpus
+- Workflows and tools
 
 :::
 :::{.c_width-30 .c_right}
