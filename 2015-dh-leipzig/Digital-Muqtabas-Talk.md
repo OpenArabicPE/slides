@@ -14,7 +14,7 @@ cover-image: images/digital-muqtabas-screenshot.png
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [http://tillgrallert.github.io/Slides/DHLeipzig2015](http://tillgrallert.github.io/Slides/DHLeipzig2015)
+Slides: [https://openarabicpe.github.io/slides/2015-dh-leipzig/](https://openarabicpe.github.io/slides/2015-dh-leipzig/)
 
 Twitter: @tillgrallert
 

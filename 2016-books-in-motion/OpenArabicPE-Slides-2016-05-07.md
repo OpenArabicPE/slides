@@ -10,7 +10,7 @@ Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.
 
 Project blog: [https://tillgrallert.github.io/digital-muqtabas](https://tillgrallert.github.io/digital-muqtabas)
 
-Slides: [https://tillgrallert.github.io/Slides/BIM2016](https://tillgrallert.github.io/Slides/BIM2016)
+Slides: [https://openarabicpe.github.io/slides/2016-books-in-motion/](https://openarabicpe.github.io/slides/2016-books-in-motion/)
 
 Twitter: @tillgrallert
 

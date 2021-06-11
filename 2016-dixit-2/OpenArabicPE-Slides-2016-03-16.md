@@ -18,7 +18,7 @@ Bassel Khartabil / باسل خرطبيل
 
 Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
 
-Slides: [https://tillgrallert.github.io/Slides/Dixit2](https://tillgrallert.github.io/Slides/Dixit2)
+Slides: [https://openarabicpe.github.io/slides/2016-dixit-2/](https://openarabicpe.github.io/slides/2016-dixit-2/)
 
 Twitter: @tillgrallert
 
