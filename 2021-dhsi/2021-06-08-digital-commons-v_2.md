@@ -241,7 +241,9 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
     + should be **syntax aware**
     - **RTL**: support in text editors is a mixed bag
 
-![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png)
+![The TEI XML file for *al-Zuhūr* 2(4) in [Visual Studio Code](https://code.visualstudio.com/)](../assets/vscode_zuhur.png)
+
+<!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png) -->
 
 <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../assets/textmate_zuhur.png) -->
 
@@ -250,7 +252,9 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 
 - XML editors proper
     + should be **schema aware** to validate the encoding
-    - **RTL**: There seems to be no way around [oXygen XML editor](https://www.oxygenxml.com/) (99 USD)<!-- : [TextGrid Lab](https://textgrid.de/index) -->
+    - **RTL**:
+        1. [oXygen XML editor](https://www.oxygenxml.com/) (99 USD) allows to separate content and tags<!-- : [TextGrid Lab](https://textgrid.de/index) -->
+        2. [Visual Studio Code](https://code.visualstudio.com/) (free) with the right extensions is a viable second[^1]
 
 ![The TEI XML file for *al-Zuhūr* 2(4) in [oXygen](https://www.oxygenxml.com/)'s  author mode. Styling relies on CSS.](../assets/oxygen_zuhur-author.png)
 
@@ -332,3 +336,5 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <till.grallert@fu-berlin.de>
 - Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
+[^1]: Thanks to Nathan Gibson (@[drnathanpgibson](https://twitter.com/drnathanpgibson)) for pointing me to VSCode's capabilities.
