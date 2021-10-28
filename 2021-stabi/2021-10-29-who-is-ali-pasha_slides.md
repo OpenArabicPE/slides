@@ -34,7 +34,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-stabi/](https://OpenArabicPE
 
 ::: -->
 
-# Background: <br/>Building infrastructures we need without the help we can't get
+# Background: <br/> Contributing to the *digital commons* and building the infrastructures we need without the help we can't get
 
 ## [Project Jarāʾid](https://projectjaraid.github.io/) (2012--) <br/>Closing the knowledge `<gap/>`
 
@@ -54,23 +54,23 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-stabi/](https://OpenArabicPE
 
 ## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>Closing the infrastructural `<gap/>`
 
-Digital editions based on shadow libraries and digital facsimiles (TEI XML), authority files (TEI XML), Bibliographic metadata (TEI, MODS, RDF, Zotero)
+Digital editions based on shadow libraries and digital facsimiles (TEI XML), authority files (TEI XML), Bibliographic metadata on the article level (TEI, MODS, RDF, Zotero)
 
 
 :::{.c_width-60}
 
-| title                                                                         | DOI                                                              | vol.s | issues | articles | words  |
-| :--------                                                                     | :--                                                              | ----: | ----:    | ----:   | ----:   |
-| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)              | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) | 3     | 35       | 389     | 298090  |
-| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)             | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246) | 1     | 12       | 201     | NA      |
-| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)              |                                                                  | 35    | 537      | 4300    | 6144593 |
-| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)           | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   | 9     | 96       | 2964    | 1981081 |
-| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)            | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) | 1     | 42       | 435     | 221447  |
-| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)              | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) | 4     | 39       | 436     | 292333  |
-| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab) | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) | 3     | 34       | 939     | 373832  |
-| **total**                                                                     |                                                                  | 56    | 795      | 9664    | 9311376 |
+| title                                                                               | volumes    | issues    | articles          | words                        |
+| ----------------------------------------------------------------------------------- | ---------: | --------: | ----------:       | ---------:                   |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                    | 3          | 35        | 389               | 298090                       |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)                   | 1          | 12        | 201               | NA                           |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                    | 20         | 387       |                   |                              |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)                 | 9          | 96        | 2964              | 1981081                      |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)                  | 1          | 42        | 435               | 221447                       |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                    | 4          | 39        | 436               | 292333                       |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)       | 3          | 34        | 939               | 373832                       |
+| **total**                                                                           | 41         | 645       | 5364<!-- 9664 --> | c. 6 million<!-- 9311376 --> |
 
-Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
+Table: The OpenArabicPE corpus until 1918 {#tbl:openarabicpe-corpus}
 
 :::
 :::{.c_width-30}
@@ -89,7 +89,7 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 :::
 :::{.c_width-50}
 
-![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../../assets/OpenArabicPE/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors}
+![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors}
 
 :::
 
@@ -106,7 +106,7 @@ Table: Übersicht über das Periodikakorpus {#tbl:openarabicpe-corpus}
 :::
 :::{.c_width-50}
 
-- problem 2: Western conceptual hegemony over the tool chain
+- problem 2: Western conceptual hegemony over all socio-technical infrastructures
 	+ limited support for Arabic script
 	+ various Latinizations
 	+ hegemonial concepts of "entity names"
@@ -128,7 +128,7 @@ American consular agent and chancellor-cum-dragoman of the British consulate in 
 ### Periodicals
 
 + ناصيف افندي مشاقة
-+ حضرج المفاضل ناصيف بك مشاقة
++ حضرة المفاضل ناصيف بك مشاقة
 
 :::
 :::{.c_width-50}
@@ -137,10 +137,10 @@ American consular agent and chancellor-cum-dragoman of the British consulate in 
 
 <!-- - TNA (UK):  -->
 + Nassif Effendi Meshaka
-+ M. Nasif Bey Mishaka
++ M[onsieur]. Nasif Bey Mishaka
 + Michaka
 <!-- - NACP (US) -->
-+ Nasif Meshaka (his own signature)
++ Nasif Meshaka
 
 :::
 
@@ -174,18 +174,71 @@ Famous Iraqi priest and philologist of Lebanese descent. Prolific user of pen na
 
 
 # Modelling Names in TEI
-## Why TEI
+## What is the Text Encoding Initiative ([TEI](https://tei-c.org/)) ?
 
-- limited/no institutional support
-- no database
-- well-established standard with mature tools
+- a **community of practice** around a shared goal and shared interest: 
+	+ digital textual editing
+	+ interchangable formats, tools etc.
+- a **hermeneutic tool** and encoding scheme/data model:
+	- structural and semantic modelling of textual material based in the Western tradition
+- a **technical implementation** and serialisation in a specific data format: 
+	+ currently **XML** with the much hated pointy brackets.
 
-## What is the TEI
+## Pointy brackets are everywhere!
 
-- a community of practice around a shared goal: interchangable formats, tools etc. for digital editing
-- a hermeneutic tool and data model: based in the Western tradition
-- a technical implementation and serialisation in a specific data format: currently XML with the much hated pointy brackets.
+:::{.c_width-30}
 
+### EPub (HTML)
+```html
+<div dir="rtl" id="book-container">
+    <hr/>
+    <a id='C232'></a>
+    <span class="title">صحافة سورية ولبنان</span><br /><span class="red">3 - </span>المجلات<br />هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<br />أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<br />وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<br />
+</div>
+```
+:::
+:::{.c_width-30}
+
+### OCR-output (Page XML)
+```xml
+<TextLine id="r1l5" custom="readingOrder {index:4;}">
+    <Coords points="470,548 2191,527 1648,462 470,464"/>
+    <Baseline points="480,542 565,540 650,537 735,534 820,533 905,531 990,530 1075,528 1160,528 1245,527 1330,527 1415,527 1500,527 1585,527 1670,528 1755,528 1840,530 1925,531 2010,531 2095,534 2180,536"/>
+    <TextEquiv>
+        <Unicode>من عسر سنوات مجلة بسائة في الاستارة اعتمد في تحريرها على أقلامهن فزيئها</Unicode>
+    </TextEquiv>
+</TextLine>
+```
+:::
+:::{.c_width-30}
+
+### Qalamos authority data (MyCoRe XML)
+```xml
+<def.variantName class="MCRMetaPersonName" heritable="false" notinherit="true">
+	<variantName xml:lang="ar" type="gnd" inherited="0">
+		<firstname>عبد الله العمري الطرابلسي</firstname>
+		<callname>عبد الله العمري الطرابلسي</callname>
+		<fullname>عبد الله العمري الطرابلسي</fullname>
+	</variantName>
+</def.variantName>
+<def.identifier class="MCRMetaLangText" heritable="false" notinherit="true">
+	<identifier xml:lang="de" type="gnd" inherited="0" form="plain">1221671286</identifier>
+</def.identifier>
+```
+:::
+
+## Why choosing TEI?
+
+- converging goals and interests
+- well-established standards (TEI, XML) with mature tools
+- required by funding agencies
+- community-driven
+- open, sustainable formats: XML is plain text!
+- I head some experiences working with TEI
+- Without a database at the backend, X-Technologies are an extremely powerful tool
+
+
+# Enter: the Western conceptual and infrastructural hegemony 
 ## Soualah and Hassoun's proposal for classical Arabic names
 
 [@Soualah+2012] propose to use available elements `<surname>`, `<forename>`, and `<addName>` with a controlled vocabulary of `@type` and `@subtype` attributes.
@@ -212,11 +265,11 @@ I suggest to add the following mark-up for late-Ottoman names
 <persName xml:lang="ar">دولتلو جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني</persName>
 ```
 
-Could be marked up as:
+Could be marked-up / modelled as:
 
 ```xml
 <persName xml:lang="ar">
-	<addName type="honorific">دولتلو</addName>
+	<addName type="honorific" xml:lang="ota">دولتلو</addName>
     <addName type="nisbah">جزائري</addName>
     <addName type="honorific" xml:lang="ota">زاده</addName>
     <roleName type="title">الامير</roleName>
@@ -344,12 +397,14 @@ aim:
 # Latinization
 ## approaches
 
-1. rule-based
-2. look up: precomputed authority file
+1. rule-based: 
+	- vocalisations remain guess work
+	- Only Buckwalter (and derivatives) are letter-by-letter equivalents
+2. look-up: precomputed authority file of canonical name components
 
-## TEI `<listNym>` for multiple word forms
+## look-up canonical names
 
-The TEI provides `<nym>` for enconding multiple forms of a string.
+The TEI provides [`<nym>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-nym.html) for enconding multiple forms of a canonical names.
 
 :::{.c_width-50}
 
@@ -423,7 +478,7 @@ outputs:
 ## normalize the name
 
 :::{.c_width-50}
-resort name components to generate a stable sequence of `@nymRef` codes
+sort name components to generate a stable sequence of `@nymRef` codes
 
 <!-- - حافظ أفندي إبراهيم
 - حافظ بك إبراهيم  -->
@@ -449,6 +504,7 @@ compute minimal versions likely to be found in authority files
 	+ علي الجزائري
 	+ ʿAlī al-Ḥusnī
 	+ ʿAlī al-Jazāʾirī
+	+ ʿAlī al-Ǧazāʾirī: will find one of his sons in the [DNB](http://d-nb.info/gnd/1011549166)
 
 :::
 
@@ -456,5 +512,12 @@ compute minimal versions likely to be found in authority files
 
 - Contributors to Project Jarāʾid: Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy Fahrenthold, Ulrike Freitag, <!-- Till Grallert,  -->Rana Issa, Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan, Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek, Philip Sadgrove, Ola Seif, and Rogier Visser
 - Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+
+- Links:
+    + Slides: [https://OpenArabicPE.github.io/slides/2021-stabi/](https://OpenArabicPE.github.io/slides/2021-stabi/index.html)
+    + Project URLs: [https://openarabicpe.github.io](https://openarabicpe.github.io), [https://projectjaraid.github.io]
+    + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
+    + Email: <till.grallert@fu-berlin.de>
+- Licence: slides and images are licenced as [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 
