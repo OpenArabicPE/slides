@@ -230,6 +230,7 @@ Till Grallert
 </div>
 <div id="open-arabic-periodical-editions-openarabicpe-2015-closing-the-infrastructural-gap" class="slide section level2">
 <h1>Open Arabic Periodical Editions (<a href="https://openarabicpe.github.io">OpenArabicPE</a>, 2015–) <br/>Closing the infrastructural <code>&lt;gap/&gt;</code></h1>
+<p>Framework for bootstrapped digital scholarly editions outside the global north</p>
 <p>Digital editions based on shadow libraries and digital facsimiles (TEI XML), authority files (TEI XML), Bibliographic metadata on the article level (TEI, MODS, RDF, Zotero)</p>
 <div class="c_width-60">
 <div id="tbl:openarabicpe-corpus">
@@ -469,7 +470,7 @@ Till Grallert
 <li>required by funding agencies</li>
 <li>community-driven</li>
 <li>open, sustainable formats: XML is plain text!</li>
-<li>I head some experiences working with TEI</li>
+<li>I had some experiences working with TEI</li>
 <li>Without a database at the backend, X-Technologies are an extremely powerful tool</li>
 </ul>
 </div>
@@ -525,8 +526,9 @@ Till Grallert
 <h1>Automating the mark-up</h1>
 
 </div>
-<div id="check-against-authority-list-of-ottoman-components" class="slide section level2">
-<h1>1. check against authority list of Ottoman components</h1>
+<div id="automating-the-mark-up-1" class="slide section level2">
+<h1>Automating the mark-up</h1>
+<h3 id="check-against-authority-list-of-ottoman-components">1. check against authority list of Ottoman components</h3>
 <p>Allows to identify all titles, ranks, honorific addresses</p>
 <div class="c_width-50">
 <p>input:</p>
@@ -547,8 +549,9 @@ Till Grallert
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true"></a><span class="kw">&lt;/persName&gt;</span></span></code></pre></div>
 </div>
 </div>
-<div id="rule-based-mark-up-of-arabic-components" class="slide section level2">
-<h1>2. rule-based mark-up of Arabic components</h1>
+<div id="automating-the-mark-up-2" class="slide section level2">
+<h1>Automating the mark-up</h1>
+<h3 id="rule-based-mark-up-of-arabic-components">2. rule-based mark-up of Arabic components</h3>
 <ol style="list-style-type: decimal">
 <li><em>laqab</em> / surname: final <strong>word</strong> beginning with ال but not ending in ي</li>
 <li><em>nisba</em>: final <strong>word</strong> beginning with ال and ending in ي</li>
@@ -562,8 +565,9 @@ Till Grallert
 </ul></li>
 </ol>
 </div>
-<div id="rule-based-mark-up-of-arabic-components-1" class="slide section level2">
-<h1>2. rule-based mark-up of Arabic components</h1>
+<div id="automating-the-mark-up-3" class="slide section level2">
+<h1>Automating the mark-up</h1>
+<h3 id="rule-based-mark-up-of-arabic-components-1">2. rule-based mark-up of Arabic components</h3>
 <div class="c_width-50">
 <p>input:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a>جزائري</span>
@@ -579,8 +583,9 @@ Till Grallert
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true"></a><span class="kw">&lt;addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span><span class="kw">&gt;</span>الحسني<span class="kw">&lt;/addName&gt;</span></span></code></pre></div>
 </div>
 </div>
-<div id="combined-results" class="slide section level2">
-<h1>3. combined results</h1>
+<div id="automating-the-mark-up-4" class="slide section level2">
+<h1>Automating the mark-up</h1>
+<h3 id="combined-results">3. combined results</h3>
 <div class="c_width-50">
 <p>automated mark-up:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true"></a><span class="kw">&lt;persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span><span class="kw">&gt;</span></span>
@@ -619,8 +624,9 @@ Till Grallert
 <h1>Latinization</h1>
 
 </div>
-<div id="approaches" class="slide section level2">
-<h1>approaches</h1>
+<div id="latinization-1" class="slide section level2">
+<h1>Latinization</h1>
+<h3 id="approaches">approaches</h3>
 <ol style="list-style-type: decimal">
 <li>rule-based:
 <ul>
@@ -630,8 +636,9 @@ Till Grallert
 <li>look-up: precomputed authority file of canonical name components</li>
 </ol>
 </div>
-<div id="look-up-canonical-names" class="slide section level2">
-<h1>look-up canonical names</h1>
+<div id="latinization-2" class="slide section level2">
+<h1>Latinization</h1>
+<h3 id="look-up-canonical-names">look-up canonical names</h3>
 <p>The TEI provides <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-nym.html"><code>&lt;nym&gt;</code></a> for enconding multiple forms of a canonical names.</p>
 <div class="c_width-50">
 <div class="sourceCode" id="cb12"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true"></a><span class="kw">&lt;nym</span><span class="ot"> xml:id=</span><span class="st">&quot;nym-T-4&quot;</span><span class="kw">&gt;</span></span>
@@ -660,8 +667,9 @@ Till Grallert
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true"></a>   <span class="kw">&lt;form</span><span class="ot"> xml:lang=</span><span class="st">&quot;und_Latn&quot;</span><span class="kw">&gt;</span>Aly<span class="kw">&lt;/form&gt;</span></span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true"></a><span class="kw">&lt;/nym&gt;</span></span></code></pre></div>
 </div>
-<div id="link-name-components-to-nyms" class="slide section level2">
-<h1>link name components to nyms</h1>
+<div id="latinization-3" class="slide section level2">
+<h1>Latinization</h1>
+<h3 id="link-name-components-to-nyms">link name components to nyms</h3>
 <p>Linking name components allows for script-agnostic identification</p>
 <div class="c_width-50">
 <p>input:</p>
@@ -693,8 +701,9 @@ Till Grallert
 <h1>Link to authority files</h1>
 
 </div>
-<div id="normalize-the-name" class="slide section level2">
-<h1>normalize the name</h1>
+<div id="link-to-authority-files-1" class="slide section level2">
+<h1>Link to authority files</h1>
+<h3 id="normalize-the-name">normalize the name</h3>
 <div class="c_width-50">
 <p>sort name components to generate a stable sequence of <code>@nymRef</code> codes</p>
 <!-- - حافظ أفندي إبراهيم

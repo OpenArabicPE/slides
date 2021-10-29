@@ -54,6 +54,8 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-stabi/](https://OpenArabicPE
 
 ## Open Arabic Periodical Editions ([OpenArabicPE](https://openarabicpe.github.io), 2015--) <br/>Closing the infrastructural `<gap/>`
 
+Framework for bootstrapped digital scholarly editions outside the global north
+
 Digital editions based on shadow libraries and digital facsimiles (TEI XML), authority files (TEI XML), Bibliographic metadata on the article level (TEI, MODS, RDF, Zotero)
 
 
@@ -234,7 +236,7 @@ Famous Iraqi priest and philologist of Lebanese descent. Prolific user of pen na
 - required by funding agencies
 - community-driven
 - open, sustainable formats: XML is plain text!
-- I head some experiences working with TEI
+- I had some experiences working with TEI
 - Without a database at the backend, X-Technologies are an extremely powerful tool
 
 
@@ -284,7 +286,8 @@ Could be marked-up / modelled as:
 ```
 
 # Automating the mark-up
-## 1. check against authority list of Ottoman components
+## Automating the mark-up
+### 1. check against authority list of Ottoman components
 
 Allows to identify all titles, ranks, honorific addresses
 
@@ -315,7 +318,8 @@ output:
 
 :::
 
-## 2. rule-based mark-up of Arabic components
+## Automating the mark-up
+### 2. rule-based mark-up of Arabic components
 
 1. *laqab* / surname: final **word** beginning with ال but not ending in ي
 2. *nisba*: final **word** beginning with ال and ending in ي
@@ -326,7 +330,8 @@ output:
 	- **sequence** of **two** words beginning with عبد
 	- **sequence** of **two** words ending with الله
 
-## 2. rule-based mark-up of Arabic components
+## Automating the mark-up
+### 2. rule-based mark-up of Arabic components
 
 :::{.c_width-50}
 input:
@@ -351,7 +356,8 @@ output:
 
 :::
 
-## 3. combined results
+## Automating the mark-up
+### 3. combined results
 
 :::{.c_width-50}
 automated mark-up:
@@ -395,14 +401,16 @@ aim:
 :::
 
 # Latinization
-## approaches
+## Latinization
+### approaches
 
 1. rule-based: 
 	- vocalisations remain guess work
 	- Only Buckwalter (and derivatives) are letter-by-letter equivalents
 2. look-up: precomputed authority file of canonical name components
 
-## look-up canonical names
+## Latinization
+### look-up canonical names
 
 The TEI provides [`<nym>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-nym.html) for enconding multiple forms of a canonical names.
 
@@ -441,7 +449,8 @@ The TEI provides [`<nym>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-
 </nym>
 ```
 
-## link name components to nyms
+## Latinization
+### link name components to nyms
 
 Linking name components allows for script-agnostic identification
 
@@ -475,7 +484,8 @@ outputs:
 :::
 
 # Link to authority files
-## normalize the name
+## Link to authority files
+### normalize the name
 
 :::{.c_width-50}
 sort name components to generate a stable sequence of `@nymRef` codes
