@@ -169,7 +169,7 @@ Slides: [https://OpenArabicPE.github.io/slides/2021-dhsi/](https://OpenArabicPE.
 
 EPub (HTML) for *al-Zuhūr* 2(4) from shamela.ws
 
-```{.html}
+```html
 <div dir="rtl" id="book-container">
     <hr/>
     <a id='C232'></a>
