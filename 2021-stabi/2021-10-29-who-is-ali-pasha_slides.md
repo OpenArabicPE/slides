@@ -5,6 +5,7 @@ author: Till Grallert
 date: 2021-10-25 
 ORCID: orcid.org/0000-0002-5739-8094
 bibliography: /BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
+lang: en-GB
 ---
 
 ## Who is *ʿAlī Pasha*? <br /> Modelling personal names from the late Ottoman Eastern Mediterranean (c.1850--1920)
