@@ -18,7 +18,7 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!-- <link rel="stylesheet" type="text/css" media="screen, projection, print"
+ <!--  <link rel="stylesheet" type="text/css" media="screen, projection, print"
     href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" /> -->
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
    href="../css/slidy_custom_sh.css" />
@@ -38,29 +38,29 @@
   }*/
   /* xml element names */
   .xml > code span.kw {
-  	/*color: #0F0F9C;*/
-  	color: #000096;
-  	font-weight: bold;
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
   }
   /* xml attribute names */
   .xml > code span.ot {
-  	/*color:#FF8041;*/
-  	color: #FF9159;
+    /*color:#FF8041;*/
+    color: #FF9159;
   }
   /* xml attribute values */
   .xml > code span.st {
-  	/*color:#993300;*/
-  	color: #993300;
+    /*color:#993300;*/
+    color: #993300;
   }
   /* xml comments */
   .xml > code span.co {
-  	/*color:#167116;*/
-  	color: #2F8132;
-  	font-style: italic;
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
   /* .xml > code > span {
-  	color:#9132CC;
+    color:#9132CC;
   } */
   </style>
   <style type="text/css">
@@ -92,7 +92,7 @@
   /* styles to vertically stack divs */
   .c_height-50 {
       display: block;
-      height: 500px;
+      height: 400px;
       max-height: 500px;
   }
   .c_top {
@@ -104,7 +104,7 @@
   </style>
   <style type="text/css">
   .cImportant {
-  	color:red;
+    color:red;
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
@@ -112,34 +112,76 @@
     charset="utf-8" type="text/javascript"></script> -->
 </head>
 <body>
-<div class="slide titlepage">
+<!-- <div class="slide titlepage">
   <h1 class="title">How did they do it?</h1>
   <p class="subtitle">First attempts at tackling the question of authorship with computational methods</p>
   <p class="author">
 Till Grallert
   </p>
   <p class="date">2021-11-13</p>
-</div>
-<div id="outline" class="slide section level2">
-<h1>outline</h1>
-<ul>
-<li>something</li>
-</ul>
+</div> -->
+<div id="how-did-they-do-it-first-attempts-at-tackling-the-question-of-authorship-with-computational-methods" class="slide titlepage">
+<h1>How did they do it? <br/>First attempts at tackling the question of authorship with computational methods</h1>
+<p>Till Grallert, Humboldt-Universität zu Berlin, @<a href="https://twitter.com/tillgrallert">tillgrallert</a></p>
+<p>Workshop “Journal as Form”, 11–13 November 2021</p>
+<p>Slides: <a href="https://tillgrallert.github.io/slides/dh/2021-mind-the-gap/index.html">https://openarabicpe.github.io/slides/2021-jaf</a></p>
 </div>
 <div id="background" class="slide section level2">
 <h1>Background</h1>
-<h3 id="computational-periodical-studies">Computational periodical studies</h3>
-<div class="c_width-50">
-<div class="figure">
-<img src="../assets/networks/network_oape-p3a6afa20_referenced-periodicals-per-issue_circular-n-size_in-degree.png" id="fig:network-periodicals" alt="" />
-<p class="caption">Figure 1: Directed network of periodicals referenced in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em>, weighted by number of issues. Size and colour of nodes: in-degree.</p>
-</div>
-</div>
+<h3 id="computational-periodical-studies-c.1800c.1920">Computational periodical studies (c.1800–c.1920)</h3>
 <div class="c_width-50">
 <div class="figure">
 <img src="../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png" id="fig:network-authors" alt="" />
-<p class="caption">Figure 2: Undirected network of authors in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.</p>
+<p class="caption">Figure 1: Undirected network of authors in <em>al-Ḥaqāʾiq</em>, <em>al-Ḥasnāʾ</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em>. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.</p>
 </div>
+</div>
+<div class="c_width-50">
+<div class="figure">
+<img src="../assets/maps/map-oclc_644997575-bylines-ME.png" id="fig:authors-haqaiq" class="c_height-50" alt="" />
+<p class="caption">Figure 2: Heat map of locations mentioned in bylines in <em>al-Ḥaqāʾiq</em> (Damascus)</p>
+</div>
+<div class="figure">
+<img src="../assets/maps/map-oclc_4770057679-bylines-ME.png" id="fig:authors-muqtabas" class="c_height-50" alt="" />
+<p class="caption">Figure 3: Heat map of locations mentioned in bylines in <em>al-Muqtabas</em> (Cairo and Damascus)</p>
+</div>
+</div>
+</div>
+<div id="background-1" class="slide section level2">
+<h1>Background</h1>
+<h3 id="necessary-digital-data">necessary digital data</h3>
+<div class="c_width-50">
+<ul>
+<li>structured bibliographic (meta)data for each article
+<ul>
+<li>i.e. “<em>Sātisnā</em> sent this article from <em>al-Shahbāʾ</em>”</li>
+<li>(semi)automatic extraction depends on:
+<ul>
+<li>it being present in the material artefact</li>
+<li>a modelled digital substitute</li>
+</ul></li>
+<li>problems
+<ul>
+<li>status of OCR and layout-detection</li>
+<li>plurality of name forms, initials, etc.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="c_width-50">
+<ul>
+<li>authority data for disambiguation and enriching the data
+<ul>
+<li>i.e. 
+<ul>
+<li><em>Sātisnā</em> is a pen name for <em>Anastās al-Karmilī</em>, publisher of <em>Lughat al-ʿArab</em></li>
+<li><em>al-Shahbāʾ</em> is a name for Aleppo, located at <code>36.20124, 37.16117</code></li>
+</ul></li>
+<li>problems
+<ul>
+<li>authority files are biased towards the Global North</li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div id="the-corpus" class="slide section level2">
@@ -224,46 +266,154 @@ Till Grallert
 <div class="c_width-30">
 <div class="figure">
 <img src="../assets/boilerplate_muqtabas.png" id="fig:webview-muqtabas" alt="" />
-<p class="caption">Figure 3: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webview of <em>al-Muqtabas</em> 6(2)</a></p>
+<p class="caption">Figure 4: <a href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml">Webview of <em>al-Muqtabas</em> 6(2)</a></p>
 </div>
+</div>
+</div>
+<div id="the-elefant-in-the-room" class="title-slide slide section level1">
+<h1>The elefant in the room</h1>
+
+</div>
+<div id="missing-bylines" class="slide section level2">
+<h1>missing bylines</h1>
+<ul>
+<li>80% of all articles or 66% of all words carry no byline</li>
+<li>problems:
+<ol style="list-style-type: decimal">
+<li>commonly ignored</li>
+<li>implicit hypothesis is implausible and untested</li>
+</ol></li>
+</ul>
+</div>
+<div id="stylometric-authorship-attribution" class="slide section level2">
+<h1>stylometric authorship attribution</h1>
+<div id="comparative-method" class="c_width-50">
+<h3>comparative method</h3>
+<ul>
+<li>empirically validated</li>
+<li>comparison of “style” (<em>most frequent words</em>, MFW)</li>
+<li>nummeric measures of difference (<em>delta</em>)</li>
+<li>self-validation through voting (<em>consensus</em>) of multiple iterations</li>
+</ul>
+</div>
+<div id="challenges" class="c_width-50">
+<h3>challenges</h3>
+<ul>
+<li>first application to Arabic</li>
+<li>comparison dependent on input</li>
+<li>reliability depends on a minimal length of texts</li>
+</ul>
 </div>
 </div>
 <div id="stylistic-differences-between-journals" class="slide section level2">
 <h1>stylistic differences between journals</h1>
-<div class="c_width-50">
+<h3 id="al-ḥaqāʾiq-lughat-al-ʿarab-and-al-muqtabas"><em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em></h3>
+<div class="c_width-30">
+<div class="figure">
+<img src="../assets/stylometry/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png" id="fig:pca-halumu-100" alt="" />
+<p class="caption">Figure 5: PCA covariance matrix for the 100 MFWs in a corpus of … issues of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em></p>
+</div>
+</div>
+<div class="c_width-30">
 <ul>
 <li><em>Lughat al-ʿArab</em> and <em>al-Muqtabas</em> are indistinguishable</li>
 <li><em>al-Ḥaqāʾiq</em> is different</li>
+<li>some issues of <em>al-Muqtabas</em> are very different</li>
 </ul>
-<div class="figure">
-<img src="/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_stylometry/data/2021-10-19/issues/composite/comb_muqtabas-haqaiq-lughat_PCA_100_MFWs_Culled_0__PCA__001.png" alt="" />
-<p class="caption">PCA covariance matrix for the 100 MFWs in a corpus of … issues of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em></p>
 </div>
-</div>
-<div class="c_width-50">
-<ul>
-<li>some issues of <em>al-Muqtabas</em> are clearly different</li>
-</ul>
+<div class="c_width-30">
 <div class="figure">
-<img src="/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_stylometry/data/2021-10-19/issues/composite/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png" alt="" />
-<p class="caption">PCA covariance matrix for the 900 MFWs in a corpus of … issues of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em></p>
+<img src="../assets/stylometry/comb_muqtabas-haqaiq-lughat_PCA_900_MFWs_Culled_0__PCA__001.png" id="fig:pca-halumu-900" alt="" />
+<p class="caption">Figure 6: PCA covariance matrix for the 900 MFWs in a corpus of … issues of <em>al-Ḥaqāʾiq</em>, <em>Lughat al-ʿArab</em>, and <em>al-Muqtabas</em></p>
 </div>
 </div>
 </div>
 <div id="stylistic-differences-between-journals-1" class="slide section level2">
 <h1>stylistic differences between journals</h1>
-<div class="c_width-50">
+<h3 id="lughat-al-ʿarab-al-muqtabas-and-al-zuhūr"><em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></h3>
+<div class="c_width-30">
 <div class="figure">
-<img src="/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_stylometry/data/2021-10-19/issues/composite/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png" alt="" />
-<p class="caption">PCA covariance matrix for the 100 MFWs in a corpus of … issues of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></p>
+<img src="../assets/stylometry/comb_muqtabas-lughat-zuhur_PCA_100_MFWs_Culled_0__PCA__001.png" id="fig:pca-lumuzu-100" alt="" />
+<p class="caption">Figure 7: PCA covariance matrix for the 100 MFWs in a corpus of … issues of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></p>
 </div>
 </div>
-<div class="c_width-50">
+<div class="c_width-30">
+<ul>
+<li>Stong stylistic similarities between all three periodicals</li>
+<li>some issues of <em>al-Muqtabas</em> are very different</li>
+</ul>
+</div>
+<div class="c_width-30">
 <div class="figure">
-<img src="/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_stylometry/data/2021-10-19/issues/composite/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png" alt="" />
-<p class="caption">PCA covariance matrix for the 900 MFWs in a corpus of … issues of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></p>
+<img src="../assets/stylometry/comb_muqtabas-lughat-zuhur_PCA_900_MFWs_Culled_0__PCA__001.png" id="fig:pca-lumuzu-900" alt="" />
+<p class="caption">Figure 8: PCA covariance matrix for the 900 MFWs in a corpus of … issues of <em>Lughat al-ʿArab</em>, <em>al-Muqtabas</em>, and <em>al-Zuhūr</em></p>
 </div>
 </div>
+</div>
+<div id="authorship-signal" class="slide section level2">
+<h1>authorship signal</h1>
+<h3 id="al-muqtabas">al-Muqtabas</h3>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/stylometry/stylo_oape-p3a6afa20_articles-w_5000-modularity_1-label_authors.png" id="fig:stylometry-muqtabas-w5000" alt="" />
+<p class="caption">Figure 9: Bootstrap consensus network of articles in <em>al-Muqtabas</em> (size &gt;= 5000 words, 100–1000 MFWs). Colour indicates <em>modularity group</em></p>
+</div>
+</div>
+<div class="c_width-30">
+<ul>
+<li>reliable signals for
+<ul>
+<li>authorship</li>
+<li>translation</li>
+<li>editing</li>
+</ul></li>
+<li>additional (sub) signal for
+<ul>
+<li>genre</li>
+</ul></li>
+<li>authorship question:
+<ul>
+<li>there is at least another, unknown, contributor in addition to Muḥammad Kurd ʿAlī</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="authorship-signal-1" class="slide section level2">
+<h1>authorship signal</h1>
+<h3 id="lughat-al-ʿarab">Lughat al-ʿArab</h3>
+<div class="c_width-60 c_left">
+<div class="figure">
+<img src="../assets/stylometry/stylo-lughat-al-arab_sections-w_5000-modularity_1-label_author-id-annotated.png" alt="" />
+<p class="caption">Bootstrap consensus network of sections in <em>Lughat al-ʿArab</em> (&gt; 5000 words), articles by Anastās Mārī al-Karmilī and Kāẓim al-Dujaylī, the title’s known editors, and by Muḥammad Kurd ʿAlī as an unlikely control author (size &gt;= 5000 words, 100–1000 MFWs). Colour indicates <em>modularity group</em></p>
+</div>
+</div>
+<div class="c_width-30">
+<ul>
+<li>Kāẓim al-Dujaylī is likely the author of sections</li>
+<li>Anastās Mārī al-Karmilī seemingly did not contribute much to his own journal</li>
+</ul>
+</div>
+</div>
+<div id="thank-you" class="slide section level2">
+<h1>Thank you!</h1>
+<ul>
+<li>Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef</li>
+<li>Links:
+<ul>
+<li>Slides: <a href="https://OpenArabicPE.github.io/slides/2021-jaf/index.html">https://OpenArabicPE.github.io/slides/2021-jaf/</a></li>
+<li>Paper: <a href="https://doi.org/10/gkhrjr" class="uri">https://doi.org/10/gkhrjr</a></li>
+<li>Project URLs: <a href="https://www.github.com/OpenArabicPE">https://www.github.com/OpenArabicPE</a></li>
+<li>Project blog: <a href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
+<li>Twitter: @<a href="https://twitter.com/tillgrallert">tillgrallert</a></li>
+<li>Email: <script type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+</ul></li>
+<li>Licence: slides and images are licenced as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+</ul>
 </div>
 </body>
 </html>
