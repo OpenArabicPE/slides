@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -100,29 +100,29 @@
   }*/
   /* xml element names */
   .xml > code span.kw {
-  	/*color: #0F0F9C;*/
-  	color: #000096;
-  	font-weight: bold;
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
   }
   /* xml attribute names */
   .xml > code span.ot {
-  	/*color:#FF8041;*/
-  	color: #FF9159;
+    /*color:#FF8041;*/
+    color: #FF9159;
   }
   /* xml attribute values */
   .xml > code span.st {
-  	/*color:#993300;*/
-  	color: #993300;
+    /*color:#993300;*/
+    color: #993300;
   }
   /* xml comments */
   .xml > code span.co {
-  	/*color:#167116;*/
-  	color: #2F8132;
-  	font-style: italic;
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
   }
   /* xml computing instructions: not implemented in Pandoc syntax highlighting */
   /* .xml > code > span {
-  	color:#9132CC;
+    color:#9132CC;
   } */
   </style>
   <style type="text/css">
@@ -154,8 +154,13 @@
   /* styles to vertically stack divs */
   .c_height-50 {
       display: block;
-      height: 500px;
+      height: 400px;
       max-height: 500px;
+  }
+  .c_height-30 {
+      display: block;
+      height: 250px;
+      max-height: 400px;
   }
   .c_top {
       vertical-align: top;
@@ -166,7 +171,7 @@
   </style>
   <style type="text/css">
   .cImportant {
-  	color:red;
+    color:red;
   }
   </style>
   <script type="text/javascript" src="../js/slidy.js"></script>
@@ -364,8 +369,8 @@ Till Grallert
 <div id="periodicals" class="c_width-50">
 <h3>Periodicals</h3>
 <ul>
-<li>ناصيف افندي مشاقة</li>
-<li>حضرة المفاضل ناصيف بك مشاقة</li>
+<li><span lang="ar">ناصيف افندي مشاقة</span></li>
+<li><span lang="ar">حضرة المفاضل ناصيف بك مشاقة</span></li>
 </ul>
 </div>
 <div id="consular-archives" class="c_width-50">
@@ -385,15 +390,15 @@ Till Grallert
 <div id="periodicals-1" class="c_width-30">
 <h3>Periodicals</h3>
 <ul>
-<li><persName xml:lang="ar"><roleName type="pseudonym">ساتسنا</roleName></persName></li>
-<li><persName xml:lang="ar"><roleName type="pseudonym">صاحب مجلة لغة العرب</roleName></persName></li>
+<li><persName xml:lang="ar" lang="ar"><roleName type="pseudonym">ساتسنا</roleName></persName></li>
+<li><persName xml:lang="ar" lang="ar"><roleName type="pseudonym">صاحب مجلة لغة العرب</roleName></persName></li>
 </ul>
 </div>
 <div id="authority-files" class="c_width-30">
 <h3>Authority files</h3>
 <ul>
-<li><persName xml:lang="ar"><roleName type="rank">الأب</roleName> <forename>أنستاس</forename> <forename>ماري</forename> <surname><addName type="nisbah">الكرملي</addName></surname></persName></li>
-<li><persName xml:lang="ar"><forename>بطرس</forename> <addName type="nasab">بن <forename>جبرائيل</forename></addName> <forename>يوسف</forename> <surname>عواد</surname></persName></li>
+<li><persName xml:lang="ar" lang="ar"><roleName type="rank">الأب</roleName> <forename>أنستاس</forename> <forename>ماري</forename> <surname><addName type="nisbah">الكرملي</addName></surname></persName></li>
+<li><persName xml:lang="ar" lang="ar"><forename>بطرس</forename> <addName type="nasab">بن <forename>جبرائيل</forename></addName> <forename>يوسف</forename> <surname>عواد</surname></persName></li>
 <li><persName xml:lang="fr">Père Anastase-Marie de Saint-Elie</persName></li>
 </ul>
 </div>
@@ -481,7 +486,7 @@ Till Grallert
 </div>
 <div id="soualah-and-hassouns-proposal-for-classical-arabic-names" class="slide section level2">
 <h1>Soualah and Hassoun’s proposal for classical Arabic names</h1>
-<p><span class="citation">Mohammed Ourabah Soualah and Mohamed Hassoun, “A TEI P5 Manuscript Description Adaptation for Cataloguing Digitized Arabic Manuscripts,” <em>Journal of the Text Encoding Initiative</em> 2 (2012-02-xx), <a href="https://doi.org/10.4000/jtei.398" role="doc-biblioref">https://doi.org/10.4000/jtei.398</a>.</span> propose to use available elements <code>&lt;surname&gt;</code>, <code>&lt;forename&gt;</code>, and <code>&lt;addName&gt;</code> with a controlled vocabulary of <code>@type</code> and <code>@subtype</code> attributes.</p>
+<p><span class="citation">Mohammed Ourabah Soualah and Mohamed Hassoun, ‘A TEI P5 Manuscript Description Adaptation for Cataloguing Digitized Arabic Manuscripts’, <em>Journal of the Text Encoding Initiative</em> 2 (2012-02-xx), <a href="https://doi.org/10.4000/jtei.398" role="doc-biblioref">https://doi.org/10.4000/jtei.398</a>.</span> propose to use available elements <code>&lt;surname&gt;</code>, <code>&lt;forename&gt;</code>, and <code>&lt;addName&gt;</code> with a controlled vocabulary of <code>@type</code> and <code>@subtype</code> attributes.</p>
 <ul>
 <li><code>&lt;surname&gt;</code>: to encode the <em>laqab</em> evoking a real or assigned quality</li>
 <li><code>&lt;forename&gt;</code>: for the <em>ism</em></li>
@@ -553,15 +558,15 @@ Till Grallert
 <h1>Automating the mark-up</h1>
 <h3 id="rule-based-mark-up-of-arabic-components">2. rule-based mark-up of Arabic components</h3>
 <ol style="list-style-type: decimal">
-<li><em>laqab</em> / surname: final <strong>word</strong> beginning with ال but not ending in ي</li>
-<li><em>nisba</em>: final <strong>word</strong> beginning with ال and ending in ي</li>
-<li><em>nasab</em>: <strong>sequence</strong> of words beginning with ابن, بن, بنت etc.</li>
-<li><em>kunya</em>: <strong>sequence</strong> of words beginning with <code>اب(و|ي|ا)</code> etc.</li>
-<li><em>khiṭāb</em>: <strong>sequence</strong> of <strong>two</strong> words ending with الدين</li>
+<li><em>laqab</em> / surname: final <strong>word</strong> beginning with <span lang="ar">ال</span> but not ending in <span lang="ar">ي</span></li>
+<li><em>nisba</em>: final <strong>word</strong> beginning with <span lang="ar">ال</span> and ending in <span lang="ar">ي</span></li>
+<li><em>nasab</em>: <strong>sequence</strong> of words beginning with <span lang="ar">ابن, بن, بنت</span> etc.</li>
+<li><em>kunya</em>: <strong>sequence</strong> of words beginning with <span lang="ar"><code>اب(و|ي|ا)</code></span> etc.</li>
+<li><em>khiṭāb</em>: <strong>sequence</strong> of <strong>two</strong> words ending with <span lang="ar">الدين</span></li>
 <li>theophoric: can be <em>ism</em> or <em>laqab</em>
 <ul>
-<li><strong>sequence</strong> of <strong>two</strong> words beginning with عبد</li>
-<li><strong>sequence</strong> of <strong>two</strong> words ending with الله</li>
+<li><strong>sequence</strong> of <strong>two</strong> words beginning with <span lang="ar">عبد</span></li>
+<li><strong>sequence</strong> of <strong>two</strong> words ending with <span lang="ar">الله</span></li>
 </ul></li>
 </ol>
 </div>
@@ -692,7 +697,7 @@ Till Grallert
 <div class="c_width-50">
 <p>outputs:</p>
 <ul>
-<li>Arabic: دولتلو جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني</li>
+<li>Arabic: <span lang="ar">دولتلو جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني</span></li>
 <li>IJMES: develtli Jazāʾirī zāde al-Amīr ʿAlī Pasha Ibn ʿAbd al-Qādir Efendi al-Ḥusnī</li>
 </ul>
 </div>
@@ -728,8 +733,8 @@ Till Grallert
 <li><code>surname</code> or <code>addName[@type = 'nisbah']</code></li>
 <li>e.g. 
 <ul>
-<li>علي الحسني</li>
-<li>علي الجزائري</li>
+<li><span lang="ar">علي الحسني</span></li>
+<li><span lang="ar">علي الجزائري</span></li>
 <li>ʿAlī al-Ḥusnī</li>
 <li>ʿAlī al-Jazāʾirī</li>
 <li>ʿAlī al-Ǧazāʾirī: will find one of his sons in the <a href="http://d-nb.info/gnd/1011549166">DNB</a></li>
@@ -758,7 +763,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
 </ul>
 <div id="refs" class="references hanging-indent">
 <div id="ref-Soualah+2012">
-<p>Soualah, Mohammed Ourabah, and Mohamed Hassoun. “A TEI P5 Manuscript Description Adaptation for Cataloguing Digitized Arabic Manuscripts.” <em>Journal of the Text Encoding Initiative</em> 2 (2012-02-xx). <a href="https://doi.org/10.4000/jtei.398">https://doi.org/10.4000/jtei.398</a>.</p>
+<p>Soualah, Mohammed Ourabah, and Mohamed Hassoun. ‘A TEI P5 Manuscript Description Adaptation for Cataloguing Digitized Arabic Manuscripts’. <em>Journal of the Text Encoding Initiative</em> 2 (2012-02-xx). <a href="https://doi.org/10.4000/jtei.398">https://doi.org/10.4000/jtei.398</a>.</p>
 </div>
 </div>
 </div>

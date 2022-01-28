@@ -130,8 +130,8 @@ American consular agent and chancellor-cum-dragoman of the British consulate in 
 
 ### Periodicals
 
-+ ناصيف افندي مشاقة
-+ حضرة المفاضل ناصيف بك مشاقة
++ [ناصيف افندي مشاقة]{lang="ar"}
++ [حضرة المفاضل ناصيف بك مشاقة]{lang="ar"}
 
 :::
 :::{.c_width-50}
@@ -154,16 +154,16 @@ Famous Iraqi priest and philologist of Lebanese descent. Prolific user of pen na
 :::{.c_width-30}
 ### Periodicals
 
-- <persName xml:lang="ar"><roleName type="pseudonym">ساتسنا</roleName></persName>
-- <persName xml:lang="ar"><roleName type="pseudonym">صاحب مجلة لغة العرب</roleName></persName>
+- <persName xml:lang="ar" lang="ar"><roleName type="pseudonym">ساتسنا</roleName></persName>
+- <persName xml:lang="ar" lang="ar"><roleName type="pseudonym">صاحب مجلة لغة العرب</roleName></persName>
 
 :::
 :::{.c_width-30}
 ### Authority files
 
 
-- <persName xml:lang="ar"><roleName type="rank">الأب</roleName> <forename>أنستاس</forename> <forename>ماري</forename> <surname><addName type="nisbah">الكرملي</addName></surname></persName>
-- <persName xml:lang="ar"><forename>بطرس</forename> <addName type="nasab">بن <forename>جبرائيل</forename></addName> <forename>يوسف</forename> <surname>عواد</surname></persName>
+- <persName xml:lang="ar" lang="ar"><roleName type="rank">الأب</roleName> <forename>أنستاس</forename> <forename>ماري</forename> <surname><addName type="nisbah">الكرملي</addName></surname></persName>
+- <persName xml:lang="ar" lang="ar"><forename>بطرس</forename> <addName type="nasab">بن <forename>جبرائيل</forename></addName> <forename>يوسف</forename> <surname>عواد</surname></persName>
 - <persName xml:lang="fr">Père Anastase-Marie de Saint-Elie</persName>
 
 :::
@@ -322,14 +322,14 @@ output:
 ## Automating the mark-up
 ### 2. rule-based mark-up of Arabic components
 
-1. *laqab* / surname: final **word** beginning with ال but not ending in ي
-2. *nisba*: final **word** beginning with ال and ending in ي
-3. *nasab*: **sequence** of words beginning with ابن, بن, بنت etc.
-4. *kunya*:  **sequence** of words beginning with `اب(و|ي|ا)` etc.
-5. *khiṭāb*: **sequence** of **two** words ending with الدين
+1. *laqab* / surname: final **word** beginning with [ال]{lang="ar"} but not ending in [ي]{lang="ar"}
+2. *nisba*: final **word** beginning with [ال]{lang="ar"} and ending in [ي]{lang="ar"}
+3. *nasab*: **sequence** of words beginning with [ابن, بن, بنت]{lang="ar"} etc.
+4. *kunya*:  **sequence** of words beginning with [`اب(و|ي|ا)`]{lang="ar"} etc.
+5. *khiṭāb*: **sequence** of **two** words ending with [الدين]{lang="ar"}
 6. theophoric: can be *ism* or *laqab*
-	- **sequence** of **two** words beginning with عبد
-	- **sequence** of **two** words ending with الله
+	- **sequence** of **two** words beginning with [عبد]{lang="ar"}
+	- **sequence** of **two** words ending with [الله]{lang="ar"}
 
 ## Automating the mark-up
 ### 2. rule-based mark-up of Arabic components
@@ -481,7 +481,7 @@ input:
 :::{.c_width-50}
 outputs:
 
-- Arabic: دولتلو جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني
+- Arabic: [دولتلو جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني]{lang="ar"}
 - IJMES: develtli Jazāʾirī zāde al-Amīr ʿAlī Pasha Ibn ʿAbd al-Qādir Efendi al-Ḥusnī
 
 :::
@@ -513,8 +513,8 @@ compute minimal versions likely to be found in authority files
 - `forename`
 - `surname` or `addName[@type = 'nisbah']`
 - e.g. 
-	+ علي الحسني
-	+ علي الجزائري
+	+ [علي الحسني]{lang="ar"}
+	+ [علي الجزائري]{lang="ar"}
 	+ ʿAlī al-Ḥusnī
 	+ ʿAlī al-Jazāʾirī
 	+ ʿAlī al-Ǧazāʾirī: will find one of his sons in the [DNB](http://d-nb.info/gnd/1011549166)
