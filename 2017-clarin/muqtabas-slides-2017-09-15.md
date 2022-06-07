@@ -72,7 +72,7 @@ duration: 6
     + MODS and BibTeX files for every article
     + [customised version of TEI Boilerplate](https://github.com/tillgrallert/tei-boilerplate-arabic-editions) (XSLT and CSS) with stable URLs for every element ([example](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_61.TEIP5.xml))
     + access to bibliographic metadata through a public [Zotero group (OpenArabicPE/digital-muqtabas)](https://www.zotero.org/groups/904125/openarabicpe/items/collectionKey/8SINFUW9)
-- within a framework (git, [GitHub](https://github.com/tillgrallert/digital-muqtabas), [Zenodo](https://zenodo.org)) that allows for / provides
+- within a framework (git, [GitHub](https://github.com/openarabicpe/journal_al-muqtabas), [Zenodo](https://zenodo.org)) that allows for / provides
     + collaborative, open, version-controlled improvements of the edition
     + re-use through open licences:[CC0](https://creativecommons.org/publicdomain/zero/1.0/) (text, metadata), [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (edition), and [MIT licence](https://en.wikipedia.org/wiki/MIT_License) (tools)
     + long-term preservation and DOIs ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))

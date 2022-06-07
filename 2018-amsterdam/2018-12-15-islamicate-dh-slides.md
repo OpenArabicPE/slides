@@ -369,8 +369,8 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 <div class="c_width-50 c_left">
 
-- *al-Muqtabas*: [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/tillgrallert/digital-muqtabas/releases) [![DOI](https://zenodo.org/badge/45922152.svg)](https://zenodo.org/badge/latestdoi/45922152)
-- *al-Ḥaqāiq*: [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/digital-haqaiq/releases) [![DOI](https://zenodo.org/badge/52619834.svg)](https://zenodo.org/badge/latestdoi/52619834)
+- *al-Muqtabas*: [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/openarabicpe/journal_al-muqtabas/releases) [![DOI](https://zenodo.org/badge/45922152.svg)](https://zenodo.org/badge/latestdoi/45922152)
+- *al-Ḥaqāiq*: [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/journal_al-haqaiq/releases) [![DOI](https://zenodo.org/badge/52619834.svg)](https://zenodo.org/badge/latestdoi/52619834)
 
 </div><div class="c_width-50 c_right">
 
@@ -416,7 +416,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 # 5. Conclusion
 ## Summary: OpenArabicPE
 
-- open scholarly **digital editions** of [*[Majallat] al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas) and [*al-Ḥaqāʾiq*](https://github.com/OpenArabicPE/digital-haqaiq) providing
+- open scholarly **digital editions** of [*[Majallat] al-Muqtabas*](https://github.com/openarabicpe/journal_al-muqtabas) and [*al-Ḥaqāʾiq*](https://github.com/openarabicpe/journal_al-haqaiq) providing
     + TEI XML files (transcription and links to facsimiles)
     + plain text files
     + MODS and BibTeX files for every article
@@ -431,7 +431,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## Thank you!
 
-- Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
+- Contributors to OpenArabicPE: Dimitar Dragnev, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html)
     <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> -->

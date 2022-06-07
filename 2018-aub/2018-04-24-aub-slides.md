@@ -26,7 +26,7 @@ tags:
 
 ## corpus: TEI files
 
-- Muḥammad Kurd ʿAlī's monthly journal [*al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas), Cairo and Damascus, 1906--1919
+- Muḥammad Kurd ʿAlī's monthly journal [*al-Muqtabas*](https://github.com/openarabicpe/journal_al-muqtabas), Cairo and Damascus, 1906--1919
 
     token | total | author | no author
     -|-|-|-
@@ -35,7 +35,7 @@ tags:
     articles | 2743 | 311 | 2432
     words | 1951453 | 593124 | 1358329 
     
-- ʿAbd al-Qādir al-Iskandarānī's monthly journal [*al-Ḥaqāʾiq*](https://github.com/openarabicpe/digital-haqaiq), Damascus, 1910--1913
+- ʿAbd al-Qādir al-Iskandarānī's monthly journal [*al-Ḥaqāʾiq*](https://github.com/openarabicpe/journal_al-haqaiq), Damascus, 1910--1913
 
     token | total | author | no author
     -|-|-|-

@@ -201,7 +201,7 @@ Table: The OpenArabicPE corpus until 1918 {#tbl:openarabicpe-corpus}
 
 ## Thank you!
 
-- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
+- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel, and Layla Youssef
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2021-jaf/](https://OpenArabicPE.github.io/slides/2021-jaf/index.html)
     + Paper: <https://doi.org/10/gkhrjr>

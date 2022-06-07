@@ -437,10 +437,10 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 |                                   periodical                                  |                               doi                                |                                                                               release                                                                               |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)              | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/digital-haqaiq/releases)                 |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)              | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/digital-haqaiq.svg)](https://github.com/openarabicpe/journal_al-haqaiq/releases)                 |
 | [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)             | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-hasna.svg)](https://github.com/openarabicpe/journal_al-hasna/releases)             |
 | [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)              |                                                                  | <!-- [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-manar.svg)](https://github.com/openarabicpe/journal_al-manar/releases)  -->   |
-| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)           | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   | [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/tillgrallert/digital-muqtabas/releases)             |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)           | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)   | [![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/openarabicpe/journal_al-muqtabas/releases)             |
 | [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)            | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-ustadh.svg)](https://github.com/openarabicpe/journal_al-ustadh/releases)           |
 | [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)              | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_al-zuhur.svg)](https://github.com/openarabicpe/journal_al-zuhur/releases)             |
 | [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab) | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384) | [![GitHub release](https://img.shields.io/github/release/openarabicpe/journal_lughat-al-arab.svg)](https://github.com/openarabicpe/journal_lughat-al-arab/releases) |
@@ -510,7 +510,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## Summary
 
-- open scholarly **digital editions** of [*al-Muqtabas*](https://github.com/tillgrallert/digital-muqtabas), [*al-Ḥaqāʾiq*](https://github.com/OpenArabicPE/digital-haqaiq), [*al-Manār*](https://www.github.com/openarabicpe/journal_al-manar), [*al-Ustādh*](https://www.github.com/openarabicpe/journal_al-ustadh), [*al-Zuhūr*](https://www.github.com/openarabicpe/journal_al-zuhur), and [*Lughat al-ʿArab*](https://www.github.com/openarabicpe/journal_lughat-al-arab) providing
+- open scholarly **digital editions** of [*al-Muqtabas*](https://github.com/openarabicpe/journal_al-muqtabas), [*al-Ḥaqāʾiq*](https://github.com/openarabicpe/journal_al-haqaiq), [*al-Manār*](https://www.github.com/openarabicpe/journal_al-manar), [*al-Ustādh*](https://www.github.com/openarabicpe/journal_al-ustadh), [*al-Zuhūr*](https://www.github.com/openarabicpe/journal_al-zuhur), and [*Lughat al-ʿArab*](https://www.github.com/openarabicpe/journal_lughat-al-arab) providing
     + TEI XML files (transcription with links to facsimiles)
     + plain text and markdown files
     + bibliographic metadata on the article level (MODS, BibTeX)
@@ -525,7 +525,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 ## Thank you!
 
-- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
+- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2020-ifao/](https://OpenArabicPE.github.io/slides/2020-ifao/index.html)
     <!-- + Paper (draft): <https://doi.org/10.5281/zenodo.1413610> -->

@@ -10,7 +10,7 @@ lang: en
 ---
 
 
-##  Catch me if you can! Tracing the late Ottoman ideosphere through network analysis and stylometry of the Arabic periodical press
+## Catch me if you can! Tracing the late Ottoman ideosphere through network analysis and stylometry of the Arabic periodical press
 
 Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com/tillgrallert)
 
@@ -353,7 +353,7 @@ It's **labour and resource intensive**. It really is!
 
 ## Thank you!
 
-- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
+- Contributors to OpenArabicPE: Jasper Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans Magne Jaatun, Jakob Koppermann, Xaver Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel and Layla Youssef
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2020-idh/](https://OpenArabicPE.github.io/slides/2020-idh/index.html)
     + Paper (pre-print, submitted): <https://doi.org/10.5281/zenodo.1413610>
