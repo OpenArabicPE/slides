@@ -21,23 +21,26 @@ Slides: [https://openarabicpe.github.io/slides/2021-jaf](https://tillgrallert.gi
 ## Background
 ### Computational periodical studies (c.1800--c.1920)
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors}
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ![Heat map of locations mentioned in bylines in *al-Ḥaqāʾiq* (Damascus)](../assets/maps/map-oclc_644997575-bylines-ME.png){#fig:authors-haqaiq .c_height-50}
 
 ![Heat map of locations mentioned in bylines in  *al-Muqtabas* (Cairo and Damascus)](../assets/maps/map-oclc_4770057679-bylines-ME.png){#fig:authors-muqtabas .c_height-50}
 
+::::
 :::
 
 ## Background
 ### necessary digital data
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 - structured bibliographic (meta)data for each article
 	+ i.e. "*Sātisnā* sent this article from *al-Shahbāʾ*"
@@ -48,8 +51,8 @@ Slides: [https://openarabicpe.github.io/slides/2021-jaf](https://tillgrallert.gi
 		* status of OCR and layout-detection
 		* plurality of name forms, initials, etc.
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 - authority data for disambiguation and enriching the data
 	+ i.e. 
@@ -58,6 +61,7 @@ Slides: [https://openarabicpe.github.io/slides/2021-jaf](https://tillgrallert.gi
 	+ problems
 		* authority files are biased towards the Global North
 
+::::
 :::
 
 ## The corpus
@@ -100,7 +104,8 @@ Table: The OpenArabicPE corpus until 1918 {#tbl:openarabicpe-corpus}
 
 ## stylometric authorship attribution
 
-:::{.c_width-50}
+::: columns
+:::: column
 
 ### comparative method
 
@@ -109,8 +114,8 @@ Table: The OpenArabicPE corpus until 1918 {#tbl:openarabicpe-corpus}
 + nummeric measures of difference (*delta*)
 + self-validation through voting (*consensus*) of multiple iterations
 
-:::
-:::{.c_width-50}
+::::
+:::: column
 
 ### challenges
 
@@ -118,6 +123,7 @@ Table: The OpenArabicPE corpus until 1918 {#tbl:openarabicpe-corpus}
 - comparison dependent on input
 - reliability depends on a minimal length of texts
 
+::::
 :::
 
 ## stylistic differences between journals
@@ -151,7 +157,7 @@ Table: The OpenArabicPE corpus until 1918 {#tbl:openarabicpe-corpus}
 :::
 :::{.c_width-30}
 
-- Stong stylistic similarities between all three periodicals
+- Strong stylistic similarities between all three periodicals
 - some issues of *al-Muqtabas* are very different
 
 :::

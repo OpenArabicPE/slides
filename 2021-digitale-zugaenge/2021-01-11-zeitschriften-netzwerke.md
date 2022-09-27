@@ -11,7 +11,7 @@ lang: de
 duration: 5
 ---
 
-##  Digitale Zugänge zu Periodika
+## Digitale Zugänge zu Periodika
 
 Till Grallert, Orient-Institut Beirut (OIB), @[tillgrallert](https://twitter.com/tillgrallert)
 
