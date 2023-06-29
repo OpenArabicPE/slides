@@ -27,7 +27,7 @@ nocite: |
 ::: columns
 :::: wide
 
-- Volunteer-run scholarly editing and infrastructure-building (mostly 2015--20)
+- Volunteer-run scholarly editing and infrastructure-building (2015--)
 - Digital scholarly editions
     + 6 Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
     + full text and facsimiles modelled in TEI XML
