@@ -11,6 +11,7 @@ event: "Digital Publication of Right-to-Left Script Corpora"
 url: https://openarabicpe.github.io/slides/2023-openiti/
 ORCID: orcid.org/0000-0002-5739-8094
 lang: en
+duration: 20
 bibliography: 
     - /Users/Shared/BachUni/research-projects/OpenArabicPE/assets/bibliography/openarabicpe.csl.json
     - /Users/Shared/BachUni/applications/applications.csl.json
@@ -26,7 +27,7 @@ nocite: |
 ::: columns
 :::: wide
 
-- Volunteer-run scholarly editing and infrastructure-building (since 2015)
+- Volunteer-run scholarly editing and infrastructure-building (mostly 2015--20)
 - Digital scholarly editions
     + 6 Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
     + full text and facsimiles modelled in TEI XML
@@ -53,17 +54,23 @@ nocite: |
 # Why spend the effort? <br/> Shouldn't others do it?
 ## Why spend the effort?
 
-::: columns
-:::: wide
 
 1. Neo-colonial invisibility of cultural artefacts from the Global South in the digital domain
     - knowledge gap, collection and cataloguing bias -> digitisation bias
 2. Periodicals are an important local and quotidian source to tell and recover local stories
 3. We as scholars have a duty of care and nobody else was doing it
+    - funding gap
+
+## Digitisation bias
+### Collection biases perpetuated
+
+::: columns
+:::: column
+
+![Periodicals and their holding institutions](../assets/maps/map-data-set-periodical-holdings-med-na_mapped.png){#fig:holding-map}
 
 ::::
-:::: narrow
-
+:::: column
 
 |      periodicals       | --1918 |       | --1929 |               |
 |  :-------------------  | ----:  | ----: | ----:  |     ----:     |
@@ -83,56 +90,169 @@ Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 ::::
 :::
 
-![Geographic distribution of library holdings of *al-Muqtabas*](../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png)
+::: notes
 
+- collection bias is more of a knowledge bias
+- While the digitization quote of roughly 50% of titles in collections is surprisingly high, it must be kept in mind that we cannot resolve information on the extent of digitization. Even if only a single issue of hundreds published was digitized, the periodical title will be included in this count.
+- 66 periodicals or 28,33% have been digitized by multiple institutions and 21 of this subset by three and more.
 
-# Contributing to the *digital commons* without the help we can't get
-##  The help we can't get
+:::
 
+## Digitisation biases
+### Quality of metadata
+
+Bibliographic metadata is faulty throughout, mostly unstructured, and subject to *linguistic imperialism*
 
 ::: columns
 :::: column
 
-- digitisation and maintaining digital artefacts is really **expensive**
-- periodicals form an extremely **large corpus** of very short texts (and images)
-- lacking technologies*
-    - OCR for Arabic script
-    - automated layout recognition
-- no institutional funding for the digitisation of mundane bulk of the periodical press
+![@oclc_4770057679-i_61-div_21.d1e2838 on [Shamela](http://shamela.ws/browse.php/book-26523#page-4046) as it appeared in 2019](https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png){#fig:muqtabas-6-2-shamela}
 
 ::::
 :::: column
 
-- existing digitised periodicals are nigh unusable
-    + lacking/faulty metadata
-    + mainly facsimiles
-    + unknown veracity of text layers
-    + paywalls, geofencing
-    + no APIs
-    + no machine-actionable data layer
+![Facsimile of the same section of @oclc_4770057679-i_61-div_21.d1e2838 from [EAP](https://eap.bl.uk/
+)](../assets/eap119-1-4-5-muqtabas-133_annotated.jpg){#fig:muqtabas-6-2-133-eap}
 
 ::::
 :::
 
+::: notes
+
+- faulty on shadow libraries and official digitisation efforts
+    - publication dates
+        + inferred from vol. and issue number: 1 Ṣafar 1329 aH / c. 1 February 1911
+        + EAP: March 1911
+        + secondary sources: probably delayed by up to four months
+    - volume and issue numbers
+        + shamela: no.61
+        + correct: vol. 6, no. 2
+    - pagination:
+        + shamela = 45, correct = 133
+    - publication place
+        + EAP lists Jerusalem
+- linguistic imperialism
+    + script
+    + calendars
+
+:::
+
+## Digitisation biases
+### Traditional OCR
+
+>language [is] not currently OCRable.
+
+<cite>Archive.org's item description for [@KurdAli+1923+GharaibAlGharba]</cite>
+
+::: columns
+:::: wide
+
+
+| Font Type          | Sakhr (%)           | ABBYY (%)           | RDI(%)              | Tesseract (%)       |
+| -----------------  | -------:            | --------:           | ------:             | -----------:        |
+| Traditional Arabic | 48.54               | 67.66               | [**51.88**]{.green} | 47.04               |
+| Tahoma             | 10.52               | 69.91               | 26.38               | 38.37               |
+| Simplified Arabic  | 52.97               | 67.69               | 44.94               | 46.75               |
+| M Unicode Sara     | 36.03               | 59.40               | 25.92               | 33.72               |
+| Diwani letter      | [**18.13**]{.red}   | [**18.47**]{.red}   | [**18.13**]{.red}   | [**23.32**]{.red}   |
+| DecoType Thuluth   | 36.12               | 37.71               | 24.26               | 32.48               |
+| Deco'Type Naskh    | 48.88               | 50.22               | 41.63               | 40.92               |
+| Arabic transparent | 51.56               | [**75.19**]{.green} | 46.00               | [**48.61**]{.green} |
+| Andalus            | 28.07               | 37.53               | 21.68               | 25.34               |
+| AdvertisingBold    | [**57.35**]{.green} | 70.26               | 27.20               | 39.39               |
+
+Table: Evaluation of traditional OCR software for Arabic font types from [@Alghamdi.Teahan+2017+ExperimentalEvaluationArabic, table IV]. Values show percentage of correctly recognised characters {#tbl:ocr-ar-trad}
+
+::::
+:::: narrow
+
+<!-- ![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), quality of the OCR layer (requires US IP)](../assets/hathi_muqtabas-ocr-3.png) -->
+![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), quality of the OCR layer](../assets/gpa_bashir-i_487-p_1_ocr.png){#fig:gpa-ocr}
+
+::::
+:::
+
+::: notes
+
+- technical problems
+    + layout recognition
+    + segmentation
+    + text recognition
+- what do you do if you have none of the resources mentioned in the toot
+- problems with platform providers
+    + Unstructured text, no APIs, propriertary interfaces
+    + Algorithms and evaluation are kept secret
+        *  unknown numbers of *false positives* and *false negatives*
+
+:::
+
+## Accessibility
+### Catalogue searches
 
 ::: columns-3
 :::: column
 
-![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) with geo-fencing](../assets/hathi_muqtabas-1.png)
+No Arabic script
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=الجنة) for "الجنة"](https://tillgrallert.github.io/slides/assets/jaraid/zdb_janna-ar.png){#fig:zdb-ar}
 
 ::::
 :::: column
 
-![*al-Bashīr* 9 Jan. 1880 (#487), p.1 on [GPA](https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1), state of OCR](../assets/gpa_bashir-i_487-p_1_ocr.png)
+Which Latinized transcription was used?
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=al-Ǧanna) for "al-Ǧanna"](https://tillgrallert.github.io/slides/assets/jaraid/zdb_janna-ar-Latn.png){#fig:zdb-dmg}
 
 ::::
 :::: column
 
-![*al-Muqtabas* on [*al-Maktaba al-Shāmila*](http://shamela.ws/browse.php/book-26523#page-4046)](../assets/shamela_muqtabas-annotated.png)
+What are the normalization rules for the search algorithm?
+
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Ganna) for "Ganna"](https://tillgrallert.github.io/slides/assets/jaraid/zdb_janna-ar-Latn-no-al.png){#fig:zdb-functional}
 
 ::::
 :::
 
+::: notes
+
+- catalogue could be searched in Arabic but the data is missing
+- Latin input is mostly reduced to ASCII
+    + Hamza and ʿAyn escape this algorithm on ZDB
+- determined article is not automatically removed
+
+:::
+
+## Accessibility
+### Interfaces
+
+![Interface of the [Translatio](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en) project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription;  green = German metadata](../assets/translatio_interface-languages_annotated.png){#fig:translatio-interface}
+
+## Accessibility
+### copyright regimes, paywalls, and geo fencing
+
+cataloging rules and algorithmic copyright detection cause further inaccessibilities
+
+::: columns
+:::: column
+
+![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910) (Original in Princeton) outside the USA](../assets/hathi_muqtabas-1.png){#fig:hathi-muqtabas-global}
+
+::::
+:::: column
+
+![The page from [@fig:hathi-muqtabas-global] with a US-IP](../assets/hathi_muqtabas-2.png){#fig:hathi-muqtabas-us}
+
+::::
+:::
+
+
+::: notes
+
+Beispiel: unklares Enddatum eines Erscheinungsverlaufs im 20. Jahrhundert wird korrekt als 19uu katalogisiert und dann Copyrightstatus sicherheitshalber als 1999 angenommen.
+
+:::
+
+# Contributing to the *digital commons* without the help we can't get
 ## Contributing to the *digital commons* <br/> without the help we can't get
 
 ::: columns
@@ -144,18 +264,6 @@ Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 - learn from free and open-source software development
 <!-- - model everything to make components citable
 - harvest, generate, validate and share open metadata -->
-
-
-### minimal computing principles
-
-- build what **we need** with what **we have** at hand
-- as **few** as possible, **open** and **established** formats and tools
-- running on **our** hardware
-- with **our** skills and knowledge
-- **free-to-use** platforms without lock-in of data
-
-::::
-:::: column
 
 ### aims
 
@@ -171,6 +279,23 @@ Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
     + ground truth for ML-based OCR/HTR
 - establish an open, sustainable **infrastructure** of workflows, models, authority files
 <!-- - With the affordances of the Global South -->
+
+::::
+:::: column
+
+### minimal computing principles
+
+- build what **we need** with what **we have** at hand
+- as **few** as possible, **open** and **established** formats and tools
+- running on **our** hardware
+- with **our** skills and knowledge
+- **free-to-use** platforms without lock-in of data
+
+### our constrains
+
+- funding
+- internet connections
+- electricity
 
 ::::
 :::
@@ -375,8 +500,116 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 ::::
 :::
 
-# Conclusion
-## All dependencies will eventually break / need repair
+## Resulting Corpus
+
+
+| Title                                                                           | Place             | Proprietor                    | DOI                                                                | Volumes  | Issues  | Articles | Words   |
+| ------------------------------------------------------------------------------- | ----------------- | ----------------------------- | ------------------------------------------------------------------ | -------: | ------: | -------: | ------: |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                | Damascus          | Abd al-Qādir al-Iskandarānī   | [10.5281/zenodo.1232016](https://doi.org/10.5281/zenodo.1232016)   | 3        | 35      | 389      | 298090  |
+| [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)               | Beirut            | Niqūlā Bāz                    | [10.5281/zenodo.3556246](https://doi.org/10.5281/zenodo.3556246)   | 1        | 12      | 201      | NA      |
+| [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                | Cairo             | Muḥammad Rashīd Riḍā          |                                                                    | 35       | 537     | 4300     | 6144593 |
+| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)             | Cairo, Damascus   | Muḥammad Kurd ʿAlī            | [10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319)     | 9        | 96      | 2964     | 1981081 |
+| [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)              | Cairo             | Abdallāh Nadīm al-Idrīsī      | [10.5281/zenodo.3581028](https://doi.org/10.5281/zenodo.3581028)   | 1        | 42      | 435      | 221447  |
+| [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                | Cairo             | Anṭūn al-Jumayyil             | [10.5281/zenodo.3580606](https://doi.org/10.5281/zenodo.3580606)   | 4        | 39      | 436      | 292333  |
+| [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)   | Baghdad           | Anastās Mārī al-Karmalī       | [10.5281/zenodo.3514384](https://doi.org/10.5281/zenodo.3514384)   | 3        | 34      | 939      | 373832  |
+| **total**                                                                       |                   |                               |                                                                    | 56       | 795     | 9664     | 9311376 |
+
+
+::: columns
+:::: column
+
+- TEI/XML files for each issue with structural mark-up on the article level
+- mark-up of named entities in bylines
+
+
+::::
+:::: column
+
+- authority files (TEI/XML)
+- bibliographic metadata on the article level (MODS/XML, Zotero RDF, BibTeX)
+
+::::
+:::
+
+
+# Wrapping up
+## Fakesimiles are a thing
+
+<!-- original facsimile: [EAP](http://images.eap.bl.uk/EAP119/EAP119_1_4_4/463.jp2/full/800,/0/gray.jpg) -->
+
+*al-Muqtabas* 5(7), pp.[463](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_61.d1e2036)--[466](https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_54.TEIP5.xml#pb_64.d1e2045)
+
+::: columns-3
+:::: column
+
+![facsimile of the original from EAP](../assets/eap_muqtabas-v_5-i_7-p_463.jpg){#fig:muq-eap}
+
+::::
+:::: column
+
+![digital text on *shamela.ws*](../assets/shamela_muqtabas-i_54-p_30-31.png){#fig:muq-shamela}
+
+::::
+:::: column
+
+!["fakesimile" from [*arshīf al-majallāt [...] al-ʿarabiyya*](https://archive.alsharekh.org/MagazinePages/Magazine_JPG/AL_moqtabs/Al_moqtabs_1910/Issue_7/605.JPG)](../assets/sakhrit_muqtabas-v_5-i_7-p_605.jpg){#fig:muq-fakesimile}
+
+::::
+:::
+
+## tracking intellectual networks
+
+::: columns
+:::: column
+
+![Undirected network of authors in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, and *al-Muqtabas*. Colour of nodes: betweenness centrality; size of nodes: number of periodicals; width of edges: number of articles.](../assets/networks/network_oape-p3a6afa20_authors_unimodal-n-size_out-degree-n-colour_betweenness-e-colour_grey.png){#fig:network-authors}
+
+::::
+:::: column
+
+![Directed network of periodical titles mentioned in *al-Ḥaqāʾiq*, *al-Ḥasnāʾ*, *Lughat al-ʿArab*, *al-Muqtabas*, and *al-Zuhūr*; weighted by issues. Colour and size of nodes: in-degree.](https://tillgrallert.github.io/slides/assets/sihafa/networks/network_n_periodical-e_referenced-layout_fr-label_Latn.png){#fig:network-periodicals}
+
+::::
+:::
+
+Hypothesis: widespread references to a title/person are an indicator of their importance 
+
+## geographical typology of periodicals
+
+::: columns-3
+:::: column
+
+### trans-regional
+
+![Places in bylines from *al-Muqtabas* (Cairo and Damascus)](https://tillgrallert.github.io/slides/assets/OpenArabicPE/maps/map-oclc_4770057679-bylines-middle-east.png){#fig:authors-muqtabas-2}
+
+::::
+:::: column
+
+### regional
+
+![Places in bylines from *al-Ḥasnāʾ* (Beirut)](https://tillgrallert.github.io/slides/assets/OpenArabicPE/maps/map-oclc_792756327-bylines-middle-east.png){#fig:authors-hasna}
+
+::::
+:::: column
+
+### local
+
+![Places in bylines from*al-Ḥaqāʾiq* (Damascus)](https://tillgrallert.github.io/slides/assets/OpenArabicPE/maps/map-oclc_644997575-bylines-middle-east.png){#fig:authors-haqaiq-2}
+
+::::
+:::
+
+Hypothesis: distribution of geographic origin of contributions to a periodical is an indicator for its importance
+
+::: notes
+
+- *al-Muqtabas* turns the saying “Cairo writes, Beirut publishes and Baghdad reads” upside down with Baghdad well ahead of even Damascus.
+
+:::
+
+## Final warning
+### All dependencies will eventually break and need repair
 
 ::: columns
 :::: column
@@ -393,7 +626,7 @@ The same section of *al-Zuhūr* 2(4) modelled in TEI
 ::::
 :::: column
 
-![The main components of OpenArabicPE](../assets/OpenArabicPE_components-layer-1-4.png)
+![The main components of OpenArabicPE](../assets/OpenArabicPE_components-layer-1-4.png){#fig:components}
 
 ::::
 :::
