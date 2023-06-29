@@ -1,0 +1,2398 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+          <meta name="author" content="Till Grallert">
+              <meta name="dcterms.date" content="2023-06-29">
+                  <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+        <title>Open Arabic Periodical Editions (OpenArabicPE)</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <style>
+      .reveal .sourceCode {  /* see #7635 */
+        overflow: visible;
+      }
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+          color: #aaaaaa;
+        }
+      pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+      code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+      code span.at { color: #7d9029; } /* Attribute */
+      code span.bn { color: #40a070; } /* BaseN */
+      code span.bu { color: #008000; } /* BuiltIn */
+      code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+      code span.ch { color: #4070a0; } /* Char */
+      code span.cn { color: #880000; } /* Constant */
+      code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+      code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+      code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+      code span.dt { color: #902000; } /* DataType */
+      code span.dv { color: #40a070; } /* DecVal */
+      code span.er { color: #ff0000; font-weight: bold; } /* Error */
+      code span.ex { } /* Extension */
+      code span.fl { color: #40a070; } /* Float */
+      code span.fu { color: #06287e; } /* Function */
+      code span.im { color: #008000; font-weight: bold; } /* Import */
+      code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+      code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+      code span.op { color: #666666; } /* Operator */
+      code span.ot { color: #007020; } /* Other */
+      code span.pp { color: #bc7a00; } /* Preprocessor */
+      code span.sc { color: #4070a0; } /* SpecialChar */
+      code span.ss { color: #bb6688; } /* SpecialString */
+      code span.st { color: #4070a0; } /* String */
+      code span.va { color: #19177c; } /* Variable */
+      code span.vs { color: #4070a0; } /* VerbatimString */
+      code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+                    <style type="text/css">
+                    /* slidy.css
+
+                       Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+                       W3C liability, trademark, document use and software licensing
+                       rules apply, see:
+
+                       http://www.w3.org/Consortium/Legal/copyright-documents
+                       http://www.w3.org/Consortium/Legal/copyright-software
+                    */
+
+                    @font-face {
+                        font-family: AmiriWeb;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: regular;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: HeptaSlab;
+                        src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: linowrite;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
+                    }
+
+
+                    /* render Arabic as rtl */
+                    [lang = "ar"],
+                    [lang = "ota"],
+                    [lang = "fa"],
+                    [lang = "he"],
+                    [lang *= "-Arab-AR"] {
+                        direction: rtl;
+                        text-align: right !important;
+                        font-family: AmiriWeb, Helvetica, Arial, sans-serif;
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
+                        At the moment almost everything is tailored to 18px */
+                        /*    font-size: 18px;*/
+                    }
+                    /* display latin scripts in a smaller font */
+                    [lang = "en"],
+                    [lang = "fr"],
+                    [lang = "de"],
+                    [lang = "it"],
+                    [lang *= "ar-Latn-"],
+                    [lang *= "ota-Latn-"] {
+                        direction: ltr;
+                        text-align: left !important;
+                        /*    font-size: 14px;*/
+                    }
+                    /* counter default settings in reveal.css */
+                    .reveal .slides {
+                        text-align: left;
+                    }
+
+                    html,
+                    body,
+                    .reveal-viewport {
+                        margin: 0 0 0 0;
+                        padding: 0 0 0 0;
+                        width: 100%;
+                        height: 100%;
+                        /*color: white;*/
+                        color: black !important;
+                        /*color: #4d4d4d;*/
+                        /*background-color: black;*/
+                        background-color: white !important;
+                        overflow: hidden;
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                      font-size: 12px;*/
+                      line-height: 1.2;
+                      word-wrap: break-word;
+                    }
+                    body,
+                    .reveal-viewport {
+                        position: static;
+                    }
+                    /******************
+                      header and footer to be displayed on all slides
+                    *******************/
+
+                    header,
+                    footer,
+                    div.c_header,
+                    div.c_footer  {
+                      z-index: 30;
+                      display: block;
+                      position: fixed;
+                      height: 3.8em;
+                      width: 100%;
+                    }
+                    footer.reveal {
+                        height: 3em;
+                    }
+                    header,
+                    div.c_header {
+                        top: 0;
+                    }
+                    footer,
+                    footer * {
+                        bottom: 0;
+                        background-color: #8a0f14;
+                        color: white !important;
+                    }
+
+                    footer {
+                        font-size: 0.7em;
+                    }
+
+                    footer span {
+                        /*text-transform:  capitalize; */
+                        /*this doesn't seem to have an effect*/
+                        display: inline-block;
+                        padding-left: 0.5em;
+                        padding-right: 0.5em;
+                    }
+                    div.c_footer {
+                        top: auto;
+                        bottom: 1.2em;
+                        height: 1.2em;
+                        font-size: 60%;
+                    }
+                    div.c_frame {
+                    /*padding: 1em;*/
+                    margin-top: 1em;
+                    margin-left: 3em;
+                    margin-right: 3em;
+                    }
+
+                    /* basic styling for all slides */
+                    div.slide,
+                    section.slide {
+                        z-index: 20;
+                        display: block;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-right: auto;
+                        margin-left: auto;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        border-width: 0;
+                        clear: both;
+                        left: 0;
+                        right: 0;
+                        /*line-height: 120%;*/
+                        background-color: transparent;
+                        /* width should be in em dashes*/
+                        max-width: 50em;
+                    }
+                    div.slide {
+                        top: 10% ;
+                    }
+                    /* revealjs generates inline CSS that needs to be overridden  */
+                    section.slide {
+                        top: 0 !important;
+                    }
+                    /* while on screen slides should be black on white, it should be the opposite on projectors */
+                    @media projector {
+                        body {
+                            background-color: black;
+                            color: white;
+                        }
+                        pre {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                    /******************
+                    set fonts and sizes
+                    *******************/
+                    body,
+                    .reveal-viewport {
+                        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                    /*font-family: "American Typewriter";*/
+                    /*font-family: "Gentium Plus";*/
+                    }
+                    body {
+                        font-weight: 300 !important;
+                        /*font-size is over-ridden by automatically generated inline CSS on body*/
+                        font-size: 24px !important;
+                    }
+                    .reveal h1,
+                    .reveal h2,
+                    .reveal h3,
+                    .reveal h4,
+                    .reveal h5,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    th {
+                        /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
+                    /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
+                        font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                        font-weight: 400;
+                        color: #113868;
+                    }
+                    p,
+                    ol,
+                    ul,
+                    span {
+                    }
+                    /**
+                    highlights: <em> is for transcribed terms, <strong> for emphasis;
+                    **/
+                    em {
+                        /*font-family: "Gentium Plus";
+                      /*font-family: Georgia;*/
+                      font-style: italic;
+                      font-weight: 200;
+                    }
+                    strong {
+                        font-style: italic;
+                        font-weight: 200;
+                        border-bottom: 2px dotted #F96827;
+                    }
+                    table {
+                        font-size: 0.8em;
+                    }
+                    /******************
+                    set colours
+                    *******************/
+
+                    /***************
+                    standard classes, navigation
+                    ***************/
+                    div.toolbar {
+                        position: fixed;
+                        z-index: 40;
+                        top: auto;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 1.2em;
+                        text-align: right;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                        font-size: 60%;
+                        color: red;
+                        background-color: rgb(240, 240, 240);
+                        border-top: solid 1px rgb(180, 180, 180);
+                    }
+                    div.toolbar span.copyright {
+                        /*display: inline-block;
+                      text-align: center;*/
+                      color: black;
+                      margin-left: 0.5em;
+                    }
+                    /* revealjs navigation */
+                    aside.controls {
+                        bottom: 7em !important;
+                    }
+                    aside.controls * {
+                        z-index: 40;
+                    }
+                    div.initial_prompt {
+                        position: absolute;
+                        z-index: 1000;
+                        bottom: 1.2em;
+                        width: 100%;
+                        background-color: rgb(200, 200, 200);
+                        opacity: 0.35;
+                        background-color: rgba(200, 200, 200, 0.35);
+                        cursor: pointer;
+                    }
+                    div.initial_prompt p.help {
+                        text-align: center;
+                    }
+                    div.initial_prompt p.close {
+                        text-align: right;
+                        font-style: italic;
+                    }
+                    div.slidy_toc {
+                        position: absolute;
+                        z-index: 300;
+                        width: 60%;
+                        max-width: 30em;
+                        height: 30em;
+                        overflow: auto;
+                        top: auto;
+                        right: auto;
+                        left: 4em;
+                        bottom: 4em;
+                        padding: 1em;
+                        background: rgb(240, 240, 240);
+                        border-style: solid;
+                        border-width: 2px;
+                        font-size: 60%;
+                    }
+                    div.slidy_toc .toc-heading {
+                        text-align: center;
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 1em;
+                        border-bottom-style: solid;
+                        border-bottom-color: rgb(180, 180, 180);
+                        border-bottom-width: 1px;
+                    }
+                    /* basic styling for all slides */
+                    div.background {
+                        display: none;
+                    }
+                    div.handout {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                    div.slide.titlepage {
+                        text-align: center;
+                    }
+                    div.slide.titlepage h1 {
+                        padding-top: 10%;
+                        margin-right: 0;
+                    }
+                    /* h1 needs to override the standard CSS */
+                    div.slide h1 {
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-top: 4pt;
+                        padding-bottom: 4pt;
+                        margin-top: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        margin-bottom: 0.5em;
+                        display: block;
+                        /*font-size: 160%;*/
+                        line-height: 1.2em;
+                        background: transparent;
+                    }
+                    /*****************
+                    heads
+                    ******************/
+                    /* title and dividing slides */
+                    /* put h1 in the center of the slide */
+                    div.titleslide h1,
+                    #title-slide h1 {
+                        margin-top: 2em;
+                    /*margin-bottom: auto;*/
+                    font-size: 2em;
+                    }
+
+                    h1,
+                    h2,
+                    h3,
+                    h4 {
+                        text-align: center;
+                    }
+                    div.reveal h1, h1 {
+                        padding-bottom: 0.3em;
+                        font-size: 1.75em;
+                        line-height: 1.2;
+                        border-bottom: 1px solid #eee;
+                        margin-top: 4em;
+                    }
+                    div.reveal h2, h2 {
+                        padding-bottom: 0.3em;
+                        font-size: 1.5em;
+                        line-height: 1.225;
+                        border-bottom: 1px solid #eee;
+                    }
+                    div.reveal h3, h3 {
+                        font-size: 1.25em;
+                        line-height: 1.43;
+                    }
+                    div.reveal h4, h4 {
+                        font-size: 1em;
+                    }
+                    /******************
+                    levels of slides
+                    ******************/
+                    .title-slide,
+                    .level1 {
+                        padding-top: 100px;
+                        padding-bottom: 100px;
+                    }
+                    /******************
+                    links
+                    ******************/
+                    a {
+                        text-decoration: none
+                    }
+                    a img {
+                        border-width: 0;
+                        border-style: none
+                    }
+                    /*a:visited { color: navy }
+                    a:link { color: navy }
+                    a:hover { color: red; text-decoration: underline }
+                    a:active { color: red; text-decoration: underline }*/
+                    a,
+                    a:link {
+                        color: #F46A00 /*!important*/;
+                        /*text-decoration: none; */
+                    }
+                    a:visited {
+                        color: #a84900;
+                        /*text-decoration: none; */
+                    }
+                    a:hover,
+                    a:active {
+                        color: #8DB300;
+                        /*text-decoration: none; */
+                    }
+                    .toolbar a:link {
+                        color: blue
+                    }
+                    .toolbar a:visited {
+                        color: blue
+                    }
+                    .toolbar a:active {
+                        color: red
+                    }
+                    .toolbar a:hover {
+                        color: red
+                    }
+                    @media screen and (max-device-width : 1024px) {
+                        div.slide {
+                            font-size: 100%;
+                        }
+                    }
+                    @media screen and (max-device-width : 800px) {
+                        div.slide {
+                            font-size: 200%;
+                        }
+                        div.slidy_toc {
+                            top: 1em;
+                            left: 1em;
+                            right: auto;
+                            width: 80%;
+                            font-size: 180%;
+                        }
+                    }
+                    div.toc-heading {
+                        width: 100%;
+                        display: inline-block;
+                        height: auto;
+                        border-bottom: solid 1px rgb(180, 180, 180);
+                        margin-bottom: 1em;
+                        text-align: center;
+                    }
+                    /****************
+                    title slide
+                    *****************/
+
+                    /*span.author ~ span.author::before {
+                      content: ', ';
+                    }*/
+
+                    /****************
+                    images and figures
+                    *****************/
+                    div.slide img {
+                        /* image-rendering: optimize-quality; */
+                        background-color: white; /*rgba(0,0,0,0.04);*/
+                        border-radius: 5px;
+                        display: block;
+                        max-height: 600px;
+                        max-width: 95%;
+                        /* center images */
+                        margin-left: auto;
+                        margin-right: auto;
+                        /*box-shadow: 2px 2px 5px #000;*/
+                        /*border: gray solid 1px;*/
+                    }
+                    div.figure {
+                        width: 100%;
+                        padding: 0;
+                        /*height: inherit;*/
+                    }
+                    figure {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        /*margin-inline-start: 40px;
+                        margin-inline-end: 40px;*/
+                        margin-inline-start: 0;
+                        margin-inline-end: 0;
+                    }
+                    div.figure p.caption,
+                    figcaption {
+                        position: relative;
+                        float: right;
+                        text-align: right;
+                        margin-top: 0.2em;
+                        margin-bottom: 0.5em;
+                        /*top:2em;*/
+                        /*max-width:15%;
+                        min-width: 180px;*/
+                        font-size: 0.6em;
+                        font-weight: lighter;
+                    }
+                    div.figure img {
+                        float: right;
+                        /*max-height: 80%;*/
+                        /*max-height: 600px;*/
+                        /*max-height: inherit;*/
+                        /*max-width:80%;*/
+                        /*max-width: 95%;*/
+                    }
+                    header img,
+                    footer img {
+                        display: block;
+                    }
+                    /* inline images */
+                    /*p img,
+                    li img {
+                        display: inline-block;
+                        height: 1em;
+                    }*/
+                    img.c_logo {
+                        margin-left: 3em;
+                        margin-right: 3em;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    /*    max-width: 6em !important;*/
+                        max-height: 4em !important;
+                    }
+                    /*img {
+                      max-height: 700px;
+                      max-width: 100%;
+                    }*/
+                    /* external content, including local html pages */
+                    iframe {
+                        display: block;
+                        width: 90%;
+                        /* the height setting seems to squeeze iframes */
+                        /*height: 80%;*/
+                        /* center the iframe */
+                        margin-left: auto;
+                        margin-right: auto;
+                        scrolling: auto;
+                        scroll-behavior: auto;
+                        /*border:none;*/
+                    }
+                    /*.size-80 {
+                      display: block;
+                      width: 80%;
+                      height: 80%;
+                    }*/
+                    /*****************
+                    columns
+                    ******************/
+                    div.columns,
+                    div.columns-2,
+                    div.columns-3 {
+                        /* newer? versions of reveal use display: flex */
+                        display: block;
+                        /*flex: none;*/
+                    }
+                    div.columns-3 {
+                        clear: both;
+                    }
+                    div.column {
+                    /*    display: inline-block;*/
+                        flex: none;
+                        display: block;
+                        float: left;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .columns-3 > .column {
+                        width: 31%;
+                    }
+                    .columns-3 > .narrow {
+                        width: 23%;
+                        position: relative;
+                        float: left;
+                    }
+
+                    .columns-3 > .wide {
+                        width: 50%;
+                        position: relative;
+                        float: left;
+                    }
+                    .columns-2 > .column,
+                    .columns > .column,
+                    .c_width-50  {
+                        width: 48%;
+                    }
+                    .c_width-60,
+                    .column-60,
+                    .columns .wide {
+                        width: 64%;
+                        position: relative;
+                        float: left;
+                    }
+                    .c_width-50 {
+                        position: relative;
+                        float: left;
+                    }
+                    .c_width-30,
+                    .column-30,
+                    .columns .narrow {
+                        width: 33%;
+                        position: relative;
+                        float: left;
+                    }
+                    .c_left {
+                        display: block;
+                        float: left;
+                    }
+                    .c_right {
+                        display: block;
+                        float: right;
+                    }
+                    .c_center {
+                        display: block;
+                        /*clear: both;*/
+                        margin: 0 auto;
+                    }
+                    .c_left-align {
+                        text-align: left;
+                    }
+
+                    .c_right-align {
+                        text-align: right;
+                    }
+
+                    span.c_left,
+                    span.c_right,
+                    span.c_center {
+                        display: inline-block;
+                    }
+
+                    /*****************
+                    blackbox
+                    ******************/
+
+                    .blackbox  * {
+                        font-size: inherit;
+                        font-family: inherit;
+                    }
+                    .blackbox > div,
+                    .blackbox > section {
+                        width: 32%;
+                        position: relative;
+                        /*float: left;*/
+                        min-height: 5em;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                    }
+                    .blackbox > .input,
+                    .blackbox > .output {
+                        width: 25%;
+                        background-color: rgba(245, 245, 245, 1);
+                    }
+                    .blackbox > .input {
+                        float: left;
+                    }
+                    .blackbox > .output {
+                        float: right;
+                    }
+                    .blackbox textarea {
+                        min-height: inherit;
+                        background-color: inherit;
+                    }
+                    .blackbox > .computing,
+                    .blackbox > .content {
+                        min-height: 5em;
+                        /*padding: 1em;*/
+                        margin: 0 auto;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                    }
+                    .blackbox > .computing {
+                        background-color: black;
+                        color: white;
+                    }
+                    .blackbox > .content {
+
+                    }
+
+                    button {
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .blackbox button {
+                        min-width: 150px;
+                        height: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        top: 1em;
+                    }
+                    .button-36 {
+                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+                        border-radius: 8px;
+                        border-style: none;
+                        box-sizing: border-box;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        flex-shrink: 0;
+                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 4rem;
+                        padding: 0 1.6rem;
+                        text-align: center;
+                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                        transition: all .5s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                    }
+
+                    .button-36:hover {
+                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+                        transition-duration: .1s;
+                    }
+                    .button-49,
+                    .button-49:after {
+                      line-height: 50px;
+                      font-size: 20px;
+                      font-family: 'Bebas Neue', sans-serif;
+                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                      border: 0;
+                      color: #fff;
+                      letter-spacing: 3px;
+                      box-shadow: 6px 0px 0px #00E6F6;
+                      outline: transparent;
+                      position: relative;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                    }
+
+                    .button-49:after {
+                      --slice-0: inset(50% 50% 50% 50%);
+                      --slice-1: inset(80% -6px 0 0);
+                      --slice-2: inset(50% -6px 30% 0);
+                      --slice-3: inset(10% -6px 85% 0);
+                      --slice-4: inset(40% -6px 43% 0);
+                      --slice-5: inset(80% -6px 5% 0);
+
+                      content: 'ALTERNATE TEXT';
+                      display: block;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                      clip-path: var(--slice-0);
+                    }
+
+                    .button-49:hover:after {
+                      animation: 1s glitch;
+                      animation-timing-function: steps(2, end);
+                    }
+
+                    @keyframes glitch {
+                      0% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-20px, -10px);
+                      }
+                      10% {
+                        clip-path: var(--slice-3);
+                        transform: translate(10px, 10px);
+                      }
+                      20% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 10px);
+                      }
+                      30% {
+                        clip-path: var(--slice-3);
+                        transform: translate(0px, 5px);
+                      }
+                      40% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-5px, 0px);
+                      }
+                      50% {
+                        clip-path: var(--slice-3);
+                        transform: translate(5px, 0px);
+                      }
+                      60% {
+                        clip-path: var(--slice-4);
+                        transform: translate(5px, 10px);
+                      }
+                      70% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-10px, 10px);
+                      }
+                      80% {
+                        clip-path: var(--slice-5);
+                        transform: translate(20px, -10px);
+                      }
+                      90% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 0px);
+                      }
+                      100% {
+                        clip-path: var(--slice-1);
+                        transform: translate(0);
+                      }
+                    }
+
+                    .hidden {
+                            /*display: none;*/
+                            visibility: hidden !important;
+                            width: 0 !important;
+                            height: 0 !important;
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            animation: 1s fadeOut;
+                        }
+                    @keyframes fadeOut {
+                      0% {
+                        opacity: 1;
+                      }
+                      100% {
+                        visibility: hidden;
+                        opacity: 0;
+                      }
+                    }
+
+                    /*****************
+                    writing direction
+                    ******************/
+                    .c_rtl {
+                        display: inline-block;
+                        direction: rtl;
+                        text-align: right;
+                        font-family: AmiriWeb;
+                    }
+                    .c_ltr {
+                        direction: ltr;
+                        text-align: left;
+                    }
+                    /*****************
+                    code
+                    ******************/
+                    div.sourceCode {
+                        margin: 10px 5px;
+                    }
+                    /*font*/
+                    pre,
+                    code {
+                        font-size: 0.8em;
+                        line-height: 0.9;
+                    }
+                    pre {
+                        display: block;
+                        font-family: monospace;
+                        white-space: pre-wrap;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        margin: 0;
+                        background-color: rgba(0, 0, 0, 0.04);
+                        border-radius: 5px;
+                        /*box-shadow: 2px 2px 5px #000;*/
+                        border: #95ABD0 solid 1px;
+                    }
+                    pre.mermaid {
+                        border: none;
+                        background-color: white;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    pre > code.sourceCode {
+                        white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
+                    }
+                    h1 > code {
+                        background: transparent;
+                        border: 0;
+                        font-size: inherit;
+                    }
+                    /* code also governs inline code, the code-highlighted code blocks are wrapped in pre*/
+                    code {
+                        white-space: pre-wrap;
+                        /* color: #00428C; */
+                        color: #9C20EE;
+                        /*font-size:0.9em;*/
+                    }
+                    pre code {
+                        color: #000000;
+                    }
+                    li pre {
+                        margin-left: 0;
+                    }
+                    blockquote {
+                        padding-left: 1em;
+                        padding-left: 1em;
+                        margin-bottom: 1em;
+                        text-align: right;
+                        /*font-style: italic;*/
+                        clear: both;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                    }
+                    blockquote > p:before {
+                        content: "> "
+                    }
+                    cite {
+                        display: block;
+                        margin-left: 10%;
+                        font-size: 0.8em;
+                        font-style: normal;
+                        text-align: right;
+                    /*    the float attribute destroys the multi-column layout*/
+                    /*    float: right;*/
+                        padding-bottom: 1em;
+                    }
+                    p.copyright {
+                        font-size: smaller
+                    }
+                    .center {
+                        text-align: center
+                    }
+                    .footnote {
+                        font-size: smaller;
+                        margin-left: 2em;
+                    }
+                    /**********
+                    lists
+                    ***********/
+                    ul,
+                    ol {
+                        display: block;
+                        clear: both;
+                        font-style: normal;
+                        margin-top: 0.1em;
+                        margin-bottom: 0.5em;
+                        /*margin-left: 1.5em;*/
+                        list-style-position: inside;
+                        padding-left: 1em;
+                        /* all lists should be centered */
+                        /*text-align: left;*/
+                        /*margin-left: auto;
+                      margin-right: auto;*/
+                    }
+                    /* padding, line-height etc. for all list items */
+                    ul li,
+                    ol li {
+                        margin-top: 0.2em;
+                        margin-bottom: 0.2em;
+                        padding: 0 0 0 0px;
+                        line-height: 120%;
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    li li {
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    li li li {
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    /* unordered lists */
+                    ul {
+                        list-style-type: circle;
+                    }
+                    ul ul {
+                        list-style-type: circle;
+                    }
+                    ul ul ul {
+                        list-style-type: circle;
+                    }
+                    ul ul ul ul {
+                        list-style-type: circle;
+                    }
+                    ul li {
+                        list-style: circle;
+                        /*margin: 0.1em 0em 0.6em 0;
+                      padding: 0 0 0 0;
+                      line-height: 140%;*/
+                    }
+                    li ul li {
+                    /*font-size: 85%; */
+                    font-style: normal;
+                    list-style-type: circle;
+                        /* background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    li li ul li {
+                    /*font-size: 85%; */
+                    font-style: normal;
+                    list-style-type: circle;
+                        /*background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    li li li ul li {
+                        font-style: normal;
+                        list-style-type: circle;
+                        /*background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    /*ul {
+                      margin: 0.5em 1.5em 0.5em 1.5em;
+                      padding: 0;
+                    }*/
+                    /* ordered lists */
+                    ol {
+                        margin: 0.5em 1.5em 0.5em 1.5em;
+                        padding: 0;
+                    }
+                    ol li {
+                        list-style-type: decimal;
+                    }
+                    li ol li {
+                        list-style-type: decimal;
+                    }
+                    li li ol li {
+                        list-style-type: decimal;
+                    }
+
+                    /***********
+                    indentation of nested lists
+                    ***********/
+
+                    ul ul,
+                    ul ol,
+                    ol ol,
+                    ol ul {
+                        padding-inline-start: 2em;
+                    }
+
+                    /*this is to accomodated the snipped highlight js*/
+                    pre ul li {
+                        margin-top: 0;
+                        font-size: 0.7em;
+                        padding: 0;
+                    }
+                    div dt {
+                        margin-left: 0;
+                        margin-top: 1em;
+                        margin-bottom: 0.5em;
+                        font-weight: bold;
+                    }
+                    div dd {
+                        margin-left: 2em;
+                        margin-bottom: 0.5em;
+                    }
+                    p,
+                    pre,
+                    /*ul,*/
+                    /*ol,*/
+                    blockquote,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    dl,
+                    table {
+                        margin-left: 0.5em;
+                        margin-right: 0.5em;
+                        margin-top: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+                    p.subhead {
+                        font-weight: bold;
+                        margin-top: 2em;
+                    }
+                    .smaller {
+                        font-size: smaller
+                    }
+                    .bigger {
+                        font-size: 130%
+                    }
+                    /*******************************
+                    tables
+                    *******************************/
+                    table {
+                        display: table;
+                        /* the table should be centred on the page*/
+                        margin-left: auto;
+                        margin-right: auto;
+                        /*font-size: 0.8em;*/
+                        border-collapse: collapse;
+                    }
+                    th {
+                        border-bottom-width: 2px;
+                        border-bottom-style: double;
+                        border-bottom-color: black;
+                    }
+                    td,
+                    th {
+                        padding: 0.2em
+                    }
+                    td {
+                        border-bottom-width: 1px;
+                        /*border-top-width: 1px;*/
+                        border-bottom-style: solid;
+                        /*border-top-style: solid;*/
+                        border-color: white;
+                    }
+                    /*
+                    highlight mouse-over on tables
+                    */
+                    tr:hover td {
+                        /*background-color: red; */
+                        /*border-top-color: #F46A00;
+                        border-bottom-color: #F46A00;*/
+                        border-color: #F46A00;
+                        border-bottom-width: 1px;
+                        border-bottom-style: solid;
+                    }
+                    td:hover, td:hover * {
+                        background-color: #F46A00;
+                        color: black;
+                    }
+                    .focus {
+                        border-color: red;
+                        border-width: 2px;
+                        border-style: solid;
+                    }
+                    table > caption {
+                        /*position: relative;
+                        float: right;*/
+                        text-align: center;
+                        margin-top: 0.2em;
+                        margin-bottom: 0.5em;
+                        /*top:2em;*/
+                        /*max-width:15%;
+                        min-width: 180px;*/
+                        font-size: 0.6em;
+                        font-weight: lighter;
+                    }
+
+                    /*
+                     setting class="outline on ol or ul makes it behave as an
+                     ouline list where blocklevel content in li elements is
+                     hidden by default and can be expanded or collapsed with
+                     mouse click. Set class="expand" on li to override default
+                    */
+                    ol.outline li:hover {
+                        cursor: pointer
+                    }
+                    ol.outline li.nofold:hover {
+                        cursor: default
+                    }
+                    ul.outline li:hover {
+                        cursor: pointer
+                    }
+                    ul.outline li.nofold:hover {
+                        cursor: default
+                    }
+                    ol.outline {
+                        list-style: decimal;
+                    }
+                    ol.outline ol {
+                        list-style-type: lower-alpha
+                    }
+                    ol.outline li.nofold {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.unfolded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.folded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.unfolded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.folded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.nofold {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.unfolded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.folded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.unfolded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.folded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+                    }
+                    /* for slides with class "title" in table of contents */
+                    a.titleslide {
+                        font-weight: bold;
+                        font-style: italic
+                    }
+                    /* references, footnotes, bibliography */
+                    div.references {
+                        font-size: 80%
+                    }
+                    div.references p {
+                        margin: 5px 0px;
+                    }
+                    /* alerts */
+                    div.alert {
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: red;
+                        margin-left: 2em;
+                        border-left-width: 1em;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
+                    }
+                    /*
+                     hide images for work around for save as bug
+                     where browsers fail to save images used by CSS
+                    */
+                    img.hidden {
+                        display: none;
+                        visibility: hidden
+                    }
+                    div.initial_prompt {
+                        display: none;
+                        visibility: hidden
+                    }
+                    div.slide {
+                        visibility: visible;
+                        position: inherit;
+                    }
+                    div.handout {
+                        border-top-style: solid;
+                        border-top-width: thin;
+                        border-top-color: black;
+                    }
+                    @media screen {
+                        .hidden {
+                            display: none;
+                            visibility: visible
+                        }
+                        div.slide.hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.handout.hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.background {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide div.initial_prompt {
+                            display: block;
+                            visibility: visible
+                        }
+                        body.single_slide div.background {
+                            display: block;
+                            visibility: visible
+                        }
+                        body.single_slide div.background.hidden {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide .invisible {
+                            visibility: hidden
+                        }
+                        body.single_slide .hidden {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide div.slide {
+                            position: absolute
+                        }
+                        body.single_slide div.handout {
+                            display: none;
+                            visibility: hidden
+                        }
+                    }
+                    @media print {
+                        .hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.slide pre {
+                            font-size: 60%;
+                            padding-left: 0.5em;
+                        }
+                        div.toolbar {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.slidy_toc {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.background {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.slide {
+                            page-break-before: always
+                        }
+                        /* :first-child isn't reliable for print media */
+                        div.slide.first-slide {
+                            page-break-before: avoid
+                        }
+                    }
+                    </style>
+      </head>
+  <body onload="setCurrentDate()">
+        <!-- HU Berlin header -->
+    <header>
+        <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+    </header>
+    <div class="reveal">
+      <div class="slides">
+
+                <section id="title-slide">
+          <h1 class="title">Open Arabic Periodical Editions
+(OpenArabicPE)</h1>
+                    <h2 class="subtitle">a case study in digital editing
+outside the Global North</h2>
+                    <div class="columns">
+          <div class="column c_left c_left-align">
+                      <p class="author">
+                          Till Grallert            </p>
+                                                <p class="institute">Humboldt-Universität
+zu Berlin</p>
+                            <p class="institute">Methods Innovation Lab
+(NFDI 4Memory)</p>
+                            <p class="institute">Scholarly Makerspace
+(University Library)</p>
+                                          </div>
+        <div class="column c_right c_right-align">
+                    <p class="event">
+                        <span>Digital Publication of Right-to-Left
+Script Corpora</span>
+          </p>
+                                <p class="date">2023-06-29</p>
+                              <p class="url"><a href="https://openarabicpe.github.io/slides/2023-openiti/">https://openarabicpe.github.io/slides/2023-openiti/</a></p>
+                  </div>
+      </div>
+        </section>
+
+        <section id="open-arabic-periodical-editions-openarabicpe"
+        class="slide level2">
+        <h2>Open Arabic Periodical Editions (<a
+        href="https://openarabicpe.github.io">OpenArabicPE</a>)</h2>
+        <div class="columns">
+        <div class="wide">
+        <ul>
+        <li>Volunteer-run scholarly editing and infrastructure-building
+        (since 2015)</li>
+        <li>Digital scholarly editions
+        <ul>
+        <li>6 Arabic magazines from Baghdad, Cairo, Damascus with c.800
+        issues and more than 9 million words.</li>
+        <li>full text and facsimiles modelled in TEI XML</li>
+        <li>Bibliographic metadata (MODS, BibTeX, Zotero RDF)
+        <!--  - on the article level for the entire corpus plus 2 additional magazines
+              - on the issue level for 7 additional newspapers
+              - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) --></li>
+        </ul></li>
+        <li>Infrastructure:
+        <ul>
+        <li>static websites without a backend / database</li>
+        <li>free hosting and archiving</li>
+        <li><a href="https://zotero.org/groups/openarabicpe">Zotero
+        group</a> as gateway to search/browse the corpus</li>
+        </ul></li>
+        <li>Workflows and tools</li>
+        </ul>
+        </div><div class="narrow">
+        <figure id="fig:webview-zuhur">
+        <img data-src="../assets/boilerplate_zuhur-v_1-i_1.png"
+        alt="Webview of al-Zuhur 1(1)" />
+        <figcaption>Figure 1: <a
+        href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml">Webview
+        of <em>al-Zuhur</em> 1(1)</a></figcaption>
+        </figure>
+        <figure id="fig:webview-muqtabas">
+        <img data-src="../assets/boilerplate_muqtabas-v_3-i_2.png"
+        alt="Webview of al-Muqtabas 3(2)" />
+        <figcaption>Figure 2: <a
+        href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml">Webview
+        of <em>al-Muqtabas</em> 3(2)</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section>
+        <section id="why-spend-the-effort-shouldnt-others-do-it"
+        class="title-slide slide level1">
+        <h1>Why spend the effort? <br/> Shouldn’t others do it?</h1>
+
+        </section>
+        <section id="why-spend-the-effort" class="slide level2">
+        <h2>Why spend the effort?</h2>
+        <div class="columns">
+        <div class="wide">
+        <ol type="1">
+        <li>Neo-colonial invisibility of cultural artefacts from the
+        Global South in the digital domain
+        <ul>
+        <li>knowledge gap, collection and cataloguing bias -&gt;
+        digitisation bias</li>
+        </ul></li>
+        <li>Periodicals are an important local and quotidian source to
+        tell and recover local stories</li>
+        <li>We as scholars have a duty of care and nobody else was doing
+        it</li>
+        </ol>
+        </div><div class="narrow">
+        <div id="tbl:jaraid-holdings">
+        <table>
+        <caption>Table 1: Periodical holdings and digitization</caption>
+        <thead>
+        <tr class="header">
+        <th style="text-align: left;">periodicals</th>
+        <th style="text-align: right;">–1918</th>
+        <th style="text-align: right;"></th>
+        <th style="text-align: right;">–1929</th>
+        <th style="text-align: right;"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td style="text-align: left;">published</td>
+        <td style="text-align: right;">2054</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">3550</td>
+        <td style="text-align: right;"></td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;">known holdings</td>
+        <td style="text-align: right;">540</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">775</td>
+        <td style="text-align: right;"></td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: left;">% of total</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">26.29</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"><span
+        class="red">21.83</span></td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;">————————</td>
+        <td style="text-align: right;">——–</td>
+        <td style="text-align: right;">——-</td>
+        <td style="text-align: right;">——–</td>
+        <td style="text-align: right;">—————</td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: left;">digitized</td>
+        <td style="text-align: right;">156</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">233</td>
+        <td style="text-align: right;"></td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;">% of total</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">7.59</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"><span
+        class="red">6.56</span></td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: left;">————————</td>
+        <td style="text-align: right;">——–</td>
+        <td style="text-align: right;">——-</td>
+        <td style="text-align: right;">——–</td>
+        <td style="text-align: right;">—————</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;">multiple digitisations</td>
+        <td style="text-align: right;">51</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">66</td>
+        <td style="text-align: right;"></td>
+        </tr>
+        <tr class="odd">
+        <td style="text-align: left;">% of total</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">2.48</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">1.86</td>
+        </tr>
+        <tr class="even">
+        <td style="text-align: left;">% of digitised</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;">32.69</td>
+        <td style="text-align: right;"></td>
+        <td style="text-align: right;"><span
+        class="red">28.33</span></td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        <figure>
+        <img
+        data-src="../assets/maps/map-oclc_4770057679-holdings-vol_1-9.png"
+        alt="Geographic distribution of library holdings of al-Muqtabas" />
+        <figcaption aria-hidden="true">Geographic distribution of
+        library holdings of <em>al-Muqtabas</em></figcaption>
+        </figure>
+        </section></section>
+        <section>
+        <section
+        id="contributing-to-the-digital-commons-without-the-help-we-cant-get"
+        class="title-slide slide level1">
+        <h1>Contributing to the <em>digital commons</em> without the
+        help we can’t get</h1>
+
+        </section>
+        <section id="the-help-we-cant-get" class="slide level2">
+        <h2>The help we can’t get</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>digitisation and maintaining digital artefacts is really
+        <strong>expensive</strong></li>
+        <li>periodicals form an extremely <strong>large corpus</strong>
+        of very short texts (and images)</li>
+        <li>lacking technologies*
+        <ul>
+        <li>OCR for Arabic script</li>
+        <li>automated layout recognition</li>
+        </ul></li>
+        <li>no institutional funding for the digitisation of mundane
+        bulk of the periodical press</li>
+        </ul>
+        </div><div class="column">
+        <ul>
+        <li>existing digitised periodicals are nigh unusable
+        <ul>
+        <li>lacking/faulty metadata</li>
+        <li>mainly facsimiles</li>
+        <li>unknown veracity of text layers</li>
+        <li>paywalls, geofencing</li>
+        <li>no APIs</li>
+        <li>no machine-actionable data layer</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        <div class="columns-3">
+        <div class="column">
+        <figure>
+        <img data-src="../assets/hathi_muqtabas-1.png"
+        alt="al-Muqtabas 6 on HathiTrust with geo-fencing" />
+        <figcaption aria-hidden="true"><em>al-Muqtabas</em> 6 on <a
+        href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
+        with geo-fencing</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure>
+        <img data-src="../assets/gpa_bashir-i_487-p_1_ocr.png"
+        alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, state of OCR" />
+        <figcaption aria-hidden="true"><em>al-Bashīr</em> 9 Jan. 1880
+        (#487), p.1 on <a
+        href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
+        state of OCR</figcaption>
+        </figure>
+        </div>
+        <div class="column">
+        <figure>
+        <img data-src="../assets/shamela_muqtabas-annotated.png"
+        alt="al-Muqtabas on al-Maktaba al-Shāmila" />
+        <figcaption aria-hidden="true"><em>al-Muqtabas</em> on <a
+        href="http://shamela.ws/browse.php/book-26523#page-4046"><em>al-Maktaba
+        al-Shāmila</em></a></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section
+        id="contributing-to-the-digital-commons-without-the-help-we-cant-get-1"
+        class="slide level2">
+        <h2>Contributing to the <em>digital commons</em> <br/> without
+        the help we can’t get</h2>
+        <div class="columns">
+        <div class="column">
+        <h3 id="ideas">ideas</h3>
+        <ul>
+        <li>unite <strong>existing</strong> gray transcriptions with
+        digital facsimiles</li>
+        <li>learn from free and open-source software development
+        <!-- - model everything to make components citable
+        - harvest, generate, validate and share open metadata --></li>
+        </ul>
+        <h3 id="minimal-computing-principles">minimal computing
+        principles</h3>
+        <ul>
+        <li>build what <strong>we need</strong> with what <strong>we
+        have</strong> at hand</li>
+        <li>as <strong>few</strong> as possible, <strong>open</strong>
+        and <strong>established</strong> formats and tools</li>
+        <li>running on <strong>our</strong> hardware</li>
+        <li>with <strong>our</strong> skills and knowledge</li>
+        <li><strong>free-to-use</strong> platforms without lock-in of
+        data</li>
+        </ul>
+        </div><div class="column">
+        <h3 id="aims">aims</h3>
+        <!-- + **validate** and **improve** the transcription with the facsimiles
+        - **train** text and layout recognition algorithms to make the textual heritage accessible to digitisation efforts
+        - **citable** for scholars, **linkable** for machines to facilitate use and adoption of the resources
+        - **open licences** to facilitate re-use -->
+        <ul>
+        <li>make Arabic periodicals <strong>accessible</strong> on a
+        shoestring budget</li>
+        <li><strong>validate</strong> and improve utilization of
+        transcriptions
+        <ul>
+        <li>reliablity: content and citations</li>
+        <li>accessibility: for readers and computational analysis</li>
+        <li>ground truth for ML-based OCR/HTR</li>
+        </ul></li>
+        <li>establish an open, sustainable
+        <strong>infrastructure</strong> of workflows, models, authority
+        files <!-- - With the affordances of the Global South --></li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>minimal computing</li>
+        <li>meaningful connectivity: focus on practicability instead of
+        principled stance</li>
+        <li>result: bootstrapped scholarly editions</li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
+        <section id="resulting-workflow-of-openarabicpe"
+        class="title-slide slide level1">
+        <h1>Resulting workflow of OpenArabicPE</h1>
+
+        </section>
+        <section id="get-the-data" class="slide level2">
+        <h2>1. get the data</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>facsimiles
+        <ul>
+        <li>link to existing facsimiles from <a
+        href="http://eap.bl.uk/">British Library’s “Endangered Archives
+        Programme” (EAP)</a>,
+        <!-- [HathiTrust](http://hathitrust.org/), --> <a
+        href="https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779">Translatio
+        Bonn</a>, <a href="http://archive.alsharekh.org/"><em>Arshīf
+        al-majallāt […] al-ʿarabiyya</em></a> etc., preferably through
+        <a href="https://iiif.io/">IIIF</a></li>
+        <li>scan/ photograph your physical artefacts (at the lowest
+        sustainable resolution)</li>
+        </ul></li>
+        <li>text
+        <ul>
+        <li>scrape existing transcriptions from <a
+        href="http://shamela.ws/index.php/book/26523"><em>shamela.ws</em></a>,
+        et al.</li>
+        <li>use <a href="https://transkribus.eu/">Transkribus</a>, <a
+        href="https://escripta.hypotheses.org">eScripta</a>/<a
+        href="https://www.https://escriptorium.fr/">eScriptorium</a> for
+        HTR (with our model trained on 1000+ pages from the OpenArabicPE
+        corpus)</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <p>EPub (HTML) for <em>al-Zuhūr</em> 2(4) from shamela.ws</p>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">dir</span><span class="ot">=</span><span class="st">&quot;rtl&quot;</span> <span class="er">id</span><span class="ot">=</span><span class="st">&quot;book-container&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;hr/&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;a</span> <span class="er">id</span><span class="ot">=</span><span class="st">&#39;C232&#39;</span><span class="kw">&gt;&lt;/a&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>صحافة سورية ولبنان<span class="kw">&lt;/span&gt;&lt;br</span> <span class="kw">/&gt;&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;red&quot;</span><span class="kw">&gt;</span>3 - <span class="kw">&lt;/span&gt;</span>المجلات<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<span class="kw">&lt;br</span> <span class="kw">/&gt;</span>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+        <p>OCR output from Transkribus for <em>al-Ḥasnāʾ</em> (PAGE
+        XML)</p>
+        <div class="sourceCode" id="cb2"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">TextLine</span><span class="ot"> id=</span><span class="st">&quot;r1l5&quot;</span><span class="ot"> custom=</span><span class="st">&quot;readingOrder {index:4;}&quot;</span>&gt;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">Coords</span><span class="ot"> points=</span><span class="st">&quot;470,548 2191,527 1648,462 470,464&quot;</span>/&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">Baseline</span><span class="ot"> points=</span><span class="st">&quot;480,542 565,540 650,537 735,534 820,533 905,531 990,530 1075,528 1160,528 1245,527 1330,527 1415,527 1500,527 1585,527 1670,528 1755,528 1840,530 1925,531 2010,531 2095,534 2180,536&quot;</span>/&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">TextEquiv</span>&gt;</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">Unicode</span>&gt;من عسر سنوات مجلة بسائة في الاستارة اعتمد في تحريرها على أقلامهن فزيئها&lt;/<span class="kw">Unicode</span>&gt;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">TextEquiv</span>&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">TextLine</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>IIIF allows to set a very low quality to reduce bandwidth
+        and traffic</li>
+        <li>what do you need to know
+        <ul>
+        <li>HTML</li>
+        <li>XML</li>
+        <li>JSON: for IIIF</li>
+        <li>wget, cURL: for scraping</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="model-the-data" class="slide level2">
+        <h2>2. model the data</h2>
+        <p>Structure the text string into issues, sections, articles
+        with bylines …</p>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>widely accepted standard for textual editions: <a
+        href="https://tei-c.org/">Text Encoding Initiative</a> (TEI XML)
+        <ul>
+        <li>active community</li>
+        <li>pre-requisite for grant funding</li>
+        <li>easy to archive (XML = plain text)</li>
+        </ul></li>
+        <li>re-use / adapt domain specific encoding schemas within the
+        TEI</li>
+        <li>try to script basic modelling using patterns in your source
+        text:
+        <ul>
+        <li>regular expressions</li>
+        <li>XSLT, Python, R, whatever you are most comfortable with</li>
+        </ul></li>
+        <li>automatically model derivative bibliographic data: MODS,
+        METS, BibTeX, …</li>
+        </ul>
+        </div><div class="column">
+        <p>The same section of <em>al-Zuhūr</em> 2(4) modelled in
+        TEI</p>
+        <div class="sourceCode" id="cb3"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">body</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span>&gt;</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">pb</span><span class="ot"> corresp=</span><span class="st">&quot;../epub/shamela_36534/OEBPS/xhtml/P744.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n2-p184&quot;</span>/&gt;</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> edRef=</span><span class="st">&quot;#edition_1&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_184&quot;</span><span class="ot"> n=</span><span class="st">&quot;184&quot;</span>/&gt;</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> prev=</span><span class="st">&quot;oclc_1034545644-i_13.TEIP5.xml#div_1.d2e2766&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;article&quot;</span><span class="ot"> type=</span><span class="st">&quot;item&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_1.d2e634&quot;</span>&gt;</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">head</span>&gt;صحافة &lt;<span class="kw">placeName</span>&gt;سورية&lt;/<span class="kw">placeName</span>&gt; و&lt;<span class="kw">placeName</span>&gt;لبنان&lt;/<span class="kw">placeName</span>&gt;&lt;/<span class="kw">head</span>&gt;</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_3.d2e1200&quot;</span>&gt;</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">head</span>&gt; ٣ - المجلات&lt;/<span class="kw">head</span>&gt;</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فلم يكن منها قبل إعلان الدستور إلا &lt;<span class="kw">bibl</span>&gt;مجلة &lt;<span class="kw">title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span>&gt;المشرق&lt;/<span class="kw">title</span>&gt;&lt;/<span class="kw">bibl</span>&gt;  و&lt;<span class="kw">bibl</span>&gt;مجلة &lt;<span class="kw">title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span>&gt;المقتبس&lt;/<span class="kw">title</span>&gt;&lt;/<span class="kw">bibl</span>&gt; .&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">div</span>&gt;</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">div</span>&gt;</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">body</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>why TEI?
+        <ul>
+        <li>I knew it already</li>
+        <li>widely adopted standard in the digital editing world</li>
+        <li>necessary for grant-funding in the Global North</li>
+        </ul></li>
+        <li>why not TEI
+        <ul>
+        <li>steep learning curve</li>
+        <li>not particularly well-suited to Arabic texts?</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="edit-the-data" class="slide level2">
+        <h2>3. edit the data</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>make use of version control
+        <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for
+        <strong>transparent authorship attribution</strong> and
+        <strong>damage control</strong>:
+        <ul>
+        <li><a href="https://git-scm.com/">.git</a> is open source and
+        available for all OSs</li>
+        </ul></li>
+        <li>plain-text (including XML) editors
+        <ul>
+        <li>should be <strong>syntax aware</strong></li>
+        <li><strong>RTL</strong>: support in text editors is a mixed
+        bag</li>
+        </ul></li>
+        </ul>
+        <figure id="fig:zuhur-vscode">
+        <img data-src="../assets/vscode_zuhur.png"
+        alt="The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
+        <figcaption>Figure 3: The TEI XML file for <em>al-Zuhūr</em>
+        2(4) in <a href="https://code.visualstudio.com/">Visual Studio
+        Code</a></figcaption>
+        </figure>
+        <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png) -->
+        <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../assets/textmate_zuhur.png) -->
+        </div><div class="column">
+        <ul>
+        <li>XML editors proper
+        <ul>
+        <li>should be <strong>schema aware</strong> to validate the
+        encoding</li>
+        <li><strong>RTL</strong>:
+        <ol type="1">
+        <li><a href="https://www.oxygenxml.com/">oXygen XML editor</a>
+        (99 USD) allows to separate content and
+        tags<!-- : [TextGrid Lab](https://textgrid.de/index) --></li>
+        <li><a href="https://code.visualstudio.com/">Visual Studio
+        Code</a> (free) with the right extensions is a viable
+        second</li>
+        </ol></li>
+        </ul></li>
+        </ul>
+        <figure id="fig:zuhur-oxygen">
+        <img data-src="../assets/oxygen_zuhur-author.png"
+        alt="The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption>Figure 4: The TEI XML file for <em>al-Zuhūr</em>
+        2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author
+        mode. Styling relies on CSS.</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>editing tools depend on modelling decisions and file
+        formats</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="save-and-share-the-data" class="slide level2">
+        <h2>4. save and share the data</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>facsimiles: <a href="https://archive.org">Internet
+        Archive</a> (supports <a href="https://iiif.io/">IIIF</a>)</li>
+        <li>working copy of everything else: distributed version control
+        platforms (<a href="https://github.com/">GitHub</a>, <a
+        href="https://about.gitlab.com/">GitLab</a>)</li>
+        <li>longterm preservation: publicly-funded, open repository (<a
+        href="https://zenodo.org/">Zenodo</a>)
+        <ul>
+        <li>make sure to add <a href="https://orcid.org">ORCID</a>s for
+        all contributors</li>
+        </ul></li>
+        <li>authority data (people, titles, etc.): <a
+        href="https://wikidata.org/">Wikidata</a></li>
+        <li>provide suitable open licenses for re-use: <a
+        href="https://creativecommons.org/">Creative Commons</a>, <a
+        href="">MIT</a>, Public Domain (CC0)</li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:zuhur-zenodo">
+        <img data-src="../assets/zenodo_zuhur.png"
+        alt="Archived release of al-Zuhūr on Zenono" />
+        <figcaption>Figure 5: Archived release of <em>al-Zuhūr</em> on
+        <a
+        href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="present-the-data" class="slide level2">
+        <h2>5. present the data</h2>
+        <!-- ### presentation layers and access for human readers -->
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Hosting: <a href="https://pages.github.com/">GitHub
+        Pages</a> can expose your data repository to the web</li>
+        <li>Generate static webviews
+        <ul>
+        <li>removes need for backend and minimises traffic</li>
+        <li>easy to archive</li>
+        <li>on the fly: XSLT1 (<a
+        href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate</a>)
+        or JS (<a
+        href="https://github.com/TEIC/CETEIcean">CETEICEan</a>) to
+        render XML files in the client’s web browser</li>
+        <li>pre-computed: <a
+        href="https://github.com/features/actions">GitHub actions</a>
+        give access to virtual machines</li>
+        </ul></li>
+        <li>bibliographic database: <a
+        href="https://www.zotero.org/groups/openarabicpe/items/">Zotero
+        group</a>
+        <ul>
+        <li>mitigates against the absent backend</li>
+        <li><strong>browse</strong> and <strong>search</strong>
+        independent of file structure</li>
+        </ul></li>
+        <li>full-text search across the entire corpus: <a
+        href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s
+        programmable search engine</a></li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:zuhur-zotero">
+        <img
+        data-src="../assets/zotero-group_openarabicpe-mobile-details_small.png"
+        alt="Zotero group “OpenArabicPE”: details in mobile view" />
+        <figcaption>Figure 6: Zotero group “<a
+        href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
+        details in mobile view</figcaption>
+        </figure>
+        <figure id="fig:zuhur-webview">
+        <img data-src="../assets/boilerplate_zuhur-v_2-i_4_small.png"
+        alt="Webview of al-Zuhūr 2(4)" />
+        <figcaption>Figure 7: <a
+        href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
+        of <em>al-Zuhūr</em> 2(4)</a></figcaption>
+        </figure>
+        <!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
+        </div>
+        </div>
+        </section></section>
+        <section>
+        <section id="conclusion" class="title-slide slide level1">
+        <h1>Conclusion</h1>
+
+        </section>
+        <section id="all-dependencies-will-eventually-break-need-repair"
+        class="slide level2">
+        <h2>All dependencies will eventually break / need repair</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Reliance on external data providers: link rot
+        <ul>
+        <li>links to facsimiles broke twice in four years</li>
+        </ul></li>
+        <li>Reliance on free tools and services: link rot
+        <ul>
+        <li>URLs to our editions had to be changed once</li>
+        </ul></li>
+        <li>XSLT1 in web browsers: will fall victim to JSON and security
+        features
+        <ul>
+        <li>over the last 5 years support has markedly decreased
+        <!-- - Full-text search across issues and periodicals without a backend
+          + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) --></li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <figure>
+        <img data-src="../assets/OpenArabicPE_components-layer-1-4.png"
+        alt="The main components of OpenArabicPE" />
+        <figcaption aria-hidden="true">The main components of
+        OpenArabicPE</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <p>Bootstrapping relies on the work of others</p>
+        </aside>
+        </section>
+        <section id="thank-you" class="slide level2">
+        <h2>Thank you!</h2>
+        <ul>
+        <li>Contributors to [OpenArabicPE][openarabicpe_website]: Jasper
+        Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans
+        Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver
+        Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi
+        Tanna-Händel, and Layla Youssef</li>
+        <li>Contributors to [Project Jarāʾid][jaraid_website]: Hala
+        Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid, Stacy
+        Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa, Nicole
+        Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan,
+        Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek,
+        Philip Sadgrove, Ola Seif, and Rogier Visser</li>
+        <li>Links:
+        <ul>
+        <li>Slides: <a
+        href="https://tillgrallert.github.io/slides/dh/2023-regensburg/index.html">https://tinyurl.com/dighis23-grallert</a></li>
+        <li>Project blog: <a
+        href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
+        <li>Papers: <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html"
+        class="uri">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>,
+        <a href="https://doi.org/10/gkhrjr"
+        class="uri">https://doi.org/10/gkhrjr</a></li>
+        <li>Mastodon: <a
+        href="https://digitalcourage.social/@tillgrallert">@tillgrallert@digitalcourage.social</a></li>
+        <li>Email: <script
+        type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript>,
+        <script
+        type="text/javascript">
+<!--
+h='&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+        </ul></li>
+        <li>Licence: slides and images are licenced as <a
+        href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+        4.0</a></li>
+        </ul>
+        </section>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">References</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        role="list">
+        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
+        Gil, Alex, and Élika Ortega. 2016. <span>“Global Outlooks in
+        Digital Humanities: Multilingual Practices and Minimal
+        Computing.”</span> In <em>Doing Digital Humanities: Practice,
+        Training, Research</em>, edited by Constance Crompton, Richard J
+        Lane, and Ray Siemens, 22–34. Abingdon: Routledge.
+        </div>
+        <div id="ref-Grallert2021GG" class="csl-entry" role="listitem">
+        Grallert, Till. 2021. <span>“Catch Me If You Can! Approaching
+        the Arabic Press of the Late Ottoman Eastern Mediterranean
+        Through Digital History.”</span> Edited by Simone Lässig.
+        <em>Geschichte Und Gesellschaft</em> 47 (1, Digital History):
+        58–89. <a
+        href="https://doi.org/10.13109/gege.2021.47.1.58">https://doi.org/10.13109/gege.2021.47.1.58</a>.
+        </div>
+        <div id="ref-Grallert2022DHQ" class="csl-entry" role="listitem">
+        ———. 2022. <span>“Open Arabic Periodical Editions: A Framework
+        for Bootstrapped Scholarly Editions Outside the Global
+        North.”</span> Edited by Roopika Risam and Alex Gil. <em>Digital
+        Humanities Quarterly</em> 16 (2, "Minimal Computing"). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>.
+        </div>
+        <div id="ref-RisamGil2022Introduction" class="csl-entry"
+        role="listitem">
+        Risam, Roopika, and Alex Gil. 2022. <span>“Introduction: The
+        Questions of Minimal Computing.”</span> Edited by Alex Gil and
+        Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
+        "Minimal Computing"). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
+        </div>
+        </div>
+        </section></section>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+    <!-- reveal.js plugins -->
+    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    
+    <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        // center: true,
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+        
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+                                              
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+                width: 1200,
+                        height: 1000,
+        
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+        
+        // Bounds for smallest/largest possible scale to apply to content
+        
+        
+        
+        // reveal.js plugins
+        plugins: [
+                RevealNotes,
+        RevealSearch,
+        RevealZoom
+        ]
+      });
+    </script>
+    <!-- support for mermaid.js -->
+    <!-- <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script> -->
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+        <footer>
+        <div class="c_frame">
+                    <span class="c_left">2023-06-29</span>
+                            <span class="c_left">|</span>
+            <span class="c_left">Till Grallert</span>
+                        <span class="c_center">
+          <a href="https://openarabicpe.github.io/slides/2023-openiti/">https://openarabicpe.github.io/slides/2023-openiti/</a>
+          <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
+        </span>
+                <!-- this should probably moved to the title slide only -->
+        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+        </div>
+    </footer>
+    <script>
+            function setCurrentDate() {
+                let date = new Date().toLocaleDateString();
+                let collection = document.getElementsByClassName("current-date");
+                for (element of collection) {
+                    if (element.nodeName == "META" && !element.hasAttribute("content")) {
+                        element.setAttribute("content", date);
+                    } else {
+                        element.innerText = date;
+                    }
+                }
+            }
+        </script>
+  </body>
+  </html>
