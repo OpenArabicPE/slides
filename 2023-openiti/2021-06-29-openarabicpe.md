@@ -56,13 +56,18 @@ nocite: |
 
 
 1. Neo-colonial invisibility of cultural artefacts from the Global South in the digital domain
-    - knowledge gap, collection and cataloguing bias -> digitisation bias
 2. Periodicals are an important local and quotidian source to tell and recover local stories
 3. We as scholars have a duty of care and nobody else was doing it
-    - funding gap
+
+::: notes
+
+- will talk about 1 here
+- ad 3: this also manifests itself in a substantial funding gap
+
+:::
 
 ## Digitisation bias
-### Collection biases perpetuated
+### perpetuating biases
 
 ::: columns
 :::: column
@@ -92,7 +97,10 @@ Table: Periodical holdings and digitization {#tbl:jaraid-holdings}
 
 ::: notes
 
-- collection bias is more of a knowledge bias
+- biases
+    + knowledge
+    + collection
+    - digitisation
 - While the digitization quote of roughly 50% of titles in collections is surprisingly high, it must be kept in mind that we cannot resolve information on the extent of digitization. Even if only a single issue of hundreds published was digitized, the periodical title will be included in this count.
 - 66 periodicals or 28,33% have been digitized by multiple institutions and 21 of this subset by three and more.
 
