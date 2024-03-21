@@ -8,7 +8,7 @@ tags:
 - OpenArabicPE
 ---
 
-##  Catch me if you can! Attempts to track networks of authors and publication reviews in the wasteland of 'digitised' Arabic periodicals from the Ottoman Empire
+## Catch me if you can! Attempts to track networks of authors and publication reviews in the wasteland of 'digitised' Arabic periodicals from the Ottoman Empire
 
 Till Grallert, Orient-Institut Beirut (OIB)
 
@@ -366,7 +366,7 @@ Digital imagery, e.g. [Endangered Archives Programme (EAP)](http://eap.bl.uk/dat
 - Links:
     + Slides: [https://OpenArabicPE.github.io/slides/2018-turkologentag/](https://OpenArabicPE.github.io/slides/2018-turkologentag/index.html)
     + Paper (draft): <https://doi.org/10.5281/zenodo.1413610>
-    + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE/digital-haqaiq](https://www.github.com/OpenArabicPE/digital-haqaiq)
+    + Project URLs: [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE), [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas), [https://www.github.com/openarabicpe/journal_al-haqaiq](https://www.github.com/openarabicpe/journal_al-haqaiq)
     + Project blog: [https://openarabicpe.github.io](https://openarabicpe.github.io)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)
     + Email: <grallert@orient-institut.org> <till.grallert@fu-berlin.de>

@@ -12,7 +12,7 @@ cover-image: images/digital-muqtabas-screenshot.png
 
 # The journal *al-Muqtabas* between Shamela.ws, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals—with almost no funds.
 
-Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+Project URL: [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)
 
 Slides: [https://openarabicpe.github.io/slides/2015-dh-leipzig/](https://openarabicpe.github.io/slides/2015-dh-leipzig/)
 

@@ -76,10 +76,10 @@ Digital editions based on shadow libraries and digital facsimiles (TEI XML), aut
 
 | title                                                                               | volumes    | issues    | articles          | words                        |
 | ----------------------------------------------------------------------------------- | ---------: | --------: | ----------:       | ---------:                   |
-| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/digital-haqaiq)                    | 3          | 35        | 389               | 298090                       |
+| [al-Ḥaqāʾiq](https://www.github.com/openarabicpe/journal_al-haqaiq)                    | 3          | 35        | 389               | 298090                       |
 | [al-Ḥasnāʾ](https://www.github.com/openarabicpe/journal_al-hasna)                   | 1          | 12        | 201               | NA                           |
 | [al-Manār](https://www.github.com/openarabicpe/journal_al-manar)                    | 20         | 387       |                   |                              |
-| [al-Muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)                 | 9          | 96        | 2964              | 1981081                      |
+| [al-Muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)                 | 9          | 96        | 2964              | 1981081                      |
 | [al-Ustādh](https://www.github.com/openarabicpe/journal_al-ustadh)                  | 1          | 42        | 435               | 221447                       |
 | [al-Zuhūr](https://www.github.com/openarabicpe/journal_al-zuhur)                    | 4          | 39        | 436               | 292333                       |
 | [Lughat al-ʿArab](https://www.github.com/openarabicpe/journal_lughat-al-arab)       | 3          | 34        | 939               | 373832                       |

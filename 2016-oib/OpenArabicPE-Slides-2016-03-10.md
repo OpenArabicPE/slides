@@ -17,7 +17,7 @@ Bassel Khartabil / باسل خرطبيل
 
 ## Hacking academia? Open scholarly digital editions of the Damascene journals *al-Muqtabas* (1906–19) and *al-Ḥaqāʾiq* (1910–12) between Shamela.ws, HathiTrust, and GitHub
 
-Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+Project URL: [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)
 
 Slides: [https://tinyurl.com/oib-2016-03-10](https://tillgrallert.github.io/Slides/OIBColloquium2016)
 
@@ -212,7 +212,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## 3.2 Core feature: how to contribute
 
 - go to [GitHub](https://www.github.com) and register a free account
-- *fork* the the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://tinyurl.com/muqtabas](https://tinyurl.com/muqtabas)
+- *fork* the the [edition's repository](https://www.github.com/openarabicpe/journal_al-muqtabas): [https://tinyurl.com/muqtabas](https://tinyurl.com/muqtabas)
 - edit the text
 - send us a *pull request*
 - changes will be reviewed and merged

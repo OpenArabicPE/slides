@@ -149,7 +149,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## 3.2 Core feature: how to contribute
 
 - Go to [GitHub](https://www.github.com) and register a free account
-- **Fork** the edition's repository: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+- **Fork** the edition's repository: [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)
 - Edit the text (XML)
 - Send us a **pull request**
 - We will review and merge your changes
@@ -186,7 +186,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Simple technologies and relatively little coding needed: Initial set-up took less than four weeks of after-hour labour
 - Hosting, long-term preservation and DOIs are provided free of cost
 - Code can be re-purposed:
-    + the digital edition of [ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus)](https://www.github.com/OpenArabicPE/digital-haqaiq) was set up in a single day.
+    + the digital edition of [ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus)](https://www.github.com/openarabicpe/journal_al-haqaiq) was set up in a single day.
 - Core (but simple) features **cannot** be automated:
     + thousands of page breaks must be manually tagged
 
@@ -232,7 +232,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## Thank you!
 
 - Links:
-    + Project URLs: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
+    + Project URLs: [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
     + Project blog: [https://tillgrallert.github.io/digital-muqtabas](https://tillgrallert.github.io/digital-muqtabas)
     + Slides: [https://OpenArabicPE.github.io/slides/2017-dhad/](https://OpenArabicPE.github.io/slides/2017-dhad/index.html)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)

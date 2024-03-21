@@ -16,7 +16,7 @@ Bassel Khartabil / باسل خرطبيل
 
 # The journal *al-Muqtabas* between *Shamela.ws*, HathiTrust, and GitHub: producing open, collaborative, and fully-referencable digital editions of early Arabic periodicals---with almost no funds
 
-Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+Project URL: [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)
 
 Slides: [https://tillgrallert.github.io/Slides/AUC2016](https://tillgrallert.github.io/Slides/AUC2016)
 
@@ -236,7 +236,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 # 3.2 Core feature: how to contribute
 
 - go to [GitHub](https://www.github.com) and register a free account
-- *fork* the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+- *fork* the [edition's repository](https://www.github.com/openarabicpe/journal_al-muqtabas): [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)
 - edit the text
 - send us a *pull request*
 - changes will be reviewed and merged
@@ -287,7 +287,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 - Hosting with GitHub is free
 - Core (but simple) features cannot be automated: all c.7000 page breaks must be manually tagged
 - Code can be re-purposed:
-    + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
+    + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/openarabicpe/journal_al-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
     <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
@@ -305,7 +305,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 
 # Thank you !
 
-Project URL: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+Project URL: [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)
 
 Slides: [https://tillgrallert.github.io/Slides/AUC2016](https://tillgrallert.github.io/Slides/AUC2016)
 

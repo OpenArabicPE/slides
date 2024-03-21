@@ -265,7 +265,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## 3.2 Core feature: how to contribute
 
 - Go to [GitHub](https://www.github.com) and register a free account
-- **Fork** the [edition's repository](https://www.github.com/tillgrallert/digital-muqtabas): [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas)
+- **Fork** the [edition's repository](https://www.github.com/openarabicpe/journal_al-muqtabas): [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas)
 - Edit the text (XML)
 - Send us a **pull request**
 - We will review and merge your changes
@@ -367,7 +367,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
     + all c.7000 page breaks must be manually tagged
     <!-- + it took a part-time intern 4 weeks to tag one volume of 800 pages -->
 - Code can be re-purposed:
-    + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/tillgrallert/digital-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
+    + We set-up the sister project [Digital Ḥaqāʾiq](https://www.github.com/openarabicpe/journal_al-haqaiq) as a digital edition of ʿAbd al-Qādir al-Iskandarānī's monthly journal *al-Ḥaqāʾiq* (1910–12, Damascus) in a single day.
     <!-- - Muḥammad Rashīd Riḍā's journal *al-Manār*
         + [full text from shamela](http://shamela.ws/index.php/book/6947): 8605 views
         + [imagery from HathiTrust](http://catalog.hathitrust.org/Record/008882663),[imagery / PDFs from the Internet Archive](https://archive.org/details/almanaralmanar), which are linked from [*al-Maktaba al-Waqfiyya*](http://waqfeya.com/book.php?bid=7374) -->
@@ -388,7 +388,7 @@ Copyright depends on the jurisdiction of creators, distributors, etc.
 ## Thank you!
 
 - Links:
-    + Project URLs: [https://www.github.com/tillgrallert/digital-muqtabas](https://www.github.com/tillgrallert/digital-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
+    + Project URLs: [https://www.github.com/openarabicpe/journal_al-muqtabas](https://www.github.com/openarabicpe/journal_al-muqtabas), [https://www.github.com/OpenArabicPE](https://www.github.com/OpenArabicPE)
     + Project blog: [https://tillgrallert.github.io/digital-muqtabas](https://tillgrallert.github.io/digital-muqtabas)
     + Slides: [https://OpenArabicPE.github.io/slides/2017-dig-eg-gaz](https://OpenArabicPE.github.io/slides/2017-dig-eg-gaz/index.html)
     + Twitter: @[tillgrallert](https://twitter.com/tillgrallert)

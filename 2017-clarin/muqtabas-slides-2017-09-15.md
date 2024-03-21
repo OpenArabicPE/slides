@@ -53,7 +53,7 @@ duration: 6
     + no or very bad text layers
 3. Metadata search within and across periodicals: **inexistent**
 
-# [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): unite transcription and facsimiles
+# [Digital *Muqtabas* (2015-)](https://www.github.com/openarabicpe/journal_al-muqtabas): unite transcription and facsimiles
 
 1. aims
     + **validate** the transcription against the facsimiles
@@ -64,7 +64,7 @@ duration: 6
     - re-purpose **available** and **established** tools, technologies, and material
     - preference for **open** and **simple** formats and tools
 
-# [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): deliverables
+# [Digital *Muqtabas* (2015-)](https://www.github.com/openarabicpe/journal_al-muqtabas): deliverables
 
 - open scholarly digital editions of *[Majallat] al-Muqtabas* <!-- and *al-Ḥaqāʾiq* --> providing
     + TEI XML files (transcription and links to facsimiles)
@@ -77,7 +77,7 @@ duration: 6
     + re-use through open licences:[CC0](https://creativecommons.org/publicdomain/zero/1.0/) (text, metadata), [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (edition), and [MIT licence](https://en.wikipedia.org/wiki/MIT_License) (tools)
     + long-term preservation and DOIs ([10.5281/zenodo.597319](https://doi.org/10.5281/zenodo.597319))
 
-# [Digital *Muqtabas* (2015-)](https://www.github.com/tillgrallert/digital-muqtabas): current state
+# [Digital *Muqtabas* (2015-)](https://www.github.com/openarabicpe/journal_al-muqtabas): current state
 
 - Project evolved into "Open Arabic Periodical Editions" ([OpenArabicPE](https://openarabicpe.github.io))
 - Editorial decisions: modelling / TEI schema design
