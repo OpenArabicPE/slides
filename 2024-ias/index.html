@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+          <meta name="author" content="Till Grallert">
+              <meta name="dcterms.date" content="2024-03-22">
+                  <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+        <title>Open Arabic Periodical Editions (OpenArabicPE)</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <style>
+      .reveal .sourceCode {  /* see #7635 */
+        overflow: visible;
+      }
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+          color: #aaaaaa;
+        }
+      pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+      code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+      code span.at { color: #7d9029; } /* Attribute */
+      code span.bn { color: #40a070; } /* BaseN */
+      code span.bu { color: #008000; } /* BuiltIn */
+      code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+      code span.ch { color: #4070a0; } /* Char */
+      code span.cn { color: #880000; } /* Constant */
+      code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+      code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+      code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+      code span.dt { color: #902000; } /* DataType */
+      code span.dv { color: #40a070; } /* DecVal */
+      code span.er { color: #ff0000; font-weight: bold; } /* Error */
+      code span.ex { } /* Extension */
+      code span.fl { color: #40a070; } /* Float */
+      code span.fu { color: #06287e; } /* Function */
+      code span.im { color: #008000; font-weight: bold; } /* Import */
+      code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+      code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+      code span.op { color: #666666; } /* Operator */
+      code span.ot { color: #007020; } /* Other */
+      code span.pp { color: #bc7a00; } /* Preprocessor */
+      code span.sc { color: #4070a0; } /* SpecialChar */
+      code span.ss { color: #bb6688; } /* SpecialString */
+      code span.st { color: #4070a0; } /* String */
+      code span.va { color: #19177c; } /* Variable */
+      code span.vs { color: #4070a0; } /* VerbatimString */
+      code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+                    <style type="text/css">
+                    /* slidy.css
+
+                       Copyright (c) 2005-2010 W3C (MIT, ERCIM, Keio), All Rights Reserved.
+                       W3C liability, trademark, document use and software licensing
+                       rules apply, see:
+
+                       http://www.w3.org/Consortium/Legal/copyright-documents
+                       http://www.w3.org/Consortium/Legal/copyright-software
+                    */
+
+                    @font-face {
+                        font-family: AmiriWeb;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
+                    }
+
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Regular.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Italic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: regular;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-Bold.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: PTSans;
+                        font-style: italic;
+                        font-weight: bold;
+                        src: url('https://furesh.github.io/slides/fonts/ptsans/PT_Sans-Web-BoldItalic.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: HeptaSlab;
+                        src: url('https://furesh.github.io/slides/fonts/heptaslab/HeptaSlab-VF.ttf') format('truetype');
+                    }
+                    @font-face {
+                        font-family: linowrite;
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('https://furesh.github.io/slides/fonts/linowrite/linowrite.ttf') format('truetype');
+                    }
+
+
+                    /* render Arabic as rtl */
+                    [lang = "ar"],
+                    [lang = "ota"],
+                    [lang = "fa"],
+                    [lang = "he"],
+                    [lang *= "-Arab-AR"] {
+                        direction: rtl;
+                        text-align: right !important;
+                        font-family: AmiriWeb, Helvetica, Arial, sans-serif;
+                        /*keep in mind that relative sizes (%, em) 
+                        accumulate for nested elements and must thus be avoided. 
+                        At the moment almost everything is tailored to 18px */
+                        /*    font-size: 18px;*/
+                    }
+                    /* display latin scripts in a smaller font */
+                    [lang = "en"],
+                    [lang = "fr"],
+                    [lang = "de"],
+                    [lang = "it"],
+                    [lang *= "ar-Latn-"],
+                    [lang *= "ota-Latn-"] {
+                        direction: ltr;
+                        text-align: left !important;
+                        /*    font-size: 14px;*/
+                    }
+                    /* counter default settings in reveal.css */
+                    .reveal .slides {
+                        text-align: left;
+                    }
+
+                    html,
+                    body,
+                    .reveal-viewport {
+                        margin: 0 0 0 0;
+                        padding: 0 0 0 0;
+                        width: 100%;
+                        height: 100%;
+                        /*color: white;*/
+                        color: black !important;
+                        /*color: #4d4d4d;*/
+                        /*background-color: black;*/
+                        background-color: white !important;
+                        overflow: hidden;
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                      font-size: 12px;*/
+                      line-height: 1.2; 
+                      word-wrap: break-word;
+                    }
+                    body,
+                    .reveal-viewport {
+                        position: static;
+                    }
+                    /******************
+                      header and footer to be displayed on all slides
+                    *******************/
+
+                    header, 
+                    footer, 
+                    div.c_header,
+                    div.c_footer  {
+                      z-index: 30;
+                      display: block;
+                      position: fixed;
+                      height: 3.8em;
+                      width: 100%;
+                    }
+                    footer.reveal {
+                        height: 3em;
+                    }
+                    header,
+                    div.c_header {
+                        top: 0;
+                    }
+                    footer,
+                    footer * {
+                        bottom: 0;
+                        background-color: #8a0f14;
+                        color: white !important;
+                    }
+
+                    footer {
+                        font-size: 0.7em;
+                    }
+
+                    footer span {
+                        /*text-transform:  capitalize; */
+                        /*this doesn't seem to have an effect*/
+                        display: inline-block;
+                        padding-left: 0.5em;
+                        padding-right: 0.5em;
+                    }
+                    div.c_footer {
+                        top: auto;
+                        bottom: 1.2em;
+                        height: 1.2em;
+                        font-size: 60%;
+                    }
+                    div.c_frame {
+                    /*padding: 1em;*/
+                    margin-top: 1em;
+                    margin-left: 3em;
+                    margin-right: 3em;
+                    }
+
+                    /* basic styling for all slides */
+                    div.slide,
+                    section.slide {
+                        z-index: 20;
+                        display: block;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-right: auto;
+                        margin-left: auto;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        border-width: 0;
+                        clear: both;
+                        left: 0;
+                        right: 0;
+                        /*line-height: 120%;*/
+                        background-color: transparent;
+                        /* width should be in em dashes*/
+                        max-width: 50em;
+                    }
+                    div.slide {
+                        top: 10% ;
+                    }
+                    /* revealjs generates inline CSS that needs to be overridden  */
+                    section.slide {
+                        top: 0 !important;
+                    }
+                    /* while on screen slides should be black on white, it should be the opposite on projectors */
+                    @media projector {
+                        body {
+                            background-color: black;
+                            color: white;
+                        }
+                        pre {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                    /******************
+                    set fonts and sizes
+                    *******************/
+                    body,
+                    .reveal-viewport {
+                        font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+                    /*font-family: "American Typewriter";*/
+                    /*font-family: "Gentium Plus";*/
+                    }
+                    body {
+                        font-weight: 300 !important;
+                        /*font-size is over-ridden by automatically generated inline CSS on body*/
+                        font-size: 24px !important;
+                    }
+                    .reveal h1,
+                    .reveal h2,
+                    .reveal h3,
+                    .reveal h4,
+                    .reveal h5,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    th {
+                        /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
+                    /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
+                        font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+                        font-weight: 400;
+                        color: #113868;
+                    }
+                    p,
+                    ol,
+                    ul,
+                    span {
+                    }
+                    /**
+                    highlights: <em> is for transcribed terms, <strong> for emphasis;
+                    **/
+                    em {
+                        /*font-family: "Gentium Plus";
+                      /*font-family: Georgia;*/
+                      font-style: italic;
+                      font-weight: 200;
+                    }
+                    strong {
+                        font-style: italic;
+                        font-weight: 200;
+                        border-bottom: 2px dotted #F96827;
+                    }
+                    table {
+                        font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
+                    }
+                    /******************
+                    set colours
+                    *******************/
+
+                    /***************
+                    standard classes, navigation
+                    ***************/
+                    div.toolbar {
+                        position: fixed;
+                        z-index: 40;
+                        top: auto;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 1.2em;
+                        text-align: right;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                        font-size: 60%;
+                        color: red;
+                        background-color: rgb(240, 240, 240);
+                        border-top: solid 1px rgb(180, 180, 180);
+                    }
+                    div.toolbar span.copyright {
+                        /*display: inline-block;
+                      text-align: center;*/
+                      color: black;
+                      margin-left: 0.5em;
+                    }
+                    /* revealjs navigation */
+                    aside.controls {
+                        bottom: 7em !important;
+                    }
+                    aside.controls * {
+                        z-index: 40;
+                    }
+                    div.initial_prompt {
+                        position: absolute;
+                        z-index: 1000;
+                        bottom: 1.2em;
+                        width: 100%;
+                        background-color: rgb(200, 200, 200);
+                        opacity: 0.35;
+                        background-color: rgba(200, 200, 200, 0.35);
+                        cursor: pointer;
+                    }
+                    div.initial_prompt p.help {
+                        text-align: center;
+                    }
+                    div.initial_prompt p.close {
+                        text-align: right;
+                        font-style: italic;
+                    }
+                    div.slidy_toc {
+                        position: absolute;
+                        z-index: 300;
+                        width: 60%;
+                        max-width: 30em;
+                        height: 30em;
+                        overflow: auto;
+                        top: auto;
+                        right: auto;
+                        left: 4em;
+                        bottom: 4em;
+                        padding: 1em;
+                        background: rgb(240, 240, 240);
+                        border-style: solid;
+                        border-width: 2px;
+                        font-size: 60%;
+                    }
+                    div.slidy_toc .toc-heading {
+                        text-align: center;
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 1em;
+                        border-bottom-style: solid;
+                        border-bottom-color: rgb(180, 180, 180);
+                        border-bottom-width: 1px;
+                    }
+                    /* basic styling for all slides */
+                    div.background {
+                        display: none;
+                    }
+                    div.handout {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                    div.slide.titlepage {
+                        text-align: center;
+                    }
+                    div.slide.titlepage h1 {
+                        padding-top: 10%;
+                        margin-right: 0;
+                    }
+                    /* h1 needs to override the standard CSS */
+                    div.slide h1 {
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-top: 4pt;
+                        padding-bottom: 4pt;
+                        margin-top: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        margin-bottom: 0.5em;
+                        display: block;
+                        /*font-size: 160%;*/
+                        line-height: 1.2em;
+                        background: transparent;
+                    }
+                    /*****************
+                    heads
+                    ******************/
+                    /* title and dividing slides */
+                    /* put h1 in the center of the slide */
+                    div.titleslide h1,
+                    #title-slide h1 {
+                        margin-top: 2em;
+                    /*margin-bottom: auto;*/
+                    font-size: 2em;
+                    }
+
+                    h1,
+                    h2,
+                    h3,
+                    h4 {
+                        text-align: center;
+                    }
+                    div.reveal h1, h1 {
+                        padding-bottom: 0.3em;
+                        font-size: 1.75em;
+                        line-height: 1.2;
+                        border-bottom: 1px solid #eee;
+                        margin-top: 4em;
+                    }
+                    div.reveal h2, h2 {
+                        padding-bottom: 0.3em;
+                        font-size: 1.5em;
+                        line-height: 1.225;
+                        border-bottom: 1px solid #eee;
+                    }
+                    div.reveal h3, h3 {
+                        font-size: 1.25em;
+                        line-height: 1.43;
+                    }
+                    div.reveal h4, h4 {
+                        font-size: 1em;
+                    }
+                    /******************
+                    levels of slides
+                    ******************/
+                    .title-slide,
+                    .level1 {
+                        padding-top: 100px;
+                        padding-bottom: 100px;
+                    }
+                    /******************
+                    links
+                    ******************/
+                    a {
+                        text-decoration: none
+                    }
+                    a img {
+                        border-width: 0;
+                        border-style: none
+                    }
+                    /*a:visited { color: navy }
+                    a:link { color: navy }
+                    a:hover { color: red; text-decoration: underline }
+                    a:active { color: red; text-decoration: underline }*/
+                    a,
+                    a:link {
+                        color: #F46A00 /*!important*/;
+                        /*text-decoration: none; */
+                    }
+                    a:visited {
+                        color: #a84900;
+                        /*text-decoration: none; */
+                    }
+                    a:hover,
+                    a:active {
+                        color: #8DB300;
+                        /*text-decoration: none; */
+                    }
+                    .toolbar a:link {
+                        color: blue
+                    }
+                    .toolbar a:visited {
+                        color: blue
+                    }
+                    .toolbar a:active {
+                        color: red
+                    }
+                    .toolbar a:hover {
+                        color: red
+                    }
+                    @media screen and (max-device-width : 1024px) {
+                        div.slide {
+                            font-size: 100%;
+                        }
+                    }
+                    @media screen and (max-device-width : 800px) {
+                        div.slide {
+                            font-size: 200%;
+                        }
+                        div.slidy_toc {
+                            top: 1em;
+                            left: 1em;
+                            right: auto;
+                            width: 80%;
+                            font-size: 180%;
+                        }
+                    }
+                    div.toc-heading {
+                        width: 100%;
+                        display: inline-block;
+                        height: auto;
+                        border-bottom: solid 1px rgb(180, 180, 180);
+                        margin-bottom: 1em;
+                        text-align: center;
+                    }
+                    /****************
+                    title slide
+                    *****************/
+
+                    /*span.author ~ span.author::before {
+                      content: ', ';
+                    }*/
+
+                    /****************
+                    images and figures
+                    *****************/
+                    div.slide img {
+                        /* image-rendering: optimize-quality; */
+                        background-color: white; /*rgba(0,0,0,0.04);*/
+                        border-radius: 5px;
+                        display: block;
+                        max-height: 600px;
+                        max-width: 95%;
+                        /* center images */
+                        margin-left: auto;
+                        margin-right: auto;
+                        /*box-shadow: 2px 2px 5px #000;*/
+                        /*border: gray solid 1px;*/
+                    }
+                    div.figure {
+                        width: 100%;
+                        padding: 0;
+                        /*height: inherit;*/
+                    }
+                    figure {
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        /*margin-inline-start: 40px;
+                        margin-inline-end: 40px;*/
+                        margin-inline-start: 0;
+                        margin-inline-end: 0;
+                    }
+                    div.figure p.caption,
+                    figcaption {
+                        position: relative;
+                        float: right;
+                        text-align: right;
+                        margin-top: 0.2em;
+                        margin-bottom: 0.5em;
+                        /*top:2em;*/
+                        /*max-width:15%;
+                        min-width: 180px;*/
+                        font-size: 0.6em;
+                        font-weight: lighter;
+                    }
+                    div.figure img {
+                        float: right;
+                        /*max-height: 80%;*/
+                        /*max-height: 600px;*/
+                        /*max-height: inherit;*/
+                        /*max-width:80%;*/
+                        /*max-width: 95%;*/
+                    }
+                    header img,
+                    footer img {
+                        display: block;
+                    }
+                    /* inline images */
+                    /*p img,
+                    li img {
+                        display: inline-block;
+                        height: 1em;
+                    }*/
+                    img.c_logo {
+                        margin-left: 3em;
+                        margin-right: 3em;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    /*    max-width: 6em !important;*/
+                        max-height: 4em !important;
+                    }
+                    /*img {
+                      max-height: 700px;
+                      max-width: 100%;
+                    }*/
+                    /* external content, including local html pages */
+                    iframe {
+                        display: block;
+                        width: 90%;
+                        /* the height setting seems to squeeze iframes */
+                        height: 600px;
+                        /* center the iframe */
+                        margin-left: auto;
+                        margin-right: auto;
+                        scrolling: auto;
+                        scroll-behavior: auto;
+                        /*border:none;*/
+                    }
+                    /*.size-80 {
+                      display: block;
+                      width: 80%;
+                      height: 80%;
+                    }*/
+                    /*****************
+                    columns
+                    ******************/
+                    div.columns,
+                    div.columns-2,
+                    div.columns-3 {
+                        /* newer? versions of reveal use display: flex */
+                        display: block;
+                        /*flex: none;*/
+                    }
+                    div.columns-3 {
+                        clear: both;
+                    }
+                    div.column {
+                    /*    display: inline-block;*/
+                        flex: none;
+                        display: block;
+                        float: left;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .columns-3 > .column {
+                        width: 31%;
+                    }
+                    .columns-3 > .narrow {
+                        width: 23%;
+                        position: relative;
+                        float: left;
+                    }
+
+                    .columns-3 > .wide {
+                        width: 50%;
+                        position: relative;
+                        float: left;
+                    }
+                    .columns-2 > .column,
+                    .columns > .column,
+                    .c_width-50  {
+                        width: 48%;
+                    }
+                    .c_width-60,
+                    .column-60,
+                    .columns .wide {
+                        width: 64%;
+                        position: relative;
+                        float: left;
+                    }
+                    .c_width-50 {
+                        position: relative;
+                        float: left;
+                    }
+                    .c_width-30,
+                    .column-30,
+                    .columns .narrow {
+                        width: 31%;
+                        position: relative;
+                        float: left;
+                    }
+                    .c_left {
+                        display: block;
+                        float: left;
+                    }
+                    .c_right {
+                        display: block;
+                        float: right;
+                    }
+                    .c_center {
+                        display: block;
+                        /*clear: both;*/
+                        margin: 0 auto;
+                    }
+                    .c_left-align {
+                        text-align: left;
+                    }
+
+                    .c_right-align {
+                        text-align: right;
+                    }
+
+                    span.c_left,
+                    span.c_right,
+                    span.c_center {
+                        display: inline-block;
+                    }
+
+                    /*****************
+                    blackbox
+                    ******************/
+
+                    .blackbox  * {
+                        font-size: inherit;
+                        font-family: inherit;
+                    }
+                    .blackbox > div,
+                    .blackbox > section {
+                        width: 32%;
+                        position: relative;
+                        /*float: left;*/
+                        min-height: 5em;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                    }
+                    .blackbox > .input,
+                    .blackbox > .output {
+                        width: 25%;
+                        background-color: rgba(245, 245, 245, 1);
+                    }
+                    .blackbox > .input {
+                        float: left;
+                    }
+                    .blackbox > .output {
+                        float: right;
+                    }
+                    .blackbox textarea {
+                        min-height: inherit;
+                        background-color: inherit;
+                    }
+                    .blackbox > .computing,
+                    .blackbox > .content {
+                        min-height: 5em;
+                        /*padding: 1em;*/
+                        margin: 0 auto;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                    }
+                    .blackbox > .computing {
+                        background-color: black;
+                        color: white;
+                    }
+                    .blackbox > .content {
+
+                    }
+
+                    button {
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .blackbox button {
+                        min-width: 150px;
+                        height: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        top: 1em;
+                    }
+                    .button-36 {
+                        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+                        border-radius: 8px;
+                        border-style: none;
+                        box-sizing: border-box;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        flex-shrink: 0;
+                        font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 4rem;
+                        padding: 0 1.6rem;
+                        text-align: center;
+                        text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                        transition: all .5s;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                    }
+
+                    .button-36:hover {
+                        box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+                        transition-duration: .1s;
+                    }
+                    .button-49,
+                    .button-49:after {
+                      line-height: 50px;
+                      font-size: 20px;
+                      font-family: 'Bebas Neue', sans-serif;
+                      background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+                      border: 0;
+                      color: #fff;
+                      letter-spacing: 3px;
+                      box-shadow: 6px 0px 0px #00E6F6;
+                      outline: transparent;
+                      position: relative;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                    }
+
+                    .button-49:after {
+                      --slice-0: inset(50% 50% 50% 50%);
+                      --slice-1: inset(80% -6px 0 0);
+                      --slice-2: inset(50% -6px 30% 0);
+                      --slice-3: inset(10% -6px 85% 0);
+                      --slice-4: inset(40% -6px 43% 0);
+                      --slice-5: inset(80% -6px 5% 0);
+
+                      content: 'ALTERNATE TEXT';
+                      display: block;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+                      text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+                      clip-path: var(--slice-0);
+                    }
+
+                    .button-49:hover:after {
+                      animation: 1s glitch;
+                      animation-timing-function: steps(2, end);
+                    }
+
+                    @keyframes glitch {
+                      0% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-20px, -10px);
+                      }
+                      10% {
+                        clip-path: var(--slice-3);
+                        transform: translate(10px, 10px);
+                      }
+                      20% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 10px);
+                      }
+                      30% {
+                        clip-path: var(--slice-3);
+                        transform: translate(0px, 5px);
+                      }
+                      40% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-5px, 0px);
+                      }
+                      50% {
+                        clip-path: var(--slice-3);
+                        transform: translate(5px, 0px);
+                      }
+                      60% {
+                        clip-path: var(--slice-4);
+                        transform: translate(5px, 10px);
+                      }
+                      70% {
+                        clip-path: var(--slice-2);
+                        transform: translate(-10px, 10px);
+                      }
+                      80% {
+                        clip-path: var(--slice-5);
+                        transform: translate(20px, -10px);
+                      }
+                      90% {
+                        clip-path: var(--slice-1);
+                        transform: translate(-10px, 0px);
+                      }
+                      100% {
+                        clip-path: var(--slice-1);
+                        transform: translate(0);
+                      }
+                    }
+
+                    .hidden {
+                            /*display: none;*/
+                            visibility: hidden !important;
+                            width: 0 !important;
+                            height: 0 !important;
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            animation: 1s fadeOut;
+                        }
+                    @keyframes fadeOut {
+                      0% {
+                        opacity: 1;
+                      }
+                      100% {
+                        visibility: hidden;
+                        opacity: 0;
+                      }
+                    }
+
+                    /*****************
+                    writing direction
+                    ******************/
+                    .c_rtl {
+                        display: inline-block;
+                        direction: rtl;
+                        text-align: right;
+                        font-family: AmiriWeb;
+                    }
+                    .c_ltr {
+                        direction: ltr;
+                        text-align: left;
+                    }
+                    /*****************
+                    code
+                    ******************/
+                    div.sourceCode {
+                        margin: 10px 5px;
+                    }
+                    /*font*/
+                    pre,
+                    code {
+                        font-size: 0.8em;
+                        line-height: 0.9;
+                    }
+                    pre {
+                        display: block;
+                        font-family: monospace;
+                        white-space: pre-wrap;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        margin: 0;
+                        background-color: rgba(0, 0, 0, 0.04);
+                        border-radius: 5px;
+                        /*box-shadow: 2px 2px 5px #000;*/
+                        border: #95ABD0 solid 1px;
+                    }
+                    pre.mermaid {
+                        border: none;
+                        background-color: white;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    pre > code.sourceCode {
+                        white-space: pre-wrap; /* pre causes long lines with horizontal scrolling, which we don't want on slides*/
+                    }
+                    h1 > code {
+                        background: transparent;
+                        border: 0;
+                        font-size: inherit;
+                    }
+                    /* code also governs inline code, the code-highlighted code blocks are wrapped in pre*/
+                    code {
+                        white-space: pre-wrap;
+                        /* color: #00428C; */
+                        color: #9C20EE;
+                        /*font-size:0.9em;*/
+                    }
+                    pre code {
+                        color: #000000;
+                    }
+                    li pre {
+                        margin-left: 0;
+                    }
+                    blockquote {
+                        padding-left: 1em;
+                        padding-left: 1em;
+                        margin-bottom: 1em;
+                        text-align: right;
+                        /*font-style: italic;*/
+                        clear: both;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                    }
+                    blockquote > p:before {
+                        content: "> "
+                    }
+                    cite {
+                        display: block;
+                        margin-left: 10%;
+                        font-size: 0.8em;
+                        font-style: normal;
+                        text-align: right;
+                    /*    the float attribute destroys the multi-column layout*/
+                    /*    float: right;*/
+                        padding-bottom: 1em;
+                    }
+                    p.copyright {
+                        font-size: smaller
+                    }
+                    .center {
+                        text-align: center
+                    }
+                    .footnote {
+                        font-size: smaller;
+                        margin-left: 2em;
+                    }
+                    /**********
+                    lists
+                    ***********/
+                    ul,
+                    ol {
+                        display: block;
+                        clear: both;
+                        font-style: normal;
+                        margin-top: 0.1em;
+                        margin-bottom: 0.5em;
+                        /*margin-left: 1.5em;*/
+                        list-style-position: inside;
+                        padding-left: 1em;
+                        /* all lists should be centered */
+                        /*text-align: left;*/
+                        /*margin-left: auto;
+                      margin-right: auto;*/
+                    }
+                    /* padding, line-height etc. for all list items */
+                    ul li,
+                    ol li {
+                        margin-top: 0.2em;
+                        margin-bottom: 0.2em;
+                        padding: 0 0 0 0px;
+                        line-height: 120%;
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    li li {
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    li li li {
+                        font-size: inherit;
+                        font-style: normal;
+                    }
+                    /* unordered lists */
+                    ul {
+                        list-style-type: circle;
+                    }
+                    ul ul {
+                        list-style-type: circle;
+                    }
+                    ul ul ul {
+                        list-style-type: circle;
+                    }
+                    ul ul ul ul {
+                        list-style-type: circle;
+                    }
+                    ul li {
+                        list-style: circle;
+                        /*margin: 0.1em 0em 0.6em 0;
+                      padding: 0 0 0 0;
+                      line-height: 140%;*/
+                    }
+                    li ul li {
+                    /*font-size: 85%; */
+                    font-style: normal;
+                    list-style-type: circle;
+                        /* background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    li li ul li {
+                    /*font-size: 85%; */
+                    font-style: normal;
+                    list-style-type: circle;
+                        /*background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    li li li ul li {
+                        font-style: normal;
+                        list-style-type: circle;
+                        /*background: transparent;
+                      padding: 0 0 0 0;*/
+                    }
+                    /*ul {
+                      margin: 0.5em 1.5em 0.5em 1.5em;
+                      padding: 0;
+                    }*/
+                    /* ordered lists */
+                    ol {
+                        margin: 0.5em 1.5em 0.5em 1.5em;
+                        padding: 0;
+                    }
+                    ol li {
+                        list-style-type: decimal;
+                    }
+                    li ol li {
+                        list-style-type: decimal;
+                    }
+                    li li ol li {
+                        list-style-type: decimal;
+                    }
+
+                    /***********
+                    indentation of nested lists
+                    ***********/
+
+                    ul ul,
+                    ul ol,
+                    ol ol,
+                    ol ul {
+                        padding-inline-start: 2em;
+                    }
+
+                    /*this is to accomodated the snipped highlight js*/
+                    pre ul li {
+                        margin-top: 0;
+                        font-size: 0.7em;
+                        padding: 0;
+                    }
+                    div dt {
+                        margin-left: 0;
+                        margin-top: 1em;
+                        margin-bottom: 0.5em;
+                        font-weight: bold;
+                    }
+                    div dd {
+                        margin-left: 2em;
+                        margin-bottom: 0.5em;
+                    }
+                    p,
+                    pre,
+                    /*ul,*/
+                    /*ol,*/
+                    blockquote,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    dl,
+                    table {
+                        margin-left: 0.5em;
+                        margin-right: 0.5em;
+                        margin-top: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+                    p.subhead {
+                        font-weight: bold;
+                        margin-top: 2em;
+                    }
+                    .smaller {
+                        font-size: smaller
+                    }
+                    .bigger {
+                        font-size: 130%
+                    }
+                    /*******************************
+                    tables
+                    *******************************/
+                    table {
+                        display: table;
+                        /* the table should be centred on the page*/
+                        margin-left: auto;
+                        margin-right: auto;
+                        /*font-size: 0.8em;*/
+                        border-collapse: collapse;
+                    }
+                    th {
+                        border-bottom-width: 2px;
+                        border-bottom-style: double;
+                        border-bottom-color: black;
+                    }
+                    td,
+                    th {
+                        padding: 0.2em
+                    }
+                    td {
+                        border-bottom-width: 1px;
+                        /*border-top-width: 1px;*/
+                        border-bottom-style: solid;
+                        /*border-top-style: solid;*/
+                        border-color: white;
+                    }
+                    /*
+                    highlight mouse-over on tables
+                    */
+                    tr:hover td {
+                        /*background-color: red; */
+                        /*border-top-color: #F46A00;
+                        border-bottom-color: #F46A00;*/
+                        border-color: #F46A00;
+                        border-bottom-width: 1px;
+                        border-bottom-style: solid;
+                    }
+                    td:hover, td:hover * {
+                        background-color: #F46A00;
+                        color: black;
+                    }
+                    .focus {
+                        border-color: red;
+                        border-width: 2px;
+                        border-style: solid;
+                    }
+                    table > caption {
+                        /*position: relative;
+                        float: right;*/
+                        text-align: center;
+                        margin-top: 0.2em;
+                        margin-bottom: 0.5em;
+                        /*top:2em;*/
+                        /*max-width:15%;
+                        min-width: 180px;*/
+                        font-size: 0.6em;
+                        font-weight: lighter;
+                    }
+
+                    /*
+                     setting class="outline on ol or ul makes it behave as an
+                     ouline list where blocklevel content in li elements is
+                     hidden by default and can be expanded or collapsed with
+                     mouse click. Set class="expand" on li to override default
+                    */
+                    ol.outline li:hover {
+                        cursor: pointer
+                    }
+                    ol.outline li.nofold:hover {
+                        cursor: default
+                    }
+                    ul.outline li:hover {
+                        cursor: pointer
+                    }
+                    ul.outline li.nofold:hover {
+                        cursor: default
+                    }
+                    ol.outline {
+                        list-style: decimal;
+                    }
+                    ol.outline ol {
+                        list-style-type: lower-alpha
+                    }
+                    ol.outline li.nofold {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.unfolded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.folded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.unfolded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+                    }
+                    ol.outline li.folded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.nofold {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/nofold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.unfolded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.folded {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold-dim.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.unfolded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/fold.gif) no-repeat 0px 0.5em;
+                    }
+                    ul.outline li.folded:hover {
+                        padding: 0 0 0 20px;
+                        background: transparent url(../graphics/unfold.gif) no-repeat 0px 0.5em;
+                    }
+                    /* for slides with class "title" in table of contents */
+                    a.titleslide {
+                        font-weight: bold;
+                        font-style: italic
+                    }
+                    /* references, footnotes, bibliography */
+                    div.references {
+                        font-size: 80%
+                    }
+                    div.references p {
+                        margin: 5px 0px;
+                    }
+                    /******************
+                    alerts
+                    *******************/
+
+
+                    div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
+                        border-width: 1px;
+                        border-style: solid;
+                    /*    border-color: red;*/
+                        background-color: white;
+                        margin-left: 2em;
+                        border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
+                    }
+                    /*
+                     hide images for work around for save as bug
+                     where browsers fail to save images used by CSS
+                    */
+                    img.hidden {
+                        display: none;
+                        visibility: hidden
+                    }
+                    div.initial_prompt {
+                        display: none;
+                        visibility: hidden
+                    }
+                    div.slide {
+                        visibility: visible;
+                        position: inherit;
+                    }
+                    div.handout {
+                        border-top-style: solid;
+                        border-top-width: thin;
+                        border-top-color: black;
+                    }
+                    @media screen {
+                        .hidden {
+                            display: none;
+                            visibility: visible
+                        }
+                        div.slide.hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.handout.hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.background {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide div.initial_prompt {
+                            display: block;
+                            visibility: visible
+                        }
+                        body.single_slide div.background {
+                            display: block;
+                            visibility: visible
+                        }
+                        body.single_slide div.background.hidden {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide .invisible {
+                            visibility: hidden
+                        }
+                        body.single_slide .hidden {
+                            display: none;
+                            visibility: hidden
+                        }
+                        body.single_slide div.slide {
+                            position: absolute
+                        }
+                        body.single_slide div.handout {
+                            display: none;
+                            visibility: hidden
+                        }
+                    }
+                    @media print {
+                        .hidden {
+                            display: block;
+                            visibility: visible
+                        }
+                        div.slide pre {
+                            font-size: 60%;
+                            padding-left: 0.5em;
+                        }
+                        div.toolbar {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.slidy_toc {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.background {
+                            display: none;
+                            visibility: hidden;
+                        }
+                        div.slide {
+                            page-break-before: always
+                        }
+                        /* :first-child isn't reliable for print media */
+                        div.slide.first-slide {
+                            page-break-before: avoid
+                        }
+                    }
+                    </style>
+      </head>
+  <body onload="setCurrentDate()">
+        <!-- HU Berlin header -->
+    <header>
+        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+        <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+    </header>
+    <div class="reveal">
+      <div class="slides">
+
+                <section id="title-slide">
+          <h1 class="title">Open Arabic Periodical Editions
+(OpenArabicPE)</h1>
+                    <h2 class="subtitle">a framework for bootstrapped
+scholarly editions outside the Global North</h2>
+                    <div class="columns">
+          <div class="column c_left c_left-align">
+                      <p class="author">
+                          Till Grallert            </p>
+                                                <p class="institute">Humboldt-Universität
+zu Berlin</p>
+                            <p class="institute">Methods Innovation Lab
+(NFDI 4Memory)</p>
+                                          </div>
+        <div class="column c_right c_right-align">
+                    <p class="event">
+                        <span>Scholarly Digital Editions of
+Right-to-Left Script Texts</span>
+          </p>
+                                <p class="date">2024-03-22</p>
+                              <p class="url"><a href="https://openarabicpe.github.io/slides/2024-ias/">https://openarabicpe.github.io/slides/2024-ias/</a></p>
+                  </div>
+      </div>
+        </section>
+                
+        <section>
+        <section id="resulting-workflow-of-openarabicpe"
+        class="title-slide slide level1">
+        <h1>Resulting workflow of OpenArabicPE</h1>
+
+        </section>
+        <section id="get-the-data" class="slide level2">
+        <h2>1. get the data</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>facsimiles
+        <ul>
+        <li>link to existing facsimiles from <a
+        href="http://eap.bl.uk/">British Library’s “Endangered Archives
+        Programme” (EAP)</a>,
+        <!-- [HathiTrust](http://hathitrust.org/), --> <a
+        href="https://digitale-sammlungen.ulb.uni-bonn.de/topic/view/3085779">Translatio
+        Bonn</a>, <a href="http://archive.alsharekh.org/"><em>Arshīf
+        al-majallāt […] al-ʿarabiyya</em></a> etc., preferably through
+        <a href="https://iiif.io/">IIIF</a></li>
+        <li>scan/ photograph your physical artefacts (at the lowest
+        sustainable resolution)</li>
+        </ul></li>
+        <li>text
+        <ul>
+        <li>scrape existing transcriptions from <a
+        href="http://shamela.ws/index.php/book/26523"><em>shamela.ws</em></a>,
+        et al.</li>
+        <li>use <a href="https://transkribus.eu/">Transkribus</a>, <a
+        href="https://escripta.hypotheses.org">eScripta</a>/<a
+        href="https://www.https://escriptorium.fr/">eScriptorium</a> for
+        HTR (with our model trained on 1000+ pages from the OpenArabicPE
+        corpus)</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <p>EPub (HTML) for <em>al-Zuhūr</em> 2(4) from shamela.ws</p>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> dir</span><span class="op">=</span><span class="st">&quot;rtl&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;book-container&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">hr</span><span class="dt">/&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> id</span><span class="op">=</span><span class="st">&#39;C232&#39;</span><span class="dt">&gt;&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;title&quot;</span><span class="dt">&gt;</span>صحافة سورية ولبنان<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;red&quot;</span><span class="dt">&gt;</span>3 - <span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span>المجلات<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span>هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فمل يكن منها قبل إعلان الدستور إلا مجلة المشرق ومجلة المقتبس.<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span>أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span>وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:<span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
+        <p>OCR output from Transkribus for <em>al-Ḥasnāʾ</em> (PAGE
+        XML)</p>
+        <div class="sourceCode" id="cb2"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">TextLine</span><span class="ot"> id=</span><span class="st">&quot;r1l5&quot;</span><span class="ot"> custom=</span><span class="st">&quot;readingOrder {index:4;}&quot;</span>&gt;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">Coords</span><span class="ot"> points=</span><span class="st">&quot;470,548 2191,527 1648,462 470,464&quot;</span>/&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">Baseline</span><span class="ot"> points=</span><span class="st">&quot;480,542 565,540 650,537 735,534 820,533 905,531 990,530 1075,528 1160,528 1245,527 1330,527 1415,527 1500,527 1585,527 1670,528 1755,528 1840,530 1925,531 2010,531 2095,534 2180,536&quot;</span>/&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">TextEquiv</span>&gt;</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">Unicode</span>&gt;من عسر سنوات مجلة بسائة في الاستارة اعتمد في تحريرها على أقلامهن فزيئها&lt;/<span class="kw">Unicode</span>&gt;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">TextEquiv</span>&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">TextLine</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>IIIF allows to set a very low quality to reduce bandwidth
+        and traffic</li>
+        <li>what do you need to know
+        <ul>
+        <li>HTML</li>
+        <li>XML</li>
+        <li>JSON: for IIIF</li>
+        <li>wget, cURL: for scraping</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="model-the-data" class="slide level2">
+        <h2>2. model the data</h2>
+        <p>Structure the text string into issues, sections, articles
+        with bylines …</p>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>widely accepted standard for textual editions: <a
+        href="https://tei-c.org/">Text Encoding Initiative</a> (TEI/XML)
+        <ul>
+        <li>active community</li>
+        <li>pre-requisite for grant funding</li>
+        <li>easy to archive (XML = plain text)</li>
+        </ul></li>
+        <li>re-use / adapt domain specific encoding schemas within the
+        TEI</li>
+        <li>try to script basic modelling using patterns in your source
+        text:
+        <ul>
+        <li>regular expressions</li>
+        <li>XSLT, Python, R, whatever you are most comfortable with</li>
+        </ul></li>
+        <li>automatically model derivative bibliographic data: MODS,
+        METS, BibTeX, …</li>
+        </ul>
+        </div><div class="column">
+        <p>The same section of <em>al-Zuhūr</em> 2(4) modelled in
+        TEI</p>
+        <div class="sourceCode" id="cb3"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">body</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span>&gt;</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">pb</span><span class="ot"> corresp=</span><span class="st">&quot;../epub/shamela_36534/OEBPS/xhtml/P744.xhtml&quot;</span><span class="ot"> ed=</span><span class="st">&quot;shamela&quot;</span><span class="ot"> n=</span><span class="st">&quot;n2-p184&quot;</span>/&gt;</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">pb</span><span class="ot"> ed=</span><span class="st">&quot;print&quot;</span><span class="ot"> edRef=</span><span class="st">&quot;#edition_1&quot;</span><span class="ot"> facs=</span><span class="st">&quot;#facs_184&quot;</span><span class="ot"> n=</span><span class="st">&quot;184&quot;</span>/&gt;</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> prev=</span><span class="st">&quot;oclc_1034545644-i_13.TEIP5.xml#div_1.d2e2766&quot;</span><span class="ot"> subtype=</span><span class="st">&quot;article&quot;</span><span class="ot"> type=</span><span class="st">&quot;item&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_1.d2e634&quot;</span>&gt;</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">head</span>&gt;صحافة &lt;<span class="kw">placeName</span>&gt;سورية&lt;/<span class="kw">placeName</span>&gt; و&lt;<span class="kw">placeName</span>&gt;لبنان&lt;/<span class="kw">placeName</span>&gt;&lt;/<span class="kw">head</span>&gt;</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> type=</span><span class="st">&quot;section&quot;</span><span class="ot"> xml:id=</span><span class="st">&quot;div_3.d2e1200&quot;</span>&gt;</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">head</span>&gt; ٣ - المجلات&lt;/<span class="kw">head</span>&gt;</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;هذه مقالتي الثالثة عن صحافة سورية ولبنان. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فلم يكن منها قبل إعلان الدستور إلا &lt;<span class="kw">bibl</span>&gt;مجلة &lt;<span class="kw">title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span>&gt;المشرق&lt;/<span class="kw">title</span>&gt;&lt;/<span class="kw">bibl</span>&gt;  و&lt;<span class="kw">bibl</span>&gt;مجلة &lt;<span class="kw">title</span><span class="ot"> level=</span><span class="st">&quot;j&quot;</span>&gt;المقتبس&lt;/<span class="kw">title</span>&gt;&lt;/<span class="kw">bibl</span>&gt; .&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">p</span>&gt;وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">div</span>&gt;</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">div</span>&gt;</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">body</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>why TEI?
+        <ul>
+        <li>I knew it already</li>
+        <li>widely adopted standard in the digital editing world</li>
+        <li>necessary for grant-funding in the Global North</li>
+        </ul></li>
+        <li>why not TEI
+        <ul>
+        <li>steep learning curve</li>
+        <li>not particularly well-suited to Arabic texts?</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="edit-the-data" class="slide level2">
+        <h2>3. edit the data</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>make use of version control
+        <!-- and stable IDs (e.g. [ORCID](https://orcid.org)) --> for
+        <strong>transparent authorship attribution</strong> and
+        <strong>damage control</strong>:
+        <ul>
+        <li><a href="https://git-scm.com/">.git</a> is open source and
+        available for all OSs</li>
+        </ul></li>
+        <li>plain-text (including XML) editors
+        <ul>
+        <li>should be <strong>syntax aware</strong></li>
+        <li><strong>RTL</strong>: support in text editors is a mixed
+        bag</li>
+        </ul></li>
+        </ul>
+        <figure id="fig:zuhur-vscode">
+        <img data-src="../assets/vscode_zuhur.png"
+        alt="The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
+        <figcaption>Figure 1: The TEI XML file for <em>al-Zuhūr</em>
+        2(4) in <a href="https://code.visualstudio.com/">Visual Studio
+        Code</a></figcaption>
+        </figure>
+        <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png) -->
+        <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [TextMate](https://macromates.com/)](../assets/textmate_zuhur.png) -->
+        </div><div class="column">
+        <ul>
+        <li>XML editors proper
+        <ul>
+        <li>should be <strong>schema aware</strong> to validate the
+        encoding</li>
+        <li><strong>RTL</strong>:
+        <ol type="1">
+        <li><a href="https://www.oxygenxml.com/">oXygen XML editor</a>
+        (158 USD [2024]) allows to separate content and
+        tags<!-- : [TextGrid Lab](https://textgrid.de/index) --></li>
+        <li><a href="https://code.visualstudio.com/">Visual Studio
+        Code</a> (free) with the right extensions is a viable
+        second</li>
+        </ol></li>
+        </ul></li>
+        </ul>
+        <figure id="fig:zuhur-oxygen">
+        <img data-src="../assets/oxygen_zuhur-author.png"
+        alt="The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption>Figure 2: The TEI XML file for <em>al-Zuhūr</em>
+        2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author
+        mode. Styling relies on CSS.</figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>editing tools depend on modelling decisions and file
+        formats</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="save-and-share-the-data" class="slide level2">
+        <h2>4. save and share the data</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>facsimiles: <a href="https://archive.org">Internet
+        Archive</a> (supports <a href="https://iiif.io/">IIIF</a>)</li>
+        <li>working copy of everything else: distributed version control
+        platforms (<a href="https://github.com/">GitHub</a>, <a
+        href="https://about.gitlab.com/">GitLab</a>)</li>
+        <li>longterm preservation: publicly-funded, open repository (<a
+        href="https://zenodo.org/">Zenodo</a>)
+        <ul>
+        <li>make sure to add <a href="https://orcid.org">ORCID</a>s for
+        all contributors</li>
+        <li>provides versioned <a href="https://doi.org/">DOI</a>s</li>
+        </ul></li>
+        <li>authority data (people, titles, etc.): <a
+        href="https://wikidata.org/">Wikidata</a></li>
+        <li>provide suitable open licenses for re-use: <a
+        href="https://creativecommons.org/">Creative Commons</a>, <a
+        href="">MIT</a>, Public Domain (CC0)</li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:zuhur-zenodo">
+        <img data-src="../assets/zenodo_zuhur.png"
+        alt="Archived release of al-Zuhūr on Zenono" />
+        <figcaption>Figure 3: Archived release of <em>al-Zuhūr</em> on
+        <a
+        href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        </section>
+        <section id="present-the-data" class="slide level2">
+        <h2>5. present the data</h2>
+        <!-- ### presentation layers and access for human readers -->
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>Hosting: <a href="https://pages.github.com/">GitHub
+        Pages</a> can expose your data repository to the web</li>
+        <li>Generate static webviews
+        <ul>
+        <li>removes need for backend and minimises traffic</li>
+        <li>easy to archive</li>
+        <li>on the fly: XSLT1 (<a
+        href="http://dcl.slis.indiana.edu/teibp/">TEI Boilerplate</a>)
+        or JS (<a
+        href="https://github.com/TEIC/CETEIcean">CETEICEan</a>) to
+        render XML files in the client’s web browser</li>
+        <li>pre-computed: <a
+        href="https://github.com/features/actions">GitHub actions</a>
+        give access to virtual machines</li>
+        </ul></li>
+        <li>bibliographic database: <a
+        href="https://www.zotero.org/groups/openarabicpe/items/">Zotero
+        group</a>
+        <ul>
+        <li>mitigates against the absent backend</li>
+        <li><strong>browse</strong> and <strong>search</strong>
+        independent of file structure</li>
+        </ul></li>
+        <li>full-text search across the entire corpus: <a
+        href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s
+        programmable search engine</a></li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:zuhur-zotero">
+        <img
+        data-src="../assets/zotero-group_openarabicpe-mobile-details_small.png"
+        alt="Zotero group “OpenArabicPE”: details in mobile view" />
+        <figcaption>Figure 4: Zotero group “<a
+        href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
+        details in mobile view</figcaption>
+        </figure>
+        <figure id="fig:zuhur-webview">
+        <img data-src="../assets/boilerplate_zuhur-v_2-i_4_small.png"
+        alt="Webview of al-Zuhūr 2(4)" />
+        <figcaption>Figure 5: <a
+        href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
+        of <em>al-Zuhūr</em> 2(4)</a></figcaption>
+        </figure>
+        <!-- ![Zotero group "[OpenArabicPE](https://www.zotero.org/groups/openarabicpe/items/)": search in mobile view](../assets/zotero-group_openarabicpe-mobile-search.png) -->
+        </div>
+        </div>
+        </section></section>
+        <section>
+        <section id="conclusion" class="title-slide slide level1">
+        <h1>Conclusion</h1>
+
+        </section>
+        <section id="thank-you" class="slide level2">
+        <h2>Thank you!</h2>
+        <ul>
+        <li>Contributors to <a
+        href="https://openarabicpe.github.io/">OpenArabicPE</a>: Jasper
+        Bernhofer, Dimitar Dragnev, Patrick Funk, Talha Güzel, Hans
+        Magne Jaatun, Daniel Kolland, Jakob Koppermann, Xaver
+        Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi
+        Tanna-Händel, and Layla Youssef</li>
+        <li>Contributors to <a
+        href="https://projectjaraid.github.io/">Project Jarāʾid</a>:
+        Hala Auji, Philippe Chevrant, Marina Demetriadou, Lamia Eid,
+        Stacy Fahrenthold, Ulrike Freitag, Till Grallert, Rana Issa,
+        Nicole Khayat, Peter Magierski, Leyla von Mende, Adam Mestyan,
+        Christian Meier, Daniel Newman, Geoffrey Roper, Sinai Rusinek,
+        Philip Sadgrove, Ola Seif, and Rogier Visser</li>
+        </ul>
+        <div class="columns">
+        <div class="wide">
+        <ul>
+        <li>Links:
+        <ul>
+        <li>Slides: <a
+        href="https://openarabicpe.github.io/slides/2024-ias/"
+        class="uri">https://openarabicpe.github.io/slides/2024-ias/</a></li>
+        <li>Project blog: <a
+        href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
+        <li>Papers: <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html"
+        class="uri">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>,
+        <a href="https://doi.org/10/gkhrjr"
+        class="uri">https://doi.org/10/gkhrjr</a></li>
+        <li>Mastodon: <a
+        href="https://digitalcourage.social/@tillgrallert">@tillgrallert@digitalcourage.social</a></li>
+        <li>Email: <script
+        type="text/javascript">
+<!--
+h='&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#102;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript>,
+        <script
+        type="text/javascript">
+<!--
+h='&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
+// -->
+        </script><noscript>&#116;&#x69;&#108;&#108;&#46;&#x67;&#114;&#x61;&#108;&#108;&#x65;&#114;&#116;&#32;&#x61;&#116;&#32;&#104;&#x75;&#x2d;&#98;&#x65;&#114;&#108;&#x69;&#110;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;</noscript></li>
+        </ul></li>
+        <li>Licence: slides and images are licenced as <a
+        href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+        4.0</a></li>
+        </ul>
+        </div><div class="narrow">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="328" height="328" viewBox="0 0 328 328" shape-rendering="crispEdges">
+        <rect x="0" y="0" width="328" height="328" fill="#fff"></rect><path fill="#000" d="M32 32h8v8H32V32M40 32h8v8H40V32M48 32h8v8H48V32M56 32h8v8H56V32M64 32h8v8H64V32M72 32h8v8H72V32M80 32h8v8H80V32M96 32h8v8H96V32M104 32h8v8H104V32M136 32h8v8H136V32M144 32h8v8H144V32M168 32h8v8H168V32M176 32h8v8H176V32M200 32h8v8H200V32M240 32h8v8H240V32M248 32h8v8H248V32M256 32h8v8H256V32M264 32h8v8H264V32M272 32h8v8H272V32M280 32h8v8H280V32M288 32h8v8H288V32M32 40h8v8H32V40M80 40h8v8H80V40M96 40h8v8H96V40M104 40h8v8H104V40M120 40h8v8H120V40M136 40h8v8H136V40M144 40h8v8H144V40M160 40h8v8H160V40M176 40h8v8H176V40M184 40h8v8H184V40M192 40h8v8H192V40M200 40h8v8H200V40M208 40h8v8H208V40M240 40h8v8H240V40M288 40h8v8H288V40M32 48h8v8H32V48M48 48h8v8H48V48M56 48h8v8H56V48M64 48h8v8H64V48M80 48h8v8H80V48M96 48h8v8H96V48M112 48h8v8H112V48M120 48h8v8H120V48M136 48h8v8H136V48M144 48h8v8H144V48M152 48h8v8H152V48M160 48h8v8H160V48M192 48h8v8H192V48M208 48h8v8H208V48M224 48h8v8H224V48M240 48h8v8H240V48M256 48h8v8H256V48M264 48h8v8H264V48M272 48h8v8H272V48M288 48h8v8H288V48M32 56h8v8H32V56M48 56h8v8H48V56M56 56h8v8H56V56M64 56h8v8H64V56M80 56h8v8H80V56M112 56h8v8H112V56M120 56h8v8H120V56M144 56h8v8H144V56M152 56h8v8H152V56M160 56h8v8H160V56M176 56h8v8H176V56M184 56h8v8H184V56M192 56h8v8H192V56M208 56h8v8H208V56M240 56h8v8H240V56M256 56h8v8H256V56M264 56h8v8H264V56M272 56h8v8H272V56M288 56h8v8H288V56M32 64h8v8H32V64M48 64h8v8H48V64M56 64h8v8H56V64M64 64h8v8H64V64M80 64h8v8H80V64M96 64h8v8H96V64M104 64h8v8H104V64M112 64h8v8H112V64M120 64h8v8H120V64M136 64h8v8H136V64M152 64h8v8H152V64M160 64h8v8H160V64M168 64h8v8H168V64M200 64h8v8H200V64M208 64h8v8H208V64M216 64h8v8H216V64M240 64h8v8H240V64M256 64h8v8H256V64M264 64h8v8H264V64M272 64h8v8H272V64M288 64h8v8H288V64M32 72h8v8H32V72M80 72h8v8H80V72M104 72h8v8H104V72M112 72h8v8H112V72M128 72h8v8H128V72M136 72h8v8H136V72M144 72h8v8H144V72M152 72h8v8H152V72M160 72h8v8H160V72M184 72h8v8H184V72M200 72h8v8H200V72M208 72h8v8H208V72M224 72h8v8H224V72M240 72h8v8H240V72M288 72h8v8H288V72M32 80h8v8H32V80M40 80h8v8H40V80M48 80h8v8H48V80M56 80h8v8H56V80M64 80h8v8H64V80M72 80h8v8H72V80M80 80h8v8H80V80M96 80h8v8H96V80M112 80h8v8H112V80M128 80h8v8H128V80M144 80h8v8H144V80M160 80h8v8H160V80M176 80h8v8H176V80M192 80h8v8H192V80M208 80h8v8H208V80M224 80h8v8H224V80M240 80h8v8H240V80M248 80h8v8H248V80M256 80h8v8H256V80M264 80h8v8H264V80M272 80h8v8H272V80M280 80h8v8H280V80M288 80h8v8H288V80M120 88h8v8H120V88M128 88h8v8H128V88M136 88h8v8H136V88M152 88h8v8H152V88M160 88h8v8H160V88M216 88h8v8H216V88M224 88h8v8H224V88M32 96h8v8H32V96M56 96h8v8H56V96M64 96h8v8H64V96M72 96h8v8H72V96M80 96h8v8H80V96M88 96h8v8H88V96M96 96h8v8H96V96M104 96h8v8H104V96M112 96h8v8H112V96M120 96h8v8H120V96M160 96h8v8H160V96M168 96h8v8H168V96M224 96h8v8H224V96M232 96h8v8H232V96M256 96h8v8H256V96M272 96h8v8H272V96M280 96h8v8H280V96M288 96h8v8H288V96M40 104h8v8H40V104M96 104h8v8H96V104M112 104h8v8H112V104M120 104h8v8H120V104M136 104h8v8H136V104M144 104h8v8H144V104M152 104h8v8H152V104M168 104h8v8H168V104M176 104h8v8H176V104M184 104h8v8H184V104M192 104h8v8H192V104M208 104h8v8H208V104M216 104h8v8H216V104M256 104h8v8H256V104M264 104h8v8H264V104M272 104h8v8H272V104M32 112h8v8H32V112M48 112h8v8H48V112M56 112h8v8H56V112M64 112h8v8H64V112M72 112h8v8H72V112M80 112h8v8H80V112M88 112h8v8H88V112M128 112h8v8H128V112M136 112h8v8H136V112M152 112h8v8H152V112M208 112h8v8H208V112M216 112h8v8H216V112M224 112h8v8H224V112M240 112h8v8H240V112M256 112h8v8H256V112M264 112h8v8H264V112M272 112h8v8H272V112M280 112h8v8H280V112M288 112h8v8H288V112M32 120h8v8H32V120M40 120h8v8H40V120M48 120h8v8H48V120M72 120h8v8H72V120M88 120h8v8H88V120M96 120h8v8H96V120M104 120h8v8H104V120M112 120h8v8H112V120M120 120h8v8H120V120M136 120h8v8H136V120M152 120h8v8H152V120M176 120h8v8H176V120M192 120h8v8H192V120M208 120h8v8H208V120M248 120h8v8H248V120M272 120h8v8H272V120M32 128h8v8H32V128M80 128h8v8H80V128M120 128h8v8H120V128M136 128h8v8H136V128M168 128h8v8H168V128M184 128h8v8H184V128M200 128h8v8H200V128M208 128h8v8H208V128M224 128h8v8H224V128M232 128h8v8H232V128M248 128h8v8H248V128M256 128h8v8H256V128M40 136h8v8H40V136M48 136h8v8H48V136M56 136h8v8H56V136M64 136h8v8H64V136M96 136h8v8H96V136M104 136h8v8H104V136M128 136h8v8H128V136M136 136h8v8H136V136M144 136h8v8H144V136M168 136h8v8H168V136M176 136h8v8H176V136M184 136h8v8H184V136M192 136h8v8H192V136M208 136h8v8H208V136M240 136h8v8H240V136M248 136h8v8H248V136M32 144h8v8H32V144M48 144h8v8H48V144M64 144h8v8H64V144M80 144h8v8H80V144M88 144h8v8H88V144M104 144h8v8H104V144M112 144h8v8H112V144M128 144h8v8H128V144M152 144h8v8H152V144M176 144h8v8H176V144M184 144h8v8H184V144M192 144h8v8H192V144M200 144h8v8H200V144M208 144h8v8H208V144M240 144h8v8H240V144M264 144h8v8H264V144M272 144h8v8H272V144M32 152h8v8H32V152M40 152h8v8H40V152M56 152h8v8H56V152M72 152h8v8H72V152M88 152h8v8H88V152M96 152h8v8H96V152M104 152h8v8H104V152M112 152h8v8H112V152M136 152h8v8H136V152M144 152h8v8H144V152M160 152h8v8H160V152M192 152h8v8H192V152M216 152h8v8H216V152M224 152h8v8H224V152M232 152h8v8H232V152M248 152h8v8H248V152M264 152h8v8H264V152M272 152h8v8H272V152M288 152h8v8H288V152M40 160h8v8H40V160M64 160h8v8H64V160M80 160h8v8H80V160M112 160h8v8H112V160M144 160h8v8H144V160M152 160h8v8H152V160M192 160h8v8H192V160M208 160h8v8H208V160M216 160h8v8H216V160M224 160h8v8H224V160M232 160h8v8H232V160M240 160h8v8H240V160M248 160h8v8H248V160M256 160h8v8H256V160M264 160h8v8H264V160M32 168h8v8H32V168M48 168h8v8H48V168M56 168h8v8H56V168M64 168h8v8H64V168M88 168h8v8H88V168M104 168h8v8H104V168M120 168h8v8H120V168M128 168h8v8H128V168M152 168h8v8H152V168M160 168h8v8H160V168M168 168h8v8H168V168M184 168h8v8H184V168M192 168h8v8H192V168M208 168h8v8H208V168M240 168h8v8H240V168M256 168h8v8H256V168M272 168h8v8H272V168M288 168h8v8H288V168M32 176h8v8H32V176M40 176h8v8H40V176M56 176h8v8H56V176M72 176h8v8H72V176M80 176h8v8H80V176M88 176h8v8H88V176M104 176h8v8H104V176M120 176h8v8H120V176M128 176h8v8H128V176M136 176h8v8H136V176M144 176h8v8H144V176M152 176h8v8H152V176M160 176h8v8H160V176M168 176h8v8H168V176M176 176h8v8H176V176M184 176h8v8H184V176M192 176h8v8H192V176M216 176h8v8H216V176M232 176h8v8H232V176M240 176h8v8H240V176M248 176h8v8H248V176M264 176h8v8H264V176M272 176h8v8H272V176M288 176h8v8H288V176M40 184h8v8H40V184M48 184h8v8H48V184M72 184h8v8H72V184M88 184h8v8H88V184M96 184h8v8H96V184M104 184h8v8H104V184M112 184h8v8H112V184M152 184h8v8H152V184M184 184h8v8H184V184M192 184h8v8H192V184M208 184h8v8H208V184M256 184h8v8H256V184M264 184h8v8H264V184M272 184h8v8H272V184M32 192h8v8H32V192M48 192h8v8H48V192M80 192h8v8H80V192M88 192h8v8H88V192M96 192h8v8H96V192M112 192h8v8H112V192M128 192h8v8H128V192M152 192h8v8H152V192M160 192h8v8H160V192M176 192h8v8H176V192M184 192h8v8H184V192M208 192h8v8H208V192M224 192h8v8H224V192M232 192h8v8H232V192M248 192h8v8H248V192M264 192h8v8H264V192M280 192h8v8H280V192M32 200h8v8H32V200M40 200h8v8H40V200M48 200h8v8H48V200M56 200h8v8H56V200M72 200h8v8H72V200M112 200h8v8H112V200M120 200h8v8H120V200M128 200h8v8H128V200M136 200h8v8H136V200M144 200h8v8H144V200M216 200h8v8H216V200M224 200h8v8H224V200M256 200h8v8H256V200M264 200h8v8H264V200M272 200h8v8H272V200M32 208h8v8H32V208M80 208h8v8H80V208M104 208h8v8H104V208M112 208h8v8H112V208M128 208h8v8H128V208M144 208h8v8H144V208M168 208h8v8H168V208M184 208h8v8H184V208M192 208h8v8H192V208M216 208h8v8H216V208M232 208h8v8H232V208M256 208h8v8H256V208M264 208h8v8H264V208M272 208h8v8H272V208M280 208h8v8H280V208M288 208h8v8H288V208M32 216h8v8H32V216M56 216h8v8H56V216M96 216h8v8H96V216M104 216h8v8H104V216M144 216h8v8H144V216M152 216h8v8H152V216M168 216h8v8H168V216M176 216h8v8H176V216M184 216h8v8H184V216M192 216h8v8H192V216M208 216h8v8H208V216M224 216h8v8H224V216M232 216h8v8H232V216M240 216h8v8H240V216M256 216h8v8H256V216M272 216h8v8H272V216M288 216h8v8H288V216M32 224h8v8H32V224M40 224h8v8H40V224M72 224h8v8H72V224M80 224h8v8H80V224M88 224h8v8H88V224M96 224h8v8H96V224M112 224h8v8H112V224M120 224h8v8H120V224M144 224h8v8H144V224M160 224h8v8H160V224M216 224h8v8H216V224M224 224h8v8H224V224M232 224h8v8H232V224M240 224h8v8H240V224M248 224h8v8H248V224M256 224h8v8H256V224M264 224h8v8H264V224M288 224h8v8H288V224M96 232h8v8H96V232M120 232h8v8H120V232M144 232h8v8H144V232M152 232h8v8H152V232M160 232h8v8H160V232M168 232h8v8H168V232M176 232h8v8H176V232M224 232h8v8H224V232M256 232h8v8H256V232M272 232h8v8H272V232M32 240h8v8H32V240M40 240h8v8H40V240M48 240h8v8H48V240M56 240h8v8H56V240M64 240h8v8H64V240M72 240h8v8H72V240M80 240h8v8H80V240M96 240h8v8H96V240M104 240h8v8H104V240M120 240h8v8H120V240M128 240h8v8H128V240M136 240h8v8H136V240M144 240h8v8H144V240M152 240h8v8H152V240M168 240h8v8H168V240M184 240h8v8H184V240M192 240h8v8H192V240M208 240h8v8H208V240M216 240h8v8H216V240M224 240h8v8H224V240M240 240h8v8H240V240M256 240h8v8H256V240M272 240h8v8H272V240M32 248h8v8H32V248M80 248h8v8H80V248M96 248h8v8H96V248M104 248h8v8H104V248M120 248h8v8H120V248M168 248h8v8H168V248M176 248h8v8H176V248M184 248h8v8H184V248M192 248h8v8H192V248M200 248h8v8H200V248M208 248h8v8H208V248M216 248h8v8H216V248M224 248h8v8H224V248M256 248h8v8H256V248M264 248h8v8H264V248M272 248h8v8H272V248M280 248h8v8H280V248M32 256h8v8H32V256M48 256h8v8H48V256M56 256h8v8H56V256M64 256h8v8H64V256M80 256h8v8H80V256M96 256h8v8H96V256M104 256h8v8H104V256M112 256h8v8H112V256M128 256h8v8H128V256M152 256h8v8H152V256M160 256h8v8H160V256M168 256h8v8H168V256M192 256h8v8H192V256M208 256h8v8H208V256M216 256h8v8H216V256M224 256h8v8H224V256M232 256h8v8H232V256M240 256h8v8H240V256M248 256h8v8H248V256M256 256h8v8H256V256M280 256h8v8H280V256M32 264h8v8H32V264M48 264h8v8H48V264M56 264h8v8H56V264M64 264h8v8H64V264M80 264h8v8H80V264M96 264h8v8H96V264M104 264h8v8H104V264M120 264h8v8H120V264M160 264h8v8H160V264M176 264h8v8H176V264M200 264h8v8H200V264M216 264h8v8H216V264M224 264h8v8H224V264M232 264h8v8H232V264M248 264h8v8H248V264M272 264h8v8H272V264M288 264h8v8H288V264M32 272h8v8H32V272M48 272h8v8H48V272M56 272h8v8H56V272M64 272h8v8H64V272M80 272h8v8H80V272M120 272h8v8H120V272M128 272h8v8H128V272M136 272h8v8H136V272M152 272h8v8H152V272M168 272h8v8H168V272M176 272h8v8H176V272M184 272h8v8H184V272M192 272h8v8H192V272M200 272h8v8H200V272M208 272h8v8H208V272M216 272h8v8H216V272M224 272h8v8H224V272M248 272h8v8H248V272M256 272h8v8H256V272M272 272h8v8H272V272M280 272h8v8H280V272M288 272h8v8H288V272M32 280h8v8H32V280M80 280h8v8H80V280M112 280h8v8H112V280M136 280h8v8H136V280M144 280h8v8H144V280M176 280h8v8H176V280M184 280h8v8H184V280M192 280h8v8H192V280M208 280h8v8H208V280M224 280h8v8H224V280M232 280h8v8H232V280M240 280h8v8H240V280M248 280h8v8H248V280M256 280h8v8H256V280M264 280h8v8H264V280M272 280h8v8H272V280M280 280h8v8H280V280M288 280h8v8H288V280M32 288h8v8H32V288M40 288h8v8H40V288M48 288h8v8H48V288M56 288h8v8H56V288M64 288h8v8H64V288M72 288h8v8H72V288M80 288h8v8H80V288M96 288h8v8H96V288M112 288h8v8H112V288M120 288h8v8H120V288M128 288h8v8H128V288M152 288h8v8H152V288M168 288h8v8H168V288M184 288h8v8H184V288M224 288h8v8H224V288M240 288h8v8H240V288M248 288h8v8H248V288M256 288h8v8H256V288M264 288h8v8H264V288"></path>
+        </svg>
+        </div>
+        </div>
+        </section>
+        <section id="refs" class="slide level2 unnumbered">
+        <h2 class="unnumbered">References</h2>
+        <div id="refs" class="references csl-bib-body hanging-indent"
+        data-entry-spacing="0" role="list">
+        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
+        Gil, Alex, and Élika Ortega. 2016. <span>“Global Outlooks in
+        Digital Humanities: Multilingual Practices and Minimal
+        Computing.”</span> In <em>Doing Digital Humanities: Practice,
+        Training, Research</em>, edited by Constance Crompton, Richard J
+        Lane, and Ray Siemens, 22–34. Abingdon: Routledge.
+        </div>
+        <div id="ref-Grallert2021GG" class="csl-entry" role="listitem">
+        Grallert, Till. 2021. <span>“Catch Me If You Can! Approaching
+        the Arabic Press of the Late Ottoman Eastern Mediterranean
+        Through Digital History.”</span> Edited by Simone Lässig.
+        <em>Geschichte Und Gesellschaft</em> 47 (1, Digital History):
+        58–89. <a
+        href="https://doi.org/10.13109/gege.2021.47.1.58">https://doi.org/10.13109/gege.2021.47.1.58</a>.
+        </div>
+        <div id="ref-Grallert2022DHQ" class="csl-entry" role="listitem">
+        ———. 2022. <span>“Open Arabic Periodical Editions: A Framework
+        for Bootstrapped Scholarly Editions Outside the Global
+        North.”</span> Edited by Roopika Risam and Alex Gil. <em>Digital
+        Humanities Quarterly</em> 16 (2, "Minimal Computing"). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>.
+        </div>
+        <div id="ref-RisamGil2022Introduction" class="csl-entry"
+        role="listitem">
+        Risam, Roopika, and Alex Gil. 2022. <span>“Introduction: The
+        Questions of Minimal Computing.”</span> Edited by Alex Gil and
+        Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
+        "Minimal Computing"). <a
+        href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
+        </div>
+        </div>
+        </section></section>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+    <!-- reveal.js plugins -->
+    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    
+    <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        // center: true,
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+        
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+                                              
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+                width: 1200,
+                        height: 1000,
+        
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+        
+        // Bounds for smallest/largest possible scale to apply to content
+        
+        
+        
+        // reveal.js plugins
+        plugins: [
+                RevealNotes,
+        RevealSearch,
+        RevealZoom
+        ]
+      });
+    </script>
+    <!-- support for mermaid.js -->
+    <!-- <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script> -->
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+        <footer>
+        <div class="c_frame">
+                    <span class="c_left">2024-03-22</span>
+                            <span class="c_left">|</span>
+            <span class="c_left">Till Grallert</span>
+                        <span class="c_center">
+          <a href="https://openarabicpe.github.io/slides/2024-ias/">https://openarabicpe.github.io/slides/2024-ias/</a>
+          <span>https://creativecommons.org/licenses/by-sa/4.0/</span>
+        </span>
+                <!-- this should probably moved to the title slide only -->
+        <span id="institution" class="c_right"><a href="https://www.hu-berlin.de">HUMBOLDT-UNIVERSITÄT ZU BERLIN</a></span>
+        </div>
+    </footer>
+    <script>
+            function setCurrentDate() {
+                let date = new Date().toLocaleDateString();
+                let collection = document.getElementsByClassName("current-date");
+                for (element of collection) {
+                    if (element.nodeName == "META" && !element.hasAttribute("content")) {
+                        element.setAttribute("content", date);
+                    } else {
+                        element.innerText = date;
+                    }
+                }
+            }
+        </script>
+  </body>
+  </html>
