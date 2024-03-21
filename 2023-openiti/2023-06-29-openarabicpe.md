@@ -53,7 +53,7 @@ nocite: |
 :::
 
 # Why spend the effort? <br/> Shouldn't others do it?
-## Why spend the effort?
+## Why spend the effort? <br/> Shouldn't others do it?
 
 
 1. Neo-colonial invisibility of cultural artefacts from the Global South in the digital domain
