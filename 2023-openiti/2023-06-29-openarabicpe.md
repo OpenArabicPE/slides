@@ -30,14 +30,15 @@ nocite: |
 - Volunteer-run scholarly editing and infrastructure-building (2015--)
 - Digital scholarly editions
     + 6 Arabic magazines from Baghdad, Cairo, Damascus with c.800 issues and more than 9 million words.
-    + full text and facsimiles modelled in TEI XML
+    + full text and facsimiles modelled in TEI/XML
     - Bibliographic metadata (MODS, BibTeX, Zotero RDF)
+    - Open licenses: [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
        <!--  - on the article level for the entire corpus plus 2 additional magazines
         - on the issue level for 7 additional newspapers
         - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) -->
 - Infrastructure:
-    + static websites without a backend / database
-    + free hosting and archiving
+    + [TEI Boilerplate]((https://github.com/openarabicpe/tei-boilerplate-arabic-editions)): static websites. No need for backend, database or internet connection
+    + [GitHub](https://github.com/openarabicpe) / [Zenodo](https://zenodo.org): free hosting and archiving with DOIs
     - [Zotero group](https://zotero.org/groups/openarabicpe) as gateway to search/browse the corpus
 - Workflows and tools
 
