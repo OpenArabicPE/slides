@@ -111,7 +111,7 @@ How do we search for [[مرآة الشرق]{lang="ar"}](https://www.wikidata.org
 - DMG
 - removing all diacritics and articles: `mirʾat sarq`
 
-![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Mirʾāt aš-Šarq) for "Mirʾāt aš-Šarq"](../assets/zdb_mirat-ar-Latn-x-dmg.png){#fig:zdb-dmg}
+![Search in [ZDB](https://zdb-katalog.de/list.xhtml?t=Mirʾāt aš-Šarq) for "Mirʾāt aš-Šarq". Note how this returns a different hit than @fig:zdb-hamza](../assets/zdb_mirat-ar-Latn-x-dmg.png){#fig:zdb-dmg}
 
 ::::
 :::
