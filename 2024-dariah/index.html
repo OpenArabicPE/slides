@@ -666,12 +666,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -1486,9 +1490,10 @@
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
-        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
-        <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-    </header>
+      <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
+              <a href="https://openarabicpe.github.io/slides/2024-dariah/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://openarabicpe.github.io/slides/2024-dariah/"></a>
+        <a href="https://4memory.de"><img class="c_right c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
+          </header>
     <div class="reveal">
       <div class="slides">
 
