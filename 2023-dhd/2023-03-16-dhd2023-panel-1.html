@@ -21,8 +21,11 @@
       div.columns{display: flex; gap: min(4vw, 1.5em);}
       div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
       ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
         width: 0.8em;
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
@@ -45,7 +48,7 @@
                         font-family: AmiriWeb;
                         font-style: normal;
                         font-weight: 400;
-                        src: url('https://openarabicpe.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
                     }
 
                     @font-face {
@@ -93,8 +96,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em)
-                        accumulate for nested elements and must thus be avoided.
+                        /*keep in mind that relative sizes (%, em) 
+                        accumulate for nested elements and must thus be avoided. 
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -116,11 +119,16 @@
 
                     html,
                     body,
+                    html.print-pdf body,
                     .reveal-viewport {
-                        margin: 0 0 0 0;
+                        margin: 0 0 0 0 !important;
                         padding: 0 0 0 0;
                         width: 100%;
                         height: 100%;
+                    }
+                    html,
+                    body,
+                    .reveal-viewport {
                         /*color: white;*/
                         color: black !important;
                         /*color: #4d4d4d;*/
@@ -140,8 +148,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header,
-                    footer,
+                    header, 
+                    footer, 
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -197,8 +205,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -206,14 +214,21 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
                     }
-                    div.slide {
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
+                    }
+                    div.slide,
+                    html.print-pdf div.slide {
                         top: 10% ;
                     }
                     /* revealjs generates inline CSS that needs to be overridden  */
+                    html.print-pdf section.slide,
                     section.slide {
                         top: 0 !important;
                     }
@@ -242,17 +257,11 @@
                         /*font-size is over-ridden by automatically generated inline CSS on body*/
                         font-size: 24px !important;
                     }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    th {
+                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
+                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
+                    h1, h2, h3, h4, h5,
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -280,6 +289,9 @@
                     }
                     table {
                         font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
                     }
                     /******************
                     set colours
@@ -570,12 +582,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -586,7 +602,7 @@
                         display: block;
                         width: 90%;
                         /* the height setting seems to squeeze iframes */
-                        /*height: 80%;*/
+                        height: 600px;
                         /* center the iframe */
                         margin-left: auto;
                         margin-right: auto;
@@ -608,6 +624,7 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -653,7 +670,7 @@
                     .c_width-30,
                     .column-30,
                     .columns .narrow {
-                        width: 33%;
+                        width: 31%;
                         position: relative;
                         float: left;
                     }
@@ -1121,7 +1138,8 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
                     /*******************************
@@ -1162,8 +1180,9 @@
                         border-bottom-width: 1px;
                         border-bottom-style: solid;
                     }
-                    td:hover {
+                    td:hover, td:hover * {
                         background-color: #F46A00;
+                        color: black;
                     }
                     .focus {
                         border-color: red;
@@ -1259,13 +1278,34 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /* alerts */
+                    /******************
+                    alerts
+                    *******************/
+
+
                     div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                        border-color: red;
+                    /*    border-color: red;*/
+                        background-color: white;
                         margin-left: 2em;
                         border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
                     }
                     /*
                      hide images for work around for save as bug
@@ -1361,13 +1401,29 @@
                             page-break-before: avoid
                         }
                     }
+                    /**********************
+                     necessary hacks to counter the linked reveal.css
+                     ***********************/
+                    html.print-pdf {
+                        overflow: visible;
+                        float: none!important;
+                        color: black !important;
+                        background-color: white !important;
+                    }
+                    html.print-pdf .reveal {
+                        width: 100% !important;
+                    }
+                    html.print-pdf section.slide {
+                        padding-top: 20px !important;
+                    }
+
                     </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-    </header>
+            </header>
     <div class="reveal">
       <div class="slides">
 
@@ -1393,7 +1449,7 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
                             </div>
       </div>
         </section>
-
+                
         <section id="digitisation-online-accessible"
         class="slide level2">
         <h2>Digitisation != online != accessible</h2>
@@ -1417,10 +1473,9 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
         <li>literacy</li>
         </ul>
         </div><div class="column">
-        <figure>
+        <figure id="fig:strom-baghdad">
         <img
         data-src="/Users/Shared/BachUni/publications/github/p8fc0a1bd/assets/images/tweet_%20627223846244847616.png"
-        id="fig:strom-baghdad"
         alt="Figure 1: Protestor in Baghdad, 31. July 2015, holding sign “darling, you are as beautiful as an additional hour of electricity”. Source: Twitter" />
         <figcaption aria-hidden="true">Figure 1: Protestor in Baghdad,
         31. July 2015, holding sign “darling, you are as beautiful as an
@@ -1504,10 +1559,9 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
         </ul></li>
         </ul>
         </div><div class="column">
-        <figure>
+        <figure id="fig:translatio-interface">
         <img
         data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/OpenArabicPE/translatio_interface-languages_annotated.png"
-        id="fig:translatio-interface"
         alt="Figure 2: Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in Latinised transcription; green = German metadata" />
         <figcaption aria-hidden="true">Figure 2: Interface of the <a
         href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio</a>
@@ -1554,59 +1608,59 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
         <div class="column">
         <table>
         <thead>
-        <tr class="header">
+        <tr>
         <th>periodicals</th>
         <th>–1918</th>
         <th>–1929</th>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>published</td>
         <td>2054</td>
         <td>3550</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>known holdings</td>
         <td>540</td>
         <td>775</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>% of total</td>
         <td>26.29</td>
         <td>21.83</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>————————</td>
         <td>——–</td>
         <td>——–</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>digitized</td>
         <td>156</td>
         <td>233</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>% of total</td>
         <td>7.59</td>
         <td>6.56</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>————————</td>
         <td>——–</td>
         <td>——–</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>multiple digitizations</td>
         <td>51</td>
         <td>66</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>% of total</td>
         <td>2.48</td>
         <td>1.86</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>% of digitized</td>
         <td>32.69</td>
         <td>28.33</td>
@@ -1614,20 +1668,18 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
         </tbody>
         </table>
         </div><div class="column">
-        <figure>
+        <figure id="fig:holding-stats">
         <img
         data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png"
-        id="fig:holding-stats"
         alt="Figure 3: Periodicals by places of publication. Size of circles corresponds to the number of periodicals. Colour indicates the collection status: known (grün), digitised (blau), reminder (rot)." />
         <figcaption aria-hidden="true">Figure 3: Periodicals by places
         of publication. Size of circles corresponds to the number of
         periodicals. Colour indicates the collection status: known
         (grün), digitised (blau), reminder (rot).</figcaption>
         </figure>
-        <figure>
+        <figure id="fig:holding-map">
         <img
         data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/map-data-set-periodical-holdings-global-north-na_mapped.png"
-        id="fig:holding-map"
         alt="Figure 4: Periodicals and their holding institutions" />
         <figcaption aria-hidden="true">Figure 4: Periodicals and their
         holding institutions</figcaption>
@@ -1659,10 +1711,9 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
         <h2>networked digital infrastructures and global capitalism</h2>
         <div class="columns">
         <div class="column">
-        <figure>
+        <figure id="fig:hathi-muqtabas-global">
         <img
         data-src="/Users/Shared/BachUni/BachBibliothek/GitHub/OpenArabicPE/slides/assets/hathi_muqtabas-1.png"
-        id="fig:hathi-muqtabas-global"
         alt="Figure 5: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
         <figcaption aria-hidden="true">Figure 5: <em>al-Muqtabas</em> 6
         on <a
@@ -1712,7 +1763,7 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
     <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/revealjs/plugin/notes/notes.js"></script>
     <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/revealjs/plugin/search/search.js"></script>
     <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/FuReSH/slides/revealjs/plugin/zoom/zoom.js"></script>
-
+    
     <script>
 
       // Full list of configuration options available at:
@@ -1813,8 +1864,8 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
+                autoSlide: 0,
+        
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -1858,13 +1909,20 @@ Berlin, Universitätsbibliothek, Grimm-Zentrum</p>
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
+                                              
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1000,
-                        height: 800,
-
+                width: 1200,
+                        height: 1000,
+        
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+        
+        // Bounds for smallest/largest possible scale to apply to content
+        
+        
+        
         // reveal.js plugins
         plugins: [
                 RevealNotes,

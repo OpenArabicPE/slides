@@ -10,8 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -32,8 +32,9 @@
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
       /* CSS for syntax highlighting */
+      html { -webkit-text-size-adjust: 100%; }
       pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
       pre > code.sourceCode > span:empty { height: 1.2em; }
       .sourceCode { overflow: visible; }
       code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -44,7 +45,7 @@
       }
       @media print {
       pre > code.sourceCode { white-space: pre-wrap; }
-      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
       }
       pre.numberSource code
         { counter-reset: source-line 0; }
@@ -116,7 +117,7 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -180,8 +181,8 @@
                         direction: rtl;
                         text-align: right !important;
                         font-family: AmiriWeb, Helvetica, Arial, sans-serif;
-                        /*keep in mind that relative sizes (%, em) 
-                        accumulate for nested elements and must thus be avoided. 
+                        /*keep in mind that relative sizes (%, em)
+                        accumulate for nested elements and must thus be avoided.
                         At the moment almost everything is tailored to 18px */
                         /*    font-size: 18px;*/
                     }
@@ -203,20 +204,25 @@
 
                     html,
                     body,
+                    html.print-pdf body,
                     .reveal-viewport {
-                        margin: 0 0 0 0;
+                        margin: 0 0 0 0 !important;
                         padding: 0 0 0 0;
                         width: 100%;
                         height: 100%;
+                    }
+                    html,
+                    body,
+                    .reveal-viewport {
                         /*color: white;*/
                         color: black !important;
                         /*color: #4d4d4d;*/
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -227,8 +233,8 @@
                       header and footer to be displayed on all slides
                     *******************/
 
-                    header, 
-                    footer, 
+                    header,
+                    footer,
                     div.c_header,
                     div.c_footer  {
                       z-index: 30;
@@ -284,8 +290,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -293,14 +299,21 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
                     }
-                    div.slide {
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
+                    }
+                    div.slide,
+                    html.print-pdf div.slide {
                         top: 10% ;
                     }
                     /* revealjs generates inline CSS that needs to be overridden  */
+                    html.print-pdf section.slide,
                     section.slide {
                         top: 0 !important;
                     }
@@ -329,17 +342,11 @@
                         /*font-size is over-ridden by automatically generated inline CSS on body*/
                         font-size: 24px !important;
                     }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    th {
+                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
+                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
+                    h1, h2, h3, h4, h5,
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -660,12 +667,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -698,6 +709,7 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -1211,7 +1223,8 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
                     /*******************************
@@ -1473,14 +1486,30 @@
                             page-break-before: avoid
                         }
                     }
+                    /**********************
+                     necessary hacks to counter the linked reveal.css
+                     ***********************/
+                    html.print-pdf {
+                        overflow: visible;
+                        float: none!important;
+                        color: black !important;
+                        background-color: white !important;
+                    }
+                    html.print-pdf .reveal {
+                        width: 100% !important;
+                    }
+                    html.print-pdf section.slide {
+                        padding-top: 20px !important;
+                    }
+
                     </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
-        <a href="https://4memory.de"><img class="c_left c_logo" src="https://4memory.de/files/2023/08/Logo_for_memory_CMYK.jpg"></a>
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-    </header>
+                  <a href="https://openarabicpe.github.io/slides/2024-ias/"><img class="c_left c_logo c_qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://openarabicpe.github.io/slides/2024-ias/"></a>
+            </header>
     <div class="reveal">
       <div class="slides">
 
@@ -1508,7 +1537,7 @@ Right-to-Left Script Texts</span>
                   </div>
       </div>
         </section>
-                
+
         <section>
         <section id="introduction" class="title-slide slide level1">
         <h1>Introduction</h1>
@@ -1535,8 +1564,8 @@ Right-to-Left Script Texts</span>
         href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
         4.0</a>
         <!--  - on the article level for the entire corpus plus 2 additional magazines
-              - on the issue level for 7 additional newspapers
-              - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) --></li>
+          - on the issue level for 7 additional newspapers
+          - on the title level for 3300+ periodicals (in collaboration with [Project Jarāʾid](https://projectjaraid.github.io)) --></li>
         </ul></li>
         <li>Infrastructure:
         <ul>
@@ -1555,15 +1584,15 @@ Right-to-Left Script Texts</span>
         </div><div class="narrow">
         <figure id="fig:webview-zuhur">
         <img data-src="../assets/boilerplate_zuhur-v_1-i_1.png"
-        alt="Webview of al-Zuhur 1(1)" />
-        <figcaption>Figure 1: <a
+        alt="Figure 1: Webview of al-Zuhur 1(1)" />
+        <figcaption aria-hidden="true">Figure 1: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_1.TEIP5.xml">Webview
         of <em>al-Zuhur</em> 1(1)</a></figcaption>
         </figure>
         <figure id="fig:webview-muqtabas">
         <img data-src="../assets/boilerplate_muqtabas-v_3-i_2.png"
-        alt="Webview of al-Muqtabas 3(2)" />
-        <figcaption>Figure 2: <a
+        alt="Figure 2: Webview of al-Muqtabas 3(2)" />
+        <figcaption aria-hidden="true">Figure 2: <a
         href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_26.TEIP5.xml">Webview
         of <em>al-Muqtabas</em> 3(2)</a></figcaption>
         </figure>
@@ -1631,9 +1660,10 @@ Right-to-Left Script Texts</span>
         <figure id="fig:mirat">
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
-        alt="Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption>Figure 3: Front page of <em>Mirʾāt al-Sharq</em>
-        #192, 22 Nov. 1922, Jerusalem. Source: <a
+        alt="Figure 3: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 3: Front page of
+        <em>Mirʾāt al-Sharq</em> #192, 22 Nov. 1922, Jerusalem. Source:
+        <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
         </figure>
         </div>
@@ -1647,8 +1677,8 @@ Right-to-Left Script Texts</span>
         </ul>
         <figure id="fig:zdb-hamza">
         <img data-src="../assets/zdb_mirat-ar-Latn-hamza.png"
-        alt="Search in ZDB for “mir’at sarq”" />
-        <figcaption>Figure 4: Search in <a
+        alt="Figure 4: Search in ZDB for “mir’at sarq”" />
+        <figcaption aria-hidden="true">Figure 4: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=mir&#39;at%20sarq">ZDB</a>
         for “mir’at sarq”</figcaption>
         </figure>
@@ -1663,8 +1693,8 @@ Right-to-Left Script Texts</span>
         </ul>
         <figure id="fig:zdb-dmg">
         <img data-src="../assets/zdb_mirat-ar-Latn-x-dmg.png"
-        alt="Search in ZDB for “Mirʾāt aš-Šarq”. Note how this returns a different hit than fig. 4" />
-        <figcaption>Figure 5: Search in <a
+        alt="Figure 5: Search in ZDB for “Mirʾāt aš-Šarq”. Note how this returns a different hit than fig. 4" />
+        <figcaption aria-hidden="true">Figure 5: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=Mirʾāt%20aš-Šarq">ZDB</a>
         for “Mirʾāt aš-Šarq”. Note how this returns a different hit than
         fig. 4</figcaption>
@@ -1716,16 +1746,16 @@ Right-to-Left Script Texts</span>
         <figure id="fig:holding-map">
         <img
         data-src="../assets/maps/map-data-set-periodical-holdings-med-na_mapped.png"
-        alt="Periodicals and their holding institutions" />
-        <figcaption>Figure 6: Periodicals and their holding
-        institutions</figcaption>
+        alt="Figure 6: Periodicals and their holding institutions" />
+        <figcaption aria-hidden="true">Figure 6: Periodicals and their
+        holding institutions</figcaption>
         </figure>
         </div><div class="column">
         <div id="tbl:jaraid-holdings">
         <table>
         <caption>Table 1: Periodical holdings and digitization</caption>
         <thead>
-        <tr class="header">
+        <tr>
         <th style="text-align: left;">periodicals</th>
         <th style="text-align: right;">–1918</th>
         <th style="text-align: right;"></th>
@@ -1734,21 +1764,21 @@ Right-to-Left Script Texts</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">published</td>
         <td style="text-align: right;">2054</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">3550</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">known holdings</td>
         <td style="text-align: right;">540</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">775</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">26.29</td>
@@ -1756,21 +1786,21 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;"><span
         class="red">21.83</span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————–</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">digitized</td>
         <td style="text-align: right;">156</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">233</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of known holdings</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">28.89</td>
@@ -1778,7 +1808,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;"><span
         class="green">30.06</span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">7.59</td>
@@ -1786,28 +1816,28 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;"><span
         class="red">6.56</span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">————————</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">——-</td>
         <td style="text-align: right;">——–</td>
         <td style="text-align: right;">—————–</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">multiple digitisations</td>
         <td style="text-align: right;">51</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">66</td>
         <td style="text-align: right;"></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td style="text-align: left;">% of total</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">2.48</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">1.86</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td style="text-align: left;">% of digitised</td>
         <td style="text-align: right;"></td>
         <td style="text-align: right;">32.69</td>
@@ -1846,7 +1876,7 @@ Right-to-Left Script Texts</span>
         <col style="width: 60%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th></th>
         <th>Arabic periodicals (1798–1918)</th>
         <th><a href="https://hwk1.hebis.de">WWI as mirrored by Hessian
@@ -1854,32 +1884,32 @@ Right-to-Left Script Texts</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>community</td>
         <td>c. 420 million Arabic speakers</td>
         <td>c. 6.2 million inhabitants</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>periodicals</td>
         <td>2054 newspapers and journals</td>
         <td>125 newspapers</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>digitized</td>
         <td>156 periodicals</td>
         <td>125 newspapers with more than 1.5 million pages</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>type</td>
         <td>mostly facsimiles</td>
         <td>facsimiles and full text</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>access</td>
         <td>paywalls, geo-fencing</td>
         <td>open access</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>interface</td>
         <td>mostly foreign languages only</td>
         <td>local and foreign languages</td>
@@ -1892,16 +1922,17 @@ Right-to-Left Script Texts</span>
         <figure id="fig:map-arabic-dialects">
         <img
         data-src="../assets/maps/lMBwUARaIVBp5EUfx5yp4onMAtfAQsgRevtxTopNl98.png.webp"
-        alt="Map of Arabic dialects. Source: reddit" />
-        <figcaption>Figure 7: Map of Arabic dialects. Source: <a
+        alt="Figure 7: Map of Arabic dialects. Source: reddit" />
+        <figcaption aria-hidden="true">Figure 7: Map of Arabic dialects.
+        Source: <a
         href="https://www.reddit.com/r/MapPorn/comments/337ws9/arabic_dialects_map_os_2000x1130">reddit</a></figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:map-hesse">
         <img data-src="../assets/maps/map_hesse-europe.png"
-        alt="Map of Hesse in Europe. Source: https://www.iz.sk/sk/projekty/regiony-eu/DE7" />
-        <figcaption>Figure 8: Map of Hesse in Europe. Source: <a
-        href="https://www.iz.sk/sk/projekty/regiony-eu/DE7"
+        alt="Figure 8: Map of Hesse in Europe. Source: https://www.iz.sk/sk/projekty/regiony-eu/DE7" />
+        <figcaption aria-hidden="true">Figure 8: Map of Hesse in Europe.
+        Source: <a href="https://www.iz.sk/sk/projekty/regiony-eu/DE7"
         class="uri">https://www.iz.sk/sk/projekty/regiony-eu/DE7</a></figcaption>
         </figure>
         </div>
@@ -1920,8 +1951,8 @@ Right-to-Left Script Texts</span>
         <figure id="fig:translatio-interface">
         <img
         data-src="../assets/translatio_interface-languages_annotated.png"
-        alt="Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
-        <figcaption>Figure 9: Interface of the <a
+        alt="Figure 9: Interface of the Translatio project (Bonn). Facsimile of Arabic original on the left. Yellow = English UI; purple = Arabic metadata in DMG transcription; green = German metadata" />
+        <figcaption aria-hidden="true">Figure 9: Interface of the <a
         href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio</a>
         project (Bonn). Facsimile of Arabic original on the left. Yellow
         = English UI; purple = Arabic metadata in DMG transcription;
@@ -1938,17 +1969,18 @@ Right-to-Left Script Texts</span>
         <div class="column">
         <figure id="fig:hathi-muqtabas-global">
         <img data-src="../assets/hathi_muqtabas-1.png"
-        alt="al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
-        <figcaption>Figure 10: <em>al-Muqtabas</em> 6 on <a
+        alt="Figure 10: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
+        <figcaption aria-hidden="true">Figure 10: <em>al-Muqtabas</em> 6
+        on <a
         href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
         (Original in Princeton) outside the USA</figcaption>
         </figure>
         </div><div class="column">
         <figure id="fig:hathi-muqtabas-us">
         <img data-src="../assets/hathi_muqtabas-2.png"
-        alt="The page from fig. 10 with a US-IP" />
-        <figcaption>Figure 11: The page from fig. 10 with a
-        US-IP</figcaption>
+        alt="Figure 11: The page from fig. 10 with a US-IP" />
+        <figcaption aria-hidden="true">Figure 11: The page from fig. 10
+        with a US-IP</figcaption>
         </figure>
         </div>
         </div>
@@ -1967,8 +1999,8 @@ Right-to-Left Script Texts</span>
         <figure id="fig:muqtabas-6-2-shamela-2">
         <img
         data-src="https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png"
-        alt="al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
-        <figcaption>Figure 12: <span class="citation"
+        alt="Figure 12: al-Muqtabas (“al-laban al-rāʾib” 1911) on Shamela as it appeared in 2019" />
+        <figcaption aria-hidden="true">Figure 12: <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> on <a
         href="http://shamela.ws/browse.php/book-26523#page-4046">Shamela</a>
@@ -1978,9 +2010,9 @@ Right-to-Left Script Texts</span>
         <figure id="fig:muqtabas-6-2-133-eap-2">
         <img
         data-src="../assets/eap119-1-4-5-muqtabas-133_annotated.jpg"
-        alt="Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
-        <figcaption>Figure 13: Facsimile of the same section of <span
-        class="citation"
+        alt="Figure 13: Facsimile of the same section of al-Muqtabas (“al-laban al-rāʾib” 1911) from EAP" />
+        <figcaption aria-hidden="true">Figure 13: Facsimile of the same
+        section of <span class="citation"
         data-cites="oclc_4770057679-i_61-div_21.d1e2838"><em>al-Muqtabas</em>
         (<span>“al-laban al-rāʾib”</span> 1911)</span> from <a
         href="https://eap.bl.uk/">EAP</a></figcaption>
@@ -2048,7 +2080,7 @@ Right-to-Left Script Texts</span>
         <col style="width: 22%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>Font Type</th>
         <th style="text-align: right;">Sakhr (%)</th>
         <th style="text-align: right;">ABBYY (%)</th>
@@ -2057,7 +2089,7 @@ Right-to-Left Script Texts</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>Traditional Arabic</td>
         <td style="text-align: right;">48.54</td>
         <td style="text-align: right;">67.66</td>
@@ -2065,28 +2097,28 @@ Right-to-Left Script Texts</span>
         class="green"><strong>51.88</strong></span></td>
         <td style="text-align: right;">47.04</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Tahoma</td>
         <td style="text-align: right;">10.52</td>
         <td style="text-align: right;">69.91</td>
         <td style="text-align: right;">26.38</td>
         <td style="text-align: right;">38.37</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Simplified Arabic</td>
         <td style="text-align: right;">52.97</td>
         <td style="text-align: right;">67.69</td>
         <td style="text-align: right;">44.94</td>
         <td style="text-align: right;">46.75</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>M Unicode Sara</td>
         <td style="text-align: right;">36.03</td>
         <td style="text-align: right;">59.40</td>
         <td style="text-align: right;">25.92</td>
         <td style="text-align: right;">33.72</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Diwani letter</td>
         <td style="text-align: right;"><span
         class="red"><strong>18.13</strong></span></td>
@@ -2097,21 +2129,21 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;"><span
         class="red"><strong>23.32</strong></span></td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>DecoType Thuluth</td>
         <td style="text-align: right;">36.12</td>
         <td style="text-align: right;">37.71</td>
         <td style="text-align: right;">24.26</td>
         <td style="text-align: right;">32.48</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Deco’Type Naskh</td>
         <td style="text-align: right;">48.88</td>
         <td style="text-align: right;">50.22</td>
         <td style="text-align: right;">41.63</td>
         <td style="text-align: right;">40.92</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>Arabic transparent</td>
         <td style="text-align: right;">51.56</td>
         <td style="text-align: right;"><span
@@ -2120,14 +2152,14 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;"><span
         class="green"><strong>48.61</strong></span></td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>Andalus</td>
         <td style="text-align: right;">28.07</td>
         <td style="text-align: right;">37.53</td>
         <td style="text-align: right;">21.68</td>
         <td style="text-align: right;">25.34</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>AdvertisingBold</td>
         <td style="text-align: right;"><span
         class="green"><strong>57.35</strong></span></td>
@@ -2142,9 +2174,9 @@ Right-to-Left Script Texts</span>
         <!-- ![*al-Muqtabas* 6 on [HathiTrust](http://hdl.handle.net/2027/njp.32101073250910), quality of the OCR layer (requires US IP)](../assets/hathi_muqtabas-ocr-3.png) -->
         <figure id="fig:gpa-ocr">
         <img data-src="../assets/gpa_bashir-i_487-p_1_ocr.png"
-        alt="al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
-        <figcaption>Figure 14: <em>al-Bashīr</em> 9 Jan. 1880 (#487),
-        p.1 on <a
+        alt="Figure 14: al-Bashīr 9 Jan. 1880 (#487), p.1 on GPA, quality of the OCR layer" />
+        <figcaption aria-hidden="true">Figure 14: <em>al-Bashīr</em> 9
+        Jan. 1880 (#487), p.1 on <a
         href="https://gpa.eastview.com/crl/mena/newspapers/bshr18800109-01.1.1">GPA</a>,
         quality of the OCR layer</figcaption>
         </figure>
@@ -2181,44 +2213,42 @@ Right-to-Left Script Texts</span>
         results[,] and OCR-D if you’ve got an IT department.</p>
         </blockquote>
         <p><cite><span class="citation"
-        data-cites="Winkler20230307OCR">(Winkler and
-        @awinkler@openbiblio.social Mastodon post
+        data-cites="Winkler20230307OCR">(Winkler Mastodon post
         2023)</span></cite></p>
         <div class="columns">
         <div class="narrow">
         <div id="tbl:ocr-ar-ml">
         <table>
-        <caption>Table 4: Evaluation of my our Transkribus
-        models</caption>
+        <caption>Table 4: Evaluation of our Transkribus models</caption>
         <thead>
-        <tr class="header">
+        <tr>
         <th>training set</th>
         <th style="text-align: right;"><em>al-Ustādh</em></th>
         <th style="text-align: right;"><em>al-Muqtabas</em></th>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td>words</td>
         <td style="text-align: right;">192829</td>
         <td style="text-align: right;">11116</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>lines</td>
         <td style="text-align: right;">18732</td>
         <td style="text-align: right;">1013</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>epochs</td>
         <td style="text-align: right;">200</td>
         <td style="text-align: right;">200</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td>CER train</td>
         <td style="text-align: right;">2.01</td>
         <td style="text-align: right;">0.07</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td>CER validation</td>
         <td style="text-align: right;"><span
         class="green"><strong>2.09</strong></span></td>
@@ -2231,9 +2261,10 @@ Right-to-Left Script Texts</span>
         </div><div class="wide">
         <figure id="fig:transkribus-web-app">
         <img data-src="../assets/transkribus_hasna-v_1-i_1.png"
-        alt="Transkribus web-app showing results of our model for al-Ḥasnāʾ 1(1)" />
-        <figcaption>Figure 15: Transkribus web-app showing results of
-        our model for <em>al-Ḥasnāʾ</em> 1(1)</figcaption>
+        alt="Figure 15: Transkribus web-app showing results of our model for al-Ḥasnāʾ 1(1)" />
+        <figcaption aria-hidden="true">Figure 15: Transkribus web-app
+        showing results of our model for <em>al-Ḥasnāʾ</em>
+        1(1)</figcaption>
         </figure>
         </div>
         </div>
@@ -2407,9 +2438,10 @@ Right-to-Left Script Texts</span>
         </ul>
         <figure id="fig:zuhur-vscode">
         <img data-src="../assets/vscode_zuhur.png"
-        alt="The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
-        <figcaption>Figure 16: The TEI XML file for <em>al-Zuhūr</em>
-        2(4) in <a href="https://code.visualstudio.com/">Visual Studio
+        alt="Figure 16: The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
+        <figcaption aria-hidden="true">Figure 16: The TEI XML file for
+        <em>al-Zuhūr</em> 2(4) in <a
+        href="https://code.visualstudio.com/">Visual Studio
         Code</a></figcaption>
         </figure>
         <!-- ![The TEI XML file for *al-Zuhūr* 2(4) in [Sublime Text](https://www.sublimetext.com/)](../assets/sublime_zuhur.png) -->
@@ -2433,10 +2465,11 @@ Right-to-Left Script Texts</span>
         </ul>
         <figure id="fig:zuhur-oxygen">
         <img data-src="../assets/oxygen_zuhur-author.png"
-        alt="The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption>Figure 17: The TEI XML file for <em>al-Zuhūr</em>
-        2(4) in <a href="https://www.oxygenxml.com/">oXygen</a>’s author
-        mode. Styling relies on CSS.</figcaption>
+        alt="Figure 17: The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption aria-hidden="true">Figure 17: The TEI XML file for
+        <em>al-Zuhūr</em> 2(4) in <a
+        href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
+        Styling relies on CSS.</figcaption>
         </figure>
         </div>
         </div>
@@ -2473,9 +2506,9 @@ Right-to-Left Script Texts</span>
         </div><div class="column">
         <figure id="fig:zuhur-zenodo">
         <img data-src="../assets/zenodo_zuhur.png"
-        alt="Archived release of al-Zuhūr on Zenono" />
-        <figcaption>Figure 18: Archived release of <em>al-Zuhūr</em> on
-        <a
+        alt="Figure 18: Archived release of al-Zuhūr on Zenono" />
+        <figcaption aria-hidden="true">Figure 18: Archived release of
+        <em>al-Zuhūr</em> on <a
         href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
         </figure>
         </div>
@@ -2518,15 +2551,15 @@ Right-to-Left Script Texts</span>
         <figure id="fig:zuhur-zotero">
         <img
         data-src="../assets/zotero-group_openarabicpe-mobile-details_small.png"
-        alt="Zotero group “OpenArabicPE”: details in mobile view" />
-        <figcaption>Figure 19: Zotero group “<a
+        alt="Figure 19: Zotero group “OpenArabicPE”: details in mobile view" />
+        <figcaption aria-hidden="true">Figure 19: Zotero group “<a
         href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
         details in mobile view</figcaption>
         </figure>
         <figure id="fig:zuhur-webview">
         <img data-src="../assets/boilerplate_zuhur-v_2-i_4_small.png"
-        alt="Webview of al-Zuhūr 2(4)" />
-        <figcaption>Figure 20: <a
+        alt="Figure 20: Webview of al-Zuhūr 2(4)" />
+        <figcaption aria-hidden="true">Figure 20: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
         of <em>al-Zuhūr</em> 2(4)</a></figcaption>
         </figure>
@@ -2553,7 +2586,7 @@ Right-to-Left Script Texts</span>
         <col style="width: 3%" />
         </colgroup>
         <thead>
-        <tr class="header">
+        <tr>
         <th>Title</th>
         <th>Place</th>
         <th>Proprietor</th>
@@ -2565,7 +2598,7 @@ Right-to-Left Script Texts</span>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-haqaiq">al-Ḥaqāʾiq</a></td>
         <td>Damascus</td>
@@ -2577,7 +2610,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;">389</td>
         <td style="text-align: right;">298090</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-hasna">al-Ḥasnāʾ</a></td>
         <td>Beirut</td>
@@ -2589,7 +2622,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;">201</td>
         <td style="text-align: right;">NA</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
         <td>Cairo</td>
@@ -2600,7 +2633,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;">4300</td>
         <td style="text-align: right;">6144593</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-muqtabas">al-Muqtabas</a></td>
         <td>Cairo, Damascus</td>
@@ -2612,7 +2645,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;">2964</td>
         <td style="text-align: right;">1981081</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-ustadh">al-Ustādh</a></td>
         <td>Cairo</td>
@@ -2624,7 +2657,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;">435</td>
         <td style="text-align: right;">221447</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
         <td>Cairo</td>
@@ -2636,7 +2669,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;">436</td>
         <td style="text-align: right;">292333</td>
         </tr>
-        <tr class="odd">
+        <tr>
         <td><a
         href="https://www.github.com/openarabicpe/journal_lughat-al-arab">Lughat
         al-ʿArab</a></td>
@@ -2649,7 +2682,7 @@ Right-to-Left Script Texts</span>
         <td style="text-align: right;">939</td>
         <td style="text-align: right;">373832</td>
         </tr>
-        <tr class="even">
+        <tr>
         <td><strong>total</strong></td>
         <td></td>
         <td></td>
@@ -2702,16 +2735,20 @@ Right-to-Left Script Texts</span>
         <li>XSLT1 in web browsers: will fall victim to JSON and security
         features
         <ul>
-        <li>over the last 5 years support has markedly decreased
-        <!-- - Full-text search across issues and periodicals without a backend
-          + [Google's programmable search engines](https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo): requires internet connection (and Google account!) --></li>
+        <li>over the last 5 years support has markedly decreased &lt;!–
+        - Full-text search across issues and periodicals without a
+        backend</li>
+        <li><a
+        href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s
+        programmable search engines</a>: requires internet connection
+        (and Google account!) –&gt;</li>
         </ul></li>
         </ul>
         </div><div class="column">
         <figure id="fig:components">
         <img data-src="../assets/OpenArabicPE_components-layer-1-4.png"
-        alt="The main components of OpenArabicPE" />
-        <figcaption>Figure 21: The main components of
+        alt="Figure 21: The main components of OpenArabicPE" />
+        <figcaption aria-hidden="true">Figure 21: The main components of
         OpenArabicPE</figcaption>
         </figure>
         </div>
@@ -2789,7 +2826,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         Alghamdi, Mansoor, and William Teahan. 2017. <span>“Experimental
         Evaluation of Arabic OCR Systems.”</span> <em>PSU Research
         Review</em> 1 (3): 229–41. <a
-        href="https://doi.org/gh4457">https://doi.org/gh4457</a>.
+        href="https://doi.org/10/gh4457">https://doi.org/10/gh4457</a>.
         </div>
         <div id="ref-oclc_4770057679-i_61-div_21.d1e2838"
         class="csl-entry" role="listitem">
@@ -2837,8 +2874,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         </div>
         <div id="ref-Winkler20230307OCR" class="csl-entry"
         role="listitem">
-        Winkler, Alexander, and @awinkler@openbiblio.social. 2023.
-        Mastodon post. <em>Mastodon</em>. <a
+        Winkler, Alexander. 2023. Mastodon post. <em>Mastodon</em>. <a
         href="https://openbiblio.social/@awinkler/109981107178749600">https://openbiblio.social/@awinkler/109981107178749600</a>.
         </div>
         </div>
@@ -2846,13 +2882,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
-    
+    <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
+
     <script>
 
       // Full list of configuration options available at:

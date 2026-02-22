@@ -348,7 +348,7 @@ Table: Evaluation of traditional OCR software for Arabic font types from [@Algha
 | CER train        | 2.01               | 0.07             |
 | CER validation   | [**2.09**]{.green} | [**8.40**]{.red} |
 
-Table: Evaluation of my our Transkribus models {#tbl:ocr-ar-ml}
+Table: Evaluation of our Transkribus models {#tbl:ocr-ar-ml}
 
 ::::
 :::: wide

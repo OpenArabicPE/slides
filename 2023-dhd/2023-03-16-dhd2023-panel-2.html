@@ -9,8 +9,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -20,15 +20,18 @@
       div.columns{display: flex; gap: min(4vw, 1.5em);}
       div.column{flex: auto; overflow-x: auto;}
       div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
+      /* The extra [class] is a hack that increases specificity enough to
+         override a similar rule in reveal.js */
+      ul.task-list[class]{list-style: none;}
       ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
         width: 0.8em;
         margin: 0 0.8em 0.2em -1.6em;
         vertical-align: middle;
       }
       .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -44,7 +47,7 @@
                         font-family: AmiriWeb;
                         font-style: normal;
                         font-weight: 400;
-                        src: url('https://openarabicpe.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
+                        src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
                     }
 
                     @font-face {
@@ -115,20 +118,25 @@
 
                     html,
                     body,
+                    html.print-pdf body,
                     .reveal-viewport {
-                        margin: 0 0 0 0;
+                        margin: 0 0 0 0 !important;
                         padding: 0 0 0 0;
                         width: 100%;
                         height: 100%;
+                    }
+                    html,
+                    body,
+                    .reveal-viewport {
                         /*color: white;*/
                         color: black !important;
                         /*color: #4d4d4d;*/
                         /*background-color: black;*/
                         background-color: white !important;
                         overflow: hidden;
-                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; 
+                        /*font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
                       font-size: 12px;*/
-                      line-height: 1.2; 
+                      line-height: 1.2;
                       word-wrap: break-word;
                     }
                     body,
@@ -196,8 +204,8 @@
                         margin-bottom: 0;
                         margin-right: auto;
                         margin-left: auto;
-                        padding-top: 0;
-                        padding-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
                         border-width: 0;
@@ -205,14 +213,21 @@
                         left: 0;
                         right: 0;
                         /*line-height: 120%;*/
-                        background-color: transparent;
+                        background-color: rgba(255, 255, 255, 0.93);
+                        /*background-color: transparent;*/
                         /* width should be in em dashes*/
                         max-width: 50em;
+                        height: 40em;
                     }
-                    div.slide {
+                    #title-slide {
+                        background-color: rgba(255, 255, 255, 0.93);
+                    }
+                    div.slide,
+                    html.print-pdf div.slide {
                         top: 10% ;
                     }
                     /* revealjs generates inline CSS that needs to be overridden  */
+                    html.print-pdf section.slide,
                     section.slide {
                         top: 0 !important;
                     }
@@ -241,17 +256,11 @@
                         /*font-size is over-ridden by automatically generated inline CSS on body*/
                         font-size: 24px !important;
                     }
-                    .reveal h1,
-                    .reveal h2,
-                    .reveal h3,
-                    .reveal h4,
-                    .reveal h5,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    th {
+                    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5,
+                    .print-pdf h1, .print-pdf h2, .print-pdf h3, .print-pdf h4, .print-pdf h5,
+                    h1, h2, h3, h4, h5,
+                    th,
+                    .keyphrase {
                         /*  note that only the first two are typewriter fonts, which might not be available on all systems   */
                     /*    font-family: PTSans, "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;*/
                         font-family: HeptaSlab, "American Typewriter", "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -279,6 +288,9 @@
                     }
                     table {
                         font-size: 0.8em;
+                    }
+                    .small-font {
+                        font-size: 70%;
                     }
                     /******************
                     set colours
@@ -569,12 +581,16 @@
                         height: 1em;
                     }*/
                     img.c_logo {
-                        margin-left: 3em;
-                        margin-right: 3em;
                         margin-top: 1em;
                         margin-bottom: 1em;
                     /*    max-width: 6em !important;*/
                         max-height: 4em !important;
+                    }
+                    img.c_logo.c_left {
+                        margin-left: 1em;
+                    }
+                    img.c_logo.c_right {
+                        margin-right: 1em;
                     }
                     /*img {
                       max-height: 700px;
@@ -585,7 +601,7 @@
                         display: block;
                         width: 90%;
                         /* the height setting seems to squeeze iframes */
-                        /*height: 80%;*/
+                        height: 600px;
                         /* center the iframe */
                         margin-left: auto;
                         margin-right: auto;
@@ -607,6 +623,7 @@
                         /* newer? versions of reveal use display: flex */
                         display: block;
                         /*flex: none;*/
+                        clear: both;
                     }
                     div.columns-3 {
                         clear: both;
@@ -652,7 +669,7 @@
                     .c_width-30,
                     .column-30,
                     .columns .narrow {
-                        width: 33%;
+                        width: 31%;
                         position: relative;
                         float: left;
                     }
@@ -1120,7 +1137,8 @@
                     .smaller {
                         font-size: smaller
                     }
-                    .bigger {
+                    .bigger,
+                    .keyphrase {
                         font-size: 130%
                     }
                     /*******************************
@@ -1161,8 +1179,9 @@
                         border-bottom-width: 1px;
                         border-bottom-style: solid;
                     }
-                    td:hover {
+                    td:hover, td:hover * {
                         background-color: #F46A00;
+                        color: black;
                     }
                     .focus {
                         border-color: red;
@@ -1258,13 +1277,34 @@
                     div.references p {
                         margin: 5px 0px;
                     }
-                    /* alerts */
+                    /******************
+                    alerts
+                    *******************/
+
+
                     div.alert {
+                        clear: both;
+                        display: block;
+                        font-size: 70%;
                         border-width: 1px;
                         border-style: solid;
-                        border-color: red;
+                    /*    border-color: red;*/
+                        background-color: white;
                         margin-left: 2em;
                         border-left-width: 1em;
+                        width: 60%;
+                        float: right;
+                    }
+
+                    div.alert.red {
+                        border-color: red;
+                        color: black;
+                    }
+                    .green {
+                        color: green;
+                    }
+                    .red {
+                        color: red;
                     }
                     /*
                      hide images for work around for save as bug
@@ -1360,13 +1400,29 @@
                             page-break-before: avoid
                         }
                     }
+                    /**********************
+                     necessary hacks to counter the linked reveal.css
+                     ***********************/
+                    html.print-pdf {
+                        overflow: visible;
+                        float: none!important;
+                        color: black !important;
+                        background-color: white !important;
+                    }
+                    html.print-pdf .reveal {
+                        width: 100% !important;
+                    }
+                    html.print-pdf section.slide {
+                        padding-top: 20px !important;
+                    }
+
                     </style>
       </head>
   <body onload="setCurrentDate()">
         <!-- HU Berlin header -->
     <header>
         <a href="https://hu-berlin.de"><img class="c_right c_logo" src="https://furesh.github.io/slides/assets/images/hu_siegel_rgb.png"></a>
-    </header>
+            </header>
     <div class="reveal">
       <div class="slides">
 
@@ -1629,9 +1685,10 @@ computing für die Erschließung arabischer Periodika</h1>
         have</strong> at hand</li>
         <li>unite <strong>existing</strong> gray transcriptions with
         digital facsimiles</li>
-        <li>learn from free and open-source software development
-        <!-- - model everything to make components citable
-        - harvest, generate, validate and share open metadata --></li>
+        <li>learn from free and open-source software development &lt;!–
+        - model everything to make components citable</li>
+        <li>harvest, generate, validate and share open metadata
+        –&gt;</li>
         </ul>
         <h3 id="principles">principles</h3>
         <ul>
@@ -1710,12 +1767,12 @@ computing für die Erschließung arabischer Periodika</h1>
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
     
     <script>
 
@@ -1817,8 +1874,8 @@ computing für die Erschließung arabischer Periodika</h1>
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
         // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
+                autoSlide: 0,
+        
         // Stop auto-sliding after user input
         autoSlideStoppable: true,
 
@@ -1866,9 +1923,16 @@ computing für die Erschließung arabischer Periodika</h1>
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-                width: 1000,
-                        height: 800,
-                                        
+                width: 1200,
+                        height: 1000,
+        
+        // Factor of the display size that should remain empty around the content
+                margin: 0,
+        
+        // Bounds for smallest/largest possible scale to apply to content
+        
+        
+        
         // reveal.js plugins
         plugins: [
                 RevealNotes,
