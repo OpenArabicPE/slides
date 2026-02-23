@@ -10,8 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
+    <link rel="stylesheet" href="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/reset.css">
+    <link rel="stylesheet" href="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -117,7 +117,7 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -1670,38 +1670,43 @@ zu Berlin</p>
         </div>
         </section></section>
         <section>
-        <section id="problems" class="title-slide slide level1">
-        <h1>Problems</h1>
+        <section id="what-we-are-up-against"
+        class="title-slide slide level1">
+        <h1>What we are up against</h1>
 
         </section>
         <section id="levels-of-postcolonial-absences"
         class="slide level2">
         <h2>Levels of (post)colonial absences</h2>
-        <div class="columns">
-        <div class="column">
+        <div class="columns-3">
+        <div class="narrow">
+        <figure id="fig:mirat-ar">
+        <img data-src="../assets/zdb_mirat-ar.png"
+        alt="Figure 4: Search in ZDB for “مرآة الشرق”" />
+        <figcaption aria-hidden="true">Figure 4: Search in <a
+        href="https://zdb-katalog.de/list.xhtml?t=مرآة%20الشرق">ZDB</a>
+        for “<span lang="ar">مرآة الشرق</span>”</figcaption>
+        </figure>
+        </div>
+        <div class="wide">
         <ol type="1">
         <li>limited knowledge of the “original” artefact</li>
         <li>survival and collection bias leads to digitisation bias</li>
         <li>networked digital infrastructures and global capitalism</li>
-        <li>linguistic imperialism and the digital artefact</li>
+        <li><em>linguistic imperialism</em> and the digital
+        artefact</li>
         <li>digital divides between the global south and the global
         north</li>
         </ol>
-        </div><div class="column">
+        </div>
+        <div class="narrow">
         <figure id="fig:hathi-muqtabas-global">
         <img data-src="../assets/hathi_muqtabas-1.png"
-        alt="Figure 4: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
-        <figcaption aria-hidden="true">Figure 4: <em>al-Muqtabas</em> 6
+        alt="Figure 5: al-Muqtabas 6 on HathiTrust (Original in Princeton) outside the USA" />
+        <figcaption aria-hidden="true">Figure 5: <em>al-Muqtabas</em> 6
         on <a
         href="http://hdl.handle.net/2027/njp.32101073250910">HathiTrust</a>
         (Original in Princeton) outside the USA</figcaption>
-        </figure>
-        <figure id="fig:zdb-ar">
-        <img data-src="../assets/zdb_janna-ar-Latn.png"
-        alt="Figure 5: Search in ZDB for “الجنة”" />
-        <figcaption aria-hidden="true">Figure 5: Search in <a
-        href="https://zdb-katalog.de/list.xhtml?t=الجنة">ZDB</a> for
-        “<span lang="ar">الجنة</span>”</figcaption>
         </figure>
         </div>
         </div>
@@ -1750,8 +1755,31 @@ zu Berlin</p>
         <li>literacy</li>
         </ul></li>
         </ol>
-        <p>the title is an allusion to Moritz Feichtinger’s talk at a
-        conference earlier this year</p>
+        <blockquote>
+        <p>‘Linguistic imperialism’ is shorthand for a multitude of
+        activities, ideologies, and structural relationships. Linguistic
+        imperialism takes place within an overarching structure of
+        asymmetrical North/ South relations, where language interlocks
+        with other dimensions, cultural (particularly in education,
+        science, and the media), economic and political</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Phillipson1997RealitiesAndMyths">(Phillipson
+        <span>“Realities and Myths of Linguistic Imperialism”</span>
+        1997, 239)</span></cite></p>
+        <blockquote>
+        <p>The basis for the codes, languages, methodologies, and
+        technical instruments of the digital humanities is English; the
+        written and spoken language of all the main conferences, the
+        most prestigious journals, the institutions that control the
+        discipline, the organizations and international consortia, and
+        the central authorities of knowledge is, with few exceptions,
+        some dialect of British or American English.</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="Fiormonte2021Taxation">(Fiormonte <span>“Taxation
+        Against <span>Overrepresentation</span>?”</span> 2021,
+        334–35)</span></cite></p>
         </aside>
         </section></section>
         <section>
@@ -1827,6 +1855,271 @@ zu Berlin</p>
         </aside>
         </section></section>
         <section>
+        <section id="minimal-computing-to-the-rescue"
+        class="title-slide slide level1">
+        <h1>Minimal Computing to the rescue</h1>
+
+        </section>
+        <section id="building-what-we-need-with-what-we-have-at-hand"
+        class="slide level2">
+        <h2>Building what <strong>we need</strong> with what <strong>we
+        have</strong> at hand</h2>
+        <blockquote>
+        <p>minimal computing connotes digital humanities work undertaken
+        in the context of some set of constraints. This could include
+        lack of access to hardware or software, network capacity,
+        technical education, or even a reliable power grid</p>
+        </blockquote>
+        <p><cite><span class="citation"
+        data-cites="RisamGil2022Introduction">(Risam and Gil
+        <span>“Introduction: The Questions of Minimal Computing”</span>
+        2022, sec. 3)</span></cite></p>
+        <blockquote>
+        <p>this implies learning how to produce, disseminate, and
+        preserve digital scholarship ourselves, without the help we
+        can’t get, even as we fight to build the infrastructures we need
+        at the intersection of, with, and beyond institutional libraries
+        and schools.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="Gil+2016">(Gil and
+        Ortega <span>“Global <span>Outlooks</span> in <span>Digital
+        Humanities</span>”</span> 2016, 29)</span></cite></p>
+        <aside class="notes">
+        <ul>
+        <li>minimal computing is a result of GO::DH and events and
+        conditions in Cuba</li>
+        <li>Alex Gil’s ideas resonated with me, upon meeting in Beirut
+        in April 2015</li>
+        </ul>
+        </aside>
+        </section>
+        <section id="what-do-we-need" class="slide level2">
+        <h2>What do we need?</h2>
+        <!-- We need to digitise the cultural record -->
+        <blockquote>
+        <p>Indigenous peoples have the right to revitalize, use, develop
+        and transmit to future generations their histories, languages,
+        oral traditions, philosophies, writing systems and literatures,
+        and to designate and retain their own names for communities,
+        places and persons.</p>
+        </blockquote>
+        <p><cite><span class="citation" data-cites="UNDRIP2007">(United
+        Nations <span>“<span>UNDRIP</span>”</span> 2007, sec.
+        13)</span><cite></p>
+        <aside class="notes">
+        <p>The human condition, historically, is one of multilinguality.
+        People speak different languages, dialects, sociolects etc. in
+        different contexts: at home, at work, at social gatherings, for
+        worship etc.. Sometimes we share a language with people across
+        geographic distances, just as in this meeting, and sometimes, we
+        do not understand our direct neighbours.</p>
+        </aside>
+        <div class="columns">
+        <div class="column">
+        <h3 id="access">Access</h3>
+        <ul>
+        <li>Societies of the Global South have a right to access their
+        own cultural record</li>
+        <li>Scholarship can immensely profit from broadening the scope
+        of our sources</li>
+        </ul>
+        <h3 id="preservation">Preservation</h3>
+        <ul>
+        <li>Periodicals are a volatile and dispersed cultural
+        artefact</li>
+        <li>libraries, archives, personal collections are under threat
+        of destruction, defunding, neglect</li>
+        </ul>
+        </div><div class="column">
+        <figure id="fig:gaza-mosque">
+        <img
+        data-src="../assets/2024-02-04_gaza-omari-mosque_qattan.jpg"
+        alt="Figure 6: The Great Omari Mosque in Gaza after its complete destruction by the Israeli military on 8. Dec. 2023. Source: Estrin and Bashir (Requiem 2024)" />
+        <figcaption aria-hidden="true">Figure 6: The Great Omari Mosque
+        in Gaza after its complete destruction by the Israeli military
+        on 8. Dec. 2023. Source: <span class="citation"
+        data-cites="EstrinBashir2024requiemGazasiconic">Estrin and
+        Bashir (<em>Requiem</em> 2024)</span></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <p>We need to digitise the cultural record</p>
+        </aside>
+        </section>
+        <section id="centering-the-we-in-what-do-we-need"
+        class="slide level2">
+        <h2>Centering the <em>we</em> in “what do we need?”</h2>
+        <div class="columns">
+        <div class="column">
+        <p><em>we</em> is defined by shared</p>
+        <ul>
+        <li>interests</li>
+        <li>ethics, e.g.
+        <ul>
+        <li><a href="https://www.go-fair.org/fair-principles/">FAIR</a>
+        principles</li>
+        <li><a href="https://www.gida-global.org/care">CARE</a>
+        principles</li>
+        <li>-&gt; digital commons</li>
+        </ul></li>
+        </ul>
+        </div><div class="column">
+        <p><em>we</em> defines</p>
+        <ul>
+        <li>the specific context and and working conditions</li>
+        <li>our access to skills, methods, labour time, tools, materials
+        …</li>
+        </ul>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>FAIR: <strong>F</strong>indability,
+        <strong>A</strong>ccessability,
+        <strong>I</strong>nteroperability, <strong>R</strong>euse</li>
+        <li><a href="https://www.gida-global.org/care">CARE</a>:
+        <strong>C</strong>ollective benefit, <strong>A</strong>uthority
+        to control, <strong>R</strong>esponsibility,
+        <strong>E</strong>thics
+        <ul>
+        <li>developped in the context of indigenous communities</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section>
+        <section id="what-about-the-minimal-in-minimal-computing"
+        class="slide level2">
+        <h2>What about the <em>minimal</em> in minimal computing?</h2>
+        <!-- add images -->
+        <div class="columns">
+        <div class="column">
+        <h3 id="from-a-position-of-privilege">from a position of
+        privilege</h3>
+        <ul>
+        <li>minimalism as an end in itself
+        <ul>
+        <li>destroying resources already at hand</li>
+        <li>fashion</li>
+        <li>purist principles</li>
+        </ul></li>
+        </ul>
+        <figure id="fig:bulthaupt">
+        <img data-src="../assets/bulthaupt.png"
+        alt="Figure 7: Screenshot of a website selling luxury kitchens" />
+        <figcaption aria-hidden="true">Figure 7: Screenshot of a <a
+        href="https://bulthaup.com/en/b3/">website</a> selling luxury
+        kitchens</figcaption>
+        </figure>
+        </div><div class="column">
+        <h3 id="from-a-position-of-exclusion">from a position of
+        exclusion</h3>
+        <ul>
+        <li>minimalism as a means to an end
+        <ul>
+        <li>balance our needs against the resources at hand</li>
+        <li>acknowledge the inevitable impact of our actions</li>
+        <li>minimal computing as <em>meaningful</em> computing</li>
+        </ul></li>
+        </ul>
+        <figure id="fig:bauhaus">
+        <img
+        data-src="../assets/SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg"
+        alt="Figure 8: Frankfurter Kitchen, Source: WikiCommons, CCO" />
+        <figcaption aria-hidden="true">Figure 8: Frankfurter Kitchen,
+        Source: <a
+        href="https://commons.wikimedia.org/wiki/File:SchutteLihotzky_FrankfurtKitchen_MIA_2004195_001.jpg">WikiCommons,
+        CCO</a></figcaption>
+        </figure>
+        </div>
+        </div>
+        <aside class="notes">
+        <ol type="1">
+        <li>minimalism as an end
+        <ul>
+        <li>resource-intensive</li>
+        <li>example: Mary Condo</li>
+        <li>example: purist computing infrastructures
+        <ul>
+        <li>you got to run your own server and never use evil
+        platforms</li>
+        </ul></li>
+        </ul></li>
+        <li>minimalism as a means to an end
+        <ul>
+        <li>meaningful connectivity</li>
+        <li>original Bauhaus / modernist design:
+        <ul>
+        <li>form follows function to
+        <ul>
+        <li>decrease the cost of industrial production</li>
+        <li>increase the material benefits of the expended
+        resources</li>
+        </ul></li>
+        </ul></li>
+        </ul></li>
+        </ol>
+        </aside>
+        </section>
+        <section id="finally-there-is-computing" class="slide level2">
+        <h2>Finally, there is computing</h2>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li>use what we already know</li>
+        <li>use what we can afford long-term</li>
+        <li>do not impose unnecessary costs on our users</li>
+        <li>do not waste resources to the detriment of our planet</li>
+        </ul>
+        </div><div class="column">
+        <ul>
+        <li>learn techniques new to us</li>
+        <li>develop skills</li>
+        </ul>
+        </div>
+        </div>
+        <div class="columns">
+        <div class="column">
+        <figure id="fig:website-dhcc">
+        <img data-src="../assets/website_dhcc.png"
+        alt="Figure 9: Webseite des DHCC Toolkit" />
+        <figcaption aria-hidden="true">Figure 9: Webseite des <a
+        href="https://sas-dhrh.github.io/dhcc-toolkit/">DHCC
+        Toolkit</a></figcaption>
+        </figure>
+        <p><img
+        data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;qzone=3&amp;color=113868&amp;data=https://sas-dhrh.github.io/dhcc-toolkit/"
+        class="c_logo c_qr c_right" /></p>
+        </div><div class="column">
+        <figure id="fig:endings-principles">
+        <img data-src="../assets/website_project-endings-principles.png"
+        alt="Figure 10: “Endings Principles for Digital Longevity”" />
+        <figcaption aria-hidden="true">Figure 10: “<a
+        href="https://endings.uvic.ca/principles.html">Endings
+        Principles for Digital Longevity</a>”</figcaption>
+        </figure>
+        <p><img
+        data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;qzone=3&amp;color=113868&amp;data=https://endings.uvic.ca/principles.html"
+        class="c_logo c_qr c_right" /></p>
+        </div>
+        </div>
+        <aside class="notes">
+        <ul>
+        <li>first column
+        <ul>
+        <li>proven technologies and established standards</li>
+        <li>not the latest framework
+        <ul>
+        <li>think of what we do as space travel: Voyager I and II are
+        still functioning with rudimentary computing powers</li>
+        </ul></li>
+        <li>flat technology stacks</li>
+        <li>nothing shiny</li>
+        </ul></li>
+        </ul>
+        </aside>
+        </section></section>
+        <section>
         <section id="implementation-1-publishing-metadata-on-wikidata"
         class="title-slide slide level1">
         <h1>Implementation 1: <br/>Publishing metadata on Wikidata</h1>
@@ -1850,8 +2143,8 @@ zu Berlin</p>
         <figure id="fig:mirat">
         <img
         data-src="https://images.eap.bl.uk/EAP119/EAP119_1_24_1/1.jp2/full/600,/0/gray.jpg"
-        alt="Figure 6: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
-        <figcaption aria-hidden="true">Figure 6: Front page of
+        alt="Figure 11: Front page of Mirʾāt al-Sharq #192, 22 Nov. 1922, Jerusalem. Source: EAP." />
+        <figcaption aria-hidden="true">Figure 11: Front page of
         <em>Mirʾāt al-Sharq</em> #192, 22 Nov. 1922, Jerusalem. Source:
         <a
         href="https://eap.bl.uk/archive-file/EAP119-1-24-1">EAP</a>.</figcaption>
@@ -1867,8 +2160,8 @@ zu Berlin</p>
         </ul>
         <figure id="fig:zdb-hamza">
         <img data-src="../assets/zdb_mirat-ar-Latn-hamza.png"
-        alt="Figure 7: Search in ZDB for “mir’at sarq”" />
-        <figcaption aria-hidden="true">Figure 7: Search in <a
+        alt="Figure 12: Search in ZDB for “mir’at sarq”" />
+        <figcaption aria-hidden="true">Figure 12: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=mir&#39;at%20sarq">ZDB</a>
         for “mir’at sarq”</figcaption>
         </figure>
@@ -1883,8 +2176,8 @@ zu Berlin</p>
         </ul>
         <figure id="fig:zdb-dmg">
         <img data-src="../assets/zdb_mirat-ar-Latn-x-dmg.png"
-        alt="Figure 8: Search in ZDB for “Mirʾāt aš-Šarq”" />
-        <figcaption aria-hidden="true">Figure 8: Search in <a
+        alt="Figure 13: Search in ZDB for “Mirʾāt aš-Šarq”" />
+        <figcaption aria-hidden="true">Figure 13: Search in <a
         href="https://zdb-katalog.de/list.xhtml?t=Mirʾāt%20aš-Šarq">ZDB</a>
         for “Mirʾāt aš-Šarq”</figcaption>
         </figure>
@@ -1952,7 +2245,7 @@ zu Berlin</p>
         href="https://w.wiki/9UDd">Wikidata</a></li>
         </ul></li>
         </ul>
-        <h3 id="problems-1">Problems</h3>
+        <h3 id="problems">Problems</h3>
         <ul>
         <li>Sustainability of dataset and code
         <ul>
@@ -2014,12 +2307,14 @@ zu Berlin</p>
         <ul>
         <li>integrated into larger knowledge environments</li>
         </ul></li>
-        <li>FAIR knowledge graph
+        <li>multilingual by design</li>
+        <li>largest public knowledge graph
         <ul>
-        <li><a href="https://creativecommons.org/">CC</a>0 license</li>
+        <li>5-star <em>linked open data</em></li>
+        <li>FAIR, <a href="https://creativecommons.org/">CC</a>0
+        licenses</li>
         </ul></li>
         <li>Open software stack</li>
-        <li>multilingual</li>
         </ul>
         </div>
         <div class="column">
@@ -2044,8 +2339,9 @@ zu Berlin</p>
         <div class="column">
         <figure id="fig:wikidata-Q4703322">
         <img data-src="../assets/wikidata_Q4703322.png"
-        alt="Figure 9: Veḳāʾiʿ-i Miṣriye on Wikidata" />
-        <figcaption aria-hidden="true">Figure 9: Veḳāʾiʿ-i Miṣriye on <a
+        alt="Figure 14: Veḳāʾiʿ-i Miṣriye on Wikidata" />
+        <figcaption aria-hidden="true">Figure 14: Veḳāʾiʿ-i Miṣriye on
+        <a
         href="https://www.wikidata.org/wiki/Q4703322">Wikidata</a></figcaption>
         </figure>
         </div>
@@ -2297,8 +2593,8 @@ zu Berlin</p>
         </ul>
         <figure id="fig:zuhur-vscode">
         <img data-src="../assets/vscode_zuhur.png"
-        alt="Figure 10: The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
-        <figcaption aria-hidden="true">Figure 10: The TEI XML file for
+        alt="Figure 15: The TEI XML file for al-Zuhūr 2(4) in Visual Studio Code" />
+        <figcaption aria-hidden="true">Figure 15: The TEI XML file for
         <em>al-Zuhūr</em> 2(4) in <a
         href="https://code.visualstudio.com/">Visual Studio
         Code</a></figcaption>
@@ -2324,8 +2620,8 @@ zu Berlin</p>
         </ul>
         <figure id="fig:zuhur-oxygen">
         <img data-src="../assets/oxygen_zuhur-author.png"
-        alt="Figure 11: The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
-        <figcaption aria-hidden="true">Figure 11: The TEI XML file for
+        alt="Figure 16: The TEI XML file for al-Zuhūr 2(4) in oXygen’s author mode. Styling relies on CSS." />
+        <figcaption aria-hidden="true">Figure 16: The TEI XML file for
         <em>al-Zuhūr</em> 2(4) in <a
         href="https://www.oxygenxml.com/">oXygen</a>’s author mode.
         Styling relies on CSS.</figcaption>
@@ -2365,8 +2661,8 @@ zu Berlin</p>
         </div><div class="column">
         <figure id="fig:zuhur-zenodo">
         <img data-src="../assets/zenodo_zuhur.png"
-        alt="Figure 12: Archived release of al-Zuhūr on Zenono" />
-        <figcaption aria-hidden="true">Figure 12: Archived release of
+        alt="Figure 17: Archived release of al-Zuhūr on Zenono" />
+        <figcaption aria-hidden="true">Figure 17: Archived release of
         <em>al-Zuhūr</em> on <a
         href="https://doi.org/10.5281/zenodo.3580606">Zenono</a></figcaption>
         </figure>
@@ -2379,8 +2675,6 @@ zu Berlin</p>
         <div class="columns">
         <div class="column">
         <ul>
-        <li>Hosting: <a href="https://pages.github.com/">GitHub
-        Pages</a> can expose your data repository to the web</li>
         <li>Generate static webviews
         <ul>
         <li>removes need for backend and minimises traffic</li>
@@ -2394,6 +2688,8 @@ zu Berlin</p>
         href="https://github.com/features/actions">GitHub actions</a>
         give access to virtual machines</li>
         </ul></li>
+        <li>Hosting: <a href="https://pages.github.com/">GitHub
+        Pages</a> can expose your data repository to the web</li>
         <li>bibliographic database: <a
         href="https://www.zotero.org/groups/openarabicpe/items/">Zotero
         group</a>
@@ -2410,15 +2706,15 @@ zu Berlin</p>
         <figure id="fig:zuhur-zotero">
         <img
         data-src="../assets/zotero-group_openarabicpe-mobile-details_small.png"
-        alt="Figure 13: Zotero group “OpenArabicPE”: details in mobile view" />
-        <figcaption aria-hidden="true">Figure 13: Zotero group “<a
+        alt="Figure 18: Zotero group “OpenArabicPE”: details in mobile view" />
+        <figcaption aria-hidden="true">Figure 18: Zotero group “<a
         href="https://www.zotero.org/groups/openarabicpe/items/">OpenArabicPE</a>”:
         details in mobile view</figcaption>
         </figure>
         <figure id="fig:zuhur-webview">
         <img data-src="../assets/boilerplate_zuhur-v_2-i_4_small.png"
-        alt="Figure 14: Webview of al-Zuhūr 2(4)" />
-        <figcaption aria-hidden="true">Figure 14: <a
+        alt="Figure 19: Webview of al-Zuhūr 2(4)" />
+        <figcaption aria-hidden="true">Figure 19: <a
         href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">Webview
         of <em>al-Zuhūr</em> 2(4)</a></figcaption>
         </figure>
@@ -2583,20 +2879,22 @@ zu Berlin</p>
         <li>XSLT1 in web browsers: will fall victim to JSON and security
         features
         <ul>
-        <li>over the last 5 years support has markedly decreased &lt;!–
-        - Full-text search across issues and periodicals without a
-        backend</li>
+        <li>over the last 5 years support has markedly decreased</li>
+        </ul></li>
+        <li>Full-text search across issues and periodicals without a
+        backend
+        <ul>
         <li><a
         href="https://cse.google.com/cse?cx=012251040084107011117:jof1v_ejndo">Google’s
         programmable search engines</a>: requires internet connection
-        (and Google account!) –&gt;</li>
+        (and Google account!)</li>
         </ul></li>
         </ul>
         </div><div class="column">
         <figure id="fig:components">
         <img data-src="../assets/OpenArabicPE_components-layer-1-4.png"
-        alt="Figure 15: The main components of OpenArabicPE" />
-        <figcaption aria-hidden="true">Figure 15: The main components of
+        alt="Figure 20: The main components of OpenArabicPE" />
+        <figcaption aria-hidden="true">Figure 20: The main components of
         OpenArabicPE</figcaption>
         </figure>
         </div>
@@ -2628,15 +2926,15 @@ zu Berlin</p>
         Philip Sadgrove, Ola Seif, and Rogier Visser</li>
         <li>Links:
         <ul>
-        <li>Slides: <a
-        href="https://openarabicpe.github.io/slides/2023-openiti//index.html">https://openarabicpe.github.io/slides/2023-openiti/</a></li>
-        <li>Project blog: <a
-        href="https://openarabicpe.github.io">https://openarabicpe.github.io</a></li>
-        <li>Papers: <a
+        <li>Project blog: <a href="https://openarabicpe.github.io"
+        class="uri">https://openarabicpe.github.io</a></li>
+        <li>Papers: <a href="https://doi.org/10.4324/9781003327677-7"
+        class="uri">https://doi.org/10.4324/9781003327677-7</a>, <a
+        href="https://doi.org/10.46298/transformations.14749"
+        class="uri">https://doi.org/10.46298/transformations.14749</a>,
+        <a
         href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html"
-        class="uri">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>,
-        <a href="https://doi.org/10/gkhrjr"
-        class="uri">https://doi.org/10/gkhrjr</a></li>
+        class="uri">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a></li>
         <li>Mastodon: <a
         href="https://digitalcourage.social/@tillgrallert">@tillgrallert@digitalcourage.social</a></li>
         <li>Email: <script
@@ -2674,27 +2972,93 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         <!-- dimensions -->
         <div id="refs" class="references csl-bib-body hanging-indent"
         data-entry-spacing="0" role="list">
-        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
-        Gil, Alex, and Élika Ortega. 2016. <span>“Global Outlooks in
-        Digital Humanities: Multilingual Practices and Minimal
-        Computing.”</span> In <em>Doing Digital Humanities: Practice,
-        Training, Research</em>, edited by Constance Crompton, Richard J
-        Lane, and Ray Siemens, 22–34. Abingdon: Routledge.
+        <div id="ref-DresselhausGrallert2024wikidata2gitlab"
+        class="csl-entry" role="listitem">
+        Dresselhaus, Nicole, and Till Grallert. 2024.
+        <span>“P_wikidata2gitlab.”</span> Berlin: NFDI4Memory,
+        Humboldt-Universität zu Berlin. <a
+        href="https://scm.cms.hu-berlin.de/methodenlabor/p_wikidata2gitlab">https://scm.cms.hu-berlin.de/methodenlabor/p_wikidata2gitlab</a>.
         </div>
-        <div id="ref-Grallert2021GG" class="csl-entry" role="listitem">
-        Grallert, Till. 2021. <span>“Catch Me If You Can! Approaching
-        the Arabic Press of the Late Ottoman Eastern Mediterranean
-        Through Digital History.”</span> Edited by Simone Lässig.
-        <em>Geschichte Und Gesellschaft</em> 47 (1, Digital History):
-        58–89. <a
-        href="https://doi.org/10.13109/gege.2021.47.1.58">https://doi.org/10.13109/gege.2021.47.1.58</a>.
+        <div id="ref-EstrinBashir2024requiemGazasiconic"
+        class="csl-entry" role="listitem">
+        Estrin, Daniel, and Abu Bakr Bashir. 2024. <em>A Requiem for
+        <span>Gaza</span>’s Iconic Sites, Destroyed in the War</em>.
+        <em>Weekend Edition Sunday</em>. NPR. <a
+        href="https://www.npr.org/2024/02/04/1226295081/gaza-iconic-sites-destroyed-in-war">https://www.npr.org/2024/02/04/1226295081/gaza-iconic-sites-destroyed-in-war</a>.
+        </div>
+        <div id="ref-Fiormonte2021Taxation" class="csl-entry"
+        role="listitem">
+        Fiormonte, Domenico. 2021. <span>“Taxation Against
+        <span>Overrepresentation</span>? <span>The Consequences</span>
+        of <span>Monolingualism</span> for <span>Digital
+        Humanities</span>.”</span> In <em>Alternative
+        <span>Historiographies</span> of the <span>Digital
+        Humanities</span></em>, edited by Dorothy Kim and Adeline Koh,
+        333–76. Earth: punctum books. <a
+        href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+        </div>
+        <div id="ref-Gil+2016" class="csl-entry" role="listitem">
+        Gil, Alex, and Élika Ortega. 2016. <span>“Global
+        <span>Outlooks</span> in <span>Digital Humanities</span>:
+        <span>Multilingual Practices</span> and <span>Minimal
+        Computing</span>.”</span> In <em>Doing Digital Humanities:
+        Practice, Training, Research</em>, edited by Constance Crompton,
+        Richard J Lane, and Ray Siemens, 22–34. Abingdon: Routledge.
         </div>
         <div id="ref-Grallert2022DHQ" class="csl-entry" role="listitem">
-        ———. 2022. <span>“Open Arabic Periodical Editions: A Framework
-        for Bootstrapped Scholarly Editions Outside the Global
-        North.”</span> Edited by Roopika Risam and Alex Gil. <em>Digital
-        Humanities Quarterly</em> 16 (2, "Minimal Computing"). <a
+        Grallert, Till. 2022. <span>“Open <span>Arabic Periodical
+        Editions</span>: <span>A</span> Framework for Bootstrapped
+        Scholarly Editions Outside the Global North.”</span> Edited by
+        Roopika Risam and Alex Gil. <em>Digital Humanities
+        Quarterly</em> 16 (June). <a
         href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>.
+        </div>
+        <div id="ref-Grallert2024jaraidData" class="csl-entry"
+        role="listitem">
+        ———. 2024. <span>“Project <span>Jarāʾid</span>:
+        <span>Snapshot</span> of Bibliographic Metadata from
+        <span>Wikidata</span> for All <span>Arabic</span> Periodicals
+        Published Worldwide Before 1930.”</span> Zenodo. <a
+        href="https://doi.org/10.5281/zenodo.14875615">https://doi.org/10.5281/zenodo.14875615</a>.
+        </div>
+        <div id="ref-Grallert2025JaraidWikidata" class="csl-entry"
+        role="listitem">
+        ———. 2025. <span>“Adding <span>Every Arabic Periodical Published
+        Before</span> 1930 to <span>Wikidata</span>: <span>Moving</span>
+        the <span>Scholarly Crowd-Sourcing Project Jarāʾid</span> to the
+        <span>Digital Commons</span>.”</span> <em>Transformations: A
+        DARIAH Journal</em> 1: Workflows (July): 1–39. <a
+        href="https://doi.org/10.46298/transformations.14749">https://doi.org/10.46298/transformations.14749</a>.
+        </div>
+        <div id="ref-Grallert2023Clio" class="csl-entry"
+        role="listitem">
+        ———. 2025. <span>“Clio-Guide: Digitalisierung des Kulturerbes
+        des globalen Südens: Taktiken für den Umgang mit der
+        infrastrukturellen Hegemonie des Globalen Nordens.”</span> In
+        <em>Clio Guide – Ein Handbuch zu digitalen Ressourcen für die
+        Geschichtswissenschaften</em>, edited by Laura Busse, Wilfried
+        Enderle, Rüdiger Hohls, Thomas Meyer, Jens Prellwitz, and
+        Annette Schuhmann, 3rd ed. Berlin. <a
+        href="https://doi.org/10.60693/p46s-8j72">https://doi.org/10.60693/p46s-8j72</a>.
+        </div>
+        <div id="ref-Grallert2025MundaneTexts" class="csl-entry"
+        role="listitem">
+        ———. 2025. <span>“Editing Mundane Texts Across the Digital
+        Divide: The Case of <span>Arabic</span> Periodicals from the
+        Late Nineteenth-Century <span>Eastern
+        Mediterranean</span>.”</span> In <em>The <span>Companion</span>
+        to <span>Digital Humanities</span> in
+        <span>Practice</span></em>, edited by Constance Crompton, Laura
+        Estill, Richard J. Lane, and Ray Siemens, 70–94. London:
+        Routledge. <a
+        href="https://doi.org/10.4324/9781003327677-7">https://doi.org/10.4324/9781003327677-7</a>.
+        </div>
+        <div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
+        role="listitem">
+        Phillipson, Robert. 1997. <span>“Realities and Myths of
+        Linguistic Imperialism.”</span> <em>Journal of Multilingual and
+        Multicultural Development</em> 18 (3): 238–48. <a
+        href="https://doi.org/10/db3cnb">https://doi.org/10/db3cnb</a>.
         </div>
         <div id="ref-RisamGil2022Introduction" class="csl-entry"
         role="listitem">
@@ -2704,17 +3068,23 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         "Minimal Computing"). <a
         href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
         </div>
+        <div id="ref-UNDRIP2007" class="csl-entry" role="listitem">
+        United Nations. 2007. <span>“United <span>Nations
+        Declaration</span> on the <span>Rights</span> of
+        <span>Indigenous Peoples</span>.”</span> <a
+        href="https://undocs.org/A/RES/61/295">https://undocs.org/A/RES/61/295</a>.
+        </div>
         </div>
         </section></section>
       </div>
     </div>
 
-    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
+    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
-    <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
-    <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
+    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/plugin/notes/notes.js"></script>
+    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/plugin/search/search.js"></script>
+    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/plugin/zoom/zoom.js"></script>
     
     <script>
 
