@@ -10,8 +10,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/reset.css">
-    <link rel="stylesheet" href="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
     <style>
       .reveal .sourceCode {  /* see #7635 */
         overflow: visible;
@@ -117,7 +117,7 @@
       div.csl-indent {
         margin-left: 2em;
       }    </style>
-        <link rel="stylesheet" href="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/theme/none.css" id="theme">
+        <link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/none.css" id="theme">
                     <style type="text/css">
                     /* slidy.css
 
@@ -2565,6 +2565,82 @@ zu Berlin</p>
         </ul>
         </aside>
         </section>
+        <section id="tei-and-the-western-hegemony" class="slide level2">
+        <h2>2. TEI and the Western hegemony</h2>
+        <p>TEI is rooted in the Western canon and Latin script and so is
+        XML</p>
+        <h3 id="example-personal-names">example: personal names</h3>
+        <div class="columns">
+        <div class="narrow">
+        <p><span class="citation" data-cites="Soualah+2012">Soualah and
+        Hassoun (<span>“A TEI P5 Manuscript Description”</span>
+        2012)</span> propose to use available elements
+        <code>&lt;surname&gt;</code>, <code>&lt;forename&gt;</code>, and
+        <code>&lt;addName&gt;</code> with a controlled vocabulary of
+        <code>@type</code> and <code>@subtype</code> attributes.</p>
+        </div><div class="wide">
+        <ul>
+        <li><code>&lt;surname&gt;</code>: to encode the <em>laqab</em>
+        evoking a real or assigned quality</li>
+        <li><code>&lt;forename&gt;</code>: for the <em>ism</em></li>
+        <li><code>&lt;addName&gt;</code> with <code>@type</code>
+        <ul>
+        <li>“nasab”: patronym introduced by “ibn” or “ibnat”</li>
+        <li>“kunyah”: teknonym or a mark of distinction applied to
+        prominent figures to honor them. For example, “Abū Yūsuf” is
+        often used for someone called Yaʿqūb</li>
+        <li>“khitab”: an honorific name, which is usually ended by the
+        suffix al-Dīn</li>
+        <li>“nisbah”: an adjective formed by using the suffix ī in order
+        to indicate the person origin, his birth place, or his
+        residence. It represents the relationship name, which can be a
+        genealogical, political or ideological affiliation of a
+        person.</li>
+        </ul></li>
+        </ul>
+        </div>
+        </div>
+        </section>
+        <section id="tei-and-the-western-hegemony-1"
+        class="slide level2">
+        <h2>2. TEI and the Western hegemony</h2>
+        <p>I suggest to add the following mark-up for late-Ottoman
+        names</p>
+        <div class="columns">
+        <div class="column">
+        <ul>
+        <li><code>&lt;roleName type="title"&gt;</code>: covering the
+        wide range of Ottoman titles, e.g. Pasha, Bey, Efendi that do
+        not necessarily denote a post in an administrative
+        hierarchy</li>
+        <li><code>&lt;roleName type="rank"&gt;</code>: denoting ranks
+        with a formal, administrative hierarchy</li>
+        <li><code>&lt;addName type="honorific"&gt;</code>: for the
+        highly regularised honorific addresses and salutations,
+        e.g. <em>rif’etli</em>, <em>saadetli</em>, <em>utufetli</em>,
+        <em>lizetli</em>, <em>devletli</em></li>
+        </ul>
+        </div><div class="column">
+        <div class="sourceCode" id="cb5"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span>&gt;دولتلو جزائري زاده الامير علي باشا ابن عبد القادر افندي الحسني&lt;/<span class="kw">persName</span>&gt;</span></code></pre></div>
+        <p>Could be marked-up / modelled as:</p>
+        <div class="sourceCode" id="cb6"><pre
+        class="sourceCode xml"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">persName</span><span class="ot"> xml:lang=</span><span class="st">&quot;ar&quot;</span>&gt;</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;honorific&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span>&gt;دولتلو&lt;/<span class="kw">addName</span>&gt;</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;nisbah&quot;</span>&gt;جزائري&lt;/<span class="kw">addName</span>&gt;</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;honorific&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span>&gt;زاده&lt;/<span class="kw">addName</span>&gt;</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span>&gt;الامير&lt;/<span class="kw">roleName</span>&gt;</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">forename</span>&gt;علي&lt;/<span class="kw">forename</span>&gt;</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span>&gt;باشا&lt;/<span class="kw">roleName</span>&gt;</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;nasab&quot;</span>&gt;ابن</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">forename</span>&gt;&lt;<span class="kw">addName</span><span class="ot"> type=</span><span class="st">&quot;theophoric&quot;</span>&gt;عبد القادر&lt;/<span class="kw">addName</span>&gt;&lt;/<span class="kw">forename</span>&gt;</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">roleName</span><span class="ot"> type=</span><span class="st">&quot;title&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;ota&quot;</span>&gt;افندي&lt;/<span class="kw">addName</span>&gt;</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">addName</span>&gt;</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">surname</span><span class="ot"> type=</span><span class="st">&quot;laqab&quot;</span>&gt;الحسني&lt;/<span class="kw">surname</span>&gt;</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">persName</span>&gt;</span></code></pre></div>
+        </div>
+        </div>
+        </section>
         <section id="edit-the-data" class="slide level2">
         <h2>3. edit the data</h2>
         <div class="columns">
@@ -3062,6 +3138,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
         "Minimal Computing"). <a
         href="http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html">http://digitalhumanities.org/dhq/vol/16/2/000646/000646.html</a>.
         </div>
+        <div id="ref-Soualah+2012" class="csl-entry" role="listitem">
+        Soualah, Mohammed Ourabah, and Mohamed Hassoun. 2012. <span>“A
+        TEI P5 Manuscript Description Adaptation for Cataloguing
+        Digitized Arabic Manuscripts.”</span> <em>Journal of the Text
+        Encoding Initiative</em> 2 (February). <a
+        href="https://doi.org/10.4000/jtei.398">https://doi.org/10.4000/jtei.398</a>.
+        </div>
         <div id="ref-UNDRIP2007" class="csl-entry" role="listitem">
         United Nations. 2007. <span>“United <span>Nations
         Declaration</span> on the <span>Rights</span> of
@@ -3073,12 +3156,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'
       </div>
     </div>
 
-    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
 
     <!-- reveal.js plugins -->
-    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/plugin/notes/notes.js"></script>
-    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/plugin/search/search.js"></script>
-    <script src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/revealjs/plugin/zoom/zoom.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+    <script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
     
     <script>
 
